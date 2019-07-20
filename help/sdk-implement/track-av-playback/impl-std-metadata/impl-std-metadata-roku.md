@@ -1,0 +1,40 @@
+---
+description: 'null'
+seo-description: 'null'
+seo-title: Implementar metadados padrão no Roku
+title: Implementar metadados padrão no Roku
+uuid: ae 14 d 809-343 f -452 c -832 a-f 94 bd 3 d 83 a 90
+translation-type: tm+mt
+source-git-commit: c6c7afee72d21c832be77c723750ae0551793613
+
+---
+
+
+# Implementar metadados padrão no Roku{#implement-standard-metadata-on-roku}
+
+Exemplifique um objeto de metadados padrão, preencha as variáveis desejadas e defina o objeto de metadados no objeto de Heartbeat de mídia.
+
+**Vídeo:**
+
+```
+standardMetadata = {} 
+standardMetadata[ADBMobile().MEDIA_VideoMetadataKeySHOW] = "sample show" 
+standardMetadata[ADBMobile().MEDIA_VideoMetadataKeySEASON] = "sample season" 
+standardMetadata[ADBMobile().MEDIA_VideoMetadataKeyEPISODE] = "sample episode" 
+
+mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata 
+```
+
+**Áudio:**
+
+```
+standardMetadata = {} 
+standardMetadata[ADBMobile().MEDIA_AudioMetadataKeyARTIST] = "sample artist" 
+standardMetadata[ADBMobile().MEDIA_AudioMetadataKeyALBUM] = "sample album" 
+standardMetadata[ADBMobile().MEDIA_AudioMetadataKeyLABEL] = "sample label"
+
+mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata 
+```
+
+Consulte a lista completa de metadados de vídeo aqui: [Parâmetros de áudio e vídeo](../../../metrics-and-metadata/audio-video-parameters.md)
+
