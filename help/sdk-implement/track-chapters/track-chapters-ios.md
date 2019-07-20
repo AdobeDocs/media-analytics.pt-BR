@@ -1,0 +1,82 @@
+---
+seo-title: Rastrear capítulos e segmentos no iOS
+title: Rastrear capítulos e segmentos no iOS
+uuid: ffc 5 ce 9 f -04 ba -4059-92 d 4-4 cb 4180 ac 9 ed
+translation-type: tm+mt
+source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+
+---
+
+
+# Rastrear capítulos e segmentos no iOS{#track-chapters-and-segments-on-ios}
+
+>[!IMPORTANT]
+>
+>As instruções a seguir fornecem orientação para a implementação usando sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](../../sdk-implement/download-sdks.md)
+
+1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
+
+   `ChapterObject` referência de rastreamento de capítulo:
+
+   >[!NOTE]
+   >
+   >Essas variáveis só serão necessárias se você estiver planejando rastrear capítulos.
+
+   | Nome da variável | Descrição | Obrigatório |
+   | --- | --- | :---: |
+   | `name` | Nome do capítulo | Sim |
+   | `position` | Posição do capítulo | Sim |
+   | `length` | Extensão do capítulo | Sim |
+   | `startTime` | Hora de início do capítulo | Sim |
+
+   Objeto do capítulo:
+
+   ```
+   id chapterObject =  
+     [ADBMediaHeartbeat createChapterObjectWithName:[CHAPTER_NAME] 
+                        position:[POSITION] 
+                        length:[LENGTH] 
+                        startTime:[START_TIME]];
+   ```
+
+1. Se você incluir metadados personalizados para o capítulo, crie as variáveis de dados de contexto para os metadados:
+
+   ```
+   NSMutableDictionary *chapterDictionary = [[NSMutableDictionary alloc] init]; 
+   [chapterDictionary setObject:@"Sample segment type" forKey:@"segmentType"]; 
+   [chapterDictionary setObject:@"Sample segment name" forKey:@"segmentName"]; 
+   [chapterDictionary setObject:@"Sample segment info" forKey:@"segmentInfo"];
+   ```
+
+1. Para começar a rastrear a reprodução do capítulo, chame o evento `ChapterStart` na instância `MediaHeartbeat`:
+
+   ```
+   - (void)onChapterStart:(NSNotification *)notification { 
+       [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterStart  
+                        mediaObject:chapterObject     
+                        data:chapterDictionary]; 
+   }
+   ```
+
+1. Quando a reprodução atingir o limite final do capítulo, conforme definido pelo seu código personalizado, chame o evento `ChapterComplete` na instância `MediaHeartbeat`:
+
+   ```
+   - (void)onChapterComplete:(NSNotification *)notification { 
+       [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterComplete  
+                        mediaObject:nil  
+                        data:nil]; 
+   }
+   ```
+
+1. Se a reprodução do capítulo não tiver sido concluída porque o usuário optou por ignorar o capítulo (por exemplo, se o usuário sair do limite do capítulo), chame o evento `ChapterSkip` na instância MediaHeartbeat:
+
+   ```
+   - (void)onChapterSkip:(NSNotification *)notification { 
+       [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterSkip  
+                        mediaObject:nil  
+                        data:nil]; 
+   }
+   ```
+
+1. Se houver capítulos adicionais, repita as etapas de 1 até 5.
+
