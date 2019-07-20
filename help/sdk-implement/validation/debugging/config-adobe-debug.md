@@ -1,0 +1,119 @@
+---
+seo-title: Configurar o Adobe Debug
+title: Configurar o Adobe Debug
+uuid: e 416458 d-f 23 c -41 ce -8 d 99-fa 5076 c 455 f 0
+translation-type: tm+mt
+source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+
+---
+
+
+# Configurar o Adobe Debug{#configure-adobe-debug}
+
+## Acessar o Adobe Debug {#section_AF81E7AD331E41FFA371AB9DA924BFBB}
+
+Para acessar o Adobe Debug:
+
+1. Go to [Experience Cloud](https://www.marketing.adobe.com) and create a new Adobe Experience Cloud user.
+
+   >[!TIP]
+   >
+   >Esse logon não é o mesmo nome de usuário/senha que você usa para fazer logon no Adobe Analytics.
+
+1. Quando tiver uma conta da Experience Cloud, entre em contato com o representante da Adobe para solicitar acesso ao Adobe Debug.
+1. After access has been granted, go to [https://debug.adobe.com](https://debug.adobe.com) and use your Experience Cloud credentials to log in.
+
+   ![](assets/adobe-debug-login.png)
+
+   Os navegadores compatíveis com esta ferramenta são:
+   * Google Chrome
+   * Mozilla Firefox
+   * Apple Safari
+   * Microsoft Internet Explorer versões 9 a 11
+
+Os navegadores recomendados são as versões mais recentes do Chrome e do Firefox.
+
+## Proxy de depuração {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
+
+Baixe e configure o Proxy de depuração:
+
+1. Baixe o aplicativo Proxy de depuração em [Downloads de aplicativos.](https://debug.adobe.com/#/downloads)
+
+   Os sistemas operacionais compatíveis são:
+   * OS X 10.7 de 64 bits ou superior
+   * Windows 7.1 de 64 bits ou superior
+   ![](assets/debug-proxy-app.png)
+
+1. O servidor proxy de depuração será executado na máquina local na porta 33284 e será definido como o proxy do sistema.
+
+   Talvez seja necessário ajustar as configurações do navegador de acordo com o sistema operacional e o navegador.
+
+## Baixe e instale o certificado SSL no desktop ou nos aplicativos {#section_2F9547E301CB413299A67BD59AFBEE0D}
+
+Um certificado SSL exclusivo será gerado na primeira vez que você executar o Adobe Debug. Se você oferecer suporte ao tráfego HTTPS através do desktop e/ou dos aplicativos, precisará baixar e instalar nosso certificado SSL.
+
+Baixe e instale o certificado SSL:
+
+1. After Adobe Debug has been installed and started, go to [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) and download the certification.
+1. Importe o certificado
+
+   **Mac OS**
+   1. Clique duas vezes no certificado da autoridade de certificação de raiz para abri-lo no Keychain Access.
+   1. O certificado da autoridade de certificação de raiz é exibido no logon.
+   1. Mova (arraste) o certificado da autoridade de certificação de raiz para o sistema.
+   1. Você deve copiar o certificado para o sistema para garantir sua confiança por todos os usuários e processos do sistema local.
+   1. Abra o certificado da autoridade de certificação de raiz, expanda Confiança, selecione Sempre confiar e salve as alterações.
+   **Windows**
+   1. Realize um dos seguintes procedimentos:
+
+      * [Adicionar certificados ao repositório de Autoridades de certificação de raiz confiáveis a um computador local](https://technet.microsoft.com/en-us/library/cc754841.aspx#BKMK_addlocal)
+<!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
+-->
+
+    1. Para o Firefox, conclua o procedimento em [Instalando certificado raiz no Mozilla Firefox.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+    
+    You might need to quit and reopen Firefox to see the change.
+    
+    ** Dispositivos iOS**
+    1. Defina o dispositivo iOS para usar a Depuração da Adobe como seu proxy HTTP clicando em** [! Aplicativo Configurações do UICONTROL]**** &gt;**** [! Configurações Wifi do UICONTROL]**.
+    
+    1. No Safari, vá para [Depuração.](https://proxy.debug.adobe.com/ssl)
+    
+    Safari will prompt you to install the SSL certificate.
+
+## Instale o Certificado SSL para o seu dispositivo móvel {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
+
+Se você não tiver as chamadas HTTPS no Adobe Debug, deverá instalar o Certificado SSL para o Adobe Debug no dispositivo móvel.
+
+### iOS
+
+Para instalar o certificado SSL em um dispositivo iOS:
+
+1. No laptop, ative o Proxy de depuração e vá para o [Adobe Debug.](https://debug.adobe.com)
+1. Conclua as seguintes etapas no seu dispositivo iOS:
+   1. Ligue o dispositivo no modo avião.
+   1. Selecione o mesmo sinal Wi-Fi usado pelo seu laptop.
+   1. No laptop, defina manualmente o IP e a porta mostrados no aplicativo do Proxy de depuração.
+   1. Abra uma janela do navegador Apple Safari.
+   1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
+   1. Baixe e instale o certificado SSL.
+
+1. No laptop, inicie a sessão do Adobe Debug.
+1. Inicie o teste no seu dispositivo iOS.
+
+### Android
+
+Para instalar o certificado SSL em um dispositivo Android:
+
+1. No laptop, ative o Proxy de depuração e vá para o [Adobe Debug.](https://debug.adobe.com)
+1. Conclua as seguintes etapas no seu dispositivo Android:
+   1. Defina o dispositivo como Modo avião.
+   1. Selecione o mesmo sinal Wi-Fi usado pelo seu laptop.
+   1. No laptop, defina manualmente o IP e a porta mostrados no aplicativo do Proxy de depuração.
+   1. Abra uma janela do navegador.
+   1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
+   1. Baixe e instale o certificado SSL.
+
+1. No laptop, inicie a sessão do Adobe Debug.
+1. Inicie o teste no seu dispositivo Android.
+
