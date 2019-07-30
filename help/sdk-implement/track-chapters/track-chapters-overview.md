@@ -3,7 +3,7 @@ seo-title: Visão geral
 title: Visão geral
 uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](../../sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 O rastreamento de capítulo e segmento está disponível para capítulos de mídia personalizados ou segmentos. Alguns usos comuns do rastreamento de capítulo são definidos para definir segmentos personalizados com base no conteúdo da mídia (como o beisebol) ou definir segmentos de conteúdo entre intervalos de anúncios. Chapter tracking is **not** required for core media tracking implementations.
 
