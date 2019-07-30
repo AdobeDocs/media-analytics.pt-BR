@@ -3,7 +3,7 @@ seo-title: Parâmetros de qualidade
 title: Parâmetros de qualidade
 uuid: 0 d 9 fa 764-edef -4178-8650-90 c 9 a 0852 a 57
 translation-type: tm+mt
-source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
+source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 ---
 
@@ -224,7 +224,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Automatically set </li> <li> **Chave da API:**<br/>N/A </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/> Media Close </li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor da amostra:**<br/> VERDADEIRO </li><li> **Descrição:**<br/>O número de fluxos nos quais ocorreram alterações na taxa de bits. Essa métrica é definida como 1 se pelo menos um evento de alteração de taxa de bits ocorrer durante a sessão de reprodução.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. media. qoe.<br/>error) </li> <li> **Heartbeat:**<br/> (s: evento:<br/>type = error) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>event </li> <li> **Nome do relatório:**<br/>Fluxos impactados por erros </li> <li> **Dados de contexto:**<br/> (a. media. qoe.<br/>error) </li> <li> **Feed de dados:**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. media. qoe.<br/>error) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Automatically set </li> <li> **Chave da API:**<br/>N/A </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/> Media Close </li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor da amostra:**<br/> VERDADEIRO </li><li> **Descrição:**<br/>O número de fluxos nos quais um evento de erro ocorreu, `trackError` foi chamado durante a sessão de reprodução e uma `type=error` chamada de pulsação foi gerada. </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. media. qoe.<br/>error) </li> <li> **Heartbeat:**<br/> (s: evento:<br/>type = error) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>event </li> <li> **Nome do relatório:**<br/>Fluxos impactados por erros </li> <li> **Dados de contexto:**<br/> (a. media. qoe.<br/>error) </li> <li> **Feed de dados:**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. media. qoe.<br/>error) </li> </ul> |
 
 
 
