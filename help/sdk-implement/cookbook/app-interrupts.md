@@ -3,7 +3,7 @@ seo-title: O manuseio de aplicativos é interrompido durante a reprodução
 title: O manuseio de aplicativos é interrompido durante a reprodução
 uuid: 1 ccb 4507-bda 6-462 d-bf 67-e 22978 a 4 db 3 d
 translation-type: tm+mt
-source-git-commit: 8c9592ee7ad97de2cf4aefb226ed1390bc5b53a8
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,5 +31,5 @@ A reprodução em um aplicativo de mídia pode ser interrompida de várias forma
 
 * _E sobre reiniciar a mesma sessão?_
 
-   Para obter instruções mais detalhadas sobre como reiniciar uma sessão de rastreamento, consulte esta página: [Retomar manualmente uma sessão fechada.](../../sdk-implement/cookbook/resuming-inactive.md) O SDK envia um ping de retomada para notificar o backend que o usuário está retomando manualmente a sessão.
+   Para obter instruções mais detalhadas sobre como reiniciar uma sessão de rastreamento, consulte esta página: [Retomar manualmente uma sessão fechada.](/help/sdk-implement/cookbook/resuming-inactive.md) O SDK envia um ping de retomada para notificar o backend que o usuário está retomando manualmente a sessão.
 
