@@ -3,7 +3,7 @@ seo-title: Rastrear anúncios no Chromecast
 title: Rastrear anúncios no Chromecast
 uuid: 7 b 1 f 584 a -3472-416 c -944 c -5 f 5 ea 0 ee 5ee 5ee
 translation-type: tm+mt
-source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando os sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](../../sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando os sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento do anúncio
 
@@ -74,4 +74,4 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete, getAdBreakInfo());
    ```
 
-Consulte o cenário de rastreamento [Reprodução de VOD com anúncios antes da exibição](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) para obter mais informações.
+Consulte o cenário de rastreamento [Reprodução de VOD com anúncios antes da exibição](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) para obter mais informações.
