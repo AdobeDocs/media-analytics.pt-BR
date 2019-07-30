@@ -3,7 +3,7 @@ seo-title: Rastrear o conteúdo baixado
 title: Rastrear o conteúdo baixado
 uuid: 0718689 d -9602-4 e 3 f -833 c -8297 aae 1 d 909
 translation-type: tm+mt
-source-git-commit: 501bbfe8b44a2a8e9b2ac2caab49b2317f9ea0f3
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -30,7 +30,7 @@ Cada abordagem tem suas vantagens e desvantagens: a API da coleção de mídia r
 
 ### Esquemas de evento
 
-A API de conteúdo baixado baseia-se na API de coleta de mídia, de modo que os dados do evento que seus lotes e enviados são enviados exigem que os mesmos esquemas de eventos sejam usados como na API de coleta de mídia. For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+A API de conteúdo baixado baseia-se na API de coleta de mídia, de modo que os dados do evento que seus lotes e enviados são enviados exigem que os mesmos esquemas de eventos sejam usados como na API de coleta de mídia. For information on these schemas, see: [Overview;](/help/media-collection-api/mc-api-overview.md) and [Validating event requests.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### Ordem dos eventos
 
