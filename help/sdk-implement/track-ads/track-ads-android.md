@@ -3,7 +3,7 @@ seo-title: Rastrear anúncios no Android
 title: Rastrear anúncios no Android
 uuid: 4 a 4249 fb-dc 39-4947-a 14 d-a 51 d 972 f 32 d 4
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando os sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](../../sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando os sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento do anúncio
 
@@ -78,7 +78,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 1. Como opção, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio das variáveis de dados de contexto.
 
-   * [Implementar Metadados de publicidade padrão no Android](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+   * [Implementar Metadados de publicidade padrão no Android](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do anúncio atual:
 
       ```java
@@ -125,4 +125,4 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
    }
    ```
 
-Consulte o cenário de rastreamento [Reprodução de VOD com anúncios antes da exibição](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) para obter mais informações.
+Consulte o cenário de rastreamento [Reprodução de VOD com anúncios antes da exibição](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) para obter mais informações.
