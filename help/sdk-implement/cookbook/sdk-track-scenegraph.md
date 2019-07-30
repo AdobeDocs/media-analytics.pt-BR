@@ -3,7 +3,7 @@ seo-title: Rastreamento no SceneGraph (Roku)
 title: Rastreamento no SceneGraph (Roku)
 uuid: fa 85 e 546-c 79 b -4 df 4-8 c 03-d 6593 fa 296 d 5
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -186,8 +186,8 @@ Tipo de retorno: `SceneGraphConstants`
 | Controle de versão | `version` | Constante para recuperar as informações de versão da AdobeMobileLibrary |
 | Privacidade/rejeição | `PRIVACY_STATUS_OPT_IN` | Constante para o status de privacidade aceito |
 |  | `PRIVACY_STATUS_OPT_OUT` | Constante para status de privacidade rejeitado |
-| Constantes do MediaHeartbeat | Consulte as constantes nesta página: <br/><br/>[Métodos de heartbeat de mídia.](../../sdk-implement/track-av-playback/track-core/track-core-roku.md) | Usar essas constantes com apis do mediaheartbeat |
-| Metadados padrão | Consulte as constantes nesta página: <br/><br/>[Parâmetros de metadados padrão.](../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Use essas constantes para anexar metadados de vídeo/anúncio padrão às APIs do MediaHeartbeat |
+| Constantes do MediaHeartbeat | Consulte as constantes nesta página: <br/><br/>[Métodos de heartbeat de mídia.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Usar essas constantes com apis do mediaheartbeat |
+| Metadados padrão | Consulte as constantes nesta página: <br/><br/>[Parâmetros de metadados padrão.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Use essas constantes para anexar metadados de vídeo/anúncio padrão às APIs do MediaHeartbeat |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. Para obter mais informações sobre esses métodos, consulte a tabela abaixo:
 
