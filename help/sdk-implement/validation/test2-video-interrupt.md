@@ -3,7 +3,7 @@ seo-title: Interrupção do vídeo Test 2
 title: Interrupção do vídeo Test 2
 uuid: eeccd 534-63 fd -4 dd 3-b 096-0431 bc 9 a 11 ff
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -23,7 +23,7 @@ Você deve concluir e registrar essas tarefas na seguinte ordem:
    1. Início do Media Analytics
    1. Início do heartbeat
    1. Início do Heartbeat Analytics
-   As primeiras duas chamadas acima contêm metadados e variáveis adicionais. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   As primeiras duas chamadas acima contêm metadados e variáveis adicionais. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Reproduzir o vídeo do conteúdo principal por, pelo menos, 5 minutos sem interrupções**
 
@@ -31,9 +31,9 @@ Você deve concluir e registrar essas tarefas na seguinte ordem:
 
    Durante a reprodução regular do conteúdo principal, as chamadas do Heartbeat são enviadas ao servidor Heartbeat a cada dez segundos.
 
-   For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
-   Also see your platform's [Track Ads](../../sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
+   Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
 
 1. **Mover o aplicativo ou o navegador para o segundo plano**
 
@@ -45,7 +45,7 @@ Você deve concluir e registrar essas tarefas na seguinte ordem:
 
 1. **Reproduzir o vídeo do conteúdo principal por, pelo menos, 5 minutos sem interrupções**
 
-   For call parameters and metadata, see [Test Call Details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test Call Details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Fechar o reprodutor de vídeo**
 
