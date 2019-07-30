@@ -3,7 +3,7 @@ seo-title: Rastreamento da reprodução principal no iOS
 title: Rastreamento da reprodução principal no iOS
 uuid: bdc 0 e 05 c -4 fe 5-430 e-aee 2-f 331 bc 59 ac 6 b
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Rastreamento da reprodução principal no iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](../../../sdk-implement/download-sdks.md).
+>Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
 
 1. **Configuração de rastreamento inicial**
 
@@ -62,11 +62,11 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Metadados de vídeo padrão**
 
-      * [Implementar metadados padrão no iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      * [Implementar metadados padrão no iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **Chaves de metadados de vídeo**
-         [Chaves de metadados de iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         [Chaves de metadados de iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-      * Consulte a lista completa de metadados de vídeo aqui: [Parâmetros de áudio e vídeo](../../../metrics-and-metadata/audio-video-parameters.md)
+      * Consulte a lista completa de metadados de vídeo aqui: [Parâmetros de áudio e vídeo](/help/metrics-and-metadata/audio-video-parameters.md)
       >[!NOTE]
       >
       >A anexação do objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
@@ -172,6 +172,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Consulte as informações adicionais sobre o rastreamento da reprodução principal:
 
-* Cenários de rastreamento: [Reprodução VOD sem anúncios](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Cenários de rastreamento: [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reprodutor de exemplo incluído com o SDK do iOS para um exemplo completo de rastreamento.
 
