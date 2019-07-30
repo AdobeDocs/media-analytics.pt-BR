@@ -3,7 +3,7 @@ seo-title: Comparação de código 1. x a 2. x
 title: Comparação de código 1. x a 2. x
 uuid: 9 f 0 a 1660-2100-446 d-ab 75-afdf 966478 b 3
 translation-type: tm+mt
-source-git-commit: ee073531814b446ba0ae4a86fc1011f063886561
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -840,4 +840,4 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-Para obter mais informações sobre o rastreamento de vídeo com 2.x, consulte [Rastrear reprodução de vídeo principal.](../../sdk-implement/track-av-playback/track-core-overview.md)
+Para obter mais informações sobre o rastreamento de vídeo com 2.x, consulte [Rastrear reprodução de vídeo principal.](/help/sdk-implement/track-av-playback/track-core-overview.md)
