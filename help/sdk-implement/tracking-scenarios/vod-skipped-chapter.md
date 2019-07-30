@@ -3,7 +3,7 @@ seo-title: Reprodução VOD com um capítulo ignorado
 title: Reprodução VOD com um capítulo ignorado
 uuid: 19 fb 020 c-eb 7 a -4942-9212-94 f 4 d 47195 b 9
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 Nesse cenário, o usuário pula um capítulo no conteúdo principal.
 
-Este cenário é igual à [reprodução de VOD com um capítulo](../../sdk-implement/tracking-scenarios/vod-one-chapter.md), exceto que, neste caso, o usuário pretende sair do capítulo, ignorando-o para ir para o conteúdo principal.
+Este cenário é igual à [reprodução de VOD com um capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), exceto que, neste caso, o usuário pretende sair do capítulo, ignorando-o para ir para o conteúdo principal.
 
 | Acionador | Método do Heartbeat | Chamadas de rede  | Notas |
 |---|---|---|---|
@@ -31,7 +31,7 @@ Este cenário é igual à [reprodução de VOD com um capítulo](../../sdk-imple
 
 ## Parâmetros {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-Os parâmetros usados durante a reprodução do capítulo são idênticos aos parâmetros do  [Reprodução VOD com um capítulo](../../sdk-implement/tracking-scenarios/vod-one-chapter.md), exceto que não há uma chamada de rede de capítulo concluído.
+Os parâmetros usados durante a reprodução do capítulo são idênticos aos parâmetros do  [Reprodução VOD com um capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), exceto que não há uma chamada de rede de capítulo concluído.
 
 ## Código de exemplo {#section_fyl_ncj_x2b}
 
