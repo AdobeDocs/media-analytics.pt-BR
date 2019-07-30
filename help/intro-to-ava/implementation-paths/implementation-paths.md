@@ -3,7 +3,7 @@ seo-title: Caminhos de implementação
 title: Caminhos de implementação
 uuid: 8400 c 938-e 77 e -4 c 88-b 23 b -5 f 5977 a 5316 c
 translation-type: tm+mt
-source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ Para cada um desses caminhos de implementação, os clientes precisam entrar em 
 
 * **Lado do cliente -** são integrações somente do Analytics. Você pode escolher o SDK do Video Heartbeat e/ou as integrações da API da coleção de mídia. Esse caminho pode ser usado em qualquer reprodutor de vídeo, incluindo reprodutores cliente e/ou OVP, como Brightcove, Ooyala, thePlatform, etc.
 
-   If Media Analytics is your intended path, see the [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and the [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+   If Media Analytics is your intended path, see the [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
    >[!IMPORTANT]
    >
@@ -34,6 +34,6 @@ Para cada um desses caminhos de implementação, os clientes precisam entrar em 
    * O modelo perfeito de inserção de anúncios do TVSDK permite realizar análises que avaliam diretamente a reprodução do anúncio, o que aumenta a precisão.
    * Conjunto robusto de eventos e metadados para garantir a precisão entre o buffer de QoS ou problemas de interrupções de conectividade móvel e as interações do usuário final, como buscar, pausar e colocar em segundo plano em dispositivos móveis.
    * Suporte integrado ao DTVR (linear) da Nielsen com metadados ID3 e DCR com metadados CMS.
-   O TVSDK já está integrado ao SDK de mídia analógica (Heartbeats), o que torna a implementação muito mais fácil e rápida em cada plataforma compatível. O Primetime também oferece suporte à parceria com a Nielsen. Para utilizar o Primetime, siga as mesmas diretrizes e pré-requisitos descritos em  [Lado do cliente](../../intro-to-ava/implementation-paths/client-side-path.md), juntamente com os seguintes documentos para a(s) plataforma(s): [Guia do usuário do Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
+   O TVSDK já está integrado ao SDK de mídia analógica (Heartbeats), o que torna a implementação muito mais fácil e rápida em cada plataforma compatível. O Primetime também oferece suporte à parceria com a Nielsen. Para utilizar o Primetime, siga as mesmas diretrizes e pré-requisitos descritos em  [Lado do cliente](/help/intro-to-ava/implementation-paths/client-side-path.md), juntamente com os seguintes documentos para a(s) plataforma(s): [Guia do usuário do Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
 
    Você também deve entrar em contato com o Representante de vendas/Gerente de conta para saber como adquirir o TVSDK.
