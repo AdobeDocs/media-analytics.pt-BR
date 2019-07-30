@@ -3,7 +3,7 @@ seo-title: Reprodução VOD com um capítulo
 title: Reprodução VOD com um capítulo
 uuid: 1566 a 6 f 5-cf 22-42 e 7-8 e 1 a -6976 c 6 c 4 e 649
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 Nesse cenário, uma parte do conteúdo VOD está marcada como um capítulo.
 
-A menos que seja especificado, as chamadas de rede desse cenário correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios. ](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) As chamadas de rede ocorrem simultaneamente, mas a carga é diferente.
+A menos que seja especificado, as chamadas de rede desse cenário correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios. ](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) As chamadas de rede ocorrem simultaneamente, mas a carga é diferente.
 
 | Acionador  | Método do Heartbeat   | Chamadas de rede   | Notas   |
 |---|---|---|---|
@@ -23,8 +23,8 @@ A menos que seja especificado, as chamadas de rede desse cenário correspondem �
 | O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, as pulsações só são iniciadas com o capítulo. |
 | O capítulo é reproduzido. |  | Capítulo de heartbeat |  |
 | O capítulo terminou. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Esta é a situação na qual o fim do capítulo é atingido. |
-| O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa que o final de uma sessão de visualização foi atingido. Essa API deve ser chamada mesmo se o usuário não assistir a mídia para concluir. |
 
 ## Parâmetros {#section_869319D99A474FEA8EA840415EA97FBD}
