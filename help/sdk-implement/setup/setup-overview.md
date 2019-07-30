@@ -3,7 +3,7 @@ seo-title: Visão geral da configuração
 title: Visão geral da configuração
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->As instruções a seguir se aplicam aos 2. x Media sdks. Se estiver implementando uma versão 1.x do SDK do Media, consulte a [Documentação do SDK do Media 1.x.](../download-sdks.md) Para integradores do Primetime, consulte _a Documentação_ do Primetime Media SDK abaixo.
+>As instruções a seguir se aplicam aos 2. x Media sdks. Se estiver implementando uma versão 1.x do SDK do Media, consulte a [Documentação do SDK do Media 1.x.](/help/sdk-implement/download-sdks.md) Para integradores do Primetime, consulte _a Documentação_ do Primetime Media SDK abaixo.
 
 
 ## Minimum Platform Version Support {#minimum-platform-version}
