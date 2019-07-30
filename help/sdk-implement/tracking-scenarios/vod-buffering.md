@@ -3,7 +3,7 @@ seo-title: Reprodução do VOD com buffering
 title: Reprodução do VOD com buffering
 uuid: 958 f 7692-7193-40 fb-a 8 e 7-2 ff 4 fa 805330
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 Nesse cenário, ocorre buffering quando o conteúdo VOD é reproduzido.
 
-A menos que seja especificado, as chamadas de rede desse cenário correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios.](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+A menos que seja especificado, as chamadas de rede desse cenário correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios.](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 
 | Acionador  | Método do Heartbeat   | Chamadas de rede   | Notas   |
 |---|---|---|---|
