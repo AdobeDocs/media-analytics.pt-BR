@@ -3,7 +3,7 @@ seo-title: Rastreamento da reprodução principal no Chromecast
 title: Rastreamento da reprodução principal no Chromecast
 uuid: a 9 fc 59 d 8-a 2 f 4-4889-bdec -55 c 42 a 835 d 06
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](../../../sdk-implement/download-sdks.md).
+>Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
 
 1. **Configuração de rastreamento inicial**
 
@@ -40,7 +40,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Metadados de vídeo padrão**
 
-      [Implementar metadados padrão no Chromecast](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      [Implementar metadados padrão no Chromecast](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
       >[!NOTE]
       >
@@ -130,6 +130,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    >
    >Pode ser a mesma fonte de evento usada na Etapa 4. Verifique se cada chamada `trackPause()` da API está emparelhada a uma chamada `trackPlay()` da API quando a reprodução continuar.
 
-* Cenários de rastreamento: [Reprodução VOD sem anúncios](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Cenários de rastreamento: [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reprodutor de exemplo incluído com o SDK do Chromecast para um exemplo completo de rastreamento.
 
