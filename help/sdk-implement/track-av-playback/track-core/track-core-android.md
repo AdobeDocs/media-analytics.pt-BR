@@ -3,7 +3,7 @@ seo-title: Rastreamento da reprodução principal no Android
 title: Rastreamento da reprodução principal no Android
 uuid: ab 5 fab 95-76 ed -4 ae 6-aedb -2 e 66 eece 7607
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Rastreamento da reprodução principal no Android{#track-core-playback-on-android}
 
 >[!IMPORTANT]
->Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores 1.x para Android aqui: [Baixar SDKs](../../../sdk-implement/download-sdks.md).
+>Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores 1.x para Android aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
 
 1. **Configuração de rastreamento inicial**
 
@@ -56,14 +56,14 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Metadados padrão**
 
-      [Implementar metadados padrão no Android](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+      [Implementar metadados padrão no Android](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
       >[!NOTE]
       >
       >A anexação do objeto de metadados padronizados ao objeto de mídia é opcional.
 
       * Referência da API de chaves de metadados da mídia - [Chaves de metadados padrão - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * Consulte o conjunto completo de metadados aqui: [Parâmetros de áudio e vídeo](../../../metrics-and-metadata/audio-video-parameters.md)
+      * Consulte o conjunto completo de metadados aqui: [Parâmetros de áudio e vídeo](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Metadados personalizados**
 
       Crie um dicionário para as variáveis personalizadas e preencha os dados para esta mídia. Por exemplo:
@@ -170,6 +170,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Consulte as informações adicionais sobre o rastreamento da reprodução principal:
 
-* Cenários de rastreamento: [Reprodução VOD sem anúncios](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Cenários de rastreamento: [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reprodutor de exemplo incluído com o SDK do Android para um exemplo completo de rastreamento.
 
