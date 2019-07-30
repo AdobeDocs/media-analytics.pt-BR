@@ -3,7 +3,7 @@ seo-title: Migração do Marco para o Media Analytics
 title: Migração do Marco para o Media Analytics
 uuid: fdc 96146-af 63-48 ce-b 938-c 0 ca 70729277
 translation-type: tm+mt
-source-git-commit: 27740fc1753e8ac9cf5a4b240a56b1c2dd567010
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 27740fc1753e8ac9cf5a4b240a56b1c2dd567010
 
 ## Visão geral {#section_ihl_nbz_cfb}
 
-Os principais conceitos de medição de vídeo são os mesmos para Marco e Media Analytics, que estão realizando eventos do reprodutor de vídeo e mapeando-os para os métodos de análise, além de capturar metadados e valores do reprodutor e mapeá-los para variáveis&#x200B;de análise. A solução do Media Analytics surgiu no Marco, portanto, muitos dos métodos e métricas são os mesmos. No entanto, a abordagem e o código de configuração mudaram significativamente. Deve ser possível atualizar o código de evento do reprodutor para apontar para os novos métodos do Media Analytics. See [SDK Overview](../../sdk-implement/setup/setup-overview.md) and [Tracking Overview](../../sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
+Os principais conceitos de medição de vídeo são os mesmos para Marco e Media Analytics, que estão realizando eventos do reprodutor de vídeo e mapeando-os para os métodos de análise, além de capturar metadados e valores do reprodutor e mapeá-los para variáveis&#x200B;de análise. A solução do Media Analytics surgiu no Marco, portanto, muitos dos métodos e métricas são os mesmos. No entanto, a abordagem e o código de configuração mudaram significativamente. Deve ser possível atualizar o código de evento do reprodutor para apontar para os novos métodos do Media Analytics. See [SDK Overview](/help/sdk-implement/setup/setup-overview.md) and [Tracking Overview](/help/sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
 
 As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Media Analytics.
 
