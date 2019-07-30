@@ -3,7 +3,7 @@ seo-title: Rastrear capítulos e segmentos no Chromecast
 title: Rastrear capítulos e segmentos no Chromecast
 uuid: 5 ea 562 b 9-0 e 07-4 fbb -9 a 3 b -213 d 746304 f 5
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](../../sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
