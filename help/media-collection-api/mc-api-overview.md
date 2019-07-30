@@ -3,7 +3,7 @@ seo-title: Visão geral
 title: Visão geral
 uuid: c 14 bdbef -5846-4 d 31-8 a 14-8 e 9 e 0 e 9 c 9861
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ A API da coleção de mídia é a alternativa RESTful da Adobe para o SDK do Med
 
    Esse recurso oferece a capacidade de rastrear mídia enquanto um usuário está offline por meio do armazenamento local de dados do evento até que o dispositivo do usuário retorne online. (Consulte [Rastrear o conteúdo baixado](track-downloaded-content.md) para obter detalhes.)
 
-A API da coleção de mídia é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK de mídia também são relevantes para a API de coleta de mídia. For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+A API da coleção de mídia é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK de mídia também são relevantes para a API de coleta de mídia. For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
 ## Fluxos de dados de rastreamento de mídia {#section_pwq_n34_qbb}
 
