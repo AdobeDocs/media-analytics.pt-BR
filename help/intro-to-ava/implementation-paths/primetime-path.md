@@ -3,7 +3,7 @@ seo-title: Primetime
 title: Primetime
 uuid: 3 d 5 a 5 ebd-b 897-40 f 6-ba 75-bba 1 bae 3 a 081
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -22,7 +22,7 @@ O Primetime elimina a complexidade de alcançar, monetizar e ativar públicos-al
 * Conjunto robusto de eventos e metadados para garantir a precisão entre o buffer de QoS ou problemas de interrupções de conectividade móvel e as interações do usuário final, como buscar, pausar e colocar em segundo plano em dispositivos móveis.
 * Suporte integrado ao DTVR (linear) da Nielsen com metadados ID3 e DCR com metadados CMS.
 
-O TVSDK já está integrado ao SDK do Media, o que torna a implementação muito mais fácil e rápida em todas as plataformas compatíveis. O Primetime também oferece suporte à parceria com a Nielsen. Para utilizar o Primetime, siga as mesmas diretrizes e pré-requisitos descritos em  [Lado do cliente](../../intro-to-ava/implementation-paths/client-side-path.md), juntamente com os seguintes documentos para a(s) plataforma(s): [Guia do usuário do Primetime](https://helpx.adobe.com/primetime/user-guide.html)
+O TVSDK já está integrado ao SDK do Media, o que torna a implementação muito mais fácil e rápida em todas as plataformas compatíveis. O Primetime também oferece suporte à parceria com a Nielsen. Para utilizar o Primetime, siga as mesmas diretrizes e pré-requisitos descritos em  [Lado do cliente](/help/intro-to-ava/implementation-paths/client-side-path.md), juntamente com os seguintes documentos para a(s) plataforma(s): [Guia do usuário do Primetime](https://helpx.adobe.com/primetime/user-guide.html)
 
 >[!NOTE]
 >
