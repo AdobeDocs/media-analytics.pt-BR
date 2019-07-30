@@ -3,7 +3,7 @@ seo-title: Rastrear buffering no Roku
 title: Rastrear buffering no Roku
 uuid: 6666 b 270-9 aa 3-42 ff -95 a 8-f 12502022 d 47
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](../../../sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento de buffer
 
@@ -39,4 +39,4 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    ADBMobile().mediaTrackEvent(MEDIA_BUFFER_COMPLETE, bufferInfo, bufferContextData)
    ```
 
-Consulte o cenário de rastreamento [Reprodução de VOD com buffering](../../../sdk-implement/tracking-scenarios/vod-buffering.md) para obter mais informações.
+Consulte o cenário de rastreamento [Reprodução de VOD com buffering](/help/sdk-implement/tracking-scenarios/vod-buffering.md) para obter mais informações.
