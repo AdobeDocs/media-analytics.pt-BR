@@ -3,7 +3,7 @@ seo-title: Pré-requisitos
 title: Pré-requisitos
 uuid: 4 c 0 b 37 f 3-8615-4 cc 0-b 9 c 9-mov 029067064
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -48,5 +48,5 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
 
 1. **Ativar relatórios do Adobe Analytics.**
 
-   Para permitir relatórios no Analytics e ver os dados de conteúdo e anúncios coletados, consulte [Ativação de relatórios de mídia.](../media-reports/media-reports-enable.md)
+   Para permitir relatórios no Analytics e ver os dados de conteúdo e anúncios coletados, consulte [Ativação de relatórios de mídia.](/help/media-reports/media-reports-enable.md)
 
