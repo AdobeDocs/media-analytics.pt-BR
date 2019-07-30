@@ -3,7 +3,7 @@ seo-title: Visão geral de rastreamento
 title: Visão geral de rastreamento
 uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](../../sdk-implement/download-sdks.md)
+>Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Eventos de player
 
@@ -59,7 +59,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
 >[!TIP]
 >
->A posição do indicador de reprodução é definida como parte do código de configuração e configuração. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](../../sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>A posição do indicador de reprodução é definida como parte do código de configuração e configuração. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Implementação {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -105,7 +105,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
       Exemplifique um objeto de metadados padrão, preencha as variáveis desejadas e defina o objeto de metadados no objeto de Heartbeat de mídia.
 
-      Consulte a lista completa de metadados aqui: [Parâmetros de áudio e vídeo.](../../metrics-and-metadata/audio-video-parameters.md)
+      Consulte a lista completa de metadados aqui: [Parâmetros de áudio e vídeo.](/help/metrics-and-metadata/audio-video-parameters.md)
 
    * **Metadados personalizados -** Crie um objeto variável para as variáveis personalizadas e preencha com os dados deste conteúdo.
 
