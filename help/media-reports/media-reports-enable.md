@@ -3,7 +3,7 @@ seo-title: Ativação de relatórios de mídia
 title: Ativação de relatórios de mídia
 uuid: d 306068 d-a 308-4 b 6 e -8 a 72-742 dda 0 de 428
 translation-type: tm+mt
-source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -65,4 +65,4 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
 
 >[!IMPORTANT]
 >
->Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](../metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". As classificações de mídia são definidas quando um conjunto de relatórios é habilitado para rastreamento de mídia. De vez em quando, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reativar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são ativadas verificando os nomes das variáveis. Se algum deles estiver ausente, a Adobe adicionará as ausentes novamente.
+>Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". As classificações de mídia são definidas quando um conjunto de relatórios é habilitado para rastreamento de mídia. De vez em quando, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reativar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são ativadas verificando os nomes das variáveis. Se algum deles estiver ausente, a Adobe adicionará as ausentes novamente.
