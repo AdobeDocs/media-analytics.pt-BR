@@ -3,7 +3,7 @@ product: Media Analytics
 audience: usuário final
 user-guide-title: Adobe Analytics para áudio e vídeo
 translation-type: tm+mt
-source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [Migração do Marco para Link personalizado](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Link personalizado no Analytics {#cl-in-aa}
       + [Guia de implementação do link personalizado](measurement-options/cl-in-aa/cl-impl-guide.md)
-+ Introduction to Audio and Video Analytics {#intro-to-ava}
++ Introdução à análise de áudio e vídeo {#intro-to-ava}
    + [Pré-requisitos](intro-to-ava/prereqs.md)
    + Caminhos de implementação {#implementation-paths}
       + [Visão geral](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -26,7 +26,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [Lançamento da Adobe Experience Platform](intro-to-ava/implementation-paths/launch-path.md)
       + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
    + [Ativação do Audience Manager](intro-to-ava/am-enablement.md)
-+ Media Analytics SDK {#sdk-implement}
++ SDK do Media Analytics {#sdk-implement}
    + [Baixar SDKs](sdk-implement/download-sdks.md)
    + Definir e configurar {#setup}
       + [Visão geral](sdk-implement/setup/setup-overview.md)
@@ -113,7 +113,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
    + Validação {#validation}
       + [Visão geral de validação](sdk-implement/validation/validation-overview.md)
       + [Teste 1: reprodução padrão](sdk-implement/validation/test1-standard-playback.md)
-      + [Teste 2: interrupção do vídeo](sdk-implement/validation/test2-video-interrupt.md)
+      + [Teste 2: Interrupção de mídia](sdk-implement/validation/test2-media-interrupt.md)
       + [Detalhes da chamada de teste](sdk-implement/validation/test-call-details.md)
       + [Descrições do parâmetro de pulsação](sdk-implement/validation/heartbeat-params.md)
       + Depuração {#debugging}
@@ -136,7 +136,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [Visão geral da migração](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [Comparação de código do : 1.x para 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [Conversão da API do de 1.x para 2.x](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ Media Collection API (RESTful) {#media-collection-api}
++ API de coleta de mídia (resttly) {#media-collection-api}
    + [Visão geral](media-collection-api/mc-api-overview.md)
    + Referência da API {#mc-api-ref}
       + [Solicitação de sessões](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
