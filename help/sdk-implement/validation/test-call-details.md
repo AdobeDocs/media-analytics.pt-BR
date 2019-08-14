@@ -3,7 +3,7 @@ seo-title: Detalhes da chamada de teste
 title: Detalhes da chamada de teste
 uuid: d 3 a 0 e 62 f -2 fc 3-413 d-ac 56-adbbc 9 b 3 e 983
 translation-type: tm+mt
-source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
@@ -57,15 +57,15 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:name` | Título do episódio |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Título do episódio |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | main |
 | `s:meta:custom.[value]` | Campos de metadados personalizados |
 | `s:meta:a.media.[value]` | Campos de metadados padrão |
 
-### Metadados de vídeo na chamada de início do Media Analytics
+### Metadados de mídia na chamada de início do Media Analytics
 
 | Parâmetro | Valor (exemplo)  |
 |---|---|
@@ -84,13 +84,13 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | aa_start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:name` | Título do episódio |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Título do episódio |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | main |
 
-### Metadados de vídeo na chamada de início do Heartbeat
+### Metadados de mídia na chamada de início do Heartbeat
 
 | Parâmetro | Valor (exemplo)  |
 |---|---|
@@ -150,14 +150,14 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 | `s:meta:custom.[value]` | Campos de metadados personalizados |
 | `s:meta:a.media.[value]` | Campos de metadados padrão |
 
-### Metadados de vídeo na chamada de início de anúncio do Media Analytics
+### Metadados de mídia na chamada de início de anúncio do Media Analytics
 
 | Parâmetro | Valor (exemplo)  |
 |---|---|
@@ -195,12 +195,12 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | aa_ad_start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Metadados de vídeo na chamada de início do anúncio do Heartbeat
+### Metadados de mídia na chamada de início do anúncio Heartbeat
 
 | Parâmetro | Valor (exemplo)  |
 |---|---|
@@ -238,9 +238,9 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | concluído |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
 ### Chamada Heartbeat Ad Play
@@ -250,9 +250,9 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | play |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
 ## Reproduzir conteúdo principal {#section_u1l_1gf_f2b}
@@ -264,10 +264,10 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | play |
 | `l:event:playhead` | 29 |
 | `l:event:duration` | 10189 |
-| `l:asset:name` | Título do episódio |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Título do episódio |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | main |
 
 **Notas:**
