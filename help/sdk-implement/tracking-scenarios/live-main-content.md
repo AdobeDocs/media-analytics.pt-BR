@@ -3,7 +3,7 @@ seo-title: Conteúdo principal disponível
 title: Conteúdo principal disponível
 uuid: e 92 e 99 f 4-c 395-48 aa -8 a 30-cbdd 2 f 5 fc 07 c
 translation-type: tm+mt
-source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -40,7 +40,7 @@ Diversos valores observados nas Chamadas do Adobe Analytics Content Start estar�
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-Durante a reprodução da mídia, há um temporizador que envia uma ou mais pulsações a cada 10 segundos. Esses heartbeats contêm informações sobre reprodução, anúncios, buffers e outros itens. O conteúdo exato de cada heartbeat está além do escopo deste documento. É importante validar o acionamento das pulsações de modo consistente durante a reprodução.
+Durante a reprodução da mídia, há um temporizador que envia uma ou mais pulsações (ou pings) a cada 10 segundos para o conteúdo principal e a cada segundo para anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffers e outros itens. O conteúdo exato de cada heartbeat está além do escopo deste documento. É importante validar o acionamento das pulsações de modo consistente durante a reprodução.
 
 Em heartbeats de conteúdo, procure por itens específicos:
 
@@ -59,13 +59,13 @@ Para fluxos ao vivo, é necessário definir o indicador de reprodução para um 
 
 ### No início
 
-For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the current offset, in seconds. Isso é oposto ao VOD, onde você define o indicador de reprodução como "0".
+Para a mídia LIVE, quando um usuário começa a reproduzir o fluxo, é necessário definir `l:event:playhead` para o deslocamento atual, em segundos. Isso é oposto ao VOD, onde você define o indicador de reprodução como "0".
 
-For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). Em seguida, digamos que um usuário comece a reproduzir esse transmissão ao vivo às 12:00 horas. In this scenario, you should set `l:event:playhead` to 43200 (12 hours into the stream).
+Por exemplo, digamos que um evento de streaming ao vivo começa à meia-noite e execute por 24 horas (`a.media.length=86400`;; `l:asset:length=86400`). Em seguida, digamos que um usuário comece a reproduzir esse transmissão ao vivo às 12:00 horas. Nesse cenário, você deve definir `l:event:playhead` como 43200 (12 horas no fluxo).
 
 ### Pausar
 
-A mesma lógica de "indicador de reprodução ao vivo" aplicada no início da reprodução deve ser aplicada quando um usuário pausar a reprodução. When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
+A mesma lógica de "indicador de reprodução ao vivo" aplicada no início da reprodução deve ser aplicada quando um usuário pausar a reprodução. Quando o usuário retorna para reproduzir o fluxo ao vivo, é necessário definir o `l:event:playhead` valor para a nova posição do indicador de reprodução deslocamento, _não_ para o ponto em que o usuário pausou o stream ao vivo.
 
 ## Código de exemplo {#section_vct_j2j_x2b}
 
