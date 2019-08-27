@@ -3,7 +3,7 @@ seo-title: Conteúdo principal disponível com monitoramento sequencial
 title: Conteúdo principal disponível com monitoramento sequencial
 uuid: b 03477 b 6-9 be 8-4 b 67-a 5 a 0-4 cef 3 cf 262 ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -53,7 +53,7 @@ Isso deve ser quase idêntico à chamada de Heartbeat Content Start, mas com uma
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-Durante a reprodução da mídia, há um temporizador que envia uma ou mais pulsações a cada 10 segundos. Esses heartbeats contêm informações sobre reprodução, anúncios, buffers e outros itens. O conteúdo exato de cada heartbeat está além do escopo deste documento. É importante validar o acionamento das pulsações de modo consistente durante a reprodução.
+Durante a reprodução da mídia, há um temporizador que envia uma ou mais pulsações a cada 10 segundos para o conteúdo principal e a cada segundo para anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffers e outros itens. O conteúdo exato de cada heartbeat está além do escopo deste documento. É importante validar o acionamento das pulsações de modo consistente durante a reprodução.
 
 Em heartbeats de conteúdo, procure por itens específicos:
 
