@@ -3,7 +3,7 @@ seo-title: Criar um novo relatório de depuração
 title: Criar um novo relatório de depuração
 uuid: 438 fde 3 d -98 f 9-46 d 1-95 72-75 d 204361568
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
@@ -29,7 +29,7 @@ Para criar um novo relatório de depuração:
          * [!UICONTROL Analytics &gt; Administrador &gt; Gerenciamento de usuários &gt; Usuários &gt; Configurações de usuário individual] Para criar uma credencial da API de serviços da Web para um novo usuário, no [!UICONTROL Gerenciamento de usuários], adicione o usuário ao grupo de usuários de **Acesso ao serviço da Web**.
       * [!UICONTROL Endpoint padrão] - os dados nesse campo são fornecidos pela Adobe e não podem ser alterados.
       * [!UICONTROL Endpoint extra] - Adicionar `CNAMES`, se você os usar, para o servidor de rastreamento como `metrics.companyname.com`
-   * **Media Heartbeats**
+   * **Video Heartbeats (Media Analytics)**
 
       * [!UICONTROL Endpoint padrão] - os dados nesse campo são fornecidos pela Adobe e não podem ser alterados.
       * [!UICONTROL Endpoint extra] - Adicionar `CNAMES`, se você os usar, para o servidor de rastreamento, por exemplo `metrics.companyname.com`,
