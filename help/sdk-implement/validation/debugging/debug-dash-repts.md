@@ -3,7 +3,7 @@ seo-title: Painéis e relatórios de depuração
 title: Painéis e relatórios de depuração
 uuid: 8 e 6 f 6245-d 8 bd -4329-89 e 1-4 c 5595 e 04 ec 5
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
@@ -14,7 +14,7 @@ O Adobe Debug fornece relatórios, em tempo real, para que você possa visualiza
 
 Para a certificação, esses relatórios podem ser compartilhados; basta copiar o URL e enviar o link, por exemplo, dentro de um tíquete ZenDesk.
 
->[!TIP]
+>[!NOTE]
 >
 >Somente uma sessão pode estar ativa por vez. A sessão ativa pode ser aberta do Painel.
 
