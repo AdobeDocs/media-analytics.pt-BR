@@ -3,7 +3,7 @@ seo-title: Visão geral
 title: Visão geral
 uuid: 1607798 b-c 6 ef -4 d 60-8 e 40-e 958 c 345 b 09 c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >As instruções a seguir fornecem orientação para a implementação usando os sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciados, anúncios concluídos e anúncios ignorados. Use a API do player de mídia para identificar os eventos de player-chave e preencher as variáveis de anúncio obrigatórias e opcionais. See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
+A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciados, anúncios concluídos e anúncios ignorados. Use a API do player de mídia para identificar os eventos de player-chave e preencher as variáveis de anúncio obrigatórias e opcionais. Veja a lista abrangente de metadados aqui: [Parâmetros do anúncio.](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## Eventos do player {#player-events}
 
 
 ### Ao iniciar o intervalo de anúncios
@@ -46,7 +46,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 * Chame `trackEvent` para concluir o ad break.
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Implementar o rastreamento de anúncios {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### Constantes de rastreamento do anúncio
 
@@ -100,7 +100,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 >[!IMPORTANT]
 >
->Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). Se você fizer isso, as métricas Tempo gasto no conteúdo serão afetadas negativamente.
+>Certifique-se de não incrementar o indicador de reprodução do player de conteúdo (`l:event:playhead`) durante a reprodução do anúncio (`s:asset:type=ad`). Se você fizer isso, as métricas Tempo gasto no conteúdo serão afetadas negativamente.
 
 O código de exemplo a seguir usa o SDK 2. x do javascript para um player de mídia HTML 5.
 
@@ -139,32 +139,4 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
-## Validar {#section_5F1783F5FE2644F1B94B0101F73D57EB}
-
-### Início do anúncio
-
-Ao iniciar a reprodução de um anúncio, quatro chamadas principais são enviadas na seguinte ordem:
-
-1. Início da análise de anúncio de vídeo
-1. Início do anúncio de heartbeat
-1. Início do Heartbeat Analytics
-
-As chamadas 1 e 2 contêm variáveis de metadados adicionais para metadados personalizados e padrão.
-
-### Reprodução do anúncio
-
-Durante a reprodução do anúncio, as chamadas de reprodução de anúncio do Heartbeat são enviadas ao servidor do Heartbeat a cada segundo.
-
-### Anúncio completo
-
-No ponto de 100% de um anúncio, uma chamada de heartbeat de anúncio concluído será enviada.
-
-### Anúncio ignorado
-
-Quando um anúncio é ignorado, nenhum evento é enviado, portanto, as chamadas de rastreamento não incluirão as informações de anúncio.
-
->[!TIP]
->
->Nenhuma chamada exclusiva é enviada na pausa do anúncio e a pausa do anúncio é concluída.
 
