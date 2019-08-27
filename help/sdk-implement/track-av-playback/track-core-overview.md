@@ -3,12 +3,12 @@ seo-title: Visão geral de rastreamento
 title: Visão geral de rastreamento
 uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# Visão geral de rastreamento{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
 * Crie o objeto de mídia
 * Preencher metadados
-* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
+* Chamada `trackSessionStart`; Por exemplo: `trackSessionStart(mediaObject, contextData)`
 
 ### No início da mídia
 
@@ -59,7 +59,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
 >[!TIP]
 >
->A posição do indicador de reprodução é definida como parte do código de configuração e configuração. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>A posição do indicador de reprodução é definida como parte do código de configuração e configuração. Para obter mais informações sobre `getCurrentPlayheadTime`, consulte [Visão geral: Diretrizes gerais de implementação.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Implementação {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -234,32 +234,5 @@ if (e.type == “buffered”) {
 
 ## Validar {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-### Início do conteúdo
+Para obter informações sobre como validar sua implementação, consulte [Validação.](/help/sdk-implement/validation/validation-overview.md)
 
-Quando o reprodutor de mídia for iniciado, as chamadas principais serão enviadas na seguinte ordem:
-
-1. Início do Media Analytics
-1. Início do heartbeat
-1. Início do Heartbeat Analytics
-
-As chamadas 1 e 2 contêm variáveis de metadados adicionais para metadados personalizados e padrão.
-
-### Reprodução de conteúdo
-
-Durante a reprodução regular do conteúdo principal, as chamadas do Heartbeat são enviadas ao servidor Heartbeat a cada dez segundos.
-
-### Conteúdo concluído
-
-No ponto de 100%, em um conteúdo ou em um limite de exibição em um fluxo linear, uma chamada completa do Heartbeat será enviada.
-
-### Pausa do conteúdo
-
-Quando o reprodutor é pausado, as chamadas de evento de pausa do reprodutor serão enviadas a cada 10 segundos.  Quando a pausa termina, os eventos de reprodução são retomados.
-
-### Movimentação/busca de conteúdo
-
-Ao depurar o indicador de reprodução, nenhuma chamada de rastreamento especial será enviada. No entanto, quando a reprodução é retomada após a movimentação, o valor do indicador de reprodução deverá refletir a nova posição no conteúdo principal.
-
-### Buffer de conteúdo
-
-Quando o reprodutor de mídia está em buffer, as chamadas de evento do buffer do reprodutor são enviadas a cada 10 segundos. Quando o buffer terminar, os eventos de reprodução serão retomados.
