@@ -3,7 +3,7 @@ seo-title: Visão geral
 title: Visão geral
 uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -34,7 +34,7 @@ O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítu
 
 * Chama `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implement chapter tracking {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## Implementar o rastreamento de capítulo {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
@@ -85,18 +85,3 @@ if (e.type == "chapter skip") {
 }; 
 ```
 
-## Validar {#section_07EC2811BE3249249494596BFE9BF869}
-
-### Início do capítulo
-
-Ao iniciar uma reprodução de capítulo individual, uma chamada de chave é enviada:
-
-* Início do capítulo do Heartbeat (esta chamada contém variáveis adicionais de metadados de capítulo.)
-
-### Capítulo concluído
-
-No limite final de um capítulo, uma chamada de heartbeat de capítulo concluído será enviada.
-
-### Capítulo ignorado
-
-Quando um capítulo é ignorado, uma chamada de capítulo ignorado do Heartbeat é enviada.
