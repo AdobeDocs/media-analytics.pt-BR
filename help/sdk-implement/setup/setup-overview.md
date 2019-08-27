@@ -3,7 +3,7 @@ seo-title: Visão geral da configuração
 title: Visão geral da configuração
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -121,15 +121,13 @@ Conclua as seguintes etapas de implementação:
 
 ## Validar {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-As implementações de mídia são compostas por dois tipos de chamadas de rastreamento:
+As implementações de rastreamento do Media Analytics geram dois tipos de chamadas de rastreamento:
 
-* Chamadas de Início de mídia e anúncio são enviadas diretamente para o servidor AppMeasurement.
-* As chamadas do Heartbeat são enviadas para o servidor de rastreamento do Heartbeat no início, a cada dez segundos para o conteúdo e a cada segundo para os anúncios.
+* As chamadas de início de mídia e anúncio são enviadas diretamente para o servidor Adobe Analytics (appmeasurement).
+* Chamadas heartbeat são enviadas para o servidor de rastreamento do Media Analytics (heartbeats), processado lá e passado para o servidor do Adobe Analytics.
 
-O rastreamento de mídia funciona da mesma forma em todas as plataformas, desktops e dispositivos móveis. O rastreamento automático funciona atualmente em plataformas móveis. Para todas as chamadas de rastreamento, há algumas variáveis universais principais que precisam ser validadas:
-
-* **AppMeasurement (Analytics)**
-Para obter mais informações sobre como rastrear as opções do servidor, consulte [Preencher corretamente as variáveis trackingServer e trackingServerSecure.](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html)
+* **Servidor
+do Adobe Analytics (appmeasurement)** Para obter mais informações sobre as opções de servidor de rastreamento, consulte [Preencher corretamente as variáveis trackingserver e trackingserversecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
@@ -137,8 +135,10 @@ Para obter mais informações sobre como rastrear as opções do servidor, consu
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics (Heartbeats)**
+* ** Servidor do Media Analytics (Heartbeats)**
 Isso sempre tem o formato "`[your_namespace].hb.omtrdc.net`. O valor de "`[your_namespace]`especifica sua empresa e é fornecido pela Adobe.
+
+O rastreamento de mídia funciona da mesma forma em todas as plataformas, desktops e dispositivos móveis. O rastreamento de áudio funciona atualmente em plataformas móveis. Para todas as chamadas de rastreamento, há algumas variáveis universais principais que precisam ser validadas:
 
 ## Documentação do SDK 1. x {#section_acj_tkk_t2b}
 
