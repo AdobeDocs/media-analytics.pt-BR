@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a 82 ace 81-c 2 f 6-4799-9 a 62-4 c 6 a 737 a 7 dab
 translation-type: tm+mt
-source-git-commit: e95fc2867ecdb874998e259cf10d33c724f4e15b
+source-git-commit: 5e067a664a97292902c847af5e913584a2b62fc8
 
 ---
 
@@ -41,7 +41,10 @@ O serviço Federated Analytics fornece um sistema para o compartilhamento de dad
 
 1. O Remetente e o Destinatário trabalham juntos para preencher o formulário do Contrato de regras de federação.
 
-   **Baixe a versão atual do formulário aqui = = &gt;:**[Contrato de regras da federação](/help/federated_analytics_form.pdf)
+   **Baixe a versão atual do formulário aqui:**
+
+   [Contrato de regras da federação](federated_analytics_form.pdf)
+
 
    >[!NOTE]
    >
