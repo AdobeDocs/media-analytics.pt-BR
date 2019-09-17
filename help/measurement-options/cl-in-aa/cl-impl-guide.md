@@ -1,29 +1,29 @@
 ---
 seo-title: Guia de implementação do Link personalizado
 title: Guia de implementação do Link personalizado
-uuid: 83315 e 73-20 ca -4 db 5-9 d 43-33 daade 45 a 13
+uuid: 83315e73-20ca-4db5-9d43-33dade45a13
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: fe245e766ab8ee48a8e8aaf247cfd552fed816e9
 
 ---
 
 
 # Guia de implementação do Link personalizado{#custom-link-implementation-guide}
 
-O Rastreamento de vídeo personalizado usa o [rastreamento de link manual com o código de link personalizado](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) no `appMeasurement` do Analytics. Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
+Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
 
-* In JavaScript: `s.tl()` function
+* Em JavaScript: a `s.tl()` função
 * Nos aplicativos móveis: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
-**Requisitos:**
+## Requisitos
 
 * Acesso a evento e dados da API do reprodutor de vídeo
 * Capacidade de adicionar scripts se estiver usando o SDK do Analytics
 * Capacidade de adicionar beacons de rastreamento (scripting ou hardcode personalizado) se estiver usando a API de inserção de dados
 
-**Metadados:**
+## Metadados
 
 * Os metadados podem ser adicionados a qualquer chamada de rastreamento como parte dos dados de link
 * Remember to update the `linkTrackVars` and `linkTrackEvents`
@@ -44,7 +44,7 @@ if (e.type == "ended") {
 };
 ```
 
-**Por que usar um link personalizado:**
+## Por que usar um link personalizado
 
 * Pré-requisitos mínimos são necessários
 * Funciona em qualquer plataforma, incluindo sem script
@@ -53,7 +53,7 @@ if (e.type == "ended") {
 * Controle total sobre todos os aspectos dos dados de vídeo
 * Remover link para o reprodutor de amostra
 
-**Exemplo de JavaScript para reprodutor HTML5**
+## Exemplo de JavaScript para reprodutor HTML5
 
 ```javascript
 <script type="text/javascript"> 
