@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: d3501c6290f9c932a3dcd0bab8ec2cda3554576c
+source-git-commit: a80097ac92c422bcf9c04a18ee91a20d3d383af4
 
 ---
 
@@ -39,7 +39,9 @@ O serviço Federated Analytics fornece um sistema para o compartilhamento de dad
 
 ## Processo {#section_byb_kb3_vbb}
 
-1. O Remetente e o Destinatário trabalham juntos para preencher o formulário do Contrato de regras de federação. **** Baixe a versão atual do formulário aqui: Formulário de Contrato de Regras de [Federação.](/assets/federated_analytics_form.pdf) (Este formulário contém campos especiais para nossa equipe de engenharia e deve ser editado SOMENTE usando o Adobe Acrobat.) [Baixe o Acrobat gratuitamente.](https://get.adobe.com/reader/)
+1. O Remetente e o Destinatário trabalham juntos para preencher o formulário do Contrato de regras de federação. **** Baixe a versão atual do formulário aqui: Formulário de Contrato de Regras de [Federação.](/assets/federated_analytics_form.pdf)
+
+   [!NOTA Este formulário contém campos especiais para nossa equipe de engenharia e deve ser editado SOMENTE usando o Adobe Acrobat. [Baixe o Acrobat gratuitamente.](https://get.adobe.com/reader/)
 1. Os serviços de consultoria fornecem um exemplo de arquivo de dados para o Destinatário contendo dados reais dos reprodutores do Remetente para voltar a confirmar que as regras corretas de compartilhamento de dados estão definidas, desde que os arquivos de dados estejam disponíveis.
 1. O Remetente e o Destinatário garantem que o contrato de compartilhamento de dados atende a todos os requisitos contratuais entre as duas partes.
 1. Os serviços de consultoria enviam o formulário preenchido à engenharia da Adobe para configurar as regras de compartilhamento de dados.
