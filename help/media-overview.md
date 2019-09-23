@@ -1,9 +1,9 @@
 ---
 seo-title: Avaliação de áudio e vídeo no Adobe Analytics
 title: Avaliação de áudio e vídeo no Adobe Analytics
-uuid: b 3 cbe 240-b 94 d -42 b 8-a 99 c -0280334 aaa 14
+uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 1915261ec21679f510350663a472096abe7fdf63
+source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 1915261ec21679f510350663a472096abe7fdf63
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. Ele não inclui instruções sobre a implementação de vídeo Milestone herdada. Incentivamos todos os clientes a adotarem uma ou as duas soluções de rastreamento de mídia mais recentes, a fim de aproveitarem as melhorias e a medição expandida. Você pode visualizar os [benefícios da transição para as soluções mais recentes](media-overview.md#section_cnj_5st_p1b) abaixo. Embora continuemos a oferecer suporte ao método Milestone de rastreamento de vídeos, não haverá nenhuma atualização planejada, correções ou aprimoramentos de recursos. Caso tenha alguma dúvida, entre em contato com seu Gerente de conta da Adobe.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. Incentivamos todos os clientes a adotarem uma ou as duas soluções de rastreamento de mídia mais recentes, a fim de aproveitarem as melhorias e a medição expandida. Você pode visualizar os [benefícios da transição para as soluções mais recentes](media-overview.md#section_cnj_5st_p1b) abaixo. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Caso tenha alguma dúvida, entre em contato com seu Gerente de conta da Adobe.
 
 ## Visão geral {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -39,14 +39,14 @@ Alguns dos muitos benefícios que as soluções de avaliação de mídia da Adob
 
 * **Análise pontual -** Tome decisões práticas e em tempo real utilizando as principais métricas de desempenho (por exemplo, duração) em vários canais. Os eventos de conteúdo principal são medidos em intervalos de **10 segundos** para capturar todas as atividades que ocorrem. Os eventos de rastreamento de anúncios ocorrem em intervalos de **1 segundo**.
 * **Impulsionar o envolvimento** - Envolva totalmente os usuários com menos eventos de buffering, compreendendo onde e quando os anúncios devem ser exibidos no conteúdo para fornecer uma experiência contínua e menos intrusiva, que traga os usuários de volta e gere visitas repetidas.
-* **Imagem holística -** combine vários pontos de dados em todos os distribuidores de conteúdo para obter uma visualização completa de todas as suas atividades de mídia e medir o envolvimento e as visualizações em todos os canais possíveis por meio do [recurso Federated Analytics](federated-analytics.md) .
+* **Imagem holística -** Combine vários pontos de dados em todos os distribuidores de conteúdo para obter uma visão completa de toda a sua atividade de mídia e medir o envolvimento e as visualizações/escutas em todos os canais possíveis por meio do recurso [Federated Analytics](data-sharing/federated-analytics.md) .
 * **Maior granularidade** - Avalie o comportamento de exibição no nível mais granular, incluindo a hora do dia da visita individual, os visualizadores/ouvintes simultâneos por minuto e a duração média que o conteúdo foi consumido.
 * **Medição precisa** - Meça os vários dispositivos usados para o consumo de mídia, incluindo OTT, smartphone, tablet, desktop e muito mais, para monitorar os padrões e os hábitos de envolvimento do usuário.
 * **Segmentação -** Aplique classificações aos reprodutores, dispositivos, gêneros, capítulos e programas para ver como cada um tem um impacto nas exibições/áudios gerais e no envolvimento do cliente com conteúdo, áudio, anúncios e combinados.
 
 ## Benefícios do Heartbeat versus Marcos {#section_cnj_5st_p1b}
 
-O Adobe Analytics para mídia pode ser medido por meio de dois meios: o método milestone herdado (somente vídeo) e o método atual Heartbeats (áudio e vídeo, destaque no SDK de mídia e na API de coleta de mídia). O método Heartbeats é o preferencial para a avaliação e incentivamos todos os clientes a mudarem para essa versão caso ainda não a tenham, a fim de aproveitar os benefícios descritos abaixo.
+Adobe Analytics for Media is able to be measured through two means: the legacy Milestone method (video only) and the current Heartbeats method (audio and video, featured in both the Media SDK and the Media Collection API). O método Heartbeats é o preferencial para a avaliação e incentivamos todos os clientes a mudarem para essa versão caso ainda não a tenham, a fim de aproveitar os benefícios descritos abaixo.
 
 O método herdado Marcos é baseado nas chamadas de servidor individuais para o servidor Analytics, para inícios, quartis, duração e conclusão de vídeo. O método Heartbeats fornece uma solução de rastreamento de mídia mais eficiente, que avalia o conteúdo principal em intervalos de 10 segundos, para fornecer métricas avançadas e padronizadas. Além disso, a Adobe tem aprendizagens derivadas de nosso método de Marcos para fornecer um processo de implementação contínuo e simplificado por meio do SDK do Media ou da API da coleção de mídia, utilizado pelo Heartbeats.
 
@@ -102,12 +102,12 @@ A tabela abaixo fornece uma lista de dispositivos suportados atualmente por meio
 | **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
 | **(Outros/novos dispositivos conectados)** |  | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Para o SDK de mídia, consulte também Suporte à versão [mínima da plataforma](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
-## Transport Layer Security {#transport-layer-security}
+## Segurança da camada de transporte {#transport-layer-security}
 
-**Aviso de TLS —** A Adobe possui padrões de conformidade de segurança que exigem o fim da vida dos protocolos de segurança mais antigos. Para continuar a cumprir os padrões de protocolo de segurança, a Adobe está movendo para o uso do TLS 1.2, a fim de ter a versão mais atualizada e segura em uso. A partir de 20 de fevereiro de 20 19, a Adobe oferecerá suporte somente a TLS 1.1 ou posterior. Com essa alteração, a Adobe não coletará mais dados de usuários finais com dispositivos mais antigos ou navegadores da Web que implantam TLS 1.0. A migração para TLS 1.2 oferece segurança aprimorada. É importante que você verifique as especificidades e planeje as alterações para uma transição suave.
+**Aviso TLS —** a Adobe tem padrões de conformidade de segurança que exigem o fim da vida útil dos protocolos de segurança mais antigos. Para continuar a atender aos padrões de protocolo de segurança em evolução, a Adobe está migrando para o uso do TLS 1.2, a fim de ter a versão mais atualizada e segura em uso. A partir de 20 de fevereiro de 2019, a Adobe oferecerá suporte somente ao TLS 1.1 ou posterior. Com essa alteração, a Adobe não coletará mais dados de usuários finais com dispositivos mais antigos ou navegadores da Web implantando o TLS 1.0. A migração para o TLS 1.2 oferece segurança aprimorada. É importante que você verifique as especificidades e planeje as alterações para uma transição suave.
 
 >[!NOTE]
 >
->O TLS é atualmente o protocolo de segurança mais amplamente implantado usado em navegadores da Web e outros aplicativos que exigem que os dados sejam trocados com segurança em uma rede.
+>TLS is currently the most-widely deployed security protocol used in web browsers and other applications that require data to be securely exchanged over a network.
