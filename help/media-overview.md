@@ -14,7 +14,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. Incentivamos todos os clientes a adotarem uma ou as duas soluções de rastreamento de mídia mais recentes, a fim de aproveitarem as melhorias e a medição expandida. Você pode visualizar os [benefícios da transição para as soluções mais recentes](media-overview.md#section_cnj_5st_p1b) abaixo. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Caso tenha alguma dúvida, entre em contato com seu Gerente de conta da Adobe.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. Ele não inclui instruções sobre a implementação de vídeo do Marco herdado. Incentivamos todos os clientes a adotarem uma ou as duas soluções de rastreamento de mídia mais recentes, a fim de aproveitarem as melhorias e a medição expandida. Você pode visualizar os [benefícios da transição para as soluções mais recentes](media-overview.md#section_cnj_5st_p1b) abaixo. Embora continuemos a oferecer suporte ao método Milestone de rastreamento de vídeos, não haverá atualizações, correções ou aprimoramentos de recursos planejados. Caso tenha alguma dúvida, entre em contato com seu Gerente de conta da Adobe.
 
 ## Visão geral {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -46,7 +46,7 @@ Alguns dos muitos benefícios que as soluções de avaliação de mídia da Adob
 
 ## Benefícios do Heartbeat versus Marcos {#section_cnj_5st_p1b}
 
-Adobe Analytics for Media is able to be measured through two means: the legacy Milestone method (video only) and the current Heartbeats method (audio and video, featured in both the Media SDK and the Media Collection API). O método Heartbeats é o preferencial para a avaliação e incentivamos todos os clientes a mudarem para essa versão caso ainda não a tenham, a fim de aproveitar os benefícios descritos abaixo.
+O Adobe Analytics for Media pode ser avaliado por dois meios: o método herdado Milestone (somente vídeo) e o método Heartbeats atual (áudio e vídeo, em destaque no SDK de mídia e na API Media Collection). O método Heartbeats é o preferencial para a avaliação e incentivamos todos os clientes a mudarem para essa versão caso ainda não a tenham, a fim de aproveitar os benefícios descritos abaixo.
 
 O método herdado Marcos é baseado nas chamadas de servidor individuais para o servidor Analytics, para inícios, quartis, duração e conclusão de vídeo. O método Heartbeats fornece uma solução de rastreamento de mídia mais eficiente, que avalia o conteúdo principal em intervalos de 10 segundos, para fornecer métricas avançadas e padronizadas. Além disso, a Adobe tem aprendizagens derivadas de nosso método de Marcos para fornecer um processo de implementação contínuo e simplificado por meio do SDK do Media ou da API da coleção de mídia, utilizado pelo Heartbeats.
 
@@ -110,4 +110,4 @@ Para o SDK de mídia, consulte também Suporte à versão [mínima da plataforma
 
 >[!NOTE]
 >
->TLS is currently the most-widely deployed security protocol used in web browsers and other applications that require data to be securely exchanged over a network.
+>O TLS é atualmente o protocolo de segurança mais amplamente implantado usado em navegadores da Web e outros aplicativos que exigem que os dados sejam trocados com segurança por uma rede.
