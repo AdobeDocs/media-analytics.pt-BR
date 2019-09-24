@@ -1,7 +1,7 @@
 ---
 seo-title: Rastrear estados do aplicativo
 title: Rastrear estados do aplicativo
-uuid: 2 f 98 fb 43-c 362-4 a 9 b -8732-fa 7 e 963 da 729
+uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 translation-type: tm+mt
 source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
 
@@ -10,11 +10,11 @@ source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
 
 # Rastrear estados do aplicativo{#track-app-states}
 
-Os estados são telas ou exibições diferentes do aplicativo. Each time a new state is displayed in your application, you should send a `trackState` call. For example, when a user navigates from the home page to the video details screen, send a `trackState` call. Os estados geralmente são vistos usando um relatório de definição de caminho para que você possa ver como os usuários navegam no seu aplicativo e quais estados são exibidos mais comumente.
+Os estados são telas ou exibições diferentes do aplicativo. Sempre que um novo estado for exibido no aplicativo, você deverá enviar uma `trackState` chamada. Por exemplo, quando um usuário navega da página inicial para a tela de detalhes do vídeo, envia uma `trackState` chamada. Os estados geralmente são vistos usando um relatório de definição de caminho para que você possa ver como os usuários navegam no seu aplicativo e quais estados são exibidos mais comumente.
 
 ## Chamadas trackState
 
-You typically call `trackState` each time the app loads a new screen.
+Normalmente, você liga `trackState` sempre que o aplicativo carrega uma nova tela.
 
 ### Roku
 
@@ -28,7 +28,7 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. Em outras interfaces do Analytics, "Visualizar estado" é relatado como "Nome da página"; " Exibições de estado "é relatado como" Exibições de página ".
+The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In other Analytics interfaces, "View State" is reported as "Page Name"; "State Views" is reported as "Page Views".
 
 ## Enviar dados de contexto
 
