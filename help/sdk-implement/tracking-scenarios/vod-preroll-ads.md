@@ -2,8 +2,8 @@
 seo-title: Reprodução VOD com anúncios precedentes
 title: Reprodução VOD com anúncios precedentes
 description: Nesse cenário, um anúncio antes da exibição foi inserido antes do conteúdo principal.
-seo-description: Neste cenário no Adobe Media Analytics, os anúncios precedentes foram inseridos antes do conteúdo principal.
-uuid: 5 d 1022 a 8-88 cb -40 aa -919 c -60 dd 592 a 639 e
+seo-description: Nesse cenário no Adobe Media Analytics, os anúncios precedentes foram inseridos antes do conteúdo principal.
+uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -24,8 +24,8 @@ Nesse cenário, um anúncio antes da exibição foi inserido antes do conteúdo 
 | O primeiro quadro do anúncio nº 2 é reproduzido. | `trackEvent:AdStart` | Início do anúncio do Analytics, Início do anúncio do Heartbeat |  |
 | O anúncio é reproduzido. |  | Ad Heartbeats (Pulsações do anúncio) |  |
 | Reprodução do anúncio nº 2 concluída. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete (Anúncio do Heartbeat concluído) | Fim do anúncio e do pod. |
-| O conteúdo é reproduzido. |  | Content Heartbeats | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é idêntica ao cenário Reprodução [VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é idêntica ao cenário Reprodução [VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
 | A sessão foi encerrada | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Parâmetros {#section_33CDFB6CB230437480B67A3D149EC44E}
@@ -74,7 +74,7 @@ Neste cenário, o VOD consiste em um anúncio antes da exibição, um segundo an
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** para exibir este cenário no Android, configure o seguinte código:
+* **Android** Para exibir esse cenário no Android, configure o seguinte código:
 
    ```java
    // Set up  mediaObject 
@@ -178,7 +178,7 @@ Neste cenário, o VOD consiste em um anúncio antes da exibição, um segundo an
    ........ 
    ```
 
-* **iOS -** para exibir este cenário no iOS, configure o seguinte código:
+* **iOS - Para exibir esse cenário no iOS, configure o seguinte código:**
 
    ```
    //  Set up mediaObject 
@@ -282,7 +282,7 @@ Neste cenário, o VOD consiste em um anúncio antes da exibição, um segundo an
    ....... 
    ```
 
-* **Javascript** para exibir este cenário em javascript, insira o seguinte texto:
+* **JavaScript** Para exibir esse cenário no JavaScript, insira o seguinte texto:
 
    ```js
    // Set up mediaObject 
@@ -384,7 +384,7 @@ Neste cenário, o conteúdo de VOD é reproduzido com um anúncio precedente, o 
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** para exibir este cenário no Android, configure o seguinte código:
+* **Android** Para exibir esse cenário no Android, configure o seguinte código:
 
    ```java
    // Set up mediaObject 
@@ -561,7 +561,7 @@ Neste cenário, o conteúdo de VOD é reproduzido com um anúncio precedente, o 
    ........ 
    ```
 
-* **iOS** para exibir este cenário no iOS, configure o seguinte código:
+* **iOS** Para exibir esse cenário no iOS, configure o seguinte código:
 
    ```
    //  Set up mediaObject 
@@ -748,7 +748,7 @@ Neste cenário, o conteúdo de VOD é reproduzido com um anúncio precedente, o 
    ....... 
    ```
 
-* **Javascript** para exibir este cenário em javascript, insira o seguinte texto:
+* **JavaScript** Para exibir esse cenário no JavaScript, insira o seguinte texto:
 
    ```js
    // Set up mediaObject 
