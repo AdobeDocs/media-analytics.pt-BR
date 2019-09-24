@@ -1,7 +1,7 @@
 ---
 seo-title: Atualizações de documentação
 title: Atualizações de documentação
-uuid: 1 f 3 e 48 df -83 b 6-418 c -8 cf 7-d 79466481 f 79
+uuid: 1f3e48df-83b6-418c-8cf7-d7946481f79
 index: y
 internal: n
 snippet: y
@@ -15,8 +15,8 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 ## Última atualização: 7 de março de 2019 {#March-2019-update}
 
-* Esta atualização foi principalmente para a versão 2.2 do SDK de mídia nas plataformas javascript e OTT.
-* A versão 2.2 do SDK de mídia em plataformas javascript e OTT fornece o mesmo suporte descrito abaixo para as plataformas iOS e Android (atualização de novembro de 1 018).
+* Essa atualização foi feita principalmente para a versão 2.2 do SDK de mídia nas plataformas JavaScript e OTT.
+* A versão 2.2 do SDK de mídia nas plataformas JavaScript e OTT oferece o mesmo suporte descrito abaixo para as plataformas iOS e Android (atualização de 1º de novembro de 2018).
 
 ## Última atualização: 1 de novembro de 2018 {#November-2018-update}
 
@@ -38,7 +38,7 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 ## Atualizado: 10 de outubro de 2018 {#October-2018-update}
 
 * A estrutura do documento foi "refatorada" na área Implementação do SDK, combinando os guias de implementação de plataformas individuais (mas quase idênticos) em uma única seção de implementação de SDK, com exemplos de rastreamento específicos das plataformas apresentados em subseções nos tópicos de rastreamento.
-* Os arquivos foram renomeados em antecipação a uma migração para um novo sistema de documentos. Todos os prefixos DITA (c_, r_, t_) indicando conceito, referência e tipos de tópico de tarefa respectivamente foram eliminados. Todos os sublinhados ('_') foram substituídos por hifens ('-'). Além disso, os nomes de arquivo agora se assemelham mais aos títulos dos tópicos.
+* Os arquivos foram renomeados em antecipação a uma migração para um novo sistema de documentos. Todos os prefixos DITA ( c_, r_, t_ ) que indicam o conceito, a referência e os tipos de tópicos da tarefa, respectivamente) foram eliminados. Todos os sublinhados ('_') foram substituídos por hifens ('-'). Além disso, os nomes de arquivo agora se assemelham mais aos títulos dos tópicos.
 * Atualizações nos tópicos de Validação e Certificação.
 * Novo material de introdução, incluindo uma apresentação das opções de medição, juntamente com atualizações nos pré-requisitos, caminhos de implementação e ativação do Audience Manager.
 * Atualizações nas seções de Métricas e metadados e de Relatórios e análises, refletindo a adição dos recursos do Audio Analytics.
