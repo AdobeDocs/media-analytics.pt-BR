@@ -1,7 +1,7 @@
 ---
 seo-title: Solicitação de sessões
 title: Solicitação de sessões
-uuid: 9609192 d -4 f 7 f -4 fb 5-844 f-ea 89 d 47 c 4 e 30
+uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 translation-type: tm+mt
 source-git-commit: f1c9f5f4cbcd4c043e1c7b4a5037c134b2bdd380
 
@@ -21,7 +21,7 @@ Nenhum
 
 ## Corpo da solicitação
 
-O corpo da solicitação deve ser JSON e deve ter a mesma estrutura desse corpo de solicitação de amostra:
+O corpo da solicitação deve ser JSON e ter a mesma estrutura que este corpo de solicitação de amostra:
 
 ```
 { 
@@ -62,7 +62,7 @@ O corpo da solicitação deve ser JSON e deve ter a mesma estrutura desse corpo 
    * `ts` - carimbo de data e hora; deve estar em milissegundos.
 * `eventType` (Obrigatório)
 
-   **Valor válido:**`sessionStart`
+   **Valid value: **`sessionStart`
 * `params` (Obrigatório)
 * `customMetadata` (Opcional)
 * `qoeData` (Opcional)
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` cabeçalho - A `/api/v1/` parte fornece a versão da API. The part after `[…]sessions/` is the Session ID.
+`Location:` header - A `/api/v1/` parte fornece a versão da API. A parte depois `[…]sessions/` é a ID da sessão.
 
 ## Códigos de resposta
 
