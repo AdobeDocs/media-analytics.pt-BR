@@ -1,7 +1,7 @@
 ---
 seo-title: Chaves de metadados do Roku
 title: Chaves de metadados do Roku
-uuid: 2 ca 6 bb 1 d-c 545-43 d 3-9 c 3 e -63 b 890 aa 268 d
+uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -10,7 +10,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 # Chaves de metadados do Roku{#roku-metadata-keys}
 
-Os metadados padrão de vídeo, áudio e anúncio podem ser definidos em objetos de informações de mídia e publicidade, respectivamente. Usando as chaves de constantes para metadados de vídeo/anúncio, defina o dicionário que contém os metadados padrão em um objeto de informação antes de chamar as APIs de rastreamento. Consulte as tabelas abaixo para obter a lista completa de constantes de metadados padrão, seguida de exemplos.
+Os metadados padrão de vídeo, áudio e anúncio podem ser definidos em objetos de mídia e informações de anúncio, respectivamente. Usando as chaves de constantes para metadados de vídeo/anúncio, defina o dicionário que contém os metadados padrão em um objeto de informação antes de chamar as APIs de rastreamento. Consulte as tabelas abaixo para obter a lista completa de constantes de metadados padrão, seguida de exemplos.
 
 ## Constantes de metadados de vídeo {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
 
@@ -34,7 +34,7 @@ Os metadados padrão de vídeo, áudio e anúncio podem ser definidos em objetos
 | Feed | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
 | Formato de transmissão | `a.media.format` | `MEDIA_VideoMetadataKeySTREAM_FORMAT` |
 
-## Audio metadata constants {#audio-metadata-constants}
+## Constantes de metadados de áudio {#audio-metadata-constants}
 
 | Nome dos metadados | Chave de dados de contexto | Nome da constante |
 | --- | --- | --- |
@@ -70,8 +70,8 @@ Você pode usar as seguintes constantes para rastrear eventos de mídia:
 
 | Constante | Descrição  |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the `MediaInfo` `trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the `EventData` `trackEvent` |
+| `MEDIA_STANDARD_MEDIA_METADATA` | Constante para definir metadados no `MediaInfo``trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | Constante para definir os metadados do anúncio no `EventData``trackEvent` |
 | `MEDIA_RESUMED` | Constante para enviar um heartbeat de vídeo retomada. To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) `MEDIA_RESUMED` deve ser definido como true quando um aplicativo deseja continuar a rastrear o conteúdo que um usuário parou de assistir, mas que agora pretende retomar. <br/><br/>Por exemplo, digamos que um usuário assista 30% do conteúdo e então feche o aplicativo. Isso levará à sessão que está sendo encerrada. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. O resultado é que essas duas sessões de mídia diferentes para o mesmo conteúdo de vídeo podem ser vinculadas. Este é um exemplo de implementação: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Isso criará uma nova sessão para o vídeo, mas também fará com que o SDK envie uma solicitação de heartbeat contendo o tipo de evento "retomar", que pode ser usado nos relatórios para vincular duas sessões de mídia diferentes. |
 
 ### Constantes de tipo de conteúdo
