@@ -1,7 +1,7 @@
 ---
 seo-title: Visão geral da configuração
 title: Visão geral da configuração
-uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
+uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,21 +12,21 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->As instruções a seguir se aplicam aos 2. x Media sdks. Se estiver implementando uma versão 1.x do SDK do Media, consulte a [Documentação do SDK do Media 1.x.](/help/sdk-implement/download-sdks.md) Para integradores do Primetime, consulte _a Documentação_ do Primetime Media SDK abaixo.
+>As instruções a seguir se aplicam aos SDKs de mídia 2.x. Se estiver implementando uma versão 1.x do SDK do Media, consulte a [Documentação do SDK do Media 1.x.](/help/sdk-implement/download-sdks.md) Para integradores do Primetime, consulte Documentação _do SDK do_ Primetime Media abaixo.
 
 
-## Suporte para versão mínima da plataforma {#minimum-platform-version}
+## Suporte mínimo para versão da plataforma {#minimum-platform-version}
 
-A tabela a seguir descreve as versões mínimas de plataforma compatíveis com cada SDK, a partir de 19 de fevereiro de 29 19.
+A tabela a seguir descreve as versões mínimas da plataforma compatíveis com cada SDK, a partir de 19 de fevereiro de 2019.
 
-| Sistema operacional/Navegador | Versão mínima exigida |
+| SO/Navegador | Versão mín necessária |
 | --- | --- |
 | iOS | iOS 6+ |
-| Android | Android 5.0 + - Lollipop |
-| Chrome | v 22 + |
-| Mozilla | v 27 + |
-| Safari | v 7 + |
-| IE | v 11 + |
+| Android | Android 5.0+ - pirulito |
+| Chrome | v22+ |
+| Mozilla | v27+ |
+| Safari | v7+ |
+| IE | v11+ |
 
 ## Diretrizes de implementação gerais {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
 
@@ -35,7 +35,7 @@ Existem três componentes principais do SDK envolvidos no rastreamento de mídia
 * Delegação do Heartbeat de mídia - o representante controla o tempo de reprodução e o objeto QoS.
 * Heartbeat de mídia - a biblioteca principal que contém membros e métodos.
 
-Conclua as seguintes etapas de implementação:
+Complete as seguintes etapas de implementação:
 
 1. Create a `MediaHeartbeatConfig` instance and set your config parameter values.
 
@@ -49,7 +49,7 @@ Conclua as seguintes etapas de implementação:
    | `ssl` | Indica se as chamadas devem ser efetuadas por HTTPS | Não | false |
    | `debugLogging` | Indica se o log de depuração está ativado | Não | false |
 
-1. Implemente `MediaHeartbeatDelegate`o.
+1. Implemente o `MediaHeartbeatDelegate`.
 
    |  Nome do método  |  Descrição  | Obrigatório |
    | --- | --- | :---: |
@@ -58,7 +58,7 @@ Conclua as seguintes etapas de implementação:
 
    >[!TIP]
    >
-   >O objeto de Qualidade do serviço (qos) é opcional. Se os dados de QoS estiverem disponíveis para o seu reprodutor e você desejar rastreá-los, as seguintes variáveis serão necessárias:
+   >O objeto Quality of Service (QoS) é opcional. Se os dados de QoS estiverem disponíveis para o seu reprodutor e você desejar rastreá-los, as seguintes variáveis serão necessárias:
 
    | Nome da variável | Descrição  | Obrigatório |
    | --- | --- | :---: |
@@ -77,7 +77,7 @@ Conclua as seguintes etapas de implementação:
 
    >[!TIP]
    >
-   >`MediaHeartbeat` requer uma instância de `AppMeasurement` envio de chamadas para o Adobe Analytics.
+   >`MediaHeartbeat` requer uma instância de `AppMeasurement` para enviar chamadas ao Adobe Analytics.
 
 1. Combine todas as partes.
 
@@ -123,26 +123,24 @@ Conclua as seguintes etapas de implementação:
 
 As implementações de rastreamento do Media Analytics geram dois tipos de chamadas de rastreamento:
 
-* As chamadas de início de mídia e anúncio são enviadas diretamente para o servidor Adobe Analytics (appmeasurement).
-* Chamadas heartbeat são enviadas para o servidor de rastreamento do Media Analytics (heartbeats), processado lá e passado para o servidor do Adobe Analytics.
+* As chamadas de Media e ad Start são enviadas diretamente para o servidor Adobe Analytics (AppMeasurement).
+* As chamadas de pulsação são enviadas para o servidor de rastreamento do Media Analytics (pulsações), processadas e repassadas para o servidor do Adobe Analytics.
 
-* **Servidor
-do Adobe Analytics (appmeasurement)** Para obter mais informações sobre as opções de servidor de rastreamento, consulte [Preencher corretamente as variáveis trackingserver e trackingserversecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Servidor** do Adobe Analytics (AppMeasurement) Para obter mais informações sobre as opções do servidor de rastreamento, consulte Preencher [corretamente as variáveis trackingServer e trackingServerSecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >É necessário um servidor de rastreamento RDC ou CNAME resolver a um servidor RDC para o serviço de ID de visitante da Experience Cloud.
+   >É necessário um servidor de rastreamento RDC ou uma resolução CNAME para um servidor RDC para o serviço de ID de visitante da Experience Cloud.
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Servidor do Media Analytics (Heartbeats)**
-Isso sempre tem o formato "`[your_namespace].hb.omtrdc.net`. O valor de "`[your_namespace]`especifica sua empresa e é fornecido pela Adobe.
+* ** Servidor do Media Analytics (Heartbeats)**Este sempre tem o formato "`[your_namespace].hb.omtrdc.net`". O valor "`[your_namespace]`" especifica sua empresa e é fornecido pela Adobe.
 
 O rastreamento de mídia funciona da mesma forma em todas as plataformas, desktops e dispositivos móveis. O rastreamento de áudio funciona atualmente em plataformas móveis. Para todas as chamadas de rastreamento, há algumas variáveis universais principais que precisam ser validadas:
 
-## Documentação do SDK 1. x {#section_acj_tkk_t2b}
+## Documentação do SDK 1.x {#section_acj_tkk_t2b}
 
-| Video Analytics 1. x sdks  | Guias do desenvolvedor (somente pdfs) |
+| SDKs 1.x do Video Analytics |  Guias do desenvolvedor (somente PDFs) |
 | --- | --- |
 | Android | [Configurar para Android ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Configurar para Apple TV ](vhl-dev-guide-v1x_appletv.pdf) |
