@@ -1,7 +1,7 @@
 ---
 seo-title: Visão geral
 title: Visão geral
-uuid: 1607798 b-c 6 ef -4 d 60-8 e 40-e 958 c 345 b 09 c
+uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,17 +12,17 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando os sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciados, anúncios concluídos e anúncios ignorados. Use a API do player de mídia para identificar os eventos de player-chave e preencher as variáveis de anúncio obrigatórias e opcionais. Veja a lista abrangente de metadados aqui: [Parâmetros do anúncio.](/help/metrics-and-metadata/ad-parameters.md)
+A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciados, anúncios concluídos e anúncios ignorados. Use a API do player de mídia para identificar eventos do player principal e preencher as variáveis de anúncio necessárias e opcionais. See the comprehensive list of metadata here: Ad parameters.[](/help/metrics-and-metadata/ad-parameters.md)
 
-## Eventos do player {#player-events}
+## Player events {#player-events}
 
 
-### Ao iniciar o intervalo de anúncios
+### On ad break start
 
 >[!NOTE]
->Incluir pre-roll
+>Including pre-roll
 
 * Crie uma instância de objeto `adBreak` para o ad break. Por exemplo, `adBreakObject`.
 
@@ -46,7 +46,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 * Chame `trackEvent` para concluir o ad break.
 
-## Implementar o rastreamento de anúncios {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### Constantes de rastreamento do anúncio
 
@@ -100,9 +100,9 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 >[!IMPORTANT]
 >
->Certifique-se de não incrementar o indicador de reprodução do player de conteúdo (`l:event:playhead`) durante a reprodução do anúncio (`s:asset:type=ad`). Se você fizer isso, as métricas Tempo gasto no conteúdo serão afetadas negativamente.
+>Certifique-se de NÃO incrementar o indicador de reprodução (`l:event:playhead`) do player de conteúdo durante a reprodução do anúncio (`s:asset:type=ad`). Se você fizer isso, as métricas de Tempo gasto do conteúdo serão afetadas negativamente.
 
-O código de exemplo a seguir usa o SDK 2. x do javascript para um player de mídia HTML 5.
+O código de amostra a seguir utiliza o JavaScript 2.x SDK para um player de mídia HTML5.
 
 ```js
 /* Call on ad break start */ 
