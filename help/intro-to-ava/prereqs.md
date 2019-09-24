@@ -1,7 +1,7 @@
 ---
 seo-title: Pré-requisitos
 title: Pré-requisitos
-uuid: 4 c 0 b 37 f 3-8615-4 cc 0-b 9 c 9-mov 029067064
+uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,7 +10,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # Pré-requisitos{#prerequisites}
 
-## Decisions {#decision}
+## Decisões {#decision}
 
 Antes de começar a implementação de rastreamento, você precisa tomar algumas decisões iniciais com relação ao tipo de implementação mais adequado à sua situação:
 
@@ -20,13 +20,13 @@ Antes de começar a implementação de rastreamento, você precisa tomar algumas
 
 ## Tarefas {#prereq-tasks}
 
-For a *Media Analytics* implementation, here are the tasks you must complete before you begin:
+Para uma implementação do *Media Analytics* , siga estas etapas antes de começar:
 
 1. **Ativar a Experience Cloud.**
 
-   Você precisa implementar o Adobe Experience Platform Identity Service.
+   É necessário implementar o Adobe Experience Platform Identity Service.
 
-   O Serviço de identidade habilita a estrutura de identificação comum dos principais serviços, soluções e atributos do cliente da Experience Cloud e públicos-alvo no serviço principal Pessoas. Isso funciona ao atribuir uma ID exclusiva e persistente para um visitante do site. Quando a organização implementa o serviço de ID, isso permite que você identifique o mesmo visitante do site e os dados em soluções diferentes da Experience Cloud.
+   O Serviço de identidade permite a estrutura de identificação comum para os principais serviços, soluções e atributos e públicos-alvo da Experience Cloud no serviço principal de Pessoas. Isso funciona ao atribuir uma ID exclusiva e persistente para um visitante do site. Quando a organização implementa o serviço de ID, isso permite que você identifique o mesmo visitante do site e os dados em soluções diferentes da Experience Cloud.
 
    ![](assets/mc_id_service_graphic.png)
 
@@ -36,7 +36,7 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
 
    >[!IMPORTANT]
    >
-   >Para participar do Device Co-op da Adobe Experience Cloud, o serviço da Experience Cloud ID é necessário.
+   >Para participar do Adobe Experience Cloud Device Co-op, o serviço da Experience Cloud ID é necessário.
 
    Se você ainda não implementou o serviço de ID, agora é o momento de começar a pensar em uma estratégia de migração. For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
