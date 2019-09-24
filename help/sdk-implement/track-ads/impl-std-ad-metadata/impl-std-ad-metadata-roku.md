@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Implementar Metadados de publicidade padrão no Roku
 title: Implementar Metadados de publicidade padrão no Roku
-uuid: 20 a 437 d 7-18 b 8-4099-ac 81-9 f 3628384236
+uuid: 20a437d7-18b8-4099-ac81-9f3628384236
 translation-type: tm+mt
 source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
@@ -12,9 +12,9 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 # Implementar Metadados de publicidade padrão no Roku{#implement-standard-ad-metadata-on-roku}
 
-## Direcionamento de metadados padrão de anúncio
+## Implementação de metadados de anúncio padrão
 
-Para metadados de anúncio padrão, crie um dicionário com os pares de valores dos principais metadados padronizados de anúncio usando as teclas para a sua plataforma:
+Para metadados de anúncio padrão, crie um dicionário de pares de valores principais de metadados de anúncio padrão usando as chaves para sua plataforma:
 
 ```
 standardAdMetadata = {} 
