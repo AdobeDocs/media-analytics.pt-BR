@@ -1,7 +1,7 @@
 ---
 seo-title: Opção de rejeição e privacidade
 title: Opção de rejeição e privacidade
-uuid: 7 e 60 c 7 bd -8 dba -4 c 7 c -0 c 3 c -0 c 634 b 815397
+uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
 source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
@@ -16,17 +16,17 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
 
 * **Aplicativos móveis -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `AdobeMobile`. Para recusar o rastreamento, você precisa usar a biblioteca do `AdobeMobile`. Para obter mais informações sobre as configurações de recusa e privacidade da `AdobeMobile`, consulte [Configurações de recusa e privacidade](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html).
 * **Aplicativos do JavaScript/navegador -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `VisitorAPI`. Para excluir o rastreamento do, você precisa fazer a exclusão do serviço Visitor API. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **Aplicativos OTT (Chromecast, Roku) -** Os sdks OTT fornecem apis em conformidade com o Regulamento geral de proteção de dados (RGPD) que permitem definir `opt` sinalizadores de status para coleta e transmissão de dados, bem como recuperar identidades armazenadas localmente.
+* **Aplicativos OTT (Chromecast, Roku) -** Os SDKs OTT fornecem APIs compatíveis com o Regulamento geral de proteção de dados (RGPD) que permitem definir sinalizadores de `opt` status para coleta e transmissão de dados e recuperar identidades armazenadas localmente.
 
    >[!NOTE]
    >
-   >As chamadas de rastreamento de pulsação de mídia também são desativadas se o status de privacidade estiver configurado para recusar.
+   >As chamadas de rastreamento de pulsação de mídia também são desativadas se o status de privacidade estiver definido como opção de não participação.
 
    Você pode decidir se os dados do Analytics são enviados ou não em um determinado dispositivo usando as seguintes configurações:
 
    * The `privacyDefault` setting in the `ADBMobile.json` config file. Isso controla a configuração inicial e é mantida até a alteração no código.
 
-   * The `ADBMobile().setPrivacyStatus()` method.
+   * O `ADBMobile().setPrivacyStatus()` método.
 
       * **Rejeitar:**
 
@@ -43,7 +43,7 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
             ```
          >[!IMPORTANT]
          >
-         >Quando um usuário optar por não ser rastreado, todos os dados e IDs de dispositivos persistentes serão removidos até que o usuário faça logon novamente.
+         >Quando um usuário optar por não ser rastreado, todos os dados e IDs do dispositivo persistentes serão removidos até que o usuário volte a aceitar.
 
       * **Aceitar novamente:**
 
@@ -79,7 +79,7 @@ Essas informações ajudam a recuperar identidades de usuário armazenadas local
 
 >[!IMPORTANT]
 >
->O método para recuperar todos os identificadores obtém todas as identidades do usuário conhecidas e persistidas pelo SDK. Você deve chamar esse método **antes** que usuário cancele a adesão.
+>O método para recuperar todos os identificadores obtém todas as identidades de usuário conhecidas e persistentes pelo SDK. Você deve chamar esse método **antes** que usuário cancele a adesão.
 
 As identidades armazenadas localmente são retornadas em uma sequência de caracteres JSON, que pode conter:
 
