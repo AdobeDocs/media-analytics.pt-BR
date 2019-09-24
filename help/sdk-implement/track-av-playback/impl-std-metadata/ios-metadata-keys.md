@@ -1,7 +1,7 @@
 ---
 seo-title: Chaves de metadados de iOS
 title: Chaves de metadados de iOS
-uuid: 8 eb 90111-c 9 dd -4 ca 7-9766-91530 a 8 ae 6 cf
+uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -14,7 +14,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 De `ADBStandardMetadataKeys.h`:
 
-## Chaves de metadados do vídeo
+## Teclas de metadados de vídeo
 
 | Nome da constante | Descrição | Tipo |
 |---|---|---|
@@ -47,7 +47,7 @@ De `ADBStandardMetadataKeys.h`:
 | `ADBAudioMetadataKeyPUBLISHER` | Ativo | Áudio |
 | `ADBAudioMetadataKeySTATION` | Gênero | Áudio |
 
-## Chaves de metadados de anúncio
+## Teclas de metadados do anúncio
 
 | Nome da constante | Descrição | Tipo |
 |---|---|---|
