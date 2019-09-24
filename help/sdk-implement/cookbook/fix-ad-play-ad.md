@@ -1,7 +1,7 @@
 ---
-seo-title: Resolver a reprodução principal exibida entre anúncios
-title: Resolver a reprodução principal exibida entre anúncios
-uuid: 228 b 4812-c 23 e -40 c 8-ae 2 b-e 15 ca 69 b 0 bc 2
+seo-title: Resolving main play appearing between ads
+title: Resolving main play appearing between ads
+uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
 source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
@@ -18,18 +18,18 @@ Uma lacuna entre anúncios, como descrito acima, é interpretada pelo SDK do Med
 
 ## IDENTIFICAÇÃO
 
-Ao usar a Depuração da Adobe ou um sniffer de pacote de rede como o Charles, se você vir as seguintes chamadas Heartbeat nesta ordem durante um intervalo de anúncio precedente:
+While using Adobe Debug or a network packet sniffer such as Charles, if you see the following Heartbeat calls in this order during a pre-roll ad break:
 
 * Início da sessão: `s:event:type=start` &amp; `s:asset:type=main`
 * Início do anúncio: `s:event:type=start` &amp; `s:asset:type=ad`
 * Reprodução do anúncio: `s:event:type=play` &amp; `s:asset:type=ad`
 * Anúncio concluído: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unexpected)**
+* Reprodução do conteúdo principal: `s:event:type=play` &amp; `s:asset:type=main`**(inesperado)**
 
 * Início do anúncio: `s:event:type=start` &amp; `s:asset:type=ad`
 * Reprodução do anúncio: `s:event:type=play` &amp; `s:asset:type=ad`
 * Anúncio concluído: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(expected)**
+* Reprodução do conteúdo principal: `s:event:type=play` &amp; `s:asset:type=main`**(esperado)**
 
 ## RESOLUÇÃO
 
@@ -49,7 +49,7 @@ Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depoi
 
    >[!NOTE]
    >
-   >Chame a atenção apenas se a publicidade anterior não foi concluída. Considere um valor booleano para manter um estado "`isinAd`" para o anúncio anterior.
+   >Chame isso somente se o anúncio anterior não tiver sido concluído. Considere um valor booleano para manter um estado "`isinAd`" para o anúncio anterior.
 
 * Crie a instância do objeto de anúncio para o ativo de anúncio: por exemplo, `adObject`.
 * Populate the ad metadata, `adCustomMetadata`.
@@ -58,7 +58,7 @@ Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depoi
 
 **Em cada conclusão de ativo de anúncio:**
 
-* **Não faça uma chamada**
+* **Não efetuar uma chamada**
 
    >[!NOTE]
    >
