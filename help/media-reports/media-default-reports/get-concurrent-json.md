@@ -1,7 +1,7 @@
 ---
 seo-title: Obter dados de relatório JSON de visualizadores simultâneos
 title: Obter dados de relatório JSON de visualizadores simultâneos
-uuid: 9168 f 114-2459-4951-a 06 c -57 b 735 d 09 dc 0
+uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
 source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
@@ -10,19 +10,20 @@ source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
 # Obter dados de relatório JSON de visualizadores simultâneos{#get-concurrent-viewers-json-report-data}
 
-You can obtain concurrent viewers report data using the _* 1.4 version *_ of the Analytics APIs:
-* [Apis do Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
+Você pode obter dados de relatório de visualizadores simultâneos usando a versão _**_ 1.4 das APIs do Analytics:
+* [APIs do Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. Filtre os dados usando qualquer segmento que tenha sido criado na interface do usuário. Para filtrar por uma ID de conteúdo específica, crie um novo segmento.
-1. Set the `elements` -&gt; `id` in the request body to `videoconcurrentviewers`.
+1. Filtre os dados usando qualquer segmento criado na interface do usuário. Para filtrar por uma ID de conteúdo específica, crie um novo segmento.
+1. Defina `elements` -&gt; `id` no corpo da solicitação como `videoconcurrentviewers`.
 1. Solicite uma quantidade suficiente de dados. A Adobe recomenda 3200 pontos de dados para garantir que não haja lacunas nos dados.
 
-   * The data range you specify in the report gathers all concurrent viewer data _at the time the video session ended._ Portanto, você deve contabilizar as sessões que começam em um dia e terminarem após meia-noite (ou seja, no dia seguinte).
+   * O intervalo de dados especificado no relatório reúne todos os dados do visualizador simultâneo _no momento em que a sessão de vídeo terminou._
+Portanto, você deve considerar as sessões que iniciam um dia e terminam após a meia-noite (ou seja, o dia seguinte).
 
-   * Request more than one day of data, but in your analysis _* use only the first day of the data.*_
+   * Solicite mais de um dia de dados, mas em sua análise _* use apenas o primeiro dia dos dados.*_
 
-Uma amostra de carga de solicitação para este cenário seria:
+Uma carga de solicitação de amostra para esse cenário seria semelhante a:
 
 ```
 {
