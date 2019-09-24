@@ -1,7 +1,7 @@
 ---
 seo-title: Métricas calculadas
 title: Métricas calculadas
-uuid: 9 dd 35155-58 aa -4 f 05-896 e-c 5 cbc 4 b 13 d 59
+uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 translation-type: tm+mt
 source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
@@ -12,13 +12,13 @@ source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
 >[!NOTE]
 >
->Essas métricas calculadas foram introduzidas em 9/13/18.
+>Essas métricas calculadas foram introduzidas em 13/09/18.
 
 | Métrica | Descrição | Fórmula |
 |---|---|---|
-| Média Anúncios por fluxo de mídia | Inicializações de anúncio por inicializações de mídia | `Ad Starts / Media Starts` |
-| Média Capítulos por fluxo de mídia | Início do capítulo por início de mídia | `Chapter Start / Media Starts` |
-| Média Tempo gasto com a mídia | Tempo total gasto por media inícios (HH: MM: SS) | `Media Time Spent / Media Starts` |
+| Média Anúncios por fluxo de mídia | Início do anúncio por mídia | `Ad Starts / Media Starts` |
+| Média Capítulos por fluxo de mídia | Inícios de capítulo por início de mídia | `Chapter Start / Media Starts` |
+| Média Tempo gasto com a mídia | Tempo total gasto por início de mídia (HH:MM:SS) | `Media Time Spent / Media Starts` |
 | Média Tempo gasto no conteúdo | Tempo gasto com conteúdo por Inícios de conteúdo (HH:MM:SS) | `Content Time Spent / Content Start` |
 | Média Tempo gasto com anúncio | Tempo gasto no anúncio por Inícios de anúncio (HH:MM:SS) | `Ad Time Spent / Ad Start` |
 | Média Tempo gasto com capítulo | Tempo gasto com capítulo por Inícios de capítulo (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
