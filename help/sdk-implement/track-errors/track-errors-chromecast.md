@@ -1,7 +1,7 @@
 ---
 seo-title: Rastrear erros no Chromecast
 title: Rastrear erros no Chromecast
-uuid: efa 9 de 8 d-c 626-4 cb 6-b 46 d -108495 dd 013 a
+uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -24,5 +24,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->Os erros do player de mídia não interromperem a sessão de rastreamento de mídia. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
+>O rastreamento de erros do player de mídia não interrompe a sessão de rastreamento de mídia. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
 
