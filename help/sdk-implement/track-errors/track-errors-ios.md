@@ -1,7 +1,7 @@
 ---
 seo-title: Rastrear erros no iOS
 title: Rastrear erros no iOS
-uuid: 18 ea 93 d 3-5948-4375-bcdb -72309268 e 38 d
+uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Implementar o rastreamento de erros
 
-1. Erros do player de mídia:
+1. Rastrear erros do player de mídia:
 
    ```
    - (void)onPlayerError:(NSNotification *)notification { 
@@ -26,5 +26,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->Os erros do player de mídia não interromperem a sessão de rastreamento de mídia. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
+>O rastreamento de erros do player de mídia não interrompe a sessão de rastreamento de mídia. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
 
