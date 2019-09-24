@@ -1,7 +1,7 @@
 ---
 seo-title: Reprodução VOD com um capítulo
 title: Reprodução VOD com um capítulo
-uuid: 1566 a 6 f 5-cf 22-42 e 7-8 e 1 a -6976 c 6 c 4 e 649
+uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -25,7 +25,7 @@ A menos que seja especificado, as chamadas de rede desse cenário correspondem �
 | O capítulo terminou. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Esta é a situação na qual o fim do capítulo é atingido. |
 | O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa que o final de uma sessão de visualização foi atingido. Essa API deve ser chamada mesmo se o usuário não assistir a mídia para concluir. |
+| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa que o final de uma sessão de visualização foi atingido. This API must be called even if the user does not watch the media to completion. |
 
 ## Parâmetros {#section_869319D99A474FEA8EA840415EA97FBD}
 
