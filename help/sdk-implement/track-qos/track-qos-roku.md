@@ -14,15 +14,15 @@ source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 >
 >As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Implementação do QOS
+## Implemement QOS
 
-1. Identifique quando a taxa de bits muda durante a reprodução da mídia e use a `mediaUpdateQoS` API para atualizar as informações de QoS no SDK de mídia.
+1. Identify when the bitrate changes during media playback, and use the  API to update the QoS info on the Media SDK.`mediaUpdateQoS`
 
    Variáveis de QoSObject:
 
    >[!TIP]
    >
-   >Essas variáveis só são necessárias se você estiver rastreando QoS.
+   >These variables are only required if you are tracking QoS.
 
    | Variável | Descrição | Obrigatório |
    | --- | --- | :---: |
