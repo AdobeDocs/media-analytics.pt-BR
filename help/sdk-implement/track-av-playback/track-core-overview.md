@@ -1,20 +1,20 @@
 ---
-seo-title: Visão geral de rastreamento
-title: Visão geral de rastreamento
-uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
+seo-title: Tracking Overview
+title: Tracking Overview
+uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Visão geral de rastreamento{#tracking-overview}
+# Tracking Overview{#tracking-overview}
 
 >[!IMPORTANT]
 >
->Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>Esta documentação cobre o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Eventos de player
+## Player Events
 
 O rastreamento da reprodução principal inclui o rastreamento da carga da mídia, início da mídia, pausa da mídia e mídia concluída. Embora não seja obrigatório, o rastreamento de buffering e busca também são componentes essenciais usados &#x200B;para rastrear a reprodução do conteúdo. Na API do reprodutor de mídia, identifique os eventos do reprodutor que correspondem às chamadas de rastreamento do SDK do Media e codifique os manipuladores de eventos para chamar APIs de rastreamento e preencher as variáveis obrigatórias e opcionais.
 
@@ -22,7 +22,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
 * Crie o objeto de mídia
 * Preencher metadados
-* Chamada `trackSessionStart`; Por exemplo: `trackSessionStart(mediaObject, contextData)`
+* Chamar `trackSessionStart`;Por exemplo: `trackSessionStart(mediaObject, contextData)`
 
 ### No início da mídia
 
@@ -101,7 +101,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
       >[!NOTE]
       >
-      >A anexação do objeto de metadados padronizados ao objeto de mídia é opcional.
+      >Anexar o objeto de metadados padrão ao objeto de mídia é opcional.
 
       Exemplifique um objeto de metadados padrão, preencha as variáveis desejadas e defina o objeto de metadados no objeto de Heartbeat de mídia.
 
@@ -127,7 +127,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marca o fim de uma sessão de monitoramento. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marca o fim de uma sessão de rastreamento. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **Rastrear todos os cenários de pausa possíveis -** Identifique o evento do reprodutor de mídia para pausar e chame `trackPause`.
 
@@ -142,7 +142,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
    >[!TIP]
    >
-   >Pode ser a mesma fonte de evento usada na Etapa 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >This may be the same event source that was used in Step 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 1. Analise os eventos de busca de reprodução no reprodutor de mídia. Na notificação de evento de início da busca, rastreie a busca com o evento `SeekStart`.
 1. Na notificação de conclusão da busca do reprodutor de mídia, rastreie o término da busca com o evento `SeekComplete`.
