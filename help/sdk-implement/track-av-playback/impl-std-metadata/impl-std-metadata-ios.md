@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Implementar metadados padrão no iOS
 title: Implementar metadados padrão no iOS
-uuid: 75 a 80 f 08-4 a 95-49 d 4-a 27 a -8 ce 531 d 64 d 31
+uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ## Implementação
 
 1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [Teclas de metadados do IOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+   [Chaves de metadados IOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. Defina o dicionário de metadados padrão na instância `MediaInfo``ADBMediaObject`   usando a constante de Metadados padrão para os metadados.
 
