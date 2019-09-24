@@ -1,7 +1,7 @@
 ---
 seo-title: Rastreamento da reprodução principal no iOS
 title: Rastreamento da reprodução principal no iOS
-uuid: bdc 0 e 05 c -4 fe 5-430 e-aee 2-f 331 bc 59 ac 6 b
+uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,7 +11,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # Rastreamento da reprodução principal no iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
+>Esta documentação cobre o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
 
 1. **Configuração de rastreamento inicial**
 
@@ -24,8 +24,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | Nome do vídeo | Sim |
    | `mediaid` | Identificador exclusivo do vídeo | Sim |
    | `length` | Duração do vídeo | Sim |
-   | `streamType` | Stream type (see _StreamType constants_ below) | Sim |
-   | `mediaType` | Media type (see _MediaType constants_ below) | Sim |
+   | `streamType` | Tipo de fluxo (consulte Constantes _de_ StreamType abaixo) | Sim |
+   | `mediaType` | Tipo de mídia (consulte as constantes __ MediaType abaixo) | Sim |
 
    **`StreamType`constantes:**
 
@@ -38,7 +38,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | Tipo de fluxo para audiobook |
    | `ADBMediaHeartbeatStreamTypePODCAST` | Tipo de fluxo para podcast |
 
-   **`MediaType`constantes:**
+   **`MediaType`constants:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -58,7 +58,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Anexar metadados de vídeo**
 
-   Como opção, anexe objetos de metadados de vídeo padrão e/ou personalizados à sessão de monitoramento de vídeo por meio das variáveis de dados de contexto.
+   Como opção, anexe objetos de metadados de vídeo padrão e/ou personalizados à sessão de rastreamento de vídeo por meio de variáveis de dados de contexto.
 
    * **Metadados de vídeo padrão**
 
@@ -69,11 +69,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       * Consulte a lista completa de metadados de vídeo aqui: [Parâmetros de áudio e vídeo](/help/metrics-and-metadata/audio-video-parameters.md)
       >[!NOTE]
       >
-      >A anexação do objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
+      >Anexar o objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
 
    * **Metadados personalizados**
 
-      Crie um objeto de variável para as variáveis personalizadas e preencha os dados desse vídeo. Por exemplo:
+      Create a variable object for the custom variables and populate with the data for this video. Por exemplo:
 
       ```
       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
@@ -84,11 +84,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Rastrear a intenção de iniciar a reprodução**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance.
+   Para começar a rastrear uma sessão de mídia, chame `trackSessionStart` a instância Media Heartbeat.
 
    >[!TIP]
    >
-   >O segundo valor é o nome de objeto de metadados de vídeo personalizado que você criou na etapa 2.
+   >O segundo valor é o nome do objeto de metadados de vídeo personalizado que você criou na etapa 2.
 
    ```
    - (void)onMainVideoLoaded:(NSNotification *)notification { 
@@ -105,7 +105,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Rastrear o início da reprodução atual**
+1. **Rastrear o início real da reprodução**
 
    Identifique o evento no reprodutor de vídeo a partir do início da reprodução, onde o primeiro quadro do vídeo é renderizado na tela, e chame `trackPlay`.
 
@@ -115,7 +115,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    }
    ```
 
-1. **Rastrear a conclusão da reprodução**
+1. **Acompanhar a conclusão da reprodução**
 
    Identifique o evento no reprodutor de vídeo para a conclusão da reprodução, onde o usuário assistiu ao conteúdo até o fim, e chame `trackComplete`.
 
@@ -125,7 +125,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    }
    ```
 
-1. **Rastrear o final da sessão**
+1. **Acompanhar o final da sessão**
 
    Identifique o evento no reprodutor de vídeo para o descarregamento/encerramento da reprodução, onde o usuário fecha o vídeo, e/ou ele é concluído e descarregado, e chame `trackSessionEnd`.
 
@@ -137,9 +137,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marca o fim de uma sessão de monitoramento de vídeo. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >`trackSessionEnd` marca o fim de uma sessão de rastreamento de vídeo. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
-1. **Rastrear todos os cenários de pausa possíveis**
+1. **Track all possible pause scenarios**
 
    Identifique o evento no reprodutor de vídeo para vídeos pausados e chame `trackPause`:
 
@@ -168,7 +168,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Pode ser a mesma fonte de evento usada na Etapa 4. Verifique se cada chamada `trackPause()` da API está emparelhada a uma chamada `trackPlay()` da API quando a reprodução continuar.
+   >This may be the same event source that was used in Step 4. Verifique se cada chamada `trackPause()` da API está emparelhada a uma chamada `trackPlay()` da API quando a reprodução continuar.
 
 Consulte as informações adicionais sobre o rastreamento da reprodução principal:
 
