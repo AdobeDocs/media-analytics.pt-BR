@@ -1,7 +1,7 @@
 ---
 seo-title: Rastreamento da reprodução principal no Roku
 title: Rastreamento da reprodução principal no Roku
-uuid: a 8 aa 7 b 3 c -2 d 39-44 d 7-8 ebc-b 101 d 130101 f
+uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,7 +11,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # Rastreamento da reprodução principal no Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
+>Esta documentação cobre o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
 
 1. **Configuração de rastreamento inicial**
 
@@ -24,8 +24,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | Nome do vídeo | Sim |
    | `mediaid` | Identificador exclusivo do vídeo | Sim |
    | `length` | Duração do vídeo | Sim |
-   | `streamType` | Stream type (see _StreamType constants_ below) | Sim |
-   | `mediaType` | Media type (see _MediaType constants_ below) | Sim |
+   | `streamType` | Stream type (see StreamType constants below)__ | Sim |
+   | `mediaType` | Tipo de mídia (consulte as constantes __ MediaType abaixo) | Sim |
 
    **`StreamType`constantes:**
 
@@ -38,14 +38,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | Tipo de fluxo para audiobook |
    | `MEDIA_STREAM_TYPE_PODCAST` | Tipo de fluxo para podcast |
 
-   **`MediaType`constantes:**
+   **`MediaType`constants:**
 
    | Nome da constante | Descrição |
    |---|---|
    | `MEDIA_STREAM_TYPE_AUDIO` | Tipo de mídia para fluxos de áudio. |
    | `MEDIA_STREAM_TYPE_VIDEO` | Tipo de mídia para fluxos de vídeo. |
 
-   **Crie um objeto de informações de mídia para vídeo com conteúdo VOD:**
+   **Create a media info object for video with VOD content:**
 
    ```
     mediaInfo = adb_media_init_mediainfo(
@@ -93,7 +93,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Anexar metadados**
 
-   Como opção, anexe objetos de metadados padrão e/ou personalizados à sessão de monitoramento por meio das variáveis de dados de contexto.
+   Como opção, anexe objetos de metadados padrão e/ou personalizados à sessão de rastreamento por meio de variáveis de dados de contexto.
 
    * **Metadados padrão**
 
@@ -101,14 +101,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       >[!NOTE]
       >
-      >A anexação do objeto de metadados padronizados ao objeto de mídia é opcional.
+      >Anexar o objeto de metadados padrão ao objeto de mídia é opcional.
 
       * Referência da API de chaves de metadados de mídia - [Chaves de metadados padrão - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
          See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Metadados personalizados**
 
-      Crie um objeto de variável para as variáveis personalizadas e preencha os dados dessa mídia. Por exemplo:
+      Crie um objeto variável para as variáveis personalizadas e preencha com os dados para essa mídia. Por exemplo:
 
       ```js
       /* Set custom context data */ 
@@ -122,7 +122,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Rastrear a intenção de iniciar a reprodução**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
+   Para começar a rastrear uma sessão de mídia, chame `trackSessionStart` a instância Media Heartbeat:
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -140,7 +140,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Rastrear o início da reprodução atual**
+1. **Rastrear o início real da reprodução**
 
    Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
 
@@ -148,7 +148,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Rastrear a conclusão da reprodução**
+1. **Acompanhar a conclusão da reprodução**
 
    Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
 
@@ -156,7 +156,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackComplete();
    ```
 
-1. **Rastrear o final da sessão**
+1. **Acompanhar o final da sessão**
 
    Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
 
@@ -178,18 +178,18 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Anexar metadados de vídeo**
 
-   Como opção, anexe objetos de metadados de vídeo padrão e/ou personalizados à sessão de monitoramento de vídeo por meio das variáveis de dados de contexto.
+   Como opção, anexe objetos de metadados de vídeo padrão e/ou personalizados à sessão de rastreamento de vídeo por meio de variáveis de dados de contexto.
 
    * **Metadados de vídeo padrão**
 
       [Implementar metadados padrão no Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
-      >A anexação do objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
+      >Attaching the standard video metadata object to the media object is optional.
 
    * **Metadados personalizados**
 
-      Crie um objeto de variável para as variáveis personalizadas e preencha os dados desse vídeo. Por exemplo:
+      Crie um objeto variável para as variáveis personalizadas e preencha com os dados para este vídeo. Por exemplo:
 
       ```
       mediaContextData = {}
@@ -199,14 +199,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Rastrear a intenção de iniciar a reprodução**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
+   Para começar a rastrear uma sessão de mídia, chame `trackSessionStart` a instância Media Heartbeat:
 
    ```
    ADBMobile().mediaTrackSessionStart(mediaInfo,mediaContextData)
    ```
 
    >[!TIP]
-   >O segundo valor é o nome de objeto de metadados de vídeo personalizado que você criou na etapa 2.
+   >The second value is the custom video metadata object name that you created in step 2.
 
    >[!IMPORTANT]
    >`trackSessionStart` rastreia a intenção de reproduzir do usuário e não o início da reprodução. Essa API é utilizada para carregar os dados/metadados de vídeo e estimar a métrica de tempo do início de QoS (duração entre `trackSessionStart` e `trackPlay`).
@@ -214,7 +214,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >[!NOTE]
    >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Rastrear o início da reprodução atual**
+1. **Rastrear o início real da reprodução**
 
    Identifique o evento no reprodutor de vídeo a partir do início da reprodução, onde o primeiro quadro do vídeo é renderizado na tela, e chame `trackPlay`.
 
@@ -222,7 +222,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile().mediaTrackPlay()
    ```
 
-1. **Rastrear a conclusão da reprodução**
+1. **Acompanhar a conclusão da reprodução**
 
    Identifique o evento no reprodutor de vídeo para a conclusão da reprodução, onde o usuário assistiu ao conteúdo até o fim, e chame `trackComplete`.
 
@@ -230,7 +230,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile().mediaTrackComplete()
    ```
 
-1. **Rastrear o final da sessão**
+1. **Acompanhar o final da sessão**
 
    Identifique o evento no reprodutor de vídeo para o descarregamento/encerramento da reprodução, onde o usuário fecha o vídeo, e/ou ele é concluído e descarregado, e chame `trackSessionEnd`.
 
@@ -239,7 +239,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ```
 
    >[!IMPORTANT]
-   >`trackSessionEnd` marca o fim de uma sessão de monitoramento de vídeo. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >`trackSessionEnd` marca o fim de uma sessão de rastreamento de vídeo. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
 1. **Rastrear todos os cenários de pausa possíveis**
 
@@ -265,7 +265,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ```
 
    >[!TIP]
-   >Pode ser a mesma fonte de evento usada na Etapa 4. Verifique se cada chamada `trackPause()` da API está emparelhada a uma chamada `trackPlay()` da API quando a reprodução continuar.
+   >Essa pode ser a mesma fonte de evento usada na Etapa 4. Verifique se cada chamada `trackPause()` da API está emparelhada a uma chamada `trackPlay()` da API quando a reprodução continuar.
 
 * Cenários de rastreamento: [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reprodutor de exemplo incluído com o SDK do Roku para um exemplo completo de rastreamento.
