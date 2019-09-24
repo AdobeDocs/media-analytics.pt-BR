@@ -1,7 +1,7 @@
 ---
 seo-title: Tipos e descrições de eventos
 title: Tipos e descrições de eventos
-uuid: bc 4 f 75 a 7-ea 22-47 eb-a 50 d -5 f 41274 c 6 d 41
+uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## sessionStart
 
-Sent with the `sessions` call. Quando a resposta é obtida, você extrai a ID da sessão do cabeçalho Localização e a usa para as chamadas de eventos subsequentes ao servidor de coleta.
+Enviado com a `sessions` chamada. Quando a resposta é obtida, você extrai a ID da sessão do cabeçalho Localização e a usa para as chamadas de eventos subsequentes ao servidor de coleta.
 
 ## play
 
@@ -25,9 +25,9 @@ Sent when the player changes state to "playing" from another state (i.e., the `o
 
 Os eventos de ping *não* devem incluir o mapa `params` no corpo da solicitação.
 
-## Bitratechange
+## bitrateChange
 
-Enviado quando a taxa de bits muda.
+Enviado quando a arbitragem muda.
 
 ## bufferStart
 
@@ -51,7 +51,7 @@ Sinaliza a conclusão de um ad break
 
 ## adSkip
 
-Sinaliza um anúncio ignorado
+Sinaliza e ignora o anúncio
 
 ## adBreakComplete
 
@@ -71,11 +71,11 @@ Sinaliza a conclusão de um capítulo
 
 ## error
 
-Sinaliza um erro.
+Sinaliza que ocorreu um erro.
 
 ## sessionEnd
 
-Isso é usado para notificar ao backend do Media Analytics para encerrar imediatamente a sessão quando o usuário abandonou sua exibição do conteúdo e não pode retornar.
+Isso é usado para notificar o back-end do Media Analytics para encerrar imediatamente a sessão quando o usuário tiver abandonado sua visualização do conteúdo e for improvável que ele volte.
 
 If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
 
