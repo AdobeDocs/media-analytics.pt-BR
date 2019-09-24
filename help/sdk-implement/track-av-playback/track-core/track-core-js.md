@@ -1,7 +1,7 @@
 ---
 seo-title: Rastreamento da reprodução principal no JavaScript
 title: Rastreamento da reprodução principal no JavaScript
-uuid: 3 d 6 e 0 ab 1-899 a -43 c 3-b 632-8276 e 84345 ab
+uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,9 +11,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # Rastreamento da reprodução principal no JavaScript{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Esta documentação aborda o rastreamento na versão 2. x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
+>Esta documentação cobre o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
 
-1. **Configuração de rastreamento inicial**
+1. **Initial tracking setup**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -24,21 +24,21 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | Nome da mídia | Sim |
    | `mediaid` | Identificador exclusivo de mídia | Sim |
    | `length` | Comprimento da mídia | Sim |
-   | `streamType` | Stream type (see _StreamType constants_ below) | Sim |
-   | `mediaType` | Media type (see _MediaType constants_ below) | Sim |
+   | `streamType` | Stream type (see StreamType constants below)__ | Sim |
+   | `mediaType` | Media type (see MediaType constants below)__ | Sim |
 
-   **`StreamType`constantes:**
+   **`StreamType`constants:**
 
    | Nome da constante | Descrição  |
    |---|---|
    | `VOD` | Tipo de fluxo para vídeo sob demanda. |
    | `LIVE` | Tipo de fluxo para conteúdo LIVE. |
    | `LINEAR` | Tipo de fluxo para conteúdos lineares. |
-   | `AOD` | Tipo de fluxo para áudio sob demanda. |
+   | `AOD` | Stream type for Audio on Demand. |
    | `AUDIOBOOK` | Tipo de fluxo para audiobook. |
    | `PODCAST` | Tipo de fluxo para podcast. |
 
-   **`MediaType`constantes:**
+   **`MediaType`constants:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -54,9 +54,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                      <MEDIA_TYPE>);
    ```
 
-1. **Anexar metadados**
+1. **Attach metadata**
 
-   Como opção, anexe objetos de metadados padrão e/ou personalizados à sessão de monitoramento por meio das variáveis de dados de contexto.
+   Como opção, anexe objetos de metadados padrão e/ou personalizados à sessão de rastreamento por meio de variáveis de dados de contexto.
 
    * **Metadados padrão**
 
@@ -64,14 +64,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       >[!NOTE]
       >
-      >A anexação do objeto de metadados padronizados ao objeto de mídia é opcional.
+      >Anexar o objeto de metadados padrão ao objeto de mídia é opcional.
 
       * Referência da API de chaves de metadados de mídia - [Chaves de metadados padrão - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
          See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Metadados personalizados**
 
-      Crie um objeto de variável para as variáveis personalizadas e preencha os dados dessa mídia. Por exemplo:
+      Crie um objeto variável para as variáveis personalizadas e preencha com os dados para essa mídia. Por exemplo:
 
       ```js
       /* Set custom context data */ 
@@ -83,9 +83,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **Rastrear a intenção de iniciar a reprodução**
+1. **Track the intention to start playback**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
+   To begin tracking a media session, call  on the Media Heartbeat instance:`trackSessionStart`
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -93,7 +93,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >O segundo valor é o nome do objeto de metadados de mídia personalizado que você criou na etapa 2.
+   >The second value is the custom media metadata object name that you created in step 2.
 
    >[!IMPORTANT]
    >
@@ -103,7 +103,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Rastrear o início da reprodução atual**
+1. **Rastrear o início real da reprodução**
 
    Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
 
@@ -111,7 +111,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Rastrear a conclusão da reprodução**
+1. **Track the completion of playback**
 
    Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
 
@@ -119,7 +119,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackComplete();
    ```
 
-1. **Rastrear o final da sessão**
+1. **Track the end of the session**
 
    Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
 
@@ -129,11 +129,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marca o fim de uma sessão de monitoramento. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marca o fim de uma sessão de rastreamento. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **Rastrear todos os cenários de pausa possíveis**
 
-   Identify the event from the media player for pause and call `trackPause`:
+   Identify the event from the media player for pause and call :`trackPause`
 
    ```js
    mediaHeartbeat.trackPause();
@@ -156,7 +156,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Pode ser a mesma fonte de evento usada na Etapa 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >Essa pode ser a mesma fonte de evento usada na Etapa 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 * Cenários de rastreamento: [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reprodutor de exemplo incluído com o SDK do JavaScript para um exemplo completo de rastreamento.
