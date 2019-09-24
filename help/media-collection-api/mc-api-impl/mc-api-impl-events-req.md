@@ -1,7 +1,7 @@
 ---
 seo-title: Implementar uma solicitação de eventos
 title: Implementar uma solicitação de eventos
-uuid: 3 bfa 313 c-ff 74-4 e 2 e-bbde -6 f 4 a 6221 d 85 b
+uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
