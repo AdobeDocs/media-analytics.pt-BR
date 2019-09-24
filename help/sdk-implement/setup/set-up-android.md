@@ -1,7 +1,7 @@
 ---
 seo-title: Configurar Android
 title: Configurar Android
-uuid: 3 ffe 3276-a 104-4182-9220-038729 e 9 f 3 d 5
+uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,10 +12,10 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Pré-requisitos
 
-* **Obter parâmetros de configuração válidos para o SDK
-de mídia** Esses parâmetros podem ser obtidos a partir de um representante da Adobe depois que você configurar sua conta de análise.
-* **Implementação do adbmobile para Android em seu aplicativo**
-Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [Android SDK 4. x para Soluções da Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **Obtain valid configuration parameters for the Media SDK
+These parameters can be obtained from an Adobe representative after you set up your analytics account.**
+* **Implement ADBMobile for Android in your application
+For more information about the Adobe Mobile SDK documentation, see Android SDK 4.x for Experience Cloud Solutions.**[](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
 * **Forneça os seguintes recursos no reprodutor de mídia:**
    * *Uma API para assinar os eventos do reprodutor* - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
    * *Uma API que fornece informações sobre o reprodutor* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
