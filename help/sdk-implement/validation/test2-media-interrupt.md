@@ -1,43 +1,43 @@
 ---
-seo-title: Interrupção de mídia Test 2
-title: Interrupção de mídia Test 2
-uuid: eeccd 534-63 fd -4 dd 3-b 096-0431 bc 9 a 11 ff
+seo-title: Teste 2 Interrupção de mídia
+title: Teste 2 Interrupção de mídia
+uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 translation-type: tm+mt
 source-git-commit: 5822e634c51cb53a60400623d115c6d862dad44f
 
 ---
 
 
-# Teste 2: Interrupção de mídia{#test-media-interruption}
+# Teste 2: Interrupção da mídia{#test-media-interruption}
 
-Esse caso de teste valida o comportamento de interrupção móvel. É um elemento obrigatório da solicitação de certificação.
+Esse caso de teste valida o comportamento de interrupção móvel. It is a required element of your certification request.
 
 ## Formulário de solicitação de certificação
 
-**Baixe o formulário de solicitação de certificação aqui: = = &gt;**  [Formulário de solicitação de certificação.](cert_req_form.docx)
+**Baixe o formulário de solicitação de certificação aqui: ==&gt;Formulário de solicitação** de [certificação.](cert_req_form.docx)
 
-## Procedimento de teste
+## Procedimento de ensaio
 
 Você deve concluir e registrar essas tarefas na seguinte ordem:
 
-1. **Iniciar o player de mídia**
+1. **Iniciar o media player**
 
-   Quando o player de mídia é iniciado, as chamadas a seguir são enviadas na seguinte ordem:
+   When the media player starts, the following calls are sent in the following order:
 
-   1. Início do Adobe Analytics (appmeasurement)
-   1. Início do Media Analytics (heartbeats)
-   1. Chamada de início do Media Analytics (heartbeats) Adobe Analytics solicitada
-   As primeiras duas chamadas acima contêm metadados e variáveis adicionais. Para obter parâmetros de chamada e metadados, consulte [Detalhes de chamada de teste.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
+   1. Adobe Analytics (AppMeasurement) Start
+   1. Media Analytics (heartbeats) Start
+   1. Media Analytics (heartbeats) Adobe Analytics Start call requested
+   The first two calls above contain additional metadata and variables. For call parameters and metadata, see Test call details.[](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
-   A terceira chamada acima diz ao servidor Media Analytics que o Media SDK solicitou que a chamada de início do Adobe Analytics (`pev2=ms_s`) seja enviada para o servidor do Adobe Analytics.
+   The third call above tells the Media Analytics server that the Media SDK requested that the Adobe Analytics Start call () be sent to the Adobe Analytics server.`pev2=ms_s`
 
 1. **Reproduzir conteúdo principal por pelo menos 5 minutos sem interrupções**
 
    **Reprodução de conteúdo**
 
-   Durante a reprodução do conteúdo, o SDK de mídia envia chamadas de play (heartbeats) ao servidor do Media Analytics a cada dez segundos.
+   During content playback, the Media SDK sends play calls (heartbeats) to the Media Analytics server every ten seconds.
 
-   Para obter parâmetros de chamada e metadados, consulte [Detalhes de chamada de teste.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
+   For call parameters and metadata, see Test call details.[](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
    Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
 
@@ -45,15 +45,15 @@ Você deve concluir e registrar essas tarefas na seguinte ordem:
 
    While the app runs in the background, only `main:pause` calls should be sent to the Media Analytics server, starting with VHL version 1.6.6 and later.
 
-1. **Trazer o aplicativo ou o navegador de volta para primeiro plano**
+1. **Trazer aplicativo ou navegador de volta ao primeiro plano**
 
    Ao voltar para o primeiro plano, a reprodução do conteúdo deve ser retomada.
 
 1. **Reproduzir mídia de conteúdo principal por pelo menos 5 minutos sem interrupções**
 
-   Para obter parâmetros de chamada e metadados, consulte [Detalhes da chamada de teste.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
+   For call parameters and metadata, see Test Call Details.[](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
-1. **Fechar o player de mídia**
+1. **Close media player**
 
    Nenhuma chamada de rastreamento adicional deve ser acionada depois que o player de mídia for fechado.
 
