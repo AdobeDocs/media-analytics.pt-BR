@@ -1,7 +1,7 @@
 ---
 seo-title: Rastreamento no SceneGraph (Roku)
 title: Rastreamento no SceneGraph (Roku)
-uuid: fa 85 e 546-c 79 b -4 df 4-8 c 03-d 6593 fa 296 d 5
+uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -108,14 +108,14 @@ O conector bridge foi projetado para ser executado da seguinte maneira:
 | Nome da constante | Descrição |
 |---|---|
 | `API_RESPONSE` | Used to retrieve the response object from `adbmobileTask` node's `adbmobileApiResponse` field |
-| `DEBUG_LOGGING` | Used as `apiName` for `getDebugLogging` |
-| `PRIVACY_STATUS` | Used as `apiName` for `getPrivacyStatus` |
-| `TRACKING_IDENTIFIER` | Used as `apiName` for `trackingIdentifier` |
-| `USER_IDENTIFIER` | Used as `apiName` for `userIdentifier` |
-| `VISITOR_MARKETING_CLOUD_ID` | Used as `apiName` for `visitorMarketingCloudID` |
-| `AUDIENCE_VISITOR_PROFILE` | Used as `apiName` for `audienceVisitorProfile` |
-| `AUDIENCE_DPID` | Used as `apiName` for `audienceDpid` |
-| `AUDIENCE_DPUUID` | Used as `apiName` for `audienceDpuuid` |
+| `DEBUG_LOGGING` | Usado como `apiName` para `getDebugLogging` |
+| `PRIVACY_STATUS` | Usado como `apiName` para `getPrivacyStatus` |
+| `TRACKING_IDENTIFIER` | Usado como `apiName` para `trackingIdentifier` |
+| `USER_IDENTIFIER` | Usado como `apiName` para `userIdentifier` |
+| `VISITOR_MARKETING_CLOUD_ID` | Usado como `apiName` para `visitorMarketingCloudID` |
+| `AUDIENCE_VISITOR_PROFILE` | Usado como `apiName` para `audienceVisitorProfile` |
+| `AUDIENCE_DPID` | Usado como `apiName` para `audienceDpid` |
+| `AUDIENCE_DPUUID` | Usado como `apiName` para `audienceDpuuid` |
 
 ### Nó adbmobileTask
 
@@ -136,26 +136,22 @@ O conector bridge foi projetado para ser executado da seguinte maneira:
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> Inválido </td>
-<td> Todas as apis somente leitura executadas no adobemobilesdk retornarão respostas neste campo. Registre-se para um retorno de chamada para detectar as atualizações desse campo e receber objetos de resposta. O seguinte é o formato do objeto de resposta:  
+<td> Somente leitura Todas as APIs executadas no AdobeMobileSDK retornarão respostas neste campo. Registre-se para um retorno de chamada para detectar as atualizações desse campo e receber objetos de resposta. O seguinte é o formato do objeto de resposta:  
 <codeblock>
-response = {"apiname": &lt; Scenegraphconstants.
- API_ NAME &gt; 
- " Returnvalue: &lt; API_ RESPONSE &gt;} 
+response = { "apiName" : &lt;SceneGraphConstants.
+               API_NAME&gt; "returnValue: &lt;API_RESPONSE&gt; } 
 </codeblock>
-Uma instância desse objeto de resposta será enviada para qualquer chamada de API no AdobeMobileSDK que deveria retornar um valor de acordo com o guia de referência da API. Por exemplo, uma chamada de API para visitormarketingcloudid () retornará o seguinte objeto de resposta: 
+Uma instância desse objeto de resposta será enviada para qualquer chamada de API no AdobeMobileSDK que deveria retornar um valor de acordo com o guia de referência da API. Por exemplo, uma chamada de API para visitorMarketingCloudID() retornará o seguinte objeto de resposta: 
 <codeblock>
-response = {"apiname": m.
- adbmobileconstants.
- VISITOR_ MARKETING_ CLOUD_ ID 
- " Returnvalue: " 07050 x 25671 x 33760 x 72644 x 14 "}} 
+response = { "apiName" : m
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID "returnValue: "07050x25671x33760x72644x14" } 
 </codeblock>
 OU, os dados de resposta também podem ser inválidos: 
 <codeblock>
-response = { 
- " Apiname ": m.
- adbmobileconstants.
- VISITOR_ MARKETING_ CLOUD_ ID 
- " Returnvalue: invalid} 
+response = { "apiName" : m
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID "returnValue: inválido } 
 </codeblock>
 </td>
 </tr>
@@ -167,13 +163,11 @@ response = {
 #### `getADBMobileConnectorInstance`
 
 Assinatura da API: `ADBMobile().getADBMobileConnectorInstance()`\
-Input: `adbmobileTask`
-Return Type: `ADBMobileConnector`
+Entrada: Tipo de `adbmobileTask`retorno: `ADBMobileConnector`
 
 #### `sgConstants`
 
-API Signature: `ADBMobile().sgConstants()`
-Input: None\
+Assinatura da API: `ADBMobile().sgConstants()`Entrada: Nenhum\
 Tipo de retorno: `SceneGraphConstants`
 
 >[!NOTE]
@@ -186,7 +180,7 @@ Tipo de retorno: `SceneGraphConstants`
 | Controle de versão | `version` | Constante para recuperar as informações de versão da AdobeMobileLibrary |
 | Privacidade/rejeição | `PRIVACY_STATUS_OPT_IN` | Constante para o status de privacidade aceito |
 |  | `PRIVACY_STATUS_OPT_OUT` | Constante para status de privacidade rejeitado |
-| Constantes do MediaHeartbeat | Consulte as constantes nesta página: <br/><br/>[Métodos de heartbeat de mídia.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Usar essas constantes com apis do mediaheartbeat |
+| Constantes do MediaHeartbeat | Consulte as constantes nesta página: <br/><br/>[Métodos de heartbeat de mídia.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Use essas constantes com as APIs MediaHeartbeat |
 | Metadados padrão | Consulte as constantes nesta página: <br/><br/>[Parâmetros de metadados padrão.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Use essas constantes para anexar metadados de vídeo/anúncio padrão às APIs do MediaHeartbeat |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. Para obter mais informações sobre esses métodos, consulte a tabela abaixo:
@@ -203,7 +197,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ## Implementação {#section_dbz_ydz_y2b}
 
-1. **Baixe a biblioteca do Roku -** Baixe a biblioteca mais [recente do Roku.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
+1. **Baixe a biblioteca Roku -** Baixe a biblioteca Roku [mais recente.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
 1. **Configurar o ambiente de desenvolvimento**
 
