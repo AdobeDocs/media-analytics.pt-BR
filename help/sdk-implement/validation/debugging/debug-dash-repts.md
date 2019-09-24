@@ -1,7 +1,7 @@
 ---
 seo-title: Painéis e relatórios de depuração
 title: Painéis e relatórios de depuração
-uuid: 8 e 6 f 6245-d 8 bd -4329-89 e 1-4 c 5595 e 04 ec 5
+uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -16,7 +16,7 @@ Para a certificação, esses relatórios podem ser compartilhados; basta copiar 
 
 >[!NOTE]
 >
->Somente uma sessão pode estar ativa por vez. A sessão ativa pode ser aberta do Painel.
+>Only one session can be active at a time. A sessão ativa pode ser aberta do Painel.
 
 ![](assets/debug-dashboard.png)
 
