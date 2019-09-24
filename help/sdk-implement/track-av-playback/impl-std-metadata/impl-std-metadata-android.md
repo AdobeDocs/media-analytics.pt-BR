@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Implementar metadados padrão no Android
 title: Implementar metadados padrão no Android
-uuid: c 48 b 4190-b 062-4 c 4 e -9 c 40-8 dde 4598 a 50 e
+uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
 source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
@@ -18,15 +18,15 @@ source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | Constante para anexar os metadados padrão no `MediaObject`. |
 
-## Referência da API de chaves de metadados
+## Referência da API para chaves de metadados
 
-* Create a `HashMap` of standard metadata key value pairs.
-   * [Chaves de metadados do vídeo](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+* Crie um conjunto `HashMap` de pares de valores principais de metadados padronizados.
+   * [Teclas de metadados de vídeo](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
    * [Teclas de metadados de áudio](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * Defina os metadados padrão `HashMap` no `MediaInfo` usando a constante de Metadados padrão para os metadados.
 * Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
 
-## Exemplo de implementações
+## Exemplos de implementações
 
 ### Vídeo
 
