@@ -1,7 +1,7 @@
 ---
 seo-title: Rastrear capítulos e segmentos no Android
 title: Rastrear capítulos e segmentos no Android
-uuid: 013815 d 7-4 d 9 e -48 f 4-a 2 b 9-3 b 70 cb 11cb 9 d 3
+uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,17 +12,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Implementar o rastreamento de capítulo
+## Implement chapter tracking
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
-   `ChapterObject` referência de rastreamento de capítulo:
+   `ChapterObject` chapter tracking reference:
 
    >[!NOTE]
    >
-   >Essas variáveis só serão necessárias se você estiver planejando rastrear capítulos.
+   >Essas variáveis só são necessárias se você estiver planejando rastrear capítulos.
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
