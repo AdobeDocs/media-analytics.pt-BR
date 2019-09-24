@@ -1,6 +1,6 @@
 ---
-seo-title: Entender Launch versus diferenças de SDK de mídia
-title: Entender Launch versus diferenças de SDK de mídia
+seo-title: Understand Launch versus Media SDK differences
+title: Understand Launch versus Media SDK differences
 uuid: null
 translation-type: tm+mt
 source-git-commit: 932af09a0692ef35ab46fb6f34b2dec5f2e1e562
@@ -8,51 +8,52 @@ source-git-commit: 932af09a0692ef35ab46fb6f34b2dec5f2e1e562
 ---
 
 
-# Entender Launch versus diferenças de SDK de mídia
+# Entenda as diferenças de inicialização em relação ao SDK de mídia
 
-## Diferenças de recursos
+## Feature differences
 
-* *Launch* - O Launch fornece uma interface do usuário que o orienta a configurar, configurar e implantar suas soluções de rastreamento de mídia baseadas na Web. O Launch aprimora o Gerenciamento dinâmico de tags (DTM).
-* *SDK de mídia* - o SDK de mídia fornece bibliotecas de rastreamento de mídia projetadas para plataformas específicas (por exemplo: Android, iOS, etc.). A Adobe recomenda o SDK de mídia para rastrear o uso de mídia em seus aplicativos móveis.
+* *Launch* - o Launch fornece uma interface que orienta você na configuração, configuração e implantação das soluções de rastreamento de mídia baseadas na Web. O Launch melhora o Gerenciamento dinâmico de tags (DTM).
+* *Media SDK - The Media SDK provides you with media tracking libraries designed for specific platforms (e.g.: Android, iOS, etc.).* A Adobe recomenda o SDK de mídia para rastrear o uso de mídia em seus aplicativos móveis.
 
-## Diferenças de criação do rastreador
+## Diferenças na criação do rastreador
 
 ### Launch
 
 O Launch oferece duas abordagens para a criação da infraestrutura de rastreamento. Ambas as abordagens usam a Extensão de inicialização do Media Analytics:
 
-1. Use as apis de rastreamento de mídia de uma página da Web.
+1. Use as APIs de rastreamento de mídia de uma página da Web.
 
-   Neste cenário, a Extensão do Analytics Extension exporta as apis de rastreamento de mídia para uma variável configurada no objeto da janela global:
+   Nesse cenário, a Extensão do Media Analytics exporta as APIs de rastreamento de mídia para uma variável configurada no objeto de janela global:
 
    ```
    window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance
    ```
 
-1. Use as apis de rastreamento de mídia de outra extensão do Launch.
+1. Use as APIs de rastreamento de mídia de outra extensão do Launch.
 
-   Neste cenário, você usa as apis de rastreamento de mídia expostas pelos Módulos e `get-instance` Módulos `media-heartbeat` compartilhados.
+   Nesse cenário, você usa as APIs de rastreamento de mídia expostas pelos módulos `get-instance` e `media-heartbeat` compartilhados.
 
    >[!NOTE]
    >
-   >Módulos compartilhados não estão disponíveis para uso em páginas da Web. Você só pode usar Módulos compartilhados de outra extensão.
+   >Shared Modules are not available for use in web pages. You can only use Shared Modules from another extension.
 
-   Crie `MediaHeartbeat` uma instância usando o Módulo `get-instance` compartilhado.
-Passe um objeto delegado para `get-instance` esse exposto `getQoSObject()` e `getCurrentPlaybackTime()` funções.
+   Create a  instance using the  Shared Module.
+`MediaHeartbeat``get-instance`
+Pass a delegate object to  that exposes  and  functions.`get-instance``getQoSObject()``getCurrentPlaybackTime()`
 
    ```
    var getMediaHeartbeatInstance =
    turbine.getSharedModule('adobe-video-analytics', 'get-instance');
    ```
 
-   Acesse `MediaHeartbeat` constantes por meio do `media-heartbeat` Módulo compartilhado.
+   Access  constants via the  Shared Module.`MediaHeartbeat``media-heartbeat`
 
 ### SDK do Media
 
-1. Adicione a biblioteca do Analytics ao seu projeto de desenvolvimento.
-1. Crie um objeto config (`MediaHeartbeatConfig`).
-1. Implemente o protocolo delegado, exposição de funções `getQoSObject()` e `getCurrentPlaybackTime()` funções.
-1. Crie uma instância do Media Heartbeat (`MediaHeartbeat`).
+1. Add the Media Analytics library to your development project.
+1. Create a config object ().`MediaHeartbeatConfig`
+1. Implement the delegate protocol, exposing the  and  functions.`getQoSObject()``getCurrentPlaybackTime()`
+1. Create a Media Heartbeat instance ().`MediaHeartbeat`
 
 ```
 // Media Heartbeat initialization
@@ -77,11 +78,11 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 
 ### Launch
 
-* [Visão geral do lançamento](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [Launch overview](https://docs.adobe.com/content/help/en/launch/using/overview.html)
 * [Extensão MA](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 ### SDK do Media
 
-* [Configurar JS](/help/sdk-implement/setup/set-up-js.md)
+* [Set up JS](/help/sdk-implement/setup/set-up-js.md)
 * [API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
