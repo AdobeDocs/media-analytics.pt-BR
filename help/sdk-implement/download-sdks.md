@@ -1,7 +1,7 @@
 ---
 seo-title: Baixar SDKs
 title: Baixar SDKs
-uuid: a 619 fbb 8-693 e -4583-8 pai -0 ff 875 e 715 f 8
+uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
 source-git-commit: 8b4ed0c9ac2140a25c64602b615d982410b2faea
 
@@ -12,12 +12,12 @@ source-git-commit: 8b4ed0c9ac2140a25c64602b615d982410b2faea
 
 ## Baixe os SDKs do Media 2.x {#section_551A10AD7880426BB29AE52482BB4211}
 
-| 2. x Media sdks  | Downloads de SDK de mídia mais recentes |  APIs   |  Documentação  |
+| SDKs de mídia 2.x | Downloads mais recentes do SDK de mídia |  APIs   |  Documentação  |
 | --- | --- | --- | --- |
 | Android/FireTV | [SDK do Media para Android v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.0) | [Referência da API do Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Configurar Android](/help/sdk-implement/setup/set-up-android.md) |
-| iOS/Apple TV | [Media SDK for iOS v 2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.0) (entre em contato [com o Atendimento ao cliente ](https://helpx.adobe.com/marketing-cloud/contact-support.html) para obter o SDK legacy .0 legado) | [Referência da API do iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Configurar iOS](/help/sdk-implement/setup/set-up-ios.md) |
+| iOS/Apple TV | [Media SDK for for iOS v2.2.0 (Contact Customer Care  to obtain legacy 2.0 SDK)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.0)[](https://helpx.adobe.com/marketing-cloud/contact-support.html) | [Referência da API do iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Configurar iOS](/help/sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [SDK do Media para JS v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.0) | [Referência da API do JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [Configurar JavaScript](/help/sdk-implement/setup/set-up-js.md) |
-| Roku | [SDK do Media para Roku v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [Configurar Roku](/help/sdk-implement/setup/set-up-roku.md) |
+| Roku | [SDK do Media para Roku v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [Configurar o Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [SDK do Media para Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Referência da API do Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configurar Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 <!--
@@ -38,12 +38,12 @@ source-git-commit: 8b4ed0c9ac2140a25c64602b615d982410b2faea
 
 ## Baixe os SDKs do Media 1.x {#section_B91B3A02E68B4B42917E392AAE666522}
 
-| 1. x sdks  | Downloads de SDK de mídia  | Guias de introdução  |
+| SDKs 1.x |  Downloads do SDK de mídia |  Guias de introdução |
 | --- | --- | --- |
 | Android | [SDK do para Android v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [Introdução - Media 1.x para Android](setup/vhl-dev-guide-v15_android.pdf) |
 | iOS | [SDK do para iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Introdução - Media 1.x para iOS](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [SDK do para JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Introdução - Media 1.x para JS](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [SDK do para TVML v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Introdução - Media 1.x para TVML](setup/vhl_tvml.pdf) |
-| Apple TV | SDK for Apple TV v1.0.0 (Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 1.x SDK) | [Introdução - Media 1.x para Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | SDK for Chromecast v1.0.0 (Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 1.x SDK) | [Introdução - Media 1.x para Chromecast](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | SDK for Apple TV v1.0.0 (Contact Customer Care to obtain legacy 1.x SDK)[](https://helpx.adobe.com/marketing-cloud/contact-support.html) | [Introdução - Media 1.x para Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | SDK para Chromecast v1.0.0 (Entre em contato com o [Atendimento](https://helpx.adobe.com/marketing-cloud/contact-support.html) ao cliente para obter o SDK 1.x herdado) | [Introdução - Media 1.x para Chromecast](setup/chromecast_1.x_sdk.pdf) |
 
