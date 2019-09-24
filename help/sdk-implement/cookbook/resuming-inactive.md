@@ -1,7 +1,7 @@
 ---
 seo-title: Resumo de sessões inativas
 title: Resumo de sessões inativas
-uuid: 3 ff 1205 d -7 bbe -4016-9 bd 7-6 e 34 b 7862 c 4 c
+uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,18 +12,18 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Pausas longas
 
-O SDK de mídia monitora automaticamente por quanto tempo a reprodução da mídia está em um dos estados inativos a seguir:
+O SDK de mídia rastreia automaticamente o tempo de reprodução da mídia em um dos seguintes estados inativos:
 
 * Pausado
 * Buscando
 * Paralisado
 * Buffering
 
-Se uma sessão de rastreamento de mídia permanecer em estado inativo por mais de 30 minutos, a sessão será fechada automaticamente. Se o usuário retomar a sessão após o estado inativo (`trackPlay`), o Media Heartbeat cria automaticamente uma nova sessão de vídeo com as informações e os metadados que foram utilizados anteriormente e envia um evento de retomada de heartbeat. Para obter mais informações, consulte [Parâmetros de áudio e vídeo.](/help/metrics-and-metadata/audio-video-parameters.md)
+Se uma sessão de rastreamento de mídia permanecer no estado inativo por mais de 30 minutos, a sessão será fechada automaticamente. Se o usuário retomar a sessão após o estado inativo (`trackPlay`), o Media Heartbeat cria automaticamente uma nova sessão de vídeo com as informações e os metadados que foram utilizados anteriormente e envia um evento de retomada de heartbeat. Para obter mais informações, consulte [Parâmetros de áudio e vídeo.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 ## Retomar manualmente uma sessão fechada
 
-O SDK de mídia só retomará automaticamente as sessões se o aplicativo não tiver sido fechado. Se o aplicativo armazenar dados do usuário e tiver a capacidade de retomar uma mídia fechada anteriormente, é possível acionar manualmente um evento de retomada. Assim que iniciar a sessão de rastreamento de vídeo, defina a propriedade opcional Vídeo retomado.
+O SDK de mídia só retomará automaticamente as sessões se o aplicativo não for fechado. Se o aplicativo armazenar dados do usuário e tiver a capacidade de retomar uma mídia fechada anteriormente, será possível acionar manualmente um evento de retomada. Assim que iniciar a sessão de rastreamento de vídeo, defina a propriedade opcional Vídeo retomado.
 
 ### Android
 
