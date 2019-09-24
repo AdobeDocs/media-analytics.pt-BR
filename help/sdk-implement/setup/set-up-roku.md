@@ -1,7 +1,7 @@
 ---
 seo-title: Configurar Roku
 title: Configurar Roku
-uuid: 904 dfda 0-4782-41 da-b 4 ab -212 e 81156633
+uuid: 904dfda0-4782-41da-b4ab-212e81156633
 translation-type: tm+mt
 source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
@@ -12,8 +12,8 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ## Pré-requisitos
 
-* **Obter parâmetros de configuração válidos para o Heartbeats**
-Esses parâmetros podem ser obtidos por um representante da Adobe depois que você configurar sua conta de análise de mídia.
+* **Obtain valid configuration parameters for Heartbeats
+These parameters can be obtained from an Adobe representative after you set up your media analytics account.**
 * **Forneça os seguintes recursos no reprodutor de mídia:**
    * _Uma API para assinar os eventos do reprodutor_ - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
    * _Uma API que fornece informações sobre o reprodutor_ - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
@@ -128,8 +128,8 @@ O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativo
    |  Método   | Descrição |
    | --- | --- |
    | `visitorMarketingCloudID` | Recupera a ID de visitante da Experience Cloud do serviço de ID de visitante.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | Com a ID de visitante da Experience Cloud, é possível definir IDs adicionais de clientes que podem ser associadas a cada visitante. A API de visitante aceita várias IDs do cliente para o mesmo visitante e um identificador de tipo de cliente para separar o escopo de diferentes IDs do cliente. This method corresponds to `setCustomerIDs`. For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | Usado para definir a ID do Roku para Publicidade (RIDA) no SDK. Por exemplo: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>`"<sample_roku_identifier_for_advertising>")`<br/><br/><br/>Obtenha a ID do Roku para Advertising (RIDA) usando a API Geku SDK [getrida ()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) . |
+   | `visitorSyncIdentifiers` | Com a ID de visitante da Experience Cloud, é possível definir IDs adicionais de clientes que podem ser associadas a cada visitante. A API de visitante aceita várias IDs do cliente para o mesmo visitante e um identificador de tipo de cliente para separar o escopo de diferentes IDs do cliente. This method corresponds to . `setCustomerIDs` For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | Used to set the Roku ID for Advertising (RIDA) on the SDK. Por exemplo: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>   Get the Roku ID for Advertising (RIDA) using the Roku SDK getRIDA() API.`"<sample_roku_identifier_for_advertising>")`<br/><br/><br/>[](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) |
 
    <!--
     Roku Api Reference: 
