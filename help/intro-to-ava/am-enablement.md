@@ -1,7 +1,7 @@
 ---
 seo-title: Ativação do Audience Manager
 title: Ativação do Audience Manager
-uuid: 8 a 7 f 9343-ebc 3-4087-9 d 7 e -5972640 d 2455
+uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
 translation-type: tm+mt
 source-git-commit: 8ae15f1e14731a97d212ab66816a777b4dcc897e
 
