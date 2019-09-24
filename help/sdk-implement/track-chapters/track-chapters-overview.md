@@ -1,7 +1,7 @@
 ---
 seo-title: Visão geral
 title: Visão geral
-uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
+uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,11 +12,11 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation using 2.x SDKs. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-O rastreamento de capítulo e segmento está disponível para capítulos de mídia personalizados ou segmentos. Alguns usos comuns do rastreamento de capítulo são definidos para definir segmentos personalizados com base no conteúdo da mídia (como o beisebol) ou definir segmentos de conteúdo entre intervalos de anúncios. Chapter tracking is **not** required for core media tracking implementations.
+O rastreamento de capítulo e segmento está disponível para capítulos ou segmentos de mídia personalizados. Alguns usos comuns do rastreamento de capítulo são definir segmentos personalizados com base no conteúdo de mídia (como entradas de beisebol) ou definir segmentos de conteúdo entre quebras de anúncios. Chapter tracking is **not** required for core media tracking implementations.
 
-O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítulo e capítulos ignorados. Você pode usar a API do player de mídia com lógica de segmentação personalizada para identificar eventos de capítulo e preencher as variáveis de capítulo opcionais e opcionais.
+O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítulo e capítulos ignorados. Você pode usar a API do player de mídia com lógica de segmentação personalizada para identificar eventos de capítulo e preencher as variáveis de capítulo necessárias e opcionais.
 
 ## Eventos do player
 
@@ -42,7 +42,7 @@ O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítu
 
    >[!NOTE]
    >
-   >Essas variáveis só serão necessárias se você estiver planejando rastrear capítulos.
+   >Essas variáveis só são necessárias se você estiver planejando rastrear capítulos.
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
@@ -57,7 +57,7 @@ O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítu
 1. Se a reprodução do capítulo não tiver sido concluída porque o usuário optou por ignorar o capítulo (por exemplo, se o usuário sair do limite do capítulo), chame o evento `ChapterSkip` na instância MediaHeartbeat.
 1. Se houver capítulos adicionais, repita as etapas de 1 até 5.
 
-O código de exemplo a seguir usa o SDK do javascript 2. x para um player de mídia HTML 5. Você deve usar este código com o código de reprodução de mídia principal.
+The following sample code uses the JavaScript 2.x SDK for an HTML5 media player. You should use this code with the core media playback code.
 
 ```js
 /* Call on chapter start */ 
