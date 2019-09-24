@@ -1,7 +1,7 @@
 ---
 seo-title: Configurar iOS
 title: Configurar iOS
-uuid: a 1 c 6 be 79-a 6 dc -47 b 6-93 b 3-ac 7 b 42 f 1 f 3 eb
+uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,14 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Pré-requisitos
 
-* **Obter parâmetros de configuração válidos para o SDK
-de mídia** Esses parâmetros podem ser obtidos a partir de um representante da Adobe depois que você configurar sua conta de análise.
-* **Implementação do adbmobile para iOS em seu aplicativo**
-Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [iOS SDK 4. x para Soluções da Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **Obter parâmetros de configuração válidos para o SDK** de mídiaEsses parâmetros podem ser obtidos de um representante da Adobe após a configuração da conta do Analytics.
+* **Implementação do ADBMobile para iOS em seu aplicativo** Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [iOS SDK 4.x para Soluções da Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >A partir do iOS 9, a Apple apresentou um recurso chamado App Transport Security (ATS). Este recurso visa melhorar a segurança da rede, garantindo que seus aplicativos usem somente protocolos padrão do setor e cifras. Esse recurso é ativado por padrão, mas você tem opções de configuração que permitem trabalhar com ATS. For details on ATS, see [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >A partir do iOS 9, a Apple apresentou um recurso chamado App Transport Security (ATS). Este recurso visa melhorar a segurança da rede, garantindo que seus aplicativos usem somente protocolos padrão do setor e cifras. Esse recurso é ativado por padrão, mas você tem opções de configuração que permitem trabalhar com ATS. Para obter detalhes sobre ATS, consulte Segurança de transporte de [aplicativos.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **Forneça os seguintes recursos no reprodutor de mídia:**
 
