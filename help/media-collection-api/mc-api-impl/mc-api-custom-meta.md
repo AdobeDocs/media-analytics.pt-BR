@@ -1,7 +1,7 @@
 ---
 seo-title: Suporte a metadados personalizados
 title: Suporte a metadados personalizados
-uuid: df 4109 dd -9 fca -4 c 33-a 7 d 5-8 e 6 eec 257527
+uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,5 +14,5 @@ You can provide custom key:value pairs on the `sessionStart`, `chapterStart`, an
 
 The `customMetadata` JSON key should contain an object of key:value pairs. A chave deve conter somente caracteres alfanuméricos, sublinhados e pontos.
 
-[Eventos de API da coleção MA](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
+[Eventos de API da coleção de MA](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
 
