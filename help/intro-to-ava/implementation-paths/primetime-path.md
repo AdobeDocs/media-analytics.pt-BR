@@ -1,7 +1,7 @@
 ---
 seo-title: Primetime
 title: Primetime
-uuid: 3 d 5 a 5 ebd-b 897-40 f 6-ba 75-bba 1 bae 3 a 081
+uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -22,9 +22,9 @@ O Primetime elimina a complexidade de alcançar, monetizar e ativar públicos-al
 * Conjunto robusto de eventos e metadados para garantir a precisão entre o buffer de QoS ou problemas de interrupções de conectividade móvel e as interações do usuário final, como buscar, pausar e colocar em segundo plano em dispositivos móveis.
 * Suporte integrado ao DTVR (linear) da Nielsen com metadados ID3 e DCR com metadados CMS.
 
-O TVSDK já está integrado ao SDK do Media, o que torna a implementação muito mais fácil e rápida em todas as plataformas compatíveis. O Primetime também oferece suporte à parceria com a Nielsen. Para utilizar o Primetime, siga as mesmas diretrizes e pré-requisitos descritos em  [Lado do cliente](/help/intro-to-ava/implementation-paths/client-side-path.md), juntamente com os seguintes documentos para a(s) plataforma(s): [Guia do usuário do Primetime](https://helpx.adobe.com/primetime/user-guide.html)
+O TVSDK já está integrado ao SDK do Media, o que torna a implementação muito mais fácil e rápida em todas as plataformas compatíveis. O Primetime também oferece suporte à parceria com a Nielsen. Para utilizar o Primetime, siga as mesmas diretrizes e pré-requisitos descritos em  [Lado do cliente](/help/intro-to-ava/implementation-paths/client-side-path.md), juntamente com os seguintes documentos para a(s) plataforma(s): Guia do usuário do [Primetime](https://helpx.adobe.com/primetime/user-guide.html)
 
 >[!NOTE]
 >
->Para este caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/Gerente de contas para assinar uma nova Ordem de vendas, já que o Media Analytics tem uma SKU exclusiva e muda de um modelo de preços baseado em chamadas do servidor para um modelo com base em fluxos de mídia. Além disso, entre em contato com o Representante de vendas/Gerente de conta para saber como adquirir o TVSDK.
+>Para esse caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova Ordem de venda, já que o Media Analytics tem um SKU exclusivo e muda de um modelo de preços com base em chamadas de servidor para um modelo com base em fluxos de mídia. Além disso, entre em contato com o Representante de vendas/Gerente de conta para saber como adquirir o TVSDK.
 
