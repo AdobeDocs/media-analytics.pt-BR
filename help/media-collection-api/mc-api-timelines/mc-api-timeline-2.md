@@ -1,7 +1,7 @@
 ---
 seo-title: Linha do tempo 2 - Usuário abandona a sessão
 title: Linha do tempo 2 - Usuário abandona a sessão
-uuid: 74 b 89 e 8 f-ef 56-4 e 0 c-b 9 a 8-40739 e 15 b 4 cf
+uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, anúncios precedentes, anúncios intermediários, usuário abandona o conteúdo antecipadamente
 
-Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a linha do tempo correspondente das ações de um usuário. Os detalhes de cada ação e suas solicitações relacionadas são apresentados abaixo.
+The following diagrams illustrate the playhead timeline and the corresponding timeline of a user's actions. The details for each action and its accompanying requests are presented below.
 
 
 ![](assets/va_api_content_2.png)
@@ -21,7 +21,7 @@ Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a
 ![](assets/va_api_actions_2.png)
 
 
-## Detalhes da ação
+## Action details
 
 ### Action 1 - Start session {#Action-1}
 
@@ -66,7 +66,7 @@ Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. It ret
 
 **Detalhes da implementação**
 
-Inicie o timer de ping do aplicativo. O primeiro evento de ping deve ser lançado em 1 segundo se houver anúncios precedentes, caso contrário, 10 segundos.
+Inicie o temporizador ping do aplicativo. First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.
 
 ### Action 3 - Ad break start {#Action-3}
 
@@ -137,7 +137,7 @@ Um anúncio de 12 segundos é iniciado.
 
 **Detalhes da implementação**
 
-Faça o ping a cada 1 segundo. (Os painéis subsequentes não são exibidos, com o objetivo de facilitar a serialização.)
+Faça o ping do backend a cada 1 segundo. (Anúncios subsequentes não mostrados, por motivos de brevidade.)
 
 **Exemplo de corpo da solicitação**
 
@@ -173,7 +173,7 @@ O primeiro anúncio precedente terminou.
 }
 ```
 
-### Action 7 - Ad break complete {#Action-7}
+### Ação 7 - pausa do anúncio concluída {#Action-7}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -195,7 +195,7 @@ O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado "repr
 }
 ```
 
-### Action 8 - Play content {#Action-8}
+### Ação 8 - Reproduzir conteúdo {#Action-8}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -218,7 +218,7 @@ Mova o reprodutor para o estado "reproduzindo"; comece a rastrear o início da r
 }
 ```
 
-### Action 9 - Ping {#Action-9}
+### Ação 9 - Ping {#Action-9}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -240,7 +240,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Action 10 - Ping {#Action-10}
+### Ação 10 - Ping {#Action-10}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -262,7 +262,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Action 11 - Error {#Action-11}
+### Ação 11 - Erro {#Action-11}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -283,7 +283,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Action 12 - Play content {#Action-12}
+### Ação 12 - Reproduzir conteúdo {#Action-12}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -305,7 +305,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Action 13 - Ping {#Action-13}
+### Ação 13 - Ping {#Action-13}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -327,7 +327,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Action 14 - Ad break start {#Action-14}
+### Ação 14 - Início do intervalo de anúncios {#Action-14}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -353,7 +353,7 @@ Anúncio intermediário de 8 segundos: envie `adBreakStart` .
 }
 ```
 
-### Action 15 - Ad start {#Action-15}
+### Ação 15 - Início do anúncio {#Action-15}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -386,7 +386,7 @@ Rastreie o anúncio intermediário.
 }
 ```
 
-### Action 16 - Close app {#Action-16}
+### Ação 16 - Fechar aplicativo {#Action-16}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
