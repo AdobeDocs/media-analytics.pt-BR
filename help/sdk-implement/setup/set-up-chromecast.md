@@ -1,7 +1,7 @@
 ---
 seo-title: Configurar Chromecast
 title: Configurar Chromecast
-uuid: d 664 e 394-02 a 2-4985-bbad-be 1 bcc 44 fb 2 b
+uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
 source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
@@ -14,14 +14,14 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 _Devo usar o SDK de JavaScript do Chromecast ou posso usar o SDK do JavaScript padrão?_
 
-A resposta correta é "Chromecast", pelos seguintes motivos:
+A resposta correta é "Chromecast", pelas seguintes razões:
 * As bibliotecas AppMeasurement e VisitorAPI no SDK de JS padrão não são certificadas para funcionar em plataformas OTT. No SDK de JS do Chromecast, a Biblioteca de vídeo do Heartbeat (BVS), o Analytics e a VisitorAPI são todos integrados ao SDK único, unificado e certificado para o Chromecast.
 * O SDK do Chromecast é muito mais leve do que o SDK de JS padrão. Isso é muito importante para o hardware de baixo custo usado pelas plataformas OTT.
 
 ## Pré-requisitos
 
-* **Obter parâmetros de configuração válidos para o Heartbeats**
-Esses parâmetros podem ser obtidos por um representante da Adobe depois que você configurar sua conta de análise de mídia.
+* **Obtain valid configuration parameters for Heartbeats
+These parameters can be obtained from an Adobe representative after you set up your media analytics account.**
 * **Forneça os seguintes recursos no reprodutor de mídia:**
    * *Uma API para assinar os eventos do reprodutor* - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
    * *Uma API que fornece informações sobre o reprodutor* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
@@ -40,7 +40,7 @@ O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar apli
 
          Esse arquivo de biblioteca será incluído na pasta de origem do aplicativo Chromecast.
 
-      * `ADBMobileConfig` config
+      * `ADBMobileConfig` configuração
 
          Esse arquivo de configuração do SDK foi personalizado para o aplicativo. A sample `ADBMobileConfig` implementation is provided with the SDK (under `samples/`). Obtenha as configurações apropriadas de um representante da Adobe.
    1. Adicione o arquivo de biblioteca ao seu arquivo `index.html` e crie a variável global `ADBMobileConfig` da seguinte maneira (a variável global usada para configurar o Adobe Mobile para Heartbeats tem uma chave exclusiva denominada `mediaHeartbeat`):
