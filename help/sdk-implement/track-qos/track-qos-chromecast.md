@@ -1,7 +1,7 @@
 ---
 seo-title: Rastrear a qualidade da experiência no Chromecast
 title: Rastrear a qualidade da experiência no Chromecast
-uuid: d 0 cdc 8 cd -4 db 0-45 ef -9470-1 cba 3996305 b
+uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -16,9 +16,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Visão geral {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Você pode usar a API do player de mídia para identificar as variáveis relacionadas a qos e rastreamento de erros.
+Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Você pode usar a API do player de mídia para identificar as variáveis relacionadas ao QoS e ao rastreamento de erros.
 
-## Player events {#player-events}
+## Eventos do player {#player-events}
 
 ### Em todos os eventos de alteração da taxa de bits
 
@@ -37,7 +37,7 @@ Chama `trackError(“media error id”);`
 
    >[!TIP]
    >
-   >Essas variáveis só serão necessárias se você estiver planejando o rastreamento de qos.
+   >Essas variáveis só são necessárias se você estiver planejando rastrear QoS.
 
    | Variável | Descrição | Obrigatório |
    | --- | --- | :---: |
@@ -60,12 +60,12 @@ Chama `trackError(“media error id”);`
 
    >[!IMPORTANT]
    >
-   >Atualize o objeto qos e chame o evento de alteração da taxa de bits em cada alteração de taxa de bits. Isso fornece os dados de QoS mais precisos.
+   >Atualize o objeto QoS e chame o evento de alteração da taxa de bits em cada alteração da taxa de bits. Isso fornece os dados de QoS mais precisos.
 
 1. Verifique se o método `getQoSObject()` retorna as informações de QoS mais atualizadas.
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Consulte [Visão geral](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >Os erros do player de mídia não interromperem a sessão de rastreamento de mídia. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
