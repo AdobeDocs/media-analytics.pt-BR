@@ -1,7 +1,7 @@
 ---
 seo-title: Rastrear anúncios no Chromecast
 title: Rastrear anúncios no Chromecast
-uuid: 7 b 1 f 584 a -3472-416 c -944 c -5 f 5 ea 0 ee 5ee 5ee
+uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando os sdks 2. x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento do anúncio
 
@@ -48,7 +48,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
    ```
 
-1. Como opção, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio das variáveis de dados de contexto.
+1. Como opção, anexe metadados padronizados e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
    * **Metadados de publicidade padrão -** Para metadados de anúncios padrão, crie um dicionário de pares de valores-chave de Metadados de publicidade padrão usando as chaves da sua plataforma:
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do ativo de anúncio atual:
