@@ -12,7 +12,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## Dados do Analytics
 
-| Solicitar chave | Obrigatório | Definir em... |  Descrição  |
+| Request Key  | Obrigatório | Definir em... |  Descrição  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | S | `sessionStart` | O URL do servidor do Adobe Analytics. |
 | `analytics.reportSuite` | S | `sessionStart` | A ID que identifica os dados de relatórios do Analytics |
@@ -21,7 +21,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## Dados do visitante
 
-| Request Key  | Obrigatório | Definir em... |  Descrição  |
+| Solicitar chave | Obrigatório | Definir em... |  Descrição  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | S | `sessionStart` | A ID da organização da Experience Cloud identifica sua organização no sistema da Adobe Experience Cloud |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Esta é a Experience Cloud User ID (ECID). Na maioria dos casos, essa é a ID que você deve usar para identificar um usuário. O Heartbeat `marketingCloudUserId` é igual ao `MID` no Adobe Analytics. Embora não seja tecnicamente necessário, esse parâmetro é necessário para acessar a família de aplicativos da Experience Cloud. |
@@ -43,7 +43,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## Metadados padrão de conteúdo
 
-| Request Key  | Obrigatório | Definir em... |  Descrição  |
+| Solicitar chave | Obrigatório | Definir em... |  Descrição  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | O nome do programa ou da série |
 | `media.season` | N | `sessionStart` | O número da temporada do programa ou da série |
@@ -112,11 +112,11 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->O Media Analytics (MA) é integrado à família de aplicativos da Experience Cloud (Adobe Analytics, Audience Manager, Target etc.). Você precisa de uma Experience Cloud ID para acessar esses aplicativos. _O ECID é o que você deve usar para identificar os usuários na maioria dos cenários._
+>Media Analytics (MA) is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). Você precisa de uma Experience Cloud ID para acessar esses aplicativos. _O ECID é o que você deve usar para identificar os usuários na maioria dos cenários._
 
 ### appInstallationId
 
-* **If you *do not*pass an`appInstallationId`value -** The MA back-end will no longer generate a MCID, but instead will rely on Adobe Analytics to do this. A recomendação da Adobe é enviar um MCID, se disponível, ou um `appInstallationId` (juntamente com o `marketingCloudOrgId` ainda obrigatório), para que a API da coleção de mídia gere o MCID e o envie em todas as chamadas.
+* **Se você&#x200B;*não*transmitir um`appInstallationId`valor -** O back-end do MA não gerará mais uma MCID, mas, em vez disso, contará com o Adobe Analytics para fazer isso. A recomendação da Adobe é enviar um MCID, se disponível, ou um `appInstallationId` (juntamente com o `marketingCloudOrgId` ainda obrigatório), para que a API da coleção de mídia gere o MCID e o envie em todas as chamadas.
 
 * **Se você&#x200B;*passar o*valor -`appInstallationId`a MCID** pode ser *gerada pelo back-end do MA, se você passar os valores para* os parâmetros (obrigatórios) `appInstallationId` `marketingCloudOrgId` . Se você passar `appInstallationId`, deverá manter o seu valor no lado do cliente. Ele deve ser exclusivo para o aplicativo em um dispositivo e ser mantido enquanto o aplicativo não for reinstalado.
 
