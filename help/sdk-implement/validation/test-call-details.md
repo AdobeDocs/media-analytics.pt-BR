@@ -1,7 +1,7 @@
 ---
 seo-title: Detalhes da chamada de teste
 title: Detalhes da chamada de teste
-uuid: d 3 a 0 e 62 f -2 fc 3-413 d-ac 56-adbbc 9 b 3 e 983
+uuid: d3a0e62f-2fc3-413d-ac56-adbc9b3e983
 translation-type: tm+mt
 source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
@@ -10,9 +10,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 # Detalhes da chamada de teste{#test-call-details}
 
-## Iniciar o player de mídia {#start-the-media-player}
+## Iniciar o media player {#start-the-media-player}
 
-### Chamada de início do Adobe Analytics (appmeasurement) {#aa-start-call}
+### Chamada de início do Adobe Analytics (AppMeasurement) {#aa-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -31,7 +31,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Veja os detalhes dos metadados abaixo.
 * A duração dos fluxos lineares deve ser definida para a melhor estimativa do programa atual.
 
-### Metadados padronizados na chamada do Adobe Analytics (appmeasurement) Start {#std-metadata-aa}
+### Metadados padrão na chamada de início do Adobe Analytics (AppMeasurement) {#std-metadata-aa}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -50,14 +50,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | nenhum feed |
 | `a.media.stream_format` | 0 |
 
-### Metadados personalizados na chamada do Adobe Analytics (appmeasurement) Start {#custom-metadata-aa}
+### Metadados personalizados na chamada de início do Adobe Analytics (AppMeasurement) {#custom-metadata-aa}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### Chamada de início do Media Analytics (heartbeats) {#ma-start-call}
+### Media Analytics (heartbeats) Start call {#ma-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -77,7 +77,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Veja os detalhes dos metadados abaixo.
 * A posição do indicador de reprodução para fluxos lineares no início do vídeo deve ser definida para os segundos decorridos desde o início do programa atual, não 0.
 
-### Metadados padronizados na chamada de início do Media Analytics (heartbeats) {#std-metadata-ma}
+### Standard metadata in Media Analytics (heartbeats) Start call {#std-metadata-ma}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -96,14 +96,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | nenhum feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Metadados personalizados na chamada do Media Analytics (heartbeats) Start {#custom-metadata-ma}
+### Custom metadata in Media Analytics (heartbeats) Start call {#custom-metadata-ma}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Chamada de início do Media Analytics (heartbeats) Adobe Analytics {#ma-aa-start}
+### Media Analytics (heartbeats) Adobe Analytics Start call {#ma-aa-start}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -118,12 +118,12 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **Observações:**
 
-* Esta chamada indica que o Media SDK solicitou que uma chamada do Adobe Analytics `pev2=ms_s` seja enviada para o servidor Adobe Analytics (appmeasurement).
+* This call indicates that the Media SDK has requested that an Adobe Analytics  call be sent to the Adobe Analytics (AppMeasurement) server.`pev2=ms_s`
 * Esta chamada não contém metadados personalizados.
 
 ## Exibir a reprodução do anúncio {#view-ad-playback}
 
-### Chamada de início de anúncio do Adobe Analytics (appmeasurement) {#aa-ad-start-call}
+### Adobe Analytics (AppMeasurement) Ad Start call {#aa-ad-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -137,7 +137,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
-| _**`a.media.ad.view`**_ | _**Verdadeiro**_ |
+| _**`a.media.ad.view`**_ | _**True**_ |
 | _**`custom.[value]`**_ | _**Campos de metadados**_ |
 | _**`a.media.[value]`**_ | _**Campos de metadados padrão**_ |
 
@@ -165,14 +165,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | nenhum feed |
 | `a.media.stream_format` | 0 |
 
-### Metadados personalizados na chamada de início de anúncio do Adobe Analytics (appmeasurement) {#custom-metadata-aa-ad-start}
+### Custom metadata in Adobe Analytics (AppMeasurement) Ad Start call {#custom-metadata-aa-ad-start}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Chamada de anúncio do Media Analytics (heartbeats) {#ma-ad-start-call}
+### Media Analytics (heartbeats) Ad Start call {#ma-ad-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -210,14 +210,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | nenhum feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Metadados personalizados na chamada do Media Analytics (heartbeats) chamada Ad Start {#custom-metadata-ma-ad-start}
+### Custom metadata in Media Analytics (heartbeats) Ad Start call {#custom-metadata-ma-ad-start}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Chamada de início de anúncio do Media Analytics (heartbeats) Adobe Analytics {#ma-aa-ad-start-call}
+### Media Analytics (heartbeats) Adobe Analytics Ad Start call {#ma-aa-ad-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -229,7 +229,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Chamada Ad Analytics (heartbeats) Play Play {#ma-ad-play-call}
+### Media Analytics (heartbeats) Ad Play call {#ma-ad-play-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -241,7 +241,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Chamada de Media Analytics (heartbeats) chamada Pausar anúncio {#ma-ad-pause-call}
+### Media Analytics (heartbeats) Ad Pause call {#ma-ad-pause-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -253,7 +253,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Chamada do Media Analytics (heartbeats) Adobe Analytics Ad Complete {#ma-aa-ad-complete-call}
+### Media Analytics (heartbeats) Adobe Analytics Ad Complete call {#ma-aa-ad-complete-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -267,7 +267,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ## Reproduzir conteúdo principal {#play-main-content}
 
-### Chamada Play Analytics (heartbeats) Play {#ma-play-call}
+### Media Analytics (heartbeats) Play call {#ma-play-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -282,12 +282,12 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **Observações:**
 
-* A posição do indicador de reprodução deve aumentar em 10 segundos com cada chamada de play.
+* A posição do indicador de reprodução deve aumentar em 10 segundos a cada chamada de reprodução.
 * O valor `l:event:duration` representa o número de milissegundos desde a última chamada de rastreamento e deve ser basicamente o mesmo valor em cada chamada de 10 segundos.
 
 ## Pausar conteúdo principal {#pause-main-content}
 
-### Chamada de pausa do Media Analytics (heartbeats) {#ma-pause-call}
+### Media Analytics (heartbeats) Pause call {#ma-pause-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
