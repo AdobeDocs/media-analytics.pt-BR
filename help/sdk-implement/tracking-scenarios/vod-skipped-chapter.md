@@ -1,7 +1,7 @@
 ---
 seo-title: Reprodução VOD com um capítulo ignorado
 title: Reprodução VOD com um capítulo ignorado
-uuid: 19 fb 020 c-eb 7 a -4942-9212-94 f 4 d 47195 b 9
+uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,7 +18,7 @@ Este cenário é igual à [reprodução de VOD com um capítulo](/help/sdk-imple
 
 | Acionador | Método do Heartbeat | Chamadas de rede  | Notas |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações desconhece a existência de um anúncio precedente. Essas chamadas de rede ainda são idênticas às chamadas do cenário  [Reprodução sem interrupções no](vod-no-intrs-details.md) cenário do iOS. |
+| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações desconhece a existência de um anúncio precedente. Essas chamadas de rede ainda são idênticas às chamadas do cenário  [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | O capítulo é iniciado. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Chapter Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, recomenda-se iniciar o Heartbeats com o capítulo. |
 | O capítulo é reproduzido. |  | Capítulo de heartbeat |  |
@@ -27,7 +27,7 @@ Este cenário é igual à [reprodução de VOD com um capítulo](/help/sdk-imple
 | O aplicativo detecta que o usuário buscou fora dos limites regulares do capítulo. | `trackEvent:trackChapterSkip` |  |  |
 | O conteúdo é reproduzido. |  | Content Heartbeats |  |
 | A reprodução do conteúdo é concluída. | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa o fim de uma sessão de exibição. Essa API deve ser chamada mesmo se o usuário não assistir a mídia para concluir. |
+| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa o fim de uma sessão de exibição. Essa API deve ser chamada mesmo se o usuário não observar a mídia até a conclusão. |
 
 ## Parâmetros {#section_1874F6B7880B43C5856BD11FF85B382E}
 
