@@ -1,16 +1,16 @@
 ---
 seo-title: Guia de implementação do Link personalizado
 title: Guia de implementação do Link personalizado
-uuid: 83315e73-20ca-4db5-9d43-33dade45a13
+uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
+source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
 
 ---
 
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
+Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
 
 * Em JavaScript: the  function`s.tl()`
 * Nos aplicativos móveis: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
