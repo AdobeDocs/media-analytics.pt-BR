@@ -3,14 +3,17 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
+source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
 
 ---
 
 
 # Federated Analytics{#federated-analytics}
 
-O serviço Federated Analytics fornece um sistema para o compartilhamento de dados do Adobe Media (áudio e vídeo) Analytics entre dois parceiros. Os dados de avaliação de vídeo padronizados criados pelo Media Analytics são a marca do Federated Analytics e permitem que os mesmos dados fluam em um único relatório de várias fontes. Por meio das regras e lógicas que regem o Federated Analytics, os dados são facilmente controlados e individualizados para atender às necessidades de cada parceria. O Federated Analytics torna a avaliação de áudio e vídeo mais eficiente, simplificada e acionável.
+The Federated Analytics service provides a system for sharing Adobe Media Analytics data (audio and video) between two partners.
+Os dados de avaliação de vídeo padronizados criados pelo Media Analytics são a marca do Federated Analytics e permitem que os mesmos dados fluam em um único relatório de várias fontes.
+Por meio das regras e lógicas que regem o Federated Analytics, os dados são facilmente controlados e individualizados para atender às necessidades de cada parceria.
+O Federated Analytics torna a avaliação de áudio e vídeo mais eficiente, simplificada e acionável.
 
 ## Benefícios {#section_804FFE8671594A6FB769CBE79EF9D627}
 
@@ -39,7 +42,7 @@ O serviço Federated Analytics fornece um sistema para o compartilhamento de dad
 
 ## Download do formulário do Federated Analytics
 
-**`===>`Baixe a versão atual aqui: Formulário de Contrato de Regras de**[](/assets/federated_analytics_form.pdf)Federação. **`<===`**
+**Download the current version here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
 
 ## Processo {#section_byb_kb3_vbb}
 
