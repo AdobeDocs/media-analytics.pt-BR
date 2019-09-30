@@ -1,18 +1,19 @@
 ---
 seo-title: Guia de implementação do Link personalizado
 title: Guia de implementação do Link personalizado
-uuid: 83315e73-20ca-4db5-9d43-33daade45a13
+uuid: 83315e73-20ca-4db5-9d43-33dade45a13
 translation-type: tm+mt
-source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
+source-git-commit: 445a5037b1875db3f1f13a3733aa431c3b3031a0
 
 ---
 
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
+Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
+Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
 
-* Em JavaScript: the  function`s.tl()`
+* Em JavaScript: a `s.tl()` função
 * Nos aplicativos móveis: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
@@ -50,7 +51,6 @@ if (e.type == "ended") {
 * Qualquer cálculo, como tempo gasto ou quartis, deve ser calculado em um script personalizado
 * Bastante simples, sem bibliotecas ou scripts ocultos
 * Controle total sobre todos os aspectos dos dados de vídeo
-* Remover link para o reprodutor de amostra
 
 ## Exemplo de JavaScript para reprodutor HTML5
 
@@ -126,4 +126,3 @@ if (e.type == "ended") {
   }; 
 </script>
 ```
-
