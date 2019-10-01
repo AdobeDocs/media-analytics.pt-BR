@@ -3,7 +3,7 @@ seo-title: Avaliação de áudio e vídeo no Adobe Analytics
 title: Avaliação de áudio e vídeo no Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
+source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ---
 
@@ -24,10 +24,6 @@ O rastreamento de mídia é ativado por meio de um dos seguintes procedimentos:
 
 * **SDK do Media -** Integra-se com os reprodutores de mídia mais usados.
 * **API da coleção de mídia-** (RESTful API) Integra-se a reprodutores para os quais não há suporte para SDK (ou com reprodutores para os quais não é desejada integração com o SDK).
-
-   A API da coleção de mídia também fornece um recurso adicional ainda não disponível no SDK:
-
-   * **Rastreamento de conteúdo baixado -** Fornece suporte para o rastreamento de conteúdo de mídia (vídeo e áudio) que é baixado e reproduzido de um dispositivo, independentemente da conectividade. Esse recurso é criado sobre a API da coleção de mídia e segue a mesma especificação de rastreamento de reprodutor de mídia. (Ainda não há suporte para SDK no momento.)
 
 O Adobe Analytics for Media permite aos clientes rastrear a jornada completa do cliente em todo o site, que inclui o consumo de mídia, e essas medidas são facilmente integradas ao relatório do Analytics e aos outros produtos da Experience Cloud. A medição de mídia permite dividir e analisar os dados em várias dimensões e segmentos, capturando todos os metadados necessários para fazer uma análise detalhada completa e atribuir critérios de sucesso a mídias totalmente consumidas, ao tempo médio gasto e aos anúncios concluídos.
 
@@ -57,6 +53,7 @@ Alguns dos muitos benefícios do método Heartbeats incluem:
 * **Dados compartilhados por meio do Federated Analytics -** Aproveite os nossos recursos de compartilhamento, inéditos do setor, para avaliar os dados de forma holística em todos os parceiros de distribuição de mídia: operadores, programadores e distribuidores.
 * **Parceiros de classificações certificados** - A Adobe faz parceria com a Nielsen, parceira de classificações de público-alvo, para fornecer medições de terceiros neutras, a fim de permitir classificações confiáveis e certificadas.
 * **Solução padronizada em todas as plataformas** - Habilite variáveis consistentes e padronizadas em todas as mídias e plataformas para permitir uma comparação mais eficiente entre campanhas, dispositivos e fornecedores.
+* **Rastreamento de conteúdo baixado - rastreie o conteúdo de mídia (vídeo e áudio) que é baixado e reproduzido em um dispositivo, independentemente de sua conectividade.**
 
 ### Gráfico de comparação
 
