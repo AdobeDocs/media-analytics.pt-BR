@@ -3,7 +3,7 @@ seo-title: Parâmetros de anúncio
 title: Parâmetros de anúncio
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
+source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ---
 
@@ -79,7 +79,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **Chave da API:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> Obrigatório: SDK: Sim; API: Não. </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: "pre-roll" </li><li> **Descrição:**<br/>o nome amigável da quebra de anúncio.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>podFriendlyName) </li> <li> ****<br/> Pulsação: (s:asset:pod_name) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Pod Name </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>podFriendlyName) </li> <li> **Feed de dados:**<br/>videoadpod </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **Chave da API:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> Obrigatório: SDK: Sim; API: Não. </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: "pre-roll" </li><li> **Descrição:**<br/>o nome amigável da quebra de anúncio.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>podFriendlyName) </li> <li> ****<br/> Pulsação: (s:asset:pod_name) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Pod Name </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>podFriendlyName) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
 
 
 
@@ -87,7 +87,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **Chave da API:**<br/>media.ad.podPosition </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>number </li> <li> **Enviado com:**<br/> </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: 1 </li><li> **Descrição:**<br/>O índice de quebra de anúncio dentro do conteúdo, começando em 1. Essa propriedade é usada **somente** pelo SDK do Media para gerar a ID do pod.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **Heartbeat:**<br/> </li> </ul> | <ul> <li> **Disponível:**<br/>não </li> <li> **Variável reservada:**<br/>N/A </li> <li> **Nome do relatório:**<br/>N/A </li> <li> **Dados de contexto:**<br/> </li> <li> **Feed de dados:**<br/> </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **Chave da API:**<br/>media.ad.podPosition </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>number </li> <li> **Enviado com:**<br/> </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: 1 </li><li> **Descrição:**<br/>O índice de quebra de anúncio dentro do conteúdo, começando em 1. Essa propriedade é usada **somente** pelo SDK do Media para gerar a ID do pod.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **Heartbeat:**<br/> </li> </ul> | <ul> <li> **Disponível:**<br/>não </li> <li> **Variável reservada:**<br/>N/A </li> <li> **Nome do relatório:**<br/>N/A </li> <li> **Dados de contexto:**<br/> </li> <li> **Feed de dados:**<br/>N/A </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
@@ -95,7 +95,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **Chave da API:**<br/>media.ad.podSecond </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>number </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: 90 </li><li> **Descrição:**<br/>O deslocamento do intervalo do anúncio dentro do conteúdo, em segundos.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>podSecond) </li> <li> ****<br/> Pulsação: (l:asset:pod_offset) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Pod Position </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>podSecond) </li> <li> **Feed de dados:**<br/> </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **Chave da API:**<br/>media.ad.podSecond </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>number </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: 90 </li><li> **Descrição:**<br/>O deslocamento do intervalo do anúncio dentro do conteúdo, em segundos.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>podSecond) </li> <li> ****<br/> Pulsação: (l:asset:pod_offset) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Pod Position </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>podSecond) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
 
 
 
@@ -143,25 +143,25 @@ Descrição dos dados da tabela:
 
 ### ID do site
 
-|   Implementação   | Network Parameters | Relatórios |
+|   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>SITE_ID </li> <li> **Chave da API:**<br/>media.ad.siteId </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor da amostra:**<br/> </li><li> **Descrição:**<br/>ID do site do anúncio.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>site) </li> <li> ****<br/> Pulsação: (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/>eVar </li> <li> **Expiração:**<br/>On HIT </li> <li> **Nome do relatório:**<br/> <i> </i> </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>site) </li> <li> **Feed de dados:**<br/>N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>SITE_ID </li> <li> **Chave da API:**<br/>media.ad.siteId </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor da amostra:**<br/> </li><li> **Descrição:**<br/>ID do site do anúncio.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>site) </li> <li> ****<br/> Pulsação: (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/>eVar </li> <li> **Expiração:**<br/>On HIT </li> <li> **Nome do relatório:**<br/> <i> </i> </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>site) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.site) </li> </ul> |
 
 
 
 ### URL da arte
 
-|   Implementação   | Network Parameters | Relatórios |
+|   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>CREATIVE_URL </li> <li> **Chave da API:**<br/>media.ad.creativeURL </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor da amostra:**<br/> </li><li> **Description:**<br/>URL of the ad creative.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>creativeURL) </li> <li> ****<br/> Pulsação: (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/>eVar </li> <li> **Expiração:**<br/>On HIT </li> <li> **Nome do relatório:**<br/> <i> </i> </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>creativeURL) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>CREATIVE_URL </li> <li> **Chave da API:**<br/>media.ad.creativeURL </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor da amostra:**<br/> </li><li> **Descrição:**<br/>URL do anúncio criativo.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>creativeURL) </li> <li> ****<br/> Pulsação: (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/>eVar </li> <li> **Expiração:**<br/>On HIT </li> <li> **Nome do relatório:**<br/> <i> </i> </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>creativeURL) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
 
 
 
 ### ID de posicionamento
 
-|   Implementação   | Network Parameters | Relatórios |
+|   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>PLACEMENT_ID </li> <li> **Chave da API:**<br/>media.ad.placementId </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor da amostra:**<br/> </li><li> **Description:**<br/>Placement ID of the ad.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>colocação) </li> <li> ****<br/> Pulsação: (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Use custom processing rule </i> </li> <li> **Variável reservada:**<br/>eVar </li> <li> **Expiração:**<br/>On HIT </li> <li> **Nome do relatório:**<br/> <i> </i> </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>colocação) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.placement) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>PLACEMENT_ID </li> <li> **Chave da API:**<br/>media.ad.placementId </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor da amostra:**<br/> </li><li> **Descrição:ID de**<br/>posicionamento do anúncio.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>colocação) </li> <li> ****<br/> Pulsação: (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/>eVar </li> <li> **Expiração:**<br/>On HIT </li> <li> **Nome do relatório:**<br/> <i> </i> </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>colocação) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.placement) </li> </ul> |
 
 
 
@@ -172,7 +172,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Automatically set </li> <li> **Chave da API:**<br/>N/A </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Início do anúncio </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Sample Value: TRUE </li><li> **Descrição:**<br/>Número de inicializações do anúncio de vídeo.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>exibir) </li> <li> ****<br/> Pulsação:  (s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>event </li> <li> **Nome do relatório:**<br/>Ad Starts </li> <li> **Feed de dados:**<br/>videoadstart </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>exibir) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.view) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Automatically set </li> <li> **Chave da API:**<br/>N/A </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Início do anúncio </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: TRUE </li><li> **Descrição:**<br/>Número de inicializações do anúncio de vídeo.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>exibir) </li> <li> ****<br/> Pulsação:  (s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>event </li> <li> **Nome do relatório:**<br/>Ad Starts </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>exibir) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.view) </li> </ul> |
 
 
 
@@ -180,7 +180,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Automatically set </li> <li> **Chave da API:**<br/>N/A </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: TRUE </li><li> **Description:Number of video ad completes.**<br/>   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>concluído) </li> <li> ****<br/> Pulsação: (s:event:type=complete)<br/> (s:asset:type=ad)  </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>event </li> <li> **Nome do relatório:**<br/>Ad Completes </li> <li> **Feed de dados:**<br/>videoadcomplete </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>concluído) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Automatically set </li> <li> **Chave da API:**<br/>N/A </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: TRUE </li><li> **Descrição:**<br/>número de conclusões do anúncio de vídeo.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>concluído) </li> <li> ****<br/> Pulsação: (s:event:type=complete)<br/> (s:asset:type=ad)  </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>event </li> <li> **Nome do relatório:**<br/>Ad Completes </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>concluído) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
 
 
 
@@ -188,7 +188,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Automatically set </li> <li> **Chave da API:**<br/>N/A </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: 15 </li><li> **Descrição:**<br/>O tempo total, em segundos, gasto assistindo ao anúncio (isto é, o número de segundos reproduzidos).  O valor será exibido no formato de hora (HH:MM:SS) no Analysis Workspace e nos Reports &amp; Analytics. Nos Feeds de dados, Data Warehouse e APIs de relatórios, os valores serão exibidos em segundos.  <br/>**Data de lançamento: 13/09/18**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>timePlayed) </li> <li> **Heartbeat:**<br/> </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>event </li> <li> **Nome do relatório:**<br/>Tempo gasto com anuncio </li> <li> **Feed de dados:**<br/>videoadtime </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>timePlayed) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Automatically set </li> <li> **Chave da API:**<br/>N/A </li> <li> **Obrigatório:**<br/>Yes </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: 15 </li><li> **Descrição:**<br/>O tempo total, em segundos, gasto assistindo ao anúncio (isto é, o número de segundos reproduzidos).  O valor será exibido no formato de hora (HH:MM:SS) no Analysis Workspace e nos Reports &amp; Analytics. Nos Feeds de dados, Data Warehouse e APIs de relatórios, os valores serão exibidos em segundos.  <br/>**Data de lançamento: 13/09/18**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>timePlayed) </li> <li> **Heartbeat:**<br/> </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>event </li> <li> **Nome do relatório:**<br/>Tempo gasto com anuncio </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>timePlayed) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
 
 
 
