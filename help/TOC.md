@@ -1,23 +1,23 @@
 ---
 product: Media Analytics
 audience: usuário final
-user-guide-title: Adobe Analytics para áudio e vídeo
+user-guide-title: Adobe Analytics for Audio and Video
 translation-type: tm+mt
-source-git-commit: b0aae4555f2193f5aa03e647adeac6c322b6b389
+source-git-commit: 9fd58ced068b4dc077f45f54d5df88d67b047cf1
 
 ---
 
 
 # Adobe Analytics for Audio and Video {#using}
 
-+ [Avaliação de áudio e vídeo no Adobe Analytics](media-overview.md)
++ [Measuring Audio and Video in Adobe Analytics](media-overview.md)
 + Measurement Options {#measurement-options}
    + Media Module Milestone Tracking {#mm-milestone-tracking}
       + [Visão geral do marco](measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [Migrar etapa para o Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [Migração do Marco para Link personalizado](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Link personalizado no Analytics {#cl-in-aa}
-      + [Guia de implementação de link personalizado](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md)
 + Introdução à análise de áudio e vídeo {#intro-to-ava}
    + [Pré-requisitos](intro-to-ava/prereqs.md)
    + Caminhos de implementação {#implementation-paths}
@@ -40,7 +40,7 @@ source-git-commit: b0aae4555f2193f5aa03e647adeac6c322b6b389
       + Track Core Audio and Video Playback {#track-core}
          + [Rastrear reprodução principal no Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Rastrear reprodução principal no iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
-         + [Track Core Playback on JavaScript](sdk-implement/track-av-playback/track-core/track-core-js.md)
+         + [Rastrear reprodução principal em JavaScript](sdk-implement/track-av-playback/track-core/track-core-js.md)
          + [Rastrear reprodução principal no Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [Rastrear reprodução principal no Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Track Buffering {#track-buffering}
@@ -53,8 +53,8 @@ source-git-commit: b0aae4555f2193f5aa03e647adeac6c322b6b389
          + [Busca de rastreamento no Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [Rastrear busca no iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + [Busca de rastreamento no JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
-         + [Busca de rastreamento no Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Busca de rastreamento no Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
+         + [Track Seeking on Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [Track Seeking on Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + Implementar metadados padrão {#impl-std-metadata}
          + [Implementar metadados padrão no Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Implementar metadados padrão no iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
@@ -66,9 +66,9 @@ source-git-commit: b0aae4555f2193f5aa03e647adeac6c322b6b389
          + [Standard Metadata Parameters - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + Rastreamento de anúncios {#track-ads}
       + [Visão geral](sdk-implement/track-ads/track-ads-overview.md)
-      + [Rastrear anúncios no Android](sdk-implement/track-ads/track-ads-android.md)
-      + [Rastrear anúncios no iOS](sdk-implement/track-ads/track-ads-ios.md)
-      + [Rastrear anúncios em JavaScript](sdk-implement/track-ads/track-ads-js.md)
+      + [Track Ads on Android](sdk-implement/track-ads/track-ads-android.md)
+      + [Track Ads on iOS](sdk-implement/track-ads/track-ads-ios.md)
+      + [Track Ads on JavaScript](sdk-implement/track-ads/track-ads-js.md)
       + [Rastrear anúncios no Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Rastrear anúncios no Roku](sdk-implement/track-ads/track-ads-roku.md)
       + Implementar Metadados de publicidade padrão {#impl-std-ad-metadata}
@@ -81,23 +81,23 @@ source-git-commit: b0aae4555f2193f5aa03e647adeac6c322b6b389
       + [Rastrear capítulos e segmentos no Android](sdk-implement/track-chapters/track-chapters-android.md)
       + [Rastrear capítulos e segmentos no iOS](sdk-implement/track-chapters/track-chapters-ios.md)
       + [Rastrear capítulos e segmentos no JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
-      + [Track Chapters and Segments on Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
-      + [Track Chapters and Segments on Roku](sdk-implement/track-chapters/track-chapters-roku.md)
+      + [Rastrear capítulos e segmentos no Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
+      + [Rastrear capítulos e segmentos no Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + Rastrear a qualidade da experiência {#track-qos}
       + [Visão geral](sdk-implement/track-qos/track-qos-overview.md)
-      + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
-      + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
-      + [Track Quality of Experience on JavaScript](sdk-implement/track-qos/track-qos-js.md)
-      + [Track Quality of Experience on Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
-      + [Track Quality of Experience on Roku](sdk-implement/track-qos/track-qos-roku.md)
+      + [Qualidade de rastreamento da experiência no Android](sdk-implement/track-qos/track-qos-android.md)
+      + [Acompanhar a qualidade da experiência no iOS](sdk-implement/track-qos/track-qos-ios.md)
+      + [Monitoramento da qualidade da experiência em JavaScript](sdk-implement/track-qos/track-qos-js.md)
+      + [Qualidade de rastreamento da experiência no Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
+      + [Qualidade de rastreamento da experiência no Roku](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [Visão geral](sdk-implement/track-errors/track-errors-overview.md)
       + [Rastrear erros no Android](sdk-implement/track-errors/track-errors-android.md)
       + [Rastrear erros no iOS](sdk-implement/track-errors/track-errors-ios.md)
-      + [Rastrear erros no JavaScript](sdk-implement/track-errors/track-errors-js.md)
-      + [Rastrear erros no Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
-      + [Rastrear erros no Roku](sdk-implement/track-errors/track-errors-roku.md)
-   + [Recusar e privacidade](sdk-implement/opt-out-privacy.md)
+      + [Track Errors on JavaScript](sdk-implement/track-errors/track-errors-js.md)
+      + [Track Errors on Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
+      + [Track Errors on Roku](sdk-implement/track-errors/track-errors-roku.md)
+   + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)
    + Tracking Scenarios {#tracking-scenarios}
       + [Reprodução VOD sem anúncios](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
       + [Reprodução VOD com anúncios precedentes](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
@@ -111,10 +111,10 @@ source-git-commit: b0aae4555f2193f5aa03e647adeac6c322b6b389
       + [Conteúdo principal disponível](sdk-implement/tracking-scenarios/live-main-content.md)
       + [Conteúdo principal ao vivo com monitoramento sequencial](sdk-implement/tracking-scenarios/live-sequential.md)
    + Validação {#validation}
-      + [Visão geral da validação](sdk-implement/validation/validation-overview.md)
+      + [Validation Overview](sdk-implement/validation/validation-overview.md)
       + [Teste 1: reprodução padrão](sdk-implement/validation/test1-standard-playback.md)
       + [Teste 2: Interrupção de mídia](sdk-implement/validation/test2-media-interrupt.md)
-      + [Testar detalhes da chamada](sdk-implement/validation/test-call-details.md)
+      + [Test Call Details](sdk-implement/validation/test-call-details.md)
       + [Descrições do parâmetro de pulsação](sdk-implement/validation/heartbeat-params.md)
       + Depuração {#debugging}
          + [Depuração do SDK](sdk-implement/validation/debugging/sdk-debugging.md)
@@ -161,9 +161,9 @@ source-git-commit: b0aae4555f2193f5aa03e647adeac6c322b6b389
       + [Linha do tempo 1 - Visualização do conteúdo até o fim](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [Linha do tempo 2 - Usuário abandona a sessão](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [Linha do tempo 3 - Capítulos](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
+   + [Acompanhar conteúdo baixado](media-collection-api/track-downloaded-content.md)
 + Métricas e metadados {#metrics-and-metadata}
-   + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
+   + [Parâmetros de áudio e vídeo](metrics-and-metadata/audio-video-parameters.md)
    + [Parâmetros de anúncio](metrics-and-metadata/ad-parameters.md)
    + [Parâmetros de capítulo](metrics-and-metadata/chapter-parameters.md)
    + [Parâmetros de qualidade](metrics-and-metadata/quality-parameters.md)
@@ -182,4 +182,3 @@ source-git-commit: b0aae4555f2193f5aa03e647adeac6c322b6b389
 + [Federated Analytics](data-sharing/federated-analytics.md)
 + Recursos adicionais {#additional-resources}
    + [Atualizações de documentação](additional-resources/doc-updates.md)
-
