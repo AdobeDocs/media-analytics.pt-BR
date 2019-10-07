@@ -1,16 +1,16 @@
 ---
 product: Media Analytics
 audience: usuário final
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: Adobe Analytics para áudio e vídeo
 translation-type: tm+mt
-source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
+source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
 
 ---
 
 
 # Adobe Analytics for Audio and Video {#using}
 
-+ [Measuring Audio and Video in Adobe Analytics](media-overview.md)
++ [Avaliação de áudio e vídeo no Adobe Analytics](media-overview.md)
 + Measurement Options {#measurement-options}
    + Media Module Milestone Tracking {#mm-milestone-tracking}
       + [Visão geral do marco](measurement-options/mm-milestone-tracking/milestone-overview.md)
@@ -54,11 +54,11 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
          + [Rastrear busca no iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + [Busca de rastreamento no JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Busca de rastreamento no Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Track Seeking on Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
+         + [Busca de rastreamento no Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + Implementar metadados padrão {#impl-std-metadata}
          + [Implementar metadados padrão no Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Implementar metadados padrão no iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-         + [iOS Metadata Keys](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + [Chaves de metadados do iOS](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
          + [Implementar metadados padrão no JavaScript](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
          + [Implementar metadados padrão no Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [Parâmetros padronizados de metadados - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
@@ -88,16 +88,16 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
       + [Qualidade de rastreamento da experiência no Android](sdk-implement/track-qos/track-qos-android.md)
       + [Acompanhar a qualidade da experiência no iOS](sdk-implement/track-qos/track-qos-ios.md)
       + [Monitoramento da qualidade da experiência em JavaScript](sdk-implement/track-qos/track-qos-js.md)
-      + [Track Quality of Experience on Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
-      + [Track Quality of Experience on Roku](sdk-implement/track-qos/track-qos-roku.md)
+      + [Qualidade de rastreamento da experiência no Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
+      + [Qualidade de rastreamento da experiência no Roku](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [Visão geral](sdk-implement/track-errors/track-errors-overview.md)
-      + [Track Errors on Android](sdk-implement/track-errors/track-errors-android.md)
+      + [Rastrear erros no Android](sdk-implement/track-errors/track-errors-android.md)
       + [Rastrear erros no iOS](sdk-implement/track-errors/track-errors-ios.md)
       + [Rastrear erros no JavaScript](sdk-implement/track-errors/track-errors-js.md)
       + [Rastrear erros no Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
-      + [Track Errors on Roku](sdk-implement/track-errors/track-errors-roku.md)
-   + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)
+      + [Rastrear erros no Roku](sdk-implement/track-errors/track-errors-roku.md)
+   + [Recusar e privacidade](sdk-implement/opt-out-privacy.md)
    + Tracking Scenarios {#tracking-scenarios}
       + [Reprodução VOD sem anúncios](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
       + [Reprodução VOD com anúncios precedentes](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
@@ -111,20 +111,20 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
       + [Conteúdo principal disponível](sdk-implement/tracking-scenarios/live-main-content.md)
       + [Conteúdo principal ao vivo com monitoramento sequencial](sdk-implement/tracking-scenarios/live-sequential.md)
    + Validação {#validation}
-      + [Validation Overview](sdk-implement/validation/validation-overview.md)
+      + [Visão geral da validação](sdk-implement/validation/validation-overview.md)
       + [Teste 1: reprodução padrão](sdk-implement/validation/test1-standard-playback.md)
       + [Teste 2: Interrupção de mídia](sdk-implement/validation/test2-media-interrupt.md)
-      + [Test Call Details](sdk-implement/validation/test-call-details.md)
+      + [Testar detalhes da chamada](sdk-implement/validation/test-call-details.md)
       + [Descrições do parâmetro de pulsação](sdk-implement/validation/heartbeat-params.md)
       + Depuração {#debugging}
-         + [SDK Debugging](sdk-implement/validation/debugging/sdk-debugging.md)
+         + [Depuração do SDK](sdk-implement/validation/debugging/sdk-debugging.md)
          + [Configurar o Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
          + [Criar um novo relatório de depuração](sdk-implement/validation/debugging/create-new-debug-report.md)
          + [Painéis e relatórios de depuração](sdk-implement/validation/debugging/debug-dash-repts.md)
    + Analytics in OTT Apps {#analytics-with-ott}
       + [Rastrear estados do aplicativo](sdk-implement/analytics-with-ott/track-app-states.md)
       + [Rastrear ações do aplicativo](sdk-implement/analytics-with-ott/track-app-actions.md)
-      + [Set User IDs](sdk-implement/analytics-with-ott/set-user-ids.md)
+      + [Definir IDs de usuário](sdk-implement/analytics-with-ott/set-user-ids.md)
       + [OTT e Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT e Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + Guia {#cookbook}
@@ -182,4 +182,3 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
 + [Federated Analytics](data-sharing/federated-analytics.md)
 + Recursos adicionais {#additional-resources}
    + [Atualizações de documentação](additional-resources/doc-updates.md)
-
