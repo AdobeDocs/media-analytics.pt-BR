@@ -3,7 +3,7 @@ seo-title: Parâmetros da solicitação
 title: Parâmetros da solicitação
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
+source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## Dados do Analytics
 
-| Request Key  | Obrigatório | Definir em... |  Descrição  |
+| Solicitar chave | Obrigatório | Definir em... |  Descrição  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | S | `sessionStart` | O URL do servidor do Adobe Analytics. |
 | `analytics.reportSuite` | S | `sessionStart` | A ID que identifica os dados de relatórios do Analytics |
@@ -30,7 +30,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## Dados de conteúdo
 
-| Request Key  | Obrigatório | Definir em... |  Descrição  |
+| Solicitar chave | Obrigatório | Definir em... |  Descrição  |
 | --- | :---: | :---: | --- |
 | `media.id` | S | `sessionStart` | Identificador exclusivo para o conteúdo |
 | `media.name` | N | `sessionStart` | Nome legível para o conteúdo |
@@ -112,7 +112,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->Media Analytics (MA) is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). Você precisa de uma Experience Cloud ID para acessar esses aplicativos. _O ECID é o que você deve usar para identificar os usuários na maioria dos cenários._
+>O Media Analytics (MA) é integrado à família de aplicativos da Experience Cloud (Adobe Analytics, Audience Manager, Target etc.). Você precisa de uma Experience Cloud ID para acessar esses aplicativos. _O ECID é o que você deve usar para identificar os usuários na maioria dos cenários._
 
 ### appInstallationId
 
@@ -131,7 +131,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/data-sharing/federated-analytics.md))
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/federated-analytics.md))
 
 ### ID do usuário herdada do Analytics (aid) e IDs do usuário declaradas (customerIDs)
 
