@@ -3,7 +3,7 @@ seo-title: Avaliação de áudio e vídeo no Adobe Analytics
 title: Avaliação de áudio e vídeo no Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 ---
 
@@ -35,7 +35,7 @@ Alguns dos muitos benefícios que as soluções de avaliação de mídia da Adob
 
 * **Análise pontual -** Tome decisões práticas e em tempo real utilizando as principais métricas de desempenho (por exemplo, duração) em vários canais. Os eventos de conteúdo principal são medidos em intervalos de **10 segundos** para capturar todas as atividades que ocorrem. Os eventos de rastreamento de anúncios ocorrem em intervalos de **1 segundo**.
 * **Impulsionar o envolvimento** - Envolva totalmente os usuários com menos eventos de buffering, compreendendo onde e quando os anúncios devem ser exibidos no conteúdo para fornecer uma experiência contínua e menos intrusiva, que traga os usuários de volta e gere visitas repetidas.
-* **Imagem holística -** Combine vários pontos de dados em todos os distribuidores de conteúdo para obter uma visão completa de toda a sua atividade de mídia e medir o envolvimento e as visualizações/escutas em todos os canais possíveis por meio do recurso [Federated Analytics](data-sharing/federated-analytics.md) .
+* **Imagem holística -** Combine vários pontos de dados em todos os distribuidores de conteúdo para obter uma visão completa de toda a sua atividade de mídia e medir o envolvimento e as visualizações/escutas em todos os canais possíveis por meio do recurso [Federated Analytics](/help/federated-analytics.md) .
 * **Maior granularidade** - Avalie o comportamento de exibição no nível mais granular, incluindo a hora do dia da visita individual, os visualizadores/ouvintes simultâneos por minuto e a duração média que o conteúdo foi consumido.
 * **Medição precisa** - Meça os vários dispositivos usados para o consumo de mídia, incluindo OTT, smartphone, tablet, desktop e muito mais, para monitorar os padrões e os hábitos de envolvimento do usuário.
 * **Segmentação -** Aplique classificações aos reprodutores, dispositivos, gêneros, capítulos e programas para ver como cada um tem um impacto nas exibições/áudios gerais e no envolvimento do cliente com conteúdo, áudio, anúncios e combinados.
