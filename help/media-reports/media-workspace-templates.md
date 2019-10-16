@@ -1,9 +1,9 @@
 ---
 seo-title: Modelos do espaço de trabalho de mídia
 title: Modelos do espaço de trabalho de mídia
-uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
+uuid: 0024b06a-eaf5-4d2e-be45-aeda9d055c1
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -18,7 +18,7 @@ Ao criar ou gerenciar um projeto, você trabalha com modelos da guia Workspace n
 
    ![](assets/all-templates-audio.png)
 
-   Por exemplo, se você escolher o modelo de Consumo de áudio, será apresentado um projeto com o seguinte painel orientado para áudio:
+   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
 
    ![](assets/aa-workspace.png)
 
