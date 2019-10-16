@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 
 ---
 
@@ -42,7 +42,7 @@ O Federated Analytics torna a avaliação de áudio e vídeo mais eficiente, sim
 
 ## Download do formulário do Federated Analytics
 
-Baixe a versão atual deste formulário aqui: Acordo de Regras de [Federação](federated-analytics-form.pdf)
+Baixe a versão atual deste formulário aqui: Acordo de Regras de [Federação](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
 ## Processo {#section_byb_kb3_vbb}
 
