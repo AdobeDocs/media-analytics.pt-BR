@@ -3,7 +3,7 @@ seo-title: Ativação de relatórios de mídia
 title: Ativação de relatórios de mídia
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -16,12 +16,12 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
 >
 >Para aproveitar os novos recursos, os clientes existentes do Media Analytics devem reativar o rastreamento de mídia para seus RSIDs.
 
-1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click [!UICONTROL Admin] &gt; [!UICONTROL Report Suites].
-1. Select the report suite(s) where you are collecting media data and click [!UICONTROL Edit Settings] &gt; [!UICONTROL Media Management] &gt; [!UICONTROL Media Reporting].
+1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click **[!UICONTROL Admin &gt; Report Suites].**
+1. Select the report suite(s) where you are collecting media data and click **[!UICONTROL Edit Settings &gt; Media Management &gt; Media Reporting].**
 
    ![](assets/media-reporting.png){width="400px"}
 
-1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
+1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core],** and optionally enable **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** and **[!UICONTROL Media Quality].**
 
    A avaliação de mídia inclui os seguintes módulos:
 
@@ -52,16 +52,16 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
 
    Se você ainda não estiver rastreando anúncios, capítulos ou a qualidade da reprodução, é possível ativar mais opções a qualquer momento.
 
-1. Clique em **[!UICONTROL Salvar]**.
+1. Clique em **[!UICONTROL Salvar].**
 
-   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. Se você visualizar a página [!UICONTROL Avaliação da mídia principal], continue para a próxima etapa.
+   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. Se você visualizar a página **[!UICONTROL Avaliação da mídia principal], continue para a próxima etapa.**
 
-1. (Conditional) On the [!UICONTROL Media Core measurement] page, choose to continue using custom variables or choose to use solution variables.
+1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables.
 
    | Opção | Notas |
    | --- | --- |
-   | Continue a utilizar as variáveis personalizadas | Pros e Cons:<ul> <li> **Vantagens**: as tendências de conteúdo continuam a funcionar após a migração. </li> <li> **** Crônicas: Exige que você mantenha duas eVars personalizadas e três eventos personalizados alocados para a mídia. Você pode utilizar novamente uma eVar personalizada e um evento personalizado. </li> </ul> Para continuar a utilizar variáveis personalizadas: <ol> <li>Selecione Usar variáveis personalizadas e clique em Salvar. </li> <li>Quando solicitado, mapeie as eVars personalizadas e os eventos atuais e, em seguida, clique em Salvar: </li> </ol> |
-   | Migre para variáveis de solução | Pros e Cons:<ul> <li> **Vantagens**: você pode utilizar novamente três eVars personalizadas e quatro eventos personalizados. </li> <li> **Desvantagens:** você perde **todas** as tendências e comparações de histórico dos relatórios de mídia. Isso significa que você não poderá observar as tendências de exibições ou tempo de reprodução do conteúdo para as datas antes de migrar para o Heartbeats. </li> </ul> **Restrição:** não migre para as variáveis da solução, a menos que tenha certeza de que não deseja manter essas tendências. Todos os clientes devem utilizar as variáveis da solução e as regras de processamento para inserir os dados de mídia nas props e eVars existentes, somente se for necessário preservar a continuidade do histórico. Para migrar para variáveis de solução: Selecione [!UICONTROL Usar variáveis] de solução e clique em [!UICONTROL Salvar]. <br><br> IMPORTANTE: A migração para variáveis de solução faz com que você perca **todas** as tendências e comparações históricas dos relatórios de mídia. |
+   | Continue a utilizar as variáveis personalizadas | Pros e Cons:<ul> <li> **Vantagens**: as tendências de conteúdo continuam a funcionar após a migração. </li> <li> **** Crônicas: Exige que você mantenha duas eVars personalizadas e três eventos personalizados alocados para a mídia. Você pode utilizar novamente uma eVar personalizada e um evento personalizado. </li> </ul> Para continuar a utilizar variáveis personalizadas: <ol> <li>Select **[!UICONTROL Use Custom Variables,]** then click **[!UICONTROL Save.]** </li> <li>When prompted, map your current custom eVars and events and then click **[!UICONTROL Save:]** </li> </ol> |
+   | Migre para variáveis de solução | Pros e Cons:<ul> <li> **Vantagens**: você pode utilizar novamente três eVars personalizadas e quatro eventos personalizados. </li> <li> **Desvantagens:** você perde **todas** as tendências e comparações de histórico dos relatórios de mídia. Isso significa que você não poderá observar as tendências de exibições ou tempo de reprodução do conteúdo para as datas antes de migrar para o Heartbeats. </li> </ul> **Restrição:** não migre para as variáveis da solução, a menos que tenha certeza de que não deseja manter essas tendências. Todos os clientes devem utilizar as variáveis da solução e as regras de processamento para inserir os dados de mídia nas props e eVars existentes, somente se for necessário preservar a continuidade do histórico. Para migrar para variáveis de solução: Selecione **[!UICONTROL Usar variáveis]** de solução e clique em **[!UICONTROL Salvar].** <br><br> IMPORTANTE: A migração para variáveis de solução faz com que você perca **todas** as tendências e comparações históricas dos relatórios de mídia. |
 
 >[!IMPORTANT]
 >
