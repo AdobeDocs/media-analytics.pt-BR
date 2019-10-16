@@ -3,7 +3,7 @@ seo-title: Configurar iOS
 title: Configurar iOS
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ---
 
@@ -140,7 +140,7 @@ Para obter mais informações sobre a migração de 1.x para 2.x, consulte [Migr
 
 ## Configuração de um aplicativo nativo para tvOS
 
-Com o lançamento da nova Apple TV, é possível criar aplicativos compatíveis com um ambiente tvOS nativo. Você pode criar um aplicativo completamente nativo com as várias estruturas disponíveis no iOS, ou criar seu próprio aplicativo usando modelos XML e JavaScript. A partir da versão 2.0 do SDK do Media, o suporte para tvOS está disponível. Para mais informações sobre tvOS, consulte o [Site do desenvolvedor do tvOS.](https://developer.apple.com/tvos/documentation/)
+Com o lançamento da nova Apple TV, é possível criar aplicativos compatíveis com um ambiente tvOS nativo. Você pode criar um aplicativo completamente nativo com as várias estruturas disponíveis no iOS, ou criar seu próprio aplicativo usando modelos XML e JavaScript. A partir da versão 2.0 do SDK do Media, o suporte para tvOS está disponível. Para mais informações sobre tvOS, consulte o [Site do desenvolvedor do tvOS.](https://developer.apple.com/tvos/)
 
 Execute as seguintes etapas no projeto Xcode. Este guia foi escrito supondo que seu projeto tenha um direcionamento o aplicativo Apple TV com segmentação tvOS:
 
