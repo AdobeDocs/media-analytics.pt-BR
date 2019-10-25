@@ -1,17 +1,19 @@
 ---
-title: Dimensões de mídia fora do rastreamento de mídia
-seo-title: Dimensões de mídia fora do rastreamento de mídia
+title: Atribuição de fluxo de mídia
+seo-title: Atribuição de fluxo de mídia
 translation-type: tm+mt
-source-git-commit: 5d20df537cd244a10f6c2e66cea622e98aa17a16
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
 
-# Dimensões de mídia fora do rastreamento de mídia
+# Atribuição de fluxo de mídia
 
 Esse recurso permite que você vincule as ações do aplicativo aos dados de rastreamento de mídia sem precisar de regras de processamento adicionais e variáveis personalizadas.
 
-Os clientes agora podem adicionar qualquer uma das dimensões de mídia a todas as outras chamadas de análise, como exibições de página e links personalizados. Durante a implementação, você deve adicionar os parâmetros de dados de contexto de mídia às chamadas de rastreamento do Analytics. A lista completa de parâmetros de dados de contexto usados para mídia está disponível aqui: Parâmetros [de áudio e vídeo.](/help/metrics-and-metadata/audio-video-parameters.md)
+## Dimensões de mídia fora do rastreamento de mídia
+
+Com a Atribuição de fluxo de mídia, os clientes agora podem adicionar qualquer dimensão de mídia a todas as outras chamadas de análise, como exibições de página e links personalizados. Durante a implementação, você deve adicionar os parâmetros de dados de contexto de mídia às chamadas de rastreamento do Analytics. A lista completa dos parâmetros de dados de contexto usados para mídia está disponível aqui: Parâmetros [de áudio e vídeo.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 Você também precisará reativar a configuração de rastreamento de mídia no Admin Console para cada relatório para o qual deseja habilitar este recurso.
 
