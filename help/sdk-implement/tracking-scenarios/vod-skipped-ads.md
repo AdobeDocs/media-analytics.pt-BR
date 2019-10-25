@@ -3,14 +3,14 @@ seo-title: Reprodução VOD com anúncios ignorados
 title: Reprodução VOD com anúncios ignorados
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Reprodução VOD com anúncios ignorados{#vod-playback-with-skipped-ads}
 
-## Cenário {#section_DAC4BCE25F4A4C4991AD0AE495D15B00}
+## Cenário {#scenario}
 
 O cenário inclui a reprodução do conteúdo VOD com um anúncio ignorado.
 
@@ -29,11 +29,11 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 | A reprodução do conteúdo é concluída. | `trackComplete()` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | A sessão foi encerrada. | `trackSessionEnd()` |  | `SessionEnd` |
 
-## Parâmetros {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
+## Parâmetros {#parameters}
 
 Os parâmetros são idênticos aos da [reprodução de VOD com anúncios antes da exibição](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), exceto por não terem anúncios concluídos e nenhuma chamada ad break concluída.
 
-## Código de exemplo {#section_lxt_qz3_x2b}
+## Código de exemplo {#sample-code}
 
 ![](assets/ad-skip.png)
 
