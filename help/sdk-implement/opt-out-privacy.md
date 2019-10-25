@@ -3,14 +3,14 @@ seo-title: Opção de rejeição e privacidade
 title: Opção de rejeição e privacidade
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Opção de rejeição e privacidade{#opt-out-and-privacy}
 
-## Opção de rejeição/aceitação {#section_zfb_syq_v2b}
+## Opção de rejeição/aceitação {#opt-out-opt-in}
 
 Você pode decidir se uma atividade de rastreamento é permitida em um determinado dispositivo:
 
@@ -26,7 +26,7 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
 
    * The `privacyDefault` setting in the `ADBMobile.json` config file. Isso controla a configuração inicial e é mantida até a alteração no código.
 
-   * O `ADBMobile().setPrivacyStatus()` método.
+   * O método `ADBMobile().setPrivacyStatus()`.
 
       * **Rejeitar:**
 
@@ -73,7 +73,7 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
             ```
    Depois de alterar a configuração de privacidade usando `setPrivacyStatus`, a alteração torna-se permanente até ser alterada novamente usando este método ou ao desinstalar e instalar o aplicativo.
 
-## Recuperar identificadores armazenados (aplicativos OTT) {#section_mky_2yq_v2b}
+## Recuperar identificadores armazenados (aplicativos OTT) {#retrieving-stored-identifiers-ott-apps}
 
 Essas informações ajudam a recuperar identidades de usuário armazenadas localmente do aplicativo Roku.
 
