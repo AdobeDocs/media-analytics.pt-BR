@@ -3,7 +3,7 @@ seo-title: Rastrear a qualidade da experiência no Chromecast
 title: Rastrear a qualidade da experiência no Chromecast
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Visão geral {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
+## Visão geral {#overview}
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Você pode usar a API do player de mídia para identificar as variáveis relacionadas ao QoS e ao rastreamento de erros.
 
@@ -29,7 +29,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 Chama `trackError(“media error id”);`
 
-## Implementação {#section_3B8EBEB167624D0481E8AF4761F83047}
+## Implementação {#implement}
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -67,5 +67,5 @@ Chama `trackError(“media error id”);`
 
    >[!TIP]
    >
-   >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >O rastreamento de erros do player de mídia não interrompe a sessão de rastreamento de mídia. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
