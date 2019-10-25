@@ -3,7 +3,7 @@ seo-title: Visão geral
 title: Visão geral
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,15 +14,15 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 >
 >As instruções a seguir fornecem orientação para a implementação usando os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciados, anúncios concluídos e anúncios ignorados. Use a API do player de mídia para identificar eventos do player principal e preencher as variáveis de anúncio necessárias e opcionais. See the comprehensive list of metadata here: Ad parameters.[](/help/metrics-and-metadata/ad-parameters.md)
+A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciados, anúncios concluídos e anúncios ignorados. Use a API do player de mídia para identificar eventos do player principal e preencher as variáveis de anúncio necessárias e opcionais. Consulte a lista abrangente de metadados aqui: Parâmetros de [anúncio.](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## Eventos do player {#player-events}
 
 
-### On ad break start
+### Início de pausa de anúncio
 
 >[!NOTE]
->Including pre-roll
+>Incluindo pre-roll
 
 * Crie uma instância de objeto `adBreak` para o ad break. Por exemplo, `adBreakObject`.
 
@@ -46,7 +46,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 * Chame `trackEvent` para concluir o ad break.
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Implementação do rastreamento de anúncios {#implement-ad-tracking}
 
 ### Constantes de rastreamento do anúncio
 
