@@ -2,7 +2,7 @@
 title: Atribuição de fluxo de mídia
 seo-title: Atribuição de fluxo de mídia
 translation-type: tm+mt
-source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
+source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
 
 ---
 
@@ -43,3 +43,4 @@ Nos relatórios do Analytics, é possível usar a `Show` eVar para analisar os d
 ![](/assets/show-engagement.png)
 
 ![](/assets/vid-stream-attr-subs.png)
+
