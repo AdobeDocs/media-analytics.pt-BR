@@ -3,14 +3,14 @@ seo-title: Reprodução VOD com um capítulo
 title: Reprodução VOD com um capítulo
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Reprodução VOD com um capítulo{#vod-playback-with-one-chapter}
 
-## Cenário {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Cenário {#scenario}
 
 Nesse cenário, uma parte do conteúdo VOD está marcada como um capítulo.
 
@@ -25,9 +25,9 @@ A menos que seja especificado, as chamadas de rede desse cenário correspondem �
 | O capítulo terminou. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Esta é a situação na qual o fim do capítulo é atingido. |
 | O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa que o final de uma sessão de visualização foi atingido. This API must be called even if the user does not watch the media to completion. |
+| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa que o final de uma sessão de visualização foi atingido. Essa API deve ser chamada mesmo se o usuário não observar a mídia até a conclusão. |
 
-## Parâmetros {#section_869319D99A474FEA8EA840415EA97FBD}
+## Parâmetros {#parameters}
 
 When chapter playback begins, a `Heartbeat Chapter Start` call is sent. Se o início do capítulo não coincidir com a marcação de 10 segundos, a chamada `Heartbeat Chapter Start` é atrasada em alguns segundos e é direcionada para o próximo intervalo de 10 segundos.
 
@@ -42,7 +42,7 @@ Quando isso ocorre, uma chamada `Content Heartbeat` é emitida no mesmo interval
 | `s:stream:chapter_*` |  | Informações de fluxo específicas aos dados do capítulo. |
 | `s:meta:*` |  | Capítulo com dados específicos do contexto. |
 
-## Código de exemplo, capítulo no meio {#section_icd_5bj_x2b}
+## Código de exemplo, capítulo no meio {#sample-code-chapter-in-the-middle}
 
 Nesse cenário, uma parte do conteúdo VOD é um capítulo.
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## Código de exemplo, capítulo no início {#section_flj_5bj_x2b}
+## Código de exemplo, capítulo no início {#sample-code-chapter-at-the-beginning}
 
 Neste cenário, o conteúdo VOD é reproduzido com um capítulo no início da reprodução.
 
