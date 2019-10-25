@@ -3,7 +3,7 @@ seo-title: O manuseio de aplicativos é interrompido durante a reprodução
 title: O manuseio de aplicativos é interrompido durante a reprodução
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -19,7 +19,7 @@ A reprodução em um aplicativo de mídia pode ser interrompida de várias manei
 >
 >The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. Isso resulta na reprodução até esse ponto, sem contar para o tempo total de reprodução, além de perder marcadores de progresso anteriores, segmentos e assim por diante. Instead, call `trackPlay` when the app returns and/or the media resumes playing.
 
-## Perguntas frequentes sobre o manuseio de interrupções de aplicativos: {#section_osf_xqs_h2b}
+## Perguntas frequentes sobre o manuseio de interrupções de aplicativos: {#faq-about-handling-application-interrupts}
 
 * _Quanto tempo um aplicativo deve ficar em segundo plano para a sessão ser encerrada?_
 
