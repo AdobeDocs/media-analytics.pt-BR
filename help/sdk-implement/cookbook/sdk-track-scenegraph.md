@@ -3,14 +3,14 @@ seo-title: Rastreamento no SceneGraph (Roku)
 title: Rastreamento no SceneGraph (Roku)
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Rastreamento no SceneGraph (Roku){#tracking-in-scenegraph-roku}
 
-## Introdução {#section_vfr_zcz_y2b}
+## Introdução {#introduction}
 
 O Roku introduziu uma nova estrutura de programação para o desenvolvimento de aplicativos: a estrutura de programação XML do SceneGraph. Essa nova estrutura apresenta dois novos conceitos principais:
 
@@ -19,7 +19,7 @@ O Roku introduziu uma nova estrutura de programação para o desenvolvimento de 
 
 O SDK do Adobe Mobile para Roku foi escrito em BrightScript. O SDK usa vários componentes que não estão disponíveis para um aplicativo executado no SceneGraph (por exemplo, threads). Portanto, se um desenvolvedor de aplicativos Roku quiser usar a estrutura do SceneGraph, ele não poderá chamar as APIs de SDK do Adobe Mobile (as mais recentes são semelhantes àquelas disponíveis nos aplicativos BrightScript herdados).
 
-## Arquitetura {#section_dj5_1dz_y2b}
+## Arquitetura {#architecture}
 
 Para adicionar suporte do SceneGraph ao SDK do AdobeMobile, a Adobe adicionou uma nova API que cria um conector bridge entre o SDK do AdobeMobile e `adbmobileTask`. O último é um nó do SceneGraph usado para a execução da API do SDK. (O uso do `adbmobileTask` é explicado em detalhes mais adiante neste documento.)
 
@@ -31,7 +31,7 @@ O conector bridge foi projetado para ser executado da seguinte maneira:
 
 ![](assets/SceneGraph_arch.png)
 
-## Componentes {#section_jwl_wqx_1bb}
+## Componentes {#components}
 
 **Aplicativo SceneGraph:**
 
@@ -49,7 +49,7 @@ O conector bridge foi projetado para ser executado da seguinte maneira:
 * Um nó de tarefa do SceneGraph que executa as APIs `AdobeMobileLibrary` em um thread em segundo plano.
 * Atua como um representante para retornar os dados às cenas do aplicativo.
 
-## APIs públicas do SceneGraph {#section_jyd_hdz_y2b}
+## APIs públicas do SceneGraph {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
@@ -195,7 +195,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 | `adb_media_init_adbreakinfo` | Este método retorna o objeto de Informações do AdBreak inicializado.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | Este método retorna um objeto de Informações de QoS inicializado.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
-## Implementação {#section_dbz_ydz_y2b}
+## Implementação {#implementation}
 
 1. **Baixe a biblioteca Roku -** Baixe a biblioteca Roku [mais recente.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
@@ -295,7 +295,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       end function 
       ```
 
-## Exemplo de implementação {#section_mld_lfz_y2b}
+## Exemplo de implementação {#sample-implementation}
 
 ### Exemplos de chamadas de API no SDK herdado
 
