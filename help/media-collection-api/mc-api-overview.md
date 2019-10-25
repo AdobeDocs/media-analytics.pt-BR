@@ -3,7 +3,7 @@ seo-title: Visão geral
 title: Visão geral
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -18,15 +18,15 @@ A API da coleção de mídia é a alternativa RESTful da Adobe para o SDK do Med
 
 A API da coleção de mídia é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK de mídia também são relevantes para a API de coleta de mídia. Por exemplo, ambas as soluções usam os mesmos Parâmetros [de](/help/metrics-and-metadata/audio-video-parameters.md)áudio e vídeo, e os dados coletados de rastreamento de áudio e vídeo levam aos mesmos [Relatórios e análises.](/help/media-reports/media-reports-enable.md)
 
-## Fluxos de dados de rastreamento de mídia {#section_pwq_n34_qbb}
+## Fluxos de dados de rastreamento de mídia {#media-tracking-data-flows}
 
-A media player implementing the Media Collection API makes RESTful API tracking calls directly to the media tracking back-end server, whereas a player implementing the Media SDK makes tracking calls to the SDK APIs inside the player app. Um resultado de fazer chamadas pela Web é que o reprodutor que implementa a API da coleção de mídia precisa lidar com parte do processamento que o SDK do Media realiza automaticamente. (Detalhes na implementação da coleção [de mídia.](mc-api-impl/mc-api-quick-start.md))
+Um player de mídia que implementa a API Media Collection faz chamadas RESTful de rastreamento de API diretamente para o servidor back-end de rastreamento de mídia, enquanto um player que implementa o SDK de mídia faz chamadas de rastreamento para as APIs SDK dentro do aplicativo do player. Um resultado de fazer chamadas pela Web é que o reprodutor que implementa a API da coleção de mídia precisa lidar com parte do processamento que o SDK do Media realiza automaticamente. (Detalhes na implementação da coleção [de mídia.](mc-api-impl/mc-api-quick-start.md))
 
-The tracking data captured with the Media Collection API is sent and initially processed differently than the tracking data captured in a Media SDK player, but the same processing engine on the back-end is used for both solutions.
+Os dados de rastreamento capturados com a API Media Collection são enviados e inicialmente processados de forma diferente dos dados de rastreamento capturados em um player SDK de mídia, mas o mesmo mecanismo de processamento no back-end é usado para ambas as soluções.
 
 ![](assets/col_api_overview_simple.png)
 
-## Visão geral da API {#section_y4n_mcl_kcb}
+## Visão geral da API {#api-overview}
 
 **URI:** obtenha essa informação do seu representante da Adobe.
 
