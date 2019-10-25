@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -15,7 +15,7 @@ Os dados de avaliação de vídeo padronizados criados pelo Media Analytics são
 Por meio das regras e lógicas que regem o Federated Analytics, os dados são facilmente controlados e individualizados para atender às necessidades de cada parceria.
 O Federated Analytics torna a avaliação de áudio e vídeo mais eficiente, simplificada e acionável.
 
-## Benefícios {#section_804FFE8671594A6FB769CBE79EF9D627}
+## Benefícios {#benefits}
 
 * **Transparente:** elimine a “caixa preta” em relação à criação de dados usando uma mesma lógica entre empresas
 * **Abrangente:** entenda o alcance total e o impacto do consumo de áudio e vídeo em parcerias, plataformas e dispositivos
@@ -27,12 +27,12 @@ O Federated Analytics torna a avaliação de áudio e vídeo mais eficiente, sim
 * **Tempo hábil:** envie e receba dados em tempo real
 * **Fácil:** marque reprodutores com os SDKs da Adobe, compartilhe dados com vários parceiros
 
-## Definições {#section_ypl_mb3_vbb}
+## Definições {#definitions}
 
 * **Remetente:** o cliente que gera os dados de análise de áudio e vídeo em reprodutores particulares
 * **Destinatário:** o cliente que recebe os dados de análise de áudio e vídeo do remetente
 
-## Requisitos {#section_4758843A8941441B9A4D0D7A61077A6E}
+## Requisitos {#requirements}
 
 * **Contrato de fluxos de mídia:** o destinatário e o remetente precisam contratar o Adobe Analytics para fluxos de mídia para obterem acesso aos dados de áudio e vídeo no Adobe Analytics. Entre em contato com a equipe de conta para obter mais detalhes.
 * **Adendo federado:** cada Remetente e Destinatário deve ter um adendo assinado em vigor com a Adobe para enviar ou receber dados. Um adendo por cliente é necessário, e não um adendo por parceria. Entre em contato com a equipe de conta para obter mais detalhes.
@@ -44,7 +44,7 @@ O Federated Analytics torna a avaliação de áudio e vídeo mais eficiente, sim
 
 Baixe a versão atual deste formulário aqui: Acordo de Regras de [Federação](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
-## Processo {#section_byb_kb3_vbb}
+## Processo {#process}
 
 1. O Remetente e o Destinatário trabalham juntos para preencher o formulário do Contrato de regras de federação. O formulário do Contrato de regras federadas contém campos especiais para nossa equipe de engenharia e deve ser editado SOMENTE usando o Adobe Acrobat. [Baixe o Acrobat gratuitamente.](https://get.adobe.com/reader/)
 1. Os serviços de consultoria fornecem um exemplo de arquivo de dados para o Destinatário contendo dados reais dos reprodutores do Remetente para voltar a confirmar que as regras corretas de compartilhamento de dados estão definidas, desde que os arquivos de dados estejam disponíveis.
