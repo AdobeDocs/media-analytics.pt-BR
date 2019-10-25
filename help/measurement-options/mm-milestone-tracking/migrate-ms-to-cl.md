@@ -3,20 +3,20 @@ seo-title: Migração do Marco para Link personalizado
 title: Migração do Marco para Link personalizado
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Migração do Marco para Link personalizado{#migrating-from-milestone-to-custom-link}
 
-## Visão geral {#section_xlc_fc2_dfb}
+## Visão geral {#overview}
 
 Os principais conceitos de medição de vídeo são os mesmos para o rastreamento de Marco e Link personalizado, que estão realizando eventos do reprodutor de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores de reprodutores e mapeá-los para variáveis&#x200B;de análise. A abordagem de Link personalizado deve ser considerada como uma diminuição e simplificação da implementação e dos dados coletados. Com a solução de Link personalizado, nenhuma variável ou método é predefinido para a medição de vídeo, isso requer uma configuração personalizada completa. Deve ser possível atualizar o código de evento do reprodutor para apontar as chamadas de rastreamento de link personalizado para eventos básicos do reprodutor, como início e conclusão. Consulte o [guia de implementação do Link personalizado](/help/measurement-options/cl-in-aa/cl-impl-guide.md) e o [Rastreamento de link manual usando um código de link personalizado](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) para obter mais detalhes.
 
 As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link personalizado.
 
-## Guia de migração {#section_btt_fc2_dfb}
+## Guia de migração {#migration-guide}
 
 ### Referência da variável de vídeo
 
@@ -95,8 +95,7 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData 
-  = true;
+  trackUsingContextData = true;
 </pre>
 </td>
 <td>
@@ -116,27 +115,14 @@ Media.contextDataMapping
 <td>
 <pre>
 s.Media.
-  contextDataMapping = {
-  "a.media.name":
-    "eVar2,prop2",
-  "a.media.segment":
-    "eVar3",
-  "a.contentType":
-    "eVar1",
-  "a.media.timePlayed":
-    "event3",
-  "a.media.view":
-    "event1",
-  "a.media.segmentView":
-    "event2",
-  "a.media.complete":
-    "event7",
-  "a.media.milestones":{
-    25:"event4",
-    50:"event5",
-    75:"event6"
-  }
-};
+  contextDataMapping = { "a.media.name":
+    "eVar2,prop2", "a.media.segment":
+    "eVar3", "a.contentType":
+    "eVar1", "a.media.timePlayed":
+    "event3", "a.media.view":
+    "event1", "a.media.segmentView":
+    "event2", "a.media.complete":
+    "event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
 </pre>
 </td>
 <td>N/A
@@ -150,12 +136,7 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s.Media.trackVars
-  = "events,
-     prop2,
-     eVar1,
-     eVar2,
-     eVar3";
+s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
 </pre>
 </td>
 <td>
@@ -163,16 +144,8 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars
-  = 'events,
-     prop10,
-     eVar10,
-     eVar12,
-     eVar13,
-     eVar15,
-     contextData.
-       video.name,
-     contextData.
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.
+       video.name, contextData.
        video.view';
 </pre>
 </td>
@@ -183,14 +156,7 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s.Media.trackEvents
-  = "event1,
-     event2,
-     event3,
-     event4,
-     event5,
-     event6,
-     event7"
+s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
 </pre>
 </td>
 <td>
@@ -198,8 +164,7 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s.linkTrackEvents
-  = 'event2';
+s.linkTrackEvents = 'event2';
 </pre>
 </td>
 </tr>
@@ -227,8 +192,7 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData 
-  = true;
+  trackUsingContextData = true;
 </pre>
 </td>
 <td>
@@ -651,7 +615,7 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 </tr>
 <tr>
 <td>name</td>
-<td><b></b> name: (required) The name or ID of the ad.</td>
+<td><b></b> name: (obrigatório) O nome ou a ID do anúncio.</td>
 <td>N/A</td>
 <td>Não disponível</td>
 </tr>
@@ -660,7 +624,7 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 length
 </td>
 <td>
-<b></b> length: (required) The length of the ad.
+<b></b> comprimento: (obrigatório) A duração do anúncio.
 </td>
 <td>N/A
 </td>
@@ -672,8 +636,7 @@ length
 playerName
 </td>
 <td>
-<b></b> playerName: (required) The name of the media player used
-to view the ad.
+<b></b> playerName: (obrigatório) O nome do player de mídia usado para exibir o anúncio.
 </td>
 <td>N/A
 </td>
