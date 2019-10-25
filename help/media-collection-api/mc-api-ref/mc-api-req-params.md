@@ -3,7 +3,7 @@ seo-title: Parâmetros da solicitação
 title: Parâmetros da solicitação
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | Definido como verdadeiro quando o usuário final optou por não ter os dados compartilhados entre o Adobe Analytics e outras soluções da Experience Cloud (por exemplo, Audience Manager) |
 | `analytics.optOutShare` | N | `sessionStart` | Definido como verdadeiro quando o usuário final optou por não ter seus dados federados (por exemplo, para outros clientes do Adobe Analytics). |
 
-## Detalhes adicionais {#section_ryt_ccy_lcb}
+## Detalhes adicionais {#additional-details}
 
 ### visitor.marketingCloudUserId
 
