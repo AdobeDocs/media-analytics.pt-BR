@@ -3,7 +3,7 @@ seo-title: Parâmetros de qualidade
 title: Parâmetros de qualidade
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
@@ -39,13 +39,11 @@ Descrição dos dados da tabela:
 | <ul> <li> **Chave de SDK:**<br/>  [bitrate](./quality-parameters.md#related_apis_section) </li> <li> **Chave da API:**<br/>media.qoe.bitrate </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>number </li> <li> **Enviado com:**<br/>Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: 800-899 </li><li> **Descrição:**<br/>A taxa de bits média (em kbps). O valor é de buckets predefinidos em intervalos de 100 kbps. A Taxa média de bits é calculada como uma média ponderada de todos os valores de taxa de bits relacionados à duração da reprodução ocorridos durante a sessão de reprodução..  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe.<br/>bitrateAverageBucket) </li> <li> ****<br/> Pulsação: (l:stream:bitrate) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>eVar </li> <li> **Expiração:**<br/>On HIT </li> <li> **Nome do relatório:**<br/>Average Bitrate </li> <li> ****<br/> Dados de contexto: (a.media.qoe.<br/>bitrateAverageBucket) </li> <li> **Feed de dados:**<br/>videoqoebitrateaverageevar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bitrateAverageBucket) </li> </ul> |
 
 
-
 ### Hora de início
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
 | <ul> <li> **Chave de SDK:**<br/> </li> <li> **Chave da API:**<br/>media.qoe.timeToStart </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>number </li> <li> ****<br/> Enviado com: Media Start, Media Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: 30 000 </li><li> **Descrição:**<br/>Esse valor assumirá zero como padrão se você não o definir por meio de QoSObject. Você define esse valor em milissegundos. O valor será exibido no formato de hora (HH:MM:SS) no Analysis Workspace e nos Reports &amp; Analytics. Nos Feeds de dados, Data Warehouse e APIs de relatórios, os valores serão exibidos em segundos.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe.<br/>timeToStart) </li> <li> ****<br/> Pulsação: (l:stream:startup_time) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>eVar </li> <li> **Expiração:**<br/>On HIT </li> <li> **Nome do relatório:**<br/>Time to Start </li> <li> ****<br/> Dados de contexto: (a.media.qoe.<br/>timeToStart) </li> <li> **Feed de dados:**<br/>videoqoetimetostartevar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
-
 
 
 ### FPS
