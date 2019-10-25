@@ -1,20 +1,20 @@
 ---
-seo-title: Tracking Overview
-title: Tracking Overview
+seo-title: Visão geral do rastreamento
+title: Visão geral do rastreamento
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# Visão geral do rastreamento{#tracking-overview}
 
 >[!IMPORTANT]
 >
 >Esta documentação cobre o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Player Events
+## Eventos do player
 
 O rastreamento da reprodução principal inclui o rastreamento da carga da mídia, início da mídia, pausa da mídia e mídia concluída. Embora não seja obrigatório, o rastreamento de buffering e busca também são componentes essenciais usados &#x200B;para rastrear a reprodução do conteúdo. Na API do reprodutor de mídia, identifique os eventos do reprodutor que correspondem às chamadas de rastreamento do SDK do Media e codifique os manipuladores de eventos para chamar APIs de rastreamento e preencher as variáveis obrigatórias e opcionais.
 
@@ -22,7 +22,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
 * Crie o objeto de mídia
 * Preencher metadados
-* Chamar `trackSessionStart`;Por exemplo: `trackSessionStart(mediaObject, contextData)`
+* Chamar `trackSessionStart`; Por exemplo: `trackSessionStart(mediaObject, contextData)`
 
 ### No início da mídia
 
@@ -59,9 +59,9 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
 >[!TIP]
 >
->A posição do indicador de reprodução é definida como parte do código de configuração e configuração. Para obter mais informações sobre `getCurrentPlayheadTime`, consulte [Visão geral: Diretrizes gerais de implementação.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>A posição do indicador de reprodução é definida como parte do código de configuração e configuração. Para obter mais informações sobre `getCurrentPlayheadTime`, consulte [Visão geral: Diretrizes gerais de implementação.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
-## Implementação {#section_BB217BE6585D4EDEB34C198559575004}
+## Implementação {#implement}
 
 1. **Configuração do rastreamento inicial -** Identifique quando o usuário aciona a intenção de reproduzir (o usuário clica em Reproduzir e/ou a reprodução automática está ativada) e crie uma instância `MediaObject` com as informações da mídia para nome do conteúdo, ID do conteúdo, duração do conteúdo e tipo de fluxo.
 
@@ -142,7 +142,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
    >[!TIP]
    >
-   >This may be the same event source that was used in Step 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >Essa pode ser a mesma fonte de evento usada na Etapa 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 1. Analise os eventos de busca de reprodução no reprodutor de mídia. Na notificação de evento de início da busca, rastreie a busca com o evento `SeekStart`.
 1. Na notificação de conclusão da busca do reprodutor de mídia, rastreie o término da busca com o evento `SeekComplete`.
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## Validar {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+## Validar {#validate}
 
 Para obter informações sobre como validar sua implementação, consulte [Validação.](/help/sdk-implement/validation/validation-overview.md)
 
