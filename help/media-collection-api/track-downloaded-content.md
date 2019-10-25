@@ -3,14 +3,14 @@ seo-title: Rastrear o conteúdo baixado
 title: Rastrear o conteúdo baixado
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 translation-type: tm+mt
-source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Rastrear o conteúdo baixado{#track-downloaded-content}
 
-## Visão geral {#section_hcy_3pk_cfb}
+## Visão geral {#overview}
 
 O recurso Conteúdo baixado fornece a capacidade de rastrear o consumo de mídia enquanto o usuário está offline. Por exemplo, um usuário baixa e instala um aplicativo em um dispositivo móvel. Em seguida, ele baixa o conteúdo usando o aplicativo no armazenamento local do dispositivo. Para rastrear esses dados baixados, a Adobe desenvolveu o recurso Conteúdo baixado. Com esse recurso, quando o usuário reproduz o conteúdo do armazenamento de um dispositivo, os dados de rastreamento são armazenados no dispositivo, independentemente da conectividade do dispositivo. Quando o usuário conclui a sessão de reprodução e o dispositivo retorna online, as informações de rastreamento armazenadas são enviadas para o back-end da API de coleta de mídia em uma única carga. A partir daí, o processamento e o relatório continuam normalmente na API Media Collection.
 
@@ -28,7 +28,7 @@ Cada abordagem tem suas vantagens e desvantagens:
 * O cenário online é rastreado em tempo real; isso requer uma verificação de conectividade antes de cada chamada de rede.
 * O cenário offline (recurso Conteúdo baixado) precisa apenas de uma verificação de conectividade de rede, mas também requer um espaço maior de memória no dispositivo.
 
-## Implementação {#section_jhp_jpk_cfb}
+## Implementação {#implementation}
 
 ### Esquemas de eventos
 
@@ -47,11 +47,11 @@ O recurso Conteúdo baixado é simplesmente a versão offline da API (padrão) d
 * 201 - Criado: solicitação bem-sucedida; os dados são válidos e a sessão foi criada e será processada.
 * 400 - Solicitação inválida; a validação do esquema falhou, todos os dados são descartados, nenhum dado da sessão será processado.
 
-## Integração com o Adobe Analytics {#section_cty_kpk_cfb}
+## Integração com o Adobe Analytics {#integration-with-adobe-analtyics}
 
 Ao calcular as chamadas de início/fechamento do Analytics para o cenário de conteúdo baixado, o back-end define um campo adicional do Analytics chamado `ts.` Estes são carimbos de data e hora para o primeiro e o último evento recebido (início e conclusão). Esse mecanismo permite que uma sessão de mídia concluída seja colocada no ponto no tempo correto (isto é, mesmo se o usuário não voltar online por vários dias, a sessão de mídia é reportada como ocorrida no momento em que o conteúdo foi realmente exibido). Você deve ativar esse mecanismo no Adobe Analytics criando um _conjunto de relatórios opcionais de carimbo de data e hora._ Para ativar o conjunto de relatórios opcionais de carimbo de data e hora, consulte [Carimbos de data e hora opcionais.](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
 
-## Comparação de sessões de amostra {#section_qnk_lpk_cfb}
+## Comparação de sessões de amostra {#sample-session-comparison}
 
 ```
 [url]/api/v1/sessions
