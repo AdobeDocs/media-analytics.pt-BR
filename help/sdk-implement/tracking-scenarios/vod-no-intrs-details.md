@@ -3,14 +3,14 @@ seo-title: Reprodução VOD sem anúncios
 title: Reprodução VOD sem anúncios
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bdd0d8cb
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Reprodução VOD sem anúncios{#vod-playback-with-no-ads}
 
-## Cenário {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Cenário {#scenario}
 
 Este cenário inclui um ativo VOD sem anúncios e é reproduzido uma vez do início ao fim.
 
@@ -21,7 +21,7 @@ Este cenário inclui um ativo VOD sem anúncios e é reproduzido uma vez do iní
 | Reproduções de conteúdo |  | Content Heartbeats |  |
 | O conteúdo é concluído | `trackComplete` | Heartbeat Content Complete | *Concluído* significa que o fim do indicador de reprodução foi atingido. |
 
-## Parâmetros {#section_45D7B10031524411B91E2C569F7818B0}
+## Parâmetros {#parameters}
 
 Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são vistos nas chamadas de Adobe Analytics `Content Start`Content Start. Há muitos parâmetros que a Adobe usa para preencher os diversos relatórios de mídia, mas somente os parâmetros mais importantes estão listados na tabela a seguir:
 
@@ -35,9 +35,9 @@ Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são 
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;Seu nome de mídia&gt; |  |
-| `s:meta:*` | opcional | Custom metadata that is set on the media. |
+| `s:meta:*` | opcional | Metadados personalizados definidos na mídia. |
 
-## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
+## Heartbeat Content Play {#heartbeat-content-play}
 
 These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. Todos os outros parâmetros ainda devem existir.
 
@@ -46,7 +46,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Content heartbeats {#section_3B5945336E464160A94518231CEE8F53}
+## Content heartbeats {#content-heartbeats}
 
 Durante a reprodução da mídia, um temporizador envia pelo menos uma pulsação a cada 10 segundos. Essas pulsações contêm informações sobre reprodução, anúncios, buffering e muito mais. O conteúdo exato de cada heartbeat vai além do escopo desse documento, mas a questão crítica é que as pulsações são disparadas consistentemente durante toda a reprodução.
 
@@ -57,7 +57,7 @@ Em heartbeats de conteúdo, procure pelos seguintes parâmetros:
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;posição do indicador de reprodução&gt;, por exemplo, 50,60,70 | Esse parâmetro reflete a posição atual do indicador de reprodução. |
 
-## Heartbeat Content Complete {#section_33BCC4C3181940C39446A57C25D82179}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 Quando a reprodução termina, o que significa que o final do indicador de reprodução foi atingido, uma chamada `Heartbeat Content Complete` é enviada. Essa chamada é semelhante a outras chamadas de Heartbeat, mas contém alguns parâmetros específicos:
 
@@ -66,7 +66,7 @@ Quando a reprodução termina, o que significa que o final do indicador de repro
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Código de exemplo {#section_glq_vw3_x2b}
+## Código de exemplo {#sample-code}
 
 Nesse cenário, o conteúdo tem 40 segundos de duração. É reproduzido até o fim, sem interrupção.
 
