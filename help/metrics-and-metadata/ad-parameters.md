@@ -3,7 +3,7 @@ seo-title: Parâmetros de anúncio
 title: Parâmetros de anúncio
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -41,7 +41,7 @@ Descrição dos dados da tabela:
 >as classificações são ativadas verificando os nomes das variáveis. Se algum de
 >estiverem ausentes, a Adobe adicionará os que estiverem faltando novamente.
 
-## Dados de vídeo do anúncio {#section_hq3_nbv_51b}
+## Dados de vídeo do anúncio {#ad-video-data}
 
 ### ID do anúncio
 
@@ -79,7 +79,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **Chave da API:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> Obrigatório: SDK: Sim; API: Não. </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: "pre-roll" </li><li> **Descrição:**<br/>o nome amigável da quebra de anúncio.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>podFriendlyName) </li> <li> ****<br/> Pulsação: (s:asset:pod_name) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Pod Name </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>podFriendlyName) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **Chave da API:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> Obrigatório: SDK:Sim; API: Não. </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> **Enviado com:**<br/>Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** Any </li> <li> ****<br/> Valor da amostra: "pre-roll" </li><li> **Descrição:**<br/>o nome amigável da quebra de anúncio.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>podFriendlyName) </li> <li> ****<br/> Pulsação: (s:asset:pod_name) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Pod Name </li> <li> ****<br/> Dados de contexto: (a.media.ad.<br/>podFriendlyName) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
 
 
 
@@ -115,7 +115,7 @@ Descrição dos dados da tabela:
 
 
 
-## Metadados de publicidade padrão {#section_EFB805867916411E84DE1BA5A183D86A}
+## Metadados de publicidade padrão {#standard-ad-metadata}
 
 ### Anunciante
 
@@ -166,7 +166,7 @@ Descrição dos dados da tabela:
 
 
 
-## Métricas de publicidade {#section_22AA1565F11C4F3990E2AB51CD3213F7}
+## Métricas de publicidade {#ad-metrics}
 
 ### Início do anúncio
 
