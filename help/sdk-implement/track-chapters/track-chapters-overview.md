@@ -3,7 +3,7 @@ seo-title: Visão geral
 title: Visão geral
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using 2.x SDKs. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 O rastreamento de capítulo e segmento está disponível para capítulos ou segmentos de mídia personalizados. Alguns usos comuns do rastreamento de capítulo são definir segmentos personalizados com base no conteúdo de mídia (como entradas de beisebol) ou definir segmentos de conteúdo entre quebras de anúncios. Chapter tracking is **not** required for core media tracking implementations.
 
@@ -34,7 +34,7 @@ O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítu
 
 * Chama `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implementar o rastreamento de capítulo {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## Implementar o rastreamento de capítulo {#implement-chapter-tracking}
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
@@ -57,7 +57,7 @@ O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítu
 1. Se a reprodução do capítulo não tiver sido concluída porque o usuário optou por ignorar o capítulo (por exemplo, se o usuário sair do limite do capítulo), chame o evento `ChapterSkip` na instância MediaHeartbeat.
 1. Se houver capítulos adicionais, repita as etapas de 1 até 5.
 
-The following sample code uses the JavaScript 2.x SDK for an HTML5 media player. You should use this code with the core media playback code.
+O código de amostra a seguir usa o JavaScript 2.x SDK para um player de mídia HTML5. Use esse código com o código principal de reprodução de mídia.
 
 ```js
 /* Call on chapter start */ 
