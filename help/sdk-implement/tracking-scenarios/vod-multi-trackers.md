@@ -3,14 +3,14 @@ seo-title: Vários rastreadores VOD ao mesmo tempo
 title: Vários rastreadores VOD ao mesmo tempo
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Vários rastreadores VOD ao mesmo tempo{#vod-multiple-trackers-in-parallel}
 
-## Cenário {#section_1AFCA33B322B46818BA4F1BDD3B40B4E}
+## Cenário {#scenario}
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
@@ -18,7 +18,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 
 A menos que seja especificado, as chamadas de rede são iguais ao cenário [reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
-## Parâmetros {#section_45D7B10031524411B91E2C569F7818B0}
+## Parâmetros {#parameters}
 
 ### Sessão do Heartbeat
 
@@ -26,7 +26,7 @@ A menos que seja especificado, as chamadas de rede são iguais ao cenário [repr
 |---|---|---|
 | `s:event:sid` | ID exclusiva da sessão | Uma ID exclusiva da sessão que existe em todas as chamadas de rede de heartbeat até que o método `trackSessionEnd` seja chamado. |
 
-## Código de exemplo {#section_qpy_4dj_x2b}
+## Código de exemplo {#sample-code}
 
 ![](assets/multi-sessions-in-parallel.png)
 
