@@ -3,7 +3,7 @@ product: Media Analytics
 audience: usuário final
 user-guide-title: Adobe Analytics para áudio e vídeo
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
 
 ---
 
@@ -128,6 +128,7 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [OTT e Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT e Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + Guia {#cookbook}
+      + [Livro de receitas do SDK](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [O manuseio de aplicativos é interrompido durante a reprodução](sdk-implement/cookbook/app-interrupts.md)
       + [Resolver a ocorrência de main:play entre anúncios](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [Retomando Sessões Inativas](sdk-implement/cookbook/resuming-inactive.md)
@@ -162,6 +163,9 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [Linha do tempo 2 - Usuário abandona a sessão](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [Linha do tempo 3 - Capítulos](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [Acompanhar conteúdo baixado](media-collection-api/track-downloaded-content.md)
++ Guia {#media-analytics-cookbook}
+   + [Visão geral do livro de receitas](media-analytics-cookbook/cookbook-overview.md)
+   + [Dimensões de mídia fora do rastreamento de mídia](media-analytics-cookbook/media-dimensions.md)
 + Métricas e metadados {#metrics-and-metadata}
    + [Parâmetros de áudio e vídeo](metrics-and-metadata/audio-video-parameters.md)
    + [Parâmetros de anúncio](metrics-and-metadata/ad-parameters.md)
@@ -181,4 +185,4 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
    + [Modelos do Media Workspace](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + Recursos adicionais {#additional-resources}
-   + [Atualizações de documentação](additional-resources/doc-updates.md)
+   + [Recursos](additional-resources/doc-updates.md)
