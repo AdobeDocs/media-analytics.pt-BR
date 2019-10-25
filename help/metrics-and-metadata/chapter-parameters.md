@@ -3,7 +3,7 @@ seo-title: Parâmetros de capítulo
 title: Parâmetros de capítulo
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -35,7 +35,7 @@ Descrição dos dados da tabela:
 >Não altere os nomes de classificação de nenhuma variável listada abaixo descrita em Relatório/Variável reservada como "classificação".\
 >As classificações de mídia são definidas quando um conjunto de relatórios é ativado para rastreamento de mídia. Periodicamente, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reativar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são ativadas verificando os nomes das variáveis. Se algum deles estiver faltando, a Adobe adicionará os que estiverem faltando novamente.
 
-## Metadados de capítulo {#section_534D3A6BFEB24D1884F80AD6A50BF13C}
+## Metadados de capítulo {#chapter-metadata}
 
 ### Nome do capítulo
 
@@ -47,19 +47,19 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **Chave da API:**<br/>media.chapter.index </li> <li> ****<br/> Obrigatório: SDK: Não; API: Sim. </li> <li> **Tipo:**<br/>number </li> <li> ****<br/> Enviado com: Fechamento do capítulo </li> <li> **Versão mín. do SDK:** 1.3 </li> <li> ****<br/> Valor da amostra: 2 </li><li> **Descrição:**<br/>A posição (índice, número inteiro) do capítulo dentro do conteúdo.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>position) </li> <li> ****<br/> Pulsação: (l:stream:chapter_pos) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Chapter Position </li> <li> ****<br/> Dados de contexto: (a.media.chapter.<br/>position) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter.<br/>position) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **Chave da API:**<br/>media.chapter.index </li> <li> ****<br/> Obrigatório: SDK: Não; API:Sim. </li> <li> **Tipo:**<br/>number </li> <li> ****<br/> Enviado com: Fechamento do capítulo </li> <li> **Versão mín. do SDK:** 1.3 </li> <li> ****<br/> Valor da amostra: 2 </li><li> **Descrição:**<br/>A posição (índice, número inteiro) do capítulo dentro do conteúdo.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>position) </li> <li> ****<br/> Pulsação: (l:stream:chapter_pos) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Chapter Position </li> <li> ****<br/> Dados de contexto: (a.media.chapter.<br/>position) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter.<br/>position) </li> </ul> |
 
 ### Deslocamento do capítulo
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **Chave da API:**<br/>media.chapter.offset </li> <li> ****<br/> Obrigatório: SDK: Não; API: Sim. </li> <li> **Tipo:**<br/>number </li> <li> ****<br/> Enviado com: Fechamento do capítulo </li> <li> **Versão mín. do SDK:** 1.3 </li> <li> ****<br/> Valor da amostra: 58 </li><li> **Descrição:**<br/>O deslocamento do capítulo dentro do conteúdo (em segundos) desde o início.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>offset) </li> <li> ****<br/> Pulsação: (l:stream:chapter_offset) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Chapter Offset </li> <li> ****<br/> Dados de contexto: (a.media.chapter.<br/>offset) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter.<br/>offset) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **Chave da API:**<br/>media.chapter.offset </li> <li> ****<br/> Obrigatório: SDK: Não; API:Sim. </li> <li> **Tipo:**<br/>number </li> <li> ****<br/> Enviado com: Fechamento do capítulo </li> <li> **Versão mín. do SDK:** 1.3 </li> <li> ****<br/> Valor da amostra: 58 </li><li> **Descrição:**<br/>O deslocamento do capítulo dentro do conteúdo (em segundos) desde o início.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>offset) </li> <li> ****<br/> Pulsação: (l:stream:chapter_offset) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Chapter Offset </li> <li> ****<br/> Dados de contexto: (a.media.chapter.<br/>offset) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter.<br/>offset) </li> </ul> |
 
 ### Extensão do capítulo
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/> </li> <li> **Chave da API:**<br/>media.chapter.length </li> <li> ****<br/> Obrigatório: SDK: Não; API: Sim. </li> <li> **Tipo:**<br/>number </li> <li> ****<br/> Enviado com: Fechamento do capítulo </li> <li> **Versão mín. do SDK:** 1.3 </li> <li> ****<br/> Valor da amostra: 486 </li><li> **Descrição:**<br/>A duração do capítulo, em segundos.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>length) </li> <li> ****<br/> Pulsação: (l:stream:chapter_length) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Chapter Length </li> <li> ****<br/> Dados de contexto: (a.media.chapter.<br/>length) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter.<br/>length) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/> </li> <li> **Chave da API:**<br/>media.chapter.length </li> <li> ****<br/> Obrigatório: SDK: Não; API:Sim. </li> <li> **Tipo:**<br/>number </li> <li> ****<br/> Enviado com: Fechamento do capítulo </li> <li> **Versão mín. do SDK:** 1.3 </li> <li> ****<br/> Valor da amostra: 486 </li><li> **Descrição:**<br/>A duração do capítulo, em segundos.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>length) </li> <li> ****<br/> Pulsação: (l:stream:chapter_length) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>Classification </li> <li> **Nome do relatório:**<br/>Chapter Length </li> <li> ****<br/> Dados de contexto: (a.media.chapter.<br/>length) </li> <li> **Feed de dados:**<br/>N/A </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter.<br/>length) </li> </ul> |
 
 ### Capítulo
 
@@ -67,7 +67,7 @@ Descrição dos dados da tabela:
 | --- | --- | --- |
 | <ul> <li> **Chave de SDK:**<br/>Automatically set </li> <li> **Chave da API:**<br/>N/A </li> <li> **Obrigatório:**<br/>No </li> <li> **Tipo:**<br/>sequência de caracteres </li> <li> ****<br/> Enviado com: Fechamento do capítulo </li> <li> **Versão mín. do SDK:** 1.3 </li> <li> **Valor da amostra:**<br/> </li><li> **Descrição:**<br/>a ID gerada automaticamente do capítulo.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>name) </li> <li> ****<br/> Pulsação: (s:stream:chapter_id) </li> </ul> | <ul> <li> **Disponível:**<br/>Yes </li> <li> **Variável reservada:**<br/>eVar </li> <li> **Expiração:**<br/>On HIT </li> <li> **Nome do relatório:**<br/>Chapter </li> <li> ****<br/> Dados de contexto: (a.media.chapter.<br/>name) </li> <li> **Feed de dados:**<br/>videochapter </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter.<br/>name) </li> </ul> |
 
-## Métricas de capítulo {#section_1C47D6FB1DF343C39CE7A8F724406F33}
+## Métricas de capítulo {#chapter-Metrics}
 
 ### Início do capítulo
 
