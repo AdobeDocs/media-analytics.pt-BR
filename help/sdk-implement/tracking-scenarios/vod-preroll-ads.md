@@ -5,7 +5,7 @@ description: Nesse cenário, um anúncio antes da exibição foi inserido antes 
 seo-description: Nesse cenário no Adobe Media Analytics, os anúncios precedentes foram inseridos antes do conteúdo principal.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ Nesse cenário, um anúncio antes da exibição foi inserido antes do conteúdo 
 | O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é idêntica ao cenário Reprodução [VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
 | A sessão foi encerrada | `trackSessionEnd` |  | `SessionEnd` |
 
-## Parâmetros {#section_33CDFB6CB230437480B67A3D149EC44E}
+## Parâmetros {#parameters}
 
 When ad playback begins, a `Heartbeat Ad Start` call is sent. Se o início do anúncio não coincidir com a marcação de 10 segundos, a chamada `Heartbeat Ad Start` é atrasada em alguns segundos e é direcionada para o próximo intervalo de 10 segundos. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
 
@@ -68,7 +68,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## Exemplo de código para ad break antes da exibição {#section_nwf_xy3_x2b}
+## Exemplo de código para ad break antes da exibição {#sample-code-for-a-pre-roll-ad-break}
 
 Neste cenário, o VOD consiste em um anúncio antes da exibição, um segundo anúncio antes da exibição e, em seguida, o conteúdo é reproduzido.
 
@@ -378,7 +378,7 @@ Neste cenário, o VOD consiste em um anúncio antes da exibição, um segundo an
    .......
    ```
 
-## Exemplo de código para vários ad breaks {#section_ojy_zy3_x2b}
+## Exemplo de código para vários ad breaks {#sample-code-for-multiple-ad-breaks}
 
 Neste cenário, o conteúdo de VOD é reproduzido com um anúncio precedente, o conteúdo, um anúncio intermediário, o conteúdo e um anúncio posterior.
 
