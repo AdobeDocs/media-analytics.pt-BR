@@ -3,7 +3,7 @@ seo-title: Configurar JavaScript
 title: Configurar JavaScript
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -12,8 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Pré-requisitos
 
-* **Obtain valid configuration parameters
-These parameters can be obtained from an Adobe representative after you set up your analytics account.**
+* **Obter parâmetros** de configuração válidosEsses parâmetros podem ser obtidos de um representante da Adobe após a configuração da conta do Analytics.
 * **Implementação`AppMeasurement`para JavaScript no aplicativo** de mídia Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [Implementação do Analytics usando JavaScript.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
 
 * **Forneça os seguintes recursos no reprodutor de mídia:**
@@ -21,7 +20,7 @@ These parameters can be obtained from an Adobe representative after you set up y
    * *Uma API para assinar os eventos do reprodutor* - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
    * *Uma API que fornece informações sobre o reprodutor* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
-1. Adicione a biblioteca [baixada](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) ao projeto. Para conveniência, crie referências locais para as classes.
+1. Adicione a biblioteca [baixada](/help/sdk-implement/download-sdks.md#download-2x-sdks) ao projeto. Para conveniência, crie referências locais para as classes.
 
    1. Expanda o `MediaSDK-js-v2.*.zip` arquivo que você baixou.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
