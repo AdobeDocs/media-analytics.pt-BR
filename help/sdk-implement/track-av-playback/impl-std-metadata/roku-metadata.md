@@ -3,7 +3,7 @@ seo-title: Chaves de metadados do Roku
 title: Chaves de metadados do Roku
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Os metadados padrão de vídeo, áudio e anúncio podem ser definidos em objetos de mídia e informações de anúncio, respectivamente. Usando as chaves de constantes para metadados de vídeo/anúncio, defina o dicionário que contém os metadados padrão em um objeto de informação antes de chamar as APIs de rastreamento. Consulte as tabelas abaixo para obter a lista completa de constantes de metadados padrão, seguida de exemplos.
 
-## Constantes de metadados de vídeo {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## Constantes de metadados de vídeo {#video-metadata-constants}
 
 | Nome dos metadados | Chave de dados de contexto | Nome da constante |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ Os metadados padrão de vídeo, áudio e anúncio podem ser definidos em objetos
 | Estação | `a.media.station` | `MEDIA_AudioMetadataKeySTATION` |
 | Editor | `a.media.publisher` | `MEDIA_AudioMetadataKeyPUBLISHER` |
 
-## Constantes de metadados de anúncio {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## Constantes de metadados de anúncio {#ad-metadata-constants}
 
 | Nome dos metadados | Chave de dados de contexto | Nome da constante |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ Os metadados padrão de vídeo, áudio e anúncio podem ser definidos em objetos
 | ID do site | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
 | URL da arte | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` |
 
-## Constantes {#section_F55145DBE77F45B988849C42C044C7DA}
+## Constantes {#constants}
 
 Você pode usar as seguintes constantes para rastrear eventos de mídia:
 
