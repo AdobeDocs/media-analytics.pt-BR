@@ -3,7 +3,7 @@ seo-title: Configurar Android
 title: Configurar Android
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -12,17 +12,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Pré-requisitos
 
-* **Obtain valid configuration parameters for the Media SDK
-These parameters can be obtained from an Adobe representative after you set up your analytics account.**
-* **Implement ADBMobile for Android in your application
-For more information about the Adobe Mobile SDK documentation, see Android SDK 4.x for Experience Cloud Solutions.**[](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **Obter parâmetros de configuração válidos para o SDK** de mídiaEsses parâmetros podem ser obtidos de um representante da Adobe após a configuração da conta do Analytics.
+* **Implementação do ADBMobile para Android em seu aplicativo** Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [Android SDK 4.x para Soluções da Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
 * **Forneça os seguintes recursos no reprodutor de mídia:**
    * *Uma API para assinar os eventos do reprodutor* - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
    * *Uma API que fornece informações sobre o reprodutor* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
 ## Implementação do SDK
 
-1. Adicione a biblioteca [baixada](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) do SDK do Media ao projeto.
+1. Adicione a biblioteca [baixada](/help/sdk-implement/download-sdks.md#download-2x-sdks) do SDK do Media ao projeto.
 
    1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
    1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
@@ -43,7 +41,7 @@ For more information about the Adobe Mobile SDK documentation, see Android SDK 4
       **Eclipse:**
 
       1. No Eclipse IDE, clique com o botão direito do mouse no nome do projeto.
-      1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]** .
+      1. Clique em **[!UICONTROL Caminho de criação]** &gt; **[!UICONTROL Adicionar arquivos externos]** .
       1. Selecionar `MediaSDK.jar`.
       1. Clique em **[!UICONTROL Abrir]**.
       1. Right-click the project again, and click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]** .
