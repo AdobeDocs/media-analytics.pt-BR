@@ -3,20 +3,20 @@ seo-title: Migração do Marco para o Media Analytics
 title: Migração do Marco para o Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Migração do Marco para o Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## Visão geral {#section_ihl_nbz_cfb}
+## Visão geral {#overview}
 
 Os principais conceitos de medição de vídeo são os mesmos para Marco e Media Analytics, que estão realizando eventos do reprodutor de vídeo e mapeando-os para os métodos de análise, além de capturar metadados e valores do reprodutor e mapeá-los para variáveis&#x200B;de análise. A solução do Media Analytics surgiu no Marco, portanto, muitos dos métodos e métricas são os mesmos. No entanto, a abordagem e o código de configuração mudaram significativamente. Deve ser possível atualizar o código de evento do reprodutor para apontar para os novos métodos do Media Analytics. Consulte Visão geral [do](/help/sdk-implement/setup/setup-overview.md) SDK e Visão geral [do](/help/sdk-implement/track-av-playback/track-core-overview.md) rastreamento para obter mais detalhes sobre a implementação do Media Analytics.
 
 As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Media Analytics.
 
-## Guia de migração {#section_iyb_pbz_cfb}
+## Guia de migração {#migration-guide}
 
 ### Referência da variável
 
@@ -188,8 +188,7 @@ s.Media.playerName = "Custom Player Name"
 </pre>
 </td>
 <td>
-Chave do SDK: playerName; 
-Chave da API: media.playerName
+Chave do SDK: playerName;Chave da API: media.playerName
 </td>
 <td>
 <pre>
@@ -485,8 +484,7 @@ trackEvent
 <pre>
 mediaHeartbeat.trackEvent( MediaHeartbeat.
     Evento.
-    AdBreakStart, adBreakObject);...
-trackEvent( MediaHeartbeat.
+    AdBreakStart, adBreakObject);...trackEvent( MediaHeartbeat.
     Evento.
     AdStart, adObject, adCustomMetadata);
 </pre>
