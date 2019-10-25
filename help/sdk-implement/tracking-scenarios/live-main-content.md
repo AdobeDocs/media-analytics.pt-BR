@@ -3,14 +3,14 @@ seo-title: Conteúdo principal disponível
 title: Conteúdo principal disponível
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Conteúdo principal ao vivo{#live-main-content}
 
-## Cenário {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## Cenário {#scenario}
 
 Neste cenário, há um ativo disponível sem anúncios reproduzido por 40 segundos após a entrada na transmissão ao vivo.
 
@@ -21,7 +21,7 @@ Neste cenário, há um ativo disponível sem anúncios reproduzido por 40 segund
 | O conteúdo é reproduzido. |  | Content Heartbeats |  |
 | A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa o fim de uma sessão de exibição. Essa API deve ser chamada mesmo se o usuário não consumir a mídia até a conclusão. |
 
-## Parâmetros {#section_D52B325B99DA42108EF560873907E02C}
+## Parâmetros {#parameters}
 
 Diversos valores observados nas Chamadas do Adobe Analytics Content Start estarão presentes nas Chamadas do Heartbeat Content Start. Você também verá muitos outros parâmetros que a Adobe usa para preencher os vários relatórios de mídia no Adobe Analytics. Não falaremos de todos aqui; apenas os mais importantes.
 
@@ -38,7 +38,7 @@ Diversos valores observados nas Chamadas do Adobe Analytics Content Start estar�
 | `s:stream:type` | live |  |
 | `s:meta:*` | opcional | Metadados personalizados definidos na mídia |
 
-## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
+## Content Heartbeats {#content-heartbeats}
 
 Durante a reprodução da mídia, há um temporizador que enviará uma ou mais pulsações (ou ping) a cada 10 segundos para o conteúdo principal e a cada segundo para os anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffers e outros itens. O conteúdo exato de cada heartbeat está além do escopo deste documento. É importante validar o acionamento das pulsações de modo consistente durante a reprodução.
 
@@ -49,7 +49,7 @@ Em heartbeats de conteúdo, procure por itens específicos:
 | `s:event:type` | "play" |  |
 | `l:event:playhead` | &lt;posição do indicador de reprodução&gt;, por exemplo, 50, 60, 70 | Isso deve refletir a posição atual do indicador de reprodução. |
 
-## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 Não haverá uma chamada completa neste cenário, pois o fluxo ao vivo nunca foi concluído.
 
@@ -67,7 +67,7 @@ Por exemplo, digamos que um evento de transmissão ao vivo comece à meia-noite 
 
 A mesma lógica de "indicador de reprodução em tempo real" aplicada no início da reprodução deve ser aplicada quando o usuário pausa a reprodução. Quando o usuário retorna para reproduzir o fluxo ao vivo, é necessário definir o `l:event:playhead` valor para a nova posição do indicador de reprodução de deslocamento, _não_ para o ponto em que o usuário pausou o fluxo ao vivo.
 
-## Código de exemplo {#section_vct_j2j_x2b}
+## Código de exemplo {#sample-code}
 
 ![](assets/live-content-playback.png)
 
