@@ -3,7 +3,7 @@ seo-title: Ativação do Audience Manager
 title: Ativação do Audience Manager
 uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
 translation-type: tm+mt
-source-git-commit: 8ae15f1e14731a97d212ab66816a777b4dcc897e
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 8ae15f1e14731a97d212ab66816a777b4dcc897e
 
 O Adobe Audience Manager (AAM), uma plataforma de gerenciamento de dados (DMP), ajuda você a unir seus ativos de dados de público, facilitando a coleta de informações comercialmente relevantes sobre os visitantes, a criação de segmentos comercializáveis e o fornecimento de publicidade e conteúdo direcionados ao público certo.
 
-Com o AAM, você não fica vinculado a uma plataforma de venda, troca ou demanda de dados. Além disso, o AAM é completamente independente quando se trata dos ativos de dados dos seus parceiros. Com acesso a várias fontes de dados, o AAM oferece aos publicadores digitais a capacidade de usar uma grande variedade de dados de terceiros e nosso Data Co-op privado. To learn more about AAM, see the AAM documentation [Audience Manager Product Documentation.](https://docs-author.corp.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html)
+Com o AAM, você não fica vinculado a uma plataforma de venda, troca ou demanda de dados. Além disso, o AAM é completamente independente quando se trata dos ativos de dados dos seus parceiros. Com acesso a várias fontes de dados, o AAM oferece aos publicadores digitais a capacidade de usar uma grande variedade de dados de terceiros e nosso Data Co-op privado. Para saber mais sobre o AAM, consulte a documentação do AAM Documentação do produto [Audience Manager.](https://docs-author.corp.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html)
 
 **Transferência de dados do VA para o AAM -** Tanto para o conteúdo de vídeo quanto para os anúncios de vídeo, as métricas e os metadados coletados usando variáveis de solução (reservadas) podem ser enviados automaticamente para o AAM. A transferência de dados está disponível em todas as plataformas, incluindo desktops, celulares e OTTs. Para habilitar essa transferência de dados no lado do servidor, você precisa entrar em contato com o Atendimento ao cliente da Adobe e solicitar a ativação desse feed.
 
@@ -22,7 +22,7 @@ Com o AAM, você não fica vinculado a uma plataforma de venda, troca ou demanda
 
 Os dados federados são completamente compatíveis com o compartilhamento de dados com o AAM. Trabalhe com a sua equipe da Adobe para confirmar as configurações dos dados federados.
 
-## Métodos OTT/AAM {#section_yqq_5br_v2b}
+## Métodos OTT/AAM {#ott-aam-methods}
 
 Você pode usar esses métodos para enviar sinais e recuperar segmentos de visitantes do Audience Manager:
 
