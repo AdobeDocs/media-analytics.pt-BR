@@ -3,7 +3,7 @@ seo-title: Visão geral da mídia
 title: Visão geral da mídia
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,13 +14,13 @@ O painel Visão geral da mídia foi projetado para permitir que você monitore a
 
 ![](assets/media_overview.png){width="672px"}
 
-## Filtros rápidos {#section_8DF3E4A6734145B082657C6BECFA0BBE}
+## Filtros rápidos {#quick-filters}
 
 Exibe rapidamente as métricas de mídia por dispositivo ou país:
 
 ![](assets/video-overview-report-filters.png){width="400px"}
 
-## Desempenho da mídia {#section_288FB476EDA44761BB8A86551F0A110C}
+## Desempenho da mídia {#media-performance}
 
 Clique e arraste para ampliar, e depois passe o mouse para ver as métricas granulares da mídia específica. Clique em  ![](assets/video-overview-report-revert.png)
 
