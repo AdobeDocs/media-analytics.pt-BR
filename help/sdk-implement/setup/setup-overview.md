@@ -3,7 +3,7 @@ seo-title: Visão geral da configuração
 title: Visão geral da configuração
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ A tabela a seguir descreve as versões mínimas da plataforma compatíveis com c
 | Safari | v7+ |
 | IE | v11+ |
 
-## Diretrizes de implementação gerais {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
+## Diretrizes de implementação gerais {#general-implementation-guidelines}
 
 Existem três componentes principais do SDK envolvidos no rastreamento de mídia:
 * Configuração do Heartbeat de mídia - contém as configurações básicas para a geração de relatórios.
@@ -49,7 +49,7 @@ Complete as seguintes etapas de implementação:
    | `ssl` | Indica se as chamadas devem ser efetuadas por HTTPS | Não | false |
    | `debugLogging` | Indica se o log de depuração está ativado | Não | false |
 
-1. Implemente o `MediaHeartbeatDelegate`.
+1. Implementar o `MediaHeartbeatDelegate`.
 
    |  Nome do método  |  Descrição  | Obrigatório |
    | --- | --- | :---: |
@@ -119,7 +119,7 @@ Complete as seguintes etapas de implementação:
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Validar {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
+## Validar {#validate}
 
 As implementações de rastreamento do Media Analytics geram dois tipos de chamadas de rastreamento:
 
@@ -138,7 +138,7 @@ As implementações de rastreamento do Media Analytics geram dois tipos de chama
 
 O rastreamento de mídia funciona da mesma forma em todas as plataformas, desktops e dispositivos móveis. O rastreamento de áudio funciona atualmente em plataformas móveis. Para todas as chamadas de rastreamento, há algumas variáveis universais principais que precisam ser validadas:
 
-## Documentação do SDK 1.x {#section_acj_tkk_t2b}
+## Documentação do SDK 1.x {#sdk-1x-documentation}
 
 | SDKs 1.x do Video Analytics |  Guias do desenvolvedor (somente PDFs) |
 | --- | --- |
