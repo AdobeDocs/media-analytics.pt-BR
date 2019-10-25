@@ -3,7 +3,7 @@ seo-title: Parâmetros de qualidade
 title: Parâmetros de qualidade
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -30,7 +30,7 @@ Descrição dos dados da tabela:
    * *Feed de dados* - Nome da coluna para variáveis encontradas em feeds de dados de Sequência de cliques ou em tempo real
    * *Audience Manager* - Nome do recurso encontrado no Adobe Audience Manager
 
-## Metadados de qualidade {#section_8467F9729DA04A888A2657712234D7C7}
+## Metadados de qualidade {#quality-metadata}
 
 ### Taxa média de bits
 
@@ -129,7 +129,7 @@ Descrição dos dados da tabela:
 
 
 
-## Métricas de qualidade {#section_8EB0C9CBC09340C8915E1D2707D0A9EE}
+## Métricas de qualidade {#quality-metrics}
 
 ### Hora de início
 
