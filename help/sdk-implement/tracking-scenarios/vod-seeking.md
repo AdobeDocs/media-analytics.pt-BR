@@ -3,14 +3,14 @@ seo-title: Reprodução VOD com busca no conteúdo principal
 title: Reprodução VOD com busca no conteúdo principal
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Reprodução VOD com busca no conteúdo principal{#vod-playback-with-seeking-in-the-main-content}
 
-## Cenário {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Cenário {#scenario}
 
 Esse cenário inclui a busca no conteúdo principal durante a reprodução.
 
@@ -26,7 +26,7 @@ Este cenário é igual ao cenário [Reprodução VOD sem anúncios](/help/sdk-im
 | O conteúdo é concluído | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Sessão finalizada | `trackSessionEnd` |  | `SessionEnd` |
 
-## Código de exemplo {#section_q2d_wcj_x2b}
+## Código de exemplo {#sample-code}
 
 Nesse cenário, o usuário busca o local no qual o conteúdo principal está sendo reproduzido.
 
