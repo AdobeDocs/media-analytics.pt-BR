@@ -3,7 +3,7 @@ seo-title: Lado do cliente
 title: Lado do cliente
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -22,5 +22,4 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!NOTE]
 >
->Os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova Ordem de venda, pois o Media Analytics tem um SKU exclusivo e seus preços variam de acordo com o modelo baseado em chamadas de servidor e baseado em fluxos de mídia.
-
+>Os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar um novo pedido de vendas, pois o Media Analytics tem um SKU exclusivo, e mudar de um modelo de preços com base em chamadas de servidor para um modelo com base em fluxos de mídia.
