@@ -3,7 +3,7 @@ seo-title: Rastreamento no SceneGraph (Roku)
 title: Rastreamento no SceneGraph (Roku)
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 3e115cbbae77413743764ed0757af9ac99965d6e
 
 ---
 
@@ -175,7 +175,7 @@ Tipo de retorno: `SceneGraphConstants`
 
 ### Constantes do ADBMobile
 
-|  Recurso  | Nome da constante | Descrição  |
+|  Recurso  | Nome da constante | Descrição   |
 |---|---|---|
 | Controle de versão | `version` | Constante para recuperar as informações de versão da AdobeMobileLibrary |
 | Privacidade/rejeição | `PRIVACY_STATUS_OPT_IN` | Constante para o status de privacidade aceito |
@@ -197,7 +197,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ## Implementação {#implementation}
 
-1. **Baixe a biblioteca Roku -** Baixe a biblioteca Roku [mais recente.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
+1. **Baixe a biblioteca Roku -** Baixe a biblioteca Roku [mais recente.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
 
 1. **Configurar o ambiente de desenvolvimento**
 
