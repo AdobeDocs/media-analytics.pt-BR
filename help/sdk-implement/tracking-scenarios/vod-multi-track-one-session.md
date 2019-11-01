@@ -1,9 +1,9 @@
 ---
-seo-title: Um rastreador VOD para várias sessões
 title: Um rastreador VOD para várias sessões
+description: Um exemplo de como usar um rastreador para rastrear várias sessões usando o SDK de mídia.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
-source-git-commit: e24dbf0ab08b9e148f887ef19903ad2d157822ad
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -20,7 +20,7 @@ Esse cenário é igual ao cenário [Reprodução VOD sem anúncios](/help/sdk-im
 
 ### Sessão do Heartbeat
 
-| Parâmetro | Valor | Notas  |
+| Parâmetro | Valor | Notas   |
 | --- | --- | --- |
 | `s:event:sid` | ID exclusiva da sessão | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
 
