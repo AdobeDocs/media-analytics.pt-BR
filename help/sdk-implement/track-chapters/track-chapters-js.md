@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear capítulos e segmentos no JavaScript
 title: Rastrear capítulos e segmentos no JavaScript
+description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK de mídia em aplicativos de navegador (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using 2.x SDKs. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
