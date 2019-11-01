@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear buffering no JavaScript
 title: Rastrear buffering no JavaScript
+description: Descreve o rastreamento de eventos de buffering em aplicativos de navegador (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `BufferStart` | Constante para rastrear o evento Buffer Start |
 | `BufferComplete` | Constante para rastrear o evento Buffer Complete |
 
-## Implement buffering
+## Implementar buffering
 
 1. Analise os eventos de buffering de reprodução no reprodutor de mídia e, na notificação do evento de início de buffering, rastreie o buffering usando o evento `BufferStart`.
 
