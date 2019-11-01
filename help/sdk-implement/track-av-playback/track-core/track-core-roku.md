@@ -1,9 +1,9 @@
 ---
-seo-title: Rastreamento da reprodução principal no Roku
 title: Rastreamento da reprodução principal no Roku
+description: Este tópico descreve como implementar o rastreamento principal usando o SDK de mídia no Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -24,12 +24,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | Nome do vídeo | Sim |
    | `mediaid` | Identificador exclusivo do vídeo | Sim |
    | `length` | Duração do vídeo | Sim |
-   | `streamType` | Stream type (see StreamType constants below)__ | Sim |
+   | `streamType` | Tipo de fluxo (consulte Constantes _de_ StreamType abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte as constantes __ MediaType abaixo) | Sim |
 
    **`StreamType`constantes:**
 
-   | Nome da constante | Descrição  |
+   | Nome da constante | Descrição   |
    |---|---|
    | `MEDIA_STREAM_TYPE_VOD` | Tipo de fluxo para vídeo sob demanda. |
    | `MEDIA_STREAM_TYPE_LIVE` | Tipo de fluxo para conteúdo LIVE. |
@@ -38,14 +38,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | Tipo de fluxo para audiobook |
    | `MEDIA_STREAM_TYPE_PODCAST` | Tipo de fluxo para podcast |
 
-   **`MediaType`constants:**
+   **`MediaType`constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
    | `MEDIA_STREAM_TYPE_AUDIO` | Tipo de mídia para fluxos de áudio. |
    | `MEDIA_STREAM_TYPE_VIDEO` | Tipo de mídia para fluxos de vídeo. |
 
-   **Create a media info object for video with VOD content:**
+   **Crie um objeto de informações de mídia para vídeo com conteúdo VOD:**
 
    ```
     mediaInfo = adb_media_init_mediainfo(
@@ -57,7 +57,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    )
    ```
 
-   ou
+   or
 
    ```
    mediaInfo = adb_media_init_mediainfo()
@@ -80,7 +80,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    )
    ```
 
-   ou
+   or
 
    ```
    mediaInfo = adb_media_init_mediainfo()
@@ -185,7 +185,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       [Implementar metadados padrão no Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
-      >Attaching the standard video metadata object to the media object is optional.
+      >Anexar o objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
 
    * **Metadados personalizados**
 
@@ -206,7 +206,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ```
 
    >[!TIP]
-   >The second value is the custom video metadata object name that you created in step 2.
+   >O segundo valor é o nome do objeto de metadados de vídeo personalizado que você criou na etapa 2.
 
    >[!IMPORTANT]
    >`trackSessionStart` rastreia a intenção de reproduzir do usuário e não o início da reprodução. Essa API é utilizada para carregar os dados/metadados de vídeo e estimar a métrica de tempo do início de QoS (duração entre `trackSessionStart` e `trackPlay`).
