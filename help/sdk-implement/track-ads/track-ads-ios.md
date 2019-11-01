@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear anúncios no iOS
 title: Rastrear anúncios no iOS
+description: Implemente o rastreamento de anúncios em aplicativos iOS usando o SDK de mídia.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Constantes de rastreamento do anúncio
 
-| Nome da constante | Descrição  |
+| Nome da constante | Descrição   |
 |---|---|
 | `ADBMediaHeartbeatEventAdBreakStart` | Constante para rastrear o evento AdBreak Start |
 | `ADBMediaHeartbeatEventAdBreakComplete` | Constante para rastrear o evento AdBreak Complete |
