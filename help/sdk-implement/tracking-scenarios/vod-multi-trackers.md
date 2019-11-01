@@ -1,9 +1,9 @@
 ---
-seo-title: Vários rastreadores VOD ao mesmo tempo
 title: Vários rastreadores VOD ao mesmo tempo
+description: Um exemplo de como rastrear VOD usando vários rastreadores em paralelo.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -22,7 +22,7 @@ A menos que seja especificado, as chamadas de rede são iguais ao cenário [repr
 
 ### Sessão do Heartbeat
 
-| Parâmetro | Valor | Notas  |
+| Parâmetro | Valor | Notas   |
 |---|---|---|
 | `s:event:sid` | ID exclusiva da sessão | Uma ID exclusiva da sessão que existe em todas as chamadas de rede de heartbeat até que o método `trackSessionEnd` seja chamado. |
 
