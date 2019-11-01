@@ -1,9 +1,9 @@
 ---
-seo-title: Depuração do SDK
 title: Depuração do SDK
+description: Este tópico descreve o rastreamento/registro disponível no SDK de mídia.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -71,7 +71,7 @@ Durante o desenvolvimento do aplicativo, o Bloodhound permite exibir localmente 
 
 >[!IMPORTANT]
 >
->A partir de 30 de abril de 2017, o Adobe Bloodhound foi lançado. A partir de 1º de maio de 2017, não serão fornecidos aprimoramentos e suporte adicionais pela engenharia ou pelo Adobe Expert Care.
+>Em 30 de abril de 2017, o Adobe Bloodhound foi interrompido. A partir de 1º de maio de 2017, não serão fornecidos aprimoramentos e suporte adicionais pela engenharia ou pelo Adobe Expert Care.
 
 ## Mensagens de registro
 
