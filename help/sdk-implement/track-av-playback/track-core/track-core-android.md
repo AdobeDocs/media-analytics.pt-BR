@@ -1,9 +1,9 @@
 ---
-seo-title: Rastreamento da reprodução principal no Android
 title: Rastreamento da reprodução principal no Android
+description: Este tópico descreve como implementar o rastreamento principal usando o SDK de mídia no Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -89,7 +89,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >The second value is the custom media metadata object name that you created in step 2.
+   >O segundo valor é o nome do objeto de metadados de mídia personalizado que você criou na etapa 2.
 
    >[!IMPORTANT]
    >
