@@ -1,9 +1,9 @@
 ---
-seo-title: Visão geral
 title: Visão geral
+description: Visão geral da implementação do rastreamento de anúncios com o SDK de mídia.
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -50,7 +50,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 ### Constantes de rastreamento do anúncio
 
-| Nome da constante | Descrição  |
+| Nome da constante | Descrição   |
 |---|---|
 | `AdBreakStart` | Constante para rastrear o evento AdBreak Start |
 | `AdBreakComplete` | Constante para rastrear o evento AdBreak Complete |
