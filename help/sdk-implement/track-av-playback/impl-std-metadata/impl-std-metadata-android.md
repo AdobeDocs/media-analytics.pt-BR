@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Implementar metadados padrão no Android
 title: Implementar metadados padrão no Android
+description: Descreve a configuração de metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento no Android.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
-source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +12,7 @@ source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
 ## Constantes de metadados padrão
 
-| Nome da constante | Descrição  |
+| Nome da constante | Descrição   |
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | Constante para anexar os metadados padrão no `MediaObject`. |
 
