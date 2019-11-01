@@ -2,7 +2,7 @@
 title: Visão geral do livro de receitas do SDK
 description: 'Tópicos de livro de cookies específicos do SDK '
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: b807835875594a2acfc79ec9cbffce4aadbaac84
 
 ---
 
@@ -17,4 +17,3 @@ Os tópicos do livro de cookies listados abaixo são específicos da versão do 
 * [Resolver a ocorrência de main:play entre anúncios](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [Retomando Sessões Inativas](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [Rastreamento no SceneGraph (Roku)](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
-* [Diferenças de SDK e inicialização](/help/sdk-implement/cookbook/sdk-vs-launch-qoe.md)
