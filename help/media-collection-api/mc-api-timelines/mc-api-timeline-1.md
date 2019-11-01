@@ -1,9 +1,9 @@
 ---
-seo-title: Linha do tempo 1 - Visualização do conteúdo até o fim
 title: Linha do tempo 1 - Visualização do conteúdo até o fim
+description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -193,7 +193,7 @@ Faça o ping do backend a cada 1 segundo enquanto estiver dentro de um anúncio.
 >[!NOTE]
 >
 >Anúncios subsequentes na linha do tempo ignorarão a exibição da série de pings de um segundo
->in the interest of brevity...
+>por razões de brevidade...
 
 **Exemplo de corpo da solicitação**
 
@@ -286,7 +286,7 @@ Faça o ping do backend a cada 1 segundo.
 }
 ```
 
-### Action 9 - Ad complete {#Action-9}
+### Ação 9 - Anúncio concluído {#Action-9}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -308,13 +308,13 @@ Rastreie o final do segundo anúncio precedente.
 }
 ```
 
-### Action 10 - Ad break complete {#Action-10}
+### Ação 10 - Conclusão do intervalo de anúncios {#Action-10}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
 | Rastrear o ad break precedente concluído | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**Detalhes da implementação**
 
 O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado "reproduzindo".
 
@@ -330,13 +330,13 @@ O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado "repr
 }
 ```
 
-### Action 11 - Play content {#Action-11}
+### Ação 11 - Reproduzir conteúdo {#Action-11}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
 | Rastrear evento de reprodução | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**Detalhes da implementação**
 
 Depois do evento `adBreakComplete`, coloque o reprodutor no estado "reproduzindo" usando o evento `play`.
 
@@ -352,13 +352,13 @@ Depois do evento `adBreakComplete`, coloque o reprodutor no estado "reproduzindo
 }
 ```
 
-### Action 12 - Ping {#Action-12}
+### Ação 12 - Ping {#Action-12}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
 | O aplicativo envia o evento de ping | 30 | 8 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**Detalhes da implementação**
 
 Envie um ping ao back-end a cada 10 segundos.
 
@@ -374,13 +374,13 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Action 13 - Buffer start {#Action-13}
+### Ação 13 - Início do buffer {#Action-13}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
 | Evento de início de buffer ocorrido | 33 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**Detalhes da implementação**
 
 Rastreie o movimento do reprodutor para o estado de "buffering".
 
@@ -395,13 +395,13 @@ Rastreie o movimento do reprodutor para o estado de "buffering".
 }
 ```
 
-### Action 14 - Buffer end {#Action-14}
+### Ação 14 - Fim do buffer {#Action-14}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
 | O buffering terminou, o aplicativo rastreia a retomada do conteúdo | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**Detalhes da implementação**
 
 O buffering termina após 3 segundos; coloque o reprodutor no estado "reproduzindo". Você deve enviar outro evento de rastreamento de reprodução a partir do buffering.  **A`play`chamada após uma`bufferStart`infere uma chamada "bufferEnd" para o back-end,** portanto não há necessidade de um `bufferEnd` evento.
 
@@ -417,13 +417,13 @@ O buffering termina após 3 segundos; coloque o reprodutor no estado "reproduzin
 }
 ```
 
-### Action 15 - Ping {#Action-15}
+### Ação 15 - Ping {#Action-15}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
 | O aplicativo envia o evento de ping | 40 | 15 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**Detalhes da implementação**
 
 Envie um ping ao back-end a cada 10 segundos.
 
@@ -438,7 +438,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Action 16 - Ad break start {#Action-16}
+### Ação 16 - Início do intervalo de anúncios {#Action-16}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -638,7 +638,7 @@ Envie um ping ao back-end a cada 10 segundos. O reprodutor ainda está no estado
 
 **Detalhes da implementação**
 
-Mova o estado de reprodução para "reproduzindo".  **The`play`call after a`pauseStart`infers a "resume" call to the back end,** so there is no need for a `resume` event.
+Mova o estado de reprodução para "reproduzindo".  **A`play`chamada após uma`pauseStart`infere uma chamada de "retomada" para o back-end,** portanto não há necessidade de um `resume` evento.
 
 **Exemplo de corpo da solicitação**
 
