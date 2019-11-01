@@ -1,9 +1,9 @@
 ---
-seo-title: Painéis e relatórios de depuração
 title: Painéis e relatórios de depuração
+description: Este tópico descreve os painéis de depuração da Adobe.
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -16,7 +16,7 @@ Para a certificação, esses relatórios podem ser compartilhados; basta copiar 
 
 >[!NOTE]
 >
->Only one session can be active at a time. A sessão ativa pode ser aberta do Painel.
+>Somente uma sessão pode estar ativa por vez. A sessão ativa pode ser aberta do Painel.
 
 ![](assets/debug-dashboard.png)
 
