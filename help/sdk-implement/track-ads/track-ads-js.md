@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear anúncios no JavaScript
 title: Rastrear anúncios no JavaScript
+description: Implemente o rastreamento de anúncios nos aplicativos do navegador (JS) usando o SDK de mídia.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -12,11 +12,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento do anúncio
 
-| Nome da constante | Descrição  |
+| Nome da constante | Descrição   |
 |---|---|
 | `AdBreakStart` | Constante para rastrear o evento AdBreak Start |
 | `AdBreakComplete` | Constante para rastrear o evento AdBreak Complete |
