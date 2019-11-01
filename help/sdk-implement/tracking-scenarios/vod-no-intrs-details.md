@@ -1,9 +1,9 @@
 ---
-seo-title: Reprodução VOD sem anúncios
 title: Reprodução VOD sem anúncios
+description: Um exemplo de rastreamento de reprodução VOD sem anúncios.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bdd0d8cb
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 Este cenário inclui um ativo VOD sem anúncios e é reproduzido uma vez do início ao fim.
 
-| Acionador | Método do Heartbeat | Chamadas de rede | Notas  |
+| Acionador | Método do Heartbeat | Chamadas de rede | Notas   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção Reproduzir ou um evento de reprodução automática. |
 | Primeiro quadro da mídia | `trackPlay` | Heartbeat Content Play | Esse método dispara o timer; a partir desse ponto, as pulsações serão enviadas a cada 10 segundos durante toda a reprodução. |
@@ -27,7 +27,7 @@ Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são 
 
 ### Heartbeat Content Start
 
-| Parâmetro | Valor | Notas  |
+| Parâmetro | Valor | Notas   |
 |---|---|---|
 | `s:sc:rsid` | &lt;ID do conjunto de relatórios da Adobe&gt; |  |
 | `s:sc:tracking_server` | &lt;URL do servidor de rastreamento do Analytics&gt; |  |
@@ -41,7 +41,7 @@ Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são 
 
 These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. Todos os outros parâmetros ainda devem existir.
 
-| Parâmetro | Valor | Notas  |
+| Parâmetro | Valor | Notas   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
@@ -52,7 +52,7 @@ Durante a reprodução da mídia, um temporizador envia pelo menos uma pulsaçã
 
 Em heartbeats de conteúdo, procure pelos seguintes parâmetros:
 
-| Parâmetros | Valor | Notas  |
+| Parâmetros | Valor | Notas   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;posição do indicador de reprodução&gt;, por exemplo, 50,60,70 | Esse parâmetro reflete a posição atual do indicador de reprodução. |
@@ -61,7 +61,7 @@ Em heartbeats de conteúdo, procure pelos seguintes parâmetros:
 
 Quando a reprodução termina, o que significa que o final do indicador de reprodução foi atingido, uma chamada `Heartbeat Content Complete` é enviada. Essa chamada é semelhante a outras chamadas de Heartbeat, mas contém alguns parâmetros específicos:
 
-| Parâmetros | Valor | Notas  |
+| Parâmetros | Valor | Notas   |
 |---|---|---|
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
