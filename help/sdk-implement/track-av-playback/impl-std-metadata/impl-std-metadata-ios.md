@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Implementar metadados padrão no iOS
 title: Implementar metadados padrão no iOS
+description: Descreve a configuração de metadados de vídeo e anúncio padrão a serem enviados com chamadas de rastreamento no iOS.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Constantes de metadados
 
-| Nome da constante | Descrição  |
+| Nome da constante | Descrição   |
 |---|---|
 | `ADBMediaObjectKeyStandardMediaMetadata` | Constante para anexar os metadados padrão no `MediaInfo ADBMediaObject` |
 
