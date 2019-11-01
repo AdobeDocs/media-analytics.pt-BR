@@ -1,9 +1,9 @@
 ---
-seo-title: Visão geral da configuração
 title: Visão geral da configuração
+description: Visão geral da configuração do SDK de mídia para rastreamento de mídia em seus aplicativos móveis, OTT e do navegador (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -22,7 +22,7 @@ A tabela a seguir descreve as versões mínimas da plataforma compatíveis com c
 | SO/Navegador | Versão mín necessária |
 | --- | --- |
 | iOS | iOS 6+ |
-| Android | Android 5.0+ - pirulito |
+| Android | Android 5.0+ - Lollipop |
 | Chrome | v22+ |
 | Mozilla | v27+ |
 | Safari | v7+ |
@@ -60,7 +60,7 @@ Complete as seguintes etapas de implementação:
    >
    >O objeto Quality of Service (QoS) é opcional. Se os dados de QoS estiverem disponíveis para o seu reprodutor e você desejar rastreá-los, as seguintes variáveis serão necessárias:
 
-   | Nome da variável | Descrição  | Obrigatório |
+   | Nome da variável | Descrição   | Obrigatório |
    | --- | --- | :---: |
    | `bitrate` | A taxa de bits da mídia, em bits por segundo. | Sim |
    | `startupTime` | A hora de inicialização da mídia, em milissegundos. | Sim |
