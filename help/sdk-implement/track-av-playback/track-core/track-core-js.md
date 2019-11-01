@@ -1,9 +1,9 @@
 ---
-seo-title: Rastreamento da reprodução principal no JavaScript
 title: Rastreamento da reprodução principal no JavaScript
+description: Este tópico descreve como implementar o rastreamento principal usando o SDK de mídia em aplicativos de navegador (JS).
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >[!IMPORTANT]
 >Esta documentação cobre o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
 
-1. **Initial tracking setup**
+1. **Configuração de rastreamento inicial**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -24,21 +24,21 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | Nome da mídia | Sim |
    | `mediaid` | Identificador exclusivo de mídia | Sim |
    | `length` | Comprimento da mídia | Sim |
-   | `streamType` | Stream type (see StreamType constants below)__ | Sim |
-   | `mediaType` | Media type (see MediaType constants below)__ | Sim |
+   | `streamType` | Tipo de fluxo (consulte Constantes _de_ StreamType abaixo) | Sim |
+   | `mediaType` | Tipo de mídia (consulte as constantes __ MediaType abaixo) | Sim |
 
-   **`StreamType`constants:**
+   **`StreamType`constantes:**
 
-   | Nome da constante | Descrição  |
+   | Nome da constante | Descrição   |
    |---|---|
    | `VOD` | Tipo de fluxo para vídeo sob demanda. |
    | `LIVE` | Tipo de fluxo para conteúdo LIVE. |
    | `LINEAR` | Tipo de fluxo para conteúdos lineares. |
-   | `AOD` | Stream type for Audio on Demand. |
+   | `AOD` | Tipo de fluxo para Áudio sob demanda. |
    | `AUDIOBOOK` | Tipo de fluxo para audiobook. |
    | `PODCAST` | Tipo de fluxo para podcast. |
 
-   **`MediaType`constants:**
+   **`MediaType`constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -54,7 +54,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                      <MEDIA_TYPE>);
    ```
 
-1. **Attach metadata**
+1. **Anexar metadados**
 
    Como opção, anexe objetos de metadados padrão e/ou personalizados à sessão de rastreamento por meio de variáveis de dados de contexto.
 
@@ -83,9 +83,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **Track the intention to start playback**
+1. **Rastrear a intenção de iniciar a reprodução**
 
-   To begin tracking a media session, call  on the Media Heartbeat instance:`trackSessionStart`
+   Para começar a rastrear uma sessão de mídia, chame `trackSessionStart` a instância Media Heartbeat:
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -93,7 +93,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >The second value is the custom media metadata object name that you created in step 2.
+   >O segundo valor é o nome do objeto de metadados de mídia personalizado que você criou na etapa 2.
 
    >[!IMPORTANT]
    >
@@ -111,7 +111,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Track the completion of playback**
+1. **Acompanhar a conclusão da reprodução**
 
    Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
 
@@ -119,7 +119,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackComplete();
    ```
 
-1. **Track the end of the session**
+1. **Acompanhar o final da sessão**
 
    Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
 
@@ -133,7 +133,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Rastrear todos os cenários de pausa possíveis**
 
-   Identify the event from the media player for pause and call :`trackPause`
+   Identifique o evento do player de mídia para pausa e chame `trackPause`:
 
    ```js
    mediaHeartbeat.trackPause();
