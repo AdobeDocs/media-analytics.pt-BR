@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear buffering no iOS
 title: Rastrear buffering no iOS
+description: Descreve o rastreamento de eventos de buffering no iOS.
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `ADBMediaHeartbeatEventBufferStart` | Constante para rastrear o evento Buffer Start |
 | `ADBMediaHeartbeatEventBufferComplete` | Constante para rastrear o evento Buffer Complete |
 
-## Implement buffering
+## Implementar buffering
 
 1. Analise os eventos de buffering de reprodução no reprodutor de mídia e, na notificação do evento de início de buffering, rastreie o buffering usando o evento `BufferStart`:
 
