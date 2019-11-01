@@ -1,9 +1,9 @@
 ---
-seo-title: Solicitação de sessões
 title: Solicitação de sessões
+description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 translation-type: tm+mt
-source-git-commit: f1c9f5f4cbcd4c043e1c7b4a5037c134b2bdd380
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -62,7 +62,7 @@ O corpo da solicitação deve ser JSON e ter a mesma estrutura que este corpo de
    * `ts` - carimbo de data e hora; deve estar em milissegundos.
 * `eventType` (Obrigatório)
 
-   **Valid value: **`sessionStart`
+   **Valor válido:**`sessionStart`
 * `params` (Obrigatório)
 * `customMetadata` (Opcional)
 * `qoeData` (Opcional)
