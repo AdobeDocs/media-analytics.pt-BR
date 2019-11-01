@@ -1,9 +1,9 @@
 ---
-seo-title: Resolving main play appearing between ads
-title: Resolving main play appearing between ads
+title: Resolução da reprodução principal que aparece entre anúncios
+description: Como lidar com chamadas principais inesperadas:reproduzir entre anúncios.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
-source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -18,7 +18,7 @@ Uma lacuna entre anúncios, como descrito acima, é interpretada pelo SDK do Med
 
 ## IDENTIFICAÇÃO
 
-While using Adobe Debug or a network packet sniffer such as Charles, if you see the following Heartbeat calls in this order during a pre-roll ad break:
+Ao usar a Depuração da Adobe ou um sniffer de pacotes de rede como Charles, se você vir as seguintes chamadas Heartbeat nessa ordem durante uma pausa de anúncio precedente:
 
 * Início da sessão: `s:event:type=start` &amp; `s:asset:type=main`
 * Início do anúncio: `s:event:type=start` &amp; `s:asset:type=ad`
