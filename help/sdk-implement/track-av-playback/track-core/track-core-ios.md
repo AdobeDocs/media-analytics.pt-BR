@@ -1,9 +1,9 @@
 ---
-seo-title: Rastreamento da reprodução principal no iOS
 title: Rastreamento da reprodução principal no iOS
+description: Este tópico descreve como implementar o rastreamento principal usando o SDK de mídia no iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | Tipo de fluxo para audiobook |
    | `ADBMediaHeartbeatStreamTypePODCAST` | Tipo de fluxo para podcast |
 
-   **`MediaType`constants:**
+   **`MediaType`constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -73,7 +73,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    * **Metadados personalizados**
 
-      Create a variable object for the custom variables and populate with the data for this video. Por exemplo:
+      Crie um objeto variável para as variáveis personalizadas e preencha com os dados para este vídeo. Por exemplo:
 
       ```
       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
@@ -139,7 +139,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >`trackSessionEnd` marca o fim de uma sessão de rastreamento de vídeo. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
-1. **Track all possible pause scenarios**
+1. **Rastrear todos os cenários de pausa possíveis**
 
    Identifique o evento no reprodutor de vídeo para vídeos pausados e chame `trackPause`:
 
@@ -168,7 +168,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >This may be the same event source that was used in Step 4. Verifique se cada chamada `trackPause()` da API está emparelhada a uma chamada `trackPlay()` da API quando a reprodução continuar.
+   >Essa pode ser a mesma fonte de evento usada na Etapa 4. Verifique se cada chamada `trackPause()` da API está emparelhada a uma chamada `trackPlay()` da API quando a reprodução continuar.
 
 Consulte as informações adicionais sobre o rastreamento da reprodução principal:
 
