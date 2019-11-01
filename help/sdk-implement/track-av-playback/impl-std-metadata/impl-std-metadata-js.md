@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Implementar metadados padrão no JavaScript
 title: Implementar metadados padrão no JavaScript
+description: Descreve a configuração de metadados de vídeo e anúncio padrão a serem enviados com chamadas de rastreamento em aplicativos do navegador (JS).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 ## Constante de metadados
 
-| Nome da constante | Descrição  |
+| Nome da constante | Descrição   |
 | --- | --- |
 | `StandardMediaMetadata` | Constante para anexar os metadados padrão no `MediaObject` |
 
