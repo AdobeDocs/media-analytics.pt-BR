@@ -1,9 +1,9 @@
 ---
-seo-title: Chaves de metadados de iOS
 title: Chaves de metadados de iOS
+description: Este tópico descreve as chaves de metadados do iOS disponíveis.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
