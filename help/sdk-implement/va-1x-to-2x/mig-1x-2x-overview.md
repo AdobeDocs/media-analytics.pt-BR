@@ -1,9 +1,9 @@
 ---
-seo-title: Visão geral da migração
 title: Visão geral da migração
+description: Este tópico fornece uma visão geral da migração das versões 1.x para 2.x do SDK de mídia.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -21,7 +21,7 @@ Aqui estão as principais diferenças entre as versões 1.x e 2.x:
 
 * All of the public methods are consolidated into the `MediaHeartbeat` class to make implementation easier on developers.
 * All configs are now consolidated into the `MediaHeartbeatConfig` class.
-* Não é mais necessário instanciar configurações para os plug-ins do Analytics, VideoPlayer e Heartbeat. Você só precisa instanciar a `MediaHeartbeat` classe com instâncias `MediaHeartbeatDelegate` e `MediaHeartbeatConfig` . This is the only implementation that is required to initialize Media Analytics.
+* Não é mais necessário instanciar configurações para os plug-ins do Analytics, VideoPlayer e Heartbeat. Você só precisa instanciar a `MediaHeartbeat` classe com instâncias `MediaHeartbeatDelegate` e `MediaHeartbeatConfig` . Essa é a única implementação necessária para inicializar o Media Analytics.
 
    With the initialization of `MediaHeartbeat`, you can safely delete all of the implementation for Analytics Plugin, VideoPlayer Plugin, and Heartbeat Plugin. Além disso, é necessário remover todas as implementações existentes para a inicialização do que utiliza uma matriz de plug-ins como entrada. Você pode ver comparações lado a lado das implementações 1.x e 2.x aqui: [Comparação de código do: 1.x para 2.x.](./code-comparison-1x-2x.md)
 
