@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Implementar Metadados de publicidade padrão no iOS
 title: Implementar Metadados de publicidade padrão no iOS
+description: Como usar metadados de anúncio padrão no rastreamento de anúncios no iOS.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,11 +12,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Constantes de anúncio
 
-| Nome da constante | Descrição  |
+| Nome da constante | Descrição   |
 |---|---|
 | `ADBMediaObjectKeyStandardAdMetadata` | Constant for attaching standard ad metadata on `AdInfo ADBMediaObject` |
 
-## Implemement standard ad metadata
+## Implementação de metadados de anúncio padrão
 
 Para metadados de anúncio padrão, crie um dicionário de pares de valores principais de metadados de anúncio padrão usando as chaves para sua plataforma:
 
