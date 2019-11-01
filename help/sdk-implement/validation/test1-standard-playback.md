@@ -1,9 +1,9 @@
 ---
-seo-title: Test 1  Standard playback
 title: Reprodução padrão do teste 1
+description: Este tópico descreve o teste de reprodução padrão usado na validação.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -40,7 +40,7 @@ Conclua e registre as seguintes ações (em ordem):
    * **Servidor do Media Analytics (Heartbeats) -** Este servidor sempre tem o formato "`[namespace].hb.omtrdc.net`", onde `[namespace]` especifica o nome da sua empresa. Esse nome é fornecido pela Adobe.
    É necessário validar determinadas variáveis principais que são universais em todas as chamadas de rastreamento:
 
-   **Adobe Visitor ID (`mid`):** The `mid` variable is used to capture the value set in the AMCV cookie. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. It is found in both Adobe Analytics (AppMeasurement) and Media Analytics (heartbeats) calls.
+   **`mid`ID de visitante da Adobe (**): A `mid` variável é usada para capturar o valor definido no cookie AMCV. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. Ele é encontrado nas chamadas do Adobe Analytics (AppMeasurement) e do Media Analytics (pulsações).
 
    * **Chamada de início do Adobe Analytics**
 
@@ -70,9 +70,9 @@ Conclua e registre as seguintes ações (em ordem):
 
       >[!NOTE]
       >
-      >On Media Analytics Start calls () the  values may not be present. `s:event:type=start``mid` Isso está certo. They may not appear until the Media Analytics Play calls ( ).`s:event:type=play`
+      >Nas chamadas de Início do Media Analytics (`s:event:type=start`) os `mid` valores podem não estar presentes. Isso está certo. Eles podem não aparecer até que as chamadas do Media Analytics Play ( `s:event:type=play`) sejam exibidas.
 
-   * **Media Analytics Play call**
+   * **Chamada Media Analytics Play**
 
       | Parâmetro | Valor (exemplo) |
       |---|---|
@@ -82,21 +82,21 @@ Conclua e registre as seguintes ações (em ordem):
 
 1. **Iniciar o media player**
 
-   When the media player starts, the Media SDK sends the key calls to the two servers in the following order:
+   Quando o player de mídia é iniciado, o SDK de mídia envia as chamadas principais para os dois servidores na seguinte ordem:
 
-   1. Adobe Analytics server - Start call
-   1. Media Analytics server - Start call
-   1. Media Analytics server - "Adobe Analytics Start call requested"
-   The first two calls above contain additional metadata and variables. For call parameters and metadata, see Test call details.[](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
+   1. Servidor do Adobe Analytics - Iniciar chamada
+   1. Servidor do Media Analytics - Iniciar chamada
+   1. Servidor do Media Analytics - "Chamada de início do Adobe Analytics solicitada"
+   As primeiras duas chamadas acima contêm metadados e variáveis adicionais. Para obter parâmetros de chamada e metadados, consulte Detalhes da chamada [de teste.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
-   The third call above tells the Media Analytics server that the Media SDK requested that the Adobe Analytics Start call () be sent to the Adobe Analytics server.`pev2=ms_s`
+   A terceira chamada acima informa ao servidor do Media Analytics que o SDK de mídia solicitou que a chamada (`pev2=ms_s`) de Início do Adobe Analytics fosse enviada para o servidor do Adobe Analytics.
 
 1. **Exibir ad break, se disponível**
 
    * **Início do anúncio**
    Quando o anúncio é iniciado, as seguintes chamadas principais são enviadas na seguinte ordem:
 
-   1. Adobe Analytics server - Ad Start call
+   1. Servidor do Adobe Analytics - Chamada de início de anúncio
    1. Servidor do Media Analytics - Chamada de início de anúncio
    1. Servidor do Media Analytics - "Chamada de início de anúncio do Adobe Analytics solicitada"
    As primeiras duas chamadas contêm metadados e variáveis adicionais. Para obter parâmetros de chamada e metadados, consulte Detalhes da chamada [de teste.](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)
@@ -105,21 +105,21 @@ Conclua e registre as seguintes ações (em ordem):
 
    * **Reprodução do anúncio**
 
-      During ad playback, the Media Analytics SDK sends play events of type "ad" to the Media Analytics server every second.
+      Durante a reprodução do anúncio, o SDK do Media Analytics envia eventos de reprodução do tipo "anúncio" para o servidor do Media Analytics a cada segundo.
 
    * **Anúncio concluído**
 
-      At the 100% point of an ad, a Media Analytics Complete call should be sent.
+      No ponto de 100% de um anúncio, uma chamada Media Analytics Complete deve ser enviada.
 
 
 
 1. **Pausar a reprodução de anúncio por 30 segundos, se disponível.**  **Pausa do anúncio**
 
-   During Ad Pause, Media Analytics heartbeat or "ping" calls are sent by the SDK to the Media Analytics server every second.
+   Durante a pausa do anúncio, as chamadas de pulsação ou "ping" do Media Analytics são enviadas pelo SDK para o servidor do Media Analytics a cada segundo.
 
    >[!NOTE]
    >
-   >The playhead value should remain constant during the pause.
+   >O valor do indicador de reprodução deve permanecer constante durante a pausa.
 
    Para obter parâmetros de chamada e metadados, consulte Detalhes da chamada [de teste.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
@@ -144,5 +144,5 @@ Conclua e registre as seguintes ações (em ordem):
 
 1. **Exibir a próxima mídia na lista de reprodução.** No Media Start da próxima mídia em uma lista de reprodução, um novo conjunto de chamadas Media Start deve ser enviado.
 
-1. **Mude mídia ou fluxo.** When switching live streams, a Media Analytics complete call for the first stream should not be sent. The Media Start calls and Play calls should begin with the new show and stream name, and with the correct playhead and duration values for the new show.
+1. **Mude mídia ou fluxo.** Ao alternar fluxos ao vivo, uma chamada completa do Media Analytics para o primeiro fluxo não deve ser enviada. As chamadas de Media Start e Play devem começar com o novo nome de show e stream e com os valores corretos de indicador de reprodução e duração para o novo show.
 
