@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear anúncios no Roku
 title: Rastrear anúncios no Roku
+description: Implemente o rastreamento de anúncios nos aplicativos Roku usando o SDK de mídia.
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Constantes de rastreamento do anúncio
 
-| Nome da constante | Descrição  |
+| Nome da constante | Descrição   |
 |---|---|
 | `AdBreakStart` | Constante para rastrear o evento AdBreak Start |
 | `AdBreakComplete` | Constante para rastrear o evento AdBreak Complete |
@@ -61,7 +61,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                            ad.duration) 
    ```
 
-1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
+1. Como opção, anexe metadados padronizados e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
    * [Implementar Metadados de publicidade padrão no Roku](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do ativo de anúncio atual:
