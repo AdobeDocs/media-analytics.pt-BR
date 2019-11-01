@@ -1,11 +1,9 @@
 ---
-seo-title: Reprodução VOD com anúncios precedentes
 title: Reprodução VOD com anúncios precedentes
-description: Nesse cenário, um anúncio antes da exibição foi inserido antes do conteúdo principal.
-seo-description: Nesse cenário no Adobe Media Analytics, os anúncios precedentes foram inseridos antes do conteúdo principal.
+description: Um exemplo de como rastrear o conteúdo VOD que contém anúncios precedentes usando o SDK de mídia.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
