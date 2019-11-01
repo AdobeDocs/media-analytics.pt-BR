@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear estados do aplicativo
 title: Rastrear estados do aplicativo
+description: 'Os estados do aplicativo são telas ou exibições diferentes no aplicativo, que quando exibidas devem resultar em uma chamada trackState. '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 translation-type: tm+mt
-source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -28,7 +28,7 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In other Analytics interfaces, "View State" is reported as "Page Name"; "State Views" is reported as "Page Views".
+The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. Em outras interfaces do Analytics, "Exibir estado" é reportado como "Nome da página"; "Exibições de estado" é reportado como "Exibições de página".
 
 ## Enviar dados de contexto
 
