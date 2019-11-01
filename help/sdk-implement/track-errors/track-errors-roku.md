@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear erros no Roku
 title: Rastrear erros no Roku
+description: Este tópico descreve como implementar o rastreamento de erros usando o SDK de mídia no Roku.
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Implementar o rastreamento de erros
 
-1. Track media player errors:
+1. Rastrear erros do player de mídia:
 
    ```
    ADBMobile().mediaTrackError(msg.GetMessage(), 
