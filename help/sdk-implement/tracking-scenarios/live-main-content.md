@@ -1,9 +1,9 @@
 ---
-seo-title: Conteúdo principal disponível
 title: Conteúdo principal disponível
+description: Um exemplo de como rastrear o conteúdo ao vivo usando o SDK de mídia.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 Neste cenário, há um ativo disponível sem anúncios reproduzido por 40 segundos após a entrada na transmissão ao vivo.
 
-| Acionador | Método do Heartbeat | Chamadas de rede | Notas  |
+| Acionador | Método do Heartbeat | Chamadas de rede | Notas   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção **[!UICONTROL Reproduzir], ou um evento de reprodução automática.** |
 | O primeiro quadro da mídia é reproduzido. | `trackPlay` | Heartbeat Content Play | Esse método aciona o timer. Os heartbeats são enviados a cada 10 segundos durante toda a reprodução. |
