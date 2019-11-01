@@ -1,9 +1,9 @@
 ---
-seo-title: Chaves de metadados do Roku
 title: Chaves de metadados do Roku
+description: Este tópico descreve as chaves de metadados Roku disponíveis.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -62,13 +62,13 @@ Você pode usar as seguintes constantes para rastrear eventos de mídia:
 
 ### Outras constantes
 
-| Constante | Descrição  |
+| Constante | Descrição   |
 |---|---|
 | `ERROR_SOURCE_PLAYER` | Constante para a fonte do erro como Reprodutor |
 
 ### Constantes de MediaObjectkey (usadas como chaves nas instâncias MediaObject)
 
-| Constante | Descrição  |
+| Constante | Descrição   |
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | Constante para definir metadados no `MediaInfo``trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` | Constante para definir os metadados do anúncio no `EventData``trackEvent` |
@@ -76,14 +76,14 @@ Você pode usar as seguintes constantes para rastrear eventos de mídia:
 
 ### Constantes de tipo de conteúdo
 
-| Constante | Descrição  |
+| Constante | Descrição   |
 |---|---|
 | `MEDIA_STREAM_TYPE_LIVE` | Constante para o tipo de fluxo LIVE |
 | `MEDIA_STREAM_TYPE_VOD` | Constante para o tipo de fluxo VOD |
 
 ### Constantes de tipo de evento (usadas para a chamada trackEvent)
 
-| Constante | Descrição  |
+| Constante | Descrição   |
 |---|---|
 | `MEDIA_BUFFER_START` | Tipo de evento para Início do buffer |
 | `MEDIA_BUFFER_COMPLETE` | Tipo de evento para Buffer concluído |
