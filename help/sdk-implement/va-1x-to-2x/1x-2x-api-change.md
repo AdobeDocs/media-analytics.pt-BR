@@ -1,9 +1,9 @@
 ---
-seo-title: Conversão da API de 1.x para 2.x
 title: Conversão da API de 1.x para 2.x
+description: Este tópico inclui links para referências de API e lista as APIs de rastreamento necessárias e opcionais para as versões 1.x e 2.x do SDK de mídia.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
