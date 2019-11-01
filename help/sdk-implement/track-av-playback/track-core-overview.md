@@ -1,9 +1,9 @@
 ---
-seo-title: Visão geral do rastreamento
 title: Visão geral do rastreamento
+description: 'Este tópico descreve o rastreamento da reprodução principal, incluindo o rastreamento do carregamento da mídia, o início da mídia, a pausa da mídia e a conclusão da mídia. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
