@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear a qualidade da experiência no iOS
 title: Rastrear a qualidade da experiência no iOS
+description: Este tópico descreve como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK de mídia no iOS.
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Implemement QOS
+## Implementação do QOS
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
