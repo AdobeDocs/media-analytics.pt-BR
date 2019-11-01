@@ -1,9 +1,9 @@
 ---
-seo-title: Visão geral
 title: Visão geral
+description: Uma visão geral da qualidade de rastreamento da experiência (QoE, QoS) usando o SDK de mídia.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -16,11 +16,11 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Você pode usar a API do player de mídia para identificar as variáveis relacionadas ao QoS e ao rastreamento de erros. Veja abaixo os principais elementos do rastreamento da qualidade da experiência:
 
-## Player events {#player-events}
+## Eventos do player {#player-events}
 
 ### Em qualquer alteração de métrica de QoS:
 
-Crie ou atualize a instância do objeto QoS para a reprodução. [QoS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
+Crie ou atualize a instância do objeto QoS para a reprodução. [Referência da API QoS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
 
 ### Em todos os eventos de alteração da taxa de bits
 
@@ -50,7 +50,7 @@ Chama `trackEvent(Media.Heartbeat.Event.BitrateChange);`
    >
    >Atualize o objeto QoS e chame o evento de alteração da taxa de bits em cada alteração da taxa de bits. Isso fornece os dados de QoS mais precisos.
 
-The following sample code uses the JavaScript 2.x SDK for an HTML5 media player. Use esse código com o código principal de reprodução de mídia.
+O código de amostra a seguir usa o JavaScript 2.x SDK para um player de mídia HTML5. Use esse código com o código principal de reprodução de mídia.
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate(); 
