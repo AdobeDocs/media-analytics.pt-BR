@@ -1,9 +1,9 @@
 ---
-seo-title: Rastrear anúncios no Chromecast
 title: Rastrear anúncios no Chromecast
+description: Implemente o rastreamento de anúncios nos aplicativos Chromecast usando o SDK de mídia.
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Constantes de rastreamento do anúncio
 
-| Nome da constante | Descrição  |
+| Nome da constante | Descrição   |
 |---|---|
 | `AdBreakStart` | Constante para rastrear o evento AdBreak Start |
 | `AdBreakComplete` | Constante para rastrear o evento AdBreak Complete |
