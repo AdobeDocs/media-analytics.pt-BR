@@ -1,9 +1,9 @@
 ---
-seo-title: Linha do tempo 2 - Usuário abandona a sessão
 title: Linha do tempo 2 - Usuário abandona a sessão
+description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, anúncios precedentes, anúncios intermediários, usuário abandona o conteúdo antecipadamente
 
-The following diagrams illustrate the playhead timeline and the corresponding timeline of a user's actions. The details for each action and its accompanying requests are presented below.
+Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a linha do tempo correspondente das ações de um usuário. Apresentam-se seguidamente os pormenores de cada ação e os pedidos que a acompanham.
 
 
 ![](assets/va_api_content_2.png)
@@ -21,9 +21,9 @@ The following diagrams illustrate the playhead timeline and the corresponding ti
 ![](assets/va_api_actions_2.png)
 
 
-## Action details
+## Detalhes da ação
 
-### Action 1 - Start session {#Action-1}
+### Ação 1 - Iniciar sessão {#Action-1}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -58,7 +58,7 @@ Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. It ret
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### Ação 2 - Início do temporizador de ping {#Action-2}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -66,9 +66,9 @@ Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. It ret
 
 **Detalhes da implementação**
 
-Inicie o temporizador ping do aplicativo. First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.
+Inicie o temporizador ping do aplicativo. O primeiro evento ping deve disparar 1 segundo se houver anúncios precedentes, 10 segundos se não houver.
 
-### Action 3 - Ad break start {#Action-3}
+### Ação 3 - Início da quebra de anúncio {#Action-3}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -94,7 +94,7 @@ Os anúncios precedentes devem ser rastreados. Os anúncios somente podem ser ra
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### Ação 4 - Início do anúncio {#Action-4}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -129,7 +129,7 @@ Um anúncio de 12 segundos é iniciado.
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### Ação 5 - Ads {#Action-5}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -151,7 +151,7 @@ Faça o ping do backend a cada 1 segundo. (Anúncios subsequentes não mostrados
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### Ação 6 - Anúncio concluído {#Action-6}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
