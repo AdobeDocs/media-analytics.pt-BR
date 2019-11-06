@@ -3,7 +3,7 @@ product: Media Analytics
 audience: usuário final
 user-guide-title: Adobe Analytics para áudio e vídeo
 translation-type: tm+mt
-source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
+source-git-commit: 8eb90f83aa81f15caf509fe1e44f6396df7701aa
 
 ---
 
@@ -137,6 +137,12 @@ source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
       + [Visão geral da migração](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [Comparação de código do : 1.x para 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [Conversão da API do de 1.x para 2.x](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
+   + SDK do Media Analytics para iniciar a migração {#sdk-to-launch}
+      + [SDK para iniciar a migração](sdk-implement/sdk-to-launch/sdk-to-launch-migration.md)
+      + SDK para iniciar guias da plataforma de migração {#sdk-to-launch-migration-platforms}
+         + [Android](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + API Media Collection (RESTful) {#media-collection-api}
    + [Visão geral](media-collection-api/mc-api-overview.md)
    + Referência da API {#mc-api-ref}
