@@ -1,10 +1,8 @@
 ---
-seo-title: Migração do SDK de mídia independente para o Adobe Launch - iOS
 title: Migração do SDK de mídia independente para o Adobe Launch - iOS
-seo-description: Instruções e exemplos de código para auxiliar na migração do SDK de mídia para o Launch para iOS.
 description: Instruções e exemplos de código para auxiliar na migração do SDK de mídia para o Launch para iOS.
 translation-type: tm+mt
-source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
+source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
@@ -12,15 +10,6 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 # Migração do SDK de mídia independente para o Adobe Launch - iOS
 
 ## Configuração
-
-### Iniciar Extensão
-
-1. No Experience Platform Launch, clique na guia [!UICONTROL Extensões] para sua propriedade móvel
-1. Na guia [!UICONTROL Catálogo] , localize a extensão Adobe Media Analytics para áudio e vídeo e clique em [!UICONTROL Instalar].
-1. Na página de configurações de extensão, defina os parâmetros de rastreamento.
-A extensão de mídia usará os parâmetros configurados para rastreamento.
-
-[Configurar a extensão do Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ### SDK de mídia independente
 
@@ -42,40 +31,18 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
 ```
 
-## Criação do rastreador
-
 ### Iniciar Extensão
 
-[Referência da API de mídia - Criar rastreador de mídia](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+1. No Experience Platform Launch, clique na guia [!UICONTROL Extensões] para sua propriedade móvel
+1. Na guia [!UICONTROL Catálogo] , localize a extensão Adobe Media Analytics para áudio e vídeo e clique em [!UICONTROL Instalar].
+1. Na página de configurações de extensão, defina os parâmetros de rastreamento.
+A extensão de mídia usará os parâmetros configurados para rastreamento.
 
-Antes de criar o rastreador, registre a extensão de mídia e as extensões dependentes com o núcleo móvel.
+   ![](assets/launch_config_mobile.png)
 
-```objective-c
-// Register the extension once during app launch
-#import <ACPCore.h>
-#import <ACPAnalytics.h>
-#import <ACPMedia.h>
-#import <ACPIdentity.h>
+[Configurar a extensão do Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [ACPCore setLogLevel:ACPMobileLogLevelDebug];
-    [ACPCore configureWithAppId:@"your-launch-app-id"];
-    [ACPMedia registerExtension];
-    [ACPAnalytics registerExtension];
-    [ACPIdentity registerExtension];
-    [ACPCore start:nil];
-    return YES;
-}
-```
-
-Depois que a extensão de mídia é registrada, o rastreador pode ser criado usando a seguinte API.
-O rastreador escolhe automaticamente a configuração da propriedade de inicialização configurada.
-
-```objective-c
-[ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
-    // Use the instance for tracking media.
-}];
-```
+## Criação do rastreador
 
 ### SDK de mídia independente
 
@@ -116,7 +83,45 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
+### Iniciar Extensão
+
+[Referência da API de mídia - Criar rastreador de mídia](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+
+Antes de criar o rastreador, registre a extensão de mídia e as extensões dependentes com o núcleo móvel.
+
+```objective-c
+// Register the extension once during app launch
+#import <ACPCore.h>
+#import <ACPAnalytics.h>
+#import <ACPMedia.h>
+#import <ACPIdentity.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [ACPCore setLogLevel:ACPMobileLogLevelDebug];
+    [ACPCore configureWithAppId:@"your-launch-app-id"];
+    [ACPMedia registerExtension];
+    [ACPAnalytics registerExtension];
+    [ACPIdentity registerExtension];
+    [ACPCore start:nil];
+    return YES;
+}
+```
+
+Depois que a extensão de mídia é registrada, o rastreador pode ser criado usando a seguinte API.
+O rastreador escolhe automaticamente a configuração da propriedade de inicialização configurada.
+
+```objective-c
+[ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
+    // Use the instance for tracking media.
+}];
+```
+
 ## Atualização dos valores de Indicador de reprodução e Qualidade da experiência.
+
+### SDK de mídia independente
+
+No SDK de mídia independente, um objeto delegado que implementa o protocolo é transmitido durante a criação do rastreador.`ADBMediaHeartbeartDelegate` 
+A implementação deve retornar o QoE e o indicador de reprodução mais recentes sempre que o rastreador chamar os métodos de interface `getQoSObject()` e `getCurrentPlaybackTime()` .
 
 ### Iniciar Extensão
 
@@ -128,59 +133,7 @@ A implementação deve atualizar as informações de QoE chamando o método expo
 
 [Referência da API de mídia - Atualizar objeto QoE](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-### SDK de mídia independente
-
-No SDK de mídia independente, um objeto delegado que implementa o protocolo é transmitido durante a criação do rastreador.`ADBMediaHeartbeartDelegate` 
-A implementação deve retornar o QoE e o indicador de reprodução mais recentes sempre que o rastreador chamar os métodos de interface `getQoSObject()` e `getCurrentPlaybackTime()` .
-
 ## Transmissão de metadados padrão de mídia/anúncio
-
-### Iniciar Extensão
-
-* Metadados de mídia padrão:
-
-   ```objective-c
-   NSDictionary *mediaObject = 
-     [ACPMedia createMediaObjectWithName:@"media-name" 
-               mediaId:@"media-id" 
-               length:60 
-               streamType:ACPMediaStreamTypeVod 
-               mediaType:ACPMediaTypeVideo];
-   
-   NSMutableDictionary *mediaMetadata = 
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
-   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
-   
-   // Custom metadata keys
-   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
-   ```
-
-* Metadados de publicidade padrão:
-
-   ```objective-c
-   NSDictionary* adObject = 
-     [ACPMedia createAdObjectWithName:@"ad-name" 
-               adId:@"ad-id" 
-               position:1 
-               length:15];
-   
-   NSMutableDictionary* adMetadata = 
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
-   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
-   
-   // Custom metadata keys
-   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
-   
-   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
-   ```
 
 ### SDK de mídia independente
 
@@ -236,3 +189,49 @@ A implementação deve retornar o QoE e o indicador de reprodução mais recente
             data:adDictionary];
    ```
 
+### Iniciar Extensão
+
+* Metadados de mídia padrão:
+
+   ```objective-c
+   NSDictionary *mediaObject = 
+     [ACPMedia createMediaObjectWithName:@"media-name" 
+               mediaId:@"media-id" 
+               length:60 
+               streamType:ACPMediaStreamTypeVod 
+               mediaType:ACPMediaTypeVideo];
+   
+   NSMutableDictionary *mediaMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
+   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
+   
+   // Custom metadata keys
+   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
+   ```
+
+* Metadados de publicidade padrão:
+
+   ```objective-c
+   NSDictionary* adObject = 
+     [ACPMedia createAdObjectWithName:@"ad-name" 
+               adId:@"ad-id" 
+               position:1 
+               length:15];
+   
+   NSMutableDictionary* adMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
+   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
+   
+   // Custom metadata keys
+   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
+   
+   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
+   ```
