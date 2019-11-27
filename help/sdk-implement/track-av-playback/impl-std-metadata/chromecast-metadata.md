@@ -1,14 +1,14 @@
 ---
 title: Chaves de metadados do Chromecast
-description: Descreve a configuração de metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento no Chromecast.
+description: Descreve a configuração padrão de metadados de vídeo e anúncio para serem enviados com chamadas de rastreamento no Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Chaves de metadados do Chromecast{#chromecast-metadata-keys}
+# Chaves de metadados do Chromecast {#chromecast-metadata-keys}
 
 Os metadados padrão de vídeo e anúncio podem ser definidos em objetos de informação de mídia e anúncio respectivamente. Usando as chaves de constantes para metadados de vídeo/anúncio, defina o dicionário que contém os metadados padrão em um objeto de informação antes de chamar as APIs de rastreamento. Consulte as tabelas abaixo para obter a lista completa de constantes de metadados padrão, seguida de exemplos.
 
