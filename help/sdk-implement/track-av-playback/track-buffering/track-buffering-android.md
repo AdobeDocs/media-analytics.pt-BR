@@ -2,16 +2,16 @@
 title: Rastrear buffering no Android
 description: Descreve o rastreamento de eventos de buffering no Android.
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastrear buffering no Android{#track-buffering-on-android}
+# Rastrear buffering no Android {#track-buffering-on-android}
 
 >[!IMPORTANT]
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDks.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento de buffer
 
