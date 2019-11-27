@@ -1,18 +1,18 @@
 ---
 title: Rastrear buffering no JavaScript
-description: Descreve o rastreamento de eventos de buffering em aplicativos de navegador (JS).
+description: Descreve eventos de rastreamento de buffering em aplicativos de navegador (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastrear buffering no JavaScript{#track-buffering-on-javascript}
+# Rastrear buffering no JavaScript {#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento de buffer
 
