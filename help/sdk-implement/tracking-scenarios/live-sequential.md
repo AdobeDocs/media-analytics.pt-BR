@@ -1,31 +1,31 @@
 ---
 title: Conteúdo principal disponível com monitoramento sequencial
-description: Um exemplo de como rastrear o conteúdo ao vivo com rastreamento sequencial usando o SDK de mídia.
+description: Um exemplo de como rastrear o conteúdo ao vivo com monitoramento sequencial usando o SDK do Media.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Conteúdo principal ao vivo com monitoramento sequencial{#live-main-content-with-sequential-tracking}
+# Conteúdo principal ao vivo com monitoramento sequencial {#live-main-content-with-sequential-tracking}
 
 ## Cenário {#scenario}
 
 Neste cenário, há um ativo disponível sem anúncios reproduzido por 40 segundos após a entrada na transmissão ao vivo.
 
-Este cenário é igual ao cenário [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md), só que parte do conteúdo é depurado e uma busca é realizada de um ponto a outro do conteúdo principal.
+Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md), só que parte do conteúdo é depurado e uma busca é realizada de um ponto a outro do conteúdo principal.
 
-| Acionador | Método do Heartbeat |  Chamadas de rede |  Notas   |
+| Acionador | Método do Heartbeat |  Chamadas de rede  |  Notas   |
 | --- | --- | --- | --- |
-| O usuário clica em [!UICONTROL Reproduzir] | trackSessionStart | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não detecta um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| O usuário clica em [!UICONTROL Reproduzir] | trackSessionStart | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não detecta um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | O primeiro quadro do conteúdo é reproduzido. | trackPlay | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, as pulsações só são iniciadas com o capítulo. |
-| Reproduções de conteúdo |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| Sessão1 finalizada (episódio1 encerrado) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete significa que a sessão1 do 1º episódio foi atingida e assistida por inteiro. Antes de iniciar a sessão do episódio seguinte, é necessário encerrar a sessão atual. |
+| Reproduções de conteúdo |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Sessão1 finalizada (episódio1 encerrado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Complete significa que a sessão1 do 1º episódio foi atingida e assistida por inteiro. Antes de iniciar a sessão do episódio seguinte, é necessário encerrar a sessão atual. |
 | Episódio2 iniciado (sessão2 iniciada) | trackSessionStart | Início do conteúdo do Analytics Heartbeat Content Start | Isso ocorre porque o usuário assistiu ao primeiro episódio e em seguida assistiu o segundo |
-| 1º quadro da mídia | trackPlay | Heartbeat Content Play (Reprodução do conteúdo do Heartbeat) | Esse método aciona o temporizador; deste ponto em diante, os heartbeats serão enviados a cada 10 segundos durante a reprodução. |
+| 1º quadro do Media | trackPlay | Heartbeat Content Play | Esse método aciona o temporizador; deste ponto em diante, os heartbeats serão enviados a cada 10 segundos durante a reprodução. |
 | Reproduções de conteúdo |  | Content Heartbeats |  |
-| Sessão encerrada (episódio2 finalizado) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão2 do 2º episódio foi atingida e assistida por inteiro. Antes de iniciar a sessão do episódio seguinte, é necessário encerrar a sessão atual. |
+| Sessão encerrada (episódio2 finalizado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão2 do 2º episódio foi atingida e assistida por inteiro. Antes de iniciar a sessão do episódio seguinte, é necessário encerrar a sessão atual. |
 
 ## Parâmetros {#parameters}
 
@@ -53,7 +53,7 @@ Isso deve ser quase idêntico à chamada de Heartbeat Content Start, mas com uma
 
 ## Content Heartbeats {#content-heartbeats}
 
-Durante a reprodução da mídia, há um temporizador que enviará uma ou mais pulsações a cada 10 segundos para o conteúdo principal e a cada segundo para os anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffers e outros itens. O conteúdo exato de cada heartbeat está além do escopo deste documento. É importante validar o acionamento das pulsações de modo consistente durante a reprodução.
+Durante a reprodução da mídia, há um temporizador que enviará um ou mais heartbeats a cada 10 segundos para o conteúdo principal e a cada segundo para os anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffers e outros itens. O conteúdo exato de cada heartbeat está além do escopo deste documento. É importante validar o acionamento das pulsações de modo consistente durante a reprodução.
 
 Em heartbeats de conteúdo, procure por itens específicos:
 
