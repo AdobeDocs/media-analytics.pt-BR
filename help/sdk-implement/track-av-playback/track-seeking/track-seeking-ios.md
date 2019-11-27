@@ -1,18 +1,18 @@
 ---
 title: Busca de faixa no iOS
-description: Este tópico descreve como implementar o rastreamento de busca usando o SDK de mídia no iOS.
+description: Este tópico descreve a implementação do rastreamento de busca usando o SDK do Media no iOS.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Busca de faixa no iOS{#track-seeking-on-ios}
+# Busca de faixa no iOS {#track-seeking-on-ios}
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento de busca
 
