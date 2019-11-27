@@ -2,17 +2,17 @@
 title: Linha do tempo 1 - Visualização do conteúdo até o fim
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Linha do tempo 1 - Visualização do conteúdo até o fim{#timeline-view-to-end-of-content}
+# Linha do tempo 1 - Visualização do conteúdo até o fim {#timeline-view-to-end-of-content}
 
 ## VOD, anúncios precedentes, pausa, buffer, visualização até o fim do conteúdo
 
-Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a linha do tempo correspondente das ações de um usuário. Apresentam-se seguidamente os pormenores de cada ação e os pedidos que a acompanham.
+Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a linha do tempo correspondente das ações de um usuário. Os pormenores de cada ação e os pedidos que a acompanham são apresentados a seguir.
 
 
 ![](assets/va_api_content.png)
@@ -23,7 +23,7 @@ Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a
 
 ## Detalhes da ação
 
-### Ação 1 - Iniciar sessão {#Action-1}
+### Ação 1 — Iniciar sessão {#Action-1}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -31,7 +31,7 @@ Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a
 
 **Detalhes da implementação**
 
-Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. <br/><br/>Ele retorna uma ID de sessão ( `{sid}`) para o cliente que é usado para identificar todas as chamadas de rastreamento subsequentes na sessão. O estado do reprodutor ainda não é "reproduzindo", mas "iniciando". <br/><br/>[Os parâmetros obrigatórios da sessão](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) devem ser incluídos no mapa `params` no corpo da solicitação. <br/><br/>No back-end, essa chamada gera uma chamada de inicialização do Adobe Analytics.
+Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. <br/><br/>Retorna uma ID de sessão (`{sid}`) ao cliente, usada para identificar todas as chamadas de rastreamento subsequentes na sessão. O estado do reprodutor ainda não é "reproduzindo", mas "iniciando". <br/><br/>[Os parâmetros obrigatórios da sessão](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) devem ser incluídos no mapa `params` no corpo da solicitação. <br/><br/>No back-end, essa chamada gera uma chamada de inicialização do Adobe Analytics.
 
 **Exemplo de corpo da solicitação**
 
@@ -57,7 +57,7 @@ Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. <br/><
 }
 ```
 
-### Ação 2 - Início do temporizador de ping {#Action-2}
+### Ação 2 — Início do temporizador de ping {#Action-2}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -65,9 +65,9 @@ Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. <br/><
 
 **Detalhes da implementação**
 
-Inicie o temporizador ping do aplicativo. O primeiro evento ping deve disparar 1 segundo se houver anúncios precedentes, 10 segundos se não houver.
+Inicie o temporizador de ping do aplicativo. O primeiro evento de ping deve disparar 1 segundo se houver anúncios precedentes, 10 segundos se não houver.
 
-### Ação 3 - Início da quebra de anúncio {#Action-3}
+### Ação 3 — Início de quebra de anúncio {#Action-3}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -93,7 +93,7 @@ Os anúncios somente podem ser rastreados em um ad break.
 }
 ```
 
-### Ação 4 - Início do anúncio {#Action-4}
+### Ação 4 — Início do anúncio {#Action-4}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -133,9 +133,9 @@ Comece a rastrear o primeiro anúncio precedente, que tem 15 segundos de duraç�
 }
 ```
 
-### Ação 5 - Ads {#Action-5}
+### Ação 5 — Pings de anúncios {#Action-5}
 
-#### Ação 5.1 - Anúncio ping 1 {#Action-5-1}
+#### Ação 5.1 — Ping de anúncio 1 {#Action-5-1}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -143,7 +143,7 @@ Comece a rastrear o primeiro anúncio precedente, que tem 15 segundos de duraç�
 
 **Detalhes da implementação**
 
-Faça o ping do backend a cada 1 segundo enquanto estiver dentro de um anúncio.
+Faça o ping do back-end a cada 1 segundo enquanto estiver dentro de um anúncio.
 
 **Exemplo de corpo da solicitação**
 
@@ -157,7 +157,7 @@ Faça o ping do backend a cada 1 segundo enquanto estiver dentro de um anúncio.
 }
 ```
 
-#### Ação 5.2 - Anúncio ping 2 {#Action-5-2}
+#### Ação 5.2 — Ping de anúncio 2 {#Action-5-2}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -165,7 +165,7 @@ Faça o ping do backend a cada 1 segundo enquanto estiver dentro de um anúncio.
 
 **Detalhes da implementação**
 
-Faça o ping do backend a cada 1 segundo enquanto estiver dentro de um anúncio.
+Faça o ping do back-end a cada 1 segundo enquanto estiver dentro de um anúncio.
 
 **Exemplo de corpo da solicitação**
 
@@ -179,7 +179,7 @@ Faça o ping do backend a cada 1 segundo enquanto estiver dentro de um anúncio.
 }
 ```
 
-#### Ação 5.3 - Anúncio ping 3 {#Action-5-3}
+#### Ação 5.3 — Ping de anúncio 3 {#Action-5-3}
 
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
@@ -188,7 +188,7 @@ Faça o ping do backend a cada 1 segundo enquanto estiver dentro de um anúncio.
 
 **Detalhes da implementação**
 
-Faça o ping do backend a cada 1 segundo enquanto estiver dentro de um anúncio.
+Faça o ping do back-end a cada 1 segundo enquanto estiver dentro de um anúncio.
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ Faça o ping do backend a cada 1 segundo enquanto estiver dentro de um anúncio.
 }
 ```
 
-### Ação 6 - Anúncio concluído {#Action-6}
+### Ação 6 — Anúncio concluído {#Action-6}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -229,7 +229,7 @@ Rastreie o final do primeiro anúncio precedente.
 }
 ```
 
-### Ação 7 - Início do anúncio {#Action-7}
+### Ação 7 — Início do anúncio {#Action-7}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -264,7 +264,7 @@ Rastreie o início do segundo anúncio precedente, que tem 7 segundos de duraç�
 }
 ```
 
-### Ação 8 - Ads {#Action-8}
+### Ação 8 — Pings de anúncios {#Action-8}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -272,7 +272,7 @@ Rastreie o início do segundo anúncio precedente, que tem 7 segundos de duraç�
 
 **Detalhes da implementação**
 
-Faça o ping do backend a cada 1 segundo.
+Envie um ping ao back-end a cada 1 segundo.
 
 **Exemplo de corpo da solicitação**
 
@@ -286,7 +286,7 @@ Faça o ping do backend a cada 1 segundo.
 }
 ```
 
-### Ação 9 - Anúncio concluído {#Action-9}
+### Ação 9 — Anúncio concluído {#Action-9}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -308,7 +308,7 @@ Rastreie o final do segundo anúncio precedente.
 }
 ```
 
-### Ação 10 - Conclusão do intervalo de anúncios {#Action-10}
+### Ação 10 — Pausa do anúncio concluída {#Action-10}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -330,7 +330,7 @@ O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado "repr
 }
 ```
 
-### Ação 11 - Reproduzir conteúdo {#Action-11}
+### Ação 11 — Reproduzir conteúdo {#Action-11}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -352,7 +352,7 @@ Depois do evento `adBreakComplete`, coloque o reprodutor no estado "reproduzindo
 }
 ```
 
-### Ação 12 - Ping {#Action-12}
+### Ação 12 — Ping {#Action-12}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -374,7 +374,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Ação 13 - Início do buffer {#Action-13}
+### Ação 13 — Início do buffer {#Action-13}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -395,7 +395,7 @@ Rastreie o movimento do reprodutor para o estado de "buffering".
 }
 ```
 
-### Ação 14 - Fim do buffer {#Action-14}
+### Ação 14 — Fim do buffer {#Action-14}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -403,7 +403,7 @@ Rastreie o movimento do reprodutor para o estado de "buffering".
 
 **Detalhes da implementação**
 
-O buffering termina após 3 segundos; coloque o reprodutor no estado "reproduzindo". Você deve enviar outro evento de rastreamento de reprodução a partir do buffering.  **A`play`chamada após uma`bufferStart`infere uma chamada "bufferEnd" para o back-end,** portanto não há necessidade de um `bufferEnd` evento.
+O buffering termina após 3 segundos; coloque o reprodutor no estado "reproduzindo". Você deve enviar outro evento de rastreamento de reprodução a partir do buffering.  **A chamada`play`depois de um`bufferStart`infere uma chamada de "bufferEnd" ao back-end,** assim, um evento `bufferEnd` não é necessário.
 
 **Exemplo de corpo da solicitação**
 
@@ -417,7 +417,7 @@ O buffering termina após 3 segundos; coloque o reprodutor no estado "reproduzin
 }
 ```
 
-### Ação 15 - Ping {#Action-15}
+### Ação 15 — Ping {#Action-15}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -438,7 +438,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Ação 16 - Início do intervalo de anúncios {#Action-16}
+### Ação 16 — Início de quebra de anúncio {#Action-16}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -465,7 +465,7 @@ Anúncio intermediário de 8 segundos: envie `adBreakStart` .
 }
 ```
 
-### Ação 17 - Início do anúncio {#Action-17}
+### Ação 17 — Início do anúncio {#Action-17}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -500,7 +500,7 @@ Rastreie o anúncio intermediário.
 }
 ```
 
-### Ação 18 - Ad ping {#Action-18}
+### Ação 18 — Ping do anúncio {#Action-18}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -521,7 +521,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Ação 19 - Anúncio concluído {#Action-19}
+### Ação 19 — Anúncio concluído {#Action-19}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -543,7 +543,7 @@ O anúncio intermediário está concluído.
 }
 ```
 
-### Ação 20 - Conclusão do intervalo de anúncios {#Action-20}
+### Ação 20 — Pausa do anúncio concluída {#Action-20}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -565,7 +565,7 @@ O ad break está concluído.
 }
 ```
 
-### Ação 21 - Ping {#Action-21}
+### Ação 21 — Ping {#Action-21}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -587,7 +587,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Ação 22 - Pausar {#Action-22}
+### Ação 22 — Pausar {#Action-22}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -609,7 +609,7 @@ A ação do usuário move o estado de reprodução para "pausado".
 }
 ```
 
-### Ação 23 - Ping {#Action-23}
+### Ação 23 — Ping {#Action-23}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -630,7 +630,7 @@ Envie um ping ao back-end a cada 10 segundos. O reprodutor ainda está no estado
 }
 ```
 
-### Ação 24 - Reproduzir {#Action-24}
+### Ação 24 — Reproduzir {#Action-24}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -638,7 +638,7 @@ Envie um ping ao back-end a cada 10 segundos. O reprodutor ainda está no estado
 
 **Detalhes da implementação**
 
-Mova o estado de reprodução para "reproduzindo".  **A`play`chamada após uma`pauseStart`infere uma chamada de "retomada" para o back-end,** portanto não há necessidade de um `resume` evento.
+Mova o estado de reprodução para "reproduzindo".  **A chamada`play`depois de um`pauseStart`infere uma chamada de "retomada" ao back-end,** assim, um evento `resume` não é necessário.
 
 **Exemplo de corpo da solicitação**
 
@@ -651,7 +651,7 @@ Mova o estado de reprodução para "reproduzindo".  **A`play`chamada após uma`p
 }
 ```
 
-### Ação 25 - Ping {#Action-25}
+### Ação 25 — Ping {#Action-25}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -672,7 +672,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Ação 26 - Sessão concluída {#Action-26}
+### Ação 26 — Sessão concluída {#Action-26}
 
 | Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
 | --- | :---: | :---: | --- |
@@ -695,5 +695,5 @@ Envie `sessionComplete` ao back-end para indicar que o usuário terminou de assi
 
 >[!NOTE]
 >
->**Nenhum evento de busca? -** Não há suporte explícito na API da coleção de mídia para eventos `seekStart` ou `seekComplete`. Isso ocorre porque determinados reprodutores geram um grande número desses eventos quando o usuário final movimenta o indicador de reprodução e várias centenas de usuários podem congestionar facilmente a largura de banda da rede de um serviço de back-end. A Adobe resolve o suporte explícito a eventos de busca computando a duração do heartbeat com base no carimbo de data e hora do dispositivo, em vez de na posição do indicador de reprodução.
+>**Nenhum evento de busca? -** Não há suporte explícito na API Media Collection para eventos `seekStart` ou `seekComplete`. Isso ocorre porque determinados reprodutores geram um grande número desses eventos quando o usuário final movimenta o indicador de reprodução e várias centenas de usuários podem congestionar facilmente a largura de banda da rede de um serviço de back-end. A Adobe resolve o suporte explícito a eventos de busca computando a duração do heartbeat com base no carimbo de data e hora do dispositivo, em vez de na posição do indicador de reprodução.
 
