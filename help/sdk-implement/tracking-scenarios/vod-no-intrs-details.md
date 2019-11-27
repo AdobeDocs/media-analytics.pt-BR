@@ -1,29 +1,29 @@
 ---
-title: Reprodução VOD sem anúncios
-description: Um exemplo de rastreamento de reprodução VOD sem anúncios.
-uuid: ee2a1b79-2c2f-42e1-8e81-b62bdd0d8cb
-translation-type: tm+mt
+title: Reprodução de VOD sem anúncios
+description: Um exemplo de rastreamento de reprodução de VOD sem anúncios.
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reprodução VOD sem anúncios{#vod-playback-with-no-ads}
+# Reprodução de VOD sem anúncios {#vod-playback-with-no-ads}
 
 ## Cenário {#scenario}
 
-Este cenário inclui um ativo VOD sem anúncios e é reproduzido uma vez do início ao fim.
+Este cenário inclui um ativo de VOD sem anúncios e é reproduzido uma vez do início ao fim.
 
 | Acionador | Método do Heartbeat | Chamadas de rede | Notas   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção Reproduzir ou um evento de reprodução automática. |
-| Primeiro quadro da mídia | `trackPlay` | Heartbeat Content Play | Esse método dispara o timer; a partir desse ponto, as pulsações serão enviadas a cada 10 segundos durante toda a reprodução. |
+| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção Reproduzir ou um evento de reprodução automática. |
+| Primeiro quadro do Media | `trackPlay` | Heartbeat Content Play | Esse método dispara o timer; a partir desse ponto, as pulsações serão enviadas a cada 10 segundos durante toda a reprodução. |
 | Reproduções de conteúdo |  | Content Heartbeats |  |
 | O conteúdo é concluído | `trackComplete` | Heartbeat Content Complete | *Concluído* significa que o fim do indicador de reprodução foi atingido. |
 
 ## Parâmetros {#parameters}
 
-Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são vistos nas chamadas de Adobe Analytics `Content Start`Content Start. Há muitos parâmetros que a Adobe usa para preencher os diversos relatórios de mídia, mas somente os parâmetros mais importantes estão listados na tabela a seguir:
+Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são vistos nas chamadas de Adobe Analytics `Content Start`Content Start. A Adobe usa diversos parâmetros para preencher os diferentes relatórios de mídia, mas apenas os mais importantes estão listados na seguinte tabela:
 
 ### Heartbeat Content Start
 
@@ -31,15 +31,15 @@ Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são 
 |---|---|---|
 | `s:sc:rsid` | &lt;ID do conjunto de relatórios da Adobe&gt; |  |
 | `s:sc:tracking_server` | &lt;URL do servidor de rastreamento do Analytics&gt; |  |
-| `s:user:mid` | deve ser configurado | Should match the mid value on the `Adobe Analytics Content Start` call. |
+| `s:user:mid` | deve ser configurado | Deve corresponder ao valor médio da chamada `Adobe Analytics Content Start`. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;Seu nome de mídia&gt; |  |
-| `s:meta:*` | opcional | Metadados personalizados definidos na mídia. |
+| `s:meta:*` | opcional | Metadados personalizados que são configurados na mídia. |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. Todos os outros parâmetros ainda devem existir.
+Esses parâmetros devem ser quase idênticos à chamada de `Heartbeat Content Start`, mas a principal diferença é o parâmetro `s:event:type`. Todos os outros parâmetros ainda devem existir.
 
 | Parâmetro | Valor | Notas   |
 |---|---|---|
@@ -48,7 +48,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## Content heartbeats {#content-heartbeats}
 
-Durante a reprodução da mídia, um temporizador envia pelo menos uma pulsação a cada 10 segundos. Essas pulsações contêm informações sobre reprodução, anúncios, buffering e muito mais. O conteúdo exato de cada heartbeat vai além do escopo desse documento, mas a questão crítica é que as pulsações são disparadas consistentemente durante toda a reprodução.
+Durante a reprodução da mídia, um temporizador envia ao menos um heartbeat a cada 10 segundos. Essas pulsações contêm informações sobre reprodução, anúncios, buffering e muito mais. O conteúdo exato de cada heartbeat vai além do escopo desse documento, mas a questão crítica é que as pulsações são disparadas consistentemente durante toda a reprodução.
 
 Em heartbeats de conteúdo, procure pelos seguintes parâmetros:
 
