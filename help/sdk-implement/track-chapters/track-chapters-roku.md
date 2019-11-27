@@ -1,28 +1,28 @@
 ---
 title: Rastrear capítulos e segmentos no Roku
-description: Este tópico descreve a implementação do monitoramento de capítulo e segmento usando o SDK de mídia no Roku.
+description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK do Media no Roku.
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastrear capítulos e segmentos no Roku{#track-chapters-and-segments-on-roku}
+# Rastrear capítulos e segmentos no Roku {#track-chapters-and-segments-on-roku}
 
 >[!IMPORTANT]
 >
 >As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Implementação de metadados de anúncio padrão
+## Implementar Metadados de publicidade padrão
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
-   `ChapterObject` referência de rastreamento de capítulo:
+   Referência de rastreamento de capítulo `ChapterObject`:
 
    >[!NOTE]
    >
-   >Essas variáveis só são necessárias se você estiver planejando rastrear capítulos.
+   >Essas variáveis somente são necessárias se você estiver planejando rastrear capítulos.
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
