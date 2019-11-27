@@ -1,14 +1,14 @@
 ---
 title: Rastrear capítulos e segmentos no iOS
-description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK de mídia no iOS.
+description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK do Media no iOS.
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastrear capítulos e segmentos no iOS{#track-chapters-and-segments-on-ios}
+# Rastrear capítulos e segmentos no iOS {#track-chapters-and-segments-on-ios}
 
 >[!IMPORTANT]
 >
@@ -16,11 +16,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
-   `ChapterObject` referência de rastreamento de capítulo:
+   Referência de rastreamento de capítulo `ChapterObject`:
 
    >[!NOTE]
    >
-   >Essas variáveis só são necessárias se você estiver planejando rastrear capítulos.
+   >Essas variáveis somente são necessárias se você estiver planejando rastrear capítulos.
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
