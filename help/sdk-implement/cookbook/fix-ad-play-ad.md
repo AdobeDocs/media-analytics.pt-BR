@@ -1,30 +1,30 @@
 ---
-title: Resolução da reprodução principal que aparece entre anúncios
-description: Como lidar com chamadas principais inesperadas:reproduzir entre anúncios.
+title: Resolver a ocorrência de main:play entre anúncios
+description: Como lidar com chamadas inesperadas de main:play entre anúncios.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Resolver a ocorrência de main:play entre anúncios{#resolving-main-play-appearing-between-ads}
+# Resolver a ocorrência de main:play entre anúncios {#resolving-main-play-appearing-between-ads}
 
 ## PROBLEMA
 
-Em alguns cenários de rastreamento de anúncios, você pode encontrar chamadas `main:play` que ocorrem inesperadamente entre o fim de um anúncio e o início do próximo anúncio. If the delay between the ad complete call and the next ad start call is greater than 250 milliseconds, the Media SDK will fall back to sending `main:play` calls. Se esse recurso a `main:play` ocorrer durante um ad break precedente, a métrica de início de conteúdo poderá ser definida antecipadamente.
+Em alguns cenários de rastreamento de anúncios, você pode encontrar chamadas `main:play` que ocorrem inesperadamente entre o fim de um anúncio e o início do próximo anúncio. Se o atraso entre a chamada de conclusão do anúncio e a chamada de início do próximo anúncio for maior que 250 milissegundos, o SDK do Media recorrerá ao envio de chamadas `main:play`. Se esse recurso a `main:play` ocorrer durante um ad break precedente, a métrica de início de conteúdo poderá ser definida antecipadamente.
 
 Uma lacuna entre anúncios, como descrito acima, é interpretada pelo SDK do Media como conteúdo principal porque não há sobreposição a nenhum conteúdo de anúncio. O SDK do Media não tem nenhuma informação de anúncio definida nele e o reprodutor está no estado de execução. Se não houver informações de anúncio e o reprodutor estiver no estado de execução, o SDK do Media creditará a duração da lacuna em relação ao conteúdo principal por padrão. Ele não poderá creditar a duração da reprodução em relação às informações de anúncio nulas.
 
 ## IDENTIFICAÇÃO
 
-Ao usar a Depuração da Adobe ou um sniffer de pacotes de rede como Charles, se você vir as seguintes chamadas Heartbeat nessa ordem durante uma pausa de anúncio precedente:
+Ao usar o Adobe Debug ou um farejador de pacotes de rede, como o Charles, se você vir as seguintes chamadas de heartbeat nesta ordem durante um ad break precedente:
 
 * Início da sessão: `s:event:type=start` &amp; `s:asset:type=main`
 * Início do anúncio: `s:event:type=start` &amp; `s:asset:type=ad`
 * Reprodução do anúncio: `s:event:type=play` &amp; `s:asset:type=ad`
 * Anúncio concluído: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Reprodução do conteúdo principal: `s:event:type=play` &amp; `s:asset:type=main`**(inesperado)**
+* Reprodução do conteúdo principal: `s:event:type=play` &amp; `s:asset:type=main` **(inesperado)**
 
 * Início do anúncio: `s:event:type=start` &amp; `s:asset:type=ad`
 * Reprodução do anúncio: `s:event:type=play` &amp; `s:asset:type=ad`
@@ -52,29 +52,29 @@ Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depoi
    >Chame isso somente se o anúncio anterior não tiver sido concluído. Considere um valor booleano para manter um estado "`isinAd`" para o anúncio anterior.
 
 * Crie a instância do objeto de anúncio para o ativo de anúncio: por exemplo, `adObject`.
-* Populate the ad metadata, `adCustomMetadata`.
-* Chama `trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata);`.
-* Call `trackPlay()` if this is the first ad in a pre-roll ad break.
+* Preencha os metadados do anúncio, `adCustomMetadata`.
+* Chame `trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata);`.
+* Chame `trackPlay()` se este for o primeiro anúncio em um ad break precedente.
 
 **Em cada conclusão de ativo de anúncio:**
 
-* **Não efetuar uma chamada**
+* **Não faça uma chamada**
 
    >[!NOTE]
    >
-   >If the application knows it is the last ad in the ad break, call `trackEvent:AdComplete` here and skip setting `trackEvent:AdComplete` in the `trackEvent:AdBreakComplete`
+   >Se o aplicativo souber que se trata do último anúncio no ad break, chame `trackEvent:AdComplete` aqui e ignore a configuração de `trackEvent:AdComplete` no `trackEvent:AdBreakComplete`
 
 **Ao ignorar o anúncio:**
 
-* Chama `trackEvent(MediaHeartbeat.Event.AdSkip);`.
+* Chame `trackEvent(MediaHeartbeat.Event.AdSkip);`.
 
 **Na conclusão do ad break:**
 
-* **Chama`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **Chame`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
-   >If this step is already performed above as part of the last `trackEvent:AdComplete` call then this can be skipped.
+   >Se esta etapa já tiver sido realizada como parte da última chamada `trackEvent:AdComplete`, isso poderá ser ignorado.
 
-* Chama `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
+* Chame `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
 
