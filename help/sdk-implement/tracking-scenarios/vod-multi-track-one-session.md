@@ -1,20 +1,20 @@
 ---
-title: Um rastreador VOD para várias sessões
-description: Um exemplo de como usar um rastreador para rastrear várias sessões usando o SDK de mídia.
+title: Um rastreador de VOD para várias sessões
+description: Um exemplo de como usar um rastreador para rastrear várias sessões usando o SDK do Media.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Um rastreador VOD para várias sessões{#vod-one-tracker-for-multiple-sessions}
+# Um rastreador de VOD para várias sessões {#vod-one-tracker-for-multiple-sessions}
 
 ## Cenário {#scenario}
 
 Neste cenário, a instância `MediaHeartbeat` é usada para criar duas sessões separadas em sequência.
 
-Esse cenário é igual ao cenário [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
+Esse cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
 ## Parâmetros {#parameters}
 
@@ -22,7 +22,7 @@ Esse cenário é igual ao cenário [Reprodução VOD sem anúncios](/help/sdk-im
 
 | Parâmetro | Valor | Notas   |
 | --- | --- | --- |
-| `s:event:sid` | ID exclusiva da sessão | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
+| `s:event:sid` | ID exclusiva da sessão | Uma ID de sessão exclusiva que existe em todas as chamadas de rede do heartbeat até `trackSessionEnd` |
 
 ## Código de exemplo {#sample-code}
 
@@ -30,7 +30,7 @@ Esse cenário é igual ao cenário [Reprodução VOD sem anúncios](/help/sdk-im
 
 ### Android {#android}
 
-To create two instances of `MediaHeartbeat` for two media players, set up the following code:
+Para criar duas instâncias de `MediaHeartbeat` para dois reprodutores de mídia, configure o seguinte código:
 
 ```java
 public class MediaAnalyticsProvider implements MediaHeartbeatDelegate { 
@@ -139,7 +139,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+Para exibir a segunda sessão, você pode usar a mesma instância `MediaAnalyticsProvider` (`MediaHeartbeat`) da primeira sessão, só que para uma nova sessão:
 
 ```java
 // Set up mediaObject 
@@ -185,7 +185,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS {#ios}
 
-To create two instances of `MediaHeartbeat` for two media players, enter the following:
+Para criar duas instâncias de `MediaHeartbeat` para dois reprodutores de mídia, insira:
 
 ```
 @interface MediaAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -291,7 +291,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+Para exibir a segunda sessão, você pode usar a mesma instância `MediaAnalyticsProvider` (`MediaHeartbeat`) da primeira sessão, só que para uma nova sessão:
 
 ```
 // Set up mediaObject 
