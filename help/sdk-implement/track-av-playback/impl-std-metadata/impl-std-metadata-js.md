@@ -1,14 +1,14 @@
 ---
 title: Implementar metadados padrão no JavaScript
-description: Descreve a configuração de metadados de vídeo e anúncio padrão a serem enviados com chamadas de rastreamento em aplicativos do navegador (JS).
+description: Descreve a configuração de metadados de vídeo e anúncios padrão a serem enviados com chamadas de rastreamento em aplicativos do navegador (JS).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Implementar metadados padrão no JavaScript{#implement-standard-metadata-on-javascript}
+# Implementar metadados padrão no JavaScript {#implement-standard-metadata-on-javascript}
 
 ## Constante de metadados
 
