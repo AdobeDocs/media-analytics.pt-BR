@@ -1,38 +1,38 @@
 ---
 title: Visão geral
-description: Como implementar o rastreamento de capítulo e segmento com o SDK de mídia.
+description: Como implementar o rastreamento de capítulo e segmento com o SDK do Media.
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Visão geral{#overview}
+# Visão geral {#overview}
 
 >[!IMPORTANT]
 >
 >As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-O rastreamento de capítulo e segmento está disponível para capítulos ou segmentos de mídia personalizados. Alguns usos comuns do rastreamento de capítulo são definir segmentos personalizados com base no conteúdo de mídia (como entradas de beisebol) ou definir segmentos de conteúdo entre quebras de anúncios. Chapter tracking is **not** required for core media tracking implementations.
+O rastreamento de capítulos e segmentos está disponível para capítulos ou segmentos de mídia definidos de forma personalizada. Alguns usos comuns para o rastreamento de capítulos são definir segmentos personalizados com base no conteúdo de mídia (como entradas de beisebol) ou definir segmentos de conteúdo entre ad breaks. O rastreamento de capítulos **não** é necessário para implementações de heartbeat de mídia principais.
 
-O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítulo e capítulos ignorados. Você pode usar a API do player de mídia com lógica de segmentação personalizada para identificar eventos de capítulo e preencher as variáveis de capítulo necessárias e opcionais.
+O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítulo e capítulos ignorados. Você pode usar a API do reprodutor de mídia com lógica de segmentação personalizada para identificar eventos do reprodutor e para preencher as variáveis de capítulo obrigatórias e opcionais.
 
-## Eventos do player
+## Eventos do reprodutor
 
 ### No início do capítulo
 
 * Criar a instância do objeto de anúncio para o capítulo, `chapterObject`
-* Populate the chapter metadata, `chapterCustomMetadata`
-* Chama `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);`
+* Preencha os metadados do capítulo, `chapterCustomMetadata`
+* Chame `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);`
 
 ### Na conclusão do capítulo
 
-* Chama `trackEvent(MediaHeartbeat.Event.ChapterComplete);`
+* Chame `trackEvent(MediaHeartbeat.Event.ChapterComplete);`
 
 ### Ao ignorar o capítulo
 
-* Chama `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
+* Chame `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
 ## Implementar o rastreamento de capítulo {#implement-chapter-tracking}
 
@@ -42,7 +42,7 @@ O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítu
 
    >[!NOTE]
    >
-   >Essas variáveis só são necessárias se você estiver planejando rastrear capítulos.
+   >Essas variáveis somente são necessárias se você estiver planejando rastrear capítulos.
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
@@ -57,7 +57,7 @@ O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítu
 1. Se a reprodução do capítulo não tiver sido concluída porque o usuário optou por ignorar o capítulo (por exemplo, se o usuário sair do limite do capítulo), chame o evento `ChapterSkip` na instância MediaHeartbeat.
 1. Se houver capítulos adicionais, repita as etapas de 1 até 5.
 
-O código de amostra a seguir usa o JavaScript 2.x SDK para um player de mídia HTML5. Use esse código com o código principal de reprodução de mídia.
+O código de exemplo a seguir usa o SDK 2.x do JavaScript para um reprodutor de mídia HTML5. Você deve usar esse código com o código de reprodução de mídia principal.
 
 ```js
 /* Call on chapter start */ 
