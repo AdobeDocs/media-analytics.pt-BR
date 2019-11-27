@@ -2,17 +2,17 @@
 title: Migração do Marco para Link personalizado
 description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Migração do Marco para Link personalizado{#migrating-from-milestone-to-custom-link}
+# Migração do Marco para Link personalizado {#migrating-from-milestone-to-custom-link}
 
 ## Visão geral {#overview}
 
-Os principais conceitos de medição de vídeo são os mesmos para o rastreamento de Marco e Link personalizado, que estão realizando eventos do reprodutor de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores de reprodutores e mapeá-los para variáveis&#x200B;de análise. A abordagem de Link personalizado deve ser considerada como uma diminuição e simplificação da implementação e dos dados coletados. Com a solução de Link personalizado, nenhuma variável ou método é predefinido para a medição de vídeo, isso requer uma configuração personalizada completa. Deve ser possível atualizar o código de evento do reprodutor para apontar as chamadas de rastreamento de link personalizado para eventos básicos do reprodutor, como início e conclusão. Consulte o [guia de implementação do Link personalizado](/help/measurement-options/cl-in-aa/cl-impl-guide.md) e o [Rastreamento de link manual usando um código de link personalizado](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) para obter mais detalhes.
+Os principais conceitos de medição de vídeo são os mesmos para o rastreamento de Marco e Link personalizado, que estão realizando eventos do reprodutor de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores de reprodutores e mapeá-los para variáveis&#x200B;de análise. A abordagem de Link personalizado deve ser considerada como uma diminuição e simplificação da implementação e dos dados coletados. Com a solução de Link personalizado, nenhuma variável ou método é predefinido para a medição de vídeo, isso requer uma configuração personalizada completa. Deve ser possível atualizar o código de evento do reprodutor para apontar as chamadas de rastreamento de link personalizado para eventos básicos do reprodutor, como início e conclusão. Consulte o [guia de implementação do Link personalizado](/help/measurement-options/cl-in-aa/cl-impl-guide.md) e o [Rastreamento de link manual usando um código de link personalizado](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/link_manual.html) para obter mais detalhes.
 
 As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link personalizado.
 
@@ -83,7 +83,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 </th>
 <th>Link personalizado
 </th>
-<th>Link personalizado  Sintaxe
+<th>Link personalizado Sintaxe
 </th>
 </tr>
 </thead>
@@ -95,7 +95,8 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData = true;
+  trackUsingContextData 
+  = true;
 </pre>
 </td>
 <td>
@@ -103,8 +104,11 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, contextData.video.name'; 
-s.contextData[‘video.name'] = mediaName;
+s.linkTrackVars
+  = 'events, 
+contextData.video.name’; 
+s.contextData[‘video.name']
+  = mediaName;
 </pre>
 </td>
 </tr>
@@ -115,17 +119,30 @@ Media.contextDataMapping
 <td>
 <pre>
 s.Media.
-  contextDataMapping = { "a.media.name":
-    "eVar2,prop2", "a.media.segment":
-    "eVar3", "a.contentType":
-    "eVar1", "a.media.timePlayed":
-    "event3", "a.media.view":
-    "event1", "a.media.segmentView":
-    "event2", "a.media.complete":
-    "event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
+  contextDataMapping = {
+  "a.media.name":
+    "eVar2,prop2",
+  "a.media.segment":
+    "eVar3",
+  "a.contentType":
+    "eVar1",
+  "a.media.timePlayed":
+    "event3",
+  "a.media.view":
+    "event1",
+  "a.media.segmentView":
+    "event2",
+  "a.media.complete":
+    "event7",
+  "a.media.milestones":{
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>O mapeamento de dados de contexto para eVars, as propriedades e os eventos agora são concluídos por meio de regras de processamento.
 </td>
@@ -136,7 +153,12 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
+s.Media.trackVars
+  = "events,
+     prop2,
+     eVar1,
+     eVar2,
+     eVar3";
 </pre>
 </td>
 <td>
@@ -144,8 +166,16 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.
-       video.name, contextData.
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar13,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
        video.view';
 </pre>
 </td>
@@ -156,7 +186,14 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
+s.Media.trackEvents
+  = "event1,
+     event2,
+     event3,
+     event4,
+     event5,
+     event6,
+     event7"
 </pre>
 </td>
 <td>
@@ -164,7 +201,8 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s.linkTrackEvents = 'event2';
+s.linkTrackEvents
+  = 'event2';
 </pre>
 </td>
 </tr>
@@ -180,7 +218,7 @@ s.linkTrackEvents = 'event2';
 </th>
 <th>Link personalizado
 </th>
-<th>Link personalizado  Sintaxe
+<th>Link personalizado Sintaxe
 </th>
 </tr>
 </thead>
@@ -192,7 +230,8 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData = true;
+  trackUsingContextData 
+  = true;
 </pre>
 </td>
 <td>
@@ -200,8 +239,11 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, contextData.video.name'; 
-s.contextData[‘video.name'] = mediaName;
+s.linkTrackVars
+  = 'events, 
+contextData.video.name’; 
+s.contextData[‘video.name']
+  = mediaName;
 </pre>
 </td>
 </tr>
@@ -211,10 +253,23 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view":"event1", "a.media.segment Exibir":"event2", "a.media.complete":"event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
+s.Media.contextDataMapping = {
+  "a.media.name":"eVar2,prop2",
+  "a.media.segment":"eVar3",
+  "a.contentType":"eVar1",
+  "a.media.timePlayed":"event3",
+  "a.media.view":"event1",
+  "a.media.segmentView":"event2",
+  "a.media.complete":"event7",
+  "a.media.milestones":{
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>O mapeamento de dados de contexto para eVars, as propriedades e os eventos agora são concluídos por meio de regras de processamento.
 </td>
@@ -225,7 +280,12 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
+s.Media.trackVars
+  = "events,
+     prop2,
+     eVar1,
+     eVar2,
+     eVar3";
 </pre>
 </td>
 <td>
@@ -233,8 +293,16 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.
-       video.name, contextData.
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar13,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
        video.view';
 </pre>
 </td>
@@ -245,7 +313,14 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
+s.Media.trackEvents
+  = "event1,
+     event2,
+     event3,
+     event4,
+     event5,
+     event6,
+     event7"
 </pre>
 </td>
 <td>
@@ -253,7 +328,8 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s.linkTrackEvents = 'event2';
+s.linkTrackEvents
+  = 'event2';
 </pre>
 </td>
 </tr>
@@ -271,7 +347,7 @@ s.linkTrackEvents = 'event2';
 </th>
 <th>Link personalizado
 </th>
-<th>Link personalizado  Sintaxe
+<th>Link personalizado Sintaxe
 </th>
 </tr>
 </thead>
@@ -285,7 +361,7 @@ Media.autoTrack
 s.Media.autoTrack = true;
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -299,7 +375,7 @@ Media.autoTrackNetStreams
 s.Media.autoTrackNetStreams = true
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -313,7 +389,7 @@ Media.completeByCloseOffset
 s.Media.completeByCloseOffset = true
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -325,10 +401,11 @@ Media.completeCloseOffsetThreshold
 <td>
 <pre>
 s.Media.
-  completeCloseOffsetThreshold = 1
+  completeCloseOffsetThreshold
+    = 1
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -347,7 +424,8 @@ Definir eVar ou variável dos dados de contexto na chamada de link
 </td>
 <td>
 <pre>
-s.contextData['video.player'] ="CustomPlayer Name";
+s.contextData['video.player']
+  = ”CustomPlayer Name”;
 </pre>
 </td>
 </tr>
@@ -360,7 +438,7 @@ Media.trackSeconds
 s.Media.trackSeconds = 15
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -374,7 +452,7 @@ Media.trackMilestones
 s.Media.trackMilestones = "25,50,75";
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -385,10 +463,11 @@ Media.trackOffsetMilestones
 </td>
 <td>
 <pre>
-s.Media.trackOffsetMilestones = "20,40,60";
+s.Media.trackOffsetMilestones 
+  = "20,40,60";
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -402,7 +481,7 @@ Media.segmentByMilestones
 s.Media.segmentByMilestones = true;
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -414,10 +493,11 @@ Media.segmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  segmentByOffsetMilestones = true;
+  segmentByOffsetMilestones
+  = true;
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -436,7 +516,7 @@ s.Media.
 </th>
 <th>Link personalizado
 </th>
-<th>Link personalizado  Sintaxe
+<th>Link personalizado Sintaxe
 </th>
 </tr>
 </thead>
@@ -450,7 +530,7 @@ Media.adTrackSeconds
 s.Media.adTrackSeconds = 15 
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -464,7 +544,7 @@ Media.adTrackMilestones
 s.Media.adTrackMilestones = "25,50,75";
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -476,10 +556,11 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adTrackOffsetMilestones = "20,40,60";
+  adTrackOffsetMilestones 
+    = "20,40,60";
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -491,10 +572,11 @@ Media.adSegmentByMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByMilestones = true;
+  adSegmentByMilestones
+    = true;
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -506,10 +588,11 @@ Media.adSegmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByOffsetMilestones = true;
+  adSegmentByOffsetMilestones
+    = true;
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -528,7 +611,7 @@ s.Media.
 </th>
 <th>Link personalizado
 </th>
-<th>Link personalizado  Sintaxe
+<th>Link personalizado Sintaxe
 </th>
 </tr>
 </thead>
@@ -543,28 +626,44 @@ s.Media.open(mediaName,mediaLength,mediaPlayerName)
 <td>s.tl()</td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.video.name, contextData.video.view';
-s.linkTrackEvents = 'event2';
-s.prop10 = mediaName;
-s.eVar10 = mediaName;
-s.eVar12 = "video";
-s.eVar15 = mediaPlayerName;
-s.events = 'event2';
-s.contextData['video.name'] = mediaName;
-s.contextData['video.view'] = 'true';
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar15,
+     contextData.video.name,
+     contextData.video.view';
+s.linkTrackEvents 
+  = 'event2';
+s.prop10 
+  = mediaName;
+s.eVar10 
+  = mediaName;
+s.eVar12 
+  = "video";
+s.eVar15 
+  = mediaPlayerName;
+s.events 
+  = 'event2';
+s.contextData['video.name'] 
+  = mediaName;
+s.contextData['video.view'] 
+  = 'true';
 s.tl(this,'o','Video Start');
 </pre>
 </td>
 </tr>
 <tr>
 <td>mediaName</td>
-<td><b></b> mediaName: (obrigatório) O nome do vídeo como você deseja que ele apareça nos relatórios de vídeo.</td>
+<td><b>mediaName:</b> (obrigatório) o nome do vídeo conforme você quer que ele seja exibido nos relatórios de vídeo.</td>
 <td>Definir eVar ou variável dos dados de contexto na chamada de link</td>
 <td>
 <pre>
 s.prop10 = mediaName;
 s.eVar10 = mediaName;
-s.contextData['video.name'] = mediaName;
+s.contextData['video.name']
+  = mediaName;
 </pre>
 </td>
 </tr>
@@ -573,14 +672,15 @@ s.contextData['video.name'] = mediaName;
 mediaLength
 </td>
 <td>
-<b></b> mediaLength: (obrigatório) A duração dos segundos do vídeo.
+<b>mediaLength:</b> (obrigatório) a duração do vídeo, em segundos.
 </td>
 <td>
 Definir eVar ou variável dos dados de contexto na chamada de link
 </td>
 <td>
 <pre>
-s.contextData['video.length'] ="90";
+s.contextData['video.length']
+  = ”90”;
 </pre>
 </td>
 </tr>
@@ -589,14 +689,15 @@ s.contextData['video.length'] ="90";
 mediaPlayerName
 </td>
 <td>
-<b></b> mediaPlayerName: (obrigatório) O nome do player de mídia usado para exibir o vídeo, conforme você deseja que ele apareça nos relatórios de vídeo.
+<b>mediaPlayerName:</b> (obrigatório) o nome do reprodutor de mídia utilizado para exibir o vídeo, conforme você quer que ele seja exibido nos relatórios de vídeo.
 </td>
 <td>
 Definir eVar ou variável dos dados de contexto na chamada de link
 </td>
 <td>
 <pre>
-s.contextData['video.player'] ="CustomPlayer Name";
+s.contextData['video.player']
+  = ”CustomPlayer Name”;
 </pre>
 </td>
 </tr>
@@ -609,14 +710,14 @@ Media.openAd
 s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível</td>
 </tr>
 <tr>
 <td>name</td>
-<td><b></b> name: (obrigatório) O nome ou a ID do anúncio.</td>
-<td>N/A</td>
+<td><b>name:</b> (obrigatório) o nome ou a ID do anúncio.</td>
+<td>N/D</td>
 <td>Não disponível</td>
 </tr>
 <tr>
@@ -624,9 +725,9 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 length
 </td>
 <td>
-<b></b> comprimento: (obrigatório) A duração do anúncio.
+<b>length:</b> (obrigatório) a duração do anúncio.
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -636,9 +737,9 @@ length
 playerName
 </td>
 <td>
-<b></b> playerName: (obrigatório) O nome do player de mídia usado para exibir o anúncio.
+<b>playerName:</b> (obrigatório) o nome do reprodutor de mídia utilizado para exibir o anúncio.
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -650,7 +751,7 @@ parentName
 <td>
 <b>parentName:</b> o nome ou a ID do conteúdo principal no qual o anúncio está incorporado.
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -662,7 +763,7 @@ parentPod
 <td>
 <b>parentPod:</b> a posição, no conteúdo principal, de reprodução do anúncio.
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -674,7 +775,7 @@ parentPodPosition
 <td>
 <b>parentPodPosition:</b> a posição, no pod, de reprodução do anúncio.
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -686,7 +787,7 @@ CPM
 <td>
 <b>CPM:</b> o CPM ou o CPM criptografado (com prefixo "~") que se aplica a essa reprodução.
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -717,7 +818,7 @@ Media.close
 s.Media.close(mediaName)
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -736,17 +837,32 @@ s.tl()
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.
-       video.name, contextData.
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
        video.complete';
-s.linkTrackEvents = 'event3';
-s.prop10 = mediaName;
-s.eVar10 = mediaName;
-s.eVar12 = "video";
-s.eVar15 = mediaPlayerName;
-s.events = 'event3';
-s.contextData['video.name'] = mediaName;
-s.contextData['video.complete'] = 'true';
+s.linkTrackEvents 
+  = 'event3';
+s.prop10 
+  = mediaName;
+s.eVar10 
+  = mediaName;
+s.eVar12 
+  = "video";
+s.eVar15 
+  = mediaPlayerName;
+s.events 
+  = 'event3';
+s.contextData['video.name']
+ =  mediaName;
+s.contextData['video.complete']
+ = 'true';
 s.tl(this,'o','Video Complete');
 </pre>
 </td>
@@ -760,7 +876,7 @@ Media.play
 s.Media.play(name,offset,segmentNum,segment,segmentLength)
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
@@ -774,7 +890,7 @@ Media.stop
 s.Media.stop(mediaName,mediaOffset)
 </pre>
 </td>
-<td>N/A 
+<td>N/D 
 </td>
 <td>Não disponível
 </td>
@@ -793,8 +909,15 @@ Definir eVar ou variável dos dados de contexto na chamada de link
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.
-       video.name, contextData.
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
        video.view';
 s.linkTrackEvents = 'event2';
 </pre>
@@ -809,7 +932,7 @@ Media.track
 s.Media.track(mediaName)
 </pre>
 </td>
-<td>N/A
+<td>N/D
 </td>
 <td>Não disponível
 </td>
