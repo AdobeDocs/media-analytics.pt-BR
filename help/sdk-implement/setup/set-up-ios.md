@@ -1,23 +1,24 @@
 ---
 title: Configurar iOS
-description: Configuração do aplicativo SDK de mídia para implementação no iOS.
+description: Configuração do aplicativo SDK do Media para implementação no iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Configurar iOS{#set-up-ios}
+# Configurar iOS {#set-up-ios}
 
 ## Pré-requisitos
 
-* **Obter parâmetros de configuração válidos para o SDK** de mídiaEsses parâmetros podem ser obtidos de um representante da Adobe após a configuração da conta do Analytics.
-* **Implementação do ADBMobile para iOS em seu aplicativo** Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [iOS SDK 4.x para Soluções da Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **Obter parâmetros de configuração válidos para o SDK do Media** Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
+* **Implementar o ADBMobile para iOS no aplicativo**
+Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [SDK do iOS 4.x para Soluções da Experience Cloud.](https://marketing.adobe.com/resources/help/pt_BR/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >A partir do iOS 9, a Apple apresentou um recurso chamado App Transport Security (ATS). Este recurso visa melhorar a segurança da rede, garantindo que seus aplicativos usem somente protocolos padrão do setor e cifras. Esse recurso é ativado por padrão, mas você tem opções de configuração que permitem trabalhar com ATS. Para obter detalhes sobre ATS, consulte Segurança de transporte de [aplicativos.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >A partir do iOS 9, a Apple introduziu um recurso chamado App Transport Security (ATS). Este recurso visa melhorar a segurança da rede, garantindo que seus aplicativos usem somente protocolos padrão do setor e cifras. Esse recurso é ativado por padrão, mas você tem opções de configuração que permitem trabalhar com ATS. Para obter detalhes sobre ATS, consulte [App Transport Security.](https://marketing.adobe.com/resources/help/pt_BR/mobile/ios/app_transport_security.html)
 
 * **Forneça os seguintes recursos no reprodutor de mídia:**
 
@@ -44,12 +45,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. Abra o Xcode IDE e o seu aplicativo.
       1. No **[!UICONTROL Navegador do projeto]**, arraste o diretório `libs` e solte-o no seu projeto.
 
-      1. Certifique-se de que as caixas de seleção **[!UICONTROL Copiar itens se necessário]** e **[!UICONTROL Criar grupos]estejam marcadas e que nenhuma das caixas de seleção em** Adicionar ao destino] estejam selecionadas.**[!UICONTROL **
+      1. Certifique-se de que as caixas de seleção **[!UICONTROL Copiar itens se necessário]** e **[!UICONTROL Criar grupos]** estejam marcadas e que nenhuma das caixas de seleção em **[!UICONTROL Adicionar ao destino]** estejam selecionadas.
 
          ![](assets/choose-options_ios.png)
 
       1. Clique em **[!UICONTROL Concluir]**.
-      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. No **[!UICONTROL Navegador do projeto]**, selecione o seu aplicativo e os seus destinos.
       1. Vincule as estruturas e bibliotecas necessárias na seção **[!UICONTROL Estruturas vinculadas]** e **[!UICONTROL Bibliotecas]** na guia **[!UICONTROL Geral]**.
 
          **Destinos de aplicativos iOS:**
@@ -75,7 +76,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    #import "ADBMediaHeartbeatConfig.h" 
    ```
 
-1. Create a `ADBMediaHeartbeatConfig` instance.
+1. Crie uma instância `ADBMediaHeartbeatConfig`.
 
    Essa seção ajuda você a entender os parâmetros de configuração do `MediaHeartbeat` e definir corretamente os valores de configuração na sua instância `MediaHeartbeat`, de modo a permitir um rastreamento preciso.
 
@@ -93,7 +94,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    config.debugLogging   = <YES/NO>; 
    ```
 
-1. Implement the `ADBMediaHeartbeatDelegate` protocol.
+1. Implemente o protocolo `ADBMediaHeartbeatDelegate`.
 
    ```
    @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -120,7 +121,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    @end
    ```
 
-1. Use the `ADBMediaHeartBeatConfig` and `ADBMediaHeartBeatDelegate` to create the `ADBMediaHeartbeat` instance.
+1. Use `ADBMediaHeartBeatConfig` e `ADBMediaHeartBeatDelegate` para criar a instância `ADBMediaHeartbeat`.
 
    ```
    //Replace <ADBMediaHeartBeatDelegate> with your delegate instance 
@@ -130,7 +131,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `ADBMediaHeartbeat` instance is accessible and *does not get deallocated until the end of the session*. Essa instância será usada para todos os eventos de rastreamento a seguir.
+   >Certifique-se de que a instância `ADBMediaHeartbeat` possa ser acessada e *não seja desalocada até o final da sessão*. Essa instância será usada para todos os eventos de rastreamento a seguir.
 
 ## Migração da versão 1.x para 2.x do iOS {#migrate-to-two-x}
 
@@ -144,7 +145,7 @@ Com o lançamento da nova Apple TV, é possível criar aplicativos compatíveis 
 
 Execute as seguintes etapas no projeto Xcode. Este guia foi escrito supondo que seu projeto tenha um direcionamento o aplicativo Apple TV com segmentação tvOS:
 
-1. Drag the `VideoHeartbeat_TV.a` library file into your project’s `lib` folder.
+1. Arraste o arquivo de biblioteca `VideoHeartbeat_TV.a` para a pasta `lib` do seu projeto.
 
 1. Na guia **[!UICONTROL Criar fases]** do destino do seu aplicativo tvOS, expanda a seção **[!UICONTROL Link binário com bibliotecas]** e adicione as seguintes bibliotecas:
 
