@@ -2,13 +2,13 @@
 title: Visualizadores simultâneos de mídia
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Visualizadores simultâneos de mídia{#media-concurrent-viewers}
+# Visualizadores simultâneos de mídia {#media-concurrent-viewers}
 
 O painel Visualizadores simultâneos de mídia exibe os visualizadores simultâneos durante um dia. Os dados podem ser filtrados por conteúdo, tipo de dispositivo ou país.
 
