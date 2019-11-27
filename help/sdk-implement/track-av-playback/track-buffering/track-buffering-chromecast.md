@@ -1,18 +1,18 @@
 ---
 title: Rastrear buffering no Chromecast
-description: Descreve o rastreamento de eventos de buffering no Chromecast.
+description: Descreve eventos de rastreamento de buffering no Chromecast.
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastrear buffering no Chromecast{#track-buffering-on-chromecast}
+# Rastrear buffering no Chromecast {#track-buffering-on-chromecast}
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento de buffer
 
