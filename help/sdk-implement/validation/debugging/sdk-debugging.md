@@ -1,16 +1,16 @@
 ---
 title: Depuração do SDK
-description: Este tópico descreve o rastreamento/registro disponível no SDK de mídia.
+description: Este tópico descreve o rastreamento/registro disponível no SDK do Media.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Depuração do SDK{#sdk-debugging}
+# Depuração do SDK {#sdk-debugging}
 
-Você pode ativar e desativar o registro. O SDK de mídia fornece um mecanismo abrangente de rastreamento/registro em toda a pilha de rastreamento de mídia. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+Você pode ativar e desativar o registro. O SDK do Media fornece um mecanismo abrangente de rastreamento/registro em toda a pilha de rastreamento de mídia. Você pode ativar ou desativar o registro, definindo o sinalizador `debugLogging` no objeto de configuração.
 
 ## Exemplo de código para o log de depuração
 
@@ -67,7 +67,7 @@ ADBMobile.config.setDebugLogging(true)
 Durante o desenvolvimento do aplicativo, o Bloodhound permite exibir localmente chamadas de servidor e, como opção, encaminhar os dados para os servidores de coleta da Adobe. Para obter mais informações sobre Bloodhound, consulte os seguintes guias:
 
 * [Bloodhound 3.x para Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
-* [Bloodhound 2.2 para Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+* [Bloodhound 2.2 para Windows](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
 
 >[!IMPORTANT]
 >
@@ -91,9 +91,9 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag:** o nome do subcomponente que emitiu a mensagem do registro (geralmente, o nome da classe)
 * **message:** a mensagem de rastreamento atual
 
-Você pode usar a saída de registros pela biblioteca do SDK de mídia para verificar a implementação. Uma boa estratégia é pesquisar nos registros a sequência de caracteres `#track`. This will highlight all the `track*()` calls made by your application.
+Você pode usar a saída dos registros pela biblioteca do SDK do Media para verificar a implantação. Uma boa estratégia é pesquisar nos registros a sequência de caracteres `#track`. Isso destacará todas as chamadas `track*()` feitas pelo seu aplicativo.
 
-For instance, this is what the logs filtered for `#track` could look like:
+Por exemplo, registros filtrados por `#track` podem ter a seguinte aparência:
 
 ```js
 [16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad() 
