@@ -1,14 +1,14 @@
 ---
 title: Rastrear anúncios no JavaScript
-description: Implemente o rastreamento de anúncios nos aplicativos do navegador (JS) usando o SDK de mídia.
+description: Implementar o rastreamento de anúncios nos aplicativos do navegador (JS) usando o SDK do Media.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastrear anúncios no JavaScript{#track-ads-on-javascript}
+# Rastrear anúncios no JavaScript {#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -24,11 +24,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `AdComplete` | Constante para rastrear o evento Ad Complete |
 | `AdSkip` | Constante para rastrear o evento Ad Skip |
 
-## Etapas de implementação
+## Etapas da implementação
 
 1. Identifique o início do limite do ad break, incluindo o anúncio precedente, e crie um `AdBreakObject` usando as informações do ad break.
 
-   `AdBreakObject` referência:
+   Referência `AdBreakObject`:
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
@@ -45,7 +45,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                         <START_TIME>);
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
+1. Chame `trackEvent()` com `AdBreakStart` na instância `MediaHeartbeat` para começar a rastrear o ad break:
 
    ```js
    mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);
@@ -53,7 +53,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Identifique o início do anúncio e crie uma instância `AdObject` usando as informações do anúncio.
 
-   `AdObject` referência:
+   Referência `AdObject`:
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
@@ -72,7 +72,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                    <LENGTH>);
    ```
 
-1. Como opção, anexe metadados padronizados e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
+1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
    * [Implementar Metadados de publicidade padrão no JavaScript](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do anúncio atual:
@@ -86,7 +86,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       };
       ```
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
+1. Chame `trackEvent()` com o evento `AdStart` na instância `MediaHeartbeat` para começar a rastrear a reprodução de anúncio.
 
    Inclua uma referência na variável de metadados personalizada (ou um objeto vazio) como o terceiro parâmetro na chamada de evento:
 
@@ -98,7 +98,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    };
    ```
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event:
+1. Quando a reprodução atingir o fim do anúncio, chame `trackEvent()` com o evento `AdComplete`:
 
    ```js
    _onAdComplete = function() { 
