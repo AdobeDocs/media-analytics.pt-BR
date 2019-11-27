@@ -1,21 +1,20 @@
 ---
 title: Guia de implementação do Link personalizado
 description: null
-uuid: 83315e73-20ca-4db5-9d43-33dade45a13
-translation-type: tm+mt
+uuid: 83315e73-20ca-4db5-9d43-33daade45a13
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Custom Link Implementation Guide{#custom-link-implementation-guide}
+# Guia de implementação de Link personalizado {#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
-Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
+O Rastreamento de vídeo personalizado usa o [rastreamento de link manual com o código de link personalizado](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/link_manual.html) no Analytics `appMeasurement`. Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
 
-* Em JavaScript: a `s.tl()` função
-* Nos aplicativos móveis: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* No JavaScript: a função `s.tl()`
+* Nos aplicativos móveis: [trackAction() Android](https://marketing.adobe.com/resources/help/pt_BR/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/pt_BR/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* Na API de inserção de dados: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Requisitos
 
@@ -26,7 +25,7 @@ Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado e
 ## Metadados
 
 * Os metadados podem ser adicionados a qualquer chamada de rastreamento como parte dos dados de link
-* Remember to update the `linkTrackVars` and `linkTrackEvents`
+* Lembre-se de atualizar `linkTrackVars` e `linkTrackEvents`
 
 ```javascript
 /* Call on video complete */ 
