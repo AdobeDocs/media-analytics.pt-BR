@@ -1,35 +1,35 @@
 ---
-title: Reprodução VOD com um capítulo
-description: Um exemplo de rastreamento da reprodução VOD que contém um capítulo.
+title: Reprodução de VOD com um capítulo
+description: Um exemplo de rastreamento de reprodução de VOD que contém um capítulo.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reprodução VOD com um capítulo{#vod-playback-with-one-chapter}
+# Reprodução de VOD com um capítulo {#vod-playback-with-one-chapter}
 
 ## Cenário {#scenario}
 
-Nesse cenário, uma parte do conteúdo VOD está marcada como um capítulo.
+Nesse cenário, uma parte do conteúdo de VOD está marcada como um capítulo.
 
-A menos que seja especificado, as chamadas de rede desse cenário correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios. ](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) As chamadas de rede ocorrem simultaneamente, mas a carga é diferente.
+A menos que seja especificado, as chamadas de rede desse cenário correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). As chamadas de rede ocorrem simultaneamente, mas a carga é diferente.
 
-| Acionador  | Método do Heartbeat   | Chamadas de rede   | Notas   |
+| Acionador   | Método do Heartbeat   | Chamadas de rede   | Notas   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Ainda não informamos à biblioteca de avaliações referentes um anúncio antecedente; portanto, essas chamadas de rede ainda são as mesmas de Single VoD. |
+| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Ainda não informamos à biblioteca de avaliações referentes um anúncio antecedente; portanto, essas chamadas de rede ainda são as mesmas de Single VoD. |
 | O capítulo é iniciado. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, as pulsações só são iniciadas com o capítulo. |
 | O capítulo é reproduzido. |  | Capítulo de heartbeat |  |
 | O capítulo terminou. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Esta é a situação na qual o fim do capítulo é atingido. |
-| O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa que o final de uma sessão de visualização foi atingido. Essa API deve ser chamada mesmo se o usuário não observar a mídia até a conclusão. |
+| O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa que o final de uma sessão de visualização foi atingido. Essa API deve ser chamada mesmo se o usuário não assistir à mídia até o fim. |
 
 ## Parâmetros {#parameters}
 
-When chapter playback begins, a `Heartbeat Chapter Start` call is sent. Se o início do capítulo não coincidir com a marcação de 10 segundos, a chamada `Heartbeat Chapter Start` é atrasada em alguns segundos e é direcionada para o próximo intervalo de 10 segundos.
+Quando a reprodução do capítulo começar, uma chamada `Heartbeat Chapter Start` é enviada. Se o início do capítulo não coincidir com a marcação de 10 segundos, a chamada `Heartbeat Chapter Start` é atrasada em alguns segundos e é direcionada para o próximo intervalo de 10 segundos.
 
 Quando isso ocorre, uma chamada `Content Heartbeat` é emitida no mesmo intervalo. É possível diferenciar os dois examinando o tipo de evento e o tipo de ativo:
 
@@ -44,7 +44,7 @@ Quando isso ocorre, uma chamada `Content Heartbeat` é emitida no mesmo interval
 
 ## Código de exemplo, capítulo no meio {#sample-code-chapter-in-the-middle}
 
-Nesse cenário, uma parte do conteúdo VOD é um capítulo.
+Nesse cenário, uma parte do conteúdo de VOD é um capítulo.
 
 ![](assets/chapter-regular-playback.png)
 
@@ -256,7 +256,7 @@ this._mediaHeartbeat.trackSessionEnd();
 
 ## Código de exemplo, capítulo no início {#sample-code-chapter-at-the-beginning}
 
-Neste cenário, o conteúdo VOD é reproduzido com um capítulo no início da reprodução.
+Neste cenário, o conteúdo de VOD é reproduzido com um capítulo no início da reprodução.
 
 ![](assets/pre-chapter-regular.png)
 
