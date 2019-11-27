@@ -2,7 +2,7 @@
 title: Caminhos de implementação
 description: null
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,20 +12,20 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 O Media Analytics (Heartbeats) é a solução de vídeo padronizada da Adobe. Substituiu o modelo de marcos mais antigo da Adobe.
 
-Para cada um desses caminhos de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova Ordem de venda, já que o Media Analytics tem um SKU exclusivo e muda de um modelo de preços com base em chamadas de servidor para um modelo com base em streams de vídeo:
+Para cada um desses caminhos de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de vendas, pois o Media Analytics tem uma SKU exclusiva e seus preços variam de acordo com o modelo, com base em chamadas de servidor e fluxos de vídeo:
 
-* **Cliente - São integrações somente do Media Analytics** . Você pode escolher o SDK do Video Heartbeat e/ou as integrações da API da coleção de mídia. Esse caminho pode ser usado em qualquer reprodutor de vídeo, incluindo reprodutores cliente e/ou OVP, como Brightcove, Ooyala, thePlatform, etc.
+* **Lado do cliente -** Estas são integrações exclusivas do Media Analytics. Você pode escolher o SDK do Video Heartbeat e/ou as integrações da API da coleção do Media. Esse caminho pode ser usado em qualquer reprodutor de vídeo, incluindo reprodutores cliente e/ou OVP, como Brightcove, Ooyala, thePlatform, etc.
 
-   If Media Analytics is your intended path, see the [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
+   Se o Media Analytics for o seu caminho pretendido, consulte a [Implementação de SDK do Media](/help/sdk-implement/setup/setup-overview.md) e a [API da coleção do Media.](/help/media-collection-api/mc-api-overview.md)
 
    >[!IMPORTANT]
    >
-   >Para usar o Media Analytics, os clientes também devem usar o Adobe Analytics.
+   >Para usar o Media Analytics, os clientes também precisam usar o Adobe Analytics.
 
-* **Adobe Experience Platform Launch - o Adobe Experience Platform Launch, o produto subsequente ao Gerenciamento dinâmico de tags, apresenta uma Extensão de lançamento do Media Analytics que facilita a implementação do rastreamento de vídeo nos players.**
+* **Adobe Experience Platform Launch -** O Adobe experience Platform Launch, o produto complementar ao Dynamic Tag Management, apresenta uma extensão de inicialização do Media Analytics que facilita a implementação do rastreamento de vídeo em seus reprodutores.
 
-   Saiba mais sobre o Experience Platform Launch aqui: Extensão de áudio e vídeo do [Adobe Media Analytics](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
-* **O Adobe Primetime -** Adobe Primetime é uma solução da Adobe Experience Cloud que ajuda os programadores e distribuidores de conteúdo a monetizar mídia em cada tela conectada.
+   Saiba mais sobre o Experience Platform Launch aqui: [Extensão de áudio e vídeo do Adobe Media Analytics](https://docs.adobe.com/content/help/pt-BR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* **Adobe Primetime -** O Adobe Primetime é uma solução da Adobe Experience Cloud que ajuda os programadores e distribuidores de conteúdo a monetizar mídia em cada tela conectada.
 
    O Primetime elimina a complexidade de alcançar, monetizar e ativar públicos globais nos dispositivos, fornecendo uma plataforma modular para a publicação, a publicidade, a personalização e a análise de vídeos. Além disso, o Primetime oferece soluções e valor em relação ao seguinte:
 
@@ -37,6 +37,6 @@ Para cada um desses caminhos de implementação, os clientes precisam entrar em 
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-O TVSDK já está integrado ao SDK do Media Analytics (Heartbeats), o que torna a implementação muito mais fácil e rápida em todas as plataformas suportadas. <!--Primetime also supports the partnership with Nielsen.--> Para aproveitar o Primetime, siga as mesmas diretrizes e pré-requisitos encontrados no lado [do](/help/intro-to-ava/implementation-paths/client-side-path.md) cliente, juntamente com os seguintes documentos para sua(s) plataforma(s): Guia do usuário do [Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
+O TVSDK já está integrado ao SDK do Media Analytics (Heartbeats), o que torna a implementação muito mais fácil e rápida em todas as plataformas compatíveis. <!--Primetime also supports the partnership with Nielsen.--> Para aproveitar o Primetime, siga as mesmas diretrizes e pré-requisitos encontrados [no lado do cliente,](/help/intro-to-ava/implementation-paths/client-side-path.md) juntamente com os seguintes documentos para sua(s) plataforma(s): [Guia do usuário do Primetime.](https://helpx.adobe.com/br/primetime/user-guide.html)
 
 Você também deve entrar em contato com o Representante de vendas/Gerente de conta para saber como adquirir o TVSDK.
