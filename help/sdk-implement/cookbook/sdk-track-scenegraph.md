@@ -2,13 +2,13 @@
 title: Rastreamento no SceneGraph (Roku)
 description: Rastrear mídia com a estrutura de programação XML do Roku SceneGraph.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastreamento no SceneGraph (Roku){#tracking-in-scenegraph-roku}
+# Rastreamento no SceneGraph (Roku) {#tracking-in-scenegraph-roku}
 
 ## Introdução {#introduction}
 
@@ -56,7 +56,7 @@ O conector bridge foi projetado para ser executado da seguinte maneira:
 | Categoria | Nome do método | Descrição |
 |---|---|---|
 | **Constantes** |  |  |
-|  | `sceneGraphConstants` | Returns an object containing `SceneGraphConstants`. Consulte os detalhes na tabela acima. |
+|  | `sceneGraphConstants` | Retorna um objeto contendo `SceneGraphConstants`. Consulte os detalhes na tabela acima. |
 |  |  |  |
 | **Registro de depuração** |  |  |
 |  | `setDebugLogging` | API do SceneGraph para definir o log de depuração no SDK do ADBMobile. |
@@ -107,7 +107,7 @@ O conector bridge foi projetado para ser executado da seguinte maneira:
 
 | Nome da constante | Descrição |
 |---|---|
-| `API_RESPONSE` | Used to retrieve the response object from `adbmobileTask` node's `adbmobileApiResponse` field |
+| `API_RESPONSE` | Usado para recuperar o objeto de resposta do campo `adbmobileTask` do nó `adbmobileApiResponse` |
 | `DEBUG_LOGGING` | Usado como `apiName` para `getDebugLogging` |
 | `PRIVACY_STATUS` | Usado como `apiName` para `getPrivacyStatus` |
 | `TRACKING_IDENTIFIER` | Usado como `apiName` para `trackingIdentifier` |
@@ -136,22 +136,31 @@ O conector bridge foi projetado para ser executado da seguinte maneira:
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> Inválido </td>
-<td> Somente leitura Todas as APIs executadas no AdobeMobileSDK retornarão respostas neste campo. Registre-se para um retorno de chamada para detectar as atualizações desse campo e receber objetos de resposta. O seguinte é o formato do objeto de resposta:  
+<td> Somente leitura. Todas as APIs executadas no AdobeMobileSDK retornarão respostas neste campo. Registre-se para um retorno de chamada para detectar as atualizações desse campo e receber objetos de resposta. O seguinte é o formato do objeto de resposta:  
 <codeblock>
-response = { "apiName" : &lt;SceneGraphConstants.
-               API_NAME&gt; "returnValue: &lt;API_RESPONSE&gt; } 
+response = {
+  "apiName" : &lt;SceneGraphConstants.
+               API_NAME&gt; 
+  "returnValue : &lt;API_RESPONSE&gt; 
+} 
 </codeblock>
 Uma instância desse objeto de resposta será enviada para qualquer chamada de API no AdobeMobileSDK que deveria retornar um valor de acordo com o guia de referência da API. Por exemplo, uma chamada de API para visitorMarketingCloudID() retornará o seguinte objeto de resposta: 
 <codeblock>
-response = { "apiName" : m
+response = {
+  "apiName" : m.
               adbmobileConstants.
-              VISITOR_MARKETING_CLOUD_ID "returnValue: "07050x25671x33760x72644x14" } 
+              VISITOR_MARKETING_CLOUD_ID  
+  "returnValue : "07050x25671x33760x72644x14"  
+} 
 </codeblock>
 OU, os dados de resposta também podem ser inválidos: 
 <codeblock>
-response = { "apiName" : m
+response = {  
+  "apiName" : m.
               adbmobileConstants.
-              VISITOR_MARKETING_CLOUD_ID "returnValue: inválido } 
+              VISITOR_MARKETING_CLOUD_ID  
+  "returnValue : invalid 
+} 
 </codeblock>
 </td>
 </tr>
@@ -163,15 +172,17 @@ response = { "apiName" : m
 #### `getADBMobileConnectorInstance`
 
 Assinatura da API: `ADBMobile().getADBMobileConnectorInstance()`\
-Entrada: Tipo de `adbmobileTask`retorno: `ADBMobileConnector`
+Entrada: `adbmobileTask`
+Tipo de retorno: `ADBMobileConnector`
 
 #### `sgConstants`
 
-Assinatura da API: `ADBMobile().sgConstants()`Entrada: Nenhum\
+Assinatura da API: `ADBMobile().sgConstants()`
+Entrada: Nenhum\
 Tipo de retorno: `SceneGraphConstants`
 
 >[!NOTE]
->Refer to the `ADBMobileConnector` API reference for details.
+>Consulte a referência da API `ADBMobileConnector` para obter mais detalhes.
 
 ### Constantes do ADBMobile
 
@@ -180,10 +191,10 @@ Tipo de retorno: `SceneGraphConstants`
 | Controle de versão | `version` | Constante para recuperar as informações de versão da AdobeMobileLibrary |
 | Privacidade/rejeição | `PRIVACY_STATUS_OPT_IN` | Constante para o status de privacidade aceito |
 |  | `PRIVACY_STATUS_OPT_OUT` | Constante para status de privacidade rejeitado |
-| Constantes do MediaHeartbeat | Consulte as constantes nesta página: <br/><br/>[Métodos de heartbeat de mídia.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Use essas constantes com as APIs MediaHeartbeat |
+| Constantes do MediaHeartbeat | Consulte as constantes nesta página: <br/><br/>[Métodos de heartbeat de mídia.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Use essas constantes com as APIs do MediaHeartbeat |
 | Metadados padrão | Consulte as constantes nesta página: <br/><br/>[Parâmetros de metadados padrão.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Use essas constantes para anexar metadados de vídeo/anúncio padrão às APIs do MediaHeartbeat |
 
-Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. Para obter mais informações sobre esses métodos, consulte a tabela abaixo:
+As APIs do `MediaHeartbeat` definidas globalmente na AdobeMobileLibrary herdada podem ser acessadas *como estão* no ambiente do SceneGraph porque elas não usam componentes do Brightscript que não estejam disponíveis nos nós do SceneGraph. Para obter mais informações sobre esses métodos, consulte a tabela abaixo:
 
 ### Métodos globais para MediaHeartbeat
 
@@ -197,17 +208,17 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ## Implementação {#implementation}
 
-1. **Baixe a biblioteca Roku -** Baixe a biblioteca Roku [mais recente.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
+1. **Baixe a biblioteca do Roku -** Baixe a [biblioteca do Roku mais recente.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
 
 1. **Configurar o ambiente de desenvolvimento**
 
-   1. Copy `adbmobile.brs` (AdobeMobileLibrary) into your `pkg:/source/` directory.
+   1. Copie `adbmobile.brs` (AdobeMobileLibrary) no diretório `pkg:/source/`.
 
-   1. For Scene Graph support, copy `adbmobileTask.brs` and `adbMobileTask.xml` into your `pkg:/components/` directory.
+   1. Para obter suporte ao Scene Graph, copie `adbmobileTask.brs` e `adbMobileTask.xml` no diretório `pkg:/components/`.
 
 1. **Inicializar**
 
-   1. Import `adbmobile.brs` into your Scene.
+   1. Importe `adbmobile.brs` na cena.
 
       ```
       <script type="text/brightscript" uri="pkg:/source/adbmobile.brs" />
@@ -225,7 +236,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       m.adbmobile = ADBMobile().getADBMobileConnectorInstance(m.adbmobileTask)
       ```
 
-   1. Get `adbmobile` SG constants.
+   1. Obtenha as constantes `adbmobile` do SG.
 
       ```
       m.adbmobileConstants = m.adbmobile.sceneGraphConstants()
