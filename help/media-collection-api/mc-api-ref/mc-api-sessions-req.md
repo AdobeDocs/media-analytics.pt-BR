@@ -2,13 +2,13 @@
 title: Solicitação de sessões
 description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Solicitação de sessões{#sessions-request}
+# Solicitação de sessões {#sessions-request}
 
 ```
 POST 
@@ -21,7 +21,7 @@ Nenhum
 
 ## Corpo da solicitação
 
-O corpo da solicitação deve ser JSON e ter a mesma estrutura que este corpo de solicitação de amostra:
+O corpo da solicitação deve ser JSON e deve ter a mesma estrutura que este exemplo de corpo da solicitação:
 
 ```
 { 
@@ -62,7 +62,7 @@ O corpo da solicitação deve ser JSON e ter a mesma estrutura que este corpo de
    * `ts` - carimbo de data e hora; deve estar em milissegundos.
 * `eventType` (Obrigatório)
 
-   **Valor válido:**`sessionStart`
+   **Valor válido:** `sessionStart`
 * `params` (Obrigatório)
 * `customMetadata` (Opcional)
 * `qoeData` (Opcional)
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header - A `/api/v1/` parte fornece a versão da API. A parte depois `[…]sessions/` é a ID da sessão.
+`Location:` cabeçalho — A parte `/api/v1/` fornece a versão da API. A parte depois de `[…]sessions/` é a ID da sessão.
 
 ## Códigos de resposta
 
