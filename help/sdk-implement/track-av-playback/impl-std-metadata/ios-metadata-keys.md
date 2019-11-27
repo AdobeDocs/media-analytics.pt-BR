@@ -2,19 +2,19 @@
 title: Chaves de metadados de iOS
 description: Este tópico descreve as chaves de metadados do iOS disponíveis.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Chaves de metadados de iOS{#ios-metadata-keys}
+# Chaves de metadados de iOS {#ios-metadata-keys}
 
 [Referência da API do iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
 De `ADBStandardMetadataKeys.h`:
 
-## Teclas de metadados de vídeo
+## Chaves de metadados de vídeo
 
 | Nome da constante | Descrição | Tipo |
 |---|---|---|
@@ -36,7 +36,7 @@ De `ADBStandardMetadataKeys.h`:
 | `ADBVideoMetadataKeyFEED` | Feed | Vídeo |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | Formato de transmissão | Vídeo |
 
-## Teclas de metadados de áudio
+## Chaves de metadados de áudio
 
 | Nome da constante | Descrição | Tipo |
 |---|---|---|
@@ -47,7 +47,7 @@ De `ADBStandardMetadataKeys.h`:
 | `ADBAudioMetadataKeyPUBLISHER` | Ativo | Áudio |
 | `ADBAudioMetadataKeySTATION` | Gênero | Áudio |
 
-## Teclas de metadados do anúncio
+## Chaves de metadados do anúncio
 
 | Nome da constante | Descrição | Tipo |
 |---|---|---|
