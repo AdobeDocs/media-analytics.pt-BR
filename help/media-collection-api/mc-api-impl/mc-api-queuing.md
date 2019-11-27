@@ -2,17 +2,17 @@
 title: Enfileirar eventos quando a resposta das sessões for lenta
 description: null
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Enfileirar eventos quando a resposta das sessões for lenta{#queueing-events-when-sessions-response-is-slow}
+# Enfileirar eventos quando a resposta das sessões for lenta {#queueing-events-when-sessions-response-is-slow}
 
-A API da coleção de mídia é RESTful: ou seja, você faz uma solicitação HTTP e espera pela resposta. This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. Isso é importante porque a ID da sessão é necessária para todas as chamadas de rastreamento subsequentes.
+A API Media Collection é RESTful: ou seja, você faz uma solicitação HTTP e espera pela resposta. Isso é importante somente quando você faz uma [Solicitação de sessões](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter uma ID de sessão no início da reprodução do vídeo. Isso é importante porque a ID da sessão é necessária para todas as chamadas de rastreamento subsequentes.
 
-It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
+O reprodutor pode disparar eventos _antes da resposta das sessões ser retornada_ (com o parâmetro da ID de sessão) do back-end. Se isso ocorrer, o aplicativo deve colocar em fila todos os eventos de rastreamento que chegam entre a [Solicitação de sessões](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) e a resposta. Quando a resposta das sessões for recebida, primeiro você deve processar todos os [eventos](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) na fila, e depois começar a processar os eventos _em tempo real_ com as chamadas de [eventos.](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
 
 >[!NOTE]
 >
