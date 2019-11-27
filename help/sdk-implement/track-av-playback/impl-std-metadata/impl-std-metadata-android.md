@@ -2,13 +2,13 @@
 title: Implementar metadados padrão no Android
 description: Descreve a configuração de metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento no Android.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Implementar metadados padrão no Android{#implement-standard-metadata-on-android}
+# Implementar metadados padrão no Android {#implement-standard-metadata-on-android}
 
 ## Constantes de metadados padrão
 
@@ -16,13 +16,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | Constante para anexar os metadados padrão no `MediaObject`. |
 
-## Referência da API para chaves de metadados
+## Referência da API das chaves de metadados
 
-* Crie um conjunto `HashMap` de pares de valores principais de metadados padronizados.
-   * [Teclas de metadados de vídeo](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-   * [Teclas de metadados de áudio](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
+* Crie um `HashMap` de pares de valores principais de metadados padronizados.
+   * [Chaves de metadados de vídeo](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+   * [Chaves de metadados de áudio](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * Defina os metadados padrão `HashMap` no `MediaInfo` usando a constante de Metadados padrão para os metadados.
-* Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
+* Forneça este objeto `MediaInfo` enquanto invoca a API `trackSessionStart()`
 
 ## Exemplos de implementações
 
