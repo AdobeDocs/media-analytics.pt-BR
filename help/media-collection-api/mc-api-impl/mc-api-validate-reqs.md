@@ -2,17 +2,17 @@
 title: Validar solicitações de evento
 description: null
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Validar solicitações de evento{#validating-event-requests}
+# Validar solicitações de evento {#validating-event-requests}
 
 O corpo da solicitação JSON para cada tipo de evento é validado no back-end com os esquemas JSON. O corpo da resposta HTTP é preenchido com uma mensagem de erro quando a validação falha para uma chamada de API.
 
-JSON validation schemas for each event type are publicly accessible here: `{uri}/api/v1/schemas/{eventType}` (e.g., `{uri}/api/v1/schemas/sessionEnd`). Esses esquemas de validação JSON são a autoridade absoluta para determinar os parâmetros corretos do corpo da solicitação para cada tipo de evento.
+Os esquemas de validação JSON para cada tipo de evento estão disponíveis publicamente aqui: `{uri}/api/v1/schemas/{eventType}` (por exemplo, `{uri}/api/v1/schemas/sessionEnd`). Esses esquemas de validação JSON são a autoridade absoluta para determinar os parâmetros de corpo de solicitação corretos para cada tipo de evento.
 
 Por exemplo, a resposta a uma solicitação para o esquema de validação `sessionStart` aparece como neste exemplo (ligeiramente formatado para facilitar a leitura aqui):
 
@@ -125,5 +125,5 @@ Connection: keep-alive
 
 >[!NOTE]
 >
->A validação no nível da sessão não é possível, pois o contexto da sessão não está disponível na camada de coleção.
+>A validação em nível de sessão não é possível, pois o contexto da sessão não está disponível na camada da coleção.
 
