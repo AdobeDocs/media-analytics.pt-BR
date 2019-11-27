@@ -2,15 +2,15 @@
 title: Obter uma ID de sessão
 description: null
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Obter uma ID de sessão{#obtaining-a-session-id}
+# Obter uma ID de sessão {#obtaining-a-session-id}
 
-This code snippet from the Reference Player shows one way of coding a [Sessions request,](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) along with extracting the Session ID (and the Media Collection API version) from the Location header in the response:
+Este fragmento de código do reprodutor de referência mostra uma maneira de codificar uma [Solicitação de sessões,](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) juntamente com a extração da ID de sessão (e da versão da API Media Collection) do cabeçalho Localização, na resposta:
 
 ```js
 var  
