@@ -2,23 +2,23 @@
 title: Obter dados de relatório JSON de visualizadores simultâneos
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Obter dados de relatório JSON de visualizadores simultâneos{#get-concurrent-viewers-json-report-data}
+# Obter dados de relatório JSON de visualizadores simultâneos {#get-concurrent-viewers-json-report-data}
 
-Você pode obter dados de relatório de visualizadores simultâneos usando a versão _**_ 1.4 das APIs do Analytics:
+Você pode obter dados de relatório de visualizadores simultâneos usando a _* versão 1.4 *_ das APIs do Analytics:
 * [APIs do Analytics ](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. Filtre os dados usando qualquer segmento criado na interface do usuário. Para filtrar por uma ID de conteúdo específica, crie um novo segmento.
-1. Defina `elements` -&gt; `id` no corpo da solicitação como `videoconcurrentviewers`.
-1. Solicite uma quantidade suficiente de dados. A Adobe recomenda 3200 pontos de dados para garantir que não haja lacunas nos dados.
+1. Filtre os dados usando qualquer segmento criado na interface. Para filtrar por uma ID de conteúdo específica, crie um novo segmento.
+1. Defina `elements` -&gt; `id` no corpo da solicitação para `videoconcurrentviewers`.
+1. Solicite uma quantidade suficiente de dados. A Adobe recomenda 3.200 pontos de dados para garantir que não haja lacunas nos dados.
 
-   * O intervalo de dados especificado no relatório reúne todos os dados do visualizador simultâneo _no momento em que a sessão de vídeo terminou._
+   * O intervalo de dados especificado no relatório reúne todos os dados do visualizador simultâneo _no momento em que a sessão de vídeo terminar._
 Portanto, você deve considerar as sessões que iniciam um dia e terminam após a meia-noite (ou seja, o dia seguinte).
 
    * Solicite mais de um dia de dados, mas em sua análise _* use apenas o primeiro dia dos dados.*_
