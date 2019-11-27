@@ -2,24 +2,24 @@
 title: Lado do cliente
 description: null
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Lado do cliente{#client-side}
+# Lado do cliente {#client-side}
 
 O Media Analytics (Heartbeats) é a solução de rastreamento de mídia padronizada da Adobe. Substituiu o modelo de marcos mais antigo da Adobe.
 
-As integrações no lado do cliente são implementadas somente com o Media Analytics. É possível escolher implementar o SDK do Media ou a API da coleção de mídia (ou ambos). O caminho no lado do cliente pode ser usado em qualquer reprodutor, incluindo reprodutores cliente e/ou OVP, como Brightcove, Ooyala, thePlatform etc.
+As integrações no lado do cliente são implementadas somente com o Media Analytics. É possível escolher implementar o SDK do Media ou a API da coleção do Media (ou ambos). O caminho no lado do cliente pode ser usado em qualquer reprodutor, incluindo reprodutores cliente e/ou OVP, como Brightcove, Ooyala, thePlatform etc.
 
-If Media Analytics is your intended path, see [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
+Se o Media Analytics for o caminho pretendido, consulte [Implementação do SDK do Media](/help/sdk-implement/setup/setup-overview.md) e [API da coleção do Media.](/help/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >
->Para usar o Media Analytics, os clientes também devem usar o Adobe Analytics.
+>Para usar o Media Analytics, os clientes também precisam usar o Adobe Analytics.
 
 >[!NOTE]
 >
->Os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar um novo pedido de vendas, pois o Media Analytics tem um SKU exclusivo, e mudar de um modelo de preços com base em chamadas de servidor para um modelo com base em fluxos de mídia.
+>Os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de venda, pois o Media Analytics tem um SKU exclusivo e seus preços variam de acordo com o modelo baseado em chamadas de servidor e baseado em fluxos de mídia.
