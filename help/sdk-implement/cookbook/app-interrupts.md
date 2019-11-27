@@ -2,28 +2,28 @@
 title: O manuseio de aplicativos é interrompido durante a reprodução
 description: Como lidar com interrupções para rastreamento durante a reprodução da mídia.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# O manuseio de aplicativos é interrompido durante a reprodução{#handling-application-interrupts-during-playback}
+# O manuseio de aplicativos é interrompido durante a reprodução {#handling-application-interrupts-during-playback}
 
-A reprodução em um aplicativo de mídia pode ser interrompida de várias maneiras: um usuário pressiona explicitamente pause ou quando um usuário coloca o aplicativo em segundo plano. Independentemente do que causa uma interrupção na reprodução da mídia, as instruções de rastreamento são as mesmas:
+A reprodução em um aplicativo de mídia pode ser interrompida de diversas maneiras: um usuário pressiona o botão Pausar explicitamente ou coloca o aplicativo em segundo plano. Independentemente da causa de uma interrupção na reprodução de uma mídia, as instruções de rastreamento são as mesmas:
 
-1. Call **`trackPause`** when the application is interrupted (goes to background, media pauses, etc.).
-1. Call **`trackPlay`** when the application returns to the foreground and/or the media resumes playing.
+1. Chame **`trackPause`** quando o aplicativo for interrompido (entra em segundo plano, mídia pausada, etc.).
+1. Chame **`trackPlay`** quando o aplicativo retornar para o primeiro plano e/ou quando a reprodução da mídia for retomada.
 
 >[!NOTE]
 >
->The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. Isso resulta na reprodução até esse ponto, sem contar para o tempo total de reprodução, além de perder marcadores de progresso anteriores, segmentos e assim por diante. Instead, call `trackPlay` when the app returns and/or the media resumes playing.
+>A equipe do Media Analytics tem instâncias em que os clientes chamaram `trackSessionStart` quando o aplicativo retornou do segundo plano. Fazer isso resulta na não contabilização da reprodução até esse ponto no tempo total de reprodução, juntamente com marcadores de progresso anteriores, segmentos, etc. Em vez disso, chame `trackPlay` quando o aplicativo retornar e/ou a reprodução da mídia for retomada.
 
 ## Perguntas frequentes sobre o manuseio de interrupções de aplicativos: {#faq-about-handling-application-interrupts}
 
 * _Quanto tempo um aplicativo deve ficar em segundo plano para a sessão ser encerrada?_
 
-   Se o aplicativo permitir reprodução em segundo plano, ele poderá continuar a rastrear, chamando nossas APIs, e nós enviaremos nossos pings de rastreamento normais. No entanto, nem todos os aplicativos de áudio permitem a reprodução em segundo plano, exceto o YouTube vermelho. Se o aplicativo não permitir a reprodução em segundo plano, é aconselhável permanecer no estado de pausa por um minuto e encerrar a sessão de rastreamento. O aplicativo não pode continuar enviando Pausar ping, pois na maioria dos casos ele não pode determinar se o usuário retornará para continuar a exibição da mídia ou determinar quando ela será eliminada. Também não é recomendado enviar pings em segundo plano.
+   Se o aplicativo permitir reprodução em segundo plano, ele poderá continuar a rastrear, chamando nossas APIs, e nós enviaremos nossos pings de rastreamento normais. No entanto, nem todos os aplicativos de áudio permitem a reprodução em segundo plano, exceto o YouTube vermelho. Se o aplicativo não permitir reprodução em segundo plano, é recomendado permanecer no Estado pausado por um minuto e então encerrar a sessão de rastreamento. O aplicativo não pode continuar enviando pings de Pausa porque, na maioria dos casos, ele não poderá determinar se o usuário retornará para continuar visualizando a mídia ou quando ela será fechada. Também não é recomendado enviar pings em segundo plano.
 
 * _Qual é o jeito certo de lidar com o rastreamento reiniciado depois que o aplicativo entra em segundo plano por muito tempo?_
 
