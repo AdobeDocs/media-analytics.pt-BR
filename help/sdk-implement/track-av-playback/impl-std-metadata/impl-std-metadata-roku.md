@@ -1,14 +1,14 @@
 ---
 title: Implementar metadados padrão no Roku
-description: Descreve a configuração de metadados de vídeo e anúncio padrão a serem enviados com chamadas de rastreamento no Roku.
+description: Descreve a configuração de metadados de vídeo e anúncios padrão a serem enviados com chamadas de rastreamento no Roku.
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Implementar metadados padrão no Roku{#implement-standard-metadata-on-roku}
+# Implementar metadados padrão no Roku {#implement-standard-metadata-on-roku}
 
 Exemplifique um objeto de metadados padrão, preencha as variáveis desejadas e defina o objeto de metadados no objeto de Heartbeat de mídia.
 
