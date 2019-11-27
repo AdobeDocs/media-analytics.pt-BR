@@ -1,22 +1,22 @@
 ---
 title: Visão geral
-description: Uma visão geral da qualidade de rastreamento da experiência (QoE, QoS) usando o SDK de mídia.
+description: Uma visão geral da qualidade de rastreamento da experiência (QoE, QoS) usando o SDK do Media.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Visão geral{#overview}
+# Visão geral {#overview}
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Você pode usar a API do player de mídia para identificar as variáveis relacionadas ao QoS e ao rastreamento de erros. Veja abaixo os principais elementos do rastreamento da qualidade da experiência:
+O rastreamento da qualidade da experiência inclui qualidade do serviço (QoS) e rastreamento de erros; ambos são elementos opcionais e **não** são necessários para implementações de rastreamento de mídia principal. Você pode usar a API do reprodutor de mídia para identificar as variáveis relacionadas ao rastreamento de erros e QoS. Veja abaixo os principais elementos do rastreamento da qualidade da experiência:
 
-## Eventos do player {#player-events}
+## Eventos do reprodutor {#player-events}
 
 ### Em qualquer alteração de métrica de QoS:
 
@@ -24,17 +24,17 @@ Crie ou atualize a instância do objeto QoS para a reprodução. [Referência da
 
 ### Em todos os eventos de alteração da taxa de bits
 
-Chama `trackEvent(Media.Heartbeat.Event.BitrateChange);`
+Chame `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
 ## Implementação do QOS
 
-1. Identify when any of QOS metrics change during media playback, create the `MediaObject` using the QoS information, and update the new QoS information.
+1. Identifique quando qualquer uma das métricas de QOS for alterada durante a reprodução da mídia, crie o `MediaObject` usando as informações de QoS e atualize as novas informações.
 
    Variáveis de QoSObject:
 
    >[!TIP]
    >
-   >Essas variáveis só são necessárias se você estiver planejando rastrear QoS.
+   >Essas variáveis somente são necessárias se você estiver planejando rastrear QoS.
 
    | Variável | Descrição | Obrigatório |
    | --- | --- | :---: |
@@ -48,9 +48,9 @@ Chama `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
    >[!IMPORTANT]
    >
-   >Atualize o objeto QoS e chame o evento de alteração da taxa de bits em cada alteração da taxa de bits. Isso fornece os dados de QoS mais precisos.
+   >Atualize o objeto de QoS e chame o evento de alteração na taxa de bits em cada alteração na taxa de bits. Isso fornece os dados de QoS mais precisos.
 
-O código de amostra a seguir usa o JavaScript 2.x SDK para um player de mídia HTML5. Use esse código com o código principal de reprodução de mídia.
+O código de exemplo a seguir usa o SDK 2.x do JavaScript para um reprodutor de mídia HTML5. Você deve usar esse código com o código de reprodução de mídia principal.
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate(); 
