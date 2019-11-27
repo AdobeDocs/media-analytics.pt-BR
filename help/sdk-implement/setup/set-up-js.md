@@ -1,19 +1,21 @@
 ---
 title: Configurar JavaScript
-description: Configuração do aplicativo SDK de mídia para implementação em JavaScript.
+description: Configuração do aplicativo SDK do Media para implementação em JavaScript.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Configurar JavaScript{#set-up-javascript}
+# Configurar JavaScript {#set-up-javascript}
 
 ## Pré-requisitos
 
-* **Obter parâmetros** de configuração válidosEsses parâmetros podem ser obtidos de um representante da Adobe após a configuração da conta do Analytics.
-* **Implementação`AppMeasurement`para JavaScript no aplicativo** de mídia Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [Implementação do Analytics usando JavaScript.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
+* **Obter parâmetros de configuração válidos**
+Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
+* **Implementar`AppMeasurement`para JavaScript no aplicativo de mídia**
+Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [Implementar o Analytics usando JavaScript.](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/js_implementation.html)
 
 * **Forneça os seguintes recursos no reprodutor de mídia:**
 
@@ -22,16 +24,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Adicione a biblioteca [baixada](/help/sdk-implement/download-sdks.md#download-2x-sdks) ao projeto. Para conveniência, crie referências locais para as classes.
 
-   1. Expanda o `MediaSDK-js-v2.*.zip` arquivo que você baixou.
-   1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
+   1. Expanda o arquivo `MediaSDK-js-v2.*.zip` que você baixou.
+   1. Verifique se o arquivo `MediaSDK.min.js` existe no diretório `libs`:
 
-   1. Host the `MediaSDK.min.js` file.
+   1. Hospede o arquivo `MediaSDK.min.js`.
 
       Esse arquivo JavaScript principais deve ser hospedado em um servidor Web acessível para todas as páginas em seu site. Você precisará do caminho para esses arquivos na próxima etapa.
 
    1. Referencie `MediaSDK.min.js` em todas as páginas do site.
 
-      Include `MediaSDK` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. Por exemplo:
+      Inclua `MediaSDK` para o JavaScript ao adicionar a seguinte linha de código na tag `<head>` ou `<body>` em cada página. Por exemplo:
 
       ```
       <script type="text/javascript" 
@@ -42,9 +44,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >From Version 2.1.0, the JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `VideoHeartbeat.min.js` can also be used with compatible module loaders.
+      >A partir da versão 2.1.0, o SDK do JavaScript é compatível com as especificações dos módulos AMD e CommonJS e `VideoHeartbeat.min.js` também pode ser usado com carregadores de módulo compatíveis.
 
-1. Para obter acesso fácil às APIs, crie uma referência local para as classes `MediaHeartbeat`. 
+1. Para obter acesso fácil às APIs, crie uma referência local para as classes `MediaHeartbeat`.
 
    ```js
    var MediaHeartbeat = ADB.va.MediaHeartbeat; 
@@ -52,7 +54,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
    ```
 
-1. Create a `MediaHeartbeatConfig` instance.
+1. Crie uma instância `MediaHeartbeatConfig`.
 
    Essa seção ajuda você a entender os parâmetros de configuração do `MediaHeartbeat` e definir corretamente os valores de configuração na sua instância `MediaHeartbeat`, de modo a permitir um rastreamento preciso.
 
@@ -70,7 +72,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaConfig.ovp = Configuration.HEARTBEAT.OVP; 
    ```
 
-1. Implement the `MediaHeartbeatDelegate` protocol.
+1. Implemente o protocolo `MediaHeartbeatDelegate`.
 
    ```js
    var mediaDelegate = new MediaHeartbeatDelegate(); 
@@ -86,9 +88,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    };
    ```
 
-1. Create the `MediaHeartbeat` instance.
+1. Crie a instância `MediaHeartbeat`.
 
-   Use the `MediaHeartbeatConfig` and `MediaHeartbeatDelegate` to create the `MediaHeartbeat` instance.
+   Use `MediaHeartbeatConfig` e `MediaHeartbeatDelegate` para criar a instância `MediaHeartbeat`.
 
    ```js
    this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
@@ -96,11 +98,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the media session. Essa instância será usada para todos os eventos de rastreamento a seguir.
+   >Certifique-se de que a instância do `MediaHeartbeat` possa ser acessada e não seja desalocada até o final da sessão de mídia. Essa instância será usada para todos os eventos de rastreamento a seguir.
 
    >[!TIP]
    >
-   >`MediaHeartbeat` requer uma instância de `AppMeasurement` para enviar chamadas ao Adobe Analytics. A seguir, há um exemplo de uma instância `AppMeasurement`:
+   >`MediaHeartbeat` exige uma instância do `AppMeasurement` para enviar chamadas para o Adobe Analytics. A seguir, há um exemplo de uma instância `AppMeasurement`:
 
    ```js
    var appMeasurement = new AppMeasurement(); 
