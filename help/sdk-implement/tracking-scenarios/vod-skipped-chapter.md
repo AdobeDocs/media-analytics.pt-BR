@@ -1,14 +1,14 @@
 ---
-title: Reprodução VOD com um capítulo ignorado
-description: Um exemplo de como rastrear o conteúdo VOD no qual o usuário ignorou um capítulo usando o SDK de mídia.
+title: Reprodução de VOD com um capítulo ignorado
+description: Um exemplo de como rastrear o conteúdo de VOD no qual o usuário ignorou um capítulo usando o SDK do Media.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reprodução VOD com um capítulo ignorado{#vod-playback-with-a-skipped-chapter}
+# Reprodução de VOD com um capítulo ignorado {#vod-playback-with-a-skipped-chapter}
 
 ## Cenário {#scenario}
 
@@ -16,9 +16,9 @@ Nesse cenário, o usuário pula um capítulo no conteúdo principal.
 
 Este cenário é igual à [reprodução de VOD com um capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), exceto que, neste caso, o usuário pretende sair do capítulo, ignorando-o para ir para o conteúdo principal.
 
-| Acionador | Método do Heartbeat | Chamadas de rede  | Notas |
+| Acionador | Método do Heartbeat | Chamadas de rede   | Notas |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações desconhece a existência de um anúncio precedente. Essas chamadas de rede ainda são idênticas às chamadas do cenário  [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
+| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações desconhece a existência de um anúncio precedente. Essas chamadas de rede ainda são idênticas às chamadas do cenário [Reprodução sem interrupções no iOS](vod-no-intrs-details.md). |
 | O capítulo é iniciado. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Chapter Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, recomenda-se iniciar o Heartbeats com o capítulo. |
 | O capítulo é reproduzido. |  | Capítulo de heartbeat |  |
@@ -26,12 +26,12 @@ Este cenário é igual à [reprodução de VOD com um capítulo](/help/sdk-imple
 | A busca é concluída. | `trackEvent:trackSeekComplete` |  | As pulsações serão retomadas depois disso. |
 | O aplicativo detecta que o usuário buscou fora dos limites regulares do capítulo. | `trackEvent:trackChapterSkip` |  |  |
 | O conteúdo é reproduzido. |  | Content Heartbeats |  |
-| A reprodução do conteúdo é concluída. | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa o fim de uma sessão de exibição. Essa API deve ser chamada mesmo se o usuário não observar a mídia até a conclusão. |
+| A reprodução do conteúdo é concluída. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução sem interrupções no iOS](vod-no-intrs-details.md). |
+| A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa o fim de uma sessão de exibição. Essa API deve ser chamada mesmo se o usuário não assistir à mídia até o fim. |
 
 ## Parâmetros {#parameters}
 
-Os parâmetros usados durante a reprodução do capítulo são idênticos aos parâmetros do  [Reprodução VOD com um capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), exceto que não há uma chamada de rede de capítulo concluído.
+Os parâmetros usados durante a reprodução do capítulo são idênticos aos parâmetros do [Reprodução de VOD com um capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), exceto que não há uma chamada de rede de capítulo concluído.
 
 ## Código de exemplo {#sample-code}
 
