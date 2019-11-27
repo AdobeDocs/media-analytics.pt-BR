@@ -1,8 +1,8 @@
 ---
-title: Comparação de código 1.x a 2.x
-description: Este tópico compara o código nas versões 1.x e 2.x do SDK de mídia.
+title: 'Comparação de código: 1.x para 2.x'
+description: Este tópico compara o código nas versões 1.x e 2.x do SDK do Media.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -15,7 +15,7 @@ Todos os parâmetros de configuração e APIs de rastreamento foram consolidados
 **Alterações na configuração da API:**
 
 * `AdobeHeartbeatPluginConfig.sdk` - Renomeado para `MediaConfig.appVersion`
-* `MediaHeartbeatConfig.playerName` - Agora defina o valor em `MediaHeartbeatConfig` vez de `VideoPlayerPluginDelegate`
+* `MediaHeartbeatConfig.playerName` - Agora definido por meio de `MediaHeartbeatConfig` em vez de `VideoPlayerPluginDelegate`
 * (Somente para JavaScript): a instância `AppMeasurement` - Agora enviada através do construtor `MediaHeartbeat`.
 
 **Alterações nas configurações das propriedades:**
@@ -24,12 +24,12 @@ Todos os parâmetros de configuração e APIs de rastreamento foram consolidados
 * `publisher` - Removido; a ID da Organização da Experience Cloud é usada em vez de um publicador
 * `quiteMode` - Removido
 
-**Links para players de amostra 1.x e 2.x:**
+**Links para reprodutores de amostra 1.x e 2.x:**
 
 * [Exemplo de reprodutor 1.x ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
 * [Exemplo de reprodutor 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
-As seções a seguir fornecem comparações de código entre 1.x e 2.x, abrangendo Inicialização, Reprodução principal, Reprodução de anúncio, Reprodução de capítulo e alguns eventos adicionais.
+As seções a seguir fornecem comparações de código entre o 1.x e o 2.x, abordando a Inicialização, a reprodução principal, a reprodução de anúncio, a reprodução de capítulo e alguns eventos adicionais.
 
 ## Comparação de código do VHL: INICIALIZAÇÃO
 
@@ -42,7 +42,7 @@ As seções a seguir fornecem comparações de código entre 1.x e 2.x, abrangen
 | `AdobeAnalyticsPlugin()` |  |
 | `HeartbeatPlugin()` |  |
 
-#### Inicialização do plug-in do player de vídeo (1.x) {#plugin-init-1.x}
+#### Inicialização do plug-in do reprodutor de vídeo (1.x) {#plugin-init-1.x}
 
 ```js
 this._playerPlugin = new VideoPlayerPlugin( new SampleVideoPlayerPluginDelegate(this._player));
@@ -85,7 +85,7 @@ mediaConfig.appVersion = Configuration.HEARTBEAT.SDK;
 this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this._player), mediaConfig, appMeasurement);
 ```
 
-### Delegados
+### Representantes
 
 | 1.x API | 2.x API |
 | --- | --- |
@@ -262,7 +262,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Standard Video Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Video Metadata is set through the MediaObject key `MediaObject.MediaObjectKey.StandardVideoMetadata()`.
+>Em vez de definir os metadados de vídeo padrão por meio da API `AdobeAnalyticsPlugin.setVideoMetadata()`, no VHL 2.0, os metadados de vídeo padrão são definidos pela chave MediaObject `MediaObject.MediaObjectKey.StandardVideoMetadata()`.
 
 ### Metadados de vídeo personalizados
 
@@ -302,7 +302,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Custom Video Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Video Metadata is set through the `MediaHeartbeat.trackSessionStart()` API.
+>Em vez de definir os metadados de vídeo personalizado por meio da API `AdobeAnalyticsPlugin.setVideoMetadata()`, no VHL 2.0, os metadados de vídeo padrão são definidos pela API `MediaHeartbeat.trackSessionStart()`.
 
 
 ### Reprodução
@@ -548,7 +548,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Standard Ad Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Ad Metadata is set through the `AdMetadata` key `MediaObject.MediaObjectKey.StandardVideoMetadata`
+>Em vez de definir os metadados de anúncio padrão por meio da API `AdobeAnalyticsPlugin.setVideoMetadata()`, no VHL 2.0, os metadados de anúncio padrão são definidos pela chave `AdMetadata` `MediaObject.MediaObjectKey.StandardVideoMetadata`
 
 ### Metadados de anúncio personalizados
 
@@ -599,7 +599,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Custom Ad Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata` API, in VHL 2.0, the Standard Ad Metadata is set through the `MediaHeartbeat.trackAdStart()` API.
+>Em vez de definir os metadados de anúncio personalizados por meio da API `AdobeAnalyticsPlugin.setVideoMetadata`, no VHL 2.0, os metadados de anúncios padrão são definidos pela API `MediaHeartbeat.trackAdStart()`.
 
 ### Anúncio ignorado
 
@@ -626,7 +626,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 ```
 
 >[!NOTE]
->In VHL 1.5.X APIs; `getAdinfo()` and `getAdBreakInfo()` must return null if the player is outside the Ad break boundaries.
+>Nas APIs do VHL 1.5.X; `getAdinfo()` e `getAdBreakInfo()` devem retornar nulo se o reprodutor estiver fora dos limites do Ad break.
 
 ### Anúncio completo
 
@@ -707,7 +707,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 ```
 
 >[!NOTE]
->In VHL 1.5.X APIs; `getChapterinfo()` must return null if the player is outside the Chapter boundaries.
+>Nas APIs do VHL 1.5.X, `getChapterinfo()` deve retornar nulo se o reprodutor estiver fora dos limites do Capítulo.
 
 #### Capítulo Ignorar (2.x) {#chap-skip-2.x}
 
@@ -814,7 +814,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 | `VideoPlayerPlugin.trackVideoLoad()` |  |
 
-#### Retoma de vídeo (1.x) {#video-resume-1.x}
+#### Retomada de vídeo (1.x) {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
@@ -827,7 +827,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Retoma do vídeo (2.x) {#video-resume-2.x}
+#### Retomada de vídeo (2.x) {#video-resume-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
