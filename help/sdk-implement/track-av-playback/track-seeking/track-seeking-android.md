@@ -1,18 +1,18 @@
 ---
 title: Rastrear busca no Android
-description: Este tópico descreve como implementar o rastreamento de busca usando o SDK de mídia no Android.
+description: Este tópico descreve como implementar o rastreamento de busca usando o SDK do Media no Android.
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastrear busca no Android{#track-seeking-on-android}
+# Rastrear busca no Android {#track-seeking-on-android}
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento de busca
 
