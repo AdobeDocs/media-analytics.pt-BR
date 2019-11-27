@@ -1,14 +1,14 @@
 ---
 title: Rastrear capítulos e segmentos no JavaScript
-description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK de mídia em aplicativos de navegador (JS).
+description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK do Media em aplicativos de navegador (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastrear capítulos e segmentos no JavaScript{#track-chapters-and-segments-on-javascript}
+# Rastrear capítulos e segmentos no JavaScript {#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -16,11 +16,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
-   `ChapterObject` referência de rastreamento de capítulo:
+   Referência de rastreamento de capítulo `ChapterObject`:
 
    >[!NOTE]
    >
-   >Essas variáveis só são necessárias se você estiver planejando rastrear capítulos.
+   >Essas variáveis somente são necessárias se você estiver planejando rastrear capítulos.
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
