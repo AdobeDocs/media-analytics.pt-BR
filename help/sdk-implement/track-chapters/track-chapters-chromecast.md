@@ -1,14 +1,14 @@
 ---
 title: Rastrear capítulos e segmentos no Chromecast
-description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK de mídia no Chromecast.
+description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK do Media no Chromecast.
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Rastrear capítulos e segmentos no Chromecast{#track-chapters-and-segments-on-chromecast}
+# Rastrear capítulos e segmentos no Chromecast {#track-chapters-and-segments-on-chromecast}
 
 >[!IMPORTANT]
 >
@@ -16,11 +16,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
-   `ChapterObject` referência de rastreamento de capítulo:
+   Referência de rastreamento de capítulo `ChapterObject`:
 
    >[!NOTE]
    >
-   >Essas variáveis só são necessárias se você estiver planejando rastrear capítulos.
+   >Essas variáveis somente são necessárias se você estiver planejando rastrear capítulos.
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
