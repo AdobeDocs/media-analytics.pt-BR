@@ -1,24 +1,24 @@
 ---
-title: Reprodução do VOD com buffering
-description: Um exemplo de como rastrear o conteúdo VOD usando o SDK de mídia.
+title: Reprodução de VOD com buffering
+description: Um exemplo de como rastrear o conteúdo de VOD usando o SDK do Media.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reprodução VOD com buffering{#vod-playback-with-buffering}
+# Reprodução de VOD com buffering {#vod-playback-with-buffering}
 
 ## Cenário {#scenario}
 
-Nesse cenário, ocorre buffering quando o conteúdo VOD é reproduzido.
+Nesse cenário, ocorre buffering quando o conteúdo de VOD é reproduzido.
 
 A menos que seja especificado, as chamadas de rede desse cenário correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios.](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 
-| Acionador  | Método do Heartbeat   | Chamadas de rede   | Notas   |
+| Acionador   | Método do Heartbeat   | Chamadas de rede   | Notas   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção **[!UICONTROL Reproduzir], ou um evento de reprodução automática.** |
+| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção **[!UICONTROL Reproduzir]**, ou um evento de reprodução automática. |
 | O primeiro quadro do vídeo é reproduzido. | `trackPlay` | Heartbeat Content Play | Esse método aciona o timer. Os heartbeats são enviados a cada 10 segundos durante toda a reprodução. |
 | O conteúdo é reproduzido. |  | Content Heartbeats |  |
 | O buffering é iniciado. | `trackEvent:BufferStart` | Buffer do Heartbeat |  |
@@ -38,7 +38,7 @@ A menos que seja especificado, as chamadas de rede desse cenário correspondem �
 
 ## Código de exemplo {#sample-code}
 
-Nesse cenário, ocorre buffering quando o conteúdo VOD é reproduzido.
+Nesse cenário, ocorre buffering quando o conteúdo de VOD é reproduzido.
 
 ![](assets/buffer-regular-content.png)
 
