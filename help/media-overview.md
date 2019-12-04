@@ -2,8 +2,8 @@
 title: Avaliação de áudio e vídeo no Adobe Analytics
 description: 'O Adobe Analytics for Media (também conhecido como Media Analytics) fornece aos clientes medições de mídia robustas para conteúdo, áudio e anúncios. '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
 
@@ -107,3 +107,4 @@ Para o SDK do Media, consulte também [Suporte à versão mínima da plataforma]
 >[!NOTE]
 >
 >O TLS é o protocolo de segurança mais implantado atualmente em termos de amplitude, usado em navegadores Web e outros aplicativos que exigem segurança durante a troca de dados em uma rede.
+
