@@ -28,7 +28,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Identifique o início do limite do ad break, incluindo o anúncio precedente, e crie um `AdBreakObject` usando as informações do ad break.
 
-   Referência `AdBreakObject`:
+   `AdBreakObject` referência:
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
@@ -56,7 +56,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Identifique o início do anúncio e crie uma instância `AdObject` usando as informações do anúncio.
 
-   Referência `AdObject`:
+   `AdObject` referência:
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
