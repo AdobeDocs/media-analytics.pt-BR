@@ -28,7 +28,7 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-O nome do estado é relatado na variável “Exibir estado” no Adobe Mobile Services e uma exibição é gravada para cada chamada de `trackState`. Em outras interfaces do Analytics, o “Exibir estado” é reportado como “Nome de página” e as “Exibições de estado” como “Exibições de páginas”.
+O nome do estado é relatado na variável “Exibir estado” no Adobe Mobile Services e uma exibição é gravada para cada `trackState` chamada. Em outras interfaces do Analytics, o “Exibir estado” é reportado como “Nome de página” e as “Exibições de estado” como “Exibições de páginas”.
 
 ## Enviar dados de contexto
 
