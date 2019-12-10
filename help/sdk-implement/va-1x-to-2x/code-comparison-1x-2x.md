@@ -628,7 +628,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 >[!NOTE]
 >Nas APIs do VHL 1.5.X; `getAdinfo()` e `getAdBreakInfo()` devem retornar nulo se o reprodutor estiver fora dos limites do Ad break.
 
-### Anúncio completo
+### Anúncio concluído
 
 | 1.x API | 2.x API |
 | --- | --- |
