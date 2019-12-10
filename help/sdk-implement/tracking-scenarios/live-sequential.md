@@ -1,5 +1,5 @@
 ---
-title: Conteúdo principal disponível com monitoramento sequencial
+title: Conteúdo principal ao vivo com monitoramento sequencial
 description: Um exemplo de como rastrear o conteúdo ao vivo com monitoramento sequencial usando o SDK do Media.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: ht
@@ -18,7 +18,7 @@ Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/sdk
 
 | Acionador | Método do Heartbeat |  Chamadas de rede  |  Notas   |
 | --- | --- | --- | --- |
-| O usuário clica em [!UICONTROL Reproduzir] | trackSessionStart | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não detecta um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Cliques do usuário [!UICONTROL Reproduzir] | trackSessionStart | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não detecta um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | O primeiro quadro do conteúdo é reproduzido. | trackPlay | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, as pulsações só são iniciadas com o capítulo. |
 | Reproduções de conteúdo |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Sessão1 finalizada (episódio1 encerrado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Complete significa que a sessão1 do 1º episódio foi atingida e assistida por inteiro. Antes de iniciar a sessão do episódio seguinte, é necessário encerrar a sessão atual. |
@@ -38,7 +38,7 @@ Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/sdk
 | `s:user:mid` | `s:user:mid` | Deve corresponder ao valor médio da Chamada de início de conteúdo do Adobe Analytics |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Seu nome de mídia&gt; |  |
+| `s:asset:media_id` | &lt;O nome da sua mídia&gt; |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *opcional* | Metadados personalizados definidos na mídia |
 
