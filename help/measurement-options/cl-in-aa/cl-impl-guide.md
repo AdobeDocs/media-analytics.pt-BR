@@ -1,5 +1,5 @@
 ---
-title: Guia de implementação do Link personalizado
+title: Guia de implementação de link personalizado
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: ht
@@ -8,7 +8,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 ---
 
 
-# Guia de implementação de Link personalizado {#custom-link-implementation-guide}
+# Guia de implementação de link personalizado {#custom-link-implementation-guide}
 
 O Rastreamento de vídeo personalizado usa o [rastreamento de link manual com o código de link personalizado](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/link_manual.html) no Analytics `appMeasurement`. Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
 
