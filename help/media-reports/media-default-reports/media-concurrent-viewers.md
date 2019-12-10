@@ -36,7 +36,7 @@ Aqui estão algumas limitações deste relatório:
 
 * Não é possível exportar os dados, como ReportBuilder.
 * Não é possível apresentar os dados em formato de tabela.
-* Não é possível enviar um relatório por email.
+* Não é possível enviar um relatório por e-mail.
 * Mesmo que você não rastreie os anúncios, é preciso ativar novamente o rastreamento de mídia e selecionar o módulo de Anúncio de mídia.
 * Essa funcionalidade fornecerá dados precisos ao usar uma Biblioteca do Heartbeats que tenha recursos de rastreamento de Pausas.
 
