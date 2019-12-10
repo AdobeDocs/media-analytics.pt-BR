@@ -1,5 +1,5 @@
 ---
-title: Conteúdo principal disponível
+title: Conteúdo principal ao vivo
 description: Um exemplo de como rastrear o conteúdo ao vivo usando o SDK do Media.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: ht
@@ -34,7 +34,7 @@ Diversos valores observados nas Chamadas do Adobe Analytics Content Start estar�
 | `s:user:mid` | `s:user:mid` | Deve corresponder ao valor médio da Chamada de início de conteúdo do Adobe Analytics |
 | `s:event:type` | "start" |  |
 | `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt;Seu nome de mídia&gt; |  |
+| `s:asset:mediao_id` | &lt;O nome da sua mídia&gt; |  |
 | `s:stream:type` | live |  |
 | `s:meta:*` | opcional | Metadados personalizados definidos na mídia |
 
