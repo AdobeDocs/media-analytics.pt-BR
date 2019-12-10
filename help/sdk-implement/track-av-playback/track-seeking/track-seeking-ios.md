@@ -23,7 +23,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Implemente a busca
 
-1. Analise os eventos de busca de reprodução no reprodutor de mídia e, na notificação do evento de início da busca, rastreie a busca com o evento `SeekStart`:
+1. Analise os eventos de busca de reprodução no reprodutor de mídia e, na notificação do evento de início da busca, rastreie a busca com o evento`SeekStart`:
 
    ```
    - (void)onSeekStart:(NSNotification *)notification { 
@@ -33,7 +33,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. Na notificação de conclusão da busca do reprodutor de mídia, rastreie o término da busca com o evento `SeekComplete`:
+1. Na notificação de conclusão da busca do reprodutor de mídia, rastreie o término da busca com o evento`SeekComplete`:
 
    ```
    - (void)onSeekComplete:(NSNotification *)notification { 
