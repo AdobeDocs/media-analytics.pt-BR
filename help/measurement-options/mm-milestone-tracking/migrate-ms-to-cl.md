@@ -716,7 +716,7 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 </tr>
 <tr>
 <td>name</td>
-<td><b>name:</b> (obrigatório) o nome ou a ID do anúncio.</td>
+<td><b>name:</b> (obrigatório) o nome ou ID do anúncio.</td>
 <td>N/D</td>
 <td>Não disponível</td>
 </tr>
