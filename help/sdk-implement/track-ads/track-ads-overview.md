@@ -62,7 +62,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 1. Identifique o início do limite do ad break, incluindo o anúncio precedente, e crie um `AdBreakObject` usando as informações do ad break.
 
-   Referência `AdBreakObject`:
+   `AdBreakObject` referência:
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
@@ -74,7 +74,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 1. Identifique o início do anúncio e crie uma instância `AdObject` usando as informações do anúncio.
 
-   Referência `AdObject`:
+   `AdObject` referência:
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
