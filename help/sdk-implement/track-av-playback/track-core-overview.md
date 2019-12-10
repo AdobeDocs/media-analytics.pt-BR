@@ -75,7 +75,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
    | `streamType` | Tipo de fluxo | Sim |
    | `mediaType` | Tipo de mídia (conteúdo de áudio ou vídeo) | Sim |
 
-   Constantes de **`StreamType`:**
+   **Constantes de`StreamType`:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -86,7 +86,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
    | `AUDIOBOOK` | Tipo de fluxo para audiobook |
    | `PODCAST` | Tipo de fluxo para podcast |
 
-   Constantes de **`MediaType`:**
+   **Constantes de`MediaType`:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -147,7 +147,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 1. Analise os eventos de busca de reprodução no reprodutor de mídia. Na notificação de evento de início da busca, rastreie a busca com o evento `SeekStart`.
 1. Na notificação de conclusão da busca do reprodutor de mídia, rastreie o término da busca com o evento `SeekComplete`.
 1. Analise os eventos de buffering de reprodução no reprodutor de mídia e, na notificação do evento de início de buffering, rastreie o buffering usando o evento `BufferStart`.
-1. Na notificação de conclusão de buffer do reprodutor de mídia, rastreie o término do buffer com o evento `BufferComplete`:
+1. Na notificação de conclusão de buffer do reprodutor de mídia, rastreie o término do buffer com o evento`BufferComplete`:
 
 Consulte exemplos de cada etapa nos tópicos específicos da plataforma a seguir e veja os exemplos de reprodutores incluídos nos SDKs.
 
