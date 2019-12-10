@@ -27,7 +27,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
 
-   Constantes de **`StreamType`:**
+   **Constantes de`StreamType`:**
 
    | Nome da constante | Descrição   |
    |---|---|
@@ -38,7 +38,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `AUDIOBOOK` | Tipo de fluxo para audiobook. |
    | `PODCAST` | Tipo de fluxo para podcast. |
 
-   Constantes de **`MediaType`:**
+   **Constantes de`MediaType`:**
 
    | Nome da constante | Descrição |
    |---|---|
