@@ -12,6 +12,6 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 Para obter detalhes sobre a integração de aplicativos OTT com a Experience Cloud, consulte os tópicos "Configurar" do Chromecast e do Roku:
 
-* [Configurar Chromecast](/help/sdk-implement/setup/set-up-chromecast.md)
+* [Configurar Chromecast ](/help/sdk-implement/setup/set-up-chromecast.md)
 * [Configurar Roku](/help/sdk-implement/setup/set-up-roku.md)
 
