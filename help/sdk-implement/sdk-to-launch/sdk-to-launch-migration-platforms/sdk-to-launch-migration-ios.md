@@ -1,19 +1,20 @@
 ---
-title: Migração do SDK de mídia independente para o Adobe Launch - iOS
-description: Instruções e exemplos de código para auxiliar na migração do SDK de mídia para o Launch para iOS.
-translation-type: tm+mt
+title: Migração do SDK do Media independente para o Adobe Launch - IOS
+description: Instruções e exemplos de código para auxiliar na migração do SDK do Media para o Launch para IOS.
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# Migração do SDK de mídia independente para o Adobe Launch - iOS
+# Migração do SDK do Media independente para o Adobe Launch - IOS
 
 ## Configuração
 
-### SDK de mídia independente
+### SDK do Media independente
 
-No SDK de mídia independente, configure a configuração de rastreamento no aplicativo e passe-a para o SDK ao criar o rastreador.
+No SDK do Media independente, é possível configurar o rastreamento no aplicativo
+e transmiti-lo para o SDK ao criar o rastreador.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config = 
@@ -31,12 +32,11 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
 ```
 
-### Iniciar Extensão
+### Extensão do Launch
 
 1. No Experience Platform Launch, clique na guia [!UICONTROL Extensões] para sua propriedade móvel
-1. Na guia [!UICONTROL Catálogo] , localize a extensão Adobe Media Analytics para áudio e vídeo e clique em [!UICONTROL Instalar].
-1. Na página de configurações de extensão, defina os parâmetros de rastreamento.
-A extensão de mídia usará os parâmetros configurados para rastreamento.
+1. Na guia [!UICONTROL Catálogo], localize a extensão Adobe Media Analytics para áudio e vídeo e clique em [!UICONTROL Instalar].
+1. Na página de configurações da extensão, defina os parâmetros de rastreamento. A extensão do Media usa os parâmetros configurados para rastreamento.
 
    ![](assets/launch_config_mobile.png)
 
@@ -44,11 +44,12 @@ A extensão de mídia usará os parâmetros configurados para rastreamento.
 
 ## Criação do rastreador
 
-### SDK de mídia independente
+### SDK do Media independente
 
-No SDK de mídia independente, crie manualmente o objeto `ADBMediaHeartbeatConfig` e configure os parâmetros de rastreamento. Implemente a interface delegada que expõe os`getQoSObject()` e `getCurrentPlaybackTime()functions.`
+No SDK do Media independente, crie manualmente o objeto `ADBMediaHeartbeatConfig`
+e configure os parâmetros de rastreamento. Implemente a interface delegada que expõe o `getQoSObject()` e o `getCurrentPlaybackTime()functions.`
 
-Crie uma instância MediaHeartbeat para rastreamento:
+Crie uma instância de MediaHeartbeat para rastreamento:
 
 ```objective-c
 @interface PlayerDelegate : NSObject<ADBMediaHeartbeatDelegate>
@@ -83,11 +84,12 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
-### Iniciar Extensão
+### Extensão do Launch
 
-[Referência da API de mídia - Criar rastreador de mídia](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Referência da API do Media - Criar Media Tracker](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-Antes de criar o rastreador, registre a extensão de mídia e as extensões dependentes com o núcleo móvel.
+Antes de criar o rastreador, registre a extensão de mídia e
+as extensões dependentes no núcleo móvel.
 
 ```objective-c
 // Register the extension once during app launch
@@ -107,7 +109,7 @@ Antes de criar o rastreador, registre a extensão de mídia e as extensões depe
 }
 ```
 
-Depois que a extensão de mídia é registrada, o rastreador pode ser criado usando a seguinte API.
+Após registrar a extensão de mídia, o rastreador pode ser criado usando a seguinte API.
 O rastreador escolhe automaticamente a configuração da propriedade de inicialização configurada.
 
 ```objective-c
@@ -116,26 +118,32 @@ O rastreador escolhe automaticamente a configuração da propriedade de iniciali
 }];
 ```
 
-## Atualização dos valores de Indicador de reprodução e Qualidade da experiência.
+## Atualização dos valores Indicador de reprodução e Qualidade da experiência.
 
-### SDK de mídia independente
+### SDK do Media independente
 
-No SDK de mídia independente, um objeto delegado que implementa o protocolo é transmitido durante a criação do rastreador.`ADBMediaHeartbeartDelegate` 
-A implementação deve retornar o QoE e o indicador de reprodução mais recentes sempre que o rastreador chamar os métodos de interface `getQoSObject()` e `getCurrentPlaybackTime()` .
+No SDK do Media independente, um objeto delegado que implementa o
+protocolo `ADBMediaHeartbeartDelegate` é transmitido durante a criação do rastreador. A implementação deve retornar a QoE e o indicador de reprodução mais recentes sempre que o
+rastreador chamar os métodos de interface
+`getQoSObject()` e `getCurrentPlaybackTime()`.
 
-### Iniciar Extensão
+### Extensão do Launch
 
-A implementação deve atualizar o indicador de reprodução do player atual, chamado pelo`updateCurrentPlayhead` método exposto pelo rastreador. Para um rastreamento preciso, você deve chamar esse método pelo menos uma vez por segundo.
+A implementação deve atualizar o indicador de reprodução atual, chamando o
+método `updateCurrentPlayhead` exposto pelo rastreador. Para um rastreamento preciso,
+você deve chamar esse método pelo menos uma vez por segundo.
 
-[Referência da API de mídia - Atualizar indicador de reprodução atual](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Referência da API do Media - Atualizar indicador de reprodução atual](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-A implementação deve atualizar as informações de QoE chamando o método exposto pelo`updateQoEObject` rastreador. Você deve chamar esse método sempre que houver uma alteração nas métricas de qualidade.
+A implementação deve atualizar as informações da QoE, chamando o
+método `updateQoEObject` exposto pelo rastreador. Você deve chamar esse método
+sempre que houver uma alteração nas métricas de qualidade.
 
-[Referência da API de mídia - Atualizar objeto QoE](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Referência da API do Media - Atualizar objeto de QoE](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-## Transmissão de metadados padrão de mídia/anúncio
+## Transmissão de metadados de mídia/anúncio padrão
 
-### SDK de mídia independente
+### SDK do Media independente
 
 * Metadados de mídia padrão:
 
@@ -161,7 +169,7 @@ A implementação deve atualizar as informações de QoE chamando o método expo
    [tracker trackSessionStart:mediaObject data:mediaMetadata];
    ```
 
-* Metadados de publicidade padrão:
+* Metadados de anúncio padrão:
 
    ```objective-c
    ADBMediaObject* adObject = 
@@ -189,7 +197,7 @@ A implementação deve atualizar as informações de QoE chamando o método expo
             data:adDictionary];
    ```
 
-### Iniciar Extensão
+### Extensão do Launch
 
 * Metadados de mídia padrão:
 
@@ -214,7 +222,7 @@ A implementação deve atualizar as informações de QoE chamando o método expo
    [_tracker trackSessionStart:mediaObject data:mediaMetadata];
    ```
 
-* Metadados de publicidade padrão:
+* Metadados de anúncio padrão:
 
    ```objective-c
    NSDictionary* adObject = 
