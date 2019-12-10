@@ -26,11 +26,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>); 
    ```
 
-   Constantes de **`StreamType`:**
+   **Constantes de`StreamType`:**
 
    [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
-   Constantes de **`MediaType`:**
+   **Constantes de`MediaType`:**
 
    [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
