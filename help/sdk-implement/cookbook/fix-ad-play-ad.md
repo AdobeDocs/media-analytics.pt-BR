@@ -41,7 +41,7 @@ Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depoi
 
 * Crie a instância de objeto `adBreak` para o ad break; por exemplo, `adBreakObject`.
 
-* Chama `trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);`.
+* Chame `trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);`.
 
 **Em cada início de ativo de anúncio:**
 
