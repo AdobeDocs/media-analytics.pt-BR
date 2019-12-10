@@ -34,7 +34,7 @@ Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são 
 | `s:user:mid` | deve ser configurado | Deve corresponder ao valor médio da chamada `Adobe Analytics Content Start`. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Seu nome de mídia&gt; |  |
+| `s:asset:media_id` | &lt;O nome da sua mídia&gt; |  |
 | `s:meta:*` | opcional | Metadados personalizados que são configurados na mídia. |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
