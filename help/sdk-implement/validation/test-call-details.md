@@ -54,8 +54,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| `custom.metadataA` | value |
-| `custom.metadataB` | value |
+| `custom.metadataA` | valor |
+| `custom.metadataB` | valor |
 
 ### Chamada de início do Media Analytics (heartbeats) {#ma-start-call}
 
@@ -100,8 +100,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | valor |
+| `s:meta:custom.metadata` | valor |
 
 ### Chamada de início do Adobe Analytics do Media Analytics (heartbeats) {#ma-aa-start}
 
@@ -169,8 +169,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| `custom.metadata` | value |
-| `custom.metadata` | value |
+| `custom.metadata` | valor |
+| `custom.metadata` | valor |
 
 ### Chamada de início de anúncio do Media Analytics (heartbeats) {#ma-ad-start-call}
 
@@ -214,8 +214,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | valor |
+| `s:meta:custom.metadata` | valor |
 
 ### Chamada de início de anúncio do Adobe Analytics do Media Analytics (heartbeats) {#ma-aa-ad-start-call}
 
