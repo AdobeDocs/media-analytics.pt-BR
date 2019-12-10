@@ -23,10 +23,10 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 | Métrica de marco | Tipo de variável | Métrica do Media Analytics |
 | --- | --- | --- |
 | Conteúdo | eVar<br/><br/>Expiração padrão: visita | Conteúdo |
-| Tipo de conteúdo | eVar<br/><br/> Expiração padrão: visualização de página | Tipo de conteúdo |
-| Tempo gasto no conteúdo | Evento<br/><br/> Tipo: contador | Tempo gasto no conteúdo |
-| Inicialização de vídeo | Evento<br/><br/> Tipo: contador | Inicialização de vídeo |
-| Término do vídeo | Evento<br/><br/> Tipo: contador | Conteúdo concluído |
+| Tipo de conteúdo | Expiração <br/>padrão do eVar: Visualização de página<br/> | Tipo de conteúdo |
+| Tempo gasto no conteúdo | Tipo <br/>de evento: Contador<br/> | Tempo gasto no conteúdo |
+| Inicialização de vídeo | Tipo <br/>de evento: Contador<br/> | Inicialização de vídeo |
+| Término do vídeo | Tipo <br/>de evento: Contador<br/> | Conteúdo concluído |
 
 ### Variáveis do módulo de mídia
 
