@@ -20,7 +20,7 @@ Esse cenário é idêntico ao cenário de [Reprodução de VOD com anúncios pre
 
 | Acionador   | Método do Heartbeat  | Chamadas de rede   | Notas   |
 | --- | --- | --- | --- |
-| O usuário clica em [!UICONTROL Reproduzir] | `trackSessionStart()` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações desconhece a existência de um anúncio precedente. Essas chamadas de rede ainda são idênticas às chamadas do cenário [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Cliques do usuário [!UICONTROL Reproduzir] | `trackSessionStart()` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações desconhece a existência de um anúncio precedente. Essas chamadas de rede ainda são idênticas às chamadas do cenário [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | O anúncio começa. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Início do anúncio do Analytics, Início do anúncio do Heartbeat |  |
 | O primeiro quadro do anúncio é reproduzido. | `trackPlay()` | Heartbeat Ad Play (Reprodução do anúncio do Heartbeat) | Quando o conteúdo do anúncio é reproduzido antes do conteúdo principal, as pulsações são iniciadas com o anúncio. |
 | O anúncio é reproduzido. |  | Ad Heartbeats (Pulsações do anúncio) |  |
