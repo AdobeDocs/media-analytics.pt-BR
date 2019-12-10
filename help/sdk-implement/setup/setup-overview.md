@@ -73,7 +73,7 @@ Complete as etapas de implementação a seguir:
 
    >[!IMPORTANT]
    >
-   >Certifique-se de que a instância `MediaHeartbeat` esteja acessível e não seja desalocada até o final da sessão. Essa instância será usada para todos os eventos de rastreamento de mídia a seguir.
+   >Certifique-se de que a instância `MediaHeartbeat` possa ser acessada e não seja desalocada até o final da sessão. Essa instância será usada para todos os eventos de rastreamento de mídia a seguir.
 
    >[!TIP]
    >
