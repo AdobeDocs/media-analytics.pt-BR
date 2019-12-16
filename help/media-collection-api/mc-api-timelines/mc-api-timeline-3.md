@@ -2,8 +2,8 @@
 title: Linha do tempo 3 - Capítulos
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 22f7c21feb55f54c0c92db17eadc509966715cf3
 
 ---
 
@@ -432,7 +432,7 @@ O primeiro capítulo termina, antes do segundo ad break.
         playhead: 20,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 
@@ -715,7 +715,7 @@ Rastreie o final do segundo e do último capítulo.
         playhead: 0,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 
