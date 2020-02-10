@@ -2,7 +2,7 @@
 title: Linha do tempo 3 - Capítulos
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
@@ -33,7 +33,7 @@ Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a
 
 **Detalhes da implementação**
 
-Esta chamada indica _a intenção do usuário de reproduzir_ um vídeo. Retorna uma ID de sessão (`{sid}`) ao cliente usada para identificar todas as chamadas de rastreamento subsequentes na sessão. O estado do reprodutor ainda não é "reproduzindo", mas "iniciando".  [Os parâmetros obrigatórios da sessão](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) devem ser incluídos no mapa `params` no corpo da solicitação.  No back-end, essa chamada gera uma chamada de inicialização do Adobe Analytics.
+Esta chamada indica _a intenção do usuário de reproduzir_ um vídeo. Retorna uma ID de sessão (`{sid}`) ao cliente usada para identificar todas as chamadas de rastreamento subsequentes na sessão. O estado do reprodutor ainda não é &quot;reproduzindo&quot;, mas &quot;iniciando&quot;.  [Os parâmetros obrigatórios da sessão](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) devem ser incluídos no mapa `params` no corpo da solicitação.  No back-end, essa chamada gera uma chamada de inicialização do Adobe Analytics.
 
 **Exemplo de corpo da solicitação**
 
@@ -265,7 +265,7 @@ Rastreie o final do segundo anúncio precedente.
 
 **Detalhes da implementação**
 
-O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado "reproduzindo".
+O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado &quot;reproduzindo&quot;.
 
 **Exemplo de corpo da solicitação**
 
@@ -287,7 +287,7 @@ O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado "repr
 
 **Detalhes da implementação**
 
-After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
+Depois do evento `adBreakComplete`, coloque o reprodutor no estado &quot;reproduzindo&quot; usando o evento `play`.
 
 **Exemplo de corpo da solicitação**
 
@@ -356,7 +356,7 @@ Envie um ping ao back-end a cada 10 segundos.
 
 **Detalhes da implementação**
 
-Rastreie o movimento para o estado de "buffering".
+Rastreie o movimento para o estado de &quot;buffering&quot;.
 
 **Exemplo de corpo da solicitação**
 
@@ -378,7 +378,7 @@ Rastreie o movimento para o estado de "buffering".
 
 **Detalhes da implementação**
 
-O buffering termina após 3 segundos; coloque o reprodutor no estado "reproduzindo". Você deve enviar outro evento de rastreamento de reprodução a partir do buffering.  **A chamada`play`depois de um`bufferStart`infere uma chamada de "bufferEnd" ao back-end,** assim, um evento `bufferEnd` não é necessário.
+O buffering termina após 3 segundos; coloque o reprodutor no estado &quot;reproduzindo&quot;. Você deve enviar outro evento de rastreamento de reprodução a partir do buffering.  **A chamada`play`depois de um`bufferStart`infere uma chamada de &quot;bufferEnd&quot; ao back-end,** assim, um evento `bufferEnd` não é necessário.
 
 **Exemplo de corpo da solicitação**
 
@@ -617,7 +617,7 @@ Envie um ping ao back-end a cada 10 segundos.
 
 **Detalhes da implementação**
 
-A ação do usuário move o estado de reprodução para "pausado".
+A ação do usuário move o estado de reprodução para &quot;pausado&quot;.
 
 **Exemplo de corpo da solicitação**
 
@@ -639,7 +639,7 @@ A ação do usuário move o estado de reprodução para "pausado".
 
 **Detalhes da implementação**
 
-Envie um ping ao back-end a cada 10 segundos. O reprodutor ainda está no estado "buffering"; o usuário está parado em 20 segundos do conteúdo. Irritado...
+Envie um ping ao back-end a cada 10 segundos. O reprodutor ainda está no estado &quot;buffering&quot;; o usuário está parado em 20 segundos do conteúdo. Irritado...
 
 **Exemplo de corpo da solicitação**
 
@@ -661,7 +661,7 @@ Envie um ping ao back-end a cada 10 segundos. O reprodutor ainda está no estado
 
 **Detalhes da implementação**
 
-Mova o estado de reprodução para "reproduzindo".  **A chamada`play`depois de um`pauseStart`infere uma chamada de "retomada" ao back-end**; assim, um evento `resume` não é necessário.
+Mova o estado de reprodução para &quot;reproduzindo&quot;.  **A chamada`play`depois de um`pauseStart`infere uma chamada de &quot;retomada&quot; ao back-end**; assim, um evento `resume` não é necessário.
 
 **Exemplo de corpo da solicitação**
 
