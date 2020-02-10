@@ -2,7 +2,7 @@
 title: Avaliação de áudio e vídeo no Adobe Analytics
 description: 'O Adobe Analytics for Media (também conhecido como Media Analytics) fornece aos clientes medições de mídia robustas para conteúdo, áudio e anúncios. '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
@@ -40,7 +40,7 @@ Alguns dos muitos benefícios que as soluções de avaliação de mídia da Adob
 * **Medição precisa -** Meça os vários dispositivos usados para o consumo de mídia, incluindo OTT, smartphone, tablet, desktop e muito mais, para monitorar os padrões e os hábitos de envolvimento do usuário.
 * **Segmentação -** Aplique classificações aos reprodutores, dispositivos, gêneros, capítulos e programas para ver como cada um tem um impacto nas exibições/áudios gerais e no envolvimento do cliente com conteúdo, áudio, anúncios e combinados.
 
-## Benefícios do Heartbeat versus Marcos {#heartbeat-versus-milestone-benefits}
+## Benefícios do Heartbeat versus Marcos  {#heartbeat-versus-milestone-benefits}
 
 O Adobe Analytics for Media pode ser medido por dois meios: o método de Marcos herdados (somente vídeo) e o método de Heartbeats atual (áudio e vídeo, presentes no SDK do Media e na API Media Collection). O método Heartbeats é o preferencial para a avaliação e incentivamos todos os clientes a mudarem para essa versão caso ainda não a tenham, a fim de aproveitar os benefícios descritos abaixo.
 
@@ -66,7 +66,7 @@ Alguns dos muitos benefícios do método Heartbeats incluem:
 | **Compartilhamento do parceiro** | N/D | Federated Analytics e métricas certificadas |
 | **Rastreamento avançado** | N/D | Rastreamento da recuperação de erros e visualizadores simultâneos |
 
-## Dispositivos compatíveis {#devices-supported}
+## Dispositivos compatíveis  {#devices-supported}
 
 O Adobe Analytics for Media evoluiu com o setor para fornecer ferramentas de coleta de dados eficientes, a fim de garantir que cada fluxo de mídia seja coletado e informado a todos os dispositivos importantes. Nosso SDK do Media é desenvolvido para todos os dispositivos mais utilizados, incluindo:
 
