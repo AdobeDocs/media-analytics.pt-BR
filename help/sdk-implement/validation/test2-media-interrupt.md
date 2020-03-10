@@ -2,19 +2,15 @@
 title: Teste 2 Interrupção de mídia
 description: Este tópico descreve o teste de interrupção de mídia usado na validação.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Teste 2: Interrupção da mídia {#test-media-interruption}
 
-Esse caso de teste valida o comportamento de interrupção móvel. É um elemento obrigatório da sua solicitação de certificação.
-
-## Formulário de solicitação de certificação
-
-**Baixe o formulário de solicitação de certificação aqui: ==&gt;**  [Formulário de solicitação de certificação.](cert_req_form.docx)
+Esse caso de teste valida o comportamento de interrupção móvel.
 
 ## Procedimento de teste
 
@@ -56,4 +52,3 @@ Você deve concluir e registrar essas tarefas na seguinte ordem:
 1. **Fechar reprodutor de mídia**
 
    Nenhuma chamada de rastreamento adicional deve ser acionada após o fechamento do reprodutor de mídia.
-
