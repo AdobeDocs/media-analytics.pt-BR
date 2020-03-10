@@ -2,26 +2,20 @@
 title: Teste 1 Reprodução padrão
 description: Este tópico descreve o teste de reprodução padrão usado na validação.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Teste 1: reprodução padrão {#test-standard-playback}
 
-Esse caso de teste valida a reprodução e a sequência gerais. É um elemento obrigatório da sua solicitação de certificação.
-
-## Formulário de solicitação de certificação
-
-**Baixe o formulário de solicitação de certificação aqui: ==&gt;**  [Formulário de solicitação de certificação.](cert_req_form.docx)
-
-## Visão geral do Teste de certificação 1
+Esse caso de teste valida a reprodução e a sequência gerais.
 
 As implementações do Media Analytics incluem dois tipos de chamadas de rastreamento:
-* Chamadas feitas diretamente no servidor do Adobe Analytics (AppMeasurement) — Essas chamadas ocorrem em eventos "Media Start" e "Ad Start".
+* Chamadas feitas diretamente no servidor do Adobe Analytics (AppMeasurement) — Essas chamadas ocorrem em eventos &quot;Media Start&quot; e &quot;Ad Start&quot;.
 * Chamadas feitas ao servidor do Media Analytics (heartbeats) — Incluem chamadas em banda e fora de banda:
-   * Em banda — O SDK envia chamadas de reprodução programadas ou "pings" em intervalos de 10 segundos durante a reprodução do conteúdo e em intervalos de um segundo durante os anúncios.
+   * Em banda — O SDK envia chamadas de reprodução programadas ou &quot;pings&quot; em intervalos de 10 segundos durante a reprodução do conteúdo e em intervalos de um segundo durante os anúncios.
    * Fora de banda — Essas chamadas podem ocorrer a qualquer momento e incluem pausa, buffering, erros, conteúdo concluído, anúncio concluído, etc.
 
 >[!NOTE]
@@ -37,7 +31,7 @@ Conclua e registre as seguintes ações (em ordem):
 
    * **Servidor do Adobe Analytics (AppMeasurement) -** Um servidor de rastreamento RDC ou CNAME que é resolvido para um servidor RDC, é necessário para o serviço de ID do visitante da Experience Cloud. O servidor de rastreamento do Adobe Analytics deve terminar com “`.sc.omtrdc.net`” ou ser um CNAME.
 
-   * **Servidor do Media Analytics (Heartbeats) -** Este servidor sempre tem o formato "`[namespace].hb.omtrdc.net`", em que `[namespace]` especifica o nome da sua empresa. Esse nome é fornecido pela Adobe.
+   * **Servidor do Media Analytics (Heartbeats) -** Este servidor sempre tem o formato &quot;`[namespace].hb.omtrdc.net`&quot;, em que `[namespace]` especifica o nome da sua empresa. Esse nome é fornecido pela Adobe.
    É necessário validar determinadas variáveis principais que são universais em todas as chamadas de rastreamento:
 
    **ID de visitante da Adobe (`mid`):** A variável `mid` é usada para capturar o valor definido no cookie do AMCV. A variável `mid` é o valor de identificação principal de sites e aplicativos móveis e também indica que o serviço de ID de visitante da Experience Cloud está definido corretamente. Ele é encontrado nas chamadas do Adobe Analytics (AppMeasurement) e do Media Analytics (heartbeats).
@@ -86,7 +80,7 @@ Conclua e registre as seguintes ações (em ordem):
 
    1. Servidor do Adobe Analytics — Iniciar chamada
    1. Servidor do Media Analytics -—Iniciar chamada
-   1. Servidor do Media Analytics — "Solicitação para iniciar chamada do Adobe Analytics solicitada"
+   1. Servidor do Media Analytics — &quot;Solicitação para iniciar chamada do Adobe Analytics solicitada&quot;
    As primeiras duas chamadas acima contêm metadados e variáveis adicionais. Para obter parâmetros de chamada e metadados, consulte [Detalhes da chamada de teste.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
    A terceira chamada acima informa ao servidor do Media Analytics que o SDK do Media solicitou que a chamada de Início do Adobe Analytics (`pev2=ms_s`) fosse enviada para o servidor do Adobe Analytics.
@@ -98,14 +92,14 @@ Conclua e registre as seguintes ações (em ordem):
 
    1. Servidor do Adobe Analytics — Chamada de início de anúncio
    1. Servidor do Media Analytics — Chamada de início de anúncio
-   1. Servidor do Media Analytics — "Chamada de início de anúncio do Adobe Analytics solicitada"
+   1. Servidor do Media Analytics — &quot;Chamada de início de anúncio do Adobe Analytics solicitada&quot;
    As primeiras duas chamadas contêm metadados e variáveis adicionais. Para obter parâmetros de chamada e metadados, consulte [Detalhes da chamada de teste.](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)
 
    A terceira chamada informa ao servidor do Media Analytics que o SDK do Media solicitou que a chamada de início de anúncio do Adobe Analytics (`pev2=msa_s`) fosse enviada para o servidor do Adobe Analytics.
 
    * **Reprodução do anúncio**
 
-      Durante a reprodução do anúncio, o SDK do Media Analytics envia eventos de reprodução do tipo "anúncio" para o servidor do Media Analytics a cada segundo.
+      Durante a reprodução do anúncio, o SDK do Media Analytics envia eventos de reprodução do tipo &quot;anúncio&quot; para o servidor do Media Analytics a cada segundo.
 
    * **Anúncio concluído**
 
@@ -115,7 +109,7 @@ Conclua e registre as seguintes ações (em ordem):
 
 1. **Pausar a reprodução de anúncio por 30 segundos, se disponível.**  **Pausa do anúncio**
 
-   Durante a pausa do anúncio, as chamadas de heartbeat ou "pings" do Media Analytics são enviadas pelo SDK para o servidor do Media Analytics a cada segundo.
+   Durante a pausa do anúncio, as chamadas de heartbeat ou &quot;pings&quot; do Media Analytics são enviadas pelo SDK para o servidor do Media Analytics a cada segundo.
 
    >[!NOTE]
    >
@@ -145,4 +139,3 @@ Conclua e registre as seguintes ações (em ordem):
 1. **Exibir a próxima mídia na lista de reprodução.** Quando a próxima mídia de uma lista de reprodução inicia, um novo conjunto de chamadas de início de mídia deve ser enviado.
 
 1. **Alternar mídia ou fluxo.** Ao alternar transmissões em tempo real, uma chamada completa do Media Analytics para o primeiro fluxo não deve ser enviada. As chamadas de início e de reprodução de mídia devem começar com o nome e fluxo do novo programa e com os valores de indicador de reprodução e duração corretos para o novo programa.
-
