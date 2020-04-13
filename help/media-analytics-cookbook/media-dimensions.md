@@ -24,7 +24,7 @@ Você também precisará reativar a configuração de rastreamento de mídia no 
 
 ## Como
 
-O exemplo do JavaScript abaixo gerará uma chamada de rastreamento de Link personalizado com o nome definido como "Banner principal".
+O exemplo do JavaScript abaixo gerará uma chamada de rastreamento de Link personalizado com o nome definido como &quot;Banner principal&quot;.
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"
