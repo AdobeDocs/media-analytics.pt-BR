@@ -3,7 +3,7 @@ seo-title: Visão geral
 title: Visão geral
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -25,19 +25,19 @@ Os dados de rastreamento capturados com a API Media Collection são enviados e p
 
 ## Visão geral da API {#api-overview}
 
-**URI:** obtenha essa informação do seu representante da Adobe.
+**URI:** solicite ao representante da Adobe.
 
-**Método HTTP:** POST, com corpo de solicitação JSON.
+**Método HTTP:** POST, com o corpo da solicitação JSON.
 
 ### Chamadas à APIs {#mc-api-calls}
 
-* **`sessions`-**Estabelece uma sessão com o servidor e retorna uma ID de sessão que será usada nas chamadas de`events`subsequentes. Seu aplicativo realiza essa chamada uma vez no início de uma sessão de rastreamento.
+* **`sessions`**- Estabelece uma sessão com o servidor e retorna uma ID de sessão que será usada nas chamadas de`events`subsequentes. Seu aplicativo realiza essa chamada uma vez no início de uma sessão de rastreamento.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-**Envia os dados de rastreamento de mídia.
+* **`events`**- Envia os dados de rastreamento de mídia.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
