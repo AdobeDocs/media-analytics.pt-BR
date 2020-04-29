@@ -2,8 +2,8 @@
 title: Visão geral do marco
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
 
 ---
 
@@ -28,23 +28,32 @@ Também é possível rastrear quantidades adicionais de métricas para o vídeo.
 
 ### Configuração de relatórios de marco
 
-Para configurar relatórios de vídeo para uma implementação do marco, acesse **[!UICONTROL Administrador &gt; Gerenciador do conjunto de relatórios].** Selecione o conjunto de relatórios e escolha **[!UICONTROL Gerenciamento de vídeo &gt; Relatórios de vídeo]:**
+Para configurar o relatórios de vídeo para uma implementação de etapa, acesse **[!UICONTROL Admin > Report Suite Manager].**Selecione o conjunto de relatórios e escolha**[!UICONTROL Video Management > Video Reporting]:**
 
-<!--![](assets/0clip_image002_1537416456.png){width="248"}-->
+<!--
+![](assets/0clip_image002_1537416456.png){width="248"}
+-->
+
 ![](assets/rs1.png)
 
-Na primeira tela, somente o Vídeo principal funcionará com os dados do Marco. Selecione **[!UICONTROL Vídeo principal]** e clique em **[!UICONTROL Salvar].**
+Na primeira tela, somente o Vídeo principal funcionará com os dados do Marco. Selecione **[!UICONTROL Video Core]** e clique em **[!UICONTROL Save].**
 
 ![](assets/video-core-check.png)
 
-Na próxima tela, selecione **[!UICONTROL Usar variáveis personalizadas].**
+Na tela seguinte, selecione **[!UICONTROL Use Custom Variables].**
 
-<!--![](assets/0clip_image006_-1561510960.png){width="470"}-->
+<!--
+![](assets/0clip_image006_-1561510960.png){width="470"}
+-->
+
 ![](assets/rs2.png)
 
 Na tela final, selecione os dois eVars e os três eventos a serem usados com a sua medição de vídeo:
 
-<!--![](assets/0clip_image008_-92166399.png)-->
+<!--
+![](assets/0clip_image008_-92166399.png)
+-->
+
 ![](assets/rs3.png)
 
 ## Referência da variável de vídeo {#video-variable-reference}
@@ -106,7 +115,7 @@ Se você estiver utilizando `Media.autoTrack` e não for rastrear métricas adic
 | Método    | Descrição |
 | --- | --- |
 | `Media.open` | **Sintaxe:** <br/><br/> `s.Media.open(mediaName, mediaLength, mediaPlayerName)` <br/><br/>Prepara o módulo de mídia para coletar dados de rastreamento do vídeo. Este método usa os seguintes parâmetros: <ul><li> **mediaName:** (obrigatório) o nome do vídeo conforme você quer que ele seja exibido nos relatórios de vídeo. </li><li>  **mediaLength:** (obrigatório) a duração do vídeo, em segundos.  </li><li> **mediaPlayerName:** (obrigatório) o nome do reprodutor de mídia utilizado para exibir o vídeo, conforme você quer que ele seja exibido nos relatórios de vídeo. </li></ul> |
-| `Media.openAd` | **Sintaxe:** <br/><br/> `s.Media.openAd(name, length, playerName, parentName,`<br/>   `parentPod, parentPodPosition, CPM)` <br/><br/>Prepara o módulo de mídia para coletar dados de rastreamento dos anúncios. Este método usa os seguintes parâmetros: <ul> <li> **name:** (obrigatório) o nome ou ID do anúncio.  </li> <li> **Length:** (obrigatório) a duração do anúncio.  </li> <li> **playerName:** (obrigatório) o nome do reprodutor de mídia utilizado para exibir o anúncio.  </li> <li> **parentName:** o nome ou a ID do conteúdo principal no qual o anúncio está incorporado.  </li> <li> **parentPod:** a posição, no conteúdo principal, de reprodução do anúncio.  </li> <li> **parentPodPosition:** a posição, no pod, de reprodução do anúncio.  </li> <li> **CPM:** o CPM ou o CPM criptografado (com prefixo "~") que se aplica a essa reprodução.  </li> </ul> |
+| `Media.openAd` | **Sintaxe:** <br/><br/> `s.Media.openAd(name, length, playerName, parentName,`<br/>   `parentPod, parentPodPosition, CPM)` <br/><br/>Prepara o módulo de mídia para coletar dados de rastreamento dos anúncios. Este método usa os seguintes parâmetros: <ul> <li> **name:** (obrigatório) o nome ou ID do anúncio.  </li> <li> **Length:** (obrigatório) a duração do anúncio.  </li> <li> **playerName:** (obrigatório) o nome do reprodutor de mídia utilizado para exibir o anúncio.  </li> <li> **parentName:** o nome ou a ID do conteúdo principal no qual o anúncio está incorporado.  </li> <li> **parentPod:** a posição, no conteúdo principal, de reprodução do anúncio.  </li> <li> **parentPodPosition:** a posição, no pod, de reprodução do anúncio.  </li> <li> **CPM:** o CPM ou o CPM criptografado (com prefixo &quot;~&quot;) que se aplica a essa reprodução.  </li> </ul> |
 | `Media.click` | **Sintaxe:** <br/><br/> `s.Media.click(name, offset)` <br/><br/>Rastreie situações nas quais um anúncio é clicado em um vídeo. Este método usa os seguintes parâmetros: <ul> <li> **name:** o nome do anúncio. Deve corresponder ao nome utilizado em Media.openAd.  </li> <li> **offset:** o deslocamento para o anúncio no momento do clique.  </li> </ul> |
 | `Media.close` | **Sintaxe:** <br/><br/> `s.Media.close(mediaName)` <br/><br/>Encerra a coleta de dados do vídeo e envia informações para os servidores de coleta de dados da Adobe. Chame o método ao fim do vídeo. Esse método utiliza o seguinte parâmetro: <br/><br/> **mediaName:** o nome do vídeo. Deve corresponder ao nome utilizado em `Media.open`. |
 | `Media.complete` | **Sintaxe:** <br/><br/> `s.Media.complete(name, offset)` <br/><br/>Este método rastreia manualmente um método de evento concluído. Ele é utilizado quando é necessário acionar eventos com uma lógica especial, que não pode ser manuseada com `Media.completeByCloseOffset`. <br/><br/>Por exemplo, se você estiver medindo um stream ao vivo que não tem hora para acabar, é possível acionar uma conclusão depois que o usuário exibir um stream ao vivo por X segundos. Você pode avaliar uma conclusão utilizando um cálculo de percentual com base na duração e no tipo de conteúdo. Este método usa os seguintes parâmetros: <ul> <li> **mediaName:** o nome do vídeo. Deve corresponder ao nome utilizado em Media.open.  </li> <li> **mediaOffset:** os segundos do vídeo quando o evento concluído deve ser enviado. Especifique o deslocamento com base no vídeo, iniciando no ponto zero. <br/><br/>Se o player de mídia rastrear utilizando milissegundos, verifique se o valor é convertido em segundos antes de chamar Media.complete.  </li> </ul> Se planeja chamar a conclusão manual, defina <br/><br/> `s.Media.completeByCloseOffset = false`. |
