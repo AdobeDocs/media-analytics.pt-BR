@@ -25,11 +25,11 @@ Para acessar o Adobe Debug:
 
    ![](assets/adobe-debug-login.png)
 
-   Os navegadores compatíveis com esta ferramenta são:
+   Os navegadores compatíveis para esta ferramenta são:
    * Google Chrome
    * Mozilla Firefox
    * Apple Safari
-   * Microsoft Internet Explorer versões 9 a 11
+   * Microsoft Internet Explorer versões 9-11
 
 Os navegadores recomendados são as versões mais recentes do Chrome e do Firefox.
 
@@ -44,13 +44,13 @@ Baixe e configure o Proxy de depuração:
    * Windows 7.1 de 64 bits ou superior
    ![](assets/debug-proxy-app.png)
 
-1. O servidor proxy de depuração será executado na máquina local na porta 33284 e será definido como o proxy do sistema.
+1. O servidor Proxy de Depuração será executado na sua máquina local na porta 33284 e será definido como proxy do sistema.
 
-   Talvez seja necessário ajustar as configurações do navegador de acordo com o sistema operacional e o navegador.
+   Talvez seja necessário ajustar a configuração do navegador com base no SO e no navegador.
 
 ## Baixe e instale o certificado SSL no desktop ou nos aplicativos {#download-and-install-sSL-desktop}
 
-Um certificado SSL exclusivo será gerado na primeira vez que você executar o Adobe Debug. Se você oferecer suporte ao tráfego HTTPS através do desktop e/ou dos aplicativos, precisará baixar e instalar nosso certificado SSL.
+Na primeira vez que você executar a Depuração da Adobe, um certificado SSL exclusivo será gerado. Se você suportar tráfego HTTPS em computadores e/ou aplicativos, será necessário baixar e instalar nosso certificado SSL.
 
 Baixe e instale o certificado SSL:
 
@@ -58,15 +58,15 @@ Baixe e instale o certificado SSL:
 1. Importe o certificado
 
    **Mac OS**
-   1. Clique duas vezes no certificado da autoridade de certificação de raiz para abri-lo no Keychain Access.
-   1. O certificado da autoridade de certificação de raiz é exibido no logon.
-   1. Mova (arraste) o certificado da autoridade de certificação de raiz para o sistema.
-   1. Você deve copiar o certificado para o sistema para garantir sua confiança por todos os usuários e processos do sistema local.
-   1. Abra o certificado da autoridade de certificação de raiz, expanda Confiança, selecione Sempre confiar e salve as alterações.
+   1. Dê duplo clique no certificado CA raiz para abri-lo no Keychain Access.
+   1. O certificado CA raiz é exibido no logon.
+   1. Mova (arraste) o certificado CA raiz para o Sistema.
+   1. Você deve copiar o certificado para o Sistema para garantir que ele seja confiável para todos os usuários e processos do sistema local.
+   1. Abra o certificado CA raiz, expanda Confiança, selecione Sempre confiar e salve as alterações.
    **Windows**
-   1. Realize um dos seguintes procedimentos:
+   1. Conclua um dos seguintes procedimentos:
 
-      * [Adicionar certificados ao repositório de Autoridades de certificação de raiz confiáveis a um computador local](https://technet.microsoft.com/pt-br/library/cc754841.aspx#BKMK_addlocal)
+      * [Adicionar certificados à loja de Autoridades de Certificação Raiz Confiáveis para um computador local](https://technet.microsoft.com/pt-br/library/cc754841.aspx#BKMK_addlocal)
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
@@ -75,7 +75,7 @@ Baixe e instale o certificado SSL:
     Talvez seja necessário sair e reabrir o Firefox para ver a alteração.
     
     **Dispositivos iOS**
-    1. Defina seu dispositivo iOS para usar o Adobe Debug como proxy HTTP clicando em **[!UICONTROL Configurações do aplicativo]** **&gt;** **[!UICONTROL Configurações do Wi-Fi]**.
+    1. Defina seu dispositivo iOS para usar o Adobe Debug como proxy HTTP clicando em **[!UICONTROL Configurações do aplicativo]** **>** **[!UICONTROL Configurações do Wi-Fi]**.
     
     1. No Safari, acesse [Debug.](https://proxy.debug.adobe.com/ssl)
     
@@ -90,30 +90,30 @@ Se você não tiver as chamadas HTTPS no Adobe Debug, deverá instalar o Certifi
 Para instalar o certificado SSL em um dispositivo iOS:
 
 1. No laptop, ative o Proxy de depuração e vá para o [Adobe Debug.](https://debug.adobe.com)
-1. Conclua as seguintes etapas no seu dispositivo iOS:
-   1. Ligue o dispositivo no modo avião.
-   1. Selecione o mesmo sinal Wi-Fi usado pelo seu laptop.
-   1. No laptop, defina manualmente o IP e a porta mostrados no aplicativo do Proxy de depuração.
+1. Complete as seguintes etapas no dispositivo iOS:
+   1. Ative o modo avião do dispositivo.
+   1. Selecione o mesmo sinal Wi-Fi usado pelo laptop.
+   1. No laptop, defina manualmente o IP e a porta mostrados no aplicativo Debug Proxy.
    1. Abra uma janela do navegador Apple Safari.
    1. Acesse [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. Baixe e instale o certificado SSL.
 
-1. No laptop, inicie a sessão do Adobe Debug.
-1. Inicie o teste no seu dispositivo iOS.
+1. No laptop, inicie a sessão de Depuração da Adobe.
+1. Inicie o teste no dispositivo iOS.
 
 ### Android
 
 Para instalar o certificado SSL em um dispositivo Android:
 
 1. No laptop, ative o Proxy de depuração e vá para o [Adobe Debug.](https://debug.adobe.com)
-1. Conclua as seguintes etapas no seu dispositivo Android:
-   1. Defina o dispositivo como Modo avião.
-   1. Selecione o mesmo sinal Wi-Fi usado pelo seu laptop.
-   1. No laptop, defina manualmente o IP e a porta mostrados no aplicativo do Proxy de depuração.
+1. Complete as seguintes etapas no dispositivo Android:
+   1. Ative o modo avião do dispositivo.
+   1. Selecione o mesmo sinal Wi-Fi usado pelo laptop.
+   1. No laptop, defina manualmente o IP e a porta mostrados no aplicativo Debug Proxy.
    1. Abra uma janela do navegador.
    1. Acesse [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. Baixe e instale o certificado SSL.
 
-1. No laptop, inicie a sessão do Adobe Debug.
-1. Inicie o teste no seu dispositivo Android.
+1. No laptop, inicie a sessão de Depuração da Adobe.
+1. Inicie o teste no dispositivo Android.
 
