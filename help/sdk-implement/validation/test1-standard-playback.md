@@ -2,7 +2,7 @@
 title: Teste 1 Reprodução padrão
 description: Este tópico descreve o teste de reprodução padrão usado na validação.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -107,7 +107,7 @@ Conclua e registre as seguintes ações (em ordem):
 
 
 
-1. **Pausar a reprodução de anúncio por 30 segundos, se disponível.**  **Pausa do anúncio**
+1. **Pausar a reprodução de anúncio por 30 segundos, se disponível.** **Pausa do anúncio**
 
    Durante a pausa do anúncio, as chamadas de heartbeat ou &quot;pings&quot; do Media Analytics são enviadas pelo SDK para o servidor do Media Analytics a cada segundo.
 
@@ -117,7 +117,7 @@ Conclua e registre as seguintes ações (em ordem):
 
    Para obter parâmetros de chamada e metadados, consulte [Detalhes da chamada de teste.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **Reproduzir o conteúdo principal por 10 minutos sem interrupções.**  **Reprodução de conteúdo**
+1. **Reproduzir o conteúdo principal por 10 minutos sem interrupções.** **Reprodução de conteúdo**
 
    Durante a reprodução do conteúdo principal, o SDK do Media envia heartbeats (chamadas de Reprodução) para o servidor do Media Analytics a cada 10 segundos.
 
