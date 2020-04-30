@@ -2,8 +2,8 @@
 title: Configurar iOS
 description: Configuração do aplicativo SDK do Media para implementação no iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * **Obter parâmetros de configuração válidos para o SDK do Media** Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
 * **Implementar o ADBMobile para iOS no aplicativo**
-Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [SDK do iOS 4.x para Soluções da Experience Cloud.](https://marketing.adobe.com/resources/help/pt_BR/mobile/ios/)
+Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [SDK do iOS 4.x para Soluções da Experience Cloud.](https://docs.adobe.com/content/help/pt-BR/mobile-services/ios/overview.html)
 
    >[!IMPORTANT]
    >
-   >A partir do iOS 9, a Apple introduziu um recurso chamado App Transport Security (ATS). Este recurso visa melhorar a segurança da rede, garantindo que seus aplicativos usem somente protocolos padrão do setor e cifras. Esse recurso é ativado por padrão, mas você tem opções de configuração que permitem trabalhar com ATS. Para obter detalhes sobre ATS, consulte [App Transport Security.](https://marketing.adobe.com/resources/help/pt_BR/mobile/ios/app_transport_security.html)
+   >A partir do iOS 9, a Apple introduziu um recurso chamado App Transport Security (ATS). Esse recurso tem como objetivo melhorar a segurança da rede, garantindo que seus aplicativos usem somente protocolos e cifras padrão do setor. Esse recurso é ativado por padrão, mas você tem opções de configuração que fornecem opções para trabalhar com ATS. Para obter detalhes sobre ATS, consulte [App Transport Security.](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)
 
-* **Forneça os seguintes recursos no reprodutor de mídia:**
+* **Forneça os seguintes recursos no player de mídia:**
 
-   * _Uma API para assinar os eventos do reprodutor_ - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
-   * _Uma API que fornece informações sobre o reprodutor_ - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
+   * _Uma API para assinar eventos do player_ - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
+   * _Uma API que fornece informações sobre o player_ - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
 ## Implementação do SDK
 
@@ -39,26 +39,26 @@ Para obter mais informações sobre a documentação do SDK do Adobe Mobile, con
 
       * `MediaSDK_TV.a`: um binário multiarquitetura habilitado para código de bits, que apresente as compilações de biblioteca para novos dispositivos Apple TV (arm64) e simuladores (x86_64).
 
-         Esse binário deve ser vinculado quando o destino for um aplicativo da Apple TV (tvOS).
-   1. Adicionar a biblioteca ao projeto:
+         Esse binário deve ser vinculado quando o destino for pretendido para um aplicativo da Apple TV (tvOS).
+   1. Adicione a biblioteca ao projeto:
 
       1. Abra o Xcode IDE e o seu aplicativo.
-      1. No **[!UICONTROL Navegador do projeto]**, arraste o diretório `libs` e solte-o no seu projeto.
+      1. In **[!UICONTROL Project Navigator]**, drag the `libs` directory and drop it under your project.
 
-      1. Certifique-se de que as caixas de seleção **[!UICONTROL Copiar itens se necessário]** e **[!UICONTROL Criar grupos]** estejam marcadas e que nenhuma das caixas de seleção em **[!UICONTROL Adicionar ao destino]** estejam selecionadas.
+      1. Certifique-se de que a caixa de **[!UICONTROL Copy Items if Needed]** seleção esteja selecionada, que **[!UICONTROL Create Groups]** esteja selecionada e que nenhuma das caixas de seleção em **[!UICONTROL Add to Target]** esteja selecionada.
 
          ![](assets/choose-options_ios.png)
 
-      1. Clique em **[!UICONTROL Concluir]**.
-      1. No **[!UICONTROL Navegador do projeto]**, selecione o seu aplicativo e os seus destinos.
-      1. Vincule as estruturas e bibliotecas necessárias na seção **[!UICONTROL Estruturas vinculadas]** e **[!UICONTROL Bibliotecas]** na guia **[!UICONTROL Geral]**.
+      1. Clique em **[!UICONTROL Finish]**.
+      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
 
          **Destinos de aplicativos iOS:**
 
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
          * **libsqlite3.0.tbd**
-         **Destinos da Apple TV (tvOS)**:
+         **Públicos da Apple TV (tvOS):**
 
          * **AdobeMobileLibrary_TV.a**
          * **MediaSDK_TV.a**
@@ -141,13 +141,13 @@ Para obter mais informações sobre a migração de 1.x para 2.x, consulte [Migr
 
 ## Configuração de um aplicativo nativo para tvOS
 
-Com o lançamento da nova Apple TV, é possível criar aplicativos compatíveis com um ambiente tvOS nativo. Você pode criar um aplicativo completamente nativo com as várias estruturas disponíveis no iOS, ou criar seu próprio aplicativo usando modelos XML e JavaScript. A partir da versão 2.0 do SDK do Media, o suporte para tvOS está disponível. Para mais informações sobre tvOS, consulte o [Site do desenvolvedor do tvOS.](https://developer.apple.com/tvos/)
+Com o lançamento da nova Apple TV, agora é possível criar aplicativos para execução no ambiente tvOS nativo. Você pode criar um aplicativo puramente nativo, usando qualquer uma das várias estruturas disponíveis no iOS, ou criar seu aplicativo usando modelos XML e JavaScript. A partir da versão 2.0 do SDK do Media, o suporte para tvOS está disponível. Para mais informações sobre tvOS, consulte o [Site do desenvolvedor do tvOS.](https://developer.apple.com/tvos/)
 
-Execute as seguintes etapas no projeto Xcode. Este guia foi escrito supondo que seu projeto tenha um direcionamento o aplicativo Apple TV com segmentação tvOS:
+Execute as seguintes etapas no projeto Xcode. Este guia foi escrito supondo que seu projeto tem um público-alvo que é um aplicativo da Apple TV direcionado ao tvOS:
 
 1. Arraste o arquivo de biblioteca `VideoHeartbeat_TV.a` para a pasta `lib` do seu projeto.
 
-1. Na guia **[!UICONTROL Criar fases]** do destino do seu aplicativo tvOS, expanda a seção **[!UICONTROL Link binário com bibliotecas]** e adicione as seguintes bibliotecas:
+1. Na guia **[!UICONTROL Build Phases]** do público alvo do aplicativo tvOS, expanda a seção **[!UICONTROL Link Binary with Libraries]** e adicione as seguintes bibliotecas:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
