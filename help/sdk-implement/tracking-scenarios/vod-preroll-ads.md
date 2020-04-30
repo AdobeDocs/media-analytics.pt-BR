@@ -15,13 +15,13 @@ Nesse cenário, um anúncio antes da exibição foi inserido antes do conteúdo 
 | Acionador | Método do Heartbeat | Chamadas de rede   | Notas   |
 | --- | --- | --- | --- |
 | Cliques do usuário [!UICONTROL Reproduzir] | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não tem conhecimento de um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| O anúncio começa. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Início do anúncio do Analytics, Início do anúncio do Heartbeat |  |
-| O quadro do anúncio nº 1 é reproduzido. | `trackPlay` | Heartbeat Ad Play (Reprodução do anúncio do Heartbeat) | O conteúdo do anúncio é reproduzido antes do conteúdo principal, e as pulsações começam quando o anúncio termina. |
+| O anúncio começa. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Início de anúncios do Analytics, Início de anúncios do Heartbeat |  |
+| O quadro do anúncio nº 1 é reproduzido. | `trackPlay` | Heartbeat Ad Play | O conteúdo do anúncio é reproduzido antes do conteúdo principal e o início das pulsações quando o anúncio é iniciado. |
 | O anúncio é reproduzido. |  | Ad Heartbeats (Pulsações do anúncio) |  |
-| Reprodução do anúncio nº 2 concluída. | `trackEvent:trackAdComplete` | Heartbeat Ad Complete (Anúncio do Heartbeat concluído) | O fim do anúncio é atingido. |
-| O primeiro quadro do anúncio nº 2 é reproduzido. | `trackEvent:AdStart` | Início do anúncio do Analytics, Início do anúncio do Heartbeat |  |
+| A reprodução do anúncio nº 2 é concluída. | `trackEvent:trackAdComplete` | Heartbeat Ad Complete | O fim do anúncio é atingido. |
+| O primeiro quadro do anúncio nº 2 é reproduzido. | `trackEvent:AdStart` | Início de anúncios do Analytics, Início de anúncios do Heartbeat |  |
 | O anúncio é reproduzido. |  | Ad Heartbeats (Pulsações do anúncio) |  |
-| Reprodução do anúncio nº 2 concluída. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete (Anúncio do Heartbeat concluído) | Fim do anúncio e do pod. |
+| A reprodução do anúncio nº 2 é concluída. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | O fim do anúncio e do pod é atingido. |
 | O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é idêntica ao cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é idêntica ao cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | A sessão foi encerrada | `trackSessionEnd` |  | `SessionEnd` |
@@ -54,8 +54,8 @@ Esses parâmetros são semelhantes à chamada de `Content Heartbeats`, mas a cha
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
-| `s:asset:ad_id` | &lt;ad ID&gt; |  |
-| `s:asset:pod_id` | &lt;ID de pod de anúncios&gt; |  |
+| `s:asset:ad_id` | &lt;ad ID> |  |
+| `s:asset:pod_id` | &lt;ID de pod de anúncios> |  |
 
 Semelhante às chamadas `Heartbeat Content Complete`, quando a reprodução do anúncio é concluída e chega ao fim da reprodução, uma chamada de `Heartbeat Ad Complete` é enviada. Essa chamada é semelhante a outras chamadas de `Heartbeat Ad`, mas contém alguns itens específicos:
 
