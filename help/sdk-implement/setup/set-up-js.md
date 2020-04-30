@@ -2,8 +2,8 @@
 title: Configurar JavaScript
 description: Configuração do aplicativo SDK do Media para implementação em JavaScript.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -15,12 +15,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * **Obter parâmetros de configuração válidos**
 Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
 * **Implementar`AppMeasurement`para JavaScript no aplicativo de mídia**
-Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [Implementar o Analytics usando JavaScript.](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/js_implementation.html)
+Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [Implementar o Analytics usando JavaScript.](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/js/overview.html)
 
-* **Forneça os seguintes recursos no reprodutor de mídia:**
+* **Forneça os seguintes recursos no player de mídia:**
 
-   * *Uma API para assinar os eventos do reprodutor* - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
-   * *Uma API que fornece informações sobre o reprodutor* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
+   * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
+   * *Uma API que fornece informações sobre o player* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
 1. Adicione a biblioteca [baixada](/help/sdk-implement/download-sdks.md#download-2x-sdks) ao projeto. Para conveniência, crie referências locais para as classes.
 
@@ -29,7 +29,7 @@ Para obter mais informações sobre a documentação do SDK do Adobe Mobile, con
 
    1. Hospede o arquivo `MediaSDK.min.js`.
 
-      Esse arquivo JavaScript principais deve ser hospedado em um servidor Web acessível para todas as páginas em seu site. Você precisará do caminho para esses arquivos na próxima etapa.
+      Esse arquivo JavaScript principal deve ser hospedado em um servidor da Web acessível a todas as páginas do site. Você precisa do caminho para esses arquivos para a próxima etapa.
 
    1. Referencie `MediaSDK.min.js` em todas as páginas do site.
 
