@@ -1,6 +1,6 @@
 ---
 audience: end-user
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: Adobe Analytics para áudio e vídeo
 product: adobe analytics
 sub-product: media analytics
 translation-type: ht
@@ -116,7 +116,7 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
       + [Teste 1: reprodução padrão](sdk-implement/validation/test1-standard-playback.md)
       + [Teste 2: Interrupção de mídia](sdk-implement/validation/test2-media-interrupt.md)
       + [Detalhes da chamada de teste](sdk-implement/validation/test-call-details.md)
-      + [Descrições do parâmetro de heartbeat](sdk-implement/validation/heartbeat-params.md)
+      + [Descrições do parâmetro Heartbeat](sdk-implement/validation/heartbeat-params.md)
       + Depuração {#debugging}
          + [Depuração do SDK](sdk-implement/validation/debugging/sdk-debugging.md)
          + [Configurar o Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
@@ -184,8 +184,8 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
    + Relatórios de mídia padrão {#media-default-reports}
       + [Visão geral dos relatórios padrão](media-reports/media-default-reports/default-reports-overview.md)
       + [Visão geral da mídia](media-reports/media-default-reports/media-reports-overview.md)
-      + [Detalhe da mídia](media-reports/media-default-reports/media-reports-detail.md)
-      + [Faixa de horário de mídia](media-reports/media-default-reports/media-reports-daypart.md)
+      + [Detalhes da mídia](media-reports/media-default-reports/media-reports-detail.md)
+      + [Faixa de horário da mídia](media-reports/media-default-reports/media-reports-daypart.md)
       + [Visualizadores simultâneos de mídia](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [Obter dados de relatório JSON de visualizadores simultâneos](media-reports/media-default-reports/get-concurrent-json.md)
    + [Modelos do Workspace de mídia](media-reports/media-workspace-templates.md)
