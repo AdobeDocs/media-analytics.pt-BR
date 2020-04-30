@@ -2,8 +2,8 @@
 title: Migração do Marco para Link personalizado
 description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Visão geral {#overview}
 
-Os principais conceitos de medição de vídeo são os mesmos para o rastreamento de Marco e Link personalizado, que estão realizando eventos do reprodutor de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores de reprodutores e mapeá-los para variáveis&#x200B;de análise. A abordagem de Link personalizado deve ser considerada como uma diminuição e simplificação da implementação e dos dados coletados. Com a solução de Link personalizado, nenhuma variável ou método é predefinido para a medição de vídeo, isso requer uma configuração personalizada completa. Deve ser possível atualizar o código de evento do reprodutor para apontar as chamadas de rastreamento de link personalizado para eventos básicos do reprodutor, como início e conclusão. Consulte o [guia de implementação do Link personalizado](/help/measurement-options/cl-in-aa/cl-impl-guide.md) e o [Rastreamento de link manual usando um código de link personalizado](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/link_manual.html) para obter mais detalhes.
+Os principais conceitos de medição de vídeo são os mesmos para o rastreamento de Marco e Link personalizado, que estão realizando eventos do reprodutor de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores de reprodutores e mapeá-los para variáveis&#x200B;de análise. A abordagem de Link personalizado deve ser considerada como uma diminuição e simplificação da implementação e dos dados coletados. Com a solução de Link personalizado, nenhuma variável ou método é predefinido para a medição de vídeo, isso requer uma configuração personalizada completa. Deve ser possível atualizar o código de evento do reprodutor para apontar as chamadas de rastreamento de link personalizado para eventos básicos do reprodutor, como início e conclusão. Consulte o [guia de implementação do Link personalizado](/help/measurement-options/cl-in-aa/cl-impl-guide.md) e o [Rastreamento de link manual usando um código de link personalizado](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) para obter mais detalhes.
 
 As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link personalizado.
 
@@ -25,7 +25,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 <tr>
 <th><strong>Métrica de marco</strong></th>
 <th><strong>Tipo de variável</strong></th>
-<th><strong>Link Personalizado</strong></th>
+<th><strong>Link personalizado</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -62,7 +62,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 <td>Definir o próprio evento</td>
 </tr>
 <tr>
-<td>Término do vídeo</td>
+<td>Término de vídeo</td>
 <td>
 <p>Evento</p>
 <p>Tipo: contador</p>
@@ -77,9 +77,9 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 <table>
 <thead>
 <tr>
-<th>Etapa
+<th>Milestone
 </th>
-<th>Sintaxe do marco
+<th>Sintaxe do Milestone
 </th>
 <th>Link personalizado
 </th>
@@ -212,9 +212,9 @@ s.linkTrackEvents
 <table>
 <thead>
 <tr>
-<th>Etapa
+<th>Milestone
 </th>
-<th>Sintaxe do marco
+<th>Sintaxe do Milestone
 </th>
 <th>Link personalizado
 </th>
@@ -341,9 +341,9 @@ s.linkTrackEvents
 <table>
 <thead>
 <tr>
-<th>Etapa
+<th>Milestone
 </th>
-<th>Sintaxe do marco
+<th>Sintaxe do Milestone
 </th>
 <th>Link personalizado
 </th>
@@ -358,7 +358,8 @@ Media.autoTrack
 </td>
 <td>
 <pre>
-s.Media.autoTrack = true;
+s.Media.autoTrack
+  = true;
 </pre>
 </td>
 <td>N/D
@@ -478,7 +479,8 @@ Media.segmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByMilestones = true;
+s.Media.segmentByMilestones
+  = true;
 </pre>
 </td>
 <td>N/D
@@ -510,9 +512,9 @@ s.Media.
 <table>
 <thead>
 <tr>
-<th>Etapa
+<th>Milestone
 </th>
-<th>Sintaxe do marco
+<th>Sintaxe do Milestone
 </th>
 <th>Link personalizado
 </th>
@@ -605,9 +607,9 @@ s.Media.
 <table>
 <thead>
 <tr>
-<th>Etapa
+<th>Milestone
 </th>
-<th>Sintaxe do marco
+<th>Sintaxe do Milestone
 </th>
 <th>Link personalizado
 </th>
