@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 O Workspace do Adobe Analytics oferece a capacidade de configurar rapidamente os painéis para analisar seus dados de rastreamento. Quando você cria um novo projeto ou acessa o Workspace para gerenciar um projeto existente, é possível escolher entre modelos padrão que abrangem cenários comuns de rastreamento geral, como Aquisição, consumo de áudio e vídeo e muito mais. Você também pode criar, modificar e salvar seus próprios modelos personalizados.
 
-Ao criar ou gerenciar um projeto, você trabalha com modelos da guia Workspace no Adobe Analytics. As opções de criação de um novo projeto ou a abertura de um projeto existente são exibidas ao entrar inicialmente no Workspace:
+Você trabalha com modelos na guia Workspace no Adobe Analytics ao criar ou gerenciar um projeto. Ao entrar pela primeira vez no Workspace, você verá as opções de criação de um novo projeto ou de abertura de um projeto existente:
 
 * **Criar um novo projeto -** ao clicar no botão **[!UICONTROL Criar novo projeto]** no Workspace, uma caixa de diálogo é exibida na qual é possível selecionar a partir da sua coleção de modelos (incluindo Padrão e Personalizado):
 
