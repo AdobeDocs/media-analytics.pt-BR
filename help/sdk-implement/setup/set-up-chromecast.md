@@ -2,8 +2,8 @@
 title: Configurar Chromecast
 description: Configuração do aplicativo SDK do Media para implementação no Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -14,18 +14,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 _Devo usar o SDK de JavaScript do Chromecast ou posso usar o SDK do JavaScript padrão?_
 
-A resposta correta é "Chromecast", pelos seguintes motivos:
-* As bibliotecas AppMeasurement e VisitorAPI no SDK de JS padrão não são certificadas para funcionar em plataformas OTT. No SDK de JS do Chromecast, a Biblioteca de vídeo do Heartbeat (BVS), o Analytics e a VisitorAPI são todos integrados ao SDK único, unificado e certificado para o Chromecast.
-* O SDK do Chromecast é muito mais leve do que o SDK de JS padrão. Isso é muito importante para o hardware de baixo custo usado pelas plataformas OTT.
+A resposta correta é &quot;Chromecast&quot;, pelos seguintes motivos:
+* As bibliotecas AppMeasurement e VisitorAPI no SDK JS padrão não estão certificadas para funcionar em plataformas OTT. No SDK JS do Chromecast, a Biblioteca de vídeo Heartbeats (VHL), o Analytics e a VisitorAPI são integrados ao SDK único, unificado e certificado para Chromecast.
+* O SDK do Chromecast é muito mais leve que o SDK JS padrão. Isso é muito importante para o hardware de ponta usado pelas plataformas OTT.
 
 ## Pré-requisitos
 
 * **Obter parâmetros de configuração válidos para Heartbeats** Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Media Analytics.
-* **Forneça os seguintes recursos no reprodutor de mídia:**
-   * *Uma API para assinar os eventos do reprodutor* - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
-   * *Uma API que fornece informações sobre o reprodutor* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
+* **Forneça os seguintes recursos no player de mídia:**
+   * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
+   * *Uma API que fornece informações sobre o player* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
-O Adobe Mobile Services apresenta uma nova interface do usuário que reúne recursos de marketing móvel para aplicativos móveis na Adobe Experience Cloud. Inicialmente, o Mobile Service fornece uma integração simples de recursos de análise e segmentação de aplicativos para as soluções do Adobe Analytics e do Adobe Target. Saiba mais pela [documentação do Adobe Mobile Services.](https://marketing.adobe.com/resources/help/pt_BR/mobile/)
+O Adobe Mobile Services fornece uma nova interface do usuário que reúne recursos de marketing móvel para aplicativos móveis de toda a Adobe Experience Cloud. Inicialmente, o Mobile Service fornece integração perfeita entre os recursos de análise e segmentação de aplicativos para as soluções do Adobe Analytics e do Adobe Target. Saiba mais pela [documentação do Adobe Mobile Services.](https://docs.adobe.com/content/help/pt-BR/mobile-services/using/home.html)
 
 O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar aplicativos Chromecast criados com JavaScript, dimensionar e coletar dados de público-alvo por meio do gerenciamento de público-alvo e medir o envolvimento com o vídeo pelos heartbeats de vídeo.
 
@@ -103,7 +103,7 @@ O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar apli
 
 1. Configurar a ID de visitante da Experience Cloud.
 
-   O serviço de ID de visitante da Experience Cloud fornece uma ID de visitante universal em todas as soluções da Experience Cloud. O serviço de ID de visitante é exigido pelo Video Heartbeat e por outras integrações da Experience Cloud.
+   O serviço de ID de visitante da Experience Cloud fornece uma ID de visitante universal nas soluções da Experience Cloud. O serviço de ID de visitante é exigido pela pulsação de vídeo e outras integrações da Experience Cloud.
 
    Verifique se a sua configuração `ADBMobileConfig` contém a ID da organização da `marketingCloud`.
 
@@ -130,8 +130,8 @@ O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar apli
    | Método | Descrição |
    | --- | --- |
    | `getMarketingCloudID()` | Recupera a ID de visitante da Experience Cloud do serviço de ID de visitante.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | Com a ID de visitante da Experience Cloud, é possível definir IDs adicionais de clientes que podem ser associadas a cada visitante. A API de visitante aceita várias IDs do cliente para o mesmo visitante e um identificador de tipo de cliente para separar o escopo de diferentes IDs do cliente. Este método corresponde a `setCustomerIDs()` na biblioteca do JavaScript.  Por exemplo: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `syncIdentifiers()` | Com a ID de visitante da Experience Cloud, é possível definir outras IDs do cliente que podem ser associadas a cada visitante. A API de visitante aceita várias IDs de cliente para o mesmo visitante e um identificador de tipo de cliente para separar o escopo das diferentes IDs de clientes. Este método corresponde a `setCustomerIDs()` na biblioteca do JavaScript.  Por exemplo: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
 
