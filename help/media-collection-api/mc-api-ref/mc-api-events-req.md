@@ -48,9 +48,9 @@ Para obter uma lista de tipos de eventos válidos para esta versão, consulte [T
 
 >[!IMPORTANT]
 >
->***Rastreamento de anúncios -**Você somente pode rastrear anúncios dentro de um`adBreak`*.
+>***Rastreamento de anúncios -** Você somente pode rastrear anúncios dentro de um`adBreak`*.
 >
->Na ausência de `adBreakStart` e "finalizações" `adBreakComplete` nos anúncios, os eventos `adStart` e `adComplete` simplesmente serão ignorados e a duração do anúncio correspondente será rastreada como a duração do conteúdo principal. Isso pode ter um impacto significativo nos dados agregados que estarão disponíveis no Adobe Analytics.
+>Na ausência de `adBreakStart` e &quot;finalizações&quot; `adBreakComplete` nos anúncios, os eventos `adStart` e `adComplete` simplesmente serão ignorados e a duração do anúncio correspondente será rastreada como a duração do conteúdo principal. Isso pode ter um impacto significativo nos dados agregados que estarão disponíveis no Adobe Analytics.
 
 ## Resposta
 
@@ -70,8 +70,8 @@ Access-Control-Expose-Headers Location
 | Código de resposta HTTP | Descrição | Itens de ação do cliente |
 |---|---|---|
 | **204** | **Sem conteúdo.** <br/><br/>O Heartbeat foi salvo com sucesso. | N/D |
-| **400** | **Solicitação inválida.** <br/><br/>Solicitação com formato inapropriado. | Verifique o tipo de solicitação dos [esquemas de validação de JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md). |
-| **404** | **Não encontrada.** <br/><br/>A ID da sessão para a sessão de mídia não foi encontrada no serviço de back-end. | O aplicativo do cliente deve usar a [API de solicitação de sessões](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para criar outra sessão de mídia e relatar o rastreamento nela. |
-| **410** | **Gone.** <br/><br/>A sessão de mídia foi encontrada no serviço de back-end, mas o cliente não pode mais relatar atividade nela. | O aplicativo do cliente deve usar a [API de solicitação de sessões](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para criar outra sessão de mídia e relatar o rastreamento nela. |
+| **400** | **Solicitação inválida.** <br/><br/>Solicitação com formato inapropriado. | Verifique os [esquemas de validação JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) para o tipo de solicitação. |
+| **404** | **Não encontrado.** <br/><br/>A ID da sessão para a sessão de mídia não foi encontrada no serviço de back-end. | O aplicativo cliente deve usar a API [Solicitação de sessões](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para criar outra sessão de mídia e o rastreamento de relatórios nela. |
+| **410** | **Excluído.** <br/><br/>A sessão de mídia foi encontrada no serviço de back-end, mas o cliente não pode mais relatar atividade nela. | O aplicativo cliente deve usar a API [Solicitação de sessões](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para criar outra sessão de mídia e o rastreamento de relatórios nela. |
 | **500** | **Erro do servidor** | N/D |
 
