@@ -17,7 +17,7 @@ Este cenário inclui um ativo de VOD sem anúncios e é reproduzido uma vez do i
 | Acionador | Método do Heartbeat | Chamadas de rede | Notas   |
 |---|---|---|---|
 | Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção Reproduzir ou um evento de reprodução automática. |
-| Primeiro quadro do Media | `trackPlay` | Heartbeat Content Play | Esse método dispara o timer; a partir desse ponto, as pulsações serão enviadas a cada 10 segundos durante toda a reprodução. |
+| Primeiro quadro do Media | `trackPlay` | Heartbeat Content Play | Esse método aciona o temporizador e a partir desse ponto, as pulsações serão enviadas a cada 10 segundos durante a reprodução. |
 | Reproduções de conteúdo |  | Content Heartbeats |  |
 | O conteúdo é concluído | `trackComplete` | Heartbeat Content Complete | *Concluído* significa que o fim do indicador de reprodução foi atingido. |
 
@@ -29,12 +29,12 @@ Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são 
 
 | Parâmetro | Valor | Notas   |
 |---|---|---|
-| `s:sc:rsid` | &lt;ID do conjunto de relatórios da Adobe&gt; |  |
-| `s:sc:tracking_server` | &lt;URL do servidor de rastreamento do Analytics&gt; |  |
+| `s:sc:rsid` | &lt;ID do conjunto de relatórios da Adobe> |  |
+| `s:sc:tracking_server` | &lt;URL do servidor de rastreamento do Analytics> |  |
 | `s:user:mid` | deve ser configurado | Deve corresponder ao valor médio da chamada `Adobe Analytics Content Start`. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;O nome da sua mídia&gt; |  |
+| `s:asset:media_id` | &lt;O nome da sua mídia> |  |
 | `s:meta:*` | opcional | Metadados personalizados que são configurados na mídia. |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
@@ -48,18 +48,18 @@ Esses parâmetros devem ser quase idênticos à chamada de `Heartbeat Content St
 
 ## Content heartbeats {#content-heartbeats}
 
-Durante a reprodução da mídia, um temporizador envia ao menos um heartbeat a cada 10 segundos. Essas pulsações contêm informações sobre reprodução, anúncios, buffering e muito mais. O conteúdo exato de cada heartbeat vai além do escopo desse documento, mas a questão crítica é que as pulsações são disparadas consistentemente durante toda a reprodução.
+Durante a reprodução da mídia, um temporizador envia ao menos um heartbeat a cada 10 segundos. Essas pulsações contêm informações sobre reprodução, anúncios, buffering e assim por diante. O conteúdo exato de cada pulsação está além do escopo desse documento, mas o problema crítico é que as pulsações são acionadas de forma consistente enquanto a reprodução continua.
 
-Em heartbeats de conteúdo, procure pelos seguintes parâmetros:
+Nas pulsações de conteúdo, procure pelos seguintes parâmetros:
 
 | Parâmetros | Valor | Notas   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;posição do indicador de reprodução&gt;, por exemplo, 50,60,70 | Esse parâmetro reflete a posição atual do indicador de reprodução. |
+| `l:event:playhead` | &lt;posição do indicador de reprodução>, por exemplo, 50,60,70 | Esse parâmetro reflete a posição atual do indicador de reprodução. |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
-Quando a reprodução termina, o que significa que o final do indicador de reprodução foi atingido, uma chamada `Heartbeat Content Complete` é enviada. Essa chamada é semelhante a outras chamadas de Heartbeat, mas contém alguns parâmetros específicos:
+Quando a reprodução termina, o que significa que o final do indicador de reprodução foi atingido, uma chamada `Heartbeat Content Complete` é enviada. Essa chamada é semelhante a outras chamadas do Heartbeat, mas contém alguns parâmetros específicos:
 
 | Parâmetros | Valor | Notas   |
 |---|---|---|
@@ -68,7 +68,7 @@ Quando a reprodução termina, o que significa que o final do indicador de repro
 
 ## Código de exemplo {#sample-code}
 
-Nesse cenário, o conteúdo tem 40 segundos de duração. É reproduzido até o fim, sem interrupção.
+Nesse cenário, o conteúdo tem 40 segundos de duração. Ele é reproduzido até o fim, sem interrupções.
 
 ![](assets/main-content-regular-playback.png)
 
