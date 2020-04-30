@@ -2,8 +2,8 @@
 title: Configurar Android
 description: Configuração do aplicativo SDK do Media para implementação no Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -14,10 +14,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * **Obter parâmetros de configuração válidos para o SDK do Media** Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
 * **Implementar o ADBMobile para Android em seu aplicativo** 
-Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [SDK 4.x do Android para Soluções da Experience Cloud.](https://marketing.adobe.com/resources/help/pt_BR/mobile/android/)
-* **Forneça os seguintes recursos no reprodutor de mídia:**
-   * *Uma API para assinar os eventos do reprodutor* - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
-   * *Uma API que fornece informações sobre o reprodutor* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
+Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [SDK 4.x do Android para Soluções da Experience Cloud.](https://docs.adobe.com/content/help/pt-BR/mobile-services/android/overview.html)
+* **Forneça os seguintes recursos no player de mídia:**
+   * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
+   * *Uma API que fornece informações sobre o player* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
 ## Implementação do SDK
 
@@ -30,23 +30,23 @@ Para obter mais informações sobre a documentação do SDK do Adobe Mobile, con
 
       **IntelliJ IDEA:**
 
-      1. Clique com o botão direito do mouse no painel **[!UICONTROL Navegação do projeto]**.
-      1. Selecione **[!UICONTROL Abrir configurações do módulo]**.
-      1. Em **[!UICONTROL Configurações do projeto]**, selecione **[!UICONTROL Bibliotecas]**.
+      1. Right click your project in the **[!UICONTROL Project navigation]** panel.
+      1. Selecionar **[!UICONTROL Open Module Settings]**.
+      1. Em **[!UICONTROL Project Settings]**, selecione **[!UICONTROL Libraries]**.
 
-      1. Clique em **[!UICONTROL +]** para adicionar uma nova biblioteca.
+      1. Click **[!UICONTROL +]** to add a new library.
       1. Selecione **[!UICONTROL Java]** e navegue até o arquivo `MediaSDK.jar`.
 
       1. Selecione os módulos nos quais planeja usar a biblioteca móvel.
-      1. Clique em **[!UICONTROL Aplicar]** e em **[!UICONTROL OK]** para fechar a janela Configurações do módulo.
+      1. Click **[!UICONTROL Apply]** and then **[!UICONTROL OK]** to close the Module Settings window.
       **Eclipse:**
 
       1. No Eclipse IDE, clique com o botão direito do mouse no nome do projeto.
-      1. Clique em **[!UICONTROL Caminho de criação]** &gt; **[!UICONTROL Adicionar arquivos externos]** .
+      1. Clique em  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
       1. Selecionar `MediaSDK.jar`.
-      1. Clique em **[!UICONTROL Abrir]**.
-      1. Clique novamente com o botão direito no projeto e clique em **[!UICONTROL Caminho de compilação]** &gt; **[!UICONTROL Configurar caminho da compilação]** .
-      1. Clique nas guias **[!UICONTROL Ordem]** e **[!UICONTROL Exportar]**.
+      1. Clique em **[!UICONTROL Open]**.
+      1. Clique novamente no projeto com o botão direito do mouse e clique em **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]** .
+      1. Clique nas guias **[!UICONTROL Order]** e **[!UICONTROL Export]** .
 
       1. Verifique se o arquivo `MediaSDK.jar` foi selecionado.
 
@@ -113,9 +113,9 @@ Para obter mais informações sobre a documentação do SDK do Adobe Mobile, con
    >
    >Certifique-se de que a instância `MediaHeartbeat` possa ser acessada e *não seja desalocada até o final da sessão*. Essa instância será usada para todos os eventos de rastreamento a seguir.
 
-**Inclusão de permissões de aplicativo**
+**Adicionar permissões de aplicativo**
 
-O aplicativo que usa o SDK do Media exige as seguintes permissões para enviar dados nas chamadas de rastreamento:
+O aplicativo que usa o SDK de mídia requer as seguintes permissões para enviar dados em chamadas de rastreamento:
 
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
