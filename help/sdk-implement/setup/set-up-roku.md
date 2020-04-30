@@ -2,8 +2,8 @@
 title: Configurar Roku
 description: Configuração do aplicativo SDK do Media para implementação no Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -13,13 +13,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## Pré-requisitos
 
 * **Obter parâmetros de configuração válidos para Heartbeats** Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Media Analytics.
-* **Forneça os seguintes recursos no reprodutor de mídia:**
-   * _Uma API para assinar os eventos do reprodutor_ - O SDK do Media exige a chamada de um conjunto de APIs simples quando ocorrerem eventos no reprodutor.
-   * _Uma API que fornece informações sobre o reprodutor_ - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
+* **Forneça os seguintes recursos no player de mídia:**
+   * _Uma API para assinar eventos do player_ - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
+   * _Uma API que fornece informações sobre o player_ - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
-O Adobe Mobile Services apresenta uma nova interface do usuário que reúne recursos de marketing móvel para aplicativos móveis na Adobe Experience Cloud. Inicialmente, o Mobile Service fornece uma integração simples de recursos de análise e segmentação de aplicativos para as soluções do Adobe Analytics e do Adobe Target.
+O Adobe Mobile Services fornece uma nova interface do usuário que reúne recursos de marketing móvel para aplicativos móveis de toda a Adobe Experience Cloud. Inicialmente, o Mobile Service fornece integração perfeita entre os recursos de análise e segmentação de aplicativos para as soluções do Adobe Analytics e do Adobe Target.
 
-Saiba mais pela [documentação do Adobe Mobile Services.](https://marketing.adobe.com/resources/help/pt_BR/mobile/)
+Saiba mais pela [documentação do Adobe Mobile Services.](https://docs.adobe.com/content/help/pt-BR/mobile-services/using/home.html)
 
 O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativos Roku criados com BrightScript, dimensionar e coletar dados de público por meio do gerenciamento de público-alvo e medir o envolvimento com o vídeo pelas pulsações de vídeo.
 
@@ -38,7 +38,7 @@ O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativo
 
       >[!TIP]
       >
-      >Um exemplo de arquivo JSON `ADBMobileConfig` é fornecido com o pacote. Entre em contato com seu representante da Adobe para obter as configurações.
+      >Um exemplo de arquivo JSON `ADBMobileConfig` é fornecido com o pacote. Entre em contato com representantes da Adobe para obter as configurações.
 
       Por exemplo:
 
@@ -100,7 +100,7 @@ O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativo
 
 1. Configurar a ID de visitante da Experience Cloud.
 
-   O serviço de ID de visitante da Experience Cloud fornece uma ID de visitante universal em todas as soluções da Experience Cloud. O serviço de ID de visitante é exigido pelo Video Heartbeat e por outras integrações da Experience Cloud.
+   O serviço de ID de visitante da Experience Cloud fornece uma ID de visitante universal nas soluções da Experience Cloud. O serviço de ID de visitante é exigido pela pulsação de vídeo e outras integrações da Experience Cloud.
 
    Verifique se a sua configuração `ADBMobileConfig` contém a ID da organização da `marketingCloud`.
 
@@ -127,7 +127,7 @@ O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativo
    |  Método   | Descrição |
    | --- | --- |
    | `visitorMarketingCloudID` | Recupera a ID de visitante da Experience Cloud do serviço de ID de visitante.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | Com a ID de visitante da Experience Cloud, é possível definir IDs adicionais de clientes que podem ser associadas a cada visitante. A API de visitante aceita várias IDs do cliente para o mesmo visitante e um identificador de tipo de cliente para separar o escopo de diferentes IDs do cliente. Este método corresponde a `setCustomerIDs`. Por exemplo: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `visitorSyncIdentifiers` | Com a ID de visitante da Experience Cloud, é possível definir outras IDs do cliente que podem ser associadas a cada visitante. A API de visitante aceita várias IDs de cliente para o mesmo visitante e um identificador de tipo de cliente para separar o escopo das diferentes IDs de clientes. Este método corresponde a `setCustomerIDs`. Por exemplo: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | Usado para definir a ID do Roku para publicidade (RIDA) no SDK. Por exemplo: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Obtenha a ID do Roku para publicidade (RIDA) usando a API [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) do SDK do Roku. |
 
    <!--
@@ -136,4 +136,4 @@ O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativo
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
