@@ -35,9 +35,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | `media.id` | S | `sessionStart` | Identificador exclusivo para o conteúdo |
 | `media.name` | N | `sessionStart` | Nome legível para o conteúdo |
 | `media.length` | S | `sessionStart` | Duração do conteúdo (segundos) |
-| `media.contentType` | S | `sessionStart` | Formato do fluxo (pode ser qualquer sequência de caracteres. Alguns valores recomendados são "Live", "VOD" ou "Linear") |
+| `media.contentType` | S | `sessionStart` | Formato do fluxo (pode ser qualquer sequência de caracteres. Alguns valores recomendados são &quot;Live&quot;, &quot;VOD&quot; ou &quot;Linear&quot;) |
 | `media.playerName` | S | `sessionStart` | O nome do reprodutor responsável pela renderização do conteúdo |
-| `media.channel` | S | `sessionStart` | O canal de distribuição do conteúdo. Isso pode ser um nome de aplicativo móvel, de site ou da propriedade |
+| `media.channel` | S | `sessionStart` | O canal de distribuição do conteúdo. Pode ser um nome de aplicativo móvel ou um nome de site, nome de propriedade |
 | `media.resume` | N | `sessionStart` | Indica se um usuário está ou não retomando uma sessão anterior (em vez de iniciar uma nova sessão) |
 | `media.sdkVersion` | N | `sessionStart` | A versão de SDK usada pelo reprodutor |
 
@@ -48,19 +48,19 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | `media.show` | N | `sessionStart` | O nome do programa ou da série |
 | `media.season` | N | `sessionStart` | O número da temporada do programa ou da série |
 | `media.episode` | N | `sessionStart` | O número do episódio |
-| `media.assetId` | N | `sessionStart` | O identificador exclusivo de conteúdo do ativo de vídeo, como o identificador de episódio da série de TV, o identificador de ativo do filme ou o identificador de evento em tempo real. Normalmente, essas IDs são derivadas de autoridades de metadados, como EIDR, TMS/Gracenote ou Rovi. Esses identificadores também podem ser de outros sistemas proprietários ou internos. |
+| `media.assetId` | N | `sessionStart` | O identificador exclusivo para o conteúdo do material de vídeo, como o identificador de episódio da série de TV, identificador de material de filme ou identificador de evento ao vivo. Normalmente, essas IDs são derivadas de autoridades de metadados, como EIDR, TMS/Gracenote ou Rovi. Esses identificadores também podem ser de outros sistemas proprietários ou internos. |
 | `media.genre` | N | `sessionStart` | O tipo de conteúdo conforme definido pelo produtor do conteúdo |
 | `media.firstAirDate` | N | `sessionStart` | A data quando o conteúdo foi exibido na televisão pela primeira vez |
 | `media.firstDigitalDate` | N | `sessionStart` | A data quando o conteúdo foi exibido em qualquer plataforma digital pela primeira vez |
 | `media.rating` | N | `sessionStart` | A classificação conforme definido pelas Diretrizes de controle parental da TV |
 | `media.originator` | N | `sessionStart` | O criador do conteúdo |
 | `media.network` | N | `sessionStart` | O nome da rede/canal |
-| `media.showType` | N | `sessionStart` | O tipo de conteúdo, expresso como um número inteiro entre 0 e 3: <ul> <li>0 - Episódio completo </li> <li>1 - Visualização </li> <li>2 - Clipe </li> <li>3 - Outro </li> </ul> |
+| `media.showType` | N | `sessionStart` | O tipo de conteúdo, expresso como um número inteiro entre 0 e 3: <ul> <li>0 - Episódio completo </li> <li>1 - Visualização </li> <li>2 - Clip </li> <li>3 - Outro </li> </ul> |
 | `media.adLoad` | N | `sessionStart` | O tipo de anúncio carregado |
 | `media.pass.mvpd` | N | `sessionStart` | O MVPD fornecido pela autenticação da Adobe |
 | `media.pass.auth` | N | `sessionStart` | Indica que o usuário foi autorizado pela autenticação da Adobe (só pode ser verdadeiro se estiver definido) |
 | `media.dayPart` | N | `sessionStart` | A hora do dia em que o conteúdo foi transmitido |
-| `media.feed` | N | `sessionStart` | O tipo de feed, por exemplo, "West-HD" |
+| `media.feed` | N | `sessionStart` | O tipo de feed, por exemplo, &quot;West-HD&quot; |
 
 ## Dados de publicidade
 
@@ -99,10 +99,10 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | Chave da solicitação  | Obrigatório | Definir em... |  Descrição  |
 | --- | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | Qualquer | A taxa de bits do fluxo |
-| `media.qoe.droppedFrames` | N | Qualquer | O número de quadros ignorados no fluxo |
+| `media.qoe.bitrate` | N | Qualquer | A taxa de bits da transmissão |
+| `media.qoe.droppedFrames` | N | Qualquer | O número de quadros soltos na transmissão |
 | `media.qoe.framesPerSecond` | N | Qualquer | O número de quadros por segundo |
-| `media.qoe.timeToStart` | N | Qualquer | O tempo (em milissegundos) passado entre quando o usuário aperta Reproduzir e o conteúdo é carregado e começa a reproduzir |
+| `media.qoe.timeToStart` | N | Qualquer | O tempo (em milissegundos) decorrido entre o momento em que o usuário aperta o play e o conteúdo é carregado e começa a ser reproduzido. |
 
 ## Parâmetros da Lei de Privacidade do Consumidor da Califórnia (CCPA) {#ccpa-params}
 
@@ -160,7 +160,7 @@ Observe que o valor `visitor.customerIDs` pode ter qualquer número de objetos n
 
 ### visitor.aamLocationHint
 
-Este parâmetro indica qual a borda do Adobe Audience Manager (AAM) terá uma ocorrência quando o Adobe Analytics enviar os dados do cliente para o Audience Manager. Se você não passar esse parâmetro, a Adobe codificará permanentemente para 1. Isso é particularmente importante quando os usuários finais tendem a usar seus dispositivos em locais geograficamente distantes (por exemplo, Leste dos EUA, Oeste dos EUA, Europa, Ásia). Caso contrário, os dados do usuário serão espalhados por várias bordas do AAM.
+Este parâmetro indica qual a borda do Adobe Audience Manager (AAM) terá uma ocorrência quando o Adobe Analytics enviar os dados do cliente para o Audience Manager. Se você não passar esse parâmetro, a Adobe codificará para 1. Isso é particularmente importante quando os usuários finais tendem a usar seus dispositivos em locais geograficamente distantes (por exemplo, Leste dos EUA, Oeste de EUA, Europa, Ásia). Caso contrário, os dados do usuário serão distribuídos por várias bordas do AAM.
 
 ### media.resume
 
