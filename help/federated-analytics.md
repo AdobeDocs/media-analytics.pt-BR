@@ -15,26 +15,26 @@ Por meio das regras e lógicas que regem o Federated Analytics, os dados são fa
 
 ## Benefícios {#benefits}
 
-* **Transparente:** elimine a “caixa preta” em relação à criação de dados usando uma mesma lógica entre empresas
-* **Abrangente:** entenda o alcance total e o impacto do consumo de áudio e vídeo em parcerias, plataformas e dispositivos
-* **Seguro:** controle o compartilhamento de dados no lado do servidor por meio de regras e lógica
-* **Padronizado:** fale a mesma linguagem de dados que seus parceiros
-* **Acionável:** quantifique os dados de áudio e vídeo em relação a reprodutores de referência, rastreie tendências e detecte anomalias por meio do Adobe Analytics
-* **Centralizado:** colete dados de avaliação de áudio e vídeo em um único local da Adobe
-* **Contratual:** cumpra facilmente os requisitos legais de compartilhamento de dados
-* **Tempo hábil:** envie e receba dados em tempo real
-* **Fácil:** marque reprodutores com os SDKs da Adobe, compartilhe dados com vários parceiros
+* **Transparente:** retirar a caixa preta de criação de dados usando a mesma lógica entre empresas
+* **Amplo:** entender todo o alcance e impacto do consumo de áudio e vídeo em parcerias, plataformas e dispositivos
+* **Seguro:** controlar o compartilhamento de dados do lado do servidor por meio de regras e lógica
+* **Padronizado:** falar o mesmo idioma de dados que seus parceiros
+* **Acionável:** quantificar os dados de áudio e vídeo para fazer o benchmark de players, monitorar tendências e detectar anomalias pelo Adobe Analytics
+* **Centralizado:** coletar dados de medição de áudio e vídeo em um local da Adobe
+* **Contratual:** atenda facilmente aos requisitos legais de compartilhamento de dados
+* **Em tempo oportuno:** enviar e receber dados em tempo quase real
+* **Fácil:** adicionar tags aos players uma vez com SDKs da Adobe, compartilhar dados para muitos parceiros
 
 ## Definições {#definitions}
 
-* **Remetente:** o cliente que gera os dados de análise de áudio e vídeo em reprodutores particulares
-* **Destinatário:** o cliente que recebe os dados de análise de áudio e vídeo do remetente
+* **Remetente:** cliente gerando dados de análise de áudio e vídeo em players próprios
+* **Destinatário:** cliente recebendo dados de análise de áudio e vídeo do remetente
 
 ## Requisitos {#requirements}
 
-* **Contrato de fluxos de mídia:** o destinatário e o remetente precisam contratar o Adobe Analytics para fluxos de mídia para obterem acesso aos dados de áudio e vídeo no Adobe Analytics. Entre em contato com a equipe de conta para obter mais detalhes.
-* **Adendo federado:** cada Remetente e Destinatário deve ter um adendo assinado em vigor com a Adobe para enviar ou receber dados. Um adendo por cliente é necessário, e não um adendo por parceria. Entre em contato com a equipe de conta para obter mais detalhes.
-* **Implementação do Media Analytics:** o Remetente deve ter o Media Analytics implementado em todos os reprodutores que farão parte do conjunto de dados federados. Somente os dados do Media Analytics estão disponíveis para federação. Consulte a documentação: [Avaliação de áudio e vídeo no Adobe Analytics](/help/media-overview.md)
+* **Contrato de transmissão de mídia:** O receptor e o remetente devem ter contratado o Adobe Analytics para fluxos de mídia antes de obter acesso aos dados de áudio e vídeo no Adobe Analytics. Entre em contato com a equipe de conta para obter mais detalhes.
+* **Adendo federado:** cada Remetente e Destinatário deve ter um adendo assinado em vigor com a Adobe para enviar ou receber dados. É necessário um adendo por cliente, e não um adendo por parceria. Entre em contato com a equipe de conta para obter mais detalhes.
+* **Implementação do Media Analytics:** o remetente deve ter o Media Analytics implementado em todos os players que farão parte do conjunto de dados federado. Somente os dados do Media Analytics estão disponíveis para federação. Consulte a documentação: [Avaliação de áudio e vídeo no Adobe Analytics](/help/media-overview.md)
 
 * **Contrato de consultoria da Adobe:** para a configuração inicial de regras federadas entre o destinatário e o remetente, é valioso trabalhar com os serviços de consultoria para analisar os dados e criar o contrato de compartilhamento de dados.
 
@@ -45,11 +45,11 @@ Baixe a versão atual deste formulário aqui: [Contrato de regras de federação
 ## Processo {#process}
 
 1. O Remetente e o Destinatário trabalham juntos para preencher o formulário do Contrato de regras de federação. O formulário do Contrato de regras de federação contém campos especiais para a equipe de engenharia e deve ser editado SOMENTE usando o Adobe Acrobat. [Baixe o Acrobat gratuitamente.](https://get.adobe.com/br/reader/)
-1. Os serviços de consultoria fornecem um exemplo de arquivo de dados para o Destinatário contendo dados reais dos reprodutores do Remetente para voltar a confirmar que as regras corretas de compartilhamento de dados estão definidas, desde que os arquivos de dados estejam disponíveis.
-1. O Remetente e o Destinatário garantem que o contrato de compartilhamento de dados atende a todos os requisitos contratuais entre as duas partes.
-1. Os serviços de consultoria enviam o formulário preenchido à engenharia da Adobe para configurar as regras de compartilhamento de dados.
-1. Os dados são compartilhados no conjunto de relatórios de desenvolvimento que o Destinatário analisará e validará.
-1. Quando o Destinatário confirma que os dados estão corretos, a engenharia da Adobe atualiza as regras para apontar para um conjunto de relatórios de produção.
-1. O Destinatário revisará e validará os dados no conjunto de relatórios de produção.
-1. Se ocorrerem alterações no conjunto de dados no futuro, o Remetente ou o Destinatário poderão enviar um tíquete de atendimento ao cliente para obter suporte.
+1. Os serviços de consultoria fornecem um arquivo de dados de exemplo para o Destinatário com dados reais dos players do remetente, para confirmar que regras corretas de compartilhamento de dados são definidas, desde que os arquivos de dados estejam disponíveis.
+1. O remetente e o destinatário garantem que o contrato de compartilhamento de dados atenda a todos os requisitos contratuais entre as duas partes.
+1. Os serviços de consultoria enviam o formulário preenchido para o Adobe Engineering para configurar as regras de compartilhamento de dados.
+1. Os dados são compartilhados com o conjunto de relatórios de desenvolvimento onde o Destinatário verificará e validará os dados.
+1. Quando o Destinatário confirmar que os dados estão corretos, o Adobe Engineering atualiza as regras para apontar para um conjunto de relatórios de produção.
+1. O destinatário revisará e validará os dados no conjunto de relatórios de produção.
+1. Se ocorrerem alterações no conjunto de dados no futuro, o remetente ou o destinatário poderá enviar um tíquete de atendimento ao cliente para suporte.
 
