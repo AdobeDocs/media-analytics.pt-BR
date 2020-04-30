@@ -23,11 +23,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | --- | --- | :---: |
    | `name` | Nome da mídia | Sim |
    | `mediaid` | Identificador exclusivo de mídia | Sim |
-   | `length` | Comprimento da mídia | Sim |
+   | `length` | Duração da mídia | Sim |
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    | Nome da constante | Descrição   |
    |---|---|
@@ -38,7 +38,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `AUDIOBOOK` | Tipo de fluxo para audiobook. |
    | `PODCAST` | Tipo de fluxo para podcast. |
 
-   **Constantes de`MediaType`:**
+   **`MediaType`Constantes de:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -143,10 +143,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifique qualquer cenário no qual o reprodutor de mídia será pausado e verifique se `trackPause` foi chamado corretamente. Os seguintes cenários exigem que o aplicativo chame `trackPause()`:
 
-   * O usuário clica explicitamente em Pausar no aplicativo.
-   * O reprodutor se coloca no estado Pausado.
-   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que o aplicativo mantenha a sessão aberta.
-   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou um pop-up de outro aplicativo é exibido, mas você deseja que o aplicativo mantenha a sessão ativa para que o usuário possa retomar a mídia do ponto em que foi interrompida.
+   * O usuário faz uma pausa explicitamente no aplicativo.
+   * O player se coloca no estado Pausa.
+   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que ele mantenha a sessão aberta.
+   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou uma pop-up de outro aplicativo ocorre, mas você deseja que o aplicativo mantenha a sessão ativa para dar ao usuário a oportunidade de retomar a mídia a partir do ponto de interrupção.
 
 1. Identifique o evento do reprodutor para reprodução e/ou retomada da pausa e chame `trackPlay`:
 
@@ -159,5 +159,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >Esta pode ser a mesma fonte de evento utilizada na Etapa 4. Verifique se cada chamada da API `trackPause()` está emparelhada a uma chamada da API `trackPlay()` quando a reprodução for retomada.
 
 * Cenários de rastreamento: [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
-* Reprodutor de exemplo incluído com o SDK do JavaScript para um exemplo completo de rastreamento.
+* Exemplo de player incluído no SDK do JavaScript para obter um exemplo completo de rastreamento.
 
