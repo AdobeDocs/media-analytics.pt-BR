@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Visão geral {#overview}
 
-Os principais conceitos de medição de vídeo são os mesmos para Marco e Media Analytics, que estão realizando eventos do reprodutor de vídeo e mapeando-os para os métodos de análise, além de capturar metadados e valores do reprodutor e mapeá-los para variáveis&#x200B;de análise. A solução do Media Analytics surgiu no Marco, portanto, muitos dos métodos e métricas são os mesmos. No entanto, a abordagem e o código de configuração mudaram significativamente. Deve ser possível atualizar o código de evento do reprodutor para apontar para os novos métodos do Media Analytics. Consulte [Visão geral do SDK](/help/sdk-implement/setup/setup-overview.md) e [Visão geral do rastreamento](/help/sdk-implement/track-av-playback/track-core-overview.md) para obter mais detalhes sobre a implementação do Media Analytics.
+Os conceitos principais de avaliação de vídeo são os mesmos para o Milestone e o Media Analytics, que está pegando eventos do player de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores de player e mapeá-los para variáveis de análise. A solução do Media Analytics surgiu do Milestone, mas muitos dos métodos e métricas são os mesmos, no entanto, a abordagem de configuração e o código mudaram bastante. Deve ser possível atualizar o código de evento do player para apontar para os novos métodos do Media Analytics. Consulte [Visão geral do SDK](/help/sdk-implement/setup/setup-overview.md) e [Visão geral do rastreamento](/help/sdk-implement/track-av-playback/track-core-overview.md) para obter mais detalhes sobre a implementação do Media Analytics.
 
 As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Media Analytics.
 
@@ -22,20 +22,20 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 | Métrica de marco | Tipo de variável | Métrica do Media Analytics |
 | --- | --- | --- |
-| Conteúdo | eVar<br/><br/>Expiração padrão: visita | Conteúdo |
-| Tipo de conteúdo | Expiração <br/>padrão do eVar: Visualização de página<br/> | Tipo de conteúdo |
-| Tempo gasto no conteúdo | Tipo <br/>de evento: Contador<br/> | Tempo gasto no conteúdo |
-| Inicialização de vídeo | Tipo <br/>de evento: Contador<br/> | Inicialização de vídeo |
-| Término do vídeo | Tipo <br/>de evento: Contador<br/> | Conteúdo concluído |
+| Conteúdo | Expiração <br/><br/>padrão do eVar: Visita | Conteúdo |
+| Tipo de conteúdo | Expiração <br/><br/>padrão do eVar: Visualização de página | Tipo de conteúdo |
+| Tempo gasto no conteúdo | Tipo <br/><br/>de evento: Contador | Tempo gasto no conteúdo |
+| Inicialização de vídeo | Tipo <br/><br/>de evento: Contador | Inicialização de vídeo |
+| Término de vídeo | Tipo <br/><br/>de evento: Contador | Conteúdo concluído |
 
 ### Variáveis do módulo de mídia
 
 <table>
 <thead>
 <tr>
-<th>Etapa
+<th>Milestone
 </th>
-<th>Sintaxe do marco
+<th>Sintaxe do Milestone
 </th>
 <th>Media Analytics
 </th>
@@ -50,12 +50,13 @@ Media.trackUsingContextData
 </td>
 <td>
 <pre>
-s.Media.trackUsingContextData = true;
+s.Media.trackUsingContextData
+  = true;
 </pre>
 </td>
 <td>N/D
 </td>
-<td>Todos os dados do Media Analytics são enviados somente usando os dados de contexto.
+<td>Todos os dados do Media Analytics são enviados somente com os Dados de contexto.
 </td>
 </tr>
 <tr>
@@ -133,9 +134,9 @@ s.Media.trackEvents =
 <table>
 <thead>
 <tr>
-<th>Etapa
+<th>Milestone
 </th>
-<th>Sintaxe do marco
+<th>Sintaxe do Milestone
 </th>
 <th>Media Analytics
 </th>
@@ -150,12 +151,13 @@ Media.autoTrack
 </td>
 <td>
 <pre>
-s.Media.autoTrack = true;
+s.Media.autoTrack
+  = true;
 </pre>
 </td>
 <td>N/D
 </td>
-<td>Os mapeamentos de reprodutores criados previamente não são mais fornecidos.
+<td>Não fornecemos mais mapeamentos pré-criados de player.
 </td>
 </tr>
 <tr>
@@ -171,7 +173,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>Os mapeamentos de reprodutores criados previamente não são mais fornecidos.
+<td>Não fornecemos mais mapeamentos pré-criados de player.
 </td>
 </tr>
 <tr>
@@ -187,7 +189,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>O Conteúdo concluído suporta apenas um marcador de 100% de progresso.
+<td>A Conclusão de conteúdo é compatível apenas com um marcador de progresso de 100%.
 </td>
 </tr>
 <tr>
@@ -203,7 +205,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>O Conteúdo concluído suporta apenas um marcador de 100% de progresso.
+<td>A Conclusão de conteúdo é compatível apenas com um marcador de progresso de 100%.
 </td>
 </tr>
 <tr>
@@ -212,7 +214,8 @@ Media.playerName
 </td>
 <td>
 <pre>
-s.Media.playerName = "Custom Player Name"
+s.Media.playerName
+  = "Custom Player Name"
 </pre>
 </td>
 <td>
@@ -281,12 +284,13 @@ Media.segmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByMilestones = true;
+s.Media.segmentByMilestones
+  = true;
 </pre>
 </td>
 <td>N/D
 </td>
-<td>A faixa automática não está mais disponível
+<td>O rastreamento automático não está mais disponível
 </td>
 </tr>
 <tr>
@@ -302,7 +306,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>A faixa automática não está mais disponível
+<td>O rastreamento automático não está mais disponível
 </td>
 </tr>
 </tbody>
@@ -313,9 +317,9 @@ s.Media.
 <table>
 <thead>
 <tr>
-<th>Etapa
+<th>Milestone
 </th>
-<th>Sintaxe do marco
+<th>Sintaxe do Milestone
 </th>
 <th>Media Analytics
 </th>
@@ -353,7 +357,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>Os marcadores de progresso não são fornecidos aos anúncios por padrão. Use as métricas calculadas para criar marcadores de progresso de anúncios.
+<td>Os marcadores de progresso não são fornecidos por padrão para anúncios. Use as métricas calculadas para criar marcadores de progresso de anúncios.
 </td>
 </tr>
 <tr>
@@ -385,7 +389,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>A faixa automática não está mais disponível
+<td>O rastreamento automático não está mais disponível
 </td>
 </tr>
 <tr>
@@ -401,7 +405,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>A faixa automática não está mais disponível
+<td>O rastreamento automático não está mais disponível
 </td>
 </tr>
 </tbody>
@@ -412,9 +416,9 @@ s.Media.
 <table>
 <thead>
 <tr>
-<th>Etapa
+<th>Milestone
 </th>
-<th>Sintaxe do marco
+<th>Sintaxe do Milestone
 </th>
 <th>Media Analytics
 </th>
@@ -429,7 +433,10 @@ Media.open
 </td>
 <td>
 <pre>
-s.Media.open(mediaName,mediaLength,mediaPlayerName)
+s.Media.open(
+  mediaName,
+  mediaLength,
+  mediaPlayerName)
 </pre>
 </td>
 <td>
@@ -520,7 +527,14 @@ Media.openAd
 </td>
 <td>
 <pre>
-s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)
+s.Media.openAd(
+  name,
+  length,
+  playerName,
+  parentName,
+  parentPod,
+  parentPodPosition,
+  CPM)
 </pre>
 </td>
 <td>
@@ -697,7 +711,9 @@ Media.click
 </td>
 <td>
 <pre>
-s.Media.click(name,offset)
+s.Media.click(
+  name,
+  offset)
 </pre>
 </td>
 <td>N/D
@@ -711,7 +727,8 @@ Media.close
 </td>
 <td>
 <pre>
-s.Media.close(mediaName)
+s.Media.close(
+  mediaName)
 </pre>
 </td>
 <td>
@@ -731,7 +748,9 @@ Media.complete
 </td>
 <td>
 <pre>
-s.Media.complete(name,offset)
+s.Media.complete(
+  name,
+  offset)
 </pre>
 </td>
 <td>
@@ -753,7 +772,12 @@ Media.play
 </td>
 <td>
 <pre>
-s.Media.play(name,offset,segmentNum,segment,segmentLength)
+s.Media.play(
+  name,
+  offset,
+  segmentNum,
+  segment,
+  segmentLength)
 </pre>
 </td>
 <td>
@@ -775,7 +799,9 @@ Media.stop
 </td>
 <td>
 <pre>
-s.Media.stop(mediaName,mediaOffset)
+s.Media.stop(
+  mediaName,
+  mediaOffset)
 </pre>
 </td>
 <td>
@@ -858,12 +884,13 @@ Media.track
 </td>
 <td>
 <pre>
-s.Media.track(mediaName)
+s.Media.track(
+  mediaName)
 </pre>
 </td>
 <td>N/D
 </td>
-<td>O rastreamento da frequência de chamada é automaticamente definido.
+<td>A frequência de chamada de rastreamento é definida automaticamente.
 </td>
 </tr>
 </tbody>
