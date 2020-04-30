@@ -19,7 +19,7 @@ Lista de parâmetros do Media Analytics que a Adobe coleta e processa no servido
 | s:event:type | SDK do Media | (Obrigatório)<br/><br/>O tipo de evento que está sendo rastreado. Tipos de evento: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | SDK do Media | (Obrigatório)<br/><br/>O carimbo de data e hora do último evento deste tipo nesta sessão. O valor é -1. |
 | l:event:ts | SDK do Media | (Obrigatório)<br/><br/>O carimbo de data e hora do evento. |
-| l:event:duration | SDK do Media | (Obrigatório)<br/><br/>Esse valor é definido internamente (em milissegundos) pelo SDK do Media, e não pelo reprodutor. É usado para calcular as métricas de tempo gasto no backend. Por exemplo: a.media.totalTimePlayed é calculado como uma soma da duração de todas os heartbeats de reprodução (type=play) gerados. <br/>*Observação:* Esse parâmetro é definido como 0 para determinados eventos, pois eles são "eventos de alteração de estado" (por exemplo, type=complete, type=chapter_complete ou type=bitrate_change). |
+| l:event:duration | SDK do Media | (Obrigatório)<br/><br/>Esse valor é definido internamente (em milissegundos) pelo SDK do Media, e não pelo reprodutor. É usado para calcular as métricas de tempo gasto no backend. Por exemplo: a.media.totalTimePlayed é calculado como uma soma da duração de todas os heartbeats de reprodução (type=play) gerados. <br/>*Observação:*Esse parâmetro é definido como 0 para determinados eventos, pois eles são &quot;eventos de alteração de estado&quot; (por exemplo, type=complete, type=chapter_complete ou type=bitrate_change). |
 | l:event:playhead | VideoInfo | (Obrigatório)<br/><br/>O indicador de reprodução estava dentro do ativo (principal ou anúncio) em operação no momento em que o evento foi gravado. |
 | s:event:sid | SDK do Media | (Obrigatório)<br/><br/>A ID da sessão (uma sequência de caracteres gerada aleatoriamente). Todos os eventos de uma sessão específica (vídeo + anúncios) devem ser idênticos. |
 | l:asset:duration / l:asset:length <br/>(Renomeado da duração de duração) | VideoInfo | (Obrigatório)<br/><br/>O comprimento do ativo de vídeo do ativo principal. |
@@ -36,10 +36,10 @@ Lista de parâmetros do Media Analytics que a Adobe coleta e processa no servido
 | s:sc:rsid | ID (ou IDs) do conjunto de relatórios | (Obrigatório)<br/><br/>RSID do Adobe Analytics para o qual os relatórios devem ser enviados. |
 | s:sc:tracking_server | MediaHeartbeatConfig | (Obrigatório)<br/><br/>Servidor de rastreamento do Adobe Analytics. |
 | h:sc:ssl | MediaHeartbeatConfig | (Obrigatório)<br/><br/>Se o tráfego será por HTTPS (caso esteja definido como 1) ou por HTTP (definido como 0). |
-| s:sp:ovp | MediaHeartbeatConfig | (Opcional)<br/><br/>Definido como "primetime" para reprodutores do Primetime ou OVP real para outros reprodutores. |
+| s:sp:ovp | MediaHeartbeatConfig | (Opcional)<br/><br/>Definido como &quot;primetime&quot; para reprodutores do Primetime ou OVP real para outros reprodutores. |
 | s:sp:sdk | MediaHeartbeatConfig | (Obrigatório)<br/><br/>A sequência de caracteres da versão de OVP. |
 | s:sp:player_name | VideoInfo | (Obrigatório)<br/><br/>Nome do reprodutor de vídeo (o software do reprodutor real, usado para identificá-lo). |
-| s:sp:channel | MediaHeartbeatConfig | (Opcional)<br/><br/>O canal no qual o usuário está assistindo ao conteúdo. Para um aplicativo de dispositivo móvel, o nome do aplicativo. Para um site, o nome do domínio. |
+| s:sp:channel | MediaHeartbeatConfig | (Opcional)<br/><br/>O canal no qual o usuário está assistindo ao conteúdo. Para um aplicativo móvel, o nome do aplicativo. Para um site, o nome do domínio. |
 | s:sp:hb_version | SDK do Media | (Obrigatório)<br/><br/>O número da versão da biblioteca do SDK do Media que emitiu a chamada. |
 | l:stream:bitrate | QoSInfo | (Obrigatório)<br/><br/>O valor atual da taxa de bits do fluxo (em bps). |
 
