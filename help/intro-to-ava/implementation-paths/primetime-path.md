@@ -14,12 +14,12 @@ O Media Analytics (Heartbeats) é a solução de rastreamento de mídia padroniz
 
 O Adobe Primetime é uma solução da Adobe Experience Cloud que ajuda os programadores e distribuidores de conteúdo a monetizar mídia em cada tela conectada.
 
-O Primetime elimina a complexidade de alcançar, monetizar e ativar públicos-alvo globais nos dispositivos, fornecendo uma plataforma modular para a publicação, a publicidade, a personalização e a análise de mídia. Além disso, o Primetime oferece soluções e valor em relação ao seguinte:
+O Primetime elimina a complexidade de alcançar, monetizar e ativar públicos-alvo globais nos dispositivos, fornecendo uma plataforma modular para a publicação, a publicidade, a personalização e a análise de mídia. Além disso, o Primetime oferece soluções e valor em torno do seguinte:
 
-* Suporte para avaliar com precisão os tipos de conteúdo Linear e VOD.
-* Suporte para avaliar ad breaks com (ou sem) inserção dinâmica de anúncios.
-* O modelo perfeito de inserção de anúncios do TVSDK permite realizar análises que avaliam diretamente a reprodução do anúncio, o que aumenta a precisão.
-* Conjunto robusto de eventos e metadados para garantir a precisão entre o buffer de QoS ou problemas de interrupções de conectividade móvel e as interações do usuário final, como buscar, pausar e colocar em segundo plano em dispositivos móveis.
+* Suporte para medir com precisão os tipos de conteúdo Linear e VOD.
+* Suporte para medir quebras de anúncios com (ou sem) inserção dinâmica de anúncios.
+* O modelo de inserção contínua de anúncios do TVSDK permite análises que avaliam diretamente a reprodução do anúncio, o que aumenta a precisão.
+* Conjunto robusto de eventos e metadados para garantir a precisão em problemas de buffering de QoS ou interrupções de conectividade móvel e interações do usuário final, como busca, pausa e background em dispositivos móveis.
 <!--
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
