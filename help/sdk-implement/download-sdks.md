@@ -2,7 +2,7 @@
 title: Baixar SDKs
 description: Links para downloads de SDK para plataformas disponíveis, incluindo Android, iOS, JavaScript, Chromecast e Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8589a89847f4c3cc38317c1fe65e4e2efb9d8875
 
 ---
@@ -24,15 +24,15 @@ source-git-commit: 8589a89847f4c3cc38317c1fe65e4e2efb9d8875
 
 | Componente de MA Launch   | Downloads | Documentação |
 |---|---|---|
-| **Extensão de MA Launch** | [Exemplo de extensão do reprodutor HTML5](https://github.com/adobe/reactor-adobe-va-sample-player) | [Extensão do Adobe Media Analytics para áudio e vídeo](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) |
+| **Extensão de MA Launch** | [Exemplo de extensão do reprodutor HTML5](https://github.com/adobe/reactor-adobe-va-sample-player) | [Extensão do Adobe Media Analytics para áudio e vídeo](https://docs.adobe.com/content/help/pt-BR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) |
 
 ## Baixe os SDKs do Media 1.x {#download-the-1.x-media-sDKs}
 
 | SDKs 1.x  |  Downloads do SDK do Media  |  Guias de introdução  |
 | --- | --- | --- |
-| Android | [SDK para Android v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [Introdução - Media 1.x para Android](setup/vhl-dev-guide-v15_android.pdf) |
-| iOS | [SDK para iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Introdução - Media 1.x para iOS](setup/vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [SDK para JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Introdução - Media 1.x para JS](setup/vhl-dev-guide-v15_js.pdf) |
-| TVML | [SDK para TVML v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Introdução - Media 1.x para TVML](setup/vhl_tvml.pdf) |
+| Android | [SDK para Android v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [Introdução - Mídia 1.x para Android](setup/vhl-dev-guide-v15_android.pdf) |
+| iOS | [SDK para iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Introdução - Mídia 1.x para iOS](setup/vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [SDK para JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Introdução - Mídia 1.x para JS](setup/vhl-dev-guide-v15_js.pdf) |
+| TVML | [SDK para TVML v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Introdução - Mídia 1.x para TVML](setup/vhl_tvml.pdf) |
 | Apple TV | SDK para Apple TV v1.0.0 (Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para obter o SDK 1.x herdado) | [Introdução - Media 1.x para Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | SDK para Chromecast v1.0.0 (Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para obter o SDK 1.x herdado) | [Introdução - Media 1.x para Chromecast](setup/chromecast_1.x_sdk.pdf) |
