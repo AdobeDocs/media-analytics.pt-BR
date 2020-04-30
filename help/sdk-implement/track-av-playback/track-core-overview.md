@@ -16,11 +16,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Eventos do reprodutor
 
-O rastreamento da reprodução principal inclui o rastreamento da carga da mídia, início da mídia, pausa da mídia e mídia concluída. Embora não seja obrigatório, o rastreamento de buffering e busca também são componentes essenciais usados &#x200B;para rastrear a reprodução do conteúdo. Na API do reprodutor de mídia, identifique os eventos do reprodutor que correspondem às chamadas de rastreamento do SDK do Media e codifique os manipuladores de eventos para chamar APIs de rastreamento e preencher as variáveis obrigatórias e opcionais.
+O rastreamento da reprodução principal inclui rastreamento da carga de mídia, início da mídia, pausa da mídia e conclusão da mídia. Embora não seja obrigatório, o rastreamento de buffering e busca também são componentes principais usados para rastrear a reprodução do conteúdo. Na API do media player, identifique os eventos do player que correspondem às chamadas de rastreamento do SDK da mídia, codifique os manipuladores de eventos para APIs de rastreamento de chamadas e preencha as variáveis obrigatórias e opcionais.
 
 ### No carregamento da mídia
 
-* Crie o objeto de mídia
+* Criar o objeto de mídia
 * Preencha os metadados
 * Chame `trackSessionStart`; Por exemplo: `trackSessionStart(mediaObject, contextData)`
 
@@ -71,11 +71,11 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
    |---|---|---|
    | `name` | Nome do conteúdo | Sim |
    | `mediaid` | Identificador exclusivo do conteúdo | Sim |
-   | `length` | Duração do conteúdo | Sim |
-   | `streamType` | Tipo de fluxo | Sim |
+   | `length` | Extensão do conteúdo | Sim |
+   | `streamType` | Tipo de transmissão | Sim |
    | `mediaType` | Tipo de mídia (conteúdo de áudio ou vídeo) | Sim |
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -86,7 +86,7 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
    | `AUDIOBOOK` | Tipo de fluxo para audiobook |
    | `PODCAST` | Tipo de fluxo para podcast |
 
-   **Constantes de`MediaType`:**
+   **`MediaType`Constantes de:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -133,10 +133,10 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 
    **Cenários de pausa -** Identifique qualquer cenário no qual o Reprodutor será pausado e verifique se `trackPause` foi chamado corretamente. Os seguintes cenários exigem que o aplicativo chame `trackPause()`:
 
-   * O usuário clica explicitamente em Pausar no aplicativo.
-   * O reprodutor se coloca no estado Pausado.
-   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que o aplicativo mantenha a sessão aberta.
-   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou um pop-up de outro aplicativo é exibido, mas você deseja que o aplicativo mantenha a sessão ativa para que o usuário possa retomar o conteúdo do ponto em que foi interrompido.
+   * O usuário faz uma pausa explicitamente no aplicativo.
+   * O player se coloca no estado Pausa.
+   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que ele mantenha a sessão aberta.
+   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou uma pop-up de outro aplicativo ocorre, mas você deseja que o aplicativo mantenha a sessão ativa para dar ao usuário a oportunidade de retomar o conteúdo a partir do ponto de interrupção.
 
 1. Identifique o evento do reprodutor para reprodução e/ou retomada da pausa e chame `trackPlay`.
 
@@ -149,9 +149,9 @@ O rastreamento da reprodução principal inclui o rastreamento da carga da mídi
 1. Analise os eventos de buffering de reprodução no reprodutor de mídia e, na notificação do evento de início de buffering, rastreie o buffering usando o evento `BufferStart`.
 1. Na notificação de conclusão de buffer do reprodutor de mídia, rastreie o término do buffer com o evento`BufferComplete`:
 
-Consulte exemplos de cada etapa nos tópicos específicos da plataforma a seguir e veja os exemplos de reprodutores incluídos nos SDKs.
+Veja exemplos de cada etapa nos seguintes tópicos específicos da plataforma e veja os exemplos de players incluídos em seus SDKs.
 
-Para um exemplo simples de rastreamento de reprodução, veja este uso do SDK 2.x do JavaScript em um reprodutor HTML5:
+Para obter um exemplo simples de rastreamento de reprodução, consulte este uso do SDK do JavaScript 2.x em um player HTML5:
 
 ```js
 /* Call on media start */ 
