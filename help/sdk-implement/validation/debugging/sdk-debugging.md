@@ -2,8 +2,8 @@
 title: Depuração do SDK
 description: Este tópico descreve o rastreamento/registro disponível no SDK do Media.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -64,10 +64,14 @@ ADBMobile.config.setDebugLogging(true)
 
 ## Usar o Adobe Bloodhound para testar os aplicativos do Chromecast
 
-Durante o desenvolvimento do aplicativo, o Bloodhound permite exibir localmente chamadas de servidor e, como opção, encaminhar os dados para os servidores de coleta da Adobe. Para obter mais informações sobre Bloodhound, consulte os seguintes guias:
+Durante o desenvolvimento do aplicativo, o Bloodhound permite exibir localmente chamadas de servidor e, como opção, encaminhar os dados para os servidores de coleta da Adobe.
 
-* [Bloodhound 3.x para Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
-* [Bloodhound 2.2 para Windows](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
+<!--
+For more information about Bloodhound, see the following guides:
+
+* [Bloodhound 3.x for Mac](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwiimfSUypDpAhVZHzQIHS6WDQIQFjABegQIChAD&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound%2F&usg=AOvVaw3t4s0gcvuWEpLIqBkhKdGH) 
+* [Bloodhound 2.2 for Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+-->
 
 >[!IMPORTANT]
 >
@@ -82,14 +86,14 @@ Format: [<timestamp>] [<level>] [<tag>] [<message>]
 Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
 ```
 
-* **timestamp:** esta é a hora atual da CPU (no fuso horário GMT)
-* **level:** há 4 níveis de mensagens definidos:
-   * INFO - Normalmente, é composto pelos dados de entrada do aplicativo (validar o nome do reprodutor, ID do vídeo, etc.)
-   * DEBUG - Registros de depuração usados pelos desenvolvedores para depurar problemas mais complexos
-   * WARN - Indica possíveis erros de integração/configuração ou bugs no SDK do Heartbeats
-   * ERROR - Indica erros de integração importantes ou bugs do SDK do Heartbeats
-* **tag:** o nome do subcomponente que emitiu a mensagem do registro (geralmente, o nome da classe)
-* **message:** a mensagem de rastreamento atual
+* **carimbo de data e hora:** este é o horário atual da CPU (fuso horário GMT)
+* **nível:** há 4 níveis de mensagem definidos:
+   * INFO - Normalmente, os dados de entrada do aplicativo (validar o nome do player, ID do vídeo etc.)
+   * DEPURAR - Logs de depuração, usados pelos desenvolvedores para depurar problemas mais complexos
+   * AVISO - Indica possíveis erros de integração/configuração ou bugs do SDK do Heartbeats
+   * ERRO - Indica erros importantes de integração ou bugs do SDK do Heartbeats
+* **tag:** O nome do subcomponente que emitiu a mensagem de registro (geralmente o nome da classe)
+* **mensagem:** a mensagem de rastreamento real
 
 Você pode usar a saída dos registros pela biblioteca do SDK do Media para verificar a implantação. Uma boa estratégia é pesquisar nos registros a sequência de caracteres `#track`. Isso destacará todas as chamadas `track*()` feitas pelo seu aplicativo.
 
