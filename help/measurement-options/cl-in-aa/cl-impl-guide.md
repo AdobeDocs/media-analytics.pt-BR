@@ -2,25 +2,25 @@
 title: Guia de implementação de link personalizado
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
 # Guia de implementação de link personalizado {#custom-link-implementation-guide}
 
-O Rastreamento de vídeo personalizado usa o [rastreamento de link manual com o código de link personalizado](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/link_manual.html) no Analytics `appMeasurement`. Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
+O Rastreamento de vídeo personalizado usa o [rastreamento de link manual com o código de link personalizado](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) no Analytics `appMeasurement`. Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
 
 * No JavaScript: a função `s.tl()`
-* Nos aplicativos móveis: [trackAction() Android](https://marketing.adobe.com/resources/help/pt_BR/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/pt_BR/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* Nos aplicativos móveis: [trackAction() Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * Na API de inserção de dados: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Requisitos
 
-* Acesso a evento e dados da API do reprodutor de vídeo
-* Capacidade de adicionar scripts se estiver usando o SDK do Analytics
-* Capacidade de adicionar beacons de rastreamento (scripting ou hardcode personalizado) se estiver usando a API de inserção de dados
+* Acesso a eventos e dados da API do player de vídeo
+* Capacidade de adicionar scripts ao usar o SDK do Analytics
+* Capacidade de adicionar beacons de rastreamento (script personalizado ou código fixo) se estiver usando a API de inserção de dados
 
 ## Metadados
 
@@ -45,11 +45,11 @@ if (e.type == "ended") {
 
 ## Por que usar um link personalizado
 
-* Pré-requisitos mínimos são necessários
+* Os pré-requisitos mínimos são necessários
 * Funciona em qualquer plataforma, incluindo sem script
-* Qualquer cálculo, como tempo gasto ou quartis, deve ser calculado em um script personalizado
-* Bastante simples, sem bibliotecas ou scripts ocultos
-* Controle total sobre todos os aspectos dos dados de vídeo
+* Qualquer cálculo, como tempo gasto ou quartis, devem ser calculados em um script personalizado
+* Muito simples sem bibliotecas ou scripts ocultos
+* Controle total sobre cada aspecto dos dados de vídeo
 
 ## Exemplo de JavaScript para reprodutor HTML5
 
