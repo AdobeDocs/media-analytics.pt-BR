@@ -3,7 +3,7 @@ title: Configurar Chromecast
 description: Configuração do aplicativo SDK do Media para implementação no Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 ---
 
@@ -45,43 +45,43 @@ O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar apli
    1. Adicione o arquivo de biblioteca ao seu arquivo `index.html` e crie a variável global `ADBMobileConfig` da seguinte maneira (a variável global usada para configurar o Adobe Mobile para Heartbeats tem uma chave exclusiva denominada `mediaHeartbeat`):
 
       ```js
-      <script> 
-          var ADBMobileConfig = { 
-            "marketingCloud": { 
-              "org": "972C898555E9F7BC7F000101@AdobeOrg" 
-            }, 
-            "target": { 
-              "clientCode": "", 
-              "timeout": 5 
-            }, 
-            "audienceManager": { 
-              "server": "obumobile5.demdex.net" 
-            }, 
-            "analytics": { 
-              "rsids": "mobile5vhl.sample.player", 
-              "server": "obumobile5.sc.omtrdc.net", 
-              "ssl": false, 
-              "offlineEnabled": false, 
-              "charset": "UTF-8", 
-              "lifecycleTimeout": 300, 
-              "privacyDefault": "optedin", 
-              "batchLimit": 0, 
-              "timezone": "MDT", 
-              "timezoneOffset": -360, 
-              "referrerTimeout": 0, 
-              "poi": [] 
-            }, 
-            "mediaHeartbeat": { 
-              "server": "obumobile5.hb.omtrdc.net", 
-              "publisher": "972C898555E9F7BC7F000101@AdobeOrg", 
-              "channel": "test-channel-chromecast", 
-              "ssl": false, 
-              "ovp": "chromecast-player", 
-              "sdkVersion": "chromecast-sdk", 
-              "playerName": "Chromecast" 
-            } 
-          }; 
-        </script> 
+      <script>
+          var ADBMobileConfig = {
+            "marketingCloud": {
+              "org": "972C898555E9F7BC7F000101@AdobeOrg"
+            },
+            "target": {
+              "clientCode": "",
+              "timeout": 5
+            },
+            "audienceManager": {
+              "server": "obumobile5.demdex.net"
+            },
+            "analytics": {
+              "rsids": "mobile5vhl.sample.player",
+              "server": "obumobile5.sc.omtrdc.net",
+              "ssl": false,
+              "offlineEnabled": false,
+              "charset": "UTF-8",
+              "lifecycleTimeout": 300,
+              "privacyDefault": "optedin",
+              "batchLimit": 0,
+              "timezone": "MDT",
+              "timezoneOffset": -360,
+              "referrerTimeout": 0,
+              "poi": []
+            },
+            "mediaHeartbeat": {
+              "server": "obumobile5.hb.omtrdc.net",
+              "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
+              "channel": "test-channel-chromecast",
+              "ssl": false,
+              "ovp": "chromecast-player",
+              "sdkVersion": "chromecast-sdk",
+              "playerName": "Chromecast"
+            }
+          };
+        </script>
       <script type="text/javascript" src="script/lib/adbmobile-chromecast.min.js"></script>
       ```
 
@@ -108,8 +108,8 @@ O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar apli
    Verifique se a sua configuração `ADBMobileConfig` contém a ID da organização da `marketingCloud`.
 
    ```js
-   "marketingCloud": { 
-       "org": YOUR-MCORG-ID" 
+   "marketingCloud": {
+       "org": YOUR-MCORG-ID"
    }
    ```
 
@@ -131,6 +131,7 @@ O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar apli
    | --- | --- |
    | `getMarketingCloudID()` | Recupera a ID de visitante da Experience Cloud do serviço de ID de visitante.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | Com a ID de visitante da Experience Cloud, é possível definir outras IDs do cliente que podem ser associadas a cada visitante. A API de visitante aceita várias IDs de cliente para o mesmo visitante e um identificador de tipo de cliente para separar o escopo das diferentes IDs de clientes. Este método corresponde a `setCustomerIDs()` na biblioteca do JavaScript.  Por exemplo: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
