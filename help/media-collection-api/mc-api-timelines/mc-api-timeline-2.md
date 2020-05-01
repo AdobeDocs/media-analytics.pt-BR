@@ -2,8 +2,8 @@
 title: Linha do tempo 2 - Usuário abandona a sessão
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -31,7 +31,7 @@ Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a
 
 **Detalhes da implementação**
 
-Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. Retorna uma ID de sessão (`{sid}`) ao cliente usada para identificar todas as chamadas de rastreamento subsequentes na sessão. O estado do reprodutor ainda não é "reproduzindo", mas "iniciando".  [Os parâmetros obrigatórios da sessão](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) devem ser incluídos no mapa `params` no corpo da solicitação.  No back-end, essa chamada gera uma chamada de inicialização do Adobe Analytics.
+Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. Retorna uma ID de sessão (`{sid}`) ao cliente usada para identificar todas as chamadas de rastreamento subsequentes na sessão. O estado do reprodutor ainda não é &quot;reproduzindo&quot;, mas &quot;iniciando&quot;.  [Os parâmetros obrigatórios da sessão](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) devem ser incluídos no mapa `params` no corpo da solicitação.  No back-end, essa chamada gera uma chamada de inicialização do Adobe Analytics.
 
 **Exemplo de corpo da solicitação**
 
@@ -181,7 +181,7 @@ O primeiro anúncio precedente terminou.
 
 **Detalhes da implementação**
 
-O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado "reproduzindo".
+O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado &quot;reproduzindo&quot;.
 
 **Exemplo de corpo da solicitação**
 
@@ -203,7 +203,7 @@ O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado "repr
 
 **Detalhes da implementação**
 
-Mova o reprodutor para o estado "reproduzindo"; comece a rastrear o início da reprodução do conteúdo.
+Mova o reprodutor para o estado &quot;reproduzindo&quot;; comece a rastrear o início da reprodução do conteúdo.
 
 **Exemplo de corpo da solicitação**
 
@@ -407,5 +407,3 @@ Envie `sessionEnd` para o back-end do VA para indicar que a sessão deve ser enc
     eventType:sessionEnd
 }
 ```
-
-
