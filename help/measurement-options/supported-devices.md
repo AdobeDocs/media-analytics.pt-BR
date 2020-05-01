@@ -3,7 +3,7 @@ title: Dispositivos compatíveis
 description: null
 uuid: null
 translation-type: tm+mt
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 3a237ee31412784f708e772cc3a58047630e2184
 
 ---
 
@@ -46,4 +46,4 @@ A tabela abaixo do lista atualmente suporta dispositivos. Para baixar a versão 
 |  | Novos dispositivos conectados |  |  | X |
 
 
-Para o SDK do Media, consulte também [Suporte à versão mínima da plataforma](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Para o SDK do Media, consulte também [Suporte à versão mínima da plataforma](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version)
