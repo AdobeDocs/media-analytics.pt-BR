@@ -3,7 +3,10 @@ title: Pré-requisitos
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +41,7 @@ Para uma implementação do *Media Analytics*, siga estas etapas antes de começ
    >
    >Para participar da Adobe Experience Cloud Device Co-op, é necessário o serviço de Experience Cloud ID.
 
-   Se você ainda não implementou o serviço de ID, agora é o momento de começar a pensar em uma estratégia de migração. Para obter mais informações sobre a importância e a função do serviço de identidade, consulte [Por que você deve prestar atenção no serviço de identidade.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
+   Se você ainda não implementou o serviço de ID, agora é o momento de começar a pensar em uma estratégia de migração. Para obter mais informações sobre a importância e a função do serviço de identidade, consulte [Por que você deve prestar atenção no serviço de identidade.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
    >[!IMPORTANT]
    >
