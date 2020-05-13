@@ -20,11 +20,11 @@ Esse cenário é idêntico ao cenário de [Reprodução de VOD com anúncios pre
 
 | Acionador   | Método do Heartbeat  | Chamadas de rede   | Notas   |
 | --- | --- | --- | --- |
-| Cliques do usuário [!UICONTROL Reproduzir] | `trackSessionStart()` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações desconhece a existência de um anúncio precedente. Essas chamadas de rede ainda são idênticas às chamadas do cenário [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| O anúncio começa. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Início do anúncio do Analytics, Início do anúncio do Heartbeat |  |
-| O primeiro quadro do anúncio é reproduzido. | `trackPlay()` | Heartbeat Ad Play (Reprodução do anúncio do Heartbeat) | Quando o conteúdo do anúncio é reproduzido antes do conteúdo principal, as pulsações são iniciadas com o anúncio. |
+| Cliques do usuário [!UICONTROL Reproduzir] | `trackSessionStart()` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não sabe que há um anúncio antes da exibição. Essas chamadas de rede ainda são idênticas às chamadas do cenário [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| O anúncio começa. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
+| O primeiro quadro do anúncio é reproduzido. | `trackPlay()` | Heartbeat Ad Play | Quando o conteúdo do anúncio é reproduzido antes do conteúdo principal, os heartbeats serão iniciados quando o anúncio for reproduzido. |
 | O anúncio é reproduzido. |  | Ad Heartbeats (Pulsações do anúncio) |  |
-| O anúncio é ignorado. | `trackEvent:trackAdSkip` |  | Não há uma chamada de rede de publicidade concluída. |
+| O anúncio é ignorado. | `trackEvent:trackAdSkip` |  | Não há chamada de rede de anúncio concluída. |
 | O conteúdo é reproduzido. |  | Content Heartbeats | Essas chamadas de rede são exatamente as mesmas do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | A reprodução do conteúdo é concluída. | `trackComplete()` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | A sessão foi encerrada. | `trackSessionEnd()` |  | `SessionEnd` |
