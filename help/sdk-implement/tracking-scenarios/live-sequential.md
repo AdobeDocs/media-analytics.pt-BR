@@ -12,20 +12,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Cenário {#scenario}
 
-Neste cenário, há um ativo disponível sem anúncios reproduzido por 40 segundos após a entrada na transmissão ao vivo.
+Neste cenário, há um ativo ao vivo sem anúncios reproduzidos por 40 segundos após entrar no stream ao vivo.
 
 Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md), só que parte do conteúdo é depurado e uma busca é realizada de um ponto a outro do conteúdo principal.
 
 | Acionador | Método do Heartbeat |  Chamadas de rede  |  Notas   |
 | --- | --- | --- | --- |
 | Cliques do usuário [!UICONTROL Reproduzir] | trackSessionStart | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não detecta um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| O primeiro quadro do conteúdo é reproduzido. | trackPlay | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, as pulsações só são iniciadas com o capítulo. |
+| O primeiro quadro do conteúdo é reproduzido. | trackPlay | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
 | Reproduções de conteúdo |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| Sessão1 finalizada (episódio1 encerrado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Complete significa que a sessão1 do 1º episódio foi atingida e assistida por inteiro. Antes de iniciar a sessão do episódio seguinte, é necessário encerrar a sessão atual. |
+| Sessão1 finalizada (episódio1 encerrado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão1 do primeiro episódio foi atingida e assistida completamente. Antes de iniciar a sessão para o próximo episódio, esta sessão deve ser encerrada. |
 | Episódio2 iniciado (sessão2 iniciada) | trackSessionStart | Início do conteúdo do Analytics Heartbeat Content Start | Isso ocorre porque o usuário assistiu ao primeiro episódio e em seguida assistiu o segundo |
-| 1º quadro do Media | trackPlay | Heartbeat Content Play | Esse método aciona o temporizador; deste ponto em diante, os heartbeats serão enviados a cada 10 segundos durante a reprodução. |
+| 1º quadro do Media | trackPlay | Heartbeat Content Play | Esse método aciona o temporizador e a partir desse ponto, os heartbeats serão enviados a cada 10 segundos enquanto a reprodução continuar. |
 | Reproduções de conteúdo |  | Content Heartbeats |  |
-| Sessão encerrada (episódio2 finalizado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão2 do 2º episódio foi atingida e assistida por inteiro. Antes de iniciar a sessão do episódio seguinte, é necessário encerrar a sessão atual. |
+| Sessão encerrada (episódio 2 finalizado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão 2 do segundo episódio foi atingida e assistida completamente. Antes de iniciar a sessão para o próximo episódio, esta sessão deve ser encerrada. |
 
 ## Parâmetros {#parameters}
 
@@ -33,18 +33,18 @@ Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/sdk
 
 | Parâmetro | Valor | Notas |
 |---|---|---|
-| `s:sc:rsid` | &lt;ID do conjunto de relatórios da Adobe&gt; |  |
-| `s:sc:tracking_serve` | &lt;URL do servidor de rastreamento do Analytics&gt; |  |
+| `s:sc:rsid` | &lt;ID do conjunto de relatórios da Adobe> |  |
+| `s:sc:tracking_serve` | &lt;URL do servidor de rastreamento do Analytics> |  |
 | `s:user:mid` | `s:user:mid` | Deve corresponder ao valor médio da Chamada de início de conteúdo do Adobe Analytics |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;O nome da sua mídia&gt; |  |
+| `s:asset:media_id` | &lt;O nome da sua mídia> |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *opcional* | Metadados personalizados definidos na mídia |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-Isso deve ser quase idêntico à chamada de Heartbeat Content Start, mas com uma diferença no parâmetro "s:event:type". Todos os parâmetros devem ser inseridos aqui.
+Isso deve ser quase igual à chamada do Start Heartbeat Content, mas com a principal diferença no parâmetro &quot;s:evento:type&quot;. Todos os parâmetros devem estar em vigor aqui.
 
 | Parâmetro | Valor | Notas |
 |---|---|---|
@@ -53,18 +53,18 @@ Isso deve ser quase idêntico à chamada de Heartbeat Content Start, mas com uma
 
 ## Content Heartbeats {#content-heartbeats}
 
-Durante a reprodução da mídia, há um temporizador que enviará um ou mais heartbeats a cada 10 segundos para o conteúdo principal e a cada segundo para os anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffers e outros itens. O conteúdo exato de cada heartbeat está além do escopo deste documento. É importante validar o acionamento das pulsações de modo consistente durante a reprodução.
+Durante a reprodução da mídia, há um temporizador que enviará um ou mais heartbeats a cada 10 segundos para o conteúdo principal e a cada segundo para os anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffering e várias outras coisas. O conteúdo exato de cada heartbeat está além do escopo desse documento, o mais importante para validar é que os heartbeats são acionados de forma consistente enquanto a reprodução continuar.
 
-Em heartbeats de conteúdo, procure por itens específicos:
+Nos heartbeats de conteúdo, procure alguns itens específicos:
 
 | Parâmetro | Valor | Notas |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;posição do indicador de reprodução&gt;, por exemplo, 50, 60, 70 | Isso deve refletir a posição atual do indicador de reprodução. |
+| `l:event:playhead` | &lt;posição do indicador de reprodução>, por exemplo, 50, 60, 70 | Deve refletir a posição atual do indicador de reprodução. |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
-Quando a reprodução de um episódio específico for concluída (quando o indicador ultrapassar o limite do episódio), uma chamada Heartbeat Content Complete será enviada. Essa chamada é semelhante a outras Chamadas de anúncio de heartbeat, mas conta com alguns itens específicos:
+Quando a reprodução de um determinado episódio for concluída (o indicador de reprodução ultrapassa o limite do episódio), uma chamada Heartbeat Content Complete é enviada. Parece com outras chamadas do Heartbeat, mas contém algumas coisas específicas:
 
 | Parâmetro | Valor | Notas |
 |---|---|---|
