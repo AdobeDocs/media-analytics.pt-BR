@@ -12,19 +12,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Cenário {#scenario}
 
-Nesse cenário, o usuário pula um capítulo no conteúdo principal.
+Nesse cenário, o usuário ignora um capítulo no conteúdo principal.
 
-Este cenário é igual à [reprodução de VOD com um capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), exceto que, neste caso, o usuário pretende sair do capítulo, ignorando-o para ir para o conteúdo principal.
+Esse cenário é o mesmo da [reprodução VOD com um capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), exceto que o usuário nesse caso pretende sair do capítulo, ignorando-o para chegar ao conteúdo principal.
 
 | Acionador | Método do Heartbeat | Chamadas de rede   | Notas |
 |---|---|---|---|
-| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações desconhece a existência de um anúncio precedente. Essas chamadas de rede ainda são idênticas às chamadas do cenário [Reprodução sem interrupções no iOS](vod-no-intrs-details.md). |
+| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não sabe que há um anúncio antes da exibição. Essas chamadas de rede ainda são idênticas às chamadas do cenário [Reprodução sem interrupções no iOS](vod-no-intrs-details.md). |
 | O capítulo é iniciado. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
-| O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Chapter Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, recomenda-se iniciar o Heartbeats com o capítulo. |
-| O capítulo é reproduzido. |  | Capítulo de heartbeat |  |
-| A busca começa para ignorar o primeiro capítulo. | `trackEvent:trackSeekStart` |  | Nenhum heartbeat durante a busca |
-| A busca é concluída. | `trackEvent:trackSeekComplete` |  | As pulsações serão retomadas depois disso. |
-| O aplicativo detecta que o usuário buscou fora dos limites regulares do capítulo. | `trackEvent:trackChapterSkip` |  |  |
+| O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Chapter Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, queremos iniciar os heartbeats quando o capítulo for iniciado. |
+| O capítulo é reproduzido. |  | Chapter Heartbeats |  |
+| A busca começa a ignorar o primeiro capítulo. | `trackEvent:trackSeekStart` |  | Nenhum heartbeat durante a busca |
+| A busca foi concluída. | `trackEvent:trackSeekComplete` |  | Os heartbeats retomariam depois disso. |
+| O aplicativo percebe que o usuário buscou fora do limite normal do capítulo. | `trackEvent:trackChapterSkip` |  |  |
 | O conteúdo é reproduzido. |  | Content Heartbeats |  |
 | A reprodução do conteúdo é concluída. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução sem interrupções no iOS](vod-no-intrs-details.md). |
 | A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa o fim de uma sessão de exibição. Essa API deve ser chamada mesmo se o usuário não assistir à mídia até o fim. |
