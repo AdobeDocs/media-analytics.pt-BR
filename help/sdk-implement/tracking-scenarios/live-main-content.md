@@ -12,12 +12,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Cenário {#scenario}
 
-Neste cenário, há um ativo disponível sem anúncios reproduzido por 40 segundos após a entrada na transmissão ao vivo.
+Neste cenário, há um ativo ao vivo sem anúncios reproduzidos por 40 segundos após entrar no stream ao vivo.
 
 | Acionador | Método do Heartbeat | Chamadas de rede | Notas   |
 |---|---|---|---|
 | Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção **[!UICONTROL Reproduzir]**, ou um evento de reprodução automática. |
-| O primeiro quadro da mídia é reproduzido. | `trackPlay` | Heartbeat Content Play | Esse método aciona o timer. Os heartbeats são enviados a cada 10 segundos durante toda a reprodução. |
+| O primeiro quadro da mídia é reproduzido. | `trackPlay` | Heartbeat Content Play | Esse método aciona o temporizador. Os heartbeats são enviados a cada 10 segundos enquanto a reprodução continuar. |
 | O conteúdo é reproduzido. |  | Content Heartbeats |  |
 | A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa o fim de uma sessão de exibição. Essa API deve ser chamada mesmo se o usuário não consumir a mídia até o fim. |
 
@@ -29,25 +29,25 @@ Diversos valores observados nas Chamadas do Adobe Analytics Content Start estar�
 
 | Parâmetro | Valor | Notas |
 |---|---|---|
-| `s:sc:rsid` | &lt;ID do conjunto de relatórios da Adobe&gt; |  |
-| `s:sc:tracking_serve` | &lt;URL do servidor de rastreamento do Analytics&gt; |  |
+| `s:sc:rsid` | &lt;ID do conjunto de relatórios da Adobe> |  |
+| `s:sc:tracking_serve` | &lt;URL do servidor de rastreamento do Analytics> |  |
 | `s:user:mid` | `s:user:mid` | Deve corresponder ao valor médio da Chamada de início de conteúdo do Adobe Analytics |
-| `s:event:type` | "start" |  |
-| `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt;O nome da sua mídia&gt; |  |
+| `s:event:type` | &quot;start&quot; |  |
+| `s:asset:type` | &quot;main&quot; |  |
+| `s:asset:mediao_id` | &lt;O nome da sua mídia> |  |
 | `s:stream:type` | live |  |
 | `s:meta:*` | opcional | Metadados personalizados definidos na mídia |
 
 ## Content Heartbeats {#content-heartbeats}
 
-Durante a reprodução da mídia, há um temporizador que enviará um ou mais heartbeats (ou pings) a cada 10 segundos para o conteúdo principal e a cada segundo para os anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffers e outros itens. O conteúdo exato de cada heartbeat está além do escopo deste documento. É importante validar o acionamento das pulsações de modo consistente durante a reprodução.
+Durante a reprodução da mídia, há um temporizador que enviará um ou mais heartbeats (ou pings) a cada 10 segundos para o conteúdo principal e a cada segundo para os anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffering e várias outras coisas. O conteúdo exato de cada heartbeat está além do escopo desse documento, o mais importante para validar é que os heartbeats são acionados de forma consistente enquanto a reprodução continuar.
 
-Em heartbeats de conteúdo, procure por itens específicos:
+Nos heartbeats de conteúdo, procure alguns itens específicos:
 
 | Parâmetro | Valor | Notas |
 |---|---|---|
-| `s:event:type` | "play" |  |
-| `l:event:playhead` | &lt;posição do indicador de reprodução&gt;, por exemplo, 50, 60, 70 | Isso deve refletir a posição atual do indicador de reprodução. |
+| `s:event:type` | &quot;play&quot; |  |
+| `l:event:playhead` | &lt;posição do indicador de reprodução>, por exemplo, 50, 60, 70 | Deve refletir a posição atual do indicador de reprodução. |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
@@ -59,13 +59,13 @@ Para fluxos AO VIVO, é necessário definir o indicador de reprodução para um 
 
 ### No início
 
-Para mídia AO VIVO, quando um usuário começa a reproduzir o fluxo, é necessário definir `l:event:playhead` para o deslocamento atual, em segundos. Isso é o oposto ao VOD, no qual você define o indicador de reprodução como "0".
+Para mídia AO VIVO, quando um usuário começa a reproduzir o fluxo, é necessário definir `l:event:playhead` para o deslocamento atual, em segundos. Isso é o oposto ao VOD, no qual você define o indicador de reprodução como &quot;0&quot;.
 
 Por exemplo, digamos que um evento de transmissão AO VIVO comece à meia-noite e tenha uma duração de 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Então, digamos que um usuário comece a reproduzir esse fluxo AO VIVO às 12h. Nesse cenário, você deve definir `l:event:playhead` para 43200 (12 horas no stream).
 
 ### Ao pausar
 
-A mesma lógica de "indicador de reprodução em tempo real" aplicada no início da reprodução deve ser aplicada quando o usuário pausa a reprodução. Quando o usuário retorna para reproduzir o fluxo AO VIVO, é necessário definir o `l:event:playhead` valor para a nova posição do indicador de reprodução de deslocamento, _não_ para o ponto em que o usuário pausou o fluxo ao vivo.
+A mesma lógica de &quot;indicador de reprodução em tempo real&quot; aplicada no início da reprodução deve ser aplicada quando o usuário pausa a reprodução. Quando o usuário retorna para reproduzir o fluxo AO VIVO, é necessário definir o `l:event:playhead` valor para a nova posição do indicador de reprodução de deslocamento, _não_ para o ponto em que o usuário pausou o fluxo ao vivo.
 
 ## Código de exemplo {#sample-code}
 
