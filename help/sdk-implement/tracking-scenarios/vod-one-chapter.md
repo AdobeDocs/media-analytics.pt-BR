@@ -18,11 +18,11 @@ A menos que seja especificado, as chamadas de rede desse cenário correspondem �
 
 | Acionador   | Método do Heartbeat   | Chamadas de rede   | Notas   |
 |---|---|---|---|
-| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Ainda não informamos à biblioteca de avaliações referentes um anúncio antecedente; portanto, essas chamadas de rede ainda são as mesmas de Single VoD. |
+| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Ainda não informamos à biblioteca de avaliações que há um anúncio antes da exibição, portanto, essas chamadas de rede ainda são exatamente as mesmas do Single VoD. |
 | O capítulo é iniciado. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
-| O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, as pulsações só são iniciadas com o capítulo. |
-| O capítulo é reproduzido. |  | Capítulo de heartbeat |  |
-| O capítulo terminou. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Esta é a situação na qual o fim do capítulo é atingido. |
+| O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
+| O capítulo é reproduzido. |  | Chapter Heartbeats |  |
+| O capítulo foi concluído. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | É quando o final do capítulo é atingido. |
 | O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | O conteúdo foi concluído. | `trackComplete` | Heartbeat Content Complete | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa que o final de uma sessão de visualização foi atingido. Essa API deve ser chamada mesmo se o usuário não assistir à mídia até o fim. |
