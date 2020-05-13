@@ -19,7 +19,7 @@ Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/sdk
 | Acionador   | Método do Heartbeat   | Chamadas de rede   | Notas   |
 | --- | --- | --- | --- |
 | Cliques do usuário [!UICONTROL Reproduzir] | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não detecta um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| O primeiro quadro do conteúdo é reproduzido. | `trackPlay` | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, as pulsações só são iniciadas com o capítulo. |
+| O primeiro quadro do conteúdo é reproduzido. | `trackPlay` | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
 | Reproduções de conteúdo |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | O usuário inicia a operação de busca no conteúdo | `trackSeekStart` |  | Nenhum heartbeat é enviado até a conclusão da busca, por exemplo, `trackSeekComplete` |
 | A operação de busca é concluída | `trackSeekComplete` |  | As pulsações voltam a ser enviadas, pois a busca foi concluída.  Dica: o valor do indicador de reprodução deve representar o novo indicador de reprodução correto após a busca. |
