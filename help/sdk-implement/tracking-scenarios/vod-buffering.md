@@ -14,16 +14,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 Nesse cenário, ocorre buffering quando o conteúdo de VOD é reproduzido.
 
-A menos que seja especificado, as chamadas de rede desse cenário correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios.](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+A menos que seja especificado, as chamadas de rede desse cenário correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
 | Acionador   | Método do Heartbeat   | Chamadas de rede   | Notas   |
 |---|---|---|---|
 | Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção **[!UICONTROL Reproduzir]**, ou um evento de reprodução automática. |
-| O primeiro quadro do vídeo é reproduzido. | `trackPlay` | Heartbeat Content Play | Esse método aciona o timer. Os heartbeats são enviados a cada 10 segundos durante toda a reprodução. |
+| O primeiro quadro do vídeo é reproduzido. | `trackPlay` | Heartbeat Content Play | Esse método aciona o temporizador. Os heartbeats são enviados a cada 10 segundos enquanto a reprodução continuar. |
 | O conteúdo é reproduzido. |  | Content Heartbeats |  |
-| O buffering é iniciado. | `trackEvent:BufferStart` | Buffer do Heartbeat |  |
-| O buffering do conteúdo é realizado. |  | Content Heartbeats |  |
-| O buffering é concluído. | `trackEvent:BufferComplete` | Buffer do Heartbeat, Reprodução do Heartbeat |  |
+| Os buffering inicia. | `trackEvent:BufferStart` | Buffer do Heartbeat |  |
+| O conteúdo está em buffer. |  | Content Heartbeats |  |
+| O buffering é concluído. | `trackEvent:BufferComplete` | Heartbeat Buffer, Heartbeat Play |  |
 | O conteúdo é reproduzido. |  | Content Heartbeats |  |
 | A reprodução do conteúdo é concluída. | `trackComplete` | Heartbeat Content Complete | O fim do indicador de reprodução foi atingido. |
 | A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa o fim de uma sessão de exibição. Essa API deve ser chamada mesmo se o usuário não assistir o vídeo até o fim. |
