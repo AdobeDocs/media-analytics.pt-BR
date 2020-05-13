@@ -20,23 +20,23 @@ O painel Visualizadores simultâneos de mídia exibe os visualizadores simultân
 
 ## Recursos do relatório {#report-features}
 
-Alguns recursos deste relatório:
+Estes são alguns recursos deste relatório:
 
-* Isso não ocorre em tempo real. Ele tem a latência do Adobe Analytics.
-* O relatório abrange um período de 24 horas. O eixo x representa a hora do dia com base no fuso horário do conjunto de relatórios.
-* Isso mostra os visualizadores simultâneos com granularidade de minutos.
-* Há um *Relatório de visualizadores simultâneos de mídia* que mostra quantos visualizadores estão assistindo ou ouvindo em todo o conteúdo.
-* Há um relatório de Visualizadores simultâneos no relatório *Detalhes da mídia* que mostra quantos visualizadores estão assistindo ou ouvindo a um item de mídia específico.
-* O relatório funcionará somente por um dia.
-* O cliente pode visualizar histórico de relatórios de visualizadores simultâneos (limitado a um único dia).
+* Não é em tempo real. Ele tem a latência normal do Adobe Analytics.
+* O relatório cobre um período de 24 horas. O eixo x é a hora do dia com base no fuso horário do conjunto de relatórios.
+* Ele mostra os visualizadores simultâneos com granularidade mínima.
+* Existe um *Relatório de visualizadores simultâneos de mídia* que mostra quantos visualizadores estão assistindo ou ouvindo todo o conteúdo.
+* Há um relatório de Visualizadores simultâneos no relatório de *Detalhes de mídia* que mostra quantos visualizadores estão assistindo ou ouvindo um item de mídia específico.
+* O relatório só funciona por um dia.
+* O cliente pode consultar os relatórios históricos do visualizador simultâneo (limitados a um único dia).
 
 ## Limitações {#limitations}
 
-Aqui estão algumas limitações deste relatório:
+Estas são algumas limitações desse relatório:
 
-* Não é possível exportar os dados, como ReportBuilder.
-* Não é possível apresentar os dados em formato de tabela.
+* Não é possível exportar os dados, como o ReportBuilder.
+* Não é possível apresentar os dados em um formato de tabela.
 * Não é possível enviar um relatório por e-mail.
-* Mesmo que você não rastreie os anúncios, é preciso ativar novamente o rastreamento de mídia e selecionar o módulo de Anúncio de mídia.
-* Essa funcionalidade fornecerá dados precisos ao usar uma Biblioteca do Heartbeats que tenha recursos de rastreamento de Pausas.
+* Mesmo que não rastreie anúncios, é necessário reativar o rastreamento de mídia e selecionar o módulo Anúncio de mídia.
+* Essa funcionalidade fornecerá dados precisos ao usar uma Biblioteca de heartbeats que tenha recursos de rastreamento de pausa.
 
