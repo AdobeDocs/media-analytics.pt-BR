@@ -3,7 +3,10 @@ title: Configurar iOS
 description: Configuração do aplicativo SDK do Media para implementação no iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 93%
 
 ---
 
@@ -12,9 +15,7 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->A partir de outubro de 2020, a Adobe encerrará o suporte aos SDKs móveis versão 4 e aos SDKs independentes do Media Analytics para iOS. Você pode continuar a baixar e usar os SDKs versão 4, mas o suporte ao Atendimento ao cliente e o acesso aos fóruns serão encerrados. Você deve migrar para os SDKs da Adobe Experience Platform (AEP) para iOS. O AEP Mobile SDK (anteriormente conhecido como v5) oferecerá suporte exclusivo aos recursos e funcionalidades da Adobe Experience Cloud. Para obter informações adicionais sobre essa alteração, consulte as Perguntas frequentes sobre o Fim do suporte dos SDKs móveis [versão 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). Recomendamos que você migre para o novo SDK do AEP Mobile.
-Depois de migrar para o AEP Mobile SDK, você deve implementar a extensão de inicialização do Analytics e a extensão de inicialização do Media Analytics para ativar o Adobe Analytics para áudio e vídeo. Para obter mais informações sobre como migrar para o novo AEP Mobile SDK, consulte [Migração do SDK de mídia independente para o Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
-
+>Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para o SDK do Media Analytics para iOS e Android.  Para obter informações adicionais, consulte Perguntas frequentes sobre [suporte ao SDK do](/help/sdk-implement/end-of-support-faqs.md)Media Analytics.
 
 ## Pré-requisitos
 
@@ -49,15 +50,15 @@ Para obter mais informações sobre a documentação do SDK do Adobe Mobile, con
    1. Adicione a biblioteca ao projeto:
 
       1. Abra o Xcode IDE e o seu aplicativo.
-      1. In **[!UICONTROL Project Navigator]**, drag the `libs` directory and drop it under your project.
+      1. No **[!UICONTROL Navegador do projeto]**, arraste o diretório `libs` e solte-o no seu projeto.
 
-      1. Certifique-se de que a caixa de **[!UICONTROL Copy Items if Needed]** seleção esteja selecionada, que **[!UICONTROL Create Groups]** esteja selecionada e que nenhuma das caixas de seleção em **[!UICONTROL Add to Target]** esteja selecionada.
+      1. Certifique-se de que as caixas de seleção **[!UICONTROL Copiar itens se necessário]** e **[!UICONTROL Criar grupos]** estejam marcadas e que nenhuma das caixas de seleção em **[!UICONTROL Adicionar ao destino]** estejam selecionadas.
 
          ![](assets/choose-options_ios.png)
 
-      1. Clique em **[!UICONTROL Finish]**.
-      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
-      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
+      1. Clique em **[!UICONTROL Concluir]**.
+      1. No **[!UICONTROL Navegador do projeto]**, selecione o seu aplicativo e os seus destinos.
+      1. Vincule as estruturas e bibliotecas necessárias na seção **[!UICONTROL Estruturas vinculadas]** e **[!UICONTROL Bibliotecas]** na guia **[!UICONTROL Geral]**.
 
          **Destinos de aplicativos iOS:**
 
@@ -153,7 +154,7 @@ Execute as seguintes etapas no projeto Xcode. Este guia foi escrito supondo que 
 
 1. Arraste o arquivo de biblioteca `VideoHeartbeat_TV.a` para a pasta `lib` do seu projeto.
 
-1. Na guia **[!UICONTROL Build Phases]** do público alvo do aplicativo tvOS, expanda a seção **[!UICONTROL Link Binary with Libraries]** e adicione as seguintes bibliotecas:
+1. Na guia **[!UICONTROL Criar fases]** do destino do seu aplicativo tvOS, expanda a seção **[!UICONTROL Link binário com bibliotecas]** e adicione as seguintes bibliotecas:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
