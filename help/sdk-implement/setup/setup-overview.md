@@ -2,8 +2,11 @@
 title: Visão geral da configuração
 description: Visão geral da configuração do SDK do Media para rastreamento de mídia em seus aplicativos para dispositivos móveis, OTT e do navegador (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '734'
+ht-degree: 95%
 
 ---
 
@@ -12,8 +15,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->As instruções a seguir se aplicam aos SDKs do Media 2.x. Se estiver implementando uma versão 1.x do SDK do Media, consulte a [Documentação do SDK do Media 1.x.](/help/sdk-implement/download-sdks.md) Para obter os integradores do Primetime, consulte a _Documentação de SDK do Media do Primetime_ abaixo.
+>Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para os SDKs do Media Analytics para iOS e Android.  Para obter informações adicionais, consulte Perguntas frequentes sobre [suporte ao SDK do](/help/sdk-implement/end-of-support-faqs.md)Media Analytics.
 
+As instruções a seguir se aplicam aos SDKs do Media 2.x. Se estiver implementando uma versão 1.x do SDK do Media, consulte a [Documentação do SDK do Media 1.x.](/help/sdk-implement/download-sdks.md) Para obter os integradores do Primetime, consulte a _Documentação de SDK do Media do Primetime_ abaixo.
 
 ## Suporte mínimo para versão da plataforma {#minimum-platform-version}
 
@@ -84,36 +88,36 @@ Complete as etapas de implementação a seguir:
    O código de exemplo a seguir usa o SDK 2.x do JavaScript para um player de vídeo HTML5:
 
    ```javascript
-   // Create local references to the heartbeat classes 
-   var MediaHeartbeat = ADB.va.MediaHeartbeat; 
-   var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig; 
-   var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
+   // Create local references to the heartbeat classes
+   var MediaHeartbeat = ADB.va.MediaHeartbeat;
+   var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig;
+   var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate;
    
-   //Media Heartbeat Config 
-   var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
-   mediaConfig.playerName = "HTML5 Basic"; 
-   mediaConfig.channel = "Video Channel"; 
-   mediaConfig.debugLogging = true; 
-   mediaConfig.appVersion = "2.0"; 
-   mediaConfig.ssl = false; 
-   mediaConfig.ovp = ""; 
+   //Media Heartbeat Config
+   var mediaConfig = new MediaHeartbeatConfig();
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net";
+   mediaConfig.playerName = "HTML5 Basic";
+   mediaConfig.channel = "Video Channel";
+   mediaConfig.debugLogging = true;
+   mediaConfig.appVersion = "2.0";
+   mediaConfig.ssl = false;
+   mediaConfig.ovp = "";
    
-   // Media Heartbeat Delegate 
-   var mediaDelegate = new MediaHeartbeatDelegate(); 
+   // Media Heartbeat Delegate
+   var mediaDelegate = new MediaHeartbeatDelegate();
    
-   // Set mediaDelegate CurrentPlaybackTime 
-   mediaDelegate.getCurrentPlaybackTime = function() { 
-       return video.currentTime; 
-   }; 
+   // Set mediaDelegate CurrentPlaybackTime
+   mediaDelegate.getCurrentPlaybackTime = function() {
+       return video.currentTime;
+   };
    
-   // Set mediaDelegate QoSObject - OPTIONAL 
-   mediaDelegate.getQoSObject = function() { 
+   // Set mediaDelegate QoSObject - OPTIONAL
+   mediaDelegate.getQoSObject = function() {
        return MediaHeartbeat.createQoSObject(video.bitrate,  
                                              video.startuptime,  
                                              video.fps,  
-                                             video.droppedframes); 
-   } 
+                                             video.droppedframes);
+   }
    // Create mediaHeartbeat instance      
    this.mediaHeartbeat =  
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
