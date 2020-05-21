@@ -2,17 +2,31 @@
 title: Caminhos de implementação
 description: null
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 64%
 
 ---
 
 
 # Caminhos de implementação {#implementation-paths}
 
-O Media Analytics (Heartbeats) é a solução de vídeo padronizada da Adobe. Substituiu o modelo de marcos mais antigo da Adobe.
+Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de venda, já que o Media Analytics tem um SKU exclusivo e muda de um modelo de preços com base em chamadas de servidor para um modelo com base em fluxos de vídeo.
 
-Para cada um desses caminhos de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de vendas, pois o Media Analytics tem uma SKU exclusiva e seus preços variam de acordo com o modelo, com base em chamadas de servidor e fluxos de vídeo:
+* **Adobe Launch com a extensão do Adobe Media Analytics**
+
+   O Adobe Launch é a próxima geração da solução de gerenciamento de tags da Adobe. O Launch fornece uma maneira simples de implantar e gerenciar todas as tags de análise, marketing e publicidade necessárias para potencializar as experiências relevantes do cliente. Para criar e manter suas próprias integrações com o Launch, use extensões. Uma extensão é um pacote JavaScript, HTML e CSS que estende a interface do usuário de inicialização e a funcionalidade do cliente. Para obter mais informações, consulte o Guia do Usuário do [Experience Platform Launch](https://docs.adobe.com/content/help/pt-BR/launch/using/overview.html)
+
+   A extensão do Adobe Media Analytics (MA) adiciona o principal SDK de mídia JavaScript (SDK do Media 2.x) para áudio e vídeo. Esta extensão fornece a funcionalidade necessária para adicionar a instância do rastreador `MediaHeartbeat` a um site ou projeto do Launch.
+
+   O Adobe Launch com a extensão do Media Analytics exige o seguinte:
+   * Você deve ser um cliente da Adobe Experience Cloud.
+   * Você deve implantar o código incorporado Launch ou DTM em suas páginas da Web.
+   * [Extensão do Analytics](https://docs.adobe.com/content/help/pt-BR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
+   * [Extensão do Experience Cloud ID](https://docs.adobe.com/content/help/pt-BR/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+
 
 * **Lado do cliente -** Estas são integrações exclusivas do Media Analytics. Você pode escolher o SDK do Video Heartbeat e/ou as integrações da API da coleção do Media. Esse caminho pode ser usado em qualquer player de vídeo, incluindo players de clientes e/ou de OVP, como Brightcove, Ooyala, thePlatform e assim por diante.
 
@@ -22,9 +36,6 @@ Para cada um desses caminhos de implementação, os clientes precisam entrar em 
    >
    >Para usar o Media Analytics, os clientes também precisam usar o Adobe Analytics.
 
-* **Adobe Experience Platform Launch -** O Adobe Experience Platform Launch, o produto complementar ao Dynamic Tag Management, apresenta uma extensão de inicialização do Media Analytics que facilita a implementação do rastreamento de vídeo em seus reprodutores.
-
-   Saiba mais sobre o Experience Platform Launch aqui: [Extensão de áudio e vídeo do Adobe Media Analytics](https://docs.adobe.com/content/help/pt-BR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 * **Adobe Primetime -** O Adobe Primetime é uma solução da Adobe Experience Cloud que ajuda os programadores e distribuidores de conteúdo a monetizar mídia em cada tela conectada.
 
    O Primetime elimina a complexidade de alcançar, monetizar e ativar públicos-alvo globais nos dispositivos, fornecendo uma plataforma modular para a publicação, a publicidade, a personalização e a análise de vídeo. Além disso, o Primetime oferece soluções e valor em torno do seguinte:
