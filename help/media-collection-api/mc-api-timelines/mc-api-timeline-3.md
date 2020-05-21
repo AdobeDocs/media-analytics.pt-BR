@@ -2,8 +2,11 @@
 title: Linha do tempo 3 - Capítulos
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
+translation-type: tm+mt
+source-git-commit: 197041df4c985cdc572564652a976bd733448787
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 100%
 
 ---
 
@@ -745,4 +748,3 @@ Envie `sessionComplete` ao back-end para indicar que o usuário terminou de assi
 >[!NOTE]
 >
 >**Nenhum evento de busca? -** Não há suporte explícito na API Media Collection para eventos `seekStart` ou `seekComplete`. Isso ocorre porque certos players geram um número muito grande desses eventos quando o usuário final está depurando, e várias centenas de usuários podem facilmente afunilar a largura de banda da rede de um serviço de backend. A Adobe oferece suporte explícito para eventos de busca, calculando a duração da pulsação com base no carimbo de data e hora do dispositivo, em vez da posição do indicador de reprodução.
-
