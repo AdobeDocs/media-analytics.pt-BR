@@ -3,7 +3,10 @@ title: Configurar Android
 description: Configuração do aplicativo SDK do Media para implementação no Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 92%
 
 ---
 
@@ -12,12 +15,10 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->A partir de outubro de 2020, a Adobe encerrará o suporte aos SDKs móveis versão 4 e aos SDKs independentes do Media Analytics para Android. Você pode continuar a baixar e usar os SDKs versão 4, mas o suporte ao Atendimento ao cliente e o acesso aos fóruns serão encerrados. Você deve migrar para os SDKs da Adobe Experience Platform (AEP) para Android. O AEP Mobile SDK (anteriormente conhecido como v5) oferecerá suporte exclusivo aos recursos e funcionalidades da Adobe Experience Cloud. Para obter informações adicionais sobre essa alteração, consulte as Perguntas frequentes sobre o Fim do suporte dos SDKs móveis [versão 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). Recomendamos que você migre para o novo SDK do AEP Mobile.
-Depois de migrar para o AEP Mobile SDK, você deve implementar a extensão de inicialização do Analytics e a extensão de inicialização do Media Analytics para ativar o Adobe Analytics para áudio e vídeo. Para obter mais informações sobre como migrar para o novo AEP Mobile SDK, consulte [Migração do SDK de mídia independente para o Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+>Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para o SDK do Media Analytics para iOS e Android.  Para obter informações adicionais, consulte Perguntas frequentes sobre [suporte ao SDK do](/help/sdk-implement/end-of-support-faqs.md)Media Analytics.
 
 
 ## Pré-requisitos
-
 
 * **Obter parâmetros de configuração válidos para o SDK do Media** Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
 * **Implementar o ADBMobile para Android em seu aplicativo** 
@@ -38,23 +39,23 @@ Para obter mais informações sobre a documentação do SDK do Adobe Mobile, con
 
       **IntelliJ IDEA:**
 
-      1. Right click your project in the **[!UICONTROL Project navigation]** panel.
-      1. Selecionar **[!UICONTROL Open Module Settings]**.
-      1. Em **[!UICONTROL Project Settings]**, selecione **[!UICONTROL Libraries]**.
+      1. Clique com o botão direito do mouse no painel **[!UICONTROL Navegação do projeto]**.
+      1. Selecione **[!UICONTROL Abrir configurações do módulo]**.
+      1. Em **[!UICONTROL Configurações do projeto]**, selecione **[!UICONTROL Bibliotecas]**.
 
-      1. Click **[!UICONTROL +]** to add a new library.
+      1. Clique em **[!UICONTROL +]** para adicionar uma nova biblioteca.
       1. Selecione **[!UICONTROL Java]** e navegue até o arquivo `MediaSDK.jar`.
 
       1. Selecione os módulos nos quais planeja usar a biblioteca móvel.
-      1. Click **[!UICONTROL Apply]** and then **[!UICONTROL OK]** to close the Module Settings window.
+      1. Clique em **[!UICONTROL Aplicar]** e em **[!UICONTROL OK]** para fechar a janela Configurações do módulo.
       **Eclipse:**
 
       1. No Eclipse IDE, clique com o botão direito do mouse no nome do projeto.
-      1. Clique em  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
+      1. Clique em **[!UICONTROL Criar caminho]** > **[!UICONTROL Adicionar arquivos externos]** .
       1. Selecionar `MediaSDK.jar`.
-      1. Clique em **[!UICONTROL Open]**.
-      1. Clique novamente no projeto com o botão direito do mouse e clique em **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]** .
-      1. Clique nas guias **[!UICONTROL Order]** e **[!UICONTROL Export]** .
+      1. Clique em **[!UICONTROL Abrir]**.
+      1. Clique com o botão direito novamente no projeto e clique em **[!UICONTROL Criar caminho]** > **[!UICONTROL Configurar construção de caminho]** .
+      1. Clique nas guias **[!UICONTROL Ordem]** e **[!UICONTROL Exportar]**.
 
       1. Verifique se o arquivo `MediaSDK.jar` foi selecionado.
 
