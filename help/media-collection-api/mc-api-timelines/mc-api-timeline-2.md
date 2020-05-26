@@ -2,8 +2,11 @@
 title: Linha do tempo 2 - Usuário abandona a sessão
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+workflow-type: ht
+source-wordcount: '634'
+ht-degree: 100%
 
 ---
 
@@ -25,9 +28,9 @@ Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a
 
 ### Ação 1 — Iniciar sessão {#Action-1}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Botão de Reprodução automática ou Reprodução pressionado | 0 | 0 | `/api/v1/sessions` |
+| Botão Reproduzir automaticamente ou Reproduzir pressionado | 0 | 0 | `/api/v1/sessions` |
 
 **Detalhes da implementação**
 
@@ -60,9 +63,9 @@ Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. Retorn
 
 ### Ação 2 — Início do temporizador de ping {#Action-2}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O aplicativo inicia o temporizador de evento de ping | 0 | 0 |  |
+| Temporizador do evento ping de início do aplicativo | 0 | 0 |  |
 
 **Detalhes da implementação**
 
@@ -70,13 +73,13 @@ Inicie o temporizador de ping do aplicativo. O primeiro evento de ping deve disp
 
 ### Ação 3 — Início de quebra de anúncio {#Action-3}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear o início do ad break precedente | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear início de ad break antes da exibição | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
-Os anúncios precedentes devem ser rastreados. Os anúncios somente podem ser rastreados em um ad break.
+Os anúncios antes da exibição devem ser rastreados. Os anúncios somente podem ser rastreados em um ad break.
 
 **Exemplo de corpo da solicitação**
 
@@ -96,9 +99,9 @@ Os anúncios precedentes devem ser rastreados. Os anúncios somente podem ser ra
 
 ### Ação 4 — Início do anúncio {#Action-4}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear o início do anúncio nº 1 precedente | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear início do anúncio nº 1 antes da exibição | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -131,7 +134,7 @@ Um anúncio de 12 segundos é iniciado.
 
 ### Ação 5 — Pings de anúncios {#Action-5}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
 | O aplicativo envia o evento de ping | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
@@ -153,9 +156,9 @@ Envie um ping ao back-end a cada 1 segundo. (Pings de anúncios subsequentes nã
 
 ### Ação 6 — Anúncio concluído {#Action-6}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear o anúncio nº 1 precedente concluído | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear conclusão do anúncio nº 1 antes da exibição | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -173,15 +176,15 @@ O primeiro anúncio precedente terminou.
 }
 ```
 
-### Ação 7 — Pausa do anúncio concluída {#Action-7}
+### Ação 7 — Ad break concluído {#Action-7}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear o ad break precedente concluído | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear conclusão de ad break antes da exibição | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
-O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado &quot;reproduzindo&quot;.
+O ad break está concluído. Durante todo o ad break, o player permaneceu no estado de &quot;reprodução&quot;.
 
 **Exemplo de corpo da solicitação**
 
@@ -197,7 +200,7 @@ O ad break terminou. Durante o ad break, o reprodutor permaneceu no estado &quot
 
 ### Ação 8 — Reproduzir conteúdo {#Action-8}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
 | Rastrear evento de reprodução | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
@@ -220,7 +223,7 @@ Mova o reprodutor para o estado &quot;reproduzindo&quot;; comece a rastrear o in
 
 ### Ação 9 — Ping {#Action-9}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
 | O aplicativo envia o evento de ping | 20 | 8 | `/api/v1/sessions/{sid}/events` |
 
@@ -242,7 +245,7 @@ Envie um ping ao back-end a cada 10 segundos.
 
 ### Ação 10 — Ping {#Action-10}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
 | O aplicativo envia o evento de ping | 30 | 18 | `/api/v1/sessions/{sid}/events` |
 
@@ -264,9 +267,9 @@ Envie um ping ao back-end a cada 10 segundos.
 
 ### Ação 11 — Erro {#Action-11}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Ocorre um erro, o aplicativo envia as informações do erro. | 32 | 20 | `/api/v1/sessions/{sid}/events` |
+| Ocorre um erro, o aplicativo envia informações de erro. | 32 | 20 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -285,9 +288,9 @@ Envie um ping ao back-end a cada 10 segundos.
 
 ### Ação 12 — Reproduzir conteúdo {#Action-12}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O aplicativo se recupera do erro, o usuário pressiona Reproduzir | 37 | 20 | `/api/v1/sessions/{sid}/events` |
+| O aplicativo se recupera do erro, o usuário pressiona Play | 37 | 20 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -307,7 +310,7 @@ Envie um ping ao back-end a cada 10 segundos.
 
 ### Ação 13 — Ping {#Action-13}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
 | O aplicativo envia o evento de ping | 40 | 28 | `/api/v1/sessions/{sid}/events` |
 
@@ -329,9 +332,9 @@ Envie um ping ao back-end a cada 10 segundos.
 
 ### Ação 14 — Início de quebra de anúncio {#Action-14}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear o início do ad break intermediário | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| Rastrear início de ad break durante a exibição | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -355,9 +358,9 @@ Anúncio intermediário de 8 segundos: envie `adBreakStart` .
 
 ### Ação 15 — Início do anúncio {#Action-15}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear o início do anúncio nº 1 intermediário | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| Rastrear início do anúncio nº 1 durante a exibição | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -388,9 +391,9 @@ Rastreie o anúncio intermediário.
 
 ### Ação 16 — Fechar aplicativo {#Action-16}
 
-| Ação | Linha do tempo da ação (segundos) | Posição do indicador de reprodução (Segundos) | Solicitação do cliente |
+| Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O usuário fecha o aplicativo. O aplicativo determina que o usuário abandonou a visualização e não está retornando a esta sessão. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
+| O usuário fecha o aplicativo. O aplicativo determina que o usuário abandonou a visualização e não retornou para esta sessão. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
