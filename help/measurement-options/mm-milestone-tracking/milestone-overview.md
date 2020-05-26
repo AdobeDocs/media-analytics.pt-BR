@@ -2,8 +2,11 @@
 title: Visão geral do marco
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '3344'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,7 @@ Você também pode rastrear qualquer número de métricas adicionais para vídeo
 
 ### Configuração de relatórios de marco
 
-Para configurar o relatórios de vídeo para uma implementação de etapa, acesse **[!UICONTROL Admin > Report Suite Manager].**Selecione o conjunto de relatórios e escolha**[!UICONTROL Video Management > Video Reporting]:**
+Para configurar relatórios de vídeo para uma implementação do marco, acesse **[!UICONTROL Administrador > Gerenciador do conjunto de relatórios].**Selecione o conjunto de relatórios e escolha**[!UICONTROL Gerenciamento de vídeo > Relatórios de vídeo]:**
 
 <!--
 ![](assets/0clip_image002_1537416456.png){width="248"}
@@ -36,11 +39,11 @@ Para configurar o relatórios de vídeo para uma implementação de etapa, acess
 
 ![](assets/rs1.png)
 
-Na primeira tela, somente o Vídeo principal funcionará com os dados do Marco. Selecione **[!UICONTROL Video Core]** e clique em **[!UICONTROL Save].**
+Na primeira tela, somente o Vídeo principal funcionará com os dados do Marco. Selecione **[!UICONTROL Vídeo principal]** e clique em **[!UICONTROL Salvar].**
 
 ![](assets/video-core-check.png)
 
-Na tela seguinte, selecione **[!UICONTROL Use Custom Variables].**
+Na próxima tela, selecione **[!UICONTROL Usar variáveis personalizadas].**
 
 <!--
 ![](assets/0clip_image006_-1561510960.png){width="470"}
