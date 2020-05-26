@@ -2,11 +2,11 @@
 title: Pré-requisitos
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Para uma implementação do *Media Analytics*, siga estas etapas antes de começ
 
    >[!IMPORTANT]
    >
-   >Na ausência de qualquer informação de ID de usuário nas chamadas específicas de mídia, os [Métodos de ID de fallback](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html) de análise padrão serão aplicados.
+   >Na ausência de qualquer informação de ID de usuário nas chamadas específicas de mídia, os [Métodos de ID de fallback](https://docs.adobe.com/content/help/pt-BR/analytics/technotes/visitor-identification.translate.html) de análise padrão serão aplicados.
 
    Para obter informações adicionais sobre a Experience Cloud ID, consulte [Visão geral da Experience Cloud ID](https://docs.adobe.com/content/help/pt-BR/id-service/using/intro/overview.html) e [Serviço de Identidade da Adobe Experience Platform.](https://docs.adobe.com/content/help/pt-BR/id-service/using/home.html)
 
