@@ -1,14 +1,17 @@
 ---
-title: Busca de faixa no JavaScript
+title: Busca de rastreamento usando JavaScript 2.x
 description: Este tópico descreve como implementar o monitoramento de busca usando o SDK do Media em aplicativos de navegador (JS).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 5f274452b9ff5770908f7e2e450935be572a22ea
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 92%
 
 ---
 
 
-# Busca de faixa no JavaScript {#track-seeking-on-javascript}
+# Busca de rastreamento usando JavaScript 2.x{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Analise os eventos de busca de reprodução no reprodutor de mídia e, na notificação do evento de início da busca, rastreie a busca com o evento`SeekStart`:
 
    ```js
-   _onSeekStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
+   _onSeekStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart);
    };
    ```
 
 1. Na notificação de conclusão da busca do reprodutor de mídia, rastreie o término da busca com o evento`SeekComplete`:
 
    ```js
-   _onSeekComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
+   _onSeekComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete);
    };
    ```
 
