@@ -2,9 +2,9 @@
 title: Sobre estados padrão e personalizados
 description: Este tópico descreve o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e relatórios de estados padrão e personalizados do player.
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '280'
 ht-degree: 1%
 
 ---
@@ -30,14 +30,15 @@ Os dados são calculados da mesma forma para estados padrão e personalizados, m
 
 ## Diretrizes
 
-* Uma sessão de vídeo é limitada a 10 estados de player personalizados.
-* Se vários estados de player passarem, apenas os primeiros 10 serão retidos e encaminhados para o componente de processamento VA(?video analytics).
+* Uma sessão de vídeo é limitada a 10 estados de player.
+* Qualquer combinação de estados é permitida.
+* Se vários estados de player passarem, apenas os primeiros 10 serão retidos e encaminhados para downstream para o componente de processamento VA.
 * O máximo de 10 estados é aplicado a todos os estados, independentemente de estarem fechados ou não.
-* O mesmo estado pode ser iniciado e encerrado a qualquer número de vezes e é contado como um único estado.
-* Todo estado que está excedendo o máximo de costumes permitido? estados (10) são descartados.
+* Um estado pode ser start e finalizado várias vezes e é contado como um único estado. Por exemplo, `closedCapationing` pode ser iniciado e parado cinco vezes, mas contará como um único estado.
+* Todos os estados que excederem o máximo de 10 estados permitidos são descartados.
 
 ## Estados personalizados
 
 Com a capacidade de criar estados personalizados, você pode capturar ações personalizadas e atualizar metadados personalizados durante uma sessão de reprodução.
 
-PRECISAM de mais informações sobre estados personalizados
+Para obter informações sobre como criar estados personalizados, consulte o guia de Referência da API de [mídia: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
