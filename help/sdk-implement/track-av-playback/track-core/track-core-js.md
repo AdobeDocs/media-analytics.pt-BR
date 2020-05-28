@@ -1,14 +1,17 @@
 ---
-title: Rastreamento da reprodução principal no JavaScript
-description: Este tópico descreve como implementar o rastreamento principal usando o SDK do Media em aplicativos de navegador (JS).
+title: Rastrear a reprodução principal usando o JavaScript 2.x
+description: Este tópico descreve como implementar o rastreamento principal usando o SDK de mídia em um navegador usando aplicativos JavaScript 2.x.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 95%
 
 ---
 
 
-# Rastreamento da reprodução principal no JavaScript {#track-core-playback-on-javascript}
+# Rastrear a reprodução principal usando o JavaScript 2.x{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >Esta documentação abrange o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
@@ -49,7 +52,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var mediaObject =  
      MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                      <MEDIA_ID,  
-                                     <MEDIA_LENGTH>, 
+                                     <MEDIA_LENGTH>,
                                      MediaHeartbeat.StreamType.VOD,
                                      <MEDIA_TYPE>);
    ```
@@ -74,11 +77,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       Crie um objeto variável para as variáveis personalizadas e preencha com os dados desta mídia. Por exemplo:
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -160,4 +163,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * Cenários de rastreamento: [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Exemplo de player incluído no SDK do JavaScript para obter um exemplo completo de rastreamento.
-
