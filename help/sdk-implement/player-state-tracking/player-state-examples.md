@@ -2,17 +2,15 @@
 title: Exemplos de rastreamento de estado do player
 description: Este tópico inclui exemplos do recurso de Rastreamento de estado do player.
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
 
 # Exemplos de rastreamento de estado do player
-
-Adicionar exemplos
 
 
 ## Exemplo de pausa longa
