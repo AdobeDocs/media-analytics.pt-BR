@@ -2,9 +2,9 @@
 title: Implementação e Relatórios
 description: Este tópico descreve como implementar o recurso de rastreamento de estado do player, incluindo .
 translation-type: tm+mt
-source-git-commit: b0bfe74d1f6083e700dbf98f504a17518bd19ecb
+source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ O SDK de mídia inclui dois novos métodos para rastreamento de estado personali
 `trackStateClose("state_name")`
 
 
-A API Media Collection inclui dois novos eventos que têm &quot;media.stateName&quot; como o parâmetro obrigatório:
+A API Media Collection inclui dois novos eventos que têm `media.stateName` como parâmetro obrigatório:
 
 `stateStart` e `stateEnd`
 
@@ -84,14 +84,19 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 As métricas fornecidas para cada estado individual são computadas e enviadas para o Adobe Analytics como parâmetros de dados de contexto e armazenadas para fins de relatórios. Três métricas estão disponíveis para cada estado:
 
-* `a.media.states.(media.state.name).set = true` — Definido como true se o estado foi definido pelo menos uma vez para cada reprodução específica de um fluxo.
-* `a.media.states.(media.state.name).count = 4` — Identifica o número de ocorrências de um estado durante cada reprodução individual de um fluxo
-* `a.media.states.(media.state.name).time = 240` — Identifica a duração total do estado em segundos para cada reprodução individual de um fluxo
+* `a.media.states.[state.name].set = true` — Definido como true se o estado foi definido pelo menos uma vez para cada reprodução específica de um fluxo.
+* `a.media.states.[state.name].count = 4` — Identifica o número de ocorrências de um estado durante cada reprodução individual de um fluxo
+* `a.media.states.[state.name].time = 240` — Identifica a duração total do estado em segundos para cada reprodução individual de um fluxo
 
 ## Relatórios
 
-Todas as métricas de estado podem ser usadas para qualquer visualização ou componente do relatórios (segmento, métricas calculadas).
-TBD - verificar fonte/wiki para obter informações atualizadas - para captura de tela do AW
+Todas as métricas de estado do player podem ser usadas para qualquer visualização de relatórios disponível na área de trabalho da Análise ou em um componente (segmento, métricas calculadas), assim que um conjunto de relatórios é ativado para o rastreamento de estado do player. As novas métricas poderiam ser ativadas no Console de administração para cada relatório individual usando a Configuração do Relatórios de mídia (Editar configurações > Gerenciamento de mídia > Relatórios de mídia).
+
+![](assets/report-setup.png)
+
+No Analytics Workspace, todas as novas propriedades estão localizadas no painel de métricas. Por exemplo, você pode pesquisar `full screen` para visualização dos dados de tela cheia no painel de métricas.
+
+![](assets/full-screen-report.png)
 
 ## Importar métricas declaradas do player para a Adobe Experience Platform
 
