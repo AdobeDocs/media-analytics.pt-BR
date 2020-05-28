@@ -1,14 +1,17 @@
 ---
-title: Rastrear buffering no JavaScript
+title: Rastrear buffering usando o JavaScript 2.x
 description: Descreve eventos de rastreamento de buffering em aplicativos de navegador (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 8235fee973623c168dbf83f43aa85f13b4e06cff
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 91%
 
 ---
 
 
-# Rastrear buffering no JavaScript {#track-buffering-on-javascript}
+# Rastrear buffering usando o JavaScript 2.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Analise os eventos de buffering de reprodução no reprodutor de mídia e, na notificação do evento de início de buffering, rastreie o buffering usando o evento `BufferStart`.
 
    ```js
-   _onBufferStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
+   _onBufferStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart);
    };
    ```
 
 1. Na notificação de conclusão de buffer do reprodutor de mídia, rastreie o término do buffer com o evento`BufferComplete`:
 
    ```js
-   _onBufferComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+   _onBufferComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete);
    };
    ```
 
