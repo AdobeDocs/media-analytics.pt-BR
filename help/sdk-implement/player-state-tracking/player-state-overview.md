@@ -2,19 +2,19 @@
 title: Sobre o rastreamento de estado do player
 description: Este tópico descreve o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e relatórios estados do player.
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: d317188ef664c836c7125e8bbe195baa924c0d80
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 1%
 
 ---
 
 
 # Sobre o rastreamento de estado do player
 
-Para otimizar a experiência do seu produto e o valor da sua empresa, é importante entender o comportamento do cliente ao exibir vídeos. Isso inclui o tempo gasto em diferentes estados do player.  E para otimizar sua compreensão, você precisa da flexibilidade para criar e medir novos estados e eventos de jogadores, conforme necessário.
+Para otimizar a experiência do seu produto e o valor da sua empresa, é importante entender o comportamento do cliente ao exibir vídeos. Isso inclui o tempo gasto em diferentes estados do player.  Também é importante ter a flexibilidade para criar e medir novos estados e eventos de jogadores, conforme necessário.
 
-O Rastreamento de estado do player oferece a capacidade de capturar a interação do visualizador durante a reprodução usando um conjunto padrão de variáveis de solução para tela cheia, legendagem fechada, silêncio, imagem na imagem e em foco.  O Rastreamento de estado do player também oferece a flexibilidade para criar estados personalizados do player.  E as variáveis de Rastreamento de estado do player estão disponíveis para relatórios na área de trabalho da Análise.
+O Rastreamento de estado do player oferece a capacidade de capturar a interação do visualizador durante a reprodução usando um conjunto padrão de variáveis de solução para tela cheia, legendagem fechada, silêncio, imagem na imagem e em foco.  O Rastreamento de estado do player também oferece a flexibilidade para criar estados personalizados do player. Você pode usar variáveis de Rastreamento de estado do player para relatórios na área de trabalho da Análise.
 
 Para capturar alterações no estado do player, o Rastreamento de estado do player atualiza os metadados de medição de vídeo. Por exemplo, para determinar o envolvimento de vídeo &quot;verdadeiro&quot;, o Rastreamento de estado do player mede o tempo gasto com o som em relação às visualizações de vídeo passivas ou não ativas quando o som está desligado ou o tempo gasto no modo Normal versus Tela cheia.
 
@@ -29,13 +29,12 @@ O Rastreamento de estado do player oferece os seguintes benefícios:
 
 ## Requisitos
 
-O rastreamento de estado do player exige o seguinte para o Media Analytics Extension para uso com a Adobe Experience Platform (AEP SDK):
-* Web: Adobe Media Analytics (SDK 3.x) para áudio e vídeo v1.0+
-* Dispositivo móvel: Adobe Media Analytics para áudio e vídeo v2.0+
-
-Se você decidir não usar o SDK AEP, poderá usar o seguinte com o Rastreamento de estado do player:
+O Rastreamento de estado do player exige um dos seguintes para a coleta de dados:
 * Media JS SDK 3.0+
-* Versão da API do Media Collection?
+* Extensão do Media Analytics (para uso com o SDK do Adobe Experience Platform (AEP))
+   * Web: Adobe Media Analytics (SDK 3.x) para áudio e vídeo v1.0+
+   * Dispositivo móvel: Adobe Media Analytics para áudio e vídeo v2.0+
+* API da coleção de mídia
 
 ## Diretrizes
 
