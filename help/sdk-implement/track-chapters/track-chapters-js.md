@@ -1,14 +1,17 @@
 ---
-title: Rastrear capítulos e segmentos no JavaScript
+title: Rastrear capítulos e segmentos usando o JavaScript 2.x
 description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK do Media em aplicativos de navegador (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b14b56aea4a1821a2a160b9cd301cd181f1ba8dd
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 92%
 
 ---
 
 
-# Rastrear capítulos e segmentos no JavaScript {#track-chapters-and-segments-on-javascript}
+# Rastrear capítulos e segmentos usando o JavaScript 2.x{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -42,38 +45,37 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Se você incluir metadados personalizados para o capítulo, crie as variáveis de dados de contexto para os metadados:
 
    ```js
-   var chapterCustomMetadata = { 
+   var chapterCustomMetadata = {
        segmentType: "Sample segment type",  
        segmentName: "Sample segment name",  
-       segmentInfo: "Sample segment info" 
+       segmentInfo: "Sample segment info"
    };
    ```
 
 1. Para começar a rastrear a reprodução do capítulo, chame o evento `ChapterStart` na instância `MediaHeartbeat`:
 
    ```js
-   _onChapterStart = function() { 
+   _onChapterStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                                        chapterObject,  
-                                       chapterCustomMetadata); 
+                                       chapterCustomMetadata);
    };
    ```
 
 1. Quando a reprodução atingir o limite final do capítulo, conforme definido pelo seu código personalizado, chame o evento `ChapterComplete` na instância `MediaHeartbeat`:
 
    ```js
-   _onChapterComplete = function() { 
-      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
+   _onChapterComplete = function() {
+      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
    };
    ```
 
 1. Se a reprodução do capítulo não tiver sido concluída porque o usuário optou por ignorar o capítulo (por exemplo, se o usuário sair do limite do capítulo), chame o evento `ChapterSkip` na instância MediaHeartbeat:
 
    ```js
-   _onChapterSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
+   _onChapterSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
    };
    ```
 
 1. Se houver capítulos adicionais, repita as etapas de 1 até 5.
-
