@@ -1,14 +1,17 @@
 ---
-title: Implementar Metadados de publicidade padrão no JavaScript
-description: Como usar metadados de anúncio padrão no rastreamento de anúncio em aplicativos do navegador (JS).
+title: Implementação de metadados de anúncio padrão usando o JavaScript 2.x
+description: Como usar metadados de anúncio padrão no rastreamento de anúncio em um navegador usando aplicativos JavaScript 2.x.
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 55%
 
 ---
 
 
-# Implementar Metadados de publicidade padrão no JavaScript {#implement-standard-ad-metadata-on-javascript}
+# Implementação de metadados de anúncio padrão usando o JavaScript 2.x{#implement-standard-ad-metadata-on-javascript}
 
 ## Constantes de anúncio
 
@@ -25,12 +28,11 @@ var adObject =
 MediaHeartbeat.createAdObject(<AD_NAME>,  
                               <AD_ID>,  
                               <POSITION>,  
-                              <LENGTH>); 
-   
-// Set standard Ad Metadata 
-var standardAdMetadata = {}; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser"; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign"; 
+                              <LENGTH>);
+
+// Set standard Ad Metadata
+var standardAdMetadata = {};
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser";
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign";
 adObject.setValue(MediaObjectKey.StandardAdMetadata, standardAdMetadata);
 ```
-
