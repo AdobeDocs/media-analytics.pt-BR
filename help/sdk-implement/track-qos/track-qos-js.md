@@ -1,14 +1,17 @@
 ---
-title: Rastrear a qualidade da experiência no JavaScript
-description: Este tópico descreve como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media em aplicativos de navegador (JS).
+title: Acompanhar a qualidade da experiência usando o JavaScript 2.x
+description: Este tópico descreve como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK de mídia em aplicativos de navegador usando o JavaScript 2.x.
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b165c9d133637fd0f1c529a98a936f8f31b72465
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 84%
 
 ---
 
 
-# Rastrear a qualidade da experiência no JavaScript {#track-quality-of-experience-on-javascript}
+# Acompanhar a qualidade da experiência usando o JavaScript 2.x{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -39,14 +42,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var qosObject = MediaHeartbeat.createQoSObject(<bitrate>,  
                                                   <startuptime>,  
                                                   <fps>,  
-                                                  <droppedFrames>); 
+                                                  <droppedFrames>);
    ```
 
 1. Quando a reprodução altera as taxas de bits, chame o evento `BitrateChange` na instância do Heartbeat de mídia:
 
    ```js
-   _onBitrateChange = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
+   _onBitrateChange = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);
    };
    ```
 
@@ -60,4 +63,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >O rastreamento de erros do reprodutor de mídia não interrompe a sessão de rastreamento de mídia. Se o reprodutor de mídia estiver impedindo o andamento da reprodução, certifique-se de que a sessão de monitoramento de mídia está fechada, chamando `trackSessionEnd()` após chamar `trackError()`.
-
