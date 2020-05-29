@@ -2,7 +2,7 @@
 title: Configurar o JavaScript 3.x
 description: Configuração do aplicativo SDK de mídia para implementação no JavaScript 3.x.
 translation-type: tm+mt
-source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
+source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 47%
@@ -50,11 +50,11 @@ Esses parâmetros podem ser obtidos de um representante da Adobe após a configu
 
    A configuração do SDK de mídia requer uma instância de `AppMeasurement` com `visitor` configurado.
 
-```js
-var appMeasurement = new AppMeasurement(“<rsid>”);
-appMeasurement.visitor = visitor;
-appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
-```
+   ```js
+    var appMeasurement = new AppMeasurement(“<rsid>”);
+    appMeasurement.visitor = visitor;
+    appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+   ```
 
 1. Configurar o SDK de mídia
 
@@ -63,7 +63,6 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    >[!IMPORTANT]
    >
    > O SDK de mídia (3.x) usa a API Media Collection para rastrear mídia diferente do ponto de extremidade HB usado nos SDKs 2.x. Entre em contato com seu representante da Adobe para obter mais informações.
-
 
    Aqui está uma amostra de inicialização `MediaConfig`:
 
@@ -78,7 +77,8 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
     mediaConfig.ssl = true;
    
     ADB.Media.configure(mediaConfig, appMeasurement);
-   
+   ```
+
 1. Crie a instância `MediaTracker`.
 
    Depois de configurar o SDK de mídia, as instâncias do rastreador para rastrear conteúdo de mídia podem ser criadas usando a `getInstance` API.
