@@ -2,9 +2,9 @@
 title: Sobre o rastreamento de estado do player
 description: Este tópico descreve o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e relatórios estados do player.
 translation-type: tm+mt
-source-git-commit: d317188ef664c836c7125e8bbe195baa924c0d80
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,9 @@ O Rastreamento de estado do player exige um dos seguintes para a coleta de dados
 
 Antes de implementar o rastreamento de estado do Player, considere as seguintes diretrizes.
 
-* O estado do player é calculado em todos os estados de reprodução - (sem divisão)
-* Você pode medir vários estados de player ao mesmo tempo
-* O número máximo de estados do player que podem ser rastreados durante uma reprodução é 10 
-* As métricas de estado do player são enviadas ao Analytics para relatórios SOMENTE na chamada Media Close
-* Os estados do player são capturados para cada sessão de reprodução individual — o estado do player não é calculado entre as reproduções 
+* O estado do player é calculado em todos os estados de reprodução (sem divisão).
+* Você pode medir vários estados de player ao mesmo tempo.
+* O número máximo de estados do player que podem ser rastreados durante uma reprodução é 10.
+* As métricas de estado do player são enviadas ao Analytics para relatórios apenas na chamada Media Close.
+* O conhecimento do status do aplicativo não é mantido depois que um estado é interrompido. Após o término de um estado, ele deve ser iniciado novamente para continuar o rastreamento. Para cada novo estado de reprodução, o estado do player deve ser reiniciado.
+* Os estados do player são capturados para cada sessão de reprodução individual — o estado do player não é calculado entre as reproduções.
