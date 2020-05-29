@@ -2,8 +2,11 @@
 title: Rastreamento da reprodução principal no Roku
 description: Este tópico descreve como implementar o rastreamento principal usando o SDK do Media no Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+workflow-type: tm+mt
+source-wordcount: '1022'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    | Nome da constante | Descrição   |
    |---|---|
@@ -38,7 +41,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | Tipo de fluxo para audiobook |
    | `MEDIA_STREAM_TYPE_PODCAST` | Tipo de fluxo para podcast |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes de:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -72,10 +75,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    ```
    mediaInfo = adb_media_init_mediainfo(
-    "<MEDIA_NAME>", 
-    "<MEDIA_ID>", 
-    600, 
-    ADBMobile().MEDIA_STREAM_TYPE_AOD, 
+    "<MEDIA_NAME>",
+    "<MEDIA_ID>",
+    600,
+    ADBMobile().MEDIA_STREAM_TYPE_AOD,
     ADBMobile().MEDIA_TYPE_AUDIO
    )
    ```
@@ -97,7 +100,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    * **Metadados padrão**
 
-      [Implementar metadados padrão no JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [Implementar metadados padrão no JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -111,11 +114,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       Crie um objeto variável para as variáveis personalizadas e preencha com os dados desta mídia. Por exemplo:
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -253,9 +256,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifique qualquer cenário no qual o reprodutor de vídeo será pausado e verifique se `trackPause` foi chamado corretamente. Os seguintes cenários exigem que o aplicativo chame `trackPause()`:
 
-   * O usuário clica explicitamente em Pausar no aplicativo.
-   * O reprodutor se coloca no estado Pausado.
-   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que o aplicativo mantenha a sessão aberta.
+   * O usuário faz uma pausa explicitamente no aplicativo.
+   * O player se coloca no estado Pausa.
+   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que ele mantenha a sessão aberta.
    * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou um pop-up de outro aplicativo ocorre, mas você deseja que o aplicativo mantenha a sessão ativa para que o usuário possa retomar o vídeo do ponto em que foi interrompido.
 
 1. Identifique o evento do reprodutor para reprodução e/ou continuação do vídeo a partir da pausa e chame `trackPlay`:
@@ -269,4 +272,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * Cenários de rastreamento: [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reprodutor de exemplo incluído com o SDK do Roku para um exemplo completo de rastreamento.
-
