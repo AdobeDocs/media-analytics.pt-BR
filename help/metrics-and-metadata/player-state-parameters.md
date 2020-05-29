@@ -3,10 +3,10 @@ title: Parâmetros de estado do player
 description: Este tópico descreve os parâmetros de rastreamento do estado do player.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 29%
+source-wordcount: '2236'
+ht-degree: 28%
 
 ---
 
@@ -155,7 +155,27 @@ Os recursos de rastreamento de estado do player podem ser conectados a um fluxo 
 | --- | --- | --- |
 | <ul> <li> **Chave **<br/>SDK definida automaticamente</li> <li> **Chave **<br/>API N/A</li> <li> **Obrigatório **<br/>Não</li> <li> **Número do tipo **<br/></li> <li> **Enviado com **<br/>Media Close</li> <li> **Versão mín. SDK Version **<br/>3.0</li> <li> **Valor **<br/>de amostra TRUE</li><li> ****<br/>DescriçãoO tempo em foco foi exibido. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Importante** <br/> Se esse evento estiver definido, o tempo será igual ao tempo em que o vídeo ficou no estado Em foco. Se este evento não for definido, nenhum valor será enviado.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.stats.infocus.time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Disponível **<br/>Sim</li> <li> **evento de variável **<br/>reservada</li> <li> **Duração Total Do Nome **<br/>Do Relatório Em Foco</li> <li> **Dados **<br/>de contexto (media.stats.infocus.time)<br/> </li> <li> **Feed **<br/>de dados media.stats.infocus.time</li> <li> **Gerenciador **<br/>de Audiências (c_contextdata.media.stats.infocus.time)</li> </ul> |
 
+## Lista de propriedades para identidades XDM
 
+Os dados armazenados no Analytics podem ser usados para qualquer finalidade e as métricas de Estado do player podem ser importadas para a Adobe Experience Platform usando o XDM e usadas com o Customer Journey Analytics.
+
+| Propriedade do estado do player | Mapeamento |
+|---------------------------------------|------------------------------------|
+| a.media.states.fullScreen.set | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateSet |
+| a.media.states.fullScreen.count | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateCount |
+| a.media.states.fullScreen.time | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateTime |
+| a.media.states.mute.set | media.mediaTimed.primaryAssetViewDetails.mute.playerStateSet |
+| a.media.states.mute.count | media.mediaTimed.primaryAssetViewDetails.mute.playerStateCount |
+| a.media.states.mute.time | media.mediaTimed.primaryAssetViewDetails.mute.playerStateTime |
+| a.media.states.closeCaption.set | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateSet |
+| a.media.states.closeCaption.count | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateCount |
+| a.media.states.closeCaption.time | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateTime |
+| a.media.states.pictureInPicture.set | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateSet |
+| a.media.states.pictureInPicture.count | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateCount |
+| a.media.states.pictureInPicture.time | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateTime |
+| a.media.states.inFocus.set | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateSet |
+| a.media.states.inFocus.count | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateCount |
+| a.media.states.inFocus.time | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateTime |
 
 ## APIs relacionadas {#related_apis_section}
 
