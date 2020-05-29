@@ -2,9 +2,9 @@
 title: Implementação e Relatórios
 description: Este tópico descreve como implementar o recurso de rastreamento de estado do player, incluindo .
 translation-type: tm+mt
-source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
+source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -100,4 +100,4 @@ No Analytics Workspace, todas as novas propriedades estão localizadas no painel
 
 ## Importar métricas declaradas do player para a Adobe Experience Platform
 
-Os dados armazenados no Analytics podem ser usados para qualquer finalidade e as métricas de estado do player podem ser importadas para a Adobe Experience Platform usando o XDM e usadas com o Customer Journey Analytics. As propriedades de estado padrão têm propriedades específicas, enquanto os estados personalizados são propriedades disponíveis por meio dos eventos personalizados. Para obter informações adicionais, consulte a lista de propriedades para identidades XDM na LISTA ?LINK TO METRIC?.
+Os dados armazenados no Analytics podem ser usados para qualquer finalidade e as métricas de estado do player podem ser importadas para a Adobe Experience Platform usando o XDM e usadas com o Customer Journey Analytics. As propriedades de estado padrão têm propriedades específicas, enquanto os estados personalizados são propriedades disponíveis por meio dos eventos personalizados.
