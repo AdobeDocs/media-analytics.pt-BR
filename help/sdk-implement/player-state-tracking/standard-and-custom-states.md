@@ -1,32 +1,32 @@
 ---
 title: Sobre estados padrão e personalizados
-description: Este tópico descreve o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e relatórios de estados padrão e personalizados do player.
+description: Este tópico descreve o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e informar estados padrão e personalizados do player.
 translation-type: tm+mt
 source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 1%
+ht-degree: 66%
 
 ---
 
 
 # Sobre estados padrão e personalizados
 
-Cinco estados padrão de player estão disponíveis e você pode adicionar seus próprios estados personalizados.
+Cinco estados padrão do player estão disponíveis e você pode adicionar seus próprios estados personalizados.
 
-| Nome do Estado Padrão | Constante do SDK de mídia | Nome da API da coleção de mídia |
+| Nome do estado padrão | Constante do SDK de mídia | Nome da API da coleção de mídia |
 |-----------------------|------------------------------------------|-----------------------------|
 | Tela cheia | `ADB.Media.PlayerState.Fullscreen` | `fullScreen` |
-| Legenda fechada | `ADB.Media.PlayerState.ClosedCaptioning` | `closedCaptioning` |
-| Silenciar | `ADB.Media.PlayerState.Mute` | `mute` |
-| Imagem em imagem | `ADB.Media.PlayerState.PictureInPicture` | `pictureInPicture` |
+| Legendas ocultas | `ADB.Media.PlayerState.ClosedCaptioning` | `closedCaptioning` |
+| Mudo | `ADB.Media.PlayerState.Mute` | `mute` |
+| Picture in Picture | `ADB.Media.PlayerState.PictureInPicture` | `pictureInPicture` |
 | Em foco | `ADB.Media.PlayerState.InFocus` | `inFocus` |
 
-Os dados são calculados da mesma forma para estados padrão e personalizados, mas os dados são armazenados de forma diferente para o relatórios do Analytics.
+Os dados são calculados da mesma forma para estados padrão e personalizados, mas os dados são armazenados de forma diferente para relatórios do Analytics.
 
-**Para estados** padrão — quando você ativa o rastreamento de estado do player a partir do console de Gerenciamento de mídia no relatórios do Analytics (lado administrativo), 15 variáveis de solução estão disponíveis para exportações de relatórios e dados.
+**Para estados padrão** — Ao ativar o rastreamento do estado do player pelo console de Gerenciamento de mídia nos relatórios do Analytics (lado administrativo), 15 variáveis de solução estão disponíveis para exportações de relatórios e dados.
 
-**Para estados** personalizados — Você pode criar suas próprias regras de processamento para armazenar os valores calculados em eventos personalizados e, em seguida, usar essas regras para exportações de relatórios e dados.
+**Para estados personalizados** — Você pode criar suas próprias regras de processamento para armazenar os valores calculados em eventos personalizados e, em seguida, usar essas regras para exportações de relatórios e dados.
 
 ## Diretrizes
 
