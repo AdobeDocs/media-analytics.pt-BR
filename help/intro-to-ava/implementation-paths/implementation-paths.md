@@ -2,28 +2,28 @@
 title: Caminhos de implementação
 description: null
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 
 # Caminhos de implementação {#implementation-paths}
 
-Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de venda, já que o Media Analytics tem um SKU exclusivo e muda de um modelo de preços com base em chamadas de servidor para um modelo com base em fluxos de vídeo.
+Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de vendas, pois o Media Analytics tem uma SKU exclusiva e seus preços variam de acordo com o modelo, com base em chamadas de servidor e fluxos de vídeo.
 
 * **Adobe Launch com a extensão do Adobe Media Analytics**
 
-   O Adobe Launch é a próxima geração da solução de gerenciamento de tags da Adobe. O Launch fornece uma maneira simples de implantar e gerenciar todas as tags de análise, marketing e publicidade necessárias para potencializar as experiências relevantes do cliente. Para criar e manter suas próprias integrações com o Launch, use extensões. Uma extensão é um pacote JavaScript, HTML e CSS que estende a interface do usuário de inicialização e a funcionalidade do cliente. Para obter mais informações, consulte o Guia do Usuário do [Experience Platform Launch](https://docs.adobe.com/content/help/pt-BR/launch/using/overview.html)
+   O Adobe Launch é a solução de gerenciamento de tags de última geração da Adobe. O Launch oferece uma forma simples de implantar e gerenciar todas as tags de análise, marketing e anúncios necessárias para enriquecer as experiências de clientes relevantes. Para criar e manter suas próprias integrações com o Launch, use extensões. Uma extensão é um pacote de JavaScript, HTML e CSS que estende a funcionalidade do cliente e da interface do usuário do Launch. Para obter mais informações, consulte o [Guia do usuário da Experience Platform Launch](https://docs.adobe.com/content/help/pt-BR/launch/using/overview.html)
 
    A extensão do Adobe Media Analytics (MA) adiciona o principal SDK de mídia JavaScript (SDK do Media 2.x) para áudio e vídeo. Esta extensão fornece a funcionalidade necessária para adicionar a instância do rastreador `MediaHeartbeat` a um site ou projeto do Launch.
 
    O Adobe Launch com a extensão do Media Analytics exige o seguinte:
    * Você deve ser um cliente da Adobe Experience Cloud.
-   * Você deve implantar o código incorporado Launch ou DTM em suas páginas da Web.
+   * Você deve implantar o código de incorporação do Launch ou DTM nas páginas da Web.
    * [Extensão do Analytics](https://docs.adobe.com/content/help/pt-BR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
    * [Extensão do Experience Cloud ID](https://docs.adobe.com/content/help/pt-BR/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
@@ -48,6 +48,6 @@ Para cada caminho de implementação, os clientes precisam entrar em contato com
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-O TVSDK já está integrado ao SDK do Media Analytics (Heartbeats), o que torna a implementação muito mais fácil e rápida em todas as plataformas compatíveis. <!--Primetime also supports the partnership with Nielsen.--> Para aproveitar o Primetime, siga as mesmas diretrizes e pré-requisitos encontrados [no lado do cliente,](/help/intro-to-ava/implementation-paths/client-side-path.md) juntamente com os seguintes documentos para sua(s) plataforma(s): [Guia do usuário do Primetime.](https://helpx.adobe.com/br/primetime/user-guide.html)
+O TVSDK já está integrado ao SDK do Media Analytics (Heartbeats), o que torna a implementação muito mais fácil e rápida em todas as plataformas compatíveis. <!--Primetime also supports the partnership with Nielsen.--> Para aproveitar o Primetime, siga as mesmas diretrizes e pré-requisitos encontrados [no lado do cliente,](/help/intro-to-ava/implementation-paths/client-side-path.md) juntamente com os seguintes documentos para sua(s) plataforma(s): [Guia do usuário do Primetime.](https://helpx.adobe.com/br/support/primetime.html)
 
 Você também deve entrar em contato com o Representante de vendas/Gerente de conta para saber como adquirir o TVSDK.
