@@ -2,11 +2,11 @@
 title: Visão geral da configuração
 description: Visão geral da configuração do SDK do Media para rastreamento de mídia em seus aplicativos para dispositivos móveis, OTT e do navegador (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para os SDKs do Media Analytics para iOS e Android.  Para obter informações adicionais, consulte Perguntas frequentes sobre [suporte ao SDK do](/help/sdk-implement/end-of-support-faqs.md)Media Analytics.
+>Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para o SDKs do Media Analytics para iOS e Android.  Para obter mais informações, consulte [Perguntas frequentes sobre o fim do suporte do SDK do Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
 As instruções a seguir se aplicam aos SDKs do Media 2.x. Se estiver implementando uma versão 1.x do SDK do Media, consulte a [Documentação do SDK do Media 1.x.](/help/sdk-implement/download-sdks.md) Para obter os integradores do Primetime, consulte a _Documentação de SDK do Media do Primetime_ abaixo.
 
@@ -47,7 +47,7 @@ Complete as etapas de implementação a seguir:
    |---|---|:---:|---|
    | `trackingServer` | Servidor de rastreamento para análise de mídia. Isso é diferente do servidor de rastreamento de análise. | Sim | String vazia |
    | `channel` | Nome do canal | Não | String vazia |
-   | `ovp` | Nome da plataforma de mídia online pela qual o conteúdo é distribuído | Não | String vazia |
+   | `ovp` | Nome da plataforma de mídia online pela qual o conteúdo é distribuído. | Não | String vazia |
    | `appVersion` | Versão do aplicativo do reprodutor de vídeo/SDK | Não | String vazia |
    | `playerName` | Nome do media player em uso, ou seja, &quot;AVPlayer&quot;, &quot;HTML5 Player&quot;, &quot;My Custom Player&quot; | Não | String vazia |
    | `ssl` | Indica se as chamadas devem ser feitas em HTTPS | Não | false |
@@ -123,14 +123,14 @@ Complete as etapas de implementação a seguir:
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Validar {#validate}
+## Validar  {#validate}
 
 As implementações de rastreamento do Media Analytics geram dois tipos de chamadas de rastreamento:
 
-* Chamadas de início de mídia e anúncio são enviadas diretamente para o servidor do Adobe Analytics (AppMeasurement).
-* As chamadas de heartbeat são enviadas para o servidor de rastreamento do Media Analytics (heartbeats), processadas e repassadas para o servidor do Adobe Analytics.
+* Chamadas de início de mídia e anúncio são enviadas diretamente para o servidor do Adobe Analytics (AppMeasurement).
+* As chamadas de heartbeat são enviadas para o servidor de rastreamento do Media Analytics (heartbeats), processadas e repassadas para o servidor do Adobe Analytics.
 
-* **Servidor do Adobe Analytics (AppMeasurement)** Para obter mais informações sobre as opções do servidor de rastreamento, consulte [Preencher corretamente as variáveis trackingServer e trackingServerSecure.](https://helpx.adobe.com/br/analytics/kb/determining-data-center.html)
+* **Servidor do Adobe Analytics (AppMeasurement)** Para obter mais informações sobre as opções do servidor de rastreamento, consulte [Preencher corretamente as variáveis trackingServer e trackingServerSecure.](https://helpx.adobe.com/br/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
@@ -157,4 +157,4 @@ O rastreamento de mídia funciona da mesma forma em todas as plataformas, deskto
 
 ## Documentação de SDK do Media do Primetime {#primetime-docs}
 
-* [Guias do usuário do Primetime](https://helpx.adobe.com/br/primetime/user-guide.html)
+* [Guias do usuário do Primetime](https://helpx.adobe.com/br/support/primetime.html)
