@@ -1,18 +1,18 @@
 ---
 title: Implementação e Relatórios
-description: Este tópico descreve como implementar o recurso de rastreamento de estado do player, incluindo .
+description: Este tópico descreve como implementar o recurso de rastreamento do estado do player, incluindo .
 translation-type: tm+mt
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 58%
 
 ---
 
 
 # Implementação e relatórios
 
-Durante uma sessão de reprodução, cada ocorrência de estado (start para ponta) deve ser rastreada individualmente. O SDK de mídia e a API de coleta de mídia fornecem novos métodos de rastreamento para esse recurso.
+Durante uma sessão de reprodução, cada ocorrência de estado (início ao fim) deve ser rastreada individualmente. O SDK de mídia e a API da coleção de mídia fornecem novos métodos de rastreamento para esse recurso.
 
 O SDK de mídia inclui dois novos métodos para rastreamento de estado personalizado:
 
@@ -21,13 +21,13 @@ O SDK de mídia inclui dois novos métodos para rastreamento de estado personali
 `trackStateClose("state_name")`
 
 
-A API Media Collection inclui dois novos eventos que têm `media.stateName` como parâmetro obrigatório:
+The Media Collection API includes two new events that have `media.stateName` as the required parameter:
 
 `stateStart` e `stateEnd`
 
 ## Implementação do SDK de mídia
 
-Start de estado do player
+Início do estado do player
 
 ```
 // StateStart (ex: Mute is switched on)
@@ -35,7 +35,7 @@ var stateObject = ADB.Media.createStateObject(ADB.Media.PlayerState.Mute);
 tracker.trackEvent(ADB.Media.Event.StateStart, stateObject);
 ```
 
-O estado do player termina
+Encerramento do estado do player
 
 ```
 // StateEnd (ex: Mute is switched off)
@@ -43,9 +43,9 @@ tracker.trackEvent(ADB.Media.Event.StateEnd, stateObject);
 ```
 
 
-## Implementação da API do Media Collection
+## Implementação da API da coleção de mídia
 
-Start de estado do player
+Início do estado do player
 
 ```
 // StateStart (ex: Mute is switched on)
@@ -62,7 +62,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 }
 ```
 
-O estado do player termina
+Encerramento do estado do player
 
 ```
 // StateEnd (ex: Mute is switched off)
@@ -84,13 +84,13 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 As métricas fornecidas para cada estado individual são computadas e enviadas para o Adobe Analytics como parâmetros de dados de contexto e armazenadas para fins de relatórios. Três métricas estão disponíveis para cada estado:
 
-* `a.media.states.[state.name].set = true` — Definido como true se o estado foi definido pelo menos uma vez para cada reprodução específica de um fluxo.
+* `a.media.states.[state.name].set = true` — Definido como verdadeiro se o estado foi definido pelo menos uma vez para cada reprodução específica de um fluxo.
 * `a.media.states.[state.name].count = 4` — Identifica o número de ocorrências de um estado durante cada reprodução individual de um fluxo
 * `a.media.states.[state.name].time = 240` — Identifica a duração total do estado em segundos para cada reprodução individual de um fluxo
 
 ## Relatórios
 
-Todas as métricas de estado do player podem ser usadas para qualquer visualização de relatórios disponível na área de trabalho da Análise ou em um componente (segmento, métricas calculadas), assim que um conjunto de relatórios é ativado para o rastreamento de estado do player. As novas métricas poderiam ser ativadas no Console de administração para cada relatório individual usando a Configuração do Relatórios de mídia (Editar configurações > Gerenciamento de mídia > Relatórios de mídia).
+Todas as métricas de estado do player podem ser usadas para qualquer visualização de relatórios disponível na Analysis Workspace ou em um componente (segmento, métricas calculadas) assim que um conjunto de relatórios é ativado para o rastreamento de estado do player. As novas métricas poderiam ser ativadas no Console de administração para cada relatório individual usando a Configuração do Relatórios de mídia (Editar configurações > Gerenciamento de mídia > Relatórios de mídia).
 
 ![](assets/report-setup.png)
 
@@ -100,4 +100,4 @@ No Analytics Workspace, todas as novas propriedades estão localizadas no painel
 
 ## Importar métricas declaradas do player para a Adobe Experience Platform
 
-Os dados armazenados no Analytics podem ser usados para qualquer finalidade e as métricas de estado do player podem ser importadas para a Adobe Experience Platform usando o XDM e usadas com o Customer Journey Analytics. As propriedades de estado padrão têm propriedades específicas enquanto os estados personalizados são propriedades disponíveis usando os eventos personalizados. Para obter informações adicionais sobre as propriedades de estado padrão, consulte a seção Lista *Propriedades para identidades* XDM na página Parâmetros [de estado do](/help/metrics-and-metadata/player-state-parameters.md) player.
+Os dados armazenados no Analytics podem ser usados para qualquer finalidade e as métricas do estado do player podem ser importadas para a Adobe Experience Platform usando o XDM e usadas com o Customer Journey Analytics. As propriedades de estado padrão têm propriedades específicas enquanto os estados personalizados são propriedades disponíveis usando os eventos personalizados. Para obter informações adicionais sobre as propriedades de estado padrão, consulte a seção Lista *Propriedades para identidades* XDM na página Parâmetros [de estado do](/help/metrics-and-metadata/player-state-parameters.md) player.
