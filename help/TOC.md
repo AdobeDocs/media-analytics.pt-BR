@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 79%
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Ativação do Audience Manager](intro-to-ava/am-enablement.md)
 + SDK do Media Analytics {#sdk-implement}
-   + [Perguntas frequentes sobre o suporte ao SDK do Media Analytics](sdk-implement/end-of-support-faqs.md)
+   + [Perguntas frequentes sobre o fim do suporte ao SDK do Media Analytics](sdk-implement/end-of-support-faqs.md)
    + [Baixar SDKs](sdk-implement/download-sdks.md)
    + Definir e configurar {#setup}
       + [Visão geral](sdk-implement/setup/setup-overview.md)
@@ -43,7 +43,7 @@ ht-degree: 79%
          + [Configurar o JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Configurar Chromecast ](sdk-implement/setup/set-up-chromecast.md)
       + [Configurar Roku ](sdk-implement/setup/set-up-roku.md)
-   + Track Audio and Video Playback {#track-av-playback}
+   + Rastrear a reprodução de áudio e vídeo {#track-av-playback}
       + [Visão geral](sdk-implement/track-av-playback/track-core-overview.md)
       + Rastreamento da reprodução principal de áudio e vídeo {#track-core}
          + [Rastreamento da reprodução principal no Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -69,7 +69,7 @@ ht-degree: 79%
             + [Busca de rastreamento no JavaScript 3.x](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [Busca de faixa no Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Busca de faixa no Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Implement Standard Metadata {#impl-std-metadata}
+      + Implementar metadados padrão {#impl-std-metadata}
          + [Implementar metadados padrão no Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Implementar metadados padrão no iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [Chaves de metadados de iOS](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -89,7 +89,7 @@ ht-degree: 79%
          + [Rastrear anúncios no JavaScript 3.x](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [Rastrear anúncios no Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Rastrear anúncios no Roku](sdk-implement/track-ads/track-ads-roku.md)
-      + Implement Standard ad Metadata {#impl-std-ad-metadata}
+      + Implementar metadados de publicidade padrão {#impl-std-ad-metadata}
          + [Implementar Metadados de publicidade padrão no Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [Implementar Metadados de publicidade padrão no iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
