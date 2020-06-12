@@ -2,11 +2,11 @@
 title: Configurar Android
 description: Configuração do aplicativo SDK do Media para implementação no Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '427'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 >[!IMPORTANT]
 >
->Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para o SDK do Media Analytics para iOS e Android.  Para obter informações adicionais, consulte Perguntas frequentes sobre [suporte ao SDK do](/help/sdk-implement/end-of-support-faqs.md)Media Analytics.
+>Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para o SDK do Media Analytics para iOS e Android. Para obter mais informações, consulte [Perguntas frequentes sobre o fim do suporte do SDK do Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
 
 ## Pré-requisitos
