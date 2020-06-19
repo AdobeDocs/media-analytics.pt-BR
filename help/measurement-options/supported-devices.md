@@ -1,10 +1,10 @@
 ---
 title: Dispositivos e plataformas compatíveis
 description: O Adobe Analytics para áudio e vídeo garante que cada fluxo de mídia seja coletado e relatado em todos os dispositivos.
-translation-type: ht
-source-git-commit: a8fec1747e688473af7a5eabbc4f9968772b5db3
-workflow-type: ht
-source-wordcount: '341'
+translation-type: tm+mt
+source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
+workflow-type: tm+mt
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -37,11 +37,11 @@ A tabela abaixo lista os dispositivos e as plataformas compatíveis no momento. 
 |  | Dispositivos Android | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Dispositivos Windows |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV  (tvOS) | Planejado para 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Apple TV  (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript) | ![](/help/assets/icon-blue-check.png)<br>(nativo) |
-|  | Fire TV (Fire OS) | Planejado para 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android TV | Planejado para 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Chromecast |  | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) |
+|  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | Consoles de jogos (ex: Xbox ONE, PS3/PS4 Sony) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Conversores (ex: xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Smart TVs (ex: Samsung, LG, Sony, Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(baseado na Web) | ![](/help/assets/icon-blue-check.png) |
