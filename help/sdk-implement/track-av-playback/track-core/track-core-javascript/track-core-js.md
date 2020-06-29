@@ -1,12 +1,12 @@
 ---
 title: Rastrear a reprodução principal usando o JavaScript 2.x
-description: Este tópico descreve como implementar o rastreamento principal usando o SDK de mídia em um navegador usando aplicativos JavaScript 2.x.
+description: Este tópico descreve como implementar o rastreamento principal usando o Media SDK em um navegador com aplicativos JavaScript 2.x.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
