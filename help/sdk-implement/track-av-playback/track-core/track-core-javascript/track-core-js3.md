@@ -1,11 +1,11 @@
 ---
 title: Rastrear a reprodução principal usando o JavaScript v3.x
-description: Este tópico descreve como implementar o rastreamento principal usando o SDK de mídia em um navegador usando aplicativos JavaScript 3.x.
-translation-type: tm+mt
+description: Este tópico descreve como implementar o rastreamento principal usando o Media SDK em um navegador com aplicativos JavaScript 3.x.
+translation-type: ht
 source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 81%
 # Rastrear a reprodução principal usando o JavaScript 3.x{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Esta documentação abrange o rastreamento na versão 3.x do SDK. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+>Esta documentação abrange o rastreamento na versão 3.x do SDK. Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md)
 
 1. **Configuração de rastreamento inicial**
 
@@ -23,8 +23,8 @@ ht-degree: 81%
 
    | Nome da variável | Tipo | Descrição |
    | --- | --- | --- |
-   | `name` | string | String não vazia que denota o nome da mídia. |
-   | `id` | string | Sequência de caracteres não vazia que denota um identificador de mídia exclusivo. |
+   | `name` | string | String não vazia que indica o nome da mídia. |
+   | `id` | string | String não vazia que indica um identificador de mídia exclusivo. |
    | `length` | número | Número positivo que indica a duração da mídia em segundos. Use 0 se o comprimento for desconhecido. |
    | `streamType` | string |  |
    | `mediaType` |  | Tipo de mídia (áudio ou vídeo). |
@@ -53,7 +53,7 @@ ht-degree: 81%
 
 1. **Anexar metadados**
 
-   Como opção, anexe metadados padrão e/ou personalizados à sessão de rastreamento por meio de variáveis de dados de contexto.
+   Opcionalmente, anexe metadados padrão e/ou personalizados à sessão de rastreamento por meio de variáveis de dados de contexto.
 
    * **Metadados padrão**
 
@@ -112,7 +112,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >If you are not using contextData, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >Se não estiver usando contextData, basta enviar um objeto vazio para o argumento `data` em `trackSessionStart`.
 
 1. **Rastrear o início real da reprodução**
 
