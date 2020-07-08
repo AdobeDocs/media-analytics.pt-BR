@@ -2,11 +2,11 @@
 title: Parâmetros de áudio e vídeo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccd4209f6fad0547e9595674602ee978d86e10cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6103'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Esse tópico apresenta uma lista de dados de conteúdo de áudio e vídeo, inclu
 
 Descrição dos dados da tabela:
 
-* **Implementação:** Informações sobre valores e requisitos de implementação
+* **Implementação:** Informações sobre valores e requisitos de implementação.
    * *Chave* - Variável, definida manualmente no aplicativo ou automaticamente pelo SDK do Adobe Media.
    * *Obrigatório* - Indica se o parâmetro é necessário para o rastreamento básico de áudio e vídeo.
    * *Tipo* - Especifica o tipo da variável a ser definida, a string ou o número.
@@ -34,13 +34,13 @@ Descrição dos dados da tabela:
    * *Valor de exemplo* - Fornece exemplo de uso comum de variável.
 * **Parâmetros de rede:** exibe os valores passados para os servidores do Adobe Analytics ou Heartbeat. Esta coluna mostra os nomes dos parâmetros que são vistos nas chamadas de rede geradas pelos SDKs do Adobe Media.
 * **Relatórios:** informações sobre como visualizar e analisar os dados de áudio e vídeo.
-   * *Disponível* - Indica se os dados estão disponíveis no relatórios por padrão (*Sim*) ou se exigem configuração personalizada (*Personalizado*)
+   * *Disponível* - Indica se os dados estão disponíveis no relatórios por padrão (*Sim*) ou se exigem configuração personalizada (*Personalizado*).
    * *Variável reservada* - Indica se os dados são capturados como um evento, eVar, prop ou classificação em uma variável reservada.
    * *Expiração* - Indica se os dados expiram após cada hit ou após cada visita.
-   * *Nome do relatório* - Nome do relatório do Adobe Analytics para a variável
+   * *Nome do relatório* - Nome do relatório do Adobe Analytics para a variável.
    * *Dados de contexto* - Nome dos dados de contexto do Adobe Analytics passados para o servidor de relatórios e usados nas regras de processamento.
-   * *Feed de dados* - Nome da coluna para variável encontrada nos feeds de dados da sequência de cliques ou transmissão ao vivo
-   * *Audience Manager* - Nome da característica encontrada no Adobe Audience Manager
+   * *Feed de dados* - Nome da coluna para variável encontrada nos feeds de dados da sequência de cliques ou transmissão ao vivo.
+   * *Audience Manager* - Nome da característica encontrada no Adobe Audience Manager.
 
 >[!IMPORTANT]
 >
@@ -109,7 +109,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **Chave da API:**<br/>media.contentType</li> <li> **Obrigatório:**<br/>Sim</li> <li> **Tipo:**<br/>sequência de caracteres restrita</li> <li> **Enviado com:**<br/>Início de mídia, Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Exemplo de valor:**<br/> &quot;vod&quot;</li> <li> **Descrição:**<br/> Valores disponíveis por **Tipo de fluxo ** :<br/> _Áudio:_ &quot;song&quot;, &quot;podcast&quot;, &quot;audiobook&quot;, &quot;radio&quot; <br/> _Vídeo:_ &quot;VoD&quot;, &quot;Ao vivo&quot;, &quot;Linear&quot;, &quot;UGC&quot;, &quot;DVoD&quot; <br/> Os clientes podem fornecer valores personalizados para esse parâmetro. Isso é igual a `s:stream:type.` Se isso não for definido, isso é igual a `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.contentType)</li> <li> **Heartbeats:**<br/>(s:stream:type)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>eVar</li> <li> **Expiração:**<br/>No HIT</li> <li> **Nome do relatório:**<br/>Tipo de conteúdo</li> <li> **Dados de contexto:**<br/>(a.contentType)</li> <li> **Feed de dados:**<br/>videocontenttype</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.contentType)</li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **Chave da API:**<br/>media.contentType</li> <li> **Obrigatório:**<br/>Sim</li> <li> **Tipo:**<br/>sequência de caracteres restrita</li> <li> **Enviado com:**<br/>Início de mídia, Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Exemplo de valor:**<br/> &quot;vod&quot;</li> <li> **Descrição:**<br/> Valores disponíveis por **Tipo de fluxo:** <br/> _Áudio:_ &quot;song&quot;, &quot;podcast&quot;, &quot;audiobook&quot;, &quot;radio&quot; <br/> _Vídeo:_ &quot;VoD&quot;, &quot;Ao vivo&quot;, &quot;Linear&quot;, &quot;UGC&quot;, &quot;DVoD&quot; <br/> Os clientes podem fornecer valores personalizados para esse parâmetro. Isso é igual a `s:stream:type.` Se isso não for definido, isso é igual a `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.contentType)</li> <li> **Heartbeats:**<br/>(s:stream:type)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>eVar</li> <li> **Expiração:**<br/>No HIT</li> <li> **Nome do relatório:**<br/>Tipo de conteúdo</li> <li> **Dados de contexto:**<br/>(a.contentType)</li> <li> **Feed de dados:**<br/>videocontenttype</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.contentType)</li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -327,7 +327,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave da API:**<br/>N/D</li> <li> **Tipo:**<br/>sequência de caracteres</li> <li> **Enviado com:**<br/>Início da mídia</li> <li> **Versão mín. do SDK:** Any</li> <li> **Exemplo de valor:**<br/> TRUE</li> <li> **Descrição:**<br/>Evento de carregamento da mídia. (Isso ocorre quando o visualizador clica no botão_Reproduzir _). Isso fará a contagem mesmo se houver anúncios antes da exibição, buffering, erros, etc.<br/>**Importante:** somente poderá ser verdadeiro se estiver definido. Se não for definido, nenhum valor será retornado.<br/> **Data de lançamento: 13/09/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.view)</li> <li> **Heartbeats:**<br/>(s:event:<br/>type=start)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>início de mídia</li> <li> **Dados de contexto:**<br/>(a.media.view)</li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.view)</li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave da API:**<br/>N/D</li> <li> **Tipo:**<br/>sequência de caracteres</li> <li> **Enviado com:**<br/>Início da mídia</li> <li> **Versão mín. do SDK:** Any</li> <li> **Exemplo de valor:**<br/> TRUE</li> <li> **Descrição:**<br/>Evento de carregamento da mídia. (Isso ocorre quando o visualizador clica no botão _Reproduzir _).  Isso fará a contagem mesmo se houver anúncios antes da exibição, buffering, erros, etc.<br/>**Importante:** somente poderá ser verdadeiro se estiver definido. Se não for definido, nenhum valor será retornado.<br/> **Data de lançamento: 13/09/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.view)</li> <li> **Heartbeats:**<br/>(s:event:<br/>type=start)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>início de mídia</li> <li> **Dados de contexto:**<br/>(a.media.view)</li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.view)</li> </ul> |
 
 ### Início do conteúdo
 
@@ -339,7 +339,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave da API:**<br/>N/D</li> <li> **Tipo:**<br/>sequência de caracteres</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Exemplo de valor:**<br/> TRUE</li> <li> **Descrição:**<br/>Um fluxo que foi observado até a conclusão. Isto não significa necessariamente que o utilizador tenha assistido a ou escutado todo o fluxo; eles poderiam ter avançado a reprodução. Isso somente significa que o usuário atingiu o fim do fluxo, 100%.<br/>Consulte também[Fim da sessão](quality-parameters.md#session-end)<br/> **Importante:** somente poderá ser verdadeiro se estiver definido. Se não for definido, nenhum valor será retornado.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/D</li> <li> **Heartbeats:**<br/>(s:event:<br/>type=complete)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>Conclusões de conteúdo</li> <li> **Dados de contexto:**<br/>(a.media.complete)</li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.complete)</li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave da API:**<br/>N/D</li> <li> **Tipo:**<br/>sequência de caracteres</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Exemplo de valor:**<br/> TRUE</li> <li> **Descrição:**<br/>Um fluxo que foi observado até a conclusão. Isto não significa necessariamente que o utilizador tenha assistido a ou escutado todo o fluxo; eles poderiam ter avançado a reprodução. Isso somente significa que o usuário atingiu o fim do fluxo, 100%.<br/>Consulte também [Fim da sessão](quality-parameters.md#session-end) <br/> **Importante:** somente poderá ser verdadeiro se estiver definido. Se não for definido, nenhum valor será retornado.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/D</li> <li> **Heartbeats:**<br/>(s:event:<br/>type=complete)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>Conclusões de conteúdo</li> <li> **Dados de contexto:**<br/>(a.media.complete)</li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.complete)</li> </ul> |
 
 ### Tempo gasto no conteúdo
 
@@ -351,7 +351,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave da API:**<br/>N/D</li> <li> **Tipo:**<br/>número</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor de exemplo:**<br/> 120</li> <li> **Descrição:**<br/>Soma a duração do evento (em segundos) para todos os eventos do tipo PLAY, no conteúdo principal e de publicidade.  O valor será exibido no formato de hora (HH:MM:SS) no Analysis Workspace e nos Reports &amp; Analytics. Nos Feeds de dados, Data Warehouse e APIs de relatórios, os valores serão exibidos em segundos.<br/> **Data de lançamento: 13/09/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/D</li> <li> **Heartbeats:**<br/>N/D</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>Tempo gasto com a mídia</li> <li> **Dados de contexto:**<br/>(a.media.totalTimePlayed)</li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.totalTimePlayed)</li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave da API:**<br/>N/D</li> <li> **Tipo:**<br/>número</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor de exemplo:**<br/> 120</li> <li> **Descrição:**<br/> Soma a duração do evento (em segundos) para todos os eventos do tipo PLAY, no conteúdo principal e de publicidade.  O valor será exibido no formato de hora (HH:MM:SS) no Analysis Workspace e nos Reports &amp; Analytics. Nos Feeds de dados, Data Warehouse e APIs de relatórios, os valores serão exibidos em segundos.<br/> **Data de lançamento: 13/09/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/D</li> <li> **Heartbeats:**<br/>N/D</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>Tempo gasto com a mídia</li> <li> **Dados de contexto:**<br/>(a.media.totalTimePlayed)</li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.totalTimePlayed)</li> </ul> |
 
 ### Tempo de reprodução exclusivo
 
