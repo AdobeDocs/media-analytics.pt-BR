@@ -2,8 +2,11 @@
 title: Parâmetros de qualidade
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
+workflow-type: tm+mt
+source-wordcount: '2984'
+ht-degree: 100%
 
 ---
 
@@ -14,20 +17,20 @@ Este tópico contém a lista de dados de qualidade da experiência (QoE/Qos), in
 
 Descrição dos dados da tabela:
 
-* **Implementação:** informações sobre valores e requisitos de implementação
+* **Implementação:** Informações sobre valores e requisitos de implementação.
    * *Chave* - Variável, definida manualmente no aplicativo ou automaticamente pelo SDK do Adobe Media.
-   * *Obrigatório* - Indica se o parâmetro é necessário para o rastreamento básico de vídeo.
+   * *Obrigatório* - Indica se o parâmetro é necessário para o rastreamento básico de vídeo.
    * *Tipo* - Especifica o tipo da variável a ser definida, a string ou o número.
    * *Enviado com* - Indica quando os dados são enviados: *Início da mídia* é a chamada do Analytics enviada no início da mídia, *Início do anúncio* é a chamada do Analytics enviada no início do anúncio, e assim por diante; as chamadas de *Fechamento* são as chamadas compiladas do Analytics enviadas diretamente do servidor do heartbeat para o servidor da Analytics no final da sessão de mídia, ou no final do anúncio, do capítulo, etc. As chamadas de fechamento não estão disponíveis nas chamadas do pacote de rede.
    * *Versão mín. Versão do SDK* - Indica qual versão do SDK você precisaria para acessar o parâmetro.
-   * *Valor de exemplo* - Fornece exemplo de uso comum de variável.
+   * *Valor de exemplo* - Fornece exemplo de uso comum de variável.
 * **Parâmetros de rede:** exibe os valores passados para os servidores do Adobe Analytics ou Heartbeat. Esta coluna mostra os nomes dos parâmetros que são vistos nas chamadas de rede geradas pelos SDKs do Adobe Media.
 * **Relatórios:** informações sobre como visualizar e analisar os dados do vídeo.
    * *Disponível* - Indica se os dados estão disponíveis no relatórios por padrão (*Sim*) ou se exigem configuração personalizada (*Personalizado*)
-   * *Variável reservada* - Indica se os dados são capturados como um evento, eVar, prop ou classificação em uma variável reservada.
-   * *Nome do relatório* - Nome do relatório do Adobe Analytics para a variável
-   * *Dados de contexto* - Nome dos dados de contexto do Adobe Analytics passados para o servidor de relatórios e usados nas regras de processamento.
-   * *Feed de dados* - Nome da coluna para variável encontrada nos feeds de dados da sequência de cliques ou transmissão ao vivo
+   * *Variável reservada* - Indica se os dados são capturados como um evento, eVar, prop ou classificação em uma variável reservada.
+   * *Nome do relatório* - Nome do relatório do Adobe Analytics para a variável
+   * *Dados de contexto* - Nome dos dados de contexto do Adobe Analytics passados para o servidor de relatórios e usados nas regras de processamento.
+   * *Feed de dados* - Nome da coluna para variável encontrada nos feeds de dados da sequência de cliques ou transmissão ao vivo.
    * *Audience Manager* - Nome da característica encontrada no Adobe Audience Manager
 
 ## Metadados de qualidade {#quality-metadata}
@@ -186,6 +189,7 @@ Descrição dos dados da tabela:
 
 
 >[!IMPORTANT]
+>
 >Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
 
 ### Fluxos afetados pelo buffer
@@ -197,6 +201,7 @@ Descrição dos dados da tabela:
 
 
 >[!IMPORTANT]
+>
 >Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
 
 ### Fluxos afetados pela mudança na taxa de bits
@@ -208,6 +213,7 @@ Descrição dos dados da tabela:
 
 
 >[!IMPORTANT]
+>
 >Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
 
 ### Taxa média de bits
@@ -227,6 +233,7 @@ Descrição dos dados da tabela:
 
 
 >[!IMPORTANT]
+>
 >Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
 
 ### Fluxos afetados pela queda de quadros
@@ -238,6 +245,7 @@ Descrição dos dados da tabela:
 
 
 >[!IMPORTANT]
+>
 >Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
 
 ### Fluxos afetados por bloqueios
@@ -246,9 +254,8 @@ Descrição dos dados da tabela:
 | --- | --- | --- |
 | <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave da API:**<br/>N/D</li> <li> **Obrigatório:**<br/>Não</li> <li> **Tipo:**<br/>sequência de caracteres</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** 1.5+ </li> <li> **Exemplo de valor:**<br/> TRUE</li><li> **Descrição:**<br/>O número de fluxos nos quais ocorreram eventos de paralisação. Essa métrica é definida como 1 se pelo menos um stall ocorrer durante a reprodução. Os clientes terão que criar suas próprias regras de processamento para que o valor esteja disponível para os relatórios.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>stall)</li> <li> **Heartbeat:**<br/>(s:event:<br/>type=stall)</li> </ul> | <ul> <li> **Disponível:**<br/>Usar regra de processamento personalizada</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/> </li> <li> **Feed de dados:**<br/>N/D</li> <li> **Dados de contexto:**<br/>(a.media.qoe.<br/>stall)</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>stall)</li> </ul> |
 
-
-
 >[!IMPORTANT]
+>
 >Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
 
 ### Eventos de paralisação
