@@ -1,9 +1,9 @@
 ---
 title: Atribuição de fluxo de mídia
 description: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Você também precisará reativar a configuração de rastreamento de mídia no 
 
 ## Como
 
-O exemplo do JavaScript abaixo gerará uma chamada de rastreamento de Link personalizado com o nome definido como &quot;Banner principal&quot;.
+O exemplo do JavaScript abaixo gerará uma chamada de rastreamento de Link personalizado com o nome definido como &quot;Hero Banner&quot;.
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"
