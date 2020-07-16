@@ -2,9 +2,9 @@
 title: Parâmetros de qualidade
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2984'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Parâmetros de qualidade {#quality-parameters}
 
-Este tópico contém a lista de dados de qualidade da experiência (QoE/Qos), incluindo os valores de dados de contexto, coletados pela Adobe por meio das variáveis da solução.
+Este tópico contém a lista de dados de qualidade da experiência (QoE/QoS), incluindo os valores de dados de contexto, coletados pela Adobe por meio das variáveis da solução.
 
 Descrição dos dados da tabela:
 
@@ -22,7 +22,7 @@ Descrição dos dados da tabela:
    * *Obrigatório* - Indica se o parâmetro é necessário para o rastreamento básico de vídeo.
    * *Tipo* - Especifica o tipo da variável a ser definida, a string ou o número.
    * *Enviado com* - Indica quando os dados são enviados: *Início da mídia* é a chamada do Analytics enviada no início da mídia, *Início do anúncio* é a chamada do Analytics enviada no início do anúncio, e assim por diante; as chamadas de *Fechamento* são as chamadas compiladas do Analytics enviadas diretamente do servidor do heartbeat para o servidor da Analytics no final da sessão de mídia, ou no final do anúncio, do capítulo, etc. As chamadas de fechamento não estão disponíveis nas chamadas do pacote de rede.
-   * *Versão mín. Versão do SDK* - Indica qual versão do SDK você precisaria para acessar o parâmetro.
+   * *Versão mín. do SDK* - Indica qual versão do SDK você precisaria para acessar o parâmetro.
    * *Valor de exemplo* - Fornece exemplo de uso comum de variável.
 * **Parâmetros de rede:** exibe os valores passados para os servidores do Adobe Analytics ou Heartbeat. Esta coluna mostra os nomes dos parâmetros que são vistos nas chamadas de rede geradas pelos SDKs do Adobe Media.
 * **Relatórios:** informações sobre como visualizar e analisar os dados do vídeo.
@@ -101,7 +101,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave de API:**<br/> </li> <li> **Obrigatório:**<br/>Não</li> <li> **Tipo:**<br/>número</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/>As IDs de erro exclusivas geradas pelo SDK do reprodutor. Os clientes devem fornecer os códigos/IDs de erro na implementação por meio das APIs de erro fornecidas.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>playerSdkErrors)</li> <li> **Heartbeat:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>eVar</li> <li> **Expiração:**<br/>No HIT</li> <li> **Nome do relatório:**<br/>Errors</li> <li> **Dados de contexto:**<br/>(a.media.qoe.<br/>playerSdkErrors)</li> <li> **Feed de dados:**<br/>videoqoeplayersdkerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>playerSdkErrors)</li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave de API:**<br/> </li> <li> **Obrigatório:**<br/>Não</li> <li> **Tipo:**<br/>número</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor de exemplo:**<br/> </li><li> **Descrição:**<br/>As IDs de erro exclusivas geradas pelo SDK do reprodutor. Os clientes devem fornecer os códigos/IDs de erro na implementação por meio das APIs de erro fornecidas.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>playerSdkErrors)</li> <li> **Heartbeat:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>eVar</li> <li> **Expiração:**<br/>No HIT</li> <li> **Nome do relatório:**<br/>Errors</li> <li> **Dados de contexto:**<br/>(a.media.qoe.<br/>playerSdkErrors)</li> <li> **Feed de dados:**<br/>videoqoeplayersdkerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>playerSdkErrors)</li> </ul> |
 
 
 
@@ -109,7 +109,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave de API:**<br/> </li> <li> **Obrigatório:**<br/>Não</li> <li> **Tipo:**<br/>número</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/>As IDs de erro exclusivas de qualquer origem externa, por exemplo, erros de CDN. Os clientes devem fornecer os códigos/IDs de erro na implementação por meio das APIs de erro fornecidas.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>externalErrors)</li> <li> **Heartbeat:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>eVar</li> <li> **Expiração:**<br/>No HIT</li> <li> **Nome do relatório:**<br/>Errors</li> <li> **Dados de contexto:**<br/>(a.media.qoe.<br/>externalErrors)</li> <li> **Feed de dados:**<br/>videoqoeextneralerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>externalErrors)</li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave de API:**<br/> </li> <li> **Obrigatório:**<br/>Não</li> <li> **Tipo:**<br/>número</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor de exemplo:**<br/> </li><li> **Descrição:**<br/>As IDs de erro exclusivas de qualquer origem externa, por exemplo, erros de CDN. Os clientes devem fornecer os códigos/IDs de erro na implementação por meio das APIs de erro fornecidas.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>externalErrors)</li> <li> **Heartbeat:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>eVar</li> <li> **Expiração:**<br/>No HIT</li> <li> **Nome do relatório:**<br/>Errors</li> <li> **Dados de contexto:**<br/>(a.media.qoe.<br/>externalErrors)</li> <li> **Feed de dados:**<br/>videoqoeextneralerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>externalErrors)</li> </ul> |
 
 
 
@@ -117,7 +117,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave de API:**<br/> </li> <li> **Obrigatório:**<br/>Não</li> <li> **Tipo:**<br/>número</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/>As IDs de erro exclusivas geradas pelo SDK do Media durante a reprodução.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>mediaSdkErrors)</li> <li> **Heartbeat:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>eVar</li> <li> **Expiração:**<br/>No HIT</li> <li> **Nome do relatório:**<br/>Errors</li> <li> **Dados de contexto:**<br/>(a.media.qoe.<br/>mediaSdkErrors)</li> <li> **Feed de dados:**<br/>mediaqoeexternalerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>mediaSdkErrors)</li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave de API:**<br/> </li> <li> **Obrigatório:**<br/>Não</li> <li> **Tipo:**<br/>número</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Valor de exemplo:**<br/> </li><li> **Descrição:**<br/>As IDs de erro exclusivas geradas pelo SDK do Media durante a reprodução.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>mediaSdkErrors)</li> <li> **Heartbeat:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>eVar</li> <li> **Expiração:**<br/>No HIT</li> <li> **Nome do relatório:**<br/>Errors</li> <li> **Dados de contexto:**<br/>(a.media.qoe.<br/>mediaSdkErrors)</li> <li> **Feed de dados:**<br/>mediaqoeexternalerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>mediaSdkErrors)</li> </ul> |
 
 
 
@@ -126,7 +126,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave de API:**<br/> </li> <li> **Tipo:**<br/>sequência de caracteres</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** 2.1 </li> <li> **Exemplo de valor:**<br/> fim</li><li> **Descrição:**<br/>O evento de fim significa que o SDK está enviando uma chamada de fechamento para o back-end. No recebimento desse evento, o backend encerrará a sessão deste vídeo e não executará mais nenhum processamento.<br/>Se a mídia foi concluída em 100%, isso deve ser enviado após`s:event:type=complete.`Ver[conteúdo concluído](audio-video-parameters.md#content-complete)para obter informações relacionadas.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>N/D</li> <li> **Heartbeat:**<br/>(s:event:type=end)</li> </ul> | <ul> <li> **Disponível:**<br/>Usar regra de processamento personalizada</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>N/D</li> <li> **Dados de contexto:**<br/> </li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave de API:**<br/> </li> <li> **Tipo:**<br/>sequência de caracteres</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** 2.1 </li> <li> **Exemplo de valor:**<br/> fim</li><li> **Descrição:**<br/>O evento de fim significa que o SDK está enviando uma chamada de fechamento para o back-end. No recebimento desse evento, o backend encerrará a sessão deste vídeo e não executará mais nenhum processamento.<br/>Se a mídia foi concluída em 100%, isso deve ser enviado após `s:event:type=complete.` Ver [conteúdo concluído](audio-video-parameters.md#content-complete) para obter informações relacionadas.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>N/D</li> <li> **Heartbeat:**<br/>(s:event:type=end)</li> </ul> | <ul> <li> **Disponível:**<br/>Usar regra de processamento personalizada</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>N/D</li> <li> **Dados de contexto:**<br/> </li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
@@ -190,7 +190,7 @@ Descrição dos dados da tabela:
 
 >[!IMPORTANT]
 >
->Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
+>Se este evento for definido, o único valor possível será TRUE. Se este evento não for definido, nenhum valor será enviado.
 
 ### Fluxos afetados pelo buffer
 
@@ -202,7 +202,7 @@ Descrição dos dados da tabela:
 
 >[!IMPORTANT]
 >
->Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
+>Se este evento for definido, o único valor possível será TRUE. Se este evento não for definido, nenhum valor será enviado.
 
 ### Fluxos afetados pela mudança na taxa de bits
 
@@ -214,7 +214,7 @@ Descrição dos dados da tabela:
 
 >[!IMPORTANT]
 >
->Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
+>Se este evento for definido, o único valor possível será TRUE. Se este evento não for definido, nenhum valor será enviado.
 
 ### Taxa média de bits
 
@@ -228,13 +228,13 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave da API:**<br/>N/D</li> <li> **Obrigatório:**<br/>Não</li> <li> **Tipo:**<br/>sequência de caracteres</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Exemplo de valor:**<br/> TRUE</li><li> **Descrição:**<br/>O número de fluxos nos quais um evento de erro ocorreu (isto é,`trackError`foi chamado durante a sessão de reprodução e uma chamada de`type=error`heartbeat foi gerada).</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>error)</li> <li> **Heartbeat:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>Fluxos impactados por erros</li> <li> **Dados de contexto:**<br/>(a.media.qoe.<br/>error)</li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>error)</li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/>Definida automaticamente</li> <li> **Chave da API:**<br/>N/D</li> <li> **Obrigatório:**<br/>Não</li> <li> **Tipo:**<br/>sequência de caracteres</li> <li> **Enviado com:**<br/>Fechamento de mídia</li> <li> **Versão mín. do SDK:** Any </li> <li> **Exemplo de valor:**<br/> TRUE</li><li> **Descrição:**<br/>O número de fluxos nos quais um evento de erro ocorreu (isto é, `trackError` foi chamado durante a sessão de reprodução e uma chamada de `type=error` heartbeat foi gerada).</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>error)</li> <li> **Heartbeat:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **Disponível:**<br/>Sim</li> <li> **Variável reservada:**<br/>event</li> <li> **Nome do relatório:**<br/>Fluxos impactados por erros</li> <li> **Dados de contexto:**<br/>(a.media.qoe.<br/>error)</li> <li> **Feed de dados:**<br/>N/D</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>error)</li> </ul> |
 
 
 
 >[!IMPORTANT]
 >
->Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
+>Se este evento for definido, o único valor possível será TRUE. Se este evento não for definido, nenhum valor será enviado.
 
 ### Fluxos afetados pela queda de quadros
 
@@ -246,7 +246,7 @@ Descrição dos dados da tabela:
 
 >[!IMPORTANT]
 >
->Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
+>Se este evento for definido, o único valor possível será TRUE. Se este evento não for definido, nenhum valor será enviado.
 
 ### Fluxos afetados por bloqueios
 
@@ -256,7 +256,7 @@ Descrição dos dados da tabela:
 
 >[!IMPORTANT]
 >
->Se este evento for definido, o único valor possível será VERDADEIRO. Se este evento não for definido, nenhum valor será enviado.
+>Se este evento for definido, o único valor possível será TRUE. Se este evento não for definido, nenhum valor será enviado.
 
 ### Eventos de paralisação
 
