@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -50,8 +50,8 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | N/D | A Conclusão de conteúdo é compatível apenas com um marcador de progresso de 100%. |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | Chave do SDK: playerName;<br> Chave da API: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | N/D | O Media Analytics está definido para 10 segundos para conteúdo e 1 segundo para anúncios. Nenhuma outra opção está disponível. |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | N/D | Media Analytics sempre rastreia marcadores de progresso em 10%, 25%, 50%, 75%, 95%. |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | N/D | Media Analytics sempre rastreia marcadores de progresso em 10%, 25%, 50%, 75%, 95%. |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | N/D | O Media Analytics sempre rastreia marcadores de progresso em 10%, 25%, 50%, 75%, 95%. |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | N/D | O Media Analytics sempre rastreia marcadores de progresso em 10%, 25%, 50%, 75%, 95%. |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | N/D | O rastreamento automático não está mais disponível. |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | N/D | O rastreamento automático não está mais disponível. |
 
@@ -77,14 +77,14 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 | name | `name`: (obrigatório) o nome ou ID do anúncio. | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | comprimento | `length`: (obrigatório) a duração do anúncio. | comprimento | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName`: (obrigatório) o nome do reprodutor de mídia utilizado para exibir o anúncio. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName | `parentName`: o nome ou a ID do conteúdo principal no qual o anúncio está incorporado. | N/D | Herdado automaticamente. |
-| parentPod | `parentPod`: a posição no conteúdo principal em que o anúncio foi reproduzido. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition | `parentPodPosition`: a posição no pod para a reprodução do anúncio. | posição | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM | `CPM`: o CPM ou CPM criptografado (com prefixo “~”) que se aplica a essa reprodução. | N/D | Por padrão, não disponível no Media Analytics. |
-| Media.click | `s.Media.click(name, offset)` | N/D | Use uma chamada personalizada de análise de link para rastrear cliques. |
+| parentName | `parentName`: O nome ou a ID do conteúdo principal no qual o anúncio está incorporado. | N/D | Herdado automaticamente. |
+| parentPod | `parentPod`: A posição, no conteúdo principal, da reprodução do anúncio. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
+| parentPodPosition | `parentPodPosition`: A posição, no pod, da reprodução do anúncio. | posição | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| CPM | `CPM`: O CPM ou o CPM criptografado (com prefixo &quot;~&quot;) que se aplica a essa reprodução. | N/D | Por padrão, não disponível no Media Analytics. |
+| Media.click | `s.Media.click(name, offset)` | N/D | Usar uma chamada de análise de link personalizado para rastrear os cliques. |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |
 | Media.play | `s.Media.play(` <br> `  name,` <br> `  offset,` <br> `  segmentNum,` <br> `  segment, ` <br> `  segmentLength)` | trackPlay | `trackPlay()` |
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> ou <br>trackEvent | `trackPause()` <br> ou `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> ou <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
-| Media.monitor | `s.Media.monitor(s, media)` | Use metadados personalizados ou padrão para definir variáveis adicionais. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
+| Media.monitor | `s.Media.monitor(s, media)` | Use os metadados personalizados ou padrão para definir variáveis adicionais. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | N/D | A frequência de chamada de rastreamento é definida automaticamente. |
