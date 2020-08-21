@@ -2,8 +2,11 @@
 title: Configurar o Adobe Debug
 description: Este tópico descreve como configurar o Adobe Debug, que você pode usar para solucionar problemas de implementações do SDK do Media.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 97%
 
 ---
 
@@ -42,6 +45,7 @@ Baixe e configure o Proxy de depuração:
    Os sistemas operacionais compatíveis são:
    * OS X 10.7 de 64 bits ou superior
    * Windows 7.1 de 64 bits ou superior
+
    ![](assets/debug-proxy-app.png)
 
 1. O servidor Proxy de Depuração será executado na sua máquina local na porta 33284 e será definido como proxy do sistema.
@@ -63,23 +67,23 @@ Baixe e instale o certificado SSL:
    1. Mova (arraste) o certificado CA raiz para o Sistema.
    1. Você deve copiar o certificado para o Sistema para garantir que ele seja confiável para todos os usuários e processos do sistema local.
    1. Abra o certificado CA raiz, expanda Confiança, selecione Sempre confiar e salve as alterações.
+
    **Windows**
    1. Conclua um dos seguintes procedimentos:
 
       * [Adicionar certificados à loja de Autoridades de Certificação Raiz Confiáveis para um computador local](https://technet.microsoft.com/pt-br/library/cc754841.aspx#BKMK_addlocal)
-<!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
--->
+   1. Para o Firefox, conclua o procedimento em [Instalar o certificado raiz no Mozilla Firefox.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
 
-    1. Para o Firefox, conclua o procedimento em [Instalar o certificado raiz no Mozilla Firefox.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
-    
-    Talvez seja necessário sair e reabrir o Firefox para ver a alteração.
-    
-    **Dispositivos iOS**
-    1. Defina seu dispositivo iOS para usar o Adobe Debug como proxy HTTP clicando em **[!UICONTROL Configurações do aplicativo]** **>** **[!UICONTROL Configurações do Wi-Fi]**.
-    
-    1. No Safari, acesse [Debug.](https://proxy.debug.adobe.com/ssl)
-    
-    O Safari solicitará a instalação do certificado SSL.
+      Você pode precisar sair e reabrir o Firefox para visualizar a alteração.
+   **Dispositivos iOS**
+   1. Defina seu dispositivo iOS para usar o Adobe Debug como proxy HTTP clicando em **[!UICONTROL Configurações do aplicativo]** **>** **[!UICONTROL Configurações Wi-Fi]**.
+
+   1. No Safari, vá para [Depuração.](https://proxy.debug.adobe.com/ssl)
+
+      O Safari solicitará que você instale o certificado SSL.
+
+
+
 
 ## Instale o Certificado SSL para o seu dispositivo móvel {#install-sSL-for-mobile-device}
 
