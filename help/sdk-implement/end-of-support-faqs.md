@@ -2,25 +2,25 @@
 title: Perguntas frequentes sobre o fim do suporte ao SDK do Media Analytics
 description: Este tópico inclui perguntas frequentes sobre o fim do suporte para SDKs do Media Analytics.
 translation-type: tm+mt
-source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
+source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 88%
+source-wordcount: '679'
+ht-degree: 100%
 
 ---
 
 
 # Perguntas frequentes sobre o fim do suporte ao SDK do Media Analytics
 
-Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para o SDKs do Media Analytics para iOS e Android. Após 31 de agosto de 2021, a Adobe não fornecerá correções, atualizações relacionadas ao SO ou suporte para o SDK do Media Analytics. Durante o processo de migração para esses novos SDKs da Experience Platform, lembre-se de que as [extensões do Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) devem ser implementadas para habilitar o Adobe Analytics para áudio e vídeo.
+Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para o SDKs do Media Analytics para iOS e Android. Após 31 de agosto de 2021, a Adobe não fornecerá correções, atualizações relacionadas ao SO ou suporte para o SDK do Media Analytics.  Durante o processo de migração para esses novos SDKs da Experience Platform, lembre-se de que as [extensões do Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) devem ser implementadas para habilitar o Adobe Analytics para áudio e vídeo.
 
 ## 5 principais itens que você deve conhecer
 
-1. Os SDKs v4 móveis não terão mais suporte após 31 de agosto de 2021. Você deve migrar para os SDKs da Adobe Experience Platform (AEP) para iOS e Android. Para obter informações adicionais, consulte Perguntas frequentes sobre [o fim do suporte dos SDKs móveis](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)versão 4.
+1. Os SDKs v4 móveis não terão mais suporte após 31 de agosto de 2021. Você deve migrar para os SDKs da Adobe Experience Platform (AEP) para iOS e Android. Para obter mais informações, consulte [Perguntas frequentes sobre o fim do suporte aos SDKs móveis versão 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
-1. A implementação do Analytics para áudio e vídeo exige o SDK da AEP e o uso das extensões do Analytics e do Media Analytics. A partir de 1º de setembro de 2021, você deverá usar os novos SDKs e extensões da AEP.  As extensões do Media Analytics são configuradas usando o Adobe Launch. Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch](https://docs.adobe.com/content/help/pt-BR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html).
+1. A implementação do Analytics para áudio e vídeo exige o SDK da AEP e o uso das extensões do Analytics e do Media Analytics. A partir de 1º de setembro de 2021, você deverá usar os novos SDKs e extensões da AEP.  As extensões do Media Analytics são configuradas usando o Adobe Launch.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch](https://docs.adobe.com/content/help/pt-BR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html).
 
-1. O desenvolvimento de recursos terminou para os SDKs do Media Analytics para iOS e Android. Os novos recursos que foram introduzidos a partir do último trimestre de 2019 são ativados usando as extensões do Media Analytics e a API de coleção da mídia.
+1. O desenvolvimento de recursos terminou para os SDKs do Media Analytics para iOS e Android.  Os novos recursos que foram introduzidos a partir do último trimestre de 2019 são ativados usando as extensões do Media Analytics e a API de coleção da mídia.
 
 1. Os SDKs Roku e Chromecast permanecem disponíveis para clientes do Analytics para áudio e vídeo. Os SDKs Roku e Chromecast continuarão tendo suporte e serão aprimorados como SDKs independentes.  Se você usar o JS SDK para o Media Analytics, poderá continuar usando o SDK independente ou habilitar a extensão do Media Analytics usando o Adobe Launch.
 
@@ -49,12 +49,12 @@ Caso tenha alguma dúvida, entre em contato com o Gerente de sucesso de clientes
 
 1. **Preciso ter o Launch como um sistema de gerenciamento de tags? E se eu não quiser usar o Launch?**
 
-   Para o caso de uso do aplicativo móvel, o Launch não é usado como um sistema de gerenciamento de tags, como é para a Web.  É necessário usar a interface do usuário Iniciar para configurar as extensões do SDK. É semelhante à forma como você usa a interface do usuário do Adobe Mobile Services para configurar o SDK v4 móvel. Para instalação, a vantagem de usar o Launch é que ele fornece instruções personalizadas de instalação com base na extensão escolhida.
+   Para o caso de uso do aplicativo móvel, o Launch não é usado como um sistema de gerenciamento de tags, como é para a Web.  É necessário usar a interface do usuário do Launch para configurar as extensões do SDK. É semelhante à forma como você usa a interface do usuário do Adobe Mobile Services para configurar o SDK v4 móvel. Para instalação, a vantagem de usar o Launch é que ele fornece instruções personalizadas com base na extensão escolhida.
 
 1. **Esse fim do suporte afeta o SDK para tvOS?**
 
-   Sim, para tvOS (versão 10+), a implementação recomendada é a migração para as extensões do Media Analytics.  O suporte ao SDK da AEP e à extensão do Media Analytics está planejado para junho de 2020.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - iOS](https://docs.adobe.com/content/help/pt-BR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
+   Sim, para tvOS (versão 10+), a implementação recomendada é a migração para as extensões do Media Analytics.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
 
 1. **Esse fim do suporte afeta o SDK para FireTV e AndroidTV? &#x200B;**
 
-   Sim, para FireTV e AndroidTV, a implementação recomendada é a migração para as extensões do Media Analytics.  O suporte ao SDK da AEP e à extensão do Media Analytics está planejado para junho de 2020.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - Android](https://docs.adobe.com/content/help/pt-BR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
+   Sim, para FireTV e AndroidTV, a implementação recomendada é a migração para as extensões do Media Analytics.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
