@@ -1,9 +1,9 @@
 ---
 title: Perguntas frequentes sobre o fim do suporte ao SDK do Media Analytics
 description: Este tópico inclui perguntas frequentes sobre o fim do suporte para SDKs do Media Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
@@ -32,7 +32,8 @@ Caso tenha alguma dúvida, entre em contato com o Gerente de sucesso de clientes
 
 1. **O suporte para SDKs Roku e Chromecast será afetado? &#x200B;**
 
-   Não.  Os SDKs Roku e Chromecast continuarão tendo suporte como SDKs independentes por enquanto. &#x200B; &#x200B;
+   Não.  Os SDKs Roku e Chromecast continuarão tendo suporte como SDKs independentes por enquanto.
+
 1. **As implementações do SDK JS do Media Analytics serão afetadas por essa alteração? &#x200B;**
 
    Não.  Os clientes que usam o JS SDK para o Media Analytics podem continuar a usar o SDK ou ativá-lo por meio do Adobe Launch.
@@ -53,8 +54,8 @@ Caso tenha alguma dúvida, entre em contato com o Gerente de sucesso de clientes
 
 1. **Esse fim do suporte afeta o SDK para tvOS?**
 
-   Sim, para tvOS (versão 10+), a implementação recomendada é a migração para as extensões do Media Analytics.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
+   Sim, para tvOS (versão 10+), a implementação recomendada é a migração para as extensões do Media Analytics.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - iOS](https://docs.adobe.com/content/help/pt-BR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
 
 1. **Esse fim do suporte afeta o SDK para FireTV e AndroidTV? &#x200B;**
 
-   Sim, para FireTV e AndroidTV, a implementação recomendada é a migração para as extensões do Media Analytics.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
+   Sim, para FireTV e AndroidTV, a implementação recomendada é a migração para as extensões do Media Analytics.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - Android](https://docs.adobe.com/content/help/pt-BR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
