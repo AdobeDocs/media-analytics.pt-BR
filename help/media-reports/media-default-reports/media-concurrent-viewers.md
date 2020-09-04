@@ -2,8 +2,11 @@
 title: Visualizadores simultâneos de mídia
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 85%
 
 ---
 
@@ -13,8 +16,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 O painel Visualizadores simultâneos de mídia exibe os visualizadores simultâneos durante um dia. Os dados podem ser filtrados por conteúdo, tipo de dispositivo ou país.
 
 >[!TIP]
->
->Nenhum dado será exibido se o intervalo selecionado não for um dia inteiro.
+> 
+> Dica: Este relatório é baseado em sessões de mídia ativas simultâneas.  Para ver visualizadores simultâneos por visitante único, com os recursos adicionais para aplicar um segmento, detalhar e comparar, use a variável [Painel Visualizadores simultâneos de mídia no Analysis Workspace](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -34,6 +38,7 @@ Estes são alguns recursos deste relatório:
 
 Estas são algumas limitações desse relatório:
 
+* Nenhum dado será exibido se o intervalo selecionado não for um dia inteiro.
 * Não é possível exportar os dados, como o ReportBuilder.
 * Não é possível apresentar os dados em um formato de tabela.
 * Não é possível enviar um relatório por e-mail.
