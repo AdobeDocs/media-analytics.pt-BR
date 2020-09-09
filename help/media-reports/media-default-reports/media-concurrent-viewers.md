@@ -3,10 +3,10 @@ title: Visualizadores simultâneos de mídia
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 85%
+source-wordcount: '267'
+ht-degree: 86%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 85%
 O painel Visualizadores simultâneos de mídia exibe os visualizadores simultâneos durante um dia. Os dados podem ser filtrados por conteúdo, tipo de dispositivo ou país.
 
 >[!TIP]
-> 
-> Dica: Este relatório é baseado em sessões de mídia ativas simultâneas.  Para ver visualizadores simultâneos por visitante único, com os recursos adicionais para aplicar um segmento, detalhar e comparar, use a variável [Painel Visualizadores simultâneos de mídia no Analysis Workspace](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+>
+> Este relatório é baseado em sessões de mídia ativas simultâneas.  Para ver visualizadores simultâneos por visitante único, com os recursos adicionais para aplicar um segmento, detalhar e comparar, use a variável [Painel Visualizadores simultâneos de mídia no Analysis Workspace](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
@@ -44,4 +44,3 @@ Estas são algumas limitações desse relatório:
 * Não é possível enviar um relatório por e-mail.
 * Mesmo que não rastreie anúncios, é necessário reativar o rastreamento de mídia e selecionar o módulo Anúncio de mídia.
 * Essa funcionalidade fornecerá dados precisos ao usar uma Biblioteca de heartbeats que tenha recursos de rastreamento de pausa.
-
