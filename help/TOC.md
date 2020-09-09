@@ -5,9 +5,9 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
+source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '818'
 ht-degree: 97%
 
 ---
@@ -213,11 +213,10 @@ ht-degree: 97%
       + [Detalhes da mídia](media-reports/media-default-reports/media-reports-detail.md)
       + [Relatório de Faixa de horário de mídia](media-reports/media-default-reports/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](media-reports/media-default-reports/media-concurrent-viewers.md)
-      + [Obter dados de relatório JSON de visualizadores simultâneos](media-reports/media-default-reports/get-concurrent-json20.md)
    + Painéis do Media Workspace {#media-workspace-panels}
       + [Painel Visualizadores simultâneos de mídia](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Modelos do Workspace de mídia](media-reports/media-workspace-templates.md)
-   + [Obter dados de visualizadores simultâneos por meio da API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
+   + [Obter dados de visualizadores simultâneos por meio da API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Rastrear o conteúdo baixado](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + Rastreamento do estado do player {#player-state-tracking}
