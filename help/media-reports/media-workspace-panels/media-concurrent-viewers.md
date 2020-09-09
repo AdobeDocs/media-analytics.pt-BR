@@ -1,27 +1,27 @@
 ---
 title: Relatórios de visualizadores simultâneos de mídia
-description: Para os clientes do Media Analytics, o painel Visualizadores simultâneos de mídia no Analysis Workspace permite analisar visualizadores simultâneos para entender onde ocorreu o pico de simultaneidade ou onde ocorreram as suspensões.
+description: Para clientes do Media Analytics, o painel Visualizadores simultâneos de mídia no Analysis Workspace permite analisar os visualizadores simultâneos para entender onde ocorreu o pico de simultaneidade ou onde ocorreram as quedas.
 translation-type: tm+mt
 source-git-commit: 687ae6f2037590b58b30ea776635898c93ca144f
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 13%
+ht-degree: 97%
 
 ---
 
 
-# Relatórios de visualizadores simultâneos de mídia{#media-concurrent-viewers}
+# Relatórios de visualizadores simultâneos de mídia {#media-concurrent-viewers}
 
 >[!IMPORTANT]
 >
 >Este recurso está em Teste limitado para clientes do Media Analytics. [Saiba mais...](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html)
 
-A análise de visualizadores simultâneos permite que você entenda onde ocorreu o pico de simultaneidade ou onde as suspensões ocorreram para fornecer insight valioso sobre a qualidade do conteúdo e do envolvimento do visualizador, e para ajudar na solução de problemas ou no planejamento de volume e escala.
+A análise de visualizadores simultâneos permite compreender onde ocorreu o pico de simultaneidade ou onde ocorreram quedas, para fornecer informações valiosas sobre a qualidade do conteúdo e engajamento do visualizador e para ajudar na solução de problemas ou no planejamento de volume e escala.
 
 ## Painel Visualizadores simultâneos de mídia no Analysis Workspace
 
-No Analysis Workspace, Visualizadores simultâneos é o número de visitantes únicos que visualizam seus fluxos de mídia em um ponto específico do tempo, independentemente do número de sessões. O painel Visualizadores simultâneos de mídia está disponível para visualizar visualizadores simultâneos, analisar e comparar. [Saiba mais...](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+No Analysis Workspace, Visualizadores simultâneos é o número de visitantes únicos que visualizam seus fluxos de mídia em um ponto específico do tempo, independentemente do número de sessões. O painel Visualizadores simultâneos de mídia está disponível para ver visualizadores simultâneos, analisar e comparar. [Saiba mais...](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
-## Obter visualizadores simultâneos por meio da API de Relatórios do Analytics
+## Obter visualizadores simultâneos por meio da API de relatórios do Analytics
 
-Você também pode obter dados do visualizador simultâneo de até 1 mês por vez em granularidade de nível minuto usando a API de Relatórios do Analytics 2.0. A API do relatórios usa a mesma definição de visualizadores simultâneos que o Analysis Workspace.  Para obter mais informações, consulte [_*APIs do Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+Você também pode obter dados do visualizador simultâneo por até um mês por vez com granularidade de nível de minuto usando a API de relatórios 2.0 do Analytics. A API de relatórios usa a mesma definição de visualizadores simultâneos que o Analysis Workspace.  Para obter mais informações, consulte [_*APIs do Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
