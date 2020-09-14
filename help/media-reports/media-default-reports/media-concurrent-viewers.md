@@ -2,11 +2,11 @@
 title: Visualizadores simultâneos de mídia
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ O painel Visualizadores simultâneos de mídia exibe os visualizadores simultân
 
 >[!TIP]
 >
-> Este relatório é baseado em sessões de mídia ativas simultâneas.  Para ver visualizadores simultâneos por visitante único, com os recursos adicionais para aplicar um segmento, detalhar e comparar, use a variável [Painel Visualizadores simultâneos de mídia no Analysis Workspace](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+> Este relatório se baseia em sessões de mídia ativas simultâneas.  Para ver visualizadores simultâneos por visitante único, com os recursos adicionais para aplicar um segmento, detalhar e comparar, use o [Painel Visualizadores simultâneos de mídia no Analysis Workspace](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
