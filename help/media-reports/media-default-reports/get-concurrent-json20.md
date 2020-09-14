@@ -6,27 +6,27 @@ translation-type: tm+mt
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 32%
+ht-degree: 89%
 
 ---
 
 
 # Obter dados do relatório JSON dos visualizadores simultâneos com as APIs do Analytics 2.0{#get-concurrent-viewers-json-report-data}
 
-Você pode obter dados de relatório de visualizadores simultâneos usando a variável [_*APIs do Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+Você pode obter dados de relatório de visualizadores simultâneos usando as [_*APIs do Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filtre os dados usando qualquer segmento criado na interface do usuário. Para filtrar por uma ID de conteúdo específica, crie um novo segmento.
 1. Defina `elements` -> `id` no corpo da solicitação para `metrics/concurrent_viewers_visitors`.
 1. Solicite uma quantidade suficiente de dados.
 
    * O intervalo de dados especificado no relatório reúne todos os dados do visualizador simultâneo _no momento em que a sessão de vídeo terminar._
-Você deve contabilizar as sessões que start em um dia e terminarão depois da meia-noite, que é o dia seguinte.
+Você deve considerar as sessões que iniciam um dia e terminam após a meia-noite, ou seja, no dia seguinte.
 
-   * Solicite mais um dia de dados para o período desejado em sua solicitação, mas na análise _*use apenas os dados pretendidos.*_
+   * Solicite mais um dia de dados para o período desejado em sua solicitação, mas na análise _*use apenas os dados planejados.*_
 
-Uma carga de solicitação de amostra para um dia de dados seria semelhante à amostra a seguir. A solicitação é feita por 2 dias consecutivos, mas no relatórios você só usa o primeiro dia.
+Uma carga de solicitação de amostra para um dia de dados seria semelhante à amostra a seguir. A solicitação é feita por 2 dias consecutivos, mas no relatório você só usa o primeiro dia.
 
-## Solicitação de exemplo
+## Exemplo de solicitação
 
 ```json
 {
@@ -55,7 +55,7 @@ Uma carga de solicitação de amostra para um dia de dados seria semelhante à a
 }
 ```
 
-## Resposta de exemplo
+## Exemplo de resposta
 
 ```JSON
 {
