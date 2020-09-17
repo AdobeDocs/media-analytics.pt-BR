@@ -1,17 +1,17 @@
 ---
-title: Obter dados do relatório JSON dos visualizadores simultâneos com as APIs do Analytics 2.0
+title: Obter dados de relatório JSON de visualizadores simultâneos com APIs do Analytics 2.0
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Obter dados do relatório JSON dos visualizadores simultâneos com as APIs do Analytics 2.0{#get-concurrent-viewers-json-report-data}
+# Obter dados de relatório JSON de visualizadores simultâneos com APIs do Analytics 2.0 {#get-concurrent-viewers-json-report-data}
 
 Você pode obter dados de relatório de visualizadores simultâneos usando as [_*APIs do Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
