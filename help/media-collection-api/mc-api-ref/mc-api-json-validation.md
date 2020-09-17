@@ -2,11 +2,11 @@
 title: Esquemas de validação JSON
 description: null
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72fd9b359d778c912ae6439aa0438ed467ebeef1
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '55'
+ht-degree: 100%
 
 ---
 
