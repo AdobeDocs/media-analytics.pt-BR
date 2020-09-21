@@ -1,20 +1,16 @@
 ---
 title: Relatórios de visualizadores simultâneos de mídia
 description: Para clientes do Media Analytics, o painel Visualizadores simultâneos de mídia no Analysis Workspace permite analisar os visualizadores simultâneos para entender onde ocorreu o pico de simultaneidade ou onde ocorreram as quedas.
-translation-type: ht
-source-git-commit: ee925e7bf2d32431679dd1b82e46c7c124256d13
-workflow-type: ht
-source-wordcount: '224'
+translation-type: tm+mt
+source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+workflow-type: tm+mt
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
 
 
 # Relatórios de visualizadores simultâneos de mídia {#media-concurrent-viewers}
-
->[!IMPORTANT]
->
->Este recurso está em Teste limitado para clientes do Media Analytics. [Saiba mais...](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html)
 
 A análise de visualizadores simultâneos permite compreender onde ocorreu o pico de simultaneidade ou onde ocorreram quedas, para fornecer informações valiosas sobre a qualidade do conteúdo e engajamento do visualizador e para ajudar na solução de problemas ou no planejamento de volume e escala.
 
