@@ -3,9 +3,9 @@ title: Parâmetros de áudio e vídeo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: abb2cd2d056ffbefa72126061b11286cc10ec1ca
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
 workflow-type: tm+mt
-source-wordcount: '6237'
+source-wordcount: '6234'
 ht-degree: 99%
 
 ---
@@ -47,7 +47,7 @@ Descrição dos dados da tabela:
 >Não altere os nomes de classificação de nenhuma variável listada abaixo descrita em Relatório/Variável reservada como &quot;classificação&quot;.\
 >As classificações de mídia são definidas quando um conjunto de relatórios é ativado para rastreamento de mídia. Periodicamente, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reativar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são ativadas verificando os nomes das variáveis. Se algum deles estiver faltando, a Adobe os adicionará novamente.
 
-## Dados principais de áudio e vídeo {#core-audio-and-video-data}
+## Dados de mídia de fluxo contínuo Core {#core-audio-and-video-data}
 
 ### Tipo de transmissão {#stream-type}
 
@@ -187,7 +187,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **Chave de SDK:**<br/> Definida automaticamente </li> <li> **Chave da API:**<br/> N/D </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Fechamento de mídia </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Exemplo de valor:**<br/> &quot;js-2.0.1.88-c8c0b1&quot; </li> <li> **Descrição:**<br/> A versão do SDK do Media usada para a sessão de rastreamento. <br/><br/>Os clientes terão que criar suas próprias regras de processamento para que o valor esteja disponível para os relatórios.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats:**<br/> (s:sp:hb_version) </li> </ul> | <ul> <li> **Disponível:**<br/> Usar regra de processamento personalizada </li> <li> **Variável reservada:**<br/> N/D </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.vhlVersion) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> </ul> |
 
-## Metadados padrão de áudio e vídeo {#standard-audio-and-video-metadata}
+## Metadados de mídia de fluxo contínuo padrão {#standard-audio-and-video-metadata}
 
 ### Programa
 
@@ -321,7 +321,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **Chave de SDK:**<br/> </li> <li> **Chave da API:**<br/> media.publisher </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Início de mídia, Fechamento de mídia </li> <li> **Versão mín. Versão do SDK:** 1.5.7 <br/>Disponível em [Visão geral do Media Collection](/help/media-collection-api/mc-api-overview.md) ou [Baixar SDKs - Versões 2.2.](/help/sdk-implement/download-sdks.md)  </li> <li> **Exemplo de valor:**<br/> &quot;Random Bauhaus&quot; </li> <li> **Descrição:**<br/> Nome do publicador do conteúdo de áudio.  <br/> **Data de lançamento: 13/09/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **Disponível:**<br/> Sim </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do relatório:**<br/> </li> <li> **Dados de contexto:**<br/> (a.media.publisher) </li> <li> **Feed de dados:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.publisher) </li> </ul> |
 
-## Métricas de áudio e vídeo {#audio-and-video-metrics}
+## Métricas de mídia de fluxo {#audio-and-video-metrics}
 
 ### Inícios da mídia
 
