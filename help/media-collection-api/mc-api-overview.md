@@ -3,8 +3,11 @@ seo-title: Visão geral
 title: Visão geral
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 92%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 A API Media Collection é a alternativa RESTful da Adobe para o SDK do Media no lado do cliente. Com a API Media Collection, o reprodutor pode rastrear eventos de áudio e vídeo usando chamadas RESTful HTTP.
 
-A API Media Collection é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK do Media também são relevantes para a API Media Collection. Por exemplo, ambas as soluções usam os mesmos [Parâmetros de áudio e vídeo](/help/metrics-and-metadata/audio-video-parameters.md), e os dados coletados de rastreamento de áudio e vídeo levam aos mesmos [Relatórios e análises.](/help/media-reports/media-reports-enable.md)
+A API Media Collection é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK do Media também são relevantes para a API Media Collection. Por exemplo, ambas as soluções usam a mesma [Parâmetros de mídia de fluxo contínuo](/help/metrics-and-metadata/audio-video-parameters.md)e os dados de rastreamento de Mídia de vapor coletados levam ao mesmo [Relatórios e Análise.](/help/media-reports/media-reports-enable.md)
 
 ## Fluxos de dados de rastreamento de mídia {#media-tracking-data-flows}
 
@@ -31,7 +34,7 @@ Os dados de rastreamento capturados com a API Media Collection são enviados e p
 
 ### Chamadas à APIs {#mc-api-calls}
 
-* **`sessions`-** Estabelece uma sessão com o servidor e retorna uma ID de sessão que será usada nas chamadas de`events`subsequentes. Seu aplicativo realiza essa chamada uma vez no início de uma sessão de rastreamento.
+* **`sessions`-** Estabelece uma sessão com o servidor e retorna uma ID de sessão que será usada nas chamadas de `events` subsequentes. Seu aplicativo realiza essa chamada uma vez no início de uma sessão de rastreamento.
 
    ```
    {uri}/api/v1/sessions
