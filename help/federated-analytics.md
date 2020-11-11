@@ -3,7 +3,7 @@ title: Federated Analytics
 description: O serviço Federated Analytics fornece um sistema para compartilhar dados da Adobe Analytics para Streaming Media entre dois parceiros.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 92%
@@ -33,18 +33,18 @@ Por meio das regras e lógicas que regem o Federated Analytics, os dados são fa
 * **Remetente:** cliente gerando dados de análise de áudio e vídeo em players próprios
 * **Destinatário:** cliente recebendo dados de análise de áudio e vídeo do remetente
 
-## Requisitos {#requirements}
+## Requisitos  {#requirements}
 
 * **Contrato de transmissão de mídia:** O receptor e o remetente devem ter contratado o Adobe Analytics para fluxos de mídia antes de obter acesso aos dados de áudio e vídeo no Adobe Analytics. Entre em contato com a equipe de conta para obter mais detalhes.
 * **Adendo federado:** cada Remetente e Destinatário deve ter um adendo assinado em vigor com a Adobe para enviar ou receber dados. É necessário um adendo por cliente, e não um adendo por parceria. Entre em contato com a equipe de conta para obter mais detalhes.
 
-* **Implementação do Media Analytics:** o remetente deve ter o Media Analytics implementado em todos os players que farão parte do conjunto de dados federado. Somente os dados do Media Analytics estão disponíveis para federação. Consulte a documentação: [Medição de mídia streaming no Adobe Analytics](/help/media-overview.md)
+* **Implementação do Media Analytics:** o remetente deve ter o Media Analytics implementado em todos os players que farão parte do conjunto de dados federado. Somente os dados do Media Analytics estão disponíveis para federação. Consulte a documentação: [Medir Mídia de Transmissão em Fluxo no Adobe Analytics](/help/media-overview.md)
 
 * **Contrato de consultoria da Adobe:** para a configuração inicial de regras federadas entre o destinatário e o remetente, é valioso trabalhar com os serviços de consultoria para analisar os dados e criar o contrato de compartilhamento de dados.
 
 ## Baixe o Formulário do Federated Analytics
 
-Para participar do Federated Analytics, baixe e conclua o [Acordo de regras de federação](federated-analytics-form.pdf) formulário.
+Para participar do Federated Analytics, baixe e preencha o formulário [Contrato de regras de federação](federated-analytics-form.pdf).
 
 
 ## Processo {#process}
