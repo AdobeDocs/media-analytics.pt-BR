@@ -1,9 +1,9 @@
 ---
-title: Medição de mídia streaming no Adobe Analytics
+title: Avaliação da transmissão de mídia no Adobe Analytics
 description: O Adobe Analytics for Media (também conhecido como Media Analytics) fornece aos clientes medições de mídia robustas para conteúdo, áudio e anúncios.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 85%
@@ -11,7 +11,7 @@ ht-degree: 85%
 ---
 
 
-# Medição de mídia streaming no Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Medir mídia de transmissão no Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
@@ -47,7 +47,7 @@ O uso do Adobe Analytics Heartbeats para Streaming Media oferece os seguintes be
 | Preços | Rastreamento transparente por fluxo de mídia (único) |
 | Implementação e suporte | Configuração simplificada com atualizações e melhorias contínuas<br>Com um processo de implementação simplificado, você pode mapear variáveis rapidamente por meio da API do player e validar implementações usando a ferramenta de depuração da Adobe para garantir que todas as variáveis necessárias sejam rastreadas com precisão. |
 | Compartilhamento de parceiros | Federated Analytics e Métricas certificadas<br>Com dados compartilhados por meio do Federated Analytics, você pode capitalizar nossos recursos de compartilhamento de mídia, o primeiro do setor, para avaliar dados de forma holística em todos os seus parceiros de distribuição de mídia, operadores, programadores e distribuidores. |
-| Rastreamento avançado | Rastreamento de conteúdo baixado, rastreamento de recuperação de erros e visualizadores simultâneos<br>Você pode rastrear o conteúdo de mídia de streaming baixado e reproduzido em um dispositivo, independentemente de sua conectividade. |
+| Rastreamento avançado | O rastreamento de conteúdo baixado, o rastreamento de recuperação de erros e os visualizadores simultâneos<br>Você pode rastrear o conteúdo de mídia de streaming baixado e reproduzido em um dispositivo, independentemente de sua conectividade. |
 
 
 
