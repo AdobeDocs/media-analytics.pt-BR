@@ -2,9 +2,9 @@
 title: Relatórios de visualizadores simultâneos de mídia
 description: Para clientes do Media Analytics, o painel Visualizadores simultâneos de mídia no Analysis Workspace permite analisar os visualizadores simultâneos para entender onde ocorreu o pico de simultaneidade ou onde ocorreram as quedas.
 translation-type: tm+mt
-source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+source-git-commit: 2eb5318267546408f2aab5da074dd7f30c4fbb1d
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '193'
 ht-degree: 100%
 
 ---
@@ -20,4 +20,4 @@ No Analysis Workspace, Visualizadores simultâneos é o número de visitantes ú
 
 ## Obter visualizadores simultâneos por meio da API de relatórios do Analytics
 
-Você também pode obter dados do visualizador simultâneo por até um mês por vez com granularidade de nível de minuto usando a API de relatórios 2.0 do Analytics. A API de relatórios usa a mesma definição de visualizadores simultâneos que o Analysis Workspace.  Para obter mais informações, consulte [_*Obter dados de relatório JSON de visualizadores simultâneos com APIs do Analytics 2.0*_](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html).
+Você também pode obter dados do visualizador simultâneo por até um mês por vez com granularidade de nível de minuto usando a API de relatórios 2.0 do Analytics. A API de relatórios usa a mesma definição de visualizadores simultâneos que o Analysis Workspace.  Para obter mais informações, consulte [_*Obter dados de relatório JSON de visualizadores simultâneos com APIs do Analytics 2.0*_](/help/media-reports/media-default-reports/get-concurrent-json20.md).
