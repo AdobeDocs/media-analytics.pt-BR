@@ -2,10 +2,10 @@
 title: Dispositivos e plataformas compatíveis
 description: A Adobe Analytics for Streaming Media garante que cada fluxo de mídia seja coletado e relatado em todos os dispositivos.
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '337'
+ht-degree: 89%
 
 ---
 
@@ -28,19 +28,19 @@ Para dispositivos ou plataformas que não têm suporte para SDK no momento ou em
 
 A tabela abaixo lista os dispositivos e as plataformas compatíveis no momento. Para baixar a versão mais recente do SDK, consulte [Baixar SDKs](https://docs.adobe.com/content/help/pt-BR/media-analytics/using/sdk-implement/download-sdks.html). Se um dispositivo não estiver listado, entre em contato com o Atendimento ao cliente ou com o consultor de soluções para saber o status desse dispositivo.
 
-| Plataformas e dispositivos de transmissão |  | Extensão do Media Launch c/ AEP SDK | SDK do Media | API da coleção de mídia |
+| Plataformas e dispositivos de transmissão |  | Extensão de inicialização de mídia com AEP Mobile SDK | SDK do Media | API da coleção de mídia |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Web móvel |  |  |  |  |
 |  | Navegadores JavaScript | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 | Aplicativo móvel |  |  |  |  |
 |  | Dispositivos iOS | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Dispositivos Android | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Dispositivos Android | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Dispositivos Windows |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
 |  | Apple TV  (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript) | ![](/help/assets/icon-blue-check.png)<br>(nativo) |
-|  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | Consoles de jogos (ex: Xbox ONE, PS3/PS4 Sony) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Conversores (ex: xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
