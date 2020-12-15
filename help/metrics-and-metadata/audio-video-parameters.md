@@ -3,9 +3,9 @@ title: Parâmetros de áudio e vídeo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: c4d48d2ba1bec8afc7cfd8d625c6b654056e5489
 workflow-type: tm+mt
-source-wordcount: '6234'
+source-wordcount: '6235'
 ht-degree: 99%
 
 ---
@@ -53,7 +53,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **Chave de API:**<br/> media.streamType </li> <li> **Obrigatório:**<br/> Sim </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Início de mídia, Fechamento de mídia </li> <li> **Versão mín. Versão do SDK:** 2.2<br/><br/>Disponível em [Visão geral da API Media Collection](/help/media-collection-api/mc-api-overview.md) ou [Baixar SDKs - Versões 2.2.](/help/sdk-implement/download-sdks.md)  </li>  <li> **Exemplo de valor:**<br/> &quot;vídeo&quot; </li> <li> **Descrição:**<br/> Identifica o tipo de fluxo. Os valores válidos são “audio”, “video” e “all”.  <br/><br/>[Segmentos de relatório](/help/metrics-and-metadata/segments.md): <br/><br/>Tipo de fluxo de mídia: Todos - <br/>Segmentar todos os dados de fluxo de mídia; Regra: O conteúdo (ID) existe <br/><br/>Tipo de fluxo de mídia: Áudio - <br/>Segmentar todos os dados de fluxo de áudio; Regra: Conteúdo (ID) existe E Tipo de fluxo de mídia = áudio <br/><br/>Tipo de fluxo de mídia: &quot;Vídeo&quot; - <br/>Segmentar todos os dados de fluxo de vídeo; Regra: Conteúdo (ID) existe E Tipo de fluxo de mídia != audio <br/><br/> **Data de lançamento: 13/09/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.streamType) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.streamType) </li> </ul> | <ul> <li> **Disponível:**<br/> Sim </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> On VISIT </li> <li> **Nome do relatório:**<br/> Content </li> <li> **Dados de contexto:**<br/> (a.media.streamType) </li> <li> **Feed de dados:**<br/> videostreamtype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.streamType) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **Chave de API:**<br/> media.streamType </li> <li> **Obrigatório:**<br/> Sim </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Início de mídia, Fechamento de mídia </li> <li> **Versão mín. Versão do SDK:** 2.2<br/><br/>Disponível em [Visão geral da API Media Collection](/help/media-collection-api/mc-api-overview.md) ou [Baixar SDKs - Versões 2.2.](/help/sdk-implement/download-sdks.md)  </li>  <li> **Exemplo de valor:**<br/> &quot;vídeo&quot; </li> <li> **Descrição:**<br/> Identifica o tipo de fluxo. Os valores válidos são “audio”, “video” e “all”.  <br/><br/>[Segmentos de relatório](/help/metrics-and-metadata/segments.md): <br/><br/>Tipo de fluxo de mídia: Todos - <br/>Segmentar todos os dados de fluxo de mídia; Regra: O conteúdo (ID) existe <br/><br/>Tipo de fluxo de mídia: Áudio - <br/>Segmentar todos os dados de fluxo de áudio; Regra: Conteúdo (ID) existe E Tipo de fluxo de mídia = áudio <br/><br/>Tipo de fluxo de mídia: &quot;Vídeo&quot; - <br/>Segmentar todos os dados de fluxo de vídeo; Regra: Conteúdo (ID) existe E Tipo de fluxo de mídia != audio <br/><br/> **Data de lançamento: 13/09/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.streamType) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.streamType) </li> </ul> | <ul> <li> **Disponível:**<br/> Sim </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do Relatório:Tipo**<br/> de Fluxo </li> <li> **Dados de contexto:**<br/> (a.media.streamType) </li> <li> **Feed de dados:**<br/> videostreamtype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.streamType) </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
