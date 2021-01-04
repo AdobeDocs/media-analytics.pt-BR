@@ -3,9 +3,9 @@ title: Parâmetros de anúncio
 description: null
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: f59738f48eeb80d3aaead1757abd2ba3785c40da
+source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1855'
 ht-degree: 100%
 
 ---
@@ -148,7 +148,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/> SITE_ID </li> <li> **Chave da API:**<br/> media.ad.siteId </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/> A ID do site do anúncio.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>site) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do relatório:**<br/> Personalizado* </li> <li> **Dados de contexto:**<br/> (a.media.ad.<br/>local) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> * Usar regra de processamento personalizada |
+| <ul> <li> **Chave de SDK:**<br/> SITE_ID </li> <li> **Chave da API:**<br/> media.ad.siteId </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/> A ID do site do anúncio.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>site) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.ad.<br/>local) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> |
 
 
 
@@ -156,7 +156,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/> CREATIVE_URL </li> <li> **Chave da API:**<br/> media.ad.creativeURL </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/> URL da campanha criativa.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do relatório:**<br/> Personalizado* </li> <li> **Dados de contexto:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> * Usar regra de processamento personalizada |
+| <ul> <li> **Chave de SDK:**<br/> CREATIVE_URL </li> <li> **Chave da API:**<br/> media.ad.creativeURL </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/> URL da campanha criativa.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
 
 
 
@@ -164,7 +164,7 @@ Descrição dos dados da tabela:
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/> PLACEMENT_ID </li> <li> **Chave da API:**<br/> media.ad.placementId </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/> A ID de posicionamento do anúncio.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>placement) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do relatório:**<br/> Personalizado* </li> <li> **Dados de contexto:**<br/> (a.media.ad.<br/>colocação) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.placement) </li> </ul>* Usar regra de processamento personalizada |
+| <ul> <li> **Chave de SDK:**<br/> PLACEMENT_ID </li> <li> **Chave da API:**<br/> media.ad.placementId </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Ad Start, Ad Close </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/> A ID de posicionamento do anúncio.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>placement) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Disponível:**<br/> <i>Usar regra de processamento personalizada </i> </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.ad.<br/>colocação) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.placement) </li> </ul> |
 
 
 
