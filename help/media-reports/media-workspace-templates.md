@@ -2,18 +2,18 @@
 title: Modelos do Workspace de mídia
 description: null
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Modelos do Workspace de mídia {#media-workspace-templates}
 
-O Workspace do Adobe Analytics oferece a capacidade de configurar rapidamente os painéis para analisar seus dados de rastreamento. Ao criar um novo projeto, ou ao entrar no Workspace para gerenciar um projeto existente, você pode escolher entre modelos padrão que abrangem cenários comuns de rastreamento geral, como Aquisição, consumo de mídia de transmissão e muito mais. Você também pode criar, modificar e salvar seus próprios modelos personalizados.
+O Workspace do Adobe Analytics oferece a capacidade de configurar rapidamente os painéis para analisar seus dados de rastreamento. Ao criar um novo projeto ou acessar o Workspace para gerenciar um projeto existente, é possível escolher entre modelos padrão que abrangem cenários comuns de rastreamento geral, como atração, consumo de mídia de streaming e muito mais. Você também pode criar, modificar e salvar seus próprios modelos personalizados.
 
 Você trabalha com modelos na guia Workspace no Adobe Analytics ao criar ou gerenciar um projeto. Ao entrar pela primeira vez no Workspace, você verá as opções de criação de um novo projeto ou de abertura de um projeto existente:
 
