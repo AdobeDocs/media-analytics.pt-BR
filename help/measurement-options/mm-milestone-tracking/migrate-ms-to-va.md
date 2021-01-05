@@ -2,9 +2,9 @@
 title: Migração do Marco para o Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 | Tipo de conteúdo | Expiração da eVar <br> padrão: Visualização de página | Tipo de conteúdo |
 | Tempo gasto no conteúdo | Tipo de evento:<br> Contador | Tempo gasto no conteúdo |
 | Inicialização de vídeo | Tipo de evento:<br> Contador | Inicialização de vídeo |
-| Término de vídeo | Tipo de evento :<br> Contador | Conteúdo concluído |
+| Término de vídeo | Tipo de evento:<br> Contador | Conteúdo concluído |
 
 
 ### Variáveis do módulo de mídia
@@ -43,7 +43,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Variáveis opcionais
 
-| Marco | Sintaxe do Milestone | Análise de mídia | Sintaxe do Media Analytics |
+| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/D | Não fornecemos mais mapeamentos pré-criados de player. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/D | Não fornecemos mais mapeamentos pré-criados de player. |
@@ -58,7 +58,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Variáveis de rastreamento de anúncios
 
-| Marco | Sintaxe do Milestone | Análise de mídia | Sintaxe do Media Analytics |
+| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/D | O Media Analytics está definido para 10 segundos para conteúdo e 1 segundo para anúncios. Nenhuma outra opção está disponível. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/D | Os marcadores de progresso não são fornecidos por padrão para anúncios. Use as métricas calculadas para criar marcadores de progresso de anúncios. |
@@ -68,7 +68,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Métodos do módulo de mídia
 
-| Marco | Sintaxe do Milestone | Análise de mídia | Sintaxe do Media Analytics |
+| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`: (obrigatório) o nome do vídeo conforme você quer que ele seja exibido nos relatórios de vídeo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -76,11 +76,11 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 | mediaPlayerName | `mediaPlayerName`: (obrigatório) o nome do reprodutor de mídia utilizado para exibir o vídeo, conforme você quer que ele seja exibido nos relatórios de vídeo. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
 | name | `name`: (obrigatório) o nome ou a ID do anúncio. | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| comprimento | `length`: (obrigatório) a duração do anúncio. | comprimento | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| length | `length`: (obrigatório) a duração do anúncio. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName`: (obrigatório) o nome do reprodutor de mídia utilizado para exibir o anúncio. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | parentName | `parentName`: O nome ou a ID do conteúdo principal no qual o anúncio está incorporado. | N/D | Herdado automaticamente. |
 | parentPod | `parentPod`: A posição, no conteúdo principal, da reprodução do anúncio. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition | `parentPodPosition`: A posição, no pod, da reprodução do anúncio. | posição | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| parentPodPosition | `parentPodPosition`: A posição, no pod, da reprodução do anúncio. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | CPM | `CPM`: O CPM ou o CPM criptografado (com prefixo &quot;~&quot;) que se aplica a essa reprodução. | N/D | Por padrão, não disponível no Media Analytics. |
 | Media.click | `s.Media.click(name, offset)` | N/D | Usar uma chamada de análise de link personalizado para rastrear os cliques. |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
