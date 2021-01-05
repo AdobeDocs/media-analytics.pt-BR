@@ -9,16 +9,16 @@ translation-type: tm+mt
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 
 # Adobe Analytics para mídia de streaming {#using}
 
-+ [Avaliação da transmissão de mídia no Adobe Analytics](media-overview.md)
++ [Medição de streaming de mídia no Adobe Analytics](media-overview.md)
 + [Dispositivos e plataformas compatíveis](measurement-options/supported-devices.md)
-+ Introdução ao Streaming Media Analytics {#intro-to-ava}
++ Introdução ao streaming de mídia do Analytics {#intro-to-ava}
    + [Pré-requisitos](intro-to-ava/prereqs.md)
    + Caminhos de implementação {#implementation-paths}
       + [Visão geral](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 94%
          + [Configurar o JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Configurar Chromecast ](sdk-implement/setup/set-up-chromecast.md)
       + [Configurar Roku ](sdk-implement/setup/set-up-roku.md)
-   + Rastrear a reprodução de mídia de transmissão {#track-av-playback}
+   + Rastrear a reprodução do streaming de mídia {#track-av-playback}
       + [Visão geral](sdk-implement/track-av-playback/track-core-overview.md)
-      + Rastreamento da reprodução de mídia de streaming principal {#track-core}
+      + Rastrear a reprodução de streaming de mídia principal {#track-core}
          + [Rastreamento da reprodução principal no Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Rastreamento da reprodução principal no iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Rastreamento da reprodução principal no JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 94%
    + [Guia](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Atribuição de fluxo de mídia](media-analytics-cookbook/media-dimensions.md)
 + Métricas e metadados {#metrics-and-metadata}
-   + [Parâmetros de mídia de fluxo](metrics-and-metadata/audio-video-parameters.md)
+   + [Parâmetros de streaming de mídia](metrics-and-metadata/audio-video-parameters.md)
    + [Parâmetros de anúncio](metrics-and-metadata/ad-parameters.md)
    + [Parâmetros de capítulo](metrics-and-metadata/chapter-parameters.md)
    + [Parâmetros de estado do player](metrics-and-metadata/player-state-parameters.md)
@@ -212,7 +212,7 @@ ht-degree: 94%
       + [Visão geral dos relatórios padrão](media-reports/media-default-reports/default-reports-overview.md)
       + [Visão geral da mídia](media-reports/media-default-reports/media-reports-overview.md)
       + [Detalhes da mídia](media-reports/media-default-reports/media-reports-detail.md)
-      + [Relatório de Faixa de horário de mídia](media-reports/media-default-reports/media-reports-daypart.md)
+      + [Relatório de faixa de horário de mídia](media-reports/media-default-reports/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Painéis do Media Workspace {#media-workspace-panels}
       + [Painel de visualizadores simultâneos de mídia](media-reports/media-workspace-panels/media-concurrent-viewers.md)
