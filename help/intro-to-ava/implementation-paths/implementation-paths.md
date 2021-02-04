@@ -1,19 +1,18 @@
 ---
-title: Caminhos de implementação
-description: null
-uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+title: Quais caminhos de implementação de mídia de transmissão estão disponíveis?
+description: Saiba mais sobre os caminhos de implementação de Adobe Streaming Media, incluindo o Adobe Launch.
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 87%
 
 ---
 
 
 # Caminhos de implementação {#implementation-paths}
 
-Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de vendas, pois o Media Analytics tem uma SKU exclusiva e seus preços variam de acordo com o modelo, com base em chamadas de servidor e fluxos de vídeo.
+Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de venda, já que o Streaming Media Analytics tem um SKU exclusivo e muda de um modelo de preços com base em chamadas de servidor para um modelo com base em streams de vídeo.
 
 * **Adobe Launch com a extensão do Adobe Media Analytics**
 
@@ -44,6 +43,7 @@ Para cada caminho de implementação, os clientes precisam entrar em contato com
    * Suporte para medir quebras de anúncios com (ou sem) inserção dinâmica de anúncios.
    * O modelo de inserção contínua de anúncios do TVSDK permite análises que avaliam diretamente a reprodução do anúncio, o que aumenta a precisão.
    * Conjunto robusto de eventos e metadados para garantir a precisão em problemas de buffering de QoS ou interrupções de conectividade móvel e interações do usuário final, como busca, pausa e background em dispositivos móveis.
+
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
