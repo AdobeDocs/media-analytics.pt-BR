@@ -3,9 +3,9 @@ title: Parâmetros de áudio e vídeo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
 workflow-type: tm+mt
-source-wordcount: '6245'
+source-wordcount: '6243'
 ht-degree: 98%
 
 ---
@@ -199,7 +199,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/> STREAM_FORMAT </li> <li> **Chave da API:**<br/> N/D </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Início de mídia, Fechamento de mídia </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Exemplo de valor:**<br/> &quot;Live&quot; </li> <li> **Descrição:**<br/> Formato do fluxo (Live, VOD, Linear).  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.format) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **Disponível:**<br/> Usar regra de processamento personalizada </li> <li> **Variável reservada:**<br/> N/D </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.format) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.format) </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/> STREAM_FORMAT </li> <li> **Chave da API:**<br/> media.streamFormat </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Início de mídia, Fechamento de mídia </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Valor de amostra:**<br/> &quot;HD&quot; </li> <li> **Descrição:**<br/> Formato do fluxo (HD, SD)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.format) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **Disponível:**<br/> Usar regra de processamento personalizada </li> <li> **Variável reservada:**<br/> N/D </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.format) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.format) </li> </ul> |
 
 ### Temporada
 
