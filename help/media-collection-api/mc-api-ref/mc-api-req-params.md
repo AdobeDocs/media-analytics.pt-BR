@@ -2,8 +2,11 @@
 title: Parâmetros da solicitação
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 99%
 
 ---
 
@@ -45,6 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | Chave da solicitação  | Obrigatório | Definir em... |  Descrição  |
 | --- | :---: | :---: | --- |
+| `media.streamFormat` | N | `sessionStart` | Formato de fluxo, por exemplo, &quot;HD&quot; |
 | `media.show` | N | `sessionStart` | O nome do programa ou da série |
 | `media.season` | N | `sessionStart` | O número da temporada do programa ou da série |
 | `media.episode` | N | `sessionStart` | O número do episódio |
@@ -123,17 +127,17 @@ Passe a ID de usuário da Experience Cloud (também conhecida como `MID` ou `MCI
 
 ### appInstallationId
 
-* **Se você&#x200B;*não*passar um`appInstallationId`valor -** O back-end do MA não gerará mais um MCID, mas dependerá do Adobe Analytics para fazer isso. A recomendação da Adobe é enviar um MCID, se disponível, ou um `appInstallationId` (juntamente com o `marketingCloudOrgId` ainda obrigatório), para que a API da coleção de mídia gere o MCID e o envie em todas as chamadas.
+* **Se você *não* passar um `appInstallationId` valor -** O back-end do MA não gerará mais um MCID, mas dependerá do Adobe Analytics para fazer isso. A recomendação da Adobe é enviar um MCID, se disponível, ou um `appInstallationId` (juntamente com o `marketingCloudOrgId` ainda obrigatório), para que a API da coleção de mídia gere o MCID e o envie em todas as chamadas.
 
-* **Se você&#x200B;*passar*o`appInstallationId`valor -** O MCID *pode ser* gerado pelo back-end do MA, se você passar valores para os parâmetros `appInstallationId` e o `marketingCloudOrgId` (obrigatório). Se você passar `appInstallationId`, deverá manter o seu valor no lado do cliente. Ele deve ser exclusivo para o aplicativo em um dispositivo e ser mantido enquanto o aplicativo não for reinstalado.
+* **Se você *passar* o `appInstallationId` valor -** O MCID *pode ser* gerado pelo back-end do MA, se você passar valores para os parâmetros `appInstallationId` e o `marketingCloudOrgId` (obrigatório). Se você passar `appInstallationId`, deverá manter o seu valor no lado do cliente. Ele deve ser exclusivo para o aplicativo em um dispositivo e ser mantido enquanto o aplicativo não for reinstalado.
 
 >[!NOTE]
 >
 >O `appInstallationId` identifica exclusivamente o aplicativo *e o dispositivo*. Ele precisa ser exclusivo para cada aplicativo em cada dispositivo, ou seja, dois usuários usando a mesma versão do mesmo aplicativo em diferentes dispositivos devem enviar um `appInstallationId` diferente (exclusivo), separadamente.
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
-\<ul id="ul_iwc_fqt_pbb"\> 
- \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+\<ul id="ul_iwc_fqt_pbb"\>
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
 </ul> -->
 
 ### visitor.marketingCloudOrgId
@@ -152,7 +156,7 @@ Além de ser necessário para a geração do MCID quando isso não for fornecido
    ```js
    "<<insert your ID name here>>": {  
      "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>> 
+      "authState": <<insert one of 0, 1, 2>>
    }
    ```
 
