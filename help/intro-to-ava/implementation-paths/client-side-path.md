@@ -1,16 +1,19 @@
 ---
-title: Lado do cliente
-description: null
+title: O que são as integrações do Media Analytics e do cliente?
+description: Saiba como o Media Analytics funciona com integrações do lado do cliente e o SDK de mídia e/ou a API de coleta de mídia.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 80%
 
 ---
 
 
 # Lado do cliente {#client-side}
 
-O Media Analytics (Heartbeats) é a solução de rastreamento de mídia padronizada da Adobe. Substituiu o modelo de marcos mais antigo da Adobe.
+O Media Analytics (Heartbeats) é a solução de rastreamento de mídia padronizada da Adobe. que substituiu o modelo Milestone Adobe.
 
 As integrações do lado do cliente são implementadas apenas com o Media Analytics. É possível escolher implementar o SDK do Media ou a API da coleção do Media (ou ambos). O caminho do lado do cliente pode ser usado em qualquer player, incluindo players de cliente e/ou OVP, como Brightcove, Ooyala, thePlatform e assim por diante.
 
