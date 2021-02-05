@@ -1,16 +1,18 @@
 ---
-title: Primetime
-description: null
-uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: O que é o Adobe Primetime?
+description: Saiba mais sobre a solução Adobe Primetime e como ela ajuda a gerar receita com a mídia de streaming.
+translation-type: tm+mt
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 89%
 
 ---
 
 
 # Primetime {#primetime}
 
-O Media Analytics (Heartbeats) é a solução de rastreamento de mídia padronizada da Adobe. Substituiu o modelo de marcos mais antigo da Adobe.
+O Media Analytics Heartbeats) é a solução de rastreamento de mídia padronizada da Adobe que substituiu o modelo de Milestone do Adobe.
 
 O Adobe Primetime é uma solução da Adobe Experience Cloud que ajuda os programadores e distribuidores de conteúdo a monetizar mídia em cada tela conectada.
 
@@ -24,7 +26,7 @@ O Primetime elimina a complexidade de alcançar, monetizar e ativar públicos-al
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-O TVSDK já está integrado ao SDK do Media, o que torna a implementação muito mais fácil e rápida em todas as plataformas compatíveis. <!--Primetime also supports the partnership with Nielsen.--> Para aproveitar o Primetime, siga as mesmas diretrizes e pré-requisitos encontrados [no lado do cliente,](/help/intro-to-ava/implementation-paths/client-side-path.md) juntamente com os seguintes documentos para sua(s) plataforma(s): [Guia do usuário do Primetime.](https://helpx.adobe.com/br/primetime/user-guide.html)
+O TVSDK já está integrado ao SDK do Media, o que torna a implementação muito mais fácil e rápida em todas as plataformas compatíveis. <!--Primetime also supports the partnership with Nielsen.--> Para aproveitar o Primetime, siga as mesmas diretrizes e pré-requisitos encontrados [no lado do cliente,](/help/intro-to-ava/implementation-paths/client-side-path.md) juntamente com os seguintes documentos para sua(s) plataforma(s): [Guia do usuário do Primetime.](https://helpx.adobe.com/br/support/primetime.html)
 
 >[!NOTE]
 >
