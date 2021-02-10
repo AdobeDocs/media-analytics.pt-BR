@@ -1,11 +1,11 @@
 ---
 title: O que é a ativação do Adobe Audience Manager?
-description: Saiba como vincular as ações do aplicativo aos dados de rastreamento de mídia sem precisar de regras de processamento adicionais e variáveis personalizadas.
-translation-type: tm+mt
+description: Saiba como vincular ações do aplicativo aos dados de rastreamento de mídia sem precisar de regras de processamento adicionais e variáveis personalizadas.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
