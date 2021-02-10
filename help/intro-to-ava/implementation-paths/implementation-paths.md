@@ -1,18 +1,18 @@
 ---
-title: Quais caminhos de implementação de mídia de transmissão estão disponíveis?
-description: Saiba mais sobre os caminhos de implementação de Adobe Streaming Media, incluindo o Adobe Launch.
-translation-type: tm+mt
+title: Quais caminhos de implementação de transmissão de mídia estão disponíveis?
+description: Saiba mais sobre os caminhos de implementação de transmissão de mídia da Adobe, incluindo o Adobe Launch.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '505'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Caminhos de implementação {#implementation-paths}
 
-Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de venda, já que o Streaming Media Analytics tem um SKU exclusivo e muda de um modelo de preços com base em chamadas de servidor para um modelo com base em streams de vídeo.
+Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de vendas, pois o Streaming Media Analytics tem uma SKU única e seus preços variam de acordo com o modelo, com base em chamadas de servidor e fluxos de vídeo.
 
 * **Adobe Launch com a extensão do Adobe Media Analytics**
 
