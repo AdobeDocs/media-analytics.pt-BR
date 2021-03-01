@@ -8,8 +8,8 @@ sub-product: media analytics
 translation-type: tm+mt
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
