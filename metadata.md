@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution-title: Aprendizagem e suporte
 solution-hub-url: https://helpx.adobe.com/br/support/analytics.html
 solution-image: assets/analytics-icon-24.png
@@ -7,17 +7,20 @@ getting-started-title: Introdução
 getting-started-url: https://helpx.adobe.com/br/analytics/get-started.html
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/analytics/kt/index/analytics-videos.html
-git-repo: https://github.com/AdobeDocs/media-analytics.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/media-analytics.pt-BR
 index: true
-translation-type: ht
-source-git-commit: e074a77406f907ad66ac8e8ed1b44300596c065a
+translation-type: tm+mt
+source-git-commit: 171053b49a2fda22cbd228f49170c3acdd7bc681
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 100%
 
 ---
 
 
 # Metadados para uso interno
 
-O arquivo metadata.md inclui metadados de nível de repositório transmitidos para os arquivos TOC.md do guia do usuário no repositório. Se desejar alterar o conteúdo metadata. md para qualquer guia do usuário, faça isso em qualquer arquivo TOC. md.
+O arquivo metadata.md inclui metadados de nível de repositório transmitidos para os arquivos TOC.md do guia do usuário no repositório. Se desejar alterar o conteúdo metadata.md para qualquer guia do usuário, faça isso em qualquer arquivo TOC.md.
 
 | metadados | o que faz |
 |--- |--- |
