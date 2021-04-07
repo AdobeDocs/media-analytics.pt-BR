@@ -2,14 +2,14 @@
 title: Rastreamento da reprodução principal no Roku
 description: Este tópico descreve como implementar o rastreamento principal usando o SDK do Media no Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
+exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
-
 
 # Rastreamento da reprodução principal no Roku {#track-core-playback-on-roku}
 
@@ -99,91 +99,6 @@ ht-degree: 100%
    Opcionalmente, anexe objetos de metadados padrão e/ou personalizados à sessão de rastreamento por meio de variáveis de dados de contexto.
 
    * **Metadados padrão**
-
-      [Implementar metadados padrão no JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-
-      >[!NOTE]
-      >
-      >Anexar o objeto de metadados padrão ao objeto de mídia é opcional.
-
-      * Referência da API de chaves de metadados de mídia - [Chaves de metadados padrão - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-         Consulte o conjunto completo de metadados aqui: [Parâmetros de áudio e vídeo](/help/metrics-and-metadata/audio-video-parameters.md)
-   * **Metadados personalizados**
-
-      Crie um objeto variável para as variáveis personalizadas e preencha com os dados desta mídia. Por exemplo:
-
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
-
-1. **Rastrear a intenção de iniciar a reprodução**
-
-   Para começar a rastrear uma sessão de mídia, chame `trackSessionStart` na instância do Media Heartbeat:
-
-   ```js
-   mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
-   ```
-
-   >[!TIP]
-   >
-   >O segundo valor é o nome de objeto dos metadados de mídia personalizados, criado na etapa 2.
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionStart` rastreia a intenção de reproduzir do usuário e não o início da reprodução. Essa API é utilizada para carregar os dados/metadados e estimar a métrica de tempo do início de QoS (duração entre `trackSessionStart` e `trackPlay`).
-
-   >[!NOTE]
-   >
-   >Se não estiver utilizando metadados personalizados, basta enviar um objeto vazio para o argumento `data` em `trackSessionStart`, como mostrado na linha comentada do exemplo de iOS acima.
-
-1. **Rastrear o início real da reprodução**
-
-   Identifique o evento no reprodutor de mídia para o início da reprodução, em que o primeiro quadro da mídia é renderizado na tela, e chame `trackPlay`:
-
-   ```js
-   mediaHeartbeat.trackPlay();
-   ```
-
-1. **Rastrear a conclusão da reprodução**
-
-   Identifique o evento no reprodutor de mídia para a conclusão da reprodução, em que o usuário assistiu ao conteúdo até o fim, e chame `trackComplete`:
-
-   ```js
-   mediaHeartbeat.trackComplete();
-   ```
-
-1. **Rastrear o final da sessão**
-
-   Identifique o evento no reprodutor de mídia para o descarregamento/encerramento da reprodução, em que o usuário fecha a mídia, e/ou a mídia é concluída e descarregada, e chame `trackSessionEnd`:
-
-   ```js
-   mediaHeartbeat.trackSessionEnd();
-   ```
-
-   >[!IMPORTANT]
-   >
-   >Um `trackSessionEnd` marca o fim de uma sessão de rastreamento. Se a sessão tiver sido assistida até o final, onde o usuário assistiu ao conteúdo até o fim, verifique se `trackComplete` () é chamado antes de `trackSessionEnd`. Qualquer outra chamada de API de `track*` é ignorada depois de `trackSessionEnd`, exceto por `trackSessionStart` para uma nova sessão de rastreamento.  Método de rastreamento da reprodução de mídia para rastrear o carregamento da mídia e definir a sessão atual como ativa:
-
-   ```
-   ‘ Create a media info object
-   mediaInfo = adb_media_init_mediainfo()
-   mediaInfo.id = <MEDIA_ID>
-   mediaInfo.playhead = "0"
-   mediaInfo.length = "600"
-   ```
-
-1. **Anexar metadados de vídeo**
-
-   Opcionalmente, anexe objetos de metadados de vídeo padrão e/ou personalizados à sessão de rastreamento de vídeo por meio de variáveis de dados de contexto.
-
-   * **Metadados de vídeo padrão**
 
       [Implementar metadados padrão no Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
