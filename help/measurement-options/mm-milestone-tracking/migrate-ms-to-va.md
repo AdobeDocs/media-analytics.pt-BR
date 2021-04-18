@@ -1,15 +1,15 @@
 ---
 title: Migração do Marco para o Media Analytics
-description: null
+description: Migração do Marco para o Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: ht
-source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
-workflow-type: ht
-source-wordcount: '669'
+exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '675'
 ht-degree: 100%
 
 ---
-
 
 # Migração do Marco para o Media Analytics {#migrating-from-milestone-to-media-analytics}
 
@@ -43,7 +43,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Variáveis opcionais
 
-| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
+| Marco | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/D | Não fornecemos mais mapeamentos pré-criados de player. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/D | Não fornecemos mais mapeamentos pré-criados de player. |
@@ -58,7 +58,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Variáveis de rastreamento de anúncios
 
-| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
+| Marco | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/D | O Media Analytics está definido para 10 segundos para conteúdo e 1 segundo para anúncios. Nenhuma outra opção está disponível. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/D | Os marcadores de progresso não são fornecidos por padrão para anúncios. Use as métricas calculadas para criar marcadores de progresso de anúncios. |
@@ -68,7 +68,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Métodos do módulo de mídia
 
-| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
+| Marco | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`: (obrigatório) o nome do vídeo conforme você quer que ele seja exibido nos relatórios de vídeo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -89,4 +89,3 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> ou <br>trackEvent | `trackPause()` <br> ou `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> ou <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Use os metadados personalizados ou padrão para definir variáveis adicionais. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | N/D | A frequência de chamada de rastreamento é definida automaticamente. |
-
