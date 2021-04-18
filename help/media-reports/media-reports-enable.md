@@ -1,12 +1,15 @@
 ---
 title: Ativação de relatórios de mídia
-description: null
+description: Ativação de relatórios de mídia
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 100%
 
 ---
-
 
 # Ativação de relatórios de mídia {#media-reports-enablement}
 
@@ -21,7 +24,7 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
 
    ![](assets/media-reporting.png){width=&quot;400px&quot;}
 
-1. Na página **[!UICONTROL Relatórios de mídia]**, ative **[!UICONTROL Mídia principal]**e, como opção,**[!UICONTROL Anúncios de mídia],** **[!UICONTROL Capítulos de mídia],**e**[!UICONTROL Qualidade de mídia].**
+1. Na página **[!UICONTROL Relatórios de mídia]**, ative **[!UICONTROL Mídia principal]** e, como opção, **[!UICONTROL Anúncios de mídia],** **[!UICONTROL Capítulos de mídia],** e **[!UICONTROL Qualidade de mídia].**
 
    A avaliação de mídia inclui os seguintes módulos:
 
@@ -61,7 +64,7 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
    | Opção | Notas |
    | --- | --- |
    | Continue a utilizar as variáveis personalizadas | Vantagens e desvantagens:<ul> <li> **Vantagens:** as tendências de conteúdo continuam a funcionar após a migração. </li> <li> **Desvantagens:** exige que você mantenha duas eVars personalizadas e três eventos personalizados alocados para mídia. Você pode usar novamente uma eVar personalizada e um evento personalizado. </li> </ul> Para continuar usando variáveis personalizadas: <ol> <li>Selecione **[!UICONTROL Usar variáveis personalizadas,]** e clique em **[!UICONTROL Salvar.]** </li> <li>Quando solicitado, mapeie as eVars e os eventos personalizados atuais e, em seguida, clique em **[!UICONTROL Salvar:]** </li> </ol> |
-   | Migre para variáveis de solução | Vantagens e desvantagens:<ul> <li> **Vantagens:** você pode usar novamente três eVars personalizadas e quatro eventos personalizados. </li> <li> **Desvantagens:** você perde **todas** as tendências e comparações de histórico dos relatórios de mídia. Isso significa que não é possível direcionar visualizações de conteúdo ou o tempo de reprodução de conteúdo para qualquer data antes de migrar para as pulsações. </li> </ul> **Restrição:** não migre para as variáveis da solução, a menos que tenha certeza de que não deseja manter essas tendências. Todos os clientes devem utilizar as variáveis da solução e as regras de processamento para inserir os dados de mídia nas props e eVars existentes, somente se for necessário preservar a continuidade do histórico. Para migrar para variáveis de solução: Selecione **[!UICONTROL Usar variáveis de solução]** e clique em **[!UICONTROL Salvar].**<br><br>IMPORTANTE: a migração para variáveis de solução provoca a perda de **todas ** as tendências e comparações de histórico dos relatórios de mídia. |
+   | Migre para variáveis de solução | Vantagens e desvantagens:<ul> <li> **Vantagens:** você pode usar novamente três eVars personalizadas e quatro eventos personalizados. </li> <li> **Desvantagens:** você perde **todas** as tendências e comparações de histórico dos relatórios de mídia. Isso significa que não é possível direcionar visualizações de conteúdo ou o tempo de reprodução de conteúdo para qualquer data antes de migrar para as pulsações. </li> </ul> **Restrição:** não migre para as variáveis da solução, a menos que tenha certeza de que não deseja manter essas tendências. Todos os clientes devem utilizar as variáveis da solução e as regras de processamento para inserir os dados de mídia nas props e eVars existentes, somente se for necessário preservar a continuidade do histórico. Para migrar para variáveis de solução: Selecione **[!UICONTROL Usar variáveis de solução]** e clique em **[!UICONTROL Salvar].** <br><br> IMPORTANTE: a migração para variáveis de solução provoca a perda de **todas** as tendências e comparações de histórico dos relatórios de mídia. |
 
 >[!IMPORTANT]
 >
