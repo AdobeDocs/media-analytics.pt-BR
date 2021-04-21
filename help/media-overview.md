@@ -2,14 +2,14 @@
 title: Medição de streaming de mídia no Adobe Analytics
 description: O Adobe Analytics for Media (também conhecido como Media Analytics) fornece aos clientes medições de mídia robustas para conteúdo, áudio e anúncios.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
+exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 translation-type: ht
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '903'
 ht-degree: 100%
 
 ---
-
 
 # Medir streaming de mídia no Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
 
