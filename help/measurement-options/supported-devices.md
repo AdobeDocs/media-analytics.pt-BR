@@ -1,14 +1,14 @@
 ---
 title: Dispositivos e plataformas compatíveis
 description: O Adobe Analytics para streaming de mídia garante que cada fluxo de mídia seja coletado e relatado em todos os dispositivos.
+exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 translation-type: ht
-source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '337'
 ht-degree: 100%
 
 ---
-
 
 # Dispositivos e plataformas compatíveis {#devices-supported}
 
