@@ -1,14 +1,14 @@
 ---
 title: Relatórios de visualizadores simultâneos de mídia
 description: Para clientes do Media Analytics, o painel Visualizadores simultâneos de mídia no Analysis Workspace permite analisar os visualizadores simultâneos para entender onde ocorreu o pico de simultaneidade ou onde ocorreram as quedas.
+exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 translation-type: ht
-source-git-commit: 2eb5318267546408f2aab5da074dd7f30c4fbb1d
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
 ---
-
 
 # Relatórios de visualizadores simultâneos de mídia {#media-concurrent-viewers}
 
