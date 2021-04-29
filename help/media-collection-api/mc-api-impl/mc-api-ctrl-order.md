@@ -4,7 +4,7 @@ description: Controlar a ordem dos eventos
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 translation-type: tm+mt
-source-git-commit: e0da35f364dc057a241fbb05a718a731ffee1e94
+source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 4%
@@ -16,6 +16,7 @@ ht-degree: 4%
 O rastreamento de vídeo de transmissão é uma operação altamente dependente do tempo e, ocasionalmente, as chamadas de rastreamento da API Media Collection chegam ao back-end fora de ordem. Nessa situação, o back-end tenta enfileirar e reordenar os eventos com base no carimbo de data e hora fornecido no objeto `playerTime`.  Isso ocorre com alguns limites. No momento, a reorganização pode falhar se os atrasos entre chamadas fora de ordem forem maiores que um segundo. Em atualizações futuras, o &quot;tempo de atraso aceitável&quot; pode ser otimizado e configurável.
 
 ## Exemplo de evento fora de ordem
+
 Eventos fora de ordem ocorrem quando eventos passam pela rede, o que às vezes causa um atraso.
 
 Por exemplo, você pode enviar um evento `adBreakStart` seguido por um evento `adStart`. Este é um caso de uso comum, pois é necessário que um anúncio comece dentro de um ad break.
