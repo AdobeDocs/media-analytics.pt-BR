@@ -2,14 +2,14 @@
 title: Parâmetros da solicitação
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
+exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 99%
+source-wordcount: '1205'
+ht-degree: 98%
 
 ---
-
 
 # Parâmetros da solicitação {#request-parameters}
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | S | `sessionStart` | A ID da organização da Experience Cloud identifica sua organização no sistema da Adobe Experience Cloud |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Esta é a ID de usuário da Experience Cloud (ECID). Na maioria dos casos, essa é a ID que você deve usar para identificar um usuário. O `marketingCloudUserId` do Heartbeat é igual ao `MID` no Adobe Analytics. Embora não seja tecnicamente necessário, esse parâmetro é necessário para acessar a família de aplicativos da Experience Cloud. |
-| `visitor.aamLocationHint` | N | `sessionStart` | Fornece os dados da borda do Adobe Audience Manager |
+| `visitor.aamLocationHint` | N | `sessionStart` | Fornece os dados da borda do Adobe Audience Manager — Se um valor não for inserido, o valor será nulo. |
 | `appInstallationId` | N | `sessionStart` | O appInstallationId identifica exclusivamente o aplicativo e o dispositivo |
 
 ## Dados de conteúdo
@@ -48,7 +48,7 @@ ht-degree: 99%
 
 | Chave da solicitação  | Obrigatório | Definir em... |  Descrição  |
 | --- | :---: | :---: | --- |
-| `media.streamFormat` | N | `sessionStart` | Formato de fluxo, por exemplo, &quot;HD&quot; |
+| `media.streamFormat` | N | `sessionStart` | Formato de fluxo, por exemplo &quot;HD&quot; |
 | `media.show` | N | `sessionStart` | O nome do programa ou da série |
 | `media.season` | N | `sessionStart` | O número da temporada do programa ou da série |
 | `media.episode` | N | `sessionStart` | O número do episódio |
