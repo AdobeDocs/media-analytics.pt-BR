@@ -4,7 +4,7 @@ description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
+source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 98%
@@ -164,7 +164,7 @@ Observe que o valor `visitor.customerIDs` pode ter qualquer número de objetos n
 
 ### visitor.aamLocationHint
 
-Este parâmetro indica qual a borda do Adobe Audience Manager (AAM) terá uma ocorrência quando o Adobe Analytics enviar os dados do cliente para o Audience Manager. Se você não passar esse parâmetro, a Adobe codificará para 1. Isso é particularmente importante quando os usuários finais tendem a usar seus dispositivos em locais geograficamente distantes (por exemplo, Leste dos EUA, Oeste de EUA, Europa, Ásia). Caso contrário, os dados do usuário serão distribuídos por várias bordas do AAM.
+Este parâmetro indica qual a borda do Adobe Audience Manager (AAM) terá uma ocorrência quando o Adobe Analytics enviar os dados do cliente para o Audience Manager. Se um valor não for inserido, ele será nulo. Isso é particularmente importante quando os usuários finais tendem a usar seus dispositivos em locais geograficamente distantes (por exemplo, Leste dos EUA, Oeste de EUA, Europa, Ásia). Caso contrário, os dados do usuário serão distribuídos por várias bordas do AAM.
 
 ### media.resume
 
