@@ -2,14 +2,13 @@
 title: Configurar Chromecast
 description: Configuração do aplicativo SDK do Media para implementação no Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: ht
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
-workflow-type: ht
+exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
+source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 100%
 
 ---
-
 
 # Configurar Chromecast {#set-up-chromecast}
 
@@ -63,7 +62,7 @@ O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar apli
             "analytics": {
               "rsids": "mobile5vhl.sample.player",
               "server": "obumobile5.sc.omtrdc.net",
-              "ssl": false,
+              "ssl": true,
               "offlineEnabled": false,
               "charset": "UTF-8",
               "lifecycleTimeout": 300,
@@ -78,7 +77,7 @@ O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar apli
               "server": "obumobile5.hb.omtrdc.net",
               "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
               "channel": "test-channel-chromecast",
-              "ssl": false,
+              "ssl": true,
               "ovp": "chromecast-player",
               "sdkVersion": "chromecast-sdk",
               "playerName": "Chromecast"
@@ -138,4 +137,3 @@ O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar apli
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
-
