@@ -2,9 +2,8 @@
 title: O que é a ativação do Adobe Audience Manager?
 description: Saiba como vincular ações do aplicativo aos dados de rastreamento de mídia sem precisar de regras de processamento adicionais e variáveis personalizadas.
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+source-git-commit: e781af84f23400aa7c899b686f0e9fee2c19d660
+workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -59,7 +58,7 @@ Você pode usar esses métodos para enviar sinais e recuperar segmentos de visit
    Define a DPID e a DPUUID. Se DPID e DPUUID estiverem definidas, elas serão enviadas com cada sinal.
 
    ```js
-   ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
+   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
    ```
 
 * `submitSignal() -`
@@ -67,7 +66,7 @@ Você pode usar esses métodos para enviar sinais e recuperar segmentos de visit
    Envia ao gerenciamento de público-alvo um sinal com características.
 
    ```js
-   ADBMobile.audienceManager.SubmitSignal();
+   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
    ```
 
 ### Roku {#am-roku}
@@ -109,5 +108,7 @@ Você pode usar esses métodos para enviar sinais e recuperar segmentos de visit
    Envia ao gerenciamento de público-alvo um sinal com características.
 
    ```js
-   ADBMobile().audienceSubmitSignal()
+   traitData = {}
+   traitData["sampleTrait"] = "sampleValue"
+   ADBMobile().audienceSubmitSignal(traitData)
    ```
