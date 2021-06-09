@@ -2,14 +2,13 @@
 title: Configurar Android
 description: Configuração do aplicativo SDK do Media para implementação no Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '427'
-ht-degree: 100%
+exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 98%
 
 ---
-
 
 # Configurar Android {#set-up-android}
 
@@ -22,7 +21,7 @@ ht-degree: 100%
 
 * **Obter parâmetros de configuração válidos para o SDK do Media** Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
 * **Implementar o ADBMobile para Android em seu aplicativo** 
-Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [SDK 4.x do Android para Soluções da Experience Cloud.](https://docs.adobe.com/content/help/pt-BR/mobile-services/android/overview.html)
+Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [SDK 4.x do Android para Soluções da Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
 
 * **Forneça os seguintes recursos no player de mídia:**
    * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
@@ -48,6 +47,7 @@ Para obter mais informações sobre a documentação do SDK do Adobe Mobile, con
 
       1. Selecione os módulos nos quais planeja usar a biblioteca móvel.
       1. Clique em **[!UICONTROL Aplicar]** e em **[!UICONTROL OK]** para fechar a janela Configurações do módulo.
+
       **Eclipse:**
 
       1. No Eclipse IDE, clique com o botão direito do mouse no nome do projeto.
