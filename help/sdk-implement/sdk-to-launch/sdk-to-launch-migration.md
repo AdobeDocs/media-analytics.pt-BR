@@ -3,14 +3,13 @@ seo-title: Migração do SDK do Media independente para o Adobe Launch
 title: Migração do SDK do Media independente para o Adobe Launch
 seo-description: Instruções e exemplos de código para auxiliar na migração do SDK do Media para o Launch.
 description: Instruções e exemplos de código para auxiliar na migração do SDK do Media para o Launch.
-translation-type: ht
-source-git-commit: fde203bab895c9a49ebc0d1dadb2c96697dea509
-workflow-type: ht
-source-wordcount: '184'
-ht-degree: 100%
+exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 95%
 
 ---
-
 
 # Migração do SDK do Media independente para o Adobe Launch
 
@@ -25,7 +24,7 @@ As extensões estão disponíveis aos clientes do Launch por uma experiência de
 
 O Adobe Media Analytics para áudio e vídeo está disponível como uma extensão do Launch para Web e dispositivos móveis:
 
-* [Documentação do Launch para Web](https://docs.adobe.com/content/help/pt-BR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Documentação do Launch para Web](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 * [Documentação do Launch para dispositivos móveis ](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## Plataformas
