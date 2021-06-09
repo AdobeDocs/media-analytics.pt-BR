@@ -2,14 +2,13 @@
 title: Opção de rejeição e privacidade
 description: Como lidar com aceitação, recusa e privacidade.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: ht
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: ht
-source-wordcount: '360'
-ht-degree: 100%
+exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 96%
 
 ---
-
 
 # Opção de rejeição e privacidade {#opt-out-and-privacy}
 
@@ -17,8 +16,8 @@ ht-degree: 100%
 
 Você pode decidir se uma atividade de rastreamento é permitida em um determinado dispositivo:
 
-* **Aplicativos móveis -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `AdobeMobile`. Para recusar o rastreamento, você precisa usar a biblioteca do `AdobeMobile`. Para obter mais informações sobre as configurações de recusa e privacidade da `AdobeMobile`, consulte [Configurações de recusa e privacidade](https://docs.adobe.com/content/help/pt-BR/mobile-services/android/gdpr-privacy-android/privacy.html).
-* **Aplicativos do JavaScript/navegador -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `VisitorAPI`. Para excluir o rastreamento do, você precisa fazer a exclusão do serviço Visitor API. Para obter mais informações sobre recusa e privacidade, consulte [Serviço de Identidade da Adobe Experience Platform.](https://docs.adobe.com/content/help/pt-BR/id-service/using/home.html)
+* **Aplicativos móveis -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `AdobeMobile`. Para recusar o rastreamento, você precisa usar a biblioteca do `AdobeMobile`. Para obter mais informações sobre as configurações de recusa e privacidade da `AdobeMobile`, consulte [Configurações de recusa e privacidade](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html).
+* **Aplicativos do JavaScript/navegador -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `VisitorAPI`. Para excluir o rastreamento do, você precisa fazer a exclusão do serviço Visitor API. Para obter mais informações sobre recusa e privacidade, consulte [Serviço de Identidade da Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html)
 * **Os aplicativos OTT (Chromecast, Roku) -** Os SDKs de OTT fornecem APIs preparadas para o Regulamento Geral sobre a Proteção de Dados (GDPR), que permitem definir sinalizadores de status `opt` para a coleta e a transmissão de dados e para recuperar as identidades armazenadas localmente.
 
    >[!NOTE]
@@ -106,4 +105,3 @@ Por exemplo:
    ```
    vids = ADBMobile().getAllIdentifiers()
    ```
-
