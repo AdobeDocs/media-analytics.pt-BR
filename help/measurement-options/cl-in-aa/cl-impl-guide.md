@@ -3,10 +3,10 @@ title: Guia de implementação de link personalizado
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 96%
+source-wordcount: '189'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ O Rastreamento de vídeo personalizado usa o rastreamento de link manual com o c
 Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
 
 * No JavaScript: a função `s.tl()`
-* Nos aplicativos móveis: [trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/pt-BR/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* Nos aplicativos móveis: [trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * Na API de inserção de dados: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Requisitos
