@@ -3,10 +3,10 @@ title: Pré-requisitos
 description: Pré-requisitos
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 96%
+source-wordcount: '388'
+ht-degree: 94%
 
 ---
 
@@ -42,11 +42,7 @@ Para uma implementação do *Media Analytics*, siga estas etapas antes de começ
 
    Se você ainda não implementou o serviço de ID, agora é o momento de começar a pensar em uma estratégia de migração. Para obter mais informações sobre a importância e a função do serviço de identidade, consulte [Por que você deve prestar atenção no serviço de identidade.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
-   >[!IMPORTANT]
-   >
-   >Na ausência de qualquer informação de ID de usuário nas chamadas específicas de mídia, os [Métodos de ID de fallback](https://docs.adobe.com/content/help/pt-BR/analytics/technotes/visitor-identification.translate.html) de análise padrão serão aplicados.
-
-   Para obter informações adicionais sobre a Experience Cloud ID, consulte [Visão geral da Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) e [Serviço de Identidade da Adobe Experience Platform.](https://docs.adobe.com/content/help/pt-BR/id-service/using/home.html)
+   Para obter informações adicionais sobre a Experience Cloud ID, consulte [Visão geral da Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) e [Serviço de Identidade da Adobe Experience Platform](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
 1. **Ativar relatórios do Adobe Analytics.**
 
