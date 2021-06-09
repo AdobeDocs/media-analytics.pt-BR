@@ -2,14 +2,13 @@
 title: Rastrear o conteúdo baixado
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-translation-type: ht
-source-git-commit: be68a7abf7d5fd4cc725b040583801f2308ab066
-workflow-type: ht
-source-wordcount: '611'
-ht-degree: 100%
+exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 98%
 
 ---
-
 
 # Rastrear o conteúdo baixado {#track-downloaded-content}
 
@@ -56,7 +55,7 @@ O recurso Conteúdo baixado é a versão offline (padrão) da API Media Collecti
 
 ## Integração com o Adobe Analytics {#integration-with-adobe-analtyics}
 
-Ao calcular as chamadas de início/fechamento do Analytics para o cenário de conteúdo baixado, o back-end define um campo adicional do Analytics chamado `ts.` Estes são carimbos de data e hora para o primeiro e o último evento recebido (início e conclusão). Esse mecanismo permite que uma sessão de mídia concluída seja colocada no momento correto (ou seja, mesmo que o usuário não volte a ficar online por vários dias, a sessão de mídia informa que ocorreu no momento em que o conteúdo foi realmente visualizado). Você deve ativar esse mecanismo no Adobe Analytics criando um _conjunto de relatórios opcionais de carimbo de data e hora._ Para ativar o conjunto de relatórios opcionais de carimbo de data e hora, consulte [Carimbos de data e hora opcionais.](https://docs.adobe.com/content/help/pt-BR/analytics/admin/admin-tools/timestamp-optional.html)
+Ao calcular as chamadas de início/fechamento do Analytics para o cenário de conteúdo baixado, o back-end define um campo adicional do Analytics chamado `ts.` Estes são carimbos de data e hora para o primeiro e o último evento recebido (início e conclusão). Esse mecanismo permite que uma sessão de mídia concluída seja colocada no momento correto (ou seja, mesmo que o usuário não volte a ficar online por vários dias, a sessão de mídia informa que ocorreu no momento em que o conteúdo foi realmente visualizado). Você deve ativar esse mecanismo no Adobe Analytics criando um _conjunto de relatórios opcionais de carimbo de data e hora._ Para ativar o conjunto de relatórios opcionais de carimbo de data e hora, consulte [Carimbos de data e hora opcionais.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)
 
 ## Comparação de sessões de amostra {#sample-session-comparison}
 
