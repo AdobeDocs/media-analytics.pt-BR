@@ -2,10 +2,10 @@
 title: Configurar o JavaScript 3.x
 description: Configuração do aplicativo Media SDK para implementação no JavaScript 3.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 * **Obter parâmetros de configuração válidos**
 Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
 * **Implementar `AppMeasurement` e `Experience Cloud Identity Service` para JavaScript no aplicativo de mídia**
-Para obter mais informações, consulte [Implementação do Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Implementação do Experience Cloud Identity  Service.](https://docs.adobe.com/content/help/pt-BR/id-service/using/implementation/setup-analytics.html)
+Para obter mais informações, consulte [Implementação do Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Implementação do Experience Cloud Identity  Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
 
 * **Forneça os seguintes recursos no player de mídia:**
 
