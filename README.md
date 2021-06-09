@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4c4f296aced1e0e65a5fef7cf26ee9f6481139dd
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '434'
-ht-degree: 91%
+source-wordcount: '428'
+ht-degree: 90%
 
 ---
 # Contribuir com o artigo
@@ -16,13 +15,13 @@ Este projeto adotou o [Código de conduta de código aberto da Adobe](code-of-co
 
 ## Sobre suas contribuições para o conteúdo da Adobe
 
-Consulte o [Guia do colaborador dos documentos da Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Consulte o [Guia do colaborador dos documentos da Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
 
 A maneira como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
-### Pequenas alterações 
+### Pequenas alterações
 
-Se você estiver contribuindo com pequenas atualizações de boa vontade, visite o artigo e clique no link **Editar** do artigo, que vai para a origem GitHub do artigo. Em seguida, use a interface do usuário do GitHub para fazer as atualizações. Consulte o [Guia geral de colaborador do Adobe Docs](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) para obter mais informações.
+Se você estiver contribuindo com pequenas atualizações de boa vontade, visite o artigo e clique no link **Editar** do artigo, que vai para a origem GitHub do artigo. Em seguida, use a interface do usuário do GitHub para fazer as atualizações. Consulte o [Guia geral de colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
 
 As pequenas correções ou esclarecimentos que você envia para a documentação e os exemplos de código deste repositório são abrangidos pelos termos de uso da Adobe.
 
@@ -36,13 +35,13 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Grandes alterações dos funcionários da Adobe
 
-Se você for um gravador técnico, gerente de programas ou desenvolvedor da equipe de produtos para uma solução Adobe Experience Cloud e seu trabalho for contribuir com ou criar artigos técnicos, deverá usar o repositório privado [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução da Adobe Experience Cloud e seu trabalho for criar ou contribuir com a criação de artigos técnicos, deverá usar o repositório privado [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## Ferramentas e configuração
 
 Os colaboradores da comunidade podem usar a interface do GitHub para editar ou bifurcar o repositório e fazer grandes contribuições.
 
-Consulte o [Guia do colaborador dos documentos da Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) para obter mais detalhes.
+Consulte o [Guia do colaborador dos documentos da Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais detalhes.
 
 ## Como usar o Markdown para formatar seu tópico
 
