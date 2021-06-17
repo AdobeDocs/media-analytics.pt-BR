@@ -3,11 +3,10 @@ title: Medição de streaming de mídia no Adobe Analytics
 description: O Adobe Analytics for Media (também conhecido como Media Analytics) fornece aos clientes medições de mídia robustas para conteúdo, áudio e anúncios.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +25,7 @@ Você pode medir métricas essenciais do delivery relacionadas a QoS, como quadr
 ## Recursos {#features}
 
 Os benefícios do Adobe Analytics para streaming de mídia incluem monitoramento em tempo real, análise detalhada, insights acionáveis e oportunidades de monetização.
-* **Análise em tempo real**: tome decisões acionáveis em tempo real utilizando métricas chave de desempenho, como duração, ex2 e ex3, em vários canais. Os eventos de conteúdo principal são medidos em intervalos de 10 segundos para capturar todas as atividades que ocorrem. Os eventos de rastreamento de anúncios ocorrem em intervalos de 1 segundo.
+* **Análise** em tempo real — Tome decisões acionáveis em tempo real utilizando métricas chave de desempenho, como inícios de mídia, em vários canais.
 * **Promover o engajamento**: envolva totalmente os usuários com menos eventos de buffer e entenda onde e quando os anúncios devem ser exibidos no conteúdo para fornecer uma experiência perfeita e menos intrusiva que oferece visitas repetidas.
 * **Imagem holística**: combine vários pontos de dados em todos os distribuidores de conteúdo para obter uma visão completa de todas as atividades de mídia e medir o engajamento e as visualizações/escutas em todos os canais possíveis por meio do recurso Federated Analytics.
 * **Mais granularidade**: avalie o comportamento de visualização no nível mais granular, incluindo o momento do dia do visitante individual, os visualizadores/ouvintes simultâneos por minuto e a duração média do conteúdo consumido.
