@@ -1,15 +1,16 @@
 ---
-title: Linha do tempo 3 - Capítulos
-description: null
+title: Saiba Mais Sobre As Linhas Do Tempo De Rastreamento De Mídia � Capítulos
+description: Saiba mais sobre a linha do tempo do indicador de reprodução e quando um capítulo começa e termina.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 197041df4c985cdc572564652a976bd733448787
-workflow-type: ht
-source-wordcount: '1219'
-ht-degree: 100%
+exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 98%
 
 ---
-
 
 # Linha do tempo 3 - Capítulos {#timeline-3-chapters}
 
@@ -185,7 +186,7 @@ Rastreie o final do primeiro anúncio precedente.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear início do anúncio nº 2 antes da exibição | 15 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear início do anúncio nº 2 antes da exibição | 15. | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -260,11 +261,11 @@ Rastreie o final do segundo anúncio precedente.
 }
 ```
 
-### Ação 10 — Pausa do anúncio concluída {#Action-10}
+### Ação 10 — Ad break concluído {#Action-10}
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear conclusão de ad break antes da exibição | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear conclusão de ad break antes da exibição | 22º | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -286,7 +287,7 @@ O ad break está concluído. Ao longo do ad break, o estado da reprodução perm
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear evento de reprodução | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear evento de reprodução | 22º | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -377,11 +378,11 @@ Rastreie o movimento para o estado de &quot;buffering&quot;.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Buffering encerrado, o aplicativo rastreia a retomada do conteúdo | 36 | 11 | `/api/v1/sessions/{sid}/events` |
+| Buffering encerrado, o aplicativo rastreia a retomada do conteúdo | 36 | 11º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
-O buffering termina após 3 segundos; coloque o reprodutor no estado &quot;reproduzindo&quot;. Você deve enviar outro evento de rastreamento de reprodução a partir do buffering.  **A chamada`play`depois de um`bufferStart`infere uma chamada de &quot;bufferEnd&quot; ao back-end,** assim, um evento `bufferEnd` não é necessário.
+O buffering termina após 3 segundos; coloque o reprodutor no estado &quot;reproduzindo&quot;. Você deve enviar outro evento de rastreamento de reprodução a partir do buffering.  **A chamada `play` depois de um `bufferStart` infere uma chamada de &quot;bufferEnd&quot; ao back-end,** assim, um evento `bufferEnd` não é necessário.
 
 **Exemplo de corpo da solicitação**
 
@@ -399,7 +400,7 @@ O buffering termina após 3 segundos; coloque o reprodutor no estado &quot;repro
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O aplicativo envia o evento de ping | 40 | 15 | `/api/v1/sessions/{sid}/events` |
+| O aplicativo envia o evento de ping | 40 | 15. | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -468,7 +469,7 @@ Anúncio intermediário de 8 segundos: envie `adBreakStart` .
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear início do anúncio nº 3 durante a exibição | 46 | 21 | `/api/v1/sessions/{sid}/events` |
+| Rastrear início do anúncio nº 3 durante a exibição | 46º | 21º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -503,7 +504,7 @@ Rastreie o anúncio intermediário.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O aplicativo envia o evento de ping | 47 | 21 | `/api/v1/sessions/{sid}/events` |
+| O aplicativo envia o evento de ping | 47 | 21º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -525,7 +526,7 @@ Envie um ping ao back-end a cada 1 segundo. (Os pings de anúncios subsequentes 
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear conclusão do anúncio nº 1 durante a exibição | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| Rastrear conclusão do anúncio nº 1 durante a exibição | 54 | 21º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -543,11 +544,11 @@ O anúncio intermediário está concluído.
 }
 ```
 
-### Ação 22 — Pausa do anúncio concluída {#Action-22}
+### Ação 22 — Ad break concluído {#Action-22}
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear conclusão de ad break durante a exibição | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| Rastrear conclusão de ad break durante a exibição | 54 | 21º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -569,7 +570,7 @@ O ad break está concluído.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear o início do Capítulo 2 | 55 | 22 | `/api/v1/sessions/{sid}/events` |
+| Rastrear o início do Capítulo 2 | 55 | 22º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -638,7 +639,7 @@ A ação do usuário move o estado de reprodução para &quot;pausado&quot;.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O aplicativo envia o evento de ping | 70 | 31 | `/api/v1/sessions/{sid}/events` |
+| O aplicativo envia o evento de ping | 70 | 31º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -660,11 +661,11 @@ Envie um ping ao back-end a cada 10 segundos. O player ainda está no estado &qu
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O usuário pressionou Play para retomar o conteúdo principal | 74 | 31 | `/api/v1/sessions/{sid}/events` |
+| O usuário pressionou Play para retomar o conteúdo principal | 74 | 31º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
-Mova o estado de reprodução para &quot;reproduzindo&quot;.  **A chamada`play`depois de um`pauseStart`infere uma chamada de &quot;retomada&quot; ao back-end**; assim, um evento `resume` não é necessário.
+Mova o estado de reprodução para &quot;reproduzindo&quot;.  **A chamada `play` depois de um `pauseStart` infere uma chamada de &quot;retomada&quot; ao back-end**; assim, um evento `resume` não é necessário.
 
 **Exemplo de corpo da solicitação**
 
@@ -726,7 +727,7 @@ Rastreie o final do segundo e do último capítulo.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O usuário termina de assistir ao conteúdo até o fim. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
+| O usuário termina de assistir ao conteúdo até o fim. | 88 | 45º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
