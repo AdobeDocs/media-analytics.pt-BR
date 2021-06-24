@@ -1,14 +1,18 @@
 ---
-title: Rastrear a qualidade da experiência no Android
-description: Este tópico descreve como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media no Android.
+title: Saiba como rastrear a qualidade da experiência no Android
+description: '"Saiba mais sobre como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media no Android."'
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
 
-
-# Rastrear a qualidade da experiência no Android {#track-quality-of-experience-on-android}
+# Rastrear a qualidade da experiência no Android{#track-quality-of-experience-on-android}
 
 >[!IMPORTANT]
 >
@@ -53,4 +57,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!IMPORTANT]
    >
    >Atualize o objeto de QoS e chame o evento de alteração na taxa de bits em cada alteração na taxa de bits. Isso fornece os dados de QoS mais precisos.
-
