@@ -1,14 +1,18 @@
 ---
-title: Implementar metadados padrão no iOS
-description: Descreve a configuração de metadados de vídeo e anúncio padrão a serem enviados com chamadas de rastreamento no iOS.
+title: Saiba como implementar metadados padrão no iOS
+description: Saiba como definir metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento no iOS.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 75%
 
 ---
 
-
-# Implementar metadados padrão no iOS {#implement-standard-metadata-on-ios}
+# Implementar metadados padrão no iOS{#implement-standard-metadata-on-ios}
 
 ## Constantes de metadados
 
@@ -54,4 +58,3 @@ NSMutableDictionary *standardAudioMetadata = [[NSMutableDictionary alloc] init];
  
 [mediaObject setValue:standardAudioMetadata   forKey:ADBMediaObjectKeyStandardMediaMetadata];
 ```
-
