@@ -1,14 +1,18 @@
 ---
-title: Chaves de metadados do Roku
-description: Este tópico descreve as chaves de metadados Roku disponíveis.
+title: Explicação das chaves de metadados do Roku
+description: Saiba mais sobre as chaves de metadados Roku disponíveis e visualize toda a lista de constantes de metadados padrão.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 95%
 
 ---
 
-
-# Chaves de metadados do Roku {#roku-metadata-keys}
+# Chaves de metadados do Roku{#roku-metadata-keys}
 
 Os metadados padrão de vídeo, áudio e anúncios podem ser definidos em objetos de informação de mídia e anúncio respectivamente. Usando as chaves de constantes para metadados de vídeo/anúncio, defina o dicionário que contém os metadados padrão em um objeto de informação antes de chamar as APIs de rastreamento. Consulte as tabelas abaixo para obter a lista completa de constantes de metadados padrão, seguida de exemplos.
 
@@ -72,7 +76,7 @@ Você pode usar as seguintes constantes para rastrear eventos de mídia:
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | Constante para definir metadados no `MediaInfo` `trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` | Constante para definir os metadados de anúncios no `EventData` `trackEvent` |
-| `MEDIA_RESUMED` | Constante para enviar um heartbeat de vídeo retomada. Para retomar o rastreamento de vídeo de um conteúdo anteriormente interrompido, você precisa definir a propriedade `MEDIA_RESUMED` no objeto `mediaInfo` quando chamar `mediaTrackLoad`. (`MEDIA_RESUMED` não é um evento que você pode rastrear usando a API `mediaTrackEvent`.) `MEDIA_RESUMED` deve ser definido como true quando um aplicativo deseja continuar a rastrear o conteúdo que um usuário parou de assistir, mas que agora pretende retomar. <br/><br/>Por exemplo, digamos que um usuário assista 30% do conteúdo e então feche o aplicativo. Isso levará à sessão que está sendo encerrada. Posteriormente, se o usuário retornar ao mesmo conteúdo e o aplicativo permitir que ele retome do ponto em que parou, o aplicativo deverá definir `MEDIA_RESUMED` como "true" enquanto chama a API `mediaTrackLoad`. O resultado é que essas duas sessões de mídia diferentes para o mesmo conteúdo de vídeo podem ser vinculadas. Este é um exemplo de implementação: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Isso criará uma nova sessão para o vídeo, mas também fará com que o SDK envie uma solicitação de heartbeat contendo o tipo de evento "retomar", que pode ser usado nos relatórios para vincular duas sessões de mídia diferentes. |
+| `MEDIA_RESUMED` | Constante para enviar um heartbeat de vídeo retomada. Para retomar o rastreamento de vídeo de um conteúdo anteriormente interrompido, você precisa definir a propriedade `MEDIA_RESUMED` no objeto `mediaInfo` quando chamar `mediaTrackLoad`. (`MEDIA_RESUMED` não é um evento que você pode rastrear usando a API `mediaTrackEvent`.) `MEDIA_RESUMED` deve ser definido como true quando um aplicativo deseja continuar a rastrear o conteúdo que um usuário parou de assistir, mas que agora pretende retomar. <br/><br/>Por exemplo, digamos que um usuário assista 30% do conteúdo e então feche o aplicativo. Isso levará à sessão que está sendo encerrada. Posteriormente, se o usuário retornar ao mesmo conteúdo e o aplicativo permitir que ele retome do ponto em que parou, o aplicativo deverá definir `MEDIA_RESUMED` como &quot;true&quot; enquanto chama a API `mediaTrackLoad`. O resultado é que essas duas sessões de mídia diferentes para o mesmo conteúdo de vídeo podem ser vinculadas. Este é um exemplo de implementação: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Isso criará uma nova sessão para o vídeo, mas também fará com que o SDK envie uma solicitação de heartbeat contendo o tipo de evento &quot;retomar&quot;, que pode ser usado nos relatórios para vincular duas sessões de mídia diferentes. |
 
 ### Constantes de tipo de conteúdo
 
@@ -99,4 +103,3 @@ Você pode usar as seguintes constantes para rastrear eventos de mídia:
 | `MEDIA_AD_START` | Tipo de evento para Início do anúncio |
 | `MEDIA_AD_COMPLETE` | Tipo de evento para Anúncio concluído |
 | `MEDIA_AD_SKIP` | Tipo de evento para Anúncio ignorado |
-
