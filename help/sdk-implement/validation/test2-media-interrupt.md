@@ -1,12 +1,16 @@
 ---
 title: Teste 2 Interrupção de mídia
-description: Este tópico descreve o teste de interrupção de mídia usado na validação.
+description: Saiba mais sobre o teste de interrupção de mídia usado na validação.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 96%
 
 ---
-
 
 # Teste 2: Interrupção da mídia {#test-media-interruption}
 
@@ -23,6 +27,7 @@ Você deve concluir e registrar essas tarefas na seguinte ordem:
    1. Início do Adobe Analytics (AppMeasurement)
    1. Início do Media Analytics (heartbeats)
    1. Chamada de início do Adobe Analytics do Media Analytics (Heartbeats) solicitada
+
    As primeiras duas chamadas acima contêm metadados e variáveis adicionais. Para obter parâmetros de chamada e metadados, consulte [Detalhes da chamada de teste.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
    A terceira chamada acima informa ao servidor do Media Analytics que o SDK do Media solicitou que a chamada de Início do Adobe Analytics (`pev2=ms_s`) fosse enviada para o servidor do Adobe Analytics.
