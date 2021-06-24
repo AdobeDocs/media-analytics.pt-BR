@@ -1,11 +1,13 @@
 ---
-title: Configurar o JavaScript 3.x
-description: Configuração do aplicativo Media SDK para implementação no JavaScript 3.
+title: Como configurar o SDK do Media usando o JavaScript 3.x
+description: Siga estas etapas para configurar o aplicativo SDK do Media no JavaScript 3.x.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 98%
+source-wordcount: '405'
+ht-degree: 92%
 
 ---
 
