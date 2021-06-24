@@ -1,17 +1,18 @@
 ---
 title: Visão geral da mídia
-description: Visão geral da mídia
+description: Use o painel Visão geral da mídia para exibir medidas agregadas. Saiba como monitorar rapidamente o desempenho da mídia.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '93'
-ht-degree: 100%
+feature: '"Noções básicas do Media Analytics, Reports & Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 81%
 
 ---
 
-# Visão geral da mídia {#media-overview}
+# Visão geral da mídia{#media-overview}
 
 O painel Visão geral da mídia foi projetado para permitir que você monitore a mídia no seu site. A Visão geral da mídia apresenta diversas medidas agregadas para monitorar rapidamente se a mídia está funcionando como previsto. Um gráfico exibe o início do conteúdo ao lado do início do anúncio, para que você possa ter uma exibição rápida das métricas referentes a cada item de mídia.
 
