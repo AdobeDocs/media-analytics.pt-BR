@@ -1,14 +1,18 @@
 ---
-title: Visão geral do rastreamento
-description: 'Este tópico descreve o rastreamento da reprodução principal, incluindo o rastreamento da carga da mídia, início da mídia, pausa da mídia e mídia concluída. '
+title: Explicação sobre o rastreamento da reprodução do conteúdo
+description: '"Saiba mais sobre como rastrear a reprodução principal, incluindo o rastreamento da carga da mídia, o início da mídia, a pausa da mídia e a conclusão da mídia. "'
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
 
-
-# Visão geral do rastreamento {#tracking-overview}
+# Visão geral do rastreamento{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -235,4 +239,3 @@ if (e.type == “buffered”) {
 ## Validar {#validate}
 
 Para obter informações sobre como validar sua implementação, consulte [Validação.](/help/sdk-implement/validation/validation-overview.md)
-
