@@ -1,14 +1,18 @@
 ---
-title: Rastrear a qualidade da experiência no Chromecast
-description: Este tópico descreve como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media no Chromecast.
+title: Saiba como rastrear a qualidade da experiência no Chromecast
+description: '"Saiba mais sobre como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media no Chromecast."'
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 91%
 
 ---
 
-
-# Rastrear a qualidade da experiência no Chromecast {#track-quality-of-experience-on-chromecast}
+# Rastrear a qualidade da experiência no Chromecast{#track-quality-of-experience-on-chromecast}
 
 >[!IMPORTANT]
 >
@@ -68,4 +72,3 @@ Chame `trackError(“media error id”);`
    >[!TIP]
    >
    >O rastreamento de erros do reprodutor de mídia não interrompe a sessão de rastreamento de mídia. Se o reprodutor de mídia estiver impedindo o andamento da reprodução, certifique-se de que a sessão de monitoramento de mídia está fechada, chamando `trackSessionEnd()` após chamar `trackError()`.
-
