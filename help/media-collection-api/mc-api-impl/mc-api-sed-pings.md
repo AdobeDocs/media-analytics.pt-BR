@@ -1,17 +1,18 @@
 ---
 title: Enviar eventos de ping
-description: Enviar eventos de ping
+description: Os eventos de ping são a pulsação do Streaming Media Analytics. Saiba como enviar um ping programado para o conteúdo principal ou o rastreamento de anúncios.
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 100%
+source-wordcount: '110'
+ht-degree: 79%
 
 ---
 
-# Enviar eventos de ping {#sending-ping-events}
+# Enviar eventos de ping{#sending-ping-events}
 
 **Para o conteúdo principal, você deve acionar eventos de ping a cada 10 segundos, começando após 10 segundos de reprodução, independentemente dos outros eventos de API enviados. Para o rastreamento de anúncios, você deve disparar os eventos de ping a cada 1 segundo.**
 
