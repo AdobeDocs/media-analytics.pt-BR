@@ -1,20 +1,21 @@
 ---
-title: Rastrear capítulos e segmentos usando o JavaScript 3.x
-description: Este tópico descreve a implementação do rastreamento de capítulo e segmento usando o SDK do Media em aplicativos de navegador (JS).
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: Saiba como rastrear capítulos e segmentos usando o JavaScript 3.x
+description: Saiba mais sobre como implementar o rastreamento de capítulo e segmento usando o SDK do Media em aplicativos de navegador (JS).
+exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 71%
+source-wordcount: '220'
+ht-degree: 64%
 
 ---
-
 
 # Rastrear capítulos e segmentos usando o JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando SDKs 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando SDKs 3.x. Se estiver implementando uma versão anterior do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
@@ -26,10 +27,10 @@ ht-degree: 71%
 
    | Nome da variável | Tipo | Descrição |
    | --- | --- | --- |
-   | `name` | string | Sequência de caracteres não vazia que denota o nome do capítulo. |
+   | `name` | string | String não vazia que indica o nome do capítulo. |
    | `position` | número | A posição do capítulo no conteúdo, começando com 1. |
    | `length` | número | Número positivo que indica o comprimento do capítulo. |
-   | `startTime` | número | Valor do indicador de reprodução no start do capítulo. |
+   | `startTime` | número | Valor do indicador de reprodução no início do capítulo. |
 
    Objeto do capítulo:
 
