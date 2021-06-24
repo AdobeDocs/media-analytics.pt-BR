@@ -1,12 +1,16 @@
 ---
-title: Resolver a ocorrência de main:play entre anúncios
-description: Como lidar com chamadas inesperadas de main:play entre anúncios.
+title: Resolver a exibição da reprodução principal entre anúncios
+description: '"Saiba como lidar com chamadas inesperadas de main:play entre anúncios."'
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f27ce2ba-7584-4601-8837-d8316c641708
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '451'
+ht-degree: 96%
 
 ---
-
 
 # Resolver a ocorrência de main:play entre anúncios {#resolving-main-play-appearing-between-ads}
 
@@ -45,11 +49,11 @@ Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depoi
 
 **Em cada início de ativo de anúncio:**
 
-* **Chama`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **Chame`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
-   >Chame isso somente se o anúncio anterior não tiver sido concluído. Considere um valor booleano para manter um estado "`isinAd`" para o anúncio anterior.
+   >Chame isso somente se o anúncio anterior não tiver sido concluído. Considere um valor booleano para manter um estado &quot;`isinAd`&quot; para o anúncio anterior.
 
 * Crie a instância do objeto de anúncio para o ativo de anúncio: por exemplo, `adObject`.
 * Preencha os metadados do anúncio, `adCustomMetadata`.
@@ -77,4 +81,3 @@ Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depoi
    >Se esta etapa já tiver sido realizada como parte da última chamada `trackEvent:AdComplete`, isso poderá ser ignorado.
 
 * Chame `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
-
