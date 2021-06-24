@@ -1,17 +1,18 @@
 ---
-title: Implementação de metadados de anúncio padrão usando o JavaScript 2.x
-description: Como usar metadados de anúncio padrão no rastreamento de anúncio em um navegador usando aplicativos JavaScript 2.x.
+title: Saiba como implementar metadados de anúncio padrão usando o JavaScript 2.x
+description: Como usar metadados de anúncio padrão no rastreamento de anúncios em um navegador com aplicativos JavaScript 2.x.
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '68'
+source-wordcount: '72'
 ht-degree: 55%
 
 ---
 
-
-# Implementação de metadados de anúncio padrão usando o JavaScript 2.x{#implement-standard-ad-metadata-on-javascript}
+# Implementar Metadados de publicidade padrão usando o JavaScript 2.x{#implement-standard-ad-metadata-on-javascript}
 
 ## Constantes de anúncio
 
