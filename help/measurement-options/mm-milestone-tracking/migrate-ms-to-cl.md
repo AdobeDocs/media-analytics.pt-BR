@@ -1,17 +1,18 @@
 ---
-title: Migração do Marco para Link personalizado
-description: Migração do Marco para Link personalizado
+title: Saiba mais sobre como migrar do Marco para Link personalizado
+description: Saiba como alterar as variáveis de Marco para os métodos de Link personalizado e de módulo de Marco para a sintaxe de Link personalizado.
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '582'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 95%
 
 ---
 
-# Migração do Marco para Link personalizado {#migrating-from-milestone-to-custom-link}
+# Migração do Marco para Link personalizado{#migrating-from-milestone-to-custom-link}
 
 ## Visão geral {#overview}
 
@@ -42,7 +43,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 
 ### Variáveis opcionais
 
-| Milestone | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
+| Marco | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/D | Não disponível. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/D | Não disponível. |
@@ -57,7 +58,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 
 ### Variáveis de rastreamento de anúncios
 
-| Milestone | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
+| Marco | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/D | Não disponível. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/D | Não disponível. |
@@ -67,7 +68,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 
 ### Métodos do módulo de mídia
 
-| Milestone | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
+| Marco | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | `s.tl()` | `s.linkTrackVars` <br> `  = 'events,` <br> `     prop10,` <br> `     eVar10,` <br> `     eVar12,` <br> `     eVar15,` <br> `     contextData.video.name,` <br> `     contextData.video.view';` <br> `s.linkTrackEvents ` <br> `  = 'event2';` <br> `s.prop10` <br> `   = mediaName;` <br> `s.eVar10` <br> `  = mediaName;` <br> `s.eVar12` <br> `  = "video";` <br> `s.eVar15` <br> `  = mediaPlayerName;` <br> `s.events` <br> `  = 'event2';` <br> `s.contextData['video.name']` <br> `  = mediaName;` <br> `s.contextData['video.view']` <br> `  = 'true';` <br> `s.tl(this,'o','Video Start');` |
 | mediaName | `mediaName`: (obrigatório) o nome do vídeo conforme você quer que ele seja exibido nos relatórios de vídeo. | Definir eVar ou variável dos dados de contexto na chamada de link. | `s.prop10 = mediaName;` <br> `s.eVar10 = mediaName;` <br> `s.contextData['video.name']` <br> `  = mediaName;` |
