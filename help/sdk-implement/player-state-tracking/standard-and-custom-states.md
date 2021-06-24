@@ -1,14 +1,15 @@
 ---
 title: Sobre estados padrão e personalizados
-description: Este tópico descreve o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e informar estados padrão e personalizados do player.
-translation-type: tm+mt
-source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
+description: Saiba mais sobre o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e relatar estados padrão e personalizados do player.
+exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 66%
+source-wordcount: '281'
+ht-degree: 92%
 
 ---
-
 
 # Sobre estados padrão e personalizados
 
@@ -30,15 +31,15 @@ Os dados são calculados da mesma forma para estados padrão e personalizados, m
 
 ## Diretrizes
 
-* Uma sessão de vídeo é limitada a 10 estados de player.
+* Uma sessão de vídeo é limitada a 10 estados do player.
 * Qualquer combinação de estados é permitida.
-* Se vários estados de player passarem, apenas os primeiros 10 serão retidos e encaminhados para downstream para o componente de processamento VA.
+* Se vários estados do player passarem, apenas os primeiros 10 serão retidos e encaminhados para o componente de processamento do VA.
 * O máximo de 10 estados é aplicado a todos os estados, independentemente de estarem fechados ou não.
-* Um estado pode ser start e finalizado várias vezes e é contado como um único estado. Por exemplo, `closedCapationing` pode ser iniciado e parado cinco vezes, mas contará como um único estado.
+* Um estado pode ser iniciado e finalizado várias vezes e é contado como um único estado. Por exemplo, `closedCapationing` pode ser iniciado e parado cinco vezes, mas contará como um único estado.
 * Todos os estados que excederem o máximo de 10 estados permitidos são descartados.
 
 ## Estados personalizados
 
 Com a capacidade de criar estados personalizados, você pode capturar ações personalizadas e atualizar metadados personalizados durante uma sessão de reprodução.
 
-Para obter informações sobre como criar estados personalizados, consulte o guia de Referência da API de [mídia: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+Para obter informações sobre como criar estados personalizados, consulte o [Guia de referência de API de mídia: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
