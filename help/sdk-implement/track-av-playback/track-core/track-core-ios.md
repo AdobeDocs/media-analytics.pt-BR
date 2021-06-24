@@ -1,14 +1,18 @@
 ---
-title: Rastreamento da reprodução principal no iOS
-description: Este tópico descreve como implementar o rastreamento principal usando o SDK do Media no iOS.
+title: Saiba como rastrear a reprodução principal no iOS
+description: Saiba como implementar o rastreamento principal usando o SDK do Media no iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 95%
 
 ---
 
-
-# Rastreamento da reprodução principal no iOS {#track-core-playback-on-ios}
+# Rastreamento da reprodução principal no iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
 >Esta documentação abrange o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
@@ -22,12 +26,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | Nome da variável | Descrição | Obrigatório |
    |---|---|---|
    | `name` | Nome do vídeo | Sim |
-   | `mediaid` | Identificador exclusivo do vídeo | Sim |
+   | `mediaid` | identificador exclusivo do vídeo | Sim |
    | `length` | Duração do vídeo | Sim |
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -38,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | Tipo de fluxo para audiobook |
    | `ADBMediaHeartbeatStreamTypePODCAST` | Tipo de fluxo para podcast |
 
-   **Constantes de`MediaType`:**
+   **`MediaType`Constantes de:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -64,6 +68,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * [Implementar metadados padrão no iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **Chaves de metadados de vídeo**
+
          [Chaves de metadados de iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * Consulte a lista completa de metadados de vídeo aqui: [Parâmetros de áudio e vídeo](/help/metrics-and-metadata/audio-video-parameters.md)
@@ -153,9 +158,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifique qualquer cenário no qual o reprodutor de vídeo será pausado e verifique se `trackPause` foi chamado corretamente. Os seguintes cenários exigem que o aplicativo chame `trackPause()`:
 
-   * O usuário clica explicitamente em Pausar no aplicativo.
-   * O reprodutor se coloca no estado Pausado.
-   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que o aplicativo mantenha a sessão aberta.
+   * O usuário faz uma pausa explicitamente no aplicativo.
+   * O player se coloca no estado Pausa.
+   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que ele mantenha a sessão aberta.
    * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou um pop-up de outro aplicativo ocorre, mas você deseja que o aplicativo mantenha a sessão ativa para que o usuário possa retomar o vídeo do ponto em que foi interrompido.
 
 1. Identifique o evento do reprodutor para reprodução e/ou continuação do vídeo a partir da pausa e chame `trackPlay`:
@@ -174,4 +179,3 @@ Consulte as informações adicionais sobre o rastreamento da reprodução princi
 
 * Cenários de rastreamento: [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reprodutor de exemplo incluído com o SDK do iOS para um exemplo completo de rastreamento.
-
