@@ -1,14 +1,18 @@
 ---
-title: Rastreamento da reprodução principal no Android
-description: Este tópico descreve como implementar o rastreamento principal usando o SDK do Media no Android.
+title: Saiba como rastrear a reprodução principal no Android
+description: Saiba como implementar o rastreamento principal usando o SDK do Media no Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
-
-# Rastreamento da reprodução principal no Android {#track-core-playback-on-android}
+# Rastreamento da reprodução principal no Android{#track-core-playback-on-android}
 
 >[!IMPORTANT]
 >Esta documentação abrange o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores 1.x para Android aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
@@ -23,11 +27,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | --- | --- | :---: |
    | `name` | Nome da mídia | Sim |
    | `mediaId` | Identificador exclusivo de mídia | Sim |
-   | `length` | Comprimento da mídia | Sim |
+   | `length` | Duração da mídia | Sim |
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -38,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `AUDIOBOOK` | Tipo de fluxo para audiobook |
    | `PODCAST` | Tipo de fluxo para podcast |
 
-   **Constantes de`MediaType`:**
+   **`MediaType`Constantes de:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -150,10 +154,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifique qualquer cenário no qual o reprodutor de vídeo será pausado e verifique se `trackPause` foi chamado corretamente. Os seguintes cenários exigem que o aplicativo chame `trackPause()`:
 
-   * O usuário clica explicitamente em Pausar no aplicativo.
-   * O reprodutor se coloca no estado Pausado.
-   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que o aplicativo mantenha a sessão aberta.
-   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou um pop-up de outro aplicativo é exibido, mas você deseja que o aplicativo mantenha a sessão ativa para que o usuário possa retomar a mídia do ponto em que foi interrompida.
+   * O usuário faz uma pausa explicitamente no aplicativo.
+   * O player se coloca no estado Pausa.
+   * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que ele mantenha a sessão aberta.
+   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou uma pop-up de outro aplicativo ocorre, mas você deseja que o aplicativo mantenha a sessão ativa para dar ao usuário a oportunidade de retomar a mídia a partir do ponto de interrupção.
 
 1. Identifique o evento do reprodutor para reprodução e/ou retomada da pausa da mídia e chame `trackPlay`.
 
@@ -172,4 +176,3 @@ Consulte as informações adicionais sobre o rastreamento da reprodução princi
 
 * Cenários de rastreamento: [Reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reprodutor de exemplo incluído com o SDK do Android para um exemplo completo de rastreamento.
-
