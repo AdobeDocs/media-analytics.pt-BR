@@ -1,14 +1,18 @@
 ---
-title: Busca de faixa no Roku
-description: Este tópico descreve a implementação do rastreamento de busca usando o SDK do Media no Roku.
+title: Saiba como rastrear a busca no Roku
+description: Saiba como rastrear eventos de Início da busca e Conclusão da busca usando o SDK do Media no Roku.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
 
-
-# Busca de faixa no Roku {#track-seeking-on-roku}
+# Busca de faixa no Roku{#track-seeking-on-roku}
 
 >[!IMPORTANT]
 >
