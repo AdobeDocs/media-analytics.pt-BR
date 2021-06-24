@@ -1,15 +1,16 @@
 ---
 title: Parâmetros de estado do player
-description: Este tópico descreve os parâmetros de rastreamento do estado do player.
+description: '"Saiba mais sobre os parâmetros de rastreamento do estado do player para tela cheia, legenda de fechamento, mudo e propriedades de imagem."'
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-translation-type: tm+mt
-source-git-commit: 1cf631d7f3d5365a02be99af78655ac3b53fb3cb
+exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
+feature: '"Media Analytics, Variáveis"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 99%
+source-wordcount: '2249'
+ht-degree: 98%
 
 ---
-
 
 # Parâmetros de estado do player{#player-state-parameters}
 
@@ -78,7 +79,7 @@ Os recursos de rastreamento do estado do player podem ser conectados a um fluxo 
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- | --- |
-| <ul> <li> **Chave de SDK:**<br/> Definida automaticamente  </li> <li> **Chave de API:**<br/> N/D </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> número </li> <li> **Enviado com:**<br/> Fechamento de mídia </li> <li> **Versão mín. do SDK:**<br/> 3.0</li> <li> **Exemplo de valor:**<br/> VERDADEIRO </li><li> **Descrição:**<br/> O número de vezes que as legendas ocultas foram exibidas. Essa métrica é definida como 1 se pelo menos um Estado de legendas ocultas ocorrer durante a sessão de reprodução. <br/> **Importante:**<br/> Se esse evento estiver definido, a contagem será igual ao número de vezes que o vídeo foi exibido no estado de Legendas ocultas. Se este evento não for definido, nenhum valor será enviado.   </li> </ul> | <ul> <li> **Adobe**<br/> Analytics.media.stats.closeCaptioning.count<br/></li> <li> **Heartbeat:**<br/> N/D </li> </ul> | <ul> <li> **Disponível:**<br/> Sim </li> <li> **Variável reservada:**<br/> event </li> <li> **Nome do relatório:**<br/> Contagem de Legendas ocultas </li> <li> **Dados de contexto:**<br/> a.media.states.closedcaptioning.count<br/> </li> <li> **Feed de dados:**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager:**<br/> c_contextdata.media.states.closedcaptioning.count </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/> Definida automaticamente  </li> <li> **Chave de API:**<br/> N/D </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> número </li> <li> **Enviado com:**<br/> Fechamento de mídia </li> <li> **Versão mín. do SDK:**<br/> 3.0</li> <li> **Exemplo de valor:**<br/> VERDADEIRO </li><li> **Descrição:**<br/> O número de vezes que as legendas ocultas foram exibidas. Essa métrica é definida como 1 se pelo menos um Estado de legendas ocultas ocorrer durante a sessão de reprodução. <br/> **Importante:**<br/> Se esse evento estiver definido, a contagem será igual ao número de vezes que o vídeo foi exibido no estado de Legendas ocultas. Se este evento não for definido, nenhum valor será enviado.   </li> </ul> | <ul> <li> **Adobe**<br/> Analytics.media.states.closedcaptioning.count<br/></li> <li> **Heartbeat:**<br/> N/D </li> </ul> | <ul> <li> **Disponível:**<br/> Sim </li> <li> **Variável reservada:**<br/> event </li> <li> **Nome do relatório:**<br/> Contagem de Legendas ocultas </li> <li> **Dados de contexto:**<br/> a.media.states.closedcaptioning.count<br/> </li> <li> **Feed de dados:**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager:**<br/> c_contextdata.media.states.closedcaptioning.count </li> </ul> |
 
 
 #### Duração total das Legendas ocultas
