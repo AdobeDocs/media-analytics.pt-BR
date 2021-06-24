@@ -1,17 +1,18 @@
 ---
-title: O manuseio de aplicativos é interrompido durante a reprodução
-description: Como lidar com interrupções para rastreamento durante a reprodução da mídia.
+title: O Manuseio De Aplicativos Interrompe Durante A Reprodução
+description: Saiba como lidar com interrupções para rastreamento durante a reprodução da mídia.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: tm+mt
-source-git-commit: 29b0d38e904a561d467ba0432b255fdb17d6b829
+exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '369'
+ht-degree: 95%
 
 ---
 
-
-# O manuseio de aplicativos é interrompido durante a reprodução {#handling-application-interrupts-during-playback}
+# O manuseio de aplicativos é interrompido durante a reprodução{#handling-application-interrupts-during-playback}
 
 A reprodução em um aplicativo de mídia pode ser interrompida de diversas maneiras: um usuário pressiona o botão Pausar explicitamente ou coloca o aplicativo em segundo plano. Independentemente da causa de uma interrupção na reprodução de uma mídia, as instruções de rastreamento são as mesmas:
 
@@ -35,4 +36,3 @@ A reprodução em um aplicativo de mídia pode ser interrompida de diversas mane
 * _E sobre reiniciar a mesma sessão?_
 
    Para obter instruções mais detalhadas sobre como reiniciar uma sessão de rastreamento, consulte esta página: [Retomar manualmente uma sessão fechada](/help/sdk-implement/cookbook/resuming-inactive.md). O SDK envia um ping de retomada para notificar o backend que o usuário está retomando manualmente a sessão.
-
