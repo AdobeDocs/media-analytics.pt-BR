@@ -1,15 +1,16 @@
 ---
-title: Rastrear anúncios usando o JavaScript 2.x
+title: Saiba como rastrear anúncios usando o JavaScript 2.x
 description: Implementar o rastreamento de anúncios nos aplicativos do navegador (JS) usando o SDK do Media.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 97%
+source-wordcount: '357'
+ht-degree: 96%
 
 ---
-
 
 # Rastrear anúncios usando o JavaScript 2.x{#track-ads-on-javascript}
 
@@ -61,7 +62,7 @@ ht-degree: 97%
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
    | `name` | Nome amigável do anúncio. | Sim |
-   | `adId` | Identificador exclusivo para o anúncio. | Sim |
+   | `adId` | identificador exclusivo para o anúncio. | Sim |
    | `position` | A posição do número do anúncio no ad break, começando com 1. | Sim |
    | `length` | Duração do anúncio | Sim |
 
