@@ -1,14 +1,18 @@
 ---
 title: Vários rastreadores de VOD ao mesmo tempo
-description: Um exemplo de como rastrear VOD usando vários rastreadores em paralelo.
+description: Veja um exemplo de como rastrear VOD usando vários rastreadores em paralelo.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 92%
 
 ---
 
-
-# Vários rastreadores de VOD ao mesmo tempo {#vod-multiple-trackers-in-parallel}
+# Vários rastreadores de VOD ao mesmo tempo{#vod-multiple-trackers-in-parallel}
 
 ## Cenário {#scenario}
 
@@ -374,4 +378,3 @@ _player2.loadContent(URL_TO_MEDIA_2);
 ```
 
 Ambas as instâncias do `MediaAnalyticsProvider` e do `MediaHeartbeat` monitoram duas sessões separadas, cada uma com suas próprias IDs de sessão exclusivas. Você pode ver as duas sessões na ferramenta de depuração Charles.
-
