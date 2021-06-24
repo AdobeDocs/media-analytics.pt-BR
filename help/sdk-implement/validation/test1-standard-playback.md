@@ -1,12 +1,16 @@
 ---
-title: Teste 1 Reprodução padrão
-description: Este tópico descreve o teste de reprodução padrão usado na validação.
+title: Teste 1 Reprodução Padrão
+description: Saiba mais sobre o teste de reprodução padrão usado na validação.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 98%
 
 ---
-
 
 # Teste 1: reprodução padrão {#test-standard-playback}
 
@@ -32,6 +36,7 @@ Conclua e registre as seguintes ações (em ordem):
    * **Servidor do Adobe Analytics (AppMeasurement) -** Um servidor de rastreamento RDC ou CNAME que é resolvido para um servidor RDC, é necessário para o serviço de ID do visitante da Experience Cloud. O servidor de rastreamento do Adobe Analytics deve terminar com “`.sc.omtrdc.net`” ou ser um CNAME.
 
    * **Servidor do Media Analytics (Heartbeats) -** Este servidor sempre tem o formato &quot;`[namespace].hb.omtrdc.net`&quot;, em que `[namespace]` especifica o nome da sua empresa. Esse nome é fornecido pela Adobe.
+
    É necessário validar determinadas variáveis principais que são universais em todas as chamadas de rastreamento:
 
    **ID de visitante da Adobe (`mid`):** A variável `mid` é usada para capturar o valor definido no cookie do AMCV. A variável `mid` é o valor de identificação principal de sites e aplicativos móveis e também indica que o serviço de ID de visitante da Experience Cloud está definido corretamente. Ele é encontrado nas chamadas do Adobe Analytics (AppMeasurement) e do Media Analytics (heartbeats).
@@ -81,6 +86,7 @@ Conclua e registre as seguintes ações (em ordem):
    1. Servidor do Adobe Analytics — Iniciar chamada
    1. Servidor do Media Analytics -—Iniciar chamada
    1. Servidor do Media Analytics — &quot;Solicitação para iniciar chamada do Adobe Analytics solicitada&quot;
+
    As primeiras duas chamadas acima contêm metadados e variáveis adicionais. Para obter parâmetros de chamada e metadados, consulte [Detalhes da chamada de teste.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
    A terceira chamada acima informa ao servidor do Media Analytics que o SDK do Media solicitou que a chamada de Início do Adobe Analytics (`pev2=ms_s`) fosse enviada para o servidor do Adobe Analytics.
@@ -88,11 +94,13 @@ Conclua e registre as seguintes ações (em ordem):
 1. **Exibir ad break, se disponível**
 
    * **Início do anúncio**
+
    Quando o anúncio é iniciado, as chamadas são enviadas na seguinte ordem:
 
    1. Servidor do Adobe Analytics — Chamada de início de anúncio
    1. Servidor do Media Analytics — Chamada de início de anúncio
    1. Servidor do Media Analytics — &quot;Chamada de início de anúncio do Adobe Analytics solicitada&quot;
+
    As primeiras duas chamadas contêm metadados e variáveis adicionais. Para obter parâmetros de chamada e metadados, consulte [Detalhes da chamada de teste.](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)
 
    A terceira chamada informa ao servidor do Media Analytics que o SDK do Media solicitou que a chamada de início de anúncio do Adobe Analytics (`pev2=msa_s`) fosse enviada para o servidor do Adobe Analytics.
