@@ -1,14 +1,15 @@
 ---
 title: Implementação e Relatórios
-description: Este tópico descreve como implementar o recurso de rastreamento do estado do player, incluindo .
-translation-type: tm+mt
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
+description: Saiba como implementar o recurso de rastreamento do estado do player, incluindo .
+exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 58%
+source-wordcount: '334'
+ht-degree: 96%
 
 ---
-
 
 # Implementação e relatórios
 
@@ -21,7 +22,7 @@ O SDK de mídia inclui dois novos métodos para rastreamento de estado personali
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have `media.stateName` as the required parameter:
+A API da coleção de mídia inclui dois novos eventos que têm `media.stateName` como o parâmetro obrigatório:
 
 `stateStart` e `stateEnd`
 
@@ -90,14 +91,14 @@ As métricas fornecidas para cada estado individual são computadas e enviadas p
 
 ## Relatórios
 
-Todas as métricas de estado do player podem ser usadas para qualquer visualização de relatórios disponível na Analysis Workspace ou em um componente (segmento, métricas calculadas) assim que um conjunto de relatórios é ativado para o rastreamento de estado do player. As novas métricas poderiam ser ativadas no Console de administração para cada relatório individual usando a Configuração do Relatórios de mídia (Editar configurações > Gerenciamento de mídia > Relatórios de mídia).
+Todas as métricas do estado do player podem ser usadas para qualquer visualização de relatórios disponível no Analysis Workspace ou em um componente (segmento, métricas calculadas) assim que um conjunto de relatórios é ativado para o rastreamento do estado do player. As novas métricas podem ser ativadas no Admin Console para cada relatório individual usando a Configuração do relatórios de mídia (Editar configurações > Gerenciamento de mídia > Relatórios de mídia).
 
 ![](assets/report-setup.png)
 
-No Analytics Workspace, todas as novas propriedades estão localizadas no painel de métricas. Por exemplo, você pode pesquisar `full screen` para visualização dos dados de tela cheia no painel de métricas.
+No Analytics Workspace, todas as novas propriedades estão localizadas no painel de métricas. Por exemplo, você pode pesquisar por `full screen` para visualizar os dados do estado de tela cheia no painel de métricas.
 
 ![](assets/full-screen-report.png)
 
 ## Importar métricas declaradas do player para a Adobe Experience Platform
 
-Os dados armazenados no Analytics podem ser usados para qualquer finalidade e as métricas do estado do player podem ser importadas para a Adobe Experience Platform usando o XDM e usadas com o Customer Journey Analytics. As propriedades de estado padrão têm propriedades específicas enquanto os estados personalizados são propriedades disponíveis usando os eventos personalizados. Para obter informações adicionais sobre as propriedades de estado padrão, consulte a seção Lista *Propriedades para identidades* XDM na página Parâmetros [de estado do](/help/metrics-and-metadata/player-state-parameters.md) player.
+Os dados armazenados no Analytics podem ser usados para qualquer finalidade e as métricas do estado do player podem ser importadas para a Adobe Experience Platform usando o XDM e usadas com o Customer Journey Analytics. As propriedades de estado padrão têm propriedades específicas, enquanto os estados personalizados são propriedades disponíveis por meio dos eventos personalizados. Para obter mais informações sobre as propriedades de estado padrão, consulte a seção *Lista de propriedades para identidades XDM* na página [Parâmetros do estado do player](/help/metrics-and-metadata/player-state-parameters.md).
