@@ -1,17 +1,18 @@
 ---
-title: Rastreamento da reprodução principal no Roku
-description: Este tópico descreve como implementar o rastreamento principal usando o SDK do Media no Roku.
+title: Saiba como rastrear a reprodução principal no Roku
+description: Saiba como implementar o rastreamento principal usando o SDK do Media no Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: tm+mt
-source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 97%
 
 ---
 
-# Rastreamento da reprodução principal no Roku {#track-core-playback-on-roku}
+# Rastreamento da reprodução principal no Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
 >Esta documentação abrange o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
@@ -25,7 +26,7 @@ ht-degree: 100%
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
    | `name` | Nome do vídeo | Sim |
-   | `mediaid` | Identificador exclusivo do vídeo | Sim |
+   | `mediaid` | identificador exclusivo do vídeo | Sim |
    | `length` | Duração do vídeo | Sim |
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
@@ -100,7 +101,7 @@ ht-degree: 100%
 
    * **Metadados padrão**
 
-      [Implementar metadados padrão no Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Implementar metadados padrão no Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Anexar o objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
