@@ -1,17 +1,18 @@
 ---
-title: Implementação de metadados padrão usando o JavaScript 2.x
-description: Descreve a configuração de metadados de vídeo e anúncios padrão a serem enviados com chamadas de rastreamento em aplicativos do navegador (JS).
+title: Saiba como implementar metadados padrão usando o JavaScript 2.x
+description: Saiba como definir metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento em aplicativos de navegador (JS 2.x).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 80%
+source-wordcount: '69'
+ht-degree: 50%
 
 ---
 
-
-# Implementação de metadados padrão usando o JavaScript 2.x{#implement-standard-metadata-on-javascript}
+# Implementar metadados padrão usando o JavaScript 2.x{#implement-standard-metadata-on-javascript}
 
 ## Constante de metadados
 
