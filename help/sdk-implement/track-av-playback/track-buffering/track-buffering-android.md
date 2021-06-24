@@ -1,14 +1,18 @@
 ---
-title: Rastrear buffering no Android
-description: Descreve o rastreamento de eventos de buffering no Android.
+title: Saiba como rastrear o buffering no Android
+description: Saiba como rastrear eventos de buffering no Android.
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
 
-
-# Rastrear buffering no Android {#track-buffering-on-android}
+# Rastrear buffering no Android{#track-buffering-on-android}
 
 >[!IMPORTANT]
 >As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
