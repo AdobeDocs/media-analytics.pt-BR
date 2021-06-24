@@ -1,14 +1,18 @@
 ---
 title: Reprodução de VOD com um capítulo ignorado
-description: Um exemplo de como rastrear o conteúdo de VOD no qual o usuário ignorou um capítulo usando o SDK do Media.
+description: Veja um exemplo de como rastrear o conteúdo de VOD no qual o usuário ignorou um capítulo usando o SDK do Media.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 91%
 
 ---
 
-
-# Reprodução de VOD com um capítulo ignorado {#vod-playback-with-a-skipped-chapter}
+# Reprodução de VOD com um capítulo ignorado{#vod-playback-with-a-skipped-chapter}
 
 ## Cenário {#scenario}
 
@@ -288,4 +292,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
