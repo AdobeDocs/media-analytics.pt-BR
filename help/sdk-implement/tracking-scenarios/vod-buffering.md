@@ -1,14 +1,18 @@
 ---
 title: Reprodução de VOD com buffering
-description: Um exemplo de como rastrear o conteúdo de VOD usando o SDK do Media.
+description: Veja um exemplo de como rastrear o conteúdo de VOD usando o SDK do Media.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 92%
 
 ---
 
-
-# Reprodução de VOD com buffering {#vod-playback-with-buffering}
+# Reprodução de VOD com buffering{#vod-playback-with-buffering}
 
 ## Cenário {#scenario}
 
@@ -222,4 +226,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
