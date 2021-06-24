@@ -1,14 +1,18 @@
 ---
-title: Busca de faixa no Chromecast
-description: Este tópico descreve a implementação do rastreamento de busca usando o SDK do Media no Chromecast.
+title: Saiba como rastrear a busca no Chromecast
+description: Saiba como rastrear eventos de Início da busca e Conclusão da busca usando o SDK do Media no Chromecast.
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 03be8ed3-ae3a-4e9a-b667-0d9280a844a1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '148'
+ht-degree: 84%
 
 ---
 
-
-# Busca de faixa no Chromecast {#track-seeking-on-chromecast}
+# Busca de faixa no Chromecast{#track-seeking-on-chromecast}
 
 >[!IMPORTANT]
 >
