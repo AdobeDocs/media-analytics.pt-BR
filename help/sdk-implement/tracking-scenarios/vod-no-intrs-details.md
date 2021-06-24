@@ -1,14 +1,18 @@
 ---
 title: Reprodução de VOD sem anúncios
-description: Um exemplo de rastreamento de reprodução de VOD sem anúncios.
+description: Visualize um exemplo de rastreamento de reprodução de VOD sem anúncios.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 95%
 
 ---
 
-
-# Reprodução de VOD sem anúncios {#vod-playback-with-no-ads}
+# Reprodução de VOD sem anúncios{#vod-playback-with-no-ads}
 
 ## Cenário {#scenario}
 
@@ -46,7 +50,7 @@ Esses parâmetros devem ser quase idênticos à chamada de `Heartbeat Content St
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Content heartbeats {#content-heartbeats}
+## Pulsações de conteúdo {#content-heartbeats}
 
 Durante a reprodução da mídia, um temporizador envia ao menos um heartbeat a cada 10 segundos. Essas pulsações contêm informações sobre reprodução, anúncios, buffering e assim por diante. O conteúdo exato de cada pulsação está além do escopo desse documento, mas o problema crítico é que as pulsações são acionadas de forma consistente enquanto a reprodução continua.
 
@@ -198,4 +202,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........
 ```
-
