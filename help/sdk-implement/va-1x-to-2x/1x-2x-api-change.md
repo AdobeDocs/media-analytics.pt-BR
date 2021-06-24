@@ -1,12 +1,16 @@
 ---
-title: Conversão da API de 1.x para 2.x
-description: Este tópico inclui links para referências de API e lista as APIs de rastreamento necessárias e opcionais para as versões 1.x e 2.x do SDK do Media.
+title: Conversão da API da versão 1.x para 2.x
+description: Explore as referências da API e liste as APIs de rastreamento necessárias e opcionais para as versões 1.x e 2.x do SDK do Media.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 87%
 
 ---
-
 
 # Conversão da API 1.x para 2.x {#one-x-to-two-x-conv}
 
@@ -14,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * [Referência da API do Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [Referência da API do iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
-* [Referência da API do JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
+* [Referência da API JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [Referência da API do Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
 ## APIs de rastreamento* obrigatórias:
@@ -50,4 +54,3 @@ Todas as APIs de rastreamento opcionais, como anúncios, capítulos, alteração
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-
