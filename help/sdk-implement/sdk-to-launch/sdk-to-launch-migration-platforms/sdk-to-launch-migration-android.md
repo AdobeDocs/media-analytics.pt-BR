@@ -1,11 +1,15 @@
 ---
-title: Migração do SDK do Media independente para o Adobe Launch - Android
-description: Instruções e exemplos de código para auxiliar na migração do SDK do Media para o Launch para Android.
-translation-type: ht
-source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
+title: '"Migração do SDK do Media independente para o Adobe Launch - Android"'
+description: Saiba como migrar do SDK do Media para o Launch para Android.
+exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 93%
 
 ---
-
 
 # Migração do SDK do Media independente para o Adobe Launch - Android
 
