@@ -1,13 +1,14 @@
 ---
-title: Migração do Marco para o Media Analytics
-description: Migração do Marco para o Media Analytics
+title: Saiba como migrar do Marco para o Media Analytics
+description: Saiba como alterar variáveis de Marco para Métricas do Media Analytics e métodos do módulo de Marco para Sintaxe do Media Analytics.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +44,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Variáveis opcionais
 
-| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
+| Marco | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/D | Não fornecemos mais mapeamentos pré-criados de player. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/D | Não fornecemos mais mapeamentos pré-criados de player. |
@@ -58,7 +59,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Variáveis de rastreamento de anúncios
 
-| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
+| Marco | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/D | O Media Analytics está definido para 10 segundos para conteúdo e 1 segundo para anúncios. Nenhuma outra opção está disponível. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/D | Os marcadores de progresso não são fornecidos por padrão para anúncios. Use as métricas calculadas para criar marcadores de progresso de anúncios. |
@@ -68,7 +69,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Métodos do módulo de mídia
 
-| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
+| Marco | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`: (obrigatório) o nome do vídeo conforme você quer que ele seja exibido nos relatórios de vídeo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
