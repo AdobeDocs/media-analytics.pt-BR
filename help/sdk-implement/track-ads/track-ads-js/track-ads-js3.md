@@ -1,20 +1,21 @@
 ---
-title: Rastrear anúncios usando o JavaScript 3.x
+title: Saiba como rastrear anúncios usando o JavaScript 3.x
 description: Implementar o rastreamento de anúncios nos aplicativos do navegador (JS) usando o SDK do Media.
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 80%
+source-wordcount: '364'
+ht-degree: 85%
 
 ---
-
 
 # Rastrear anúncios usando o JavaScript 3.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando os SDKs 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação usando os SDKs 3.x. Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento do anúncio
 
@@ -34,7 +35,7 @@ ht-degree: 80%
 
    | Nome da variável | Tipo | Descrição |
    | --- | --- | --- |
-   | `name` | string | String não vazia que denota o nome adbreak (pre-roll, mid-roll e post-roll). |
+   | `name` | string | String não vazia que indica o nome do adbreak (antes da exibição, intermediário e posterior). |
    | `position` | número | A posição do número do ad break, começando com 1. |
    | `startTime` | número | Valor do indicador de reprodução no início do ad break. |
 
@@ -59,9 +60,9 @@ ht-degree: 80%
 
    | Nome da variável | Tipo | Descrição |
    | --- | --- | --- |
-   | `name` | string | String não vazia que denota o nome do anúncio. |
-   | `adId` | string | Não há uma string vazia que denota o identificador de anúncio. |
-   | `position` | número | A posição numérica do anúncio no intervalo, começando com 1. |
+   | `name` | string | String não vazia que indica o nome da publicidade. |
+   | `adId` | string | String não vazia que indica o identificador de anúncio. |
+   | `position` | número | A posição do número do anúncio no adbreak, começando com 1. |
    | `length` | número | Número positivo que indica a duração do anúncio. |
 
    Criação do objeto de anúncio:
