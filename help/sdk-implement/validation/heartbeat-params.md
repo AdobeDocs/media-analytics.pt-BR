@@ -1,12 +1,16 @@
 ---
 title: Descrições do parâmetro Heartbeat
-description: Uma lista de parâmetros de heartbeats que a Adobe coleta e processa no servidor do Media Analytics (heartbeats).
+description: Explore os parâmetros de pulsação que o Adobe coleta e processa no servidor do Media Analytics (heartbeats).
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
+feature: '"Media Analytics, Variáveis"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 79%
 
 ---
-
 
 # Descrições dos parâmetros do Media Analytics (heartbeats) {#heartbeat-parameter-descriptions}
 
@@ -19,10 +23,10 @@ Lista de parâmetros do Media Analytics que a Adobe coleta e processa no servido
 | s:event:type | SDK do Media | (Obrigatório)<br/><br/>O tipo de evento que está sendo rastreado. Tipos de evento: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | SDK do Media | (Obrigatório)<br/><br/>O carimbo de data e hora do último evento deste tipo nesta sessão. O valor é -1. |
 | l:event:ts | SDK do Media | (Obrigatório)<br/><br/>O carimbo de data e hora do evento. |
-| l:event:duration | SDK do Media | (Obrigatório)<br/><br/>Esse valor é definido internamente (em milissegundos) pelo SDK do Media, e não pelo reprodutor. É usado para calcular as métricas de tempo gasto no backend. Por exemplo: a.media.totalTimePlayed é calculado como uma soma da duração de todas os heartbeats de reprodução (type=play) gerados. <br/>*Observação:*Esse parâmetro é definido como 0 para determinados eventos, pois eles são &quot;eventos de alteração de estado&quot; (por exemplo, type=complete, type=chapter_complete ou type=bitrate_change). |
-| l:event:playhead | VideoInfo | (Obrigatório)<br/><br/>O indicador de reprodução estava dentro do ativo (principal ou anúncio) em operação no momento em que o evento foi gravado. |
+| l:event:duration | SDK do Media | (Obrigatório)<br/><br/>Esse valor é definido internamente (em milissegundos) pelo SDK do Media, e não pelo reprodutor. É usado para calcular as métricas de tempo gasto no backend. Por exemplo: a.media.totalTimePlayed é calculado como uma soma da duração de todas os heartbeats de reprodução (type=play) gerados. <br/>*Observação:* Esse parâmetro é definido como 0 para determinados eventos, pois eles são &quot;eventos de alteração de estado&quot; (por exemplo, type=complete, type=chapter_complete ou type=bitrate_change). |
+| l:event:indicador de reprodução | VideoInfo | (Obrigatório)<br/><br/>O indicador de reprodução estava dentro do ativo (principal ou anúncio) em operação no momento em que o evento foi gravado. |
 | s:event:sid | SDK do Media | (Obrigatório)<br/><br/>A ID da sessão (uma sequência de caracteres gerada aleatoriamente). Todos os eventos de uma sessão específica (vídeo + anúncios) devem ser idênticos. |
-| l:asset:duration / l:asset:length <br/>(Renomeado da duração de duração) | VideoInfo | (Obrigatório)<br/><br/>O comprimento do ativo de vídeo do ativo principal. |
+| l:asset:duration / l:asset:length <br/>(Renomeado da duração de comprimento) | VideoInfo | (Obrigatório)<br/><br/>O comprimento do ativo de vídeo do ativo principal. |
 | s:asset:publisher | MediaHeartbeatConfig | (Obrigatório)<br/><br/>O editor do ativo. |
 | s:asset:video_id | VideoInfo | (Obrigatório)<br/><br/>Uma ID que identifica exclusivamente o vídeo no catálogo do editor. |
 | s:asset:type | SDK do Media | (Obrigatório)<br/><br/>O tipo de ativo (principal ou anúncio). |
@@ -78,4 +82,3 @@ Lista de parâmetros do Media Analytics que a Adobe coleta e processa no servido
 | Nome | Fonte de dados | Descrição   |
 | ---  | --- | --- |
 | s:event:type=end | SDK do Media | (Obrigatório)<br/><br/> A `end``close` |
-
