@@ -1,17 +1,18 @@
 ---
 title: Configurar o Adobe Debug
-description: Este tópico descreve como configurar o Adobe Debug, que você pode usar para solucionar problemas de implementações do SDK do Media.
+description: '"Saiba como configurar a Depuração do Adobe, que pode ser usada para solucionar problemas de implementações do SDK do Media."'
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: ht
-source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: ht
+exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
 source-wordcount: '653'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-
-# Configurar o Adobe Debug {#configure-adobe-debug}
+# Configurar o Adobe Debug{#configure-adobe-debug}
 
 ## Acessar o Adobe Debug {#accessing-adobe-debug}
 
@@ -120,4 +121,3 @@ Para instalar o certificado SSL em um dispositivo Android:
 
 1. No laptop, inicie a sessão de Depuração da Adobe.
 1. Inicie o teste no dispositivo Android.
-
