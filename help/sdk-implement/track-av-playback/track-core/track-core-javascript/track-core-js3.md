@@ -1,14 +1,15 @@
 ---
-title: Rastrear a reprodução principal usando o JavaScript v3.x
-description: Este tópico descreve como implementar o rastreamento principal usando o Media SDK em um navegador com aplicativos JavaScript 3.x.
-translation-type: ht
-source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: ht
-source-wordcount: '643'
-ht-degree: 100%
+title: Saiba Como Rastrear A Reprodução Principal Usando O JavaScript v3.x
+description: Saiba como implementar o rastreamento principal usando o SDK do Media em um navegador com aplicativos JavaScript 3.x.
+exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 95%
 
 ---
-
 
 # Rastrear a reprodução principal usando o JavaScript 3.x{#track-core-playback-on-javascript}
 
