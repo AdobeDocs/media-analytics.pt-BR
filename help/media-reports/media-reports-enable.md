@@ -1,17 +1,18 @@
 ---
 title: Ativação de relatórios de mídia
-description: Ativação de relatórios de mídia
+description: Saiba mais sobre o conjunto de relatórios de mídia que coleta métricas de mídia.  Siga estas etapas para configurar relatórios de mídia antes do envio dos dados de mídia.
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '899'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 97%
 
 ---
 
-# Ativação de relatórios de mídia {#media-reports-enablement}
+# Ativação de relatórios de mídia{#media-reports-enablement}
 
 Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado antes do envio dos dados de mídia.
 
