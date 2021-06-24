@@ -1,16 +1,18 @@
 ---
-title: Guia de implementação de link personalizado
-description: null
+title: Explicação da implementação de link personalizado
+description: Saiba como implementar o Rastreamento de link personalizado no Streaming Media Analytics.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 96%
+source-wordcount: '202'
+ht-degree: 89%
 
 ---
 
-# Guia de implementação de link personalizado {#custom-link-implementation-guide}
+# Guia de implementação de link personalizado{#custom-link-implementation-guide}
 
 O Rastreamento de vídeo personalizado usa o rastreamento de link manual com o código de link personalizado no Analytics `appMeasurement`.
 Na maioria das vezes, o rastreamento de vídeo com link personalizado é usado em plataformas e dispositivos que exigem o mínimo de medição de vídeo.
