@@ -1,14 +1,18 @@
 ---
 title: Rastrear estados do aplicativo
-description: 'Os estados do aplicativo são telas ou exibições diferentes no aplicativo, que quando exibidas devem resultar em uma chamada trackState. '
+description: 'Os estados do aplicativo são telas ou exibições diferentes do aplicativo. Saiba como rastrear o estado do aplicativo em seu aplicativo usando a chamada trackState . '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 86%
 
 ---
 
-
-# Rastrear estados do aplicativo {#track-app-states}
+# Rastrear estados do aplicativo{#track-app-states}
 
 Os estados são telas ou exibições diferentes do aplicativo. Sempre que um novo estado for exibido no aplicativo, você deverá enviar uma chamada `trackState`. Por exemplo, quando um usuário navega da página inicial para a tela de detalhes do vídeo, envie uma chamada `trackState`. Os estados geralmente são vistos usando um relatório de definição de caminho para que você possa ver como os usuários navegam no seu aplicativo e quais estados são exibidos mais comumente.
 
@@ -32,7 +36,7 @@ O nome do estado é relatado na variável “Exibir estado” no Adobe Mobile Se
 
 ## Enviar dados de contexto
 
-Além do "Nome do estado", é possível enviar dados de contexto adicionais com cada chamada de rastreamento de estado.
+Além do &quot;Nome do estado&quot;, é possível enviar dados de contexto adicionais com cada chamada de rastreamento de estado.
 
 ### Roku
 
@@ -53,4 +57,3 @@ ADBMobile.analytics.trackState("Home Screen", dictionary);
 >[!NOTE]
 >
 >Os valores de dados de contexto devem ser mapeados para variáveis personalizadas nos Adobe Mobile Services.
-
