@@ -1,14 +1,18 @@
 ---
-title: Rastrear erros no Android
-description: Este tópico descreve como implementar o rastreamento de erros usando o SDK do Media no Android.
+title: Saiba como rastrear erros no Android
+description: Saiba mais sobre como implementar o rastreamento de erros usando o SDK do Media no Android.
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 80%
 
 ---
 
-
-# Rastrear erros no Android {#track-errors-on-android}
+# Rastrear erros no Android{#track-errors-on-android}
 
 >[!IMPORTANT]
 >
@@ -25,4 +29,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >O rastreamento de erros do reprodutor de mídia não interrompe a sessão de rastreamento de mídia. Se o reprodutor de mídia estiver impedindo o andamento da reprodução, certifique-se de que a sessão de monitoramento de mídia está fechada, chamando `trackSessionEnd` após chamar `trackError`.
-
