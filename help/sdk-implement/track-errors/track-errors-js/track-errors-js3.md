@@ -1,20 +1,21 @@
 ---
-title: Rastrear erros usando o JavaScript 3.x
-description: Este tópico descreve como implementar o rastreamento de erros usando o SDK do Media em aplicativos de navegador (JS).
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
+title: Saiba como rastrear erros usando o JavaScript 3.x
+description: Saiba mais sobre como implementar o rastreamento de erros usando o SDK do Media em aplicativos de navegador (JS).
+exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 69%
+source-wordcount: '99'
+ht-degree: 73%
 
 ---
-
 
 # Rastrear erros usando o JavaScript 3.x{#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>As instruções a seguir fornecem orientação para a implementação em todos os SDKs 3.x. Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Implementar o rastreamento de erros
 
