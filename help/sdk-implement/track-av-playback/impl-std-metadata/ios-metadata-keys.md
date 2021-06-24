@@ -1,14 +1,18 @@
 ---
-title: Chaves de metadados de iOS
-description: Este tópico descreve as chaves de metadados do iOS disponíveis.
+title: Explicação das chaves de metadados do iOS
+description: Saiba mais sobre as chaves de metadados do iOS disponíveis.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 90%
 
 ---
 
-
-# Chaves de metadados de iOS {#ios-metadata-keys}
+# Chaves de metadados de iOS{#ios-metadata-keys}
 
 [Referência da API do iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
@@ -57,4 +61,3 @@ De `ADBStandardMetadataKeys.h`:
 | `ADBAdMetadataKeyPLACEMENT_ID` | ID de posicionamento | Publicidade |
 | `ADBAdMetadataKeySITE_ID` | ID do site | Publicidade |
 | `ADBAdMetadataKeyCREATIVE_URL` | URL da arte | Publicidade |
-
