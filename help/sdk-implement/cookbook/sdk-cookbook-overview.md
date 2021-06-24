@@ -1,14 +1,15 @@
 ---
 title: Visão geral do guia do SDK
-description: 'Tópicos específicos do guia do SDK '
-translation-type: tm+mt
-source-git-commit: 298d17ced7a62cad8e2a45814fbfb80c3f58ce35
+description: '"Explorar tópicos do guia específicos do SDK "'
+exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 100%
+source-wordcount: '69'
+ht-degree: 94%
 
 ---
-
 
 # Visão geral do guia do SDK
 
@@ -17,6 +18,6 @@ Você pode encontrar tópicos gerais do guia do Media Analytics que se aplicam a
 Os tópicos do guia listados abaixo são específicos da versão do SDK do Media do Media Analytics:
 
 * [O manuseio de aplicativos é interrompido durante a reprodução](/help/sdk-implement/cookbook/app-interrupts.md)
-* [Resolver a ocorrência de main:play entre anúncios](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
+* [Resolver a ocorrência de main:play entre anúncios ](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [Resumo de sessões inativas](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [Rastreamento no SceneGraph (Roku)](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
