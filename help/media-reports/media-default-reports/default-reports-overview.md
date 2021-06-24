@@ -1,17 +1,18 @@
 ---
 title: Visão geral dos relatórios padrão
-description: Visão geral dos relatórios padrão
+description: '"Saiba mais sobre os tipos de relatórios e métricas usadas para rastrear mídia em seu site. Explore os relatórios de estilo do painel disponíveis com o módulo Mídia principal."'
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '328'
-ht-degree: 100%
+feature: '"Noções básicas do Media Analytics, Reports & Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 91%
 
 ---
 
-# Visão geral dos relatórios padrão {#default-reports-overview}
+# Visão geral dos relatórios padrão{#default-reports-overview}
 
 O Adobe Analytics fornece vários relatórios e métricas para rastrear o desempenho da mídia em seu site.
 
