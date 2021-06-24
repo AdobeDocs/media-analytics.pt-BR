@@ -1,14 +1,18 @@
 ---
-title: Chaves de metadados do Chromecast
-description: Descreve a configuração padrão de metadados de vídeo e anúncio para serem enviados com chamadas de rastreamento no Chromecast.
+title: Explicação das chaves de metadados do Chromecast
+description: Saiba como definir metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento no Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 85%
 
 ---
 
-
-# Chaves de metadados do Chromecast {#chromecast-metadata-keys}
+# Chaves de metadados do Chromecast{#chromecast-metadata-keys}
 
 Os metadados padrão de vídeo e anúncio podem ser definidos em objetos de informação de mídia e anúncio respectivamente. Usando as chaves de constantes para metadados de vídeo/anúncio, defina o dicionário que contém os metadados padrão em um objeto de informação antes de chamar as APIs de rastreamento. Consulte as tabelas abaixo para obter a lista completa de constantes de metadados padrão, seguida de exemplos.
 
@@ -111,4 +115,3 @@ adObject[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardVideoMetad
  
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, this._player.getAdInfo(), adContextData);
 ```
-
