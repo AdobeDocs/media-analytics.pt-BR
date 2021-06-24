@@ -1,14 +1,18 @@
 ---
-title: Rastrear busca no Android
-description: Este tópico descreve como implementar o rastreamento de busca usando o SDK do Media no Android.
+title: Saiba como rastrear a busca no Android
+description: Saiba como rastrear eventos de Início da busca e Conclusão da busca usando o SDK do Media no Android.
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
 
-
-# Rastrear busca no Android {#track-seeking-on-android}
+# Rastrear busca no Android{#track-seeking-on-android}
 
 >[!IMPORTANT]
 >
