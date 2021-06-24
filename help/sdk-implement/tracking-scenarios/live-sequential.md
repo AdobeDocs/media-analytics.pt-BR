@@ -1,14 +1,18 @@
 ---
-title: Conteúdo principal ao vivo com monitoramento sequencial
-description: Um exemplo de como rastrear o conteúdo ao vivo com monitoramento sequencial usando o SDK do Media.
+title: Conteúdo principal ao vivo com rastreamento sequencial
+description: Veja um exemplo de como rastrear o conteúdo ao vivo com o rastreamento sequencial usando o SDK do Media.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 91%
 
 ---
 
-
-# Conteúdo principal ao vivo com monitoramento sequencial {#live-main-content-with-sequential-tracking}
+# Conteúdo principal ao vivo com monitoramento sequencial{#live-main-content-with-sequential-tracking}
 
 ## Cenário {#scenario}
 
@@ -44,7 +48,7 @@ Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/sdk
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-Isso deve ser quase igual à chamada do Start Heartbeat Content, mas com a principal diferença no parâmetro &quot;s:evento:type&quot;. Todos os parâmetros devem estar em vigor aqui.
+Isso deve ser quase idêntico à chamada de Heartbeat Content Start, mas com uma diferença no parâmetro &quot;s:event:type&quot;. Todos os parâmetros devem estar em vigor aqui.
 
 | Parâmetro | Valor | Notas |
 |---|---|---|
@@ -331,4 +335,3 @@ this._mediaHeartbeat.trackSessionEnd();
 
 // Continue tracking further sessions in live stream similarly if required 
 ```
-
