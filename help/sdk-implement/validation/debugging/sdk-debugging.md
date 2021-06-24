@@ -1,17 +1,18 @@
 ---
 title: Depuração do SDK
-description: Este tópico descreve o rastreamento/registro disponível no SDK do Media.
+description: Saiba mais sobre o rastreamento/registro disponível no SDK do Media.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: ht
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+exl-id: c2de6454-8538-4d07-a099-e278b153d894
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 96%
 
 ---
 
-
-# Depuração do SDK {#sdk-debugging}
+# Depuração do SDK{#sdk-debugging}
 
 Você pode ativar e desativar o registro. O SDK do Media fornece um mecanismo abrangente de rastreamento/registro em toda a pilha de rastreamento de mídia. Você pode ativar ou desativar o registro, definindo o sinalizador `debugLogging` no objeto de configuração.
 
@@ -114,4 +115,3 @@ Por exemplo, registros filtrados por `#track` podem ter a seguinte aparência:
 [16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete() 
 [16:11:29 GMT­0700 (PDT).766] [INFO] [plugin::player] #trackVideoUnload()
 ```
-
