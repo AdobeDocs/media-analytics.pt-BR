@@ -1,14 +1,15 @@
 ---
 title: Sobre o rastreamento do estado do player
-description: Este tópico descreve o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e informar estados do player.
-translation-type: tm+mt
-source-git-commit: 4c11efd0b8bb457246c746621e7fbb9fbda621b2
+description: Saiba mais sobre o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e relatar estados do player.
+exl-id: c678e182-74e4-4f46-8596-7be57e645c66
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 98%
+source-wordcount: '405'
+ht-degree: 94%
 
 ---
-
 
 # Sobre o rastreamento do estado do player
 
@@ -31,7 +32,7 @@ O Rastreamento de estado do player oferece os seguintes benefícios:
 
 O Rastreamento do estado do player exige um dos seguintes itens para a coleta de dados:
 * Media JS SDK 3.0+
-* SDK do Chromecast 3.0 para Adobe Marketing Cloud Solutions
+* SDK do Chromecast 3.0 para soluções da Adobe Marketing Cloud
 * Extensão do Media Analytics (para usar com o SDK da Adobe Experience Platform (AEP))
    * Web: Adobe Media Analytics (SDK 3.x) para áudio e vídeo v1.0+
    * Móvel: Adobe Media Analytics para áudio e vídeo v2.0+
