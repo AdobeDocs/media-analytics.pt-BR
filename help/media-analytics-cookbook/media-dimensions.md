@@ -1,14 +1,15 @@
 ---
 title: O que é a atribuição de fluxo de mídia?
-description: Saiba como vincular as ações do aplicativo aos dados de rastreamento de mídia sem precisar de regras de processamento adicionais e variáveis personalizadas.
-translation-type: tm+mt
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+description: Saiba como vincular ações do aplicativo aos dados de rastreamento de mídia sem precisar de regras de processamento adicionais e variáveis personalizadas.
+exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 89%
+source-wordcount: '233'
+ht-degree: 97%
 
 ---
-
 
 # Atribuição de fluxo de mídia
 
