@@ -1,17 +1,18 @@
 ---
 title: Controlar a ordem dos eventos
-description: Controlar a ordem dos eventos
+description: Saiba mais sobre como controlar a ordem dos eventos e como em alguns casos os eventos são reordenados com base no carimbo de data e hora fornecido no objeto playerTime .
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
-translation-type: tm+mt
-source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 4%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
-# Controlar a ordem dos eventos {#controlling-the-order-of-events}
+# Controlar a ordem dos eventos{#controlling-the-order-of-events}
 
 O rastreamento de vídeo de transmissão é uma operação altamente dependente do tempo e, ocasionalmente, as chamadas de rastreamento da API Media Collection chegam ao back-end fora de ordem. Nessa situação, o back-end tenta enfileirar e reordenar os eventos com base no carimbo de data e hora fornecido no objeto `playerTime`.  Isso ocorre com alguns limites. No momento, a reorganização pode falhar se os atrasos entre chamadas fora de ordem forem maiores que um segundo. Em atualizações futuras, o &quot;tempo de atraso aceitável&quot; pode ser otimizado e configurável.
 
