@@ -1,16 +1,18 @@
 ---
 title: Visualizadores simultâneos de mídia
-description: null
+description: '"Saiba mais sobre o painel Visualizadores simultâneos de mídia usado para exibir visualizadores simultâneos durante um dia. Os dados podem ser filtrados por conteúdo, tipo de dispositivo ou país."'
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+feature: '"Noções básicas do Media Analytics, Reports & Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 89%
 
 ---
 
-# Visualizadores simultâneos de mídia {#media-concurrent-viewers}
+# Visualizadores simultâneos de mídia{#media-concurrent-viewers}
 
 O painel Visualizadores simultâneos de mídia exibe os visualizadores simultâneos durante um dia. Os dados podem ser filtrados por conteúdo, tipo de dispositivo ou país.
 
