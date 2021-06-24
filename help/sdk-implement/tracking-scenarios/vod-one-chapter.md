@@ -1,14 +1,18 @@
 ---
 title: Reprodução de VOD com um capítulo
-description: Um exemplo de rastreamento de reprodução de VOD que contém um capítulo.
+description: Visualize um exemplo de rastreamento de reprodução de VOD que contém um capítulo.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 96%
 
 ---
 
-
-# Reprodução de VOD com um capítulo {#vod-playback-with-one-chapter}
+# Reprodução de VOD com um capítulo{#vod-playback-with-one-chapter}
 
 ## Cenário {#scenario}
 
@@ -465,4 +469,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
