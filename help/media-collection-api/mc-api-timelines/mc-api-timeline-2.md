@@ -1,15 +1,16 @@
 ---
-title: Linha do tempo 2 - Usuário abandona a sessão
-description: null
+title: Saiba mais sobre as linhas do tempo de rastreamento de mídia � usuário abandona a sessão
+description: Saiba mais sobre a linha do tempo do indicador de reprodução e a ação da � do usuário correspondente quando uma sessão de vídeo é abandonada. Saiba mais sobre os detalhes de cada ação e solicitações.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
-workflow-type: ht
-source-wordcount: '634'
-ht-degree: 100%
+exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 95%
 
 ---
-
 
 # Linha do tempo 2 - Usuário abandona a sessão {#timeline--2-user-abandons-session}
 
@@ -180,7 +181,7 @@ O primeiro anúncio precedente terminou.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear conclusão de ad break antes da exibição | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear conclusão de ad break antes da exibição | 12º | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -202,7 +203,7 @@ O ad break está concluído. Durante todo o ad break, o player permaneceu no est
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear evento de reprodução | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear evento de reprodução | 12º | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -269,7 +270,7 @@ Envie um ping ao back-end a cada 10 segundos.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Ocorre um erro, o aplicativo envia informações de erro. | 32 | 20 | `/api/v1/sessions/{sid}/events` |
+| Ocorre um erro, o aplicativo envia informações de erro. | 32 | 20º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -290,7 +291,7 @@ Envie um ping ao back-end a cada 10 segundos.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O aplicativo se recupera do erro, o usuário pressiona Play | 37 | 20 | `/api/v1/sessions/{sid}/events` |
+| O aplicativo se recupera do erro, o usuário pressiona Play | 37 | 20º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -360,7 +361,7 @@ Anúncio intermediário de 8 segundos: envie `adBreakStart` .
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear início do anúncio nº 1 durante a exibição | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| Rastrear início do anúncio nº 1 durante a exibição | 45º | 33º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
@@ -393,7 +394,7 @@ Rastreie o anúncio intermediário.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O usuário fecha o aplicativo. O aplicativo determina que o usuário abandonou a visualização e não retornou para esta sessão. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
+| O usuário fecha o aplicativo. O aplicativo determina que o usuário abandonou a visualização e não retornou para esta sessão. | 48 | 33º | `/api/v1/sessions/{sid}/events` |
 
 **Detalhes da implementação**
 
