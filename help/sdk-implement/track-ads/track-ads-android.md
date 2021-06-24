@@ -1,14 +1,18 @@
 ---
-title: Rastrear anúncios no Android
+title: Saiba como rastrear anúncios no Android
 description: Implementar o rastreamento de anúncios em aplicativos Android usando o SDK do Media.
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
-
-# Rastrear anúncios no Android {#track-ads-on-android}
+# Rastrear anúncios no Android{#track-ads-on-android}
 
 >[!IMPORTANT]
 >
@@ -62,7 +66,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
    | `name` | Nome amigável do anúncio. | Sim |
-   | `adId` | Identificador exclusivo para o anúncio. | Sim |
+   | `adId` | identificador exclusivo para o anúncio. | Sim |
    | `position` | A posição do número do anúncio no ad break, começando com 1. | Sim |
    | `length` | Duração do anúncio | Sim |
 
