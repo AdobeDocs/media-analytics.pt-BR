@@ -1,15 +1,14 @@
 ---
+product: adobe analytics
 audience: end-user
 user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
-product: adobe analytics
 sub-product: media analytics
-translation-type: tm+mt
-source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
+source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '829'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 0%
 + [Medição de streaming de mídia no Adobe Analytics](media-overview.md)
 + [Dispositivos e plataformas compatíveis](measurement-options/supported-devices.md)
 + Introdução ao streaming de mídia do Analytics {#intro-to-ava}
-   + [Pré-requisitos](intro-to-ava/prereqs.md)
+   + [Pré-requisitos ](intro-to-ava/prereqs.md)
    + Caminhos de implementação {#implementation-paths}
       + [Visão geral](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Lado do cliente](intro-to-ava/implementation-paths/client-side-path.md)
@@ -43,8 +42,8 @@ ht-degree: 0%
       + Configurar JavaScript {#setup-javascript}
          + [Configurar o JavaScript 2.x](sdk-implement/setup/setup-javascript/set-up-js-2.md)
          + [Configurar o JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
-      + [Configurar Chromecast ](sdk-implement/setup/set-up-chromecast.md)
-      + [Configurar Roku ](sdk-implement/setup/set-up-roku.md)
+      + [Configurar Chromecast](sdk-implement/setup/set-up-chromecast.md)
+      + [Configurar Roku](sdk-implement/setup/set-up-roku.md)
    + Rastrear a reprodução do streaming de mídia {#track-av-playback}
       + [Visão geral](sdk-implement/track-av-playback/track-core-overview.md)
       + Rastrear a reprodução de streaming de mídia principal {#track-core}
@@ -92,8 +91,8 @@ ht-degree: 0%
       + [Rastrear anúncios no Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Rastrear anúncios no Roku](sdk-implement/track-ads/track-ads-roku.md)
       + Implementar metadados de anúncio padrão {#impl-std-ad-metadata}
-         + [Implementar Metadados de anúncio padrão no Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-         + [Implementar Metadados de anúncio padrão no iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+         + [Implementar Metadados de publicidade padrão no Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+         + [Implementar Metadados de publicidade padrão no iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Implementar Metadados de anúncio padrão no JavaScript {#impl-std-ad-md-js}
             + [Implementar metadados de anúncio padrão no JavaScript 2.x ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
             + [Implementar metadados de anúncio padrão no JavaScript 3.x ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
@@ -158,7 +157,7 @@ ht-degree: 0%
    + Guia {#cookbook}
       + [Guia do SDK](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [O manuseio de aplicativos é interrompido durante a reprodução](sdk-implement/cookbook/app-interrupts.md)
-      + [Resolver a ocorrência de main:play entre anúncios](sdk-implement/cookbook/fix-ad-play-ad.md)
+      + [Resolver a ocorrência de main:play entre anúncios ](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [Resumo de sessões inativas](sdk-implement/cookbook/resuming-inactive.md)
       + [Rastreamento no SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
    + Migração do Media Analytics 1.x para 2.x {#va-1x-to-2x}
