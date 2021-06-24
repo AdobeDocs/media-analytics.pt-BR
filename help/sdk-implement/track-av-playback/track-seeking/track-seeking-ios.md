@@ -1,14 +1,18 @@
 ---
-title: Busca de faixa no iOS
-description: Este tópico descreve a implementação do rastreamento de busca usando o SDK do Media no iOS.
+title: Saiba como rastrear a busca no iOS
+description: Saiba como rastrear eventos de Início da busca e Conclusão da busca usando o SDK do Media no iOS.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
 
-
-# Busca de faixa no iOS {#track-seeking-on-ios}
+# Busca de faixa no iOS{#track-seeking-on-ios}
 
 >[!IMPORTANT]
 >
