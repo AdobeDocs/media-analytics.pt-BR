@@ -1,16 +1,18 @@
 ---
-title: Parâmetros da solicitação
-description: Saiba mais sobre os parâmetros de solicitação de mídia de transmissão do Adobe Analytics.
+title: Parâmetros de solicitação da API da coleção de mídia de streaming
+description: '"Quais são os parâmetros de solicitação da API Media Collection, as chaves de solicitação e as descrições."'
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 94%
+source-wordcount: '1307'
+ht-degree: 93%
 
 ---
 
-# Parâmetros da solicitação {#request-parameters}
+# Parâmetros da solicitação{#request-parameters}
 
 ## Dados do Analytics
 
@@ -107,7 +109,7 @@ ht-degree: 94%
 | `media.qoe.framesPerSecond` | N | integer | Qualquer | O número de quadros por segundo |
 | `media.qoe.timeToStart` | N | integer | Qualquer | O tempo (em milissegundos) decorrido entre o momento em que o usuário aperta o play e o conteúdo é carregado e começa a ser reproduzido. |
 
-## Parâmetros da Lei de Privacidade do Consumidor da Califórnia (CCPA) {#ccpa-params}
+## Parâmetros da Lei de Privacidade do Consumidor da Califórnia (CCPA)  {#ccpa-params}
 
 | Chave da solicitação  | Obrigatório | Chave de Tipo de Solicitação | Definir em... |  Descrição  |
 | --- | :---: | :---: | :---: | --- |
