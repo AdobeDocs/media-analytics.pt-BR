@@ -1,14 +1,18 @@
 ---
-title: Reprodução de VOD com anúncios precedentes
-description: Um exemplo de como rastrear conteúdo de VOD que contém anúncios precedentes usando o SDK do Media.
+title: '"Reprodução de VOD com anúncios precedentes"'
+description: '"Veja um exemplo de como rastrear o conteúdo de VOD que contém anúncios precedentes usando o SDK do Media."'
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 95%
 
 ---
 
-
-# Reprodução de VOD com anúncios precedentes {#vod-playback-with-pre-roll-ads}
+# Reprodução de VOD com anúncios precedentes{#vod-playback-with-pre-roll-ads}
 
 Nesse cenário, um anúncio antes da exibição foi inserido antes do conteúdo principal. A menos que seja especificado, as chamadas de rede correspondem às chamadas presentes no cenário de [reprodução de VOD sem anúncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). As chamadas de rede ocorrem simultaneamente, mas a carga é diferente.
 
