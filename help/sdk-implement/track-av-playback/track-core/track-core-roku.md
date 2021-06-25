@@ -101,7 +101,7 @@ ht-degree: 97%
 
    * **Metadados padrão**
 
-[Implementar metadados padrão no Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [Implementar metadados padrão no Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Anexar o objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
