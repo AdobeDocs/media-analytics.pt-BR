@@ -5,10 +5,10 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 9fc75eb94603238aa85779b5f26f7b7de049dc8f
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -125,7 +125,7 @@ Conclua e registre as seguintes ações (em ordem):
 
    Para obter parâmetros de chamada e metadados, consulte [Detalhes da chamada de teste.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **Reproduzir o conteúdo principal por 10 minutos sem interrupções.** **Reprodução de conteúdo**
+1. **Reproduzir o conteúdo principal por 10 segundos sem interrupções.** **Reprodução de conteúdo**
 
    Durante a reprodução do conteúdo principal, o SDK do Media envia heartbeats (chamadas de Reprodução) para o servidor do Media Analytics a cada 10 segundos.
 
