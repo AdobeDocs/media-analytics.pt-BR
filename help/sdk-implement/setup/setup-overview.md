@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 96%
+source-wordcount: '742'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ Complete as etapas de implementação a seguir:
    |  Nome do método  |  Descrição  | Obrigatório |
    | --- | --- | :---: |
    | `getQoSObject()` | Retorna a instância `MediaObject` que contém as informações de QoS atuais. Esse método será chamado várias vezes durante uma sessão de reprodução. A implementação do player sempre deve retornar os dados de QoS mais recentes. | Sim |
-   | `getCurrentPlaybackTime()` | Retorna a posição atual do indicador de reprodução. Para rastreamento de VOD, o valor é especificado em segundos a partir do início do item de mídia. Para rastreamento LINEAR/LIVE, o valor é especificado em segundos a partir do início do programa. | Sim |
+   | `getCurrentPlaybackTime()` | Retorna a posição atual do indicador de reprodução. Para rastreamento de VOD, o valor é especificado em segundos a partir do início do item de mídia. Para rastreamento LINEAR/LIVE, o valor é especificado como o número de segundos desde a meia-noite UTC nesse dia. | Sim |
 
    >[!TIP]
    >
