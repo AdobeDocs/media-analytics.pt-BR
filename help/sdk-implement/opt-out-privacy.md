@@ -4,11 +4,11 @@ description: '"Saiba como lidar com aceitação, recusa e privacidade."'
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 Você pode decidir se uma atividade de rastreamento é permitida em um determinado dispositivo:
 
 * **Aplicativos móveis -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `AdobeMobile`. Para recusar o rastreamento, você precisa usar a biblioteca do `AdobeMobile`. Para obter mais informações sobre as configurações de recusa e privacidade da `AdobeMobile`, consulte [Configurações de recusa e privacidade](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html).
-* **Aplicativos do JavaScript/navegador -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `VisitorAPI`. Para excluir o rastreamento do, você precisa fazer a exclusão do serviço Visitor API. Para obter mais informações sobre recusa e privacidade, consulte [Serviço de Identidade da Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html)
+* **Aplicativos do JavaScript/navegador -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `VisitorAPI`. Para excluir o rastreamento do, você precisa fazer a exclusão do serviço Visitor API. Para obter mais informações sobre recusa e privacidade, consulte [Serviço de Identidade da Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR)
 * **Os aplicativos OTT (Chromecast, Roku) -** Os SDKs de OTT fornecem APIs preparadas para o Regulamento Geral sobre a Proteção de Dados (GDPR), que permitem definir sinalizadores de status `opt` para a coleta e a transmissão de dados e para recuperar as identidades armazenadas localmente.
 
    >[!NOTE]
