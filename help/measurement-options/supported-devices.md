@@ -3,8 +3,8 @@ title: Saiba mais sobre dispositivos e plataformas compatíveis
 description: '"Saiba mais sobre os principais dispositivos, como iOS, Android, dispositivos OTT e navegadores JavaScript compatíveis com o Adobe Analytics for Streaming Media."'
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 92%
@@ -35,7 +35,7 @@ A tabela abaixo lista os dispositivos e as plataformas compatíveis no momento. 
 |  | Navegadores JavaScript | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 | Aplicativo móvel |  |  |  |  |
 |  | Dispositivos iOS | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Dispositivos Android | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Dispositivos Android | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Dispositivos Windows |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
 |  | Apple TV (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
