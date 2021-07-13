@@ -4,11 +4,11 @@ description: Siga estas etapas para configurar o aplicativo SDK do Media no Andr
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 * **Obter parâmetros de configuração válidos para o SDK do Media** Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
 * **Implementar o ADBMobile para Android em seu aplicativo** 
-Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [SDK 4.x do Android para Soluções da Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
+Para obter mais informações sobre a documentação do SDK do Adobe Mobile, consulte [SDK 4.x do Android para Soluções da Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=pt-BR)
 
 * **Forneça os seguintes recursos no player de mídia:**
    * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
