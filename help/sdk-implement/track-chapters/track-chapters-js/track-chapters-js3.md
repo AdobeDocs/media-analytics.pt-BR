@@ -3,8 +3,8 @@ title: Saiba como rastrear capítulos e segmentos usando o JavaScript 3.x
 description: Saiba mais sobre como implementar o rastreamento de capítulo e segmento usando o SDK do Media em aplicativos de navegador (JS).
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 64%
