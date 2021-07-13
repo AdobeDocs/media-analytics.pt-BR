@@ -4,11 +4,11 @@ description: Siga estas etapas para configurar o aplicativo SDK do Media no Chro
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ A resposta correta é &quot;Chromecast&quot;, pelos seguintes motivos:
    * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
    * *Uma API que fornece informações sobre o player* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
-O Adobe Mobile Services fornece uma nova interface do usuário que reúne recursos de marketing móvel para aplicativos móveis de toda a Adobe Experience Cloud. Inicialmente, o Mobile Service fornece integração perfeita entre os recursos de análise e segmentação de aplicativos para as soluções do Adobe Analytics e do Adobe Target. Saiba mais pela [documentação do Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
+O Adobe Mobile Services fornece uma nova interface do usuário que reúne recursos de marketing móvel para aplicativos móveis de toda a Adobe Experience Cloud. Inicialmente, o Mobile Service fornece integração perfeita entre os recursos de análise e segmentação de aplicativos para as soluções do Adobe Analytics e do Adobe Target. Saiba mais pela [documentação do Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=pt-BR)
 
 O SDK do Chromecast 2.x para soluções da Experience Cloud permite avaliar aplicativos Chromecast criados com JavaScript, dimensionar e coletar dados de público-alvo por meio do gerenciamento de público-alvo e medir o envolvimento com o vídeo pelos heartbeats de vídeo.
 
