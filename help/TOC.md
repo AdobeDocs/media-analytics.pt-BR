@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
+source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -18,7 +18,7 @@ ht-degree: 100%
 + [Medição de streaming de mídia no Adobe Analytics](media-overview.md)
 + [Dispositivos e plataformas compatíveis](measurement-options/supported-devices.md)
 + Introdução ao streaming de mídia do Analytics {#intro-to-ava}
-   + [Pré-requisitos ](intro-to-ava/prereqs.md)
+   + [Pré-requisitos](intro-to-ava/prereqs.md)
    + Caminhos de implementação {#implementation-paths}
       + [Visão geral](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Lado do cliente](intro-to-ava/implementation-paths/client-side-path.md)
@@ -224,10 +224,12 @@ ht-degree: 100%
    + [Implementação e relatórios](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [Exemplos de rastreamento do estado do player](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
++ Recursos adicionais {#additional-resources}
+   + [Notas de versão](additional-resources/doc-updates.md)
+
 <!-- + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
-+ Recursos adicionais {#additional-resources}
-   + [Notas de versão](additional-resources/doc-updates.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+-->
