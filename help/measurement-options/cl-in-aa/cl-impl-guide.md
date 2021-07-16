@@ -1,14 +1,14 @@
 ---
 title: Explicação da implementação de link personalizado
-description: Saiba como implementar o Rastreamento de link personalizado no Streaming Media Analytics.
+description: Saiba como implementar o Rastreamento de link personalizado nas Análises de mídia de streaming.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
