@@ -1,14 +1,14 @@
 ---
 title: Modelos do Workspace de mídia
-description: Use templates do espaço de trabalho Mídia para analisar seus dados de rastreamento. Escolha modelos padrão para Aquisição ou Mídia de transmissão ou crie seus próprios modelos personalizados.
+description: Use modelos do workspace Mídia para analisar os dados de rastreamento. Escolha modelos padrão para Atração ou Mídia de streaming ou crie seus próprios modelos personalizados.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: '"Media Analytics, Noções básicas do Workspace"'
+feature: '"Noções básicas do Media Analytics, Workspace"'
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
