@@ -5,7 +5,7 @@ uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 87%
@@ -14,9 +14,11 @@ ht-degree: 87%
 
 # Rastrear buffering no iOS{#track-buffering-on-ios}
 
+As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x.
+
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento de buffer
 
@@ -31,20 +33,20 @@ ht-degree: 87%
 1. Analise os eventos de buffering de reprodução no reprodutor de mídia e, na notificação do evento de início de buffering, rastreie o buffering usando o evento`BufferStart`:
 
    ```
-   - (void)onBufferStart:(NSNotification *)notification { 
+   - (void)onBufferStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventBufferStart  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
 1. Na notificação de conclusão de buffer do reprodutor de mídia, rastreie o término do buffer com o evento`BufferComplete`:
 
    ```
-   - (void)onBufferComplete:(NSNotification *)notification { 
+   - (void)onBufferComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventBufferComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
