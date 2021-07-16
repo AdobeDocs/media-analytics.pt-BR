@@ -5,7 +5,7 @@ uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 97%
@@ -14,9 +14,11 @@ ht-degree: 97%
 
 # Visão geral{#overview}
 
+As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x.
+
 >[!IMPORTANT]
->
->As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+> 
+> Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 O rastreamento de capítulos e segmentos está disponível para capítulos ou segmentos de mídia definidos de forma personalizada. Alguns usos comuns para o rastreamento de capítulos são definir segmentos personalizados com base no conteúdo de mídia (como entradas de beisebol) ou definir segmentos de conteúdo entre ad breaks. O rastreamento de capítulos **não** é necessário para implementações de heartbeat de mídia principais.
 
@@ -64,27 +66,27 @@ O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítu
 O código de exemplo a seguir usa o SDK 2.x do JavaScript para um reprodutor de mídia HTML5. Você deve usar esse código com o código de reprodução de mídia principal.
 
 ```js
-/* Call on chapter start */ 
-if (e.type == "chapter start") { 
-    var chapterObject = MediaHeartbeat.createChapterObject("Inning 5",5,500,2500); 
-    /* Set custom context data*/ 
-    var chapterCustomMetadata = { 
-        segmentType:"Baseball Innings", 
-        segmentName:"Inning 5", 
-        segmentInfo:"Game Six" 
-    } 
+/* Call on chapter start */
+if (e.type == "chapter start") {
+    var chapterObject = MediaHeartbeat.createChapterObject("Inning 5",5,500,2500);
+    /* Set custom context data*/
+    var chapterCustomMetadata = {
+        segmentType:"Baseball Innings",
+        segmentName:"Inning 5",
+        segmentInfo:"Game Six"
+    }
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                                    chapterObject,  
-                                   chapterCustomMetadata); 
-}; 
- 
-/* Call on chapter complete */ 
-if (e.type == "chapter complete") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
-}; 
- 
-/* Call on chapter skip */ 
-if (e.type == "chapter skip") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
-}; 
+                                   chapterCustomMetadata);
+};
+
+/* Call on chapter complete */
+if (e.type == "chapter complete") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
+};
+
+/* Call on chapter skip */
+if (e.type == "chapter skip") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
+};
 ```
