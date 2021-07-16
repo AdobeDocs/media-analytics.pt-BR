@@ -7,8 +7,8 @@ feature: '"Noções básicas do Media Analytics, Reports & Analytics"'
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Exibe rapidamente as métricas de mídia por dispositivo ou país:
 
 ## Desempenho da mídia {#media-performance}
 
-Clique e arraste para ampliar, e depois passe o mouse para ver as métricas granulares da mídia específica. Clique em  ![](assets/video-overview-report-revert.png)
+Clique e arraste para ampliar, e depois passe o mouse para ver as métricas granulares da mídia específica. Clique em ![](assets/video-overview-report-revert.png)
 
 para redefinir a visualização depois da ação de zoom.
 
