@@ -4,7 +4,7 @@ description: Saiba como rastrear eventos de Início da busca e Conclusão da bus
 exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 76%
@@ -13,9 +13,11 @@ ht-degree: 76%
 
 # Busca de faixa usando o JavaScript 3.x{#track-seeking-on-javascript}
 
+As instruções a seguir fornecem orientação para a implementação em todos os SDKs 3.x.
+
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 3.x. Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de rastreamento de busca
 
