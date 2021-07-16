@@ -5,7 +5,7 @@ uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 99%
@@ -14,9 +14,11 @@ ht-degree: 99%
 
 # Visão geral{#overview}
 
+As instruções a seguir fornecem orientação para a implementação usando os SDKs 2.x.
+
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando os SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciados, anúncios concluídos e anúncios ignorados. Use a API do reprodutor de mídia para identificar eventos importantes do reprodutor e preencher as variáveis de anúncio obrigatórias e opcionais. Consulte a lista abrangente de metadados aqui: [Parâmetros de anúncios.](/help/metrics-and-metadata/ad-parameters.md)
 
@@ -109,37 +111,37 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 O código de exemplo a seguir usa o SDK 2.x do JavaScript para um reprodutor de mídia HTML5.
 
 ```js
-/* Call on ad break start */ 
- 
-if (e.type == "ad break start") { 
-    var adBreakObject = MediaHeartbeat.createAdBreakObject("mid-roll", 2, 500); 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject); 
-}; 
- 
-/* Call on ad start */ 
-if (e.type == "ad start") { 
-    var adObject = MediaHeartbeat.createAdObject("PepsiOne", "123456ab", 1, 30); 
-    /* Set custom context data */ 
-    var adCustomMetadata = { 
-        affiliate:"Sample affiliate", 
-        campaign:"Sample ad campaign", 
-        creative:"Sample creative" 
-    } 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata); 
-}; 
- 
-/* Call on ad complete */ 
-if (e.type == "ad complete") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete); 
-}; 
- 
-/* Call on ad skip */ 
-if (e.type == "ad skip") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip); 
-}; 
-     
-/* Call on ad break complete */ 
-if (e.type == "ad break complete") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
-}; 
+/* Call on ad break start */
+
+if (e.type == "ad break start") {
+    var adBreakObject = MediaHeartbeat.createAdBreakObject("mid-roll", 2, 500);
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);
+};
+
+/* Call on ad start */
+if (e.type == "ad start") {
+    var adObject = MediaHeartbeat.createAdObject("PepsiOne", "123456ab", 1, 30);
+    /* Set custom context data */
+    var adCustomMetadata = {
+        affiliate:"Sample affiliate",
+        campaign:"Sample ad campaign",
+        creative:"Sample creative"
+    }
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata);
+};
+
+/* Call on ad complete */
+if (e.type == "ad complete") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete);
+};
+
+/* Call on ad skip */
+if (e.type == "ad skip") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
+};
+
+/* Call on ad break complete */
+if (e.type == "ad break complete") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete);
+};
 ```
