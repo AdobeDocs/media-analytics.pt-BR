@@ -5,7 +5,7 @@ uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 89%
@@ -14,9 +14,11 @@ ht-degree: 89%
 
 # Rastrear capítulos e segmentos no Roku{#track-chapters-and-segments-on-roku}
 
+As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x.
+
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+> Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Implementar Metadados de publicidade padrão
 
@@ -48,9 +50,9 @@ ht-degree: 89%
 1. Se você incluir metadados personalizados para o capítulo, crie as variáveis de dados de contexto para os metadados:
 
    ```
-   chapterContextData = {} 
-   chapterContextData["seg_type"] = "seg_type" 
-   chapterContextData["seg_name"] = "seg_name" 
+   chapterContextData = {}
+   chapterContextData["seg_type"] = "seg_type"
+   chapterContextData["seg_name"] = "seg_name"
    chapterContextData["seg_info"] = "seg_info"
    ```
 
@@ -63,14 +65,14 @@ ht-degree: 89%
 1. Quando a reprodução atingir o limite final do capítulo, conforme definido pelo seu código personalizado, chame o evento `ChapterComplete` na instância `MediaHeartbeat`.
 
    ```
-   chapterContextData = {} 
+   chapterContextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_COMPLETE, chapterInfo, chapterContextData)
    ```
 
 1. Se a reprodução do capítulo não tiver sido concluída porque o usuário optou por ignorar o capítulo (por exemplo, se o usuário sair do limite do capítulo), chame o evento `ChapterSkip` na instância MediaHeartbeat.
 
    ```
-   chapterContextData = {} 
+   chapterContextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_SKIP, chapterInfo, chapterContextData)
    ```
 
