@@ -4,7 +4,7 @@ description: '"Saiba mais sobre como implementar o rastreamento de qualidade de 
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 58%
@@ -13,9 +13,11 @@ ht-degree: 58%
 
 # Rastrear a qualidade da experiência usando o JavaScript 3.x{#track-quality-of-experience-on-javascript}
 
+As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x.
+
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação em todos os SDKs 3.x. Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+>Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Implementar QOE
 
