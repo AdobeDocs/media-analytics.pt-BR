@@ -1,14 +1,14 @@
 ---
-title: 'Mídia de transmissão do Adobe no Adobe Analytics '
-description: '"Saiba mais sobre a medição de mídia de streaming mais avançada para conteúdo, áudio e anúncios. Saiba mais sobre o Adobe Analytics for Streaming Media."'
+title: 'Mídia de streaming da Adobe no Adobe Analytics '
+description: '"Saiba mais sobre a medição de mídia de streaming mais avançada para conteúdo, áudio e anúncios. Conheça o Adobe Analytics para mídia de streaming."'
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Você pode medir métricas essenciais do delivery relacionadas a QoS, como quadr
 ## Recursos {#features}
 
 Os benefícios do Adobe Analytics para streaming de mídia incluem monitoramento em tempo real, análise detalhada, insights acionáveis e oportunidades de monetização.
-* **Análise** em tempo real — Tome decisões acionáveis em tempo real utilizando métricas chave de desempenho, como inícios de mídia, em vários canais.
+* **Análise em tempo real**—Tome decisões acionáveis em tempo real, utilizando as principais métricas de desempenho, como inícios de mídia, em vários canais.
 * **Promover o engajamento**: envolva totalmente os usuários com menos eventos de buffer e entenda onde e quando os anúncios devem ser exibidos no conteúdo para fornecer uma experiência perfeita e menos intrusiva que oferece visitas repetidas.
 * **Imagem holística**: combine vários pontos de dados em todos os distribuidores de conteúdo para obter uma visão completa de todas as atividades de mídia e medir o engajamento e as visualizações/escutas em todos os canais possíveis por meio do recurso Federated Analytics.
 * **Mais granularidade**: avalie o comportamento de visualização no nível mais granular, incluindo o momento do dia do visitante individual, os visualizadores/ouvintes simultâneos por minuto e a duração média do conteúdo consumido.
@@ -36,7 +36,7 @@ Os benefícios do Adobe Analytics para streaming de mídia incluem monitoramento
 
 ## Medição de pulsação {#heartbeat}
 
-O Adobe Analytics usa &quot;pulsações&quot; para coletar métricas de vídeo. Durante a reprodução do vídeo, as pulsações são enviadas ao servidor de rastreamento de pulsação para medir o tempo de reprodução. As chamadas de pulsação são enviadas a cada dez segundos. As pulsações resultam em métricas de engajamento granulares com o vídeo e relatórios de fallout de vídeo mais precisos. O Adobe Analytics para streaming de mídia mede as pulsações usando o Adobe Launch com a extensão do Media Analytics, o SDK de mídia e a API de coleção de mídia. Os componentes `AppMeasurement` e `VisitorID` são usados para receber dados de vídeo.
+O Adobe Analytics usa &quot;pulsações&quot; para coletar métricas de vídeo. Durante a reprodução do vídeo, as pulsações são enviadas ao servidor de rastreamento de pulsação para medir o tempo de reprodução. As chamadas de pulsação são enviadas a cada dez segundos. As pulsações resultam em métricas de envolvimento granulares com o vídeo e relatórios de fallout de vídeo mais precisos. O Adobe Analytics para streaming de mídia mede as pulsações usando o Adobe Launch com a extensão do Media Analytics, o SDK de mídia e a API de coleção de mídia. Os componentes `AppMeasurement` e `VisitorID` são usados para receber dados de vídeo.
 
 Usar pulsações, o Adobe Analytics para streaming de mídia oferece os seguintes benefícios:
 
