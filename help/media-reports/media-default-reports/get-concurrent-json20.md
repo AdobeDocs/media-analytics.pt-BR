@@ -7,8 +7,8 @@ feature: '"Noções básicas do Media Analytics, Reports & Analytics"'
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
