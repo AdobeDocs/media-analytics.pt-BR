@@ -1,18 +1,18 @@
 ---
-title: Saiba mais sobre pré-requisitos para mídia de transmissão
-description: Introdução à mídia de streaming do Adobe Analytics. Saiba o que é necessário implementar o Adobe Analytics para mídia de transmissão.
+title: Saiba mais sobre pré-requisitos para mídia de streaming
+description: Introdução à mídia de streaming do Adobe Analytics. Saiba o que é necessário para implementar o Adobe Analytics para mídia de streaming.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: '"Media Analytics, Requisitos do sistema"'
+feature: '"Media Analytics, Requisitos de sistema"'
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Pré-requisitos {#prerequisites}
+# Pré-requisitos{#prerequisites}
 
 ## Decisões {#decision}
 
