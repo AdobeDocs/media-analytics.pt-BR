@@ -4,7 +4,7 @@ description: Saiba como implementar o rastreamento principal usando o SDK do Med
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 95%
@@ -13,8 +13,10 @@ ht-degree: 95%
 
 # Rastrear a reprodução principal usando o JavaScript 3.x{#track-core-playback-on-javascript}
 
+Esta documentação abrange o rastreamento na versão 3.x do SDK.
+
 >[!IMPORTANT]
->Esta documentação abrange o rastreamento na versão 3.x do SDK. Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md)
+> Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md)
 
 1. **Configuração de rastreamento inicial**
 
