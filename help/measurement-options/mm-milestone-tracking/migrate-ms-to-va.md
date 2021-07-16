@@ -1,14 +1,14 @@
 ---
 title: Saiba como migrar do Marco para o Media Analytics
-description: Saiba como alterar variáveis de Marco para Métricas do Media Analytics e métodos do módulo de Marco para Sintaxe do Media Analytics.
+description: Saiba como alterar variáveis de Marco para Métricas do Media Analytics e métodos do módulo de Marco para sintaxe do Media Analytics.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
