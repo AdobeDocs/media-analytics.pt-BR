@@ -5,7 +5,7 @@ uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 88%
@@ -14,9 +14,11 @@ ht-degree: 88%
 
 # Rastrear capítulos e segmentos no iOS{#track-chapters-and-segments-on-ios}
 
+As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x.
+
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando SDKs 2.x. Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+> Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
@@ -37,48 +39,48 @@ ht-degree: 88%
 
    ```
    id chapterObject =  
-     [ADBMediaHeartbeat createChapterObjectWithName:[CHAPTER_NAME] 
-                        position:[POSITION] 
-                        length:[LENGTH] 
+     [ADBMediaHeartbeat createChapterObjectWithName:[CHAPTER_NAME]
+                        position:[POSITION]
+                        length:[LENGTH]
                         startTime:[START_TIME]];
    ```
 
 1. Se você incluir metadados personalizados para o capítulo, crie as variáveis de dados de contexto para os metadados:
 
    ```
-   NSMutableDictionary *chapterDictionary = [[NSMutableDictionary alloc] init]; 
-   [chapterDictionary setObject:@"Sample segment type" forKey:@"segmentType"]; 
-   [chapterDictionary setObject:@"Sample segment name" forKey:@"segmentName"]; 
+   NSMutableDictionary *chapterDictionary = [[NSMutableDictionary alloc] init];
+   [chapterDictionary setObject:@"Sample segment type" forKey:@"segmentType"];
+   [chapterDictionary setObject:@"Sample segment name" forKey:@"segmentName"];
    [chapterDictionary setObject:@"Sample segment info" forKey:@"segmentInfo"];
    ```
 
 1. Para começar a rastrear a reprodução do capítulo, chame o evento `ChapterStart` na instância `MediaHeartbeat`:
 
    ```
-   - (void)onChapterStart:(NSNotification *)notification { 
+   - (void)onChapterStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterStart  
                         mediaObject:chapterObject     
-                        data:chapterDictionary]; 
+                        data:chapterDictionary];
    }
    ```
 
 1. Quando a reprodução atingir o limite final do capítulo, conforme definido pelo seu código personalizado, chame o evento `ChapterComplete` na instância `MediaHeartbeat`:
 
    ```
-   - (void)onChapterComplete:(NSNotification *)notification { 
+   - (void)onChapterComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
 1. Se a reprodução do capítulo não tiver sido concluída porque o usuário optou por ignorar o capítulo (por exemplo, se o usuário sair do limite do capítulo), chame o evento `ChapterSkip` na instância MediaHeartbeat:
 
    ```
-   - (void)onChapterSkip:(NSNotification *)notification { 
+   - (void)onChapterSkip:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterSkip  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
