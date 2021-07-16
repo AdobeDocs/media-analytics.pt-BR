@@ -5,7 +5,7 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 95%
@@ -14,8 +14,10 @@ ht-degree: 95%
 
 # Rastreamento da reprodução principal no iOS{#track-core-playback-on-ios}
 
+Esta documentação abrange o rastreamento na versão 2.x do SDK.
+
 >[!IMPORTANT]
->Esta documentação abrange o rastreamento na versão 2.x do SDK. Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
+>Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/sdk-implement/download-sdks.md).
 
 1. **Configuração de rastreamento inicial**
 
@@ -53,10 +55,10 @@ ht-degree: 95%
 
    ```
    ADBMediaObject *mediaObject =  
-     [ADBMediaHeartbeat createMediaObjectWithName:<MEDIA_NAME> 
-                                          mediaId:<MEDIA_ID> 
+     [ADBMediaHeartbeat createMediaObjectWithName:<MEDIA_NAME>
+                                          mediaId:<MEDIA_ID>
                                            length:<MEDIA_LENGTH>                       
-                                       streamType:<STREAM_TYPE> 
+                                       streamType:<STREAM_TYPE>
                                         mediaType: <MEDIA_TYPE>];
    ```
 
@@ -81,8 +83,8 @@ ht-degree: 95%
       Crie um objeto variável para as variáveis personalizadas e preencha com os dados deste vídeo. Por exemplo:
 
       ```
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"]; 
+      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
       [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
       ```
 
@@ -96,9 +98,9 @@ ht-degree: 95%
    >O segundo valor é o nome de objeto dos metadados de vídeo personalizados, criado na etapa 2.
 
    ```
-   - (void)onMainVideoLoaded:(NSNotification *)notification { 
-   //    [_mediaHeartbeat trackSessionStart:mediaObject data:nil]; 
-       [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata]; 
+   - (void)onMainVideoLoaded:(NSNotification *)notification {
+   //    [_mediaHeartbeat trackSessionStart:mediaObject data:nil];
+       [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata];
    }
    ```
 
@@ -115,8 +117,8 @@ ht-degree: 95%
    Identifique o evento no reprodutor de vídeo a partir do início da reprodução, onde o primeiro quadro do vídeo é renderizado na tela, e chame `trackPlay`.
 
    ```
-   - (void)onVideoPlay:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPlay]; 
+   - (void)onVideoPlay:(NSNotification *)notification {
+       [_mediaHeartbeat trackPlay];
    }
    ```
 
@@ -125,8 +127,8 @@ ht-degree: 95%
    Identifique o evento no reprodutor de vídeo para a conclusão da reprodução, onde o usuário assistiu ao conteúdo até o fim, e chame `trackComplete`.
 
    ```
-   - (void)onVideoComplete:(NSNotification *)notification { 
-       [_mediaHeartbeat trackComplete]; 
+   - (void)onVideoComplete:(NSNotification *)notification {
+       [_mediaHeartbeat trackComplete];
    }
    ```
 
@@ -135,8 +137,8 @@ ht-degree: 95%
    Identifique o evento no reprodutor de vídeo para o descarregamento/encerramento da reprodução, onde o usuário fecha o vídeo, e/ou ele é concluído e descarregado, e chame `trackSessionEnd`.
 
    ```
-   - void)onMainVideoUnloaded:(NSNotification *)notification { 
-       [_mediaHeartbeat trackSessionEnd]; 
+   - void)onMainVideoUnloaded:(NSNotification *)notification {
+       [_mediaHeartbeat trackSessionEnd];
    }
    ```
 
@@ -149,8 +151,8 @@ ht-degree: 95%
    Identifique o evento no reprodutor de vídeo para vídeos pausados e chame `trackPause`:
 
    ```
-   - (void)onVideoPause:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPause]; 
+   - (void)onVideoPause:(NSNotification *)notification {
+       [_mediaHeartbeat trackPause];
    }
    ```
 
@@ -166,8 +168,8 @@ ht-degree: 95%
 1. Identifique o evento do reprodutor para reprodução e/ou continuação do vídeo a partir da pausa e chame `trackPlay`:
 
    ```
-   - (void)onVideoPlay:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPlay]; 
+   - (void)onVideoPlay:(NSNotification *)notification {
+       [_mediaHeartbeat trackPlay];
    }
    ```
 
