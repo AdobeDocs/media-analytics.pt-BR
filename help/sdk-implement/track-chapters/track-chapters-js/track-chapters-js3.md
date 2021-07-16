@@ -4,7 +4,7 @@ description: Saiba mais sobre como implementar o rastreamento de capítulo e seg
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 64%
@@ -13,9 +13,11 @@ ht-degree: 64%
 
 # Rastrear capítulos e segmentos usando o JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
+As instruções a seguir fornecem orientação para a implementação usando SDKs 3.x.
+
 >[!IMPORTANT]
 >
->As instruções a seguir fornecem orientação para a implementação usando SDKs 3.x. Se estiver implementando uma versão anterior do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
+> Se estiver implementando uma versão anterior do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
