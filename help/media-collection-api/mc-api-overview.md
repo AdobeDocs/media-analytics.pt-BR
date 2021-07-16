@@ -1,15 +1,15 @@
 ---
 seo-title: Visão geral
-title: Visão geral da API da coleção de mídia de streaming
-description: Saiba mais sobre a API da coleção de mídia e como o reprodutor pode rastrear eventos de áudio e vídeo usando chamadas RESTful HTTP.
+title: Visão geral da API de coleção de mídia de streaming
+description: Saiba mais sobre a API de coleção de mídia e como o reprodutor pode rastrear eventos de áudio e vídeo usando chamadas RESTful HTTP.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
