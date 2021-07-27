@@ -6,15 +6,15 @@ exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '692'
+ht-degree: 100%
 
 ---
 
 # Migração do Marco para o Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## Visão geral {#overview}
+## Visão geral  {#overview}
 
 Os conceitos principais de avaliação de vídeo são os mesmos para o Milestone e o Media Analytics, que está pegando eventos do player de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores de player e mapeá-los para variáveis de análise. A solução do Media Analytics surgiu do Milestone, mas muitos dos métodos e métricas são os mesmos, no entanto, a abordagem de configuração e o código mudaram bastante. Deve ser possível atualizar o código de evento do player para apontar para os novos métodos do Media Analytics. Consulte [Visão geral do SDK](/help/sdk-implement/setup/setup-overview.md) e [Visão geral do rastreamento](/help/sdk-implement/track-av-playback/track-core-overview.md) para obter mais detalhes sobre a implementação do Media Analytics.
 
@@ -44,7 +44,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Variáveis opcionais
 
-| Marco | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
+| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/D | Não fornecemos mais mapeamentos pré-criados de player. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/D | Não fornecemos mais mapeamentos pré-criados de player. |
@@ -59,7 +59,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Variáveis de rastreamento de anúncios
 
-| Marco | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
+| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/D | O Media Analytics está definido para 10 segundos para conteúdo e 1 segundo para anúncios. Nenhuma outra opção está disponível. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/D | Os marcadores de progresso não são fornecidos por padrão para anúncios. Use as métricas calculadas para criar marcadores de progresso de anúncios. |
@@ -69,7 +69,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e do Me
 
 ### Métodos do módulo de mídia
 
-| Marco | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
+| Milestone | Sintaxe do Milestone | Media Analytics | Sintaxe do Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`: (obrigatório) o nome do vídeo conforme você quer que ele seja exibido nos relatórios de vídeo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
