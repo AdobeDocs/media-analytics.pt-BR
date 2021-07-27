@@ -6,15 +6,15 @@ exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '598'
+ht-degree: 100%
 
 ---
 
 # Migração do Marco para Link personalizado{#migrating-from-milestone-to-custom-link}
 
-## Visão geral {#overview}
+## Visão geral  {#overview}
 
 Os principais conceitos de medição de vídeo são os mesmos para o rastreamento de Marco e Link personalizado, que estão realizando eventos do reprodutor de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores de reprodutores e mapeá-los para variáveis&#x200B;de análise. A abordagem de Link personalizado deve ser considerada como uma diminuição e simplificação da implementação e dos dados coletados. Com a solução de Link personalizado, nenhuma variável ou método é predefinido para a medição de vídeo, isso requer uma configuração personalizada completa. Deve ser possível atualizar o código de evento do reprodutor para apontar as chamadas de rastreamento de link personalizado para eventos básicos do reprodutor, como início e conclusão. Consulte [Guia de implementação de link personalizado](/help/measurement-options/cl-in-aa/cl-impl-guide.md) para obter mais informações.
 
@@ -43,7 +43,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 
 ### Variáveis opcionais
 
-| Marco | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
+| Milestone | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/D | Não disponível. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/D | Não disponível. |
@@ -58,7 +58,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 
 ### Variáveis de rastreamento de anúncios
 
-| Marco | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
+| Milestone | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/D | Não disponível. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/D | Não disponível. |
@@ -68,7 +68,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 
 ### Métodos do módulo de mídia
 
-| Marco | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
+| Milestone | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | `s.tl()` | `s.linkTrackVars` <br> `  = 'events,` <br> `     prop10,` <br> `     eVar10,` <br> `     eVar12,` <br> `     eVar15,` <br> `     contextData.video.name,` <br> `     contextData.video.view';` <br> `s.linkTrackEvents ` <br> `  = 'event2';` <br> `s.prop10` <br> `   = mediaName;` <br> `s.eVar10` <br> `  = mediaName;` <br> `s.eVar12` <br> `  = "video";` <br> `s.eVar15` <br> `  = mediaPlayerName;` <br> `s.events` <br> `  = 'event2';` <br> `s.contextData['video.name']` <br> `  = mediaName;` <br> `s.contextData['video.view']` <br> `  = 'true';` <br> `s.tl(this,'o','Video Start');` |
 | mediaName | `mediaName`: (obrigatório) o nome do vídeo conforme você quer que ele seja exibido nos relatórios de vídeo. | Definir eVar ou variável dos dados de contexto na chamada de link. | `s.prop10 = mediaName;` <br> `s.eVar10 = mediaName;` <br> `s.contextData['video.name']` <br> `  = mediaName;` |
