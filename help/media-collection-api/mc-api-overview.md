@@ -1,5 +1,5 @@
 ---
-seo-title: Visão geral
+seo-title: 'Visão geral '
 title: Visão geral da API de coleção de mídia de streaming
 description: Saiba mais sobre a API de coleção de mídia e como o reprodutor pode rastrear eventos de áudio e vídeo usando chamadas RESTful HTTP.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
@@ -7,13 +7,13 @@ exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '357'
+ht-degree: 100%
 
 ---
 
-# Visão geral{#overview}
+# Visão geral {#overview}
 
 A API Media Collection é a alternativa RESTful da Adobe para o SDK do Media no lado do cliente. Com a API Media Collection, o reprodutor pode rastrear eventos de áudio e vídeo usando chamadas RESTful HTTP.
 
