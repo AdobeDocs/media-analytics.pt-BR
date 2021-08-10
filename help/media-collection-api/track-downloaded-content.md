@@ -5,7 +5,7 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
+source-git-commit: 8da6889ecb50edd12b7ea4139500c35b923830f2
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 87%
@@ -105,9 +105,13 @@ POST /api/v1/downloaded HTTP/1.1
 }]
 ```
 
-#### Aviso de desaprovação
+### Aviso de desaprovação
 
-Anteriormente, o conteúdo baixado também podia ser enviado para a API `/api/v1/sessions`. Essa maneira de rastrear o conteúdo baixado é **obsoleto** e será **removido** no futuro.
+>[!IMPORTANT]
+>
+>Anteriormente, o conteúdo baixado também podia ser enviado para a API `/api/v1/sessions`. Essa maneira de rastrear o conteúdo baixado é **obsoleto** e será **removido** no futuro.
+
+
 A API `/api/v1/sessions` aceitará apenas eventos de inicialização de sessão.
 Ao usar a nova API, o sinalizador `media.downloaded` obrigatório anteriormente não é mais necessário.
 É altamente recomendável usar a API `/api/v1/downloaded` para novas implementações de conteúdo baixadas, bem como atualizar as implementações existentes que dependem da API antiga.
