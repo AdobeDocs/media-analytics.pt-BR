@@ -5,16 +5,16 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 87%
 
 ---
 
 # Rastrear o conteúdo baixado{#track-downloaded-content}
 
-## Visão geral {#overview}
+## Visão geral  {#overview}
 
 O recurso Conteúdo baixado tem a capacidade de rastrear o consumo de mídia enquanto o usuário está offline. Por exemplo, um usuário baixa e instala um aplicativo em um dispositivo móvel e, em seguida, usa o aplicativo para baixar conteúdo no armazenamento local no dispositivo. Para rastrear esses dados baixados, a Adobe desenvolveu o recurso Conteúdo baixado. Com esse recurso, quando o usuário reproduz o conteúdo do armazenamento de um dispositivo, os dados de rastreamento são armazenados no dispositivo, independentemente da conectividade dele. Quando o usuário finaliza a sessão de reprodução e o dispositivo volta ao modo online, as informações de rastreamento armazenadas são enviadas ao back-end da API Media Collection, dentro de uma única carga. As informações de rastreamento armazenadas são processadas e relatadas como de costume na API de coleta de mídia.
 
@@ -61,13 +61,11 @@ Ao calcular as chamadas de início/fechamento do Analytics para o cenário de co
 
 ## Comparação de sessões de amostra {#sample-session-comparison}
 
-```
-[url]/api/v1/sessions
-```
-
 ### Conteúdo online
 
 ```
+POST /api/v1/sessions HTTP/1.1
+
 {
   eventType: "sessionStart",
   playerTime: {
@@ -82,13 +80,49 @@ Ao calcular as chamadas de início/fechamento do Analytics para o cenário de co
 ### Conteúdo baixado
 
 ```
+POST /api/v1/downloaded HTTP/1.1
+
 [{
     eventType: "sessionStart",
     playerTime:{
       playhead: 0,
-      ts: 1529997923478},  
+      ts: 1529997923478
+    },  
+    params:{...},
+    customMetadata:{},  
+    qoeData:{}
+},
+    {eventType: "play", playerTime:
+        {playhead: 0,  ts: 1529997928174}},
+    {eventType: "ping", playerTime:
+        {playhead: 10, ts: 1529997937503}},
+    {eventType: "ping", playerTime:
+        {playhead: 20, ts: 1529997947533}},
+    {eventType: "ping", playerTime:
+        {playhead: 30, ts: 1529997957545},},
+    {eventType: "sessionComplete", playerTime:
+        {playhead: 35, ts: 1529997960559}
+}]
+```
+
+#### Aviso de desaprovação
+
+Anteriormente, o conteúdo baixado também podia ser enviado para a API `/api/v1/sessions`. Essa maneira de rastrear o conteúdo baixado é **obsoleto** e será **removido** no futuro.
+A API `/api/v1/sessions` aceitará apenas eventos de inicialização de sessão.
+Ao usar a nova API, o sinalizador `media.downloaded` obrigatório anteriormente não é mais necessário.
+É altamente recomendável usar a API `/api/v1/downloaded` para novas implementações de conteúdo baixadas, bem como atualizar as implementações existentes que dependem da API antiga.
+
+
+```
+POST /api/v1/sessions HTTP/1.1
+[{
+    eventType: "sessionStart",
+    playerTime:{
+      playhead: 0,
+      ts: 1529997923478
+    },
     params:{
-        "media.downloaded": true
+        "media.downloaded": true,
         ...
     },
     customMetadata:{},  
