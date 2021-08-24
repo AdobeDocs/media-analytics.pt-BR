@@ -4,10 +4,10 @@ description: Saiba mais sobre os caminhos de implementação de transmissão de 
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,15 +17,15 @@ Para cada caminho de implementação, os clientes precisam entrar em contato com
 
 * **Adobe Launch com a extensão do Adobe Media Analytics**
 
-   O Adobe Launch é a solução de gerenciamento de tags de última geração da Adobe. O Launch oferece uma forma simples de implantar e gerenciar todas as tags de análise, marketing e anúncios necessárias para enriquecer as experiências de clientes relevantes. Para criar e manter suas próprias integrações com o Launch, use extensões. Uma extensão é um pacote de JavaScript, HTML e CSS que estende a funcionalidade do cliente e da interface do usuário do Launch. Para obter mais informações, consulte o [Guia do usuário da Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=pt-BR)
+   O Adobe Launch é a solução de gerenciamento de tags de última geração da Adobe. O Launch oferece uma forma simples de implantar e gerenciar todas as tags de análise, marketing e anúncios necessárias para enriquecer as experiências de clientes relevantes. Para criar e manter suas próprias integrações com o Launch, use extensões. Uma extensão é um pacote de JavaScript, HTML e CSS que estende a funcionalidade do cliente e da interface do usuário do Launch. Para obter mais informações, consulte o [Guia do usuário da Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 
    A extensão do Adobe Media Analytics (MA) adiciona o principal SDK de mídia JavaScript (SDK do Media 2.x) para áudio e vídeo. Esta extensão fornece a funcionalidade necessária para adicionar a instância do rastreador `MediaHeartbeat` a um site ou projeto do Launch.
 
    O Adobe Launch com a extensão do Media Analytics exige o seguinte:
    * Você deve ser um cliente da Adobe Experience Cloud.
    * Você deve implantar o código de incorporação do Launch ou DTM nas páginas da Web.
-   * [Extensão do Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html?lang=pt-BR)
-   * [Extensão do Experience Cloud ID](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html?lang=pt-BR)
+   * [Extensão do Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)
+   * [Extensão do Experience Cloud ID](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
 
 
 * **Lado do cliente -** Estas são integrações exclusivas do Media Analytics. Você pode escolher o SDK do Video Heartbeat e/ou as integrações da API da coleção do Media. Esse caminho pode ser usado em qualquer player de vídeo, incluindo players de clientes e/ou de OVP, como Brightcove, Ooyala, thePlatform e assim por diante.
