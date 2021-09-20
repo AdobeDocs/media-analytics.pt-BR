@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 97%
+source-wordcount: '729'
+ht-degree: 90%
 
 ---
 
@@ -103,7 +103,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
    * **Metadados padrão**
 
-      [Implementar metadados padrão no Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Implementar metadados padrão no Roku ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Anexar o objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
@@ -141,6 +141,14 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
    ```
    ADBMobile().mediaTrackPlay()
+   ```
+
+1. **Atualizar valor do indicador de reprodução**
+
+   Quando alterações no indicador de reprodução de mídia notificam o SDK, chamando a API `mediaUpdatePlayhead`. Para vídeo sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. Para transmissão ao vivo, o valor é especificado como o número de segundos desde a meia-noite UTC nesse dia.
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **Rastrear a conclusão da reprodução**
