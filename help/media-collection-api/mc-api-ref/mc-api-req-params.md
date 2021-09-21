@@ -5,9 +5,9 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: d8b10249c542d2875cba4916e4a2c7942c5589c4
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1329'
 ht-degree: 93%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 93%
 
 | Chave da solicitação  | Obrigatório | Chave de Tipo de Solicitação | Definir em... |  Descrição  |
 | --- | :---: | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | integer | Qualquer | A taxa de bits da transmissão |
+| `media.qoe.bitrate` | N | integer | Qualquer | A taxa média de bits (em bps). A taxa média de bits é calculada como uma média ponderada de todos os valores de taxa de bits relacionados à duração da reprodução ocorridos durante a sessão de reprodução. |
 | `media.qoe.droppedFrames` | N | integer | Qualquer | O número de quadros soltos na transmissão |
 | `media.qoe.framesPerSecond` | N | integer | Qualquer | O número de quadros por segundo |
 | `media.qoe.timeToStart` | N | integer | Qualquer | O tempo (em milissegundos) decorrido entre o momento em que o usuário aperta o play e o conteúdo é carregado e começa a ser reproduzido. |
