@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
-workflow-type: ht
-source-wordcount: '829'
-ht-degree: 100%
+source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 99%
 
 ---
 
@@ -215,6 +215,7 @@ ht-degree: 100%
       + [Relatório de visualizadores simultâneos de mídia](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Painéis do Media Workspace {#media-workspace-panels}
       + [Painel de visualizadores simultâneos de mídia](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+      + [Painel Tempo gasto com a reprodução da mídia](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [Modelos do Workspace de mídia](media-reports/media-workspace-templates.md)
    + [Obter dados de visualizadores simultâneos por meio da API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Rastrear o conteúdo baixado](media-collection-api/track-downloaded-content.md)
@@ -231,5 +232,5 @@ ht-degree: 100%
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
 -->
