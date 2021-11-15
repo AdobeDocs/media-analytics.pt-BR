@@ -1,14 +1,14 @@
 ---
-title: Como configurar o SDK do Media usando o JavaScript 2.x
-description: Siga estas etapas para configurar o aplicativo SDK do Media no JavaScript 2.x.
+title: Como configurar o SDK de mídia usando o JavaScript 2.x
+description: Siga estas etapas para configurar o aplicativo do SDK de mídia no JavaScript 2.x.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '401'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
