@@ -1,24 +1,24 @@
 ---
-title: Obter dados de relatório JSON do tempo de reprodução de mídia gasto com APIs do Analytics 2.0
-description: Saiba como obter dados de relatório do tempo gasto na reprodução de mídia usando as APIs do Analytics 2.0. Visualize uma solicitação e uma resposta de exemplo.
+title: 'Obter dados de relatório JSON de tempo gasto com a reprodução de mídia com as APIs do Analytics 2.0 '
+description: Saiba como obter dados de relatório de tempo gasto com a reprodução de mídia usando as APIs do Analytics 2.0. Visualize uma solicitação e uma resposta de exemplo.
 uuid: null
 exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
-# Obter dados de relatório JSON do tempo de reprodução de mídia gasto com APIs do Analytics 2.0{#get-media-playback-time-spent-json-report-data}
+# Obter dados de relatório JSON de tempo gasto com a reprodução de mídia com as APIs do Analytics 2.0 {#get-media-playback-time-spent-json-report-data}
 
-Você pode obter dados de relatório do tempo gasto na reprodução de mídia usando as [_*APIs do Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+É possível obter dados de relatório de tempo gasto com a reprodução de mídia usando as [_*APIs do Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filtre os dados usando qualquer segmento criado na interface do usuário. Para filtrar por uma ID de conteúdo específica, crie um novo segmento.
-1. Defina `elements` -> `id` no corpo da solicitação para `metrics/playback_time_spent_seconds` ou `metrics/playback_time_spent_minutes`, dependendo se deseja a saída em segundos ou minutos.
+1. Defina os `elements` -> `id` no corpo da solicitação como `metrics/playback_time_spent_seconds` ou `metrics/playback_time_spent_minutes` dependendo se você deseja a saída em segundos ou minutos.
 1. Solicite uma quantidade suficiente de dados.
 
    * O intervalo de dados especificado no relatório reúne todos os dados do visualizador simultâneo _no momento em que a sessão de vídeo terminar._
