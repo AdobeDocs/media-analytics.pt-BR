@@ -1,14 +1,14 @@
 ---
-title: Como configurar o SDK do Media no Android
-description: Siga estas etapas para configurar o aplicativo SDK do Media no Android.
+title: Como configurar o SDK de mídia no Android
+description: Siga estas etapas para configurar o aplicativo do SDK de mídia no Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
