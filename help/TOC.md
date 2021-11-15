@@ -6,9 +6,9 @@ breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
 source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -199,10 +199,10 @@ ht-degree: 99%
    + [Atribuição de fluxo de mídia](media-analytics-cookbook/media-dimensions.md)
 + Métricas e metadados {#metrics-and-metadata}
    + [Parâmetros de streaming de mídia](metrics-and-metadata/audio-video-parameters.md)
-   + [Parâmetros de anúncio](metrics-and-metadata/ad-parameters.md)
-   + [Parâmetros de capítulo](metrics-and-metadata/chapter-parameters.md)
-   + [Parâmetros de estado do player](metrics-and-metadata/player-state-parameters.md)
-   + [Parâmetros de qualidade](metrics-and-metadata/quality-parameters.md)
+   + [Parâmetros de anúncio ](metrics-and-metadata/ad-parameters.md)
+   + [Parâmetros de capítulo ](metrics-and-metadata/chapter-parameters.md)
+   + [Parâmetros de estado do player ](metrics-and-metadata/player-state-parameters.md)
+   + [Parâmetros de qualidade ](metrics-and-metadata/quality-parameters.md)
    + [Segmentos](metrics-and-metadata/segments.md)
    + [Métricas calculadas](metrics-and-metadata/calculated-metrics.md)
 + Relatórios e análise {#media-reports}
@@ -216,9 +216,9 @@ ht-degree: 99%
    + Painéis do Media Workspace {#media-workspace-panels}
       + [Painel de visualizadores simultâneos de mídia](media-reports/media-workspace-panels/media-concurrent-viewers.md)
       + [Painel Tempo gasto com a reprodução da mídia](media-reports/media-workspace-panels/media-playback-time-spent.md)
-   + [Modelos do Workspace de mídia](media-reports/media-workspace-templates.md)
+   + [Modelos do Media Workspace](media-reports/media-workspace-templates.md)
    + [Obter dados de visualizadores simultâneos por meio da API](media-reports/media-default-reports/get-concurrent-json20.md)
-   + [Obter dados de tempo de reprodução de mídia por API](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
+   + [Obter dados de Tempo gasto com a reprodução da mídia por meio da API](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
 + [Rastrear o conteúdo baixado](media-collection-api/track-downloaded-content.md)
 + Rastreamento do estado do player {#player-state-tracking}
    + [Visão geral ](sdk-implement/player-state-tracking/player-state-overview.md)
