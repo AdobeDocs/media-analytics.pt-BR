@@ -155,8 +155,8 @@ O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativo
    **PrivacyStatus**
 |  Constante   | Descrição | 
 | --- | --- | 
-| `PRIVACY_STATUS_OPT_IN` | Constante a ser transmitida ao chamar setPrivacyStatus para aceitação. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`
-| | `PRIVACY_STATUS_OPT_OUT` | Constante a ser transmitida ao chamar setPrivacyStatus para recusa. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+| `PRIVACY_STATUS_OPT_IN` | Constante a ser transmitida ao chamar setPrivacyStatus para aceitação. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+| `PRIVACY_STATUS_OPT_OUT` | Constante a ser transmitida ao chamar setPrivacyStatus para recusa. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
    <br/>
 
