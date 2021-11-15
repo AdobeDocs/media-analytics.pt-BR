@@ -1,13 +1,13 @@
 ---
-title: Como configurar o SDK do Media usando o JavaScript 3.x
-description: Siga estas etapas para configurar o aplicativo SDK do Media no JavaScript 3.x.
+title: Como configurar o SDK de mídia usando o JavaScript 3.x
+description: Siga estas etapas para configurar o aplicativo do SDK de mídia no JavaScript 3.x.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 92%
 * **Obter parâmetros de configuração válidos**
 Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do Analytics.
 * **Implementar `AppMeasurement` e `Experience Cloud Identity Service` para JavaScript no aplicativo de mídia**
-Para obter mais informações, consulte [Implementação do Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Implementação do Experience Cloud Identity  Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
+Para obter mais informações, consulte [Implementação do Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Implementação do Experience Cloud Identity  Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=pt-BR).
 
 * **Forneça os seguintes recursos no player de mídia:**
 
-   * *Uma API para assinar eventos do player* - O Media SDK exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
+   * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
    * *Uma API que fornece informações sobre o player* - inclui informações sobre mídia, anúncios e capítulos reproduzidos no momento.
 
 1. Adicione a biblioteca [baixada](/help/sdk-implement/download-sdks.md#download-3x-sdks) ao projeto. Para conveniência, crie referências locais para as classes.
