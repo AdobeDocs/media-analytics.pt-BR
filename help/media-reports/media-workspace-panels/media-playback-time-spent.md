@@ -5,15 +5,15 @@ exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Tempo gasto com a reprodução da mídia {#media-playback-time-spent}
 
-A análise do tempo gasto com a reprodução permite compreender onde ocorreram picos de simultaneidade ou onde ocorreram quedas. O tempo gasto com a reprodução de mídia fornece informações importantes sobre a qualidade do conteúdo, o engajamento do visualizador e como o conteúdo afeta a exibição ao longo do tempo. O recurso Tempo gasto com a reprodução da mídia ajuda na solução de problemas ou no planejamento de volume ou escala.
+A análise do tempo gasto com a reprodução permite compreender onde ocorreram picos de simultaneidade ou onde ocorreram quedas. O tempo gasto com a reprodução da mídia fornece insights valiosos sobre a qualidade do conteúdo, o envolvimento do visualizador e como o conteúdo afeta as visualizações ao longo do tempo. O recurso Tempo gasto com a reprodução da mídia ajuda na solução de problemas ou no planejamento de volume ou escala.
 
 ## Painel Tempo gasto com a reprodução da mídia no Analysis Workspace
 
