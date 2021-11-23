@@ -1,23 +1,24 @@
 ---
-title: '"Migração do SDK do Media independente para o Adobe Launch - iOS"'
-description: Saiba como migrar do SDK do Media para o Launch para iOS.
+title: „Migração do SDK de mídia independente para o Adobe Launch - iOS“
+description: Saiba como migrar do SDK de mídia para o Launch para iOS.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Migração do SDK do Media independente para o Adobe Launch - IOS
+# Migração do SDK do Media independente para o Adobe Launch - iOS
 
 ## Configuração
 
 ### SDK do Media independente
 
-No SDK do Media independente, é possível configurar o rastreamento no aplicativo e transmiti-lo para o SDK ao criar o rastreador.
+No SDK de mídia independente, você pode configurar o rastreamento no aplicativo
+e transmiti-lo para o SDK ao criar o rastreador.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config =
