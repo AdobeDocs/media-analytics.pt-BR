@@ -4,10 +4,10 @@ description: “Saiba como usar o painel Tempo gasto com a reprodução da mídi
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: d5769f3eed3f0c3770e427420025ff624e775f9f
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ A análise do tempo gasto com a reprodução permite compreender onde ocorreram 
 No Analysis Workspace, o Tempo gasto com a reprodução é a quantidade de tempo gasto visualizando os fluxos de mídia em um momento específico e inclui os períodos de pausa, buffer e tempo para iniciar. Com o Tempo gasto com a reprodução da mídia, você pode dividir a duração da reprodução em intervalos de tempo diferentes, como 5 minutos, 15 minutos, 30 minutos ou 1 hora.
 
 
-O Tempo gasto com a reprodução da mídia ajuda na análise da reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar. Para acessar o painel Tempo gasto com a reprodução da mídia, navegue até um conjunto de relatórios com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace. [Saiba mais...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html?lang=pt-BR)
+O Tempo gasto com a reprodução da mídia ajuda na análise da reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar. Para acessar o painel Tempo gasto com a reprodução da mídia, navegue até um conjunto de relatórios com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace. [Saiba mais...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
