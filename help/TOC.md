@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
-workflow-type: ht
-source-wordcount: '840'
+source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
+workflow-type: tm+mt
+source-wordcount: '828'
 ht-degree: 100%
 
 ---
@@ -145,9 +145,6 @@ ht-degree: 100%
       + [Descrições do parâmetro Heartbeat](sdk-implement/validation/heartbeat-params.md)
       + Depuração {#debugging}
          + [Depuração do SDK](sdk-implement/validation/debugging/sdk-debugging.md)
-         + [Configurar o Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
-         + [Criar um novo relatório de depuração](sdk-implement/validation/debugging/create-new-debug-report.md)
-         + [Painéis e relatórios de depuração](sdk-implement/validation/debugging/debug-dash-repts.md)
    + Análises em aplicativos OTT {#analytics-with-ott}
       + [Rastrear estados do aplicativo](sdk-implement/analytics-with-ott/track-app-states.md)
       + [Rastrear ações do aplicativo](sdk-implement/analytics-with-ott/track-app-actions.md)
