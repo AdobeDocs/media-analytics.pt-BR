@@ -1,10 +1,9 @@
 ---
 title: Tempo gasto com a reprodução da mídia
 description: “Saiba como usar o painel Tempo gasto com a reprodução da mídia para analisar o tempo de reprodução e entender sobre o pico de simultaneidade e onde ocorreram quedas.”
-exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: d5769f3eed3f0c3770e427420025ff624e775f9f
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 95%
