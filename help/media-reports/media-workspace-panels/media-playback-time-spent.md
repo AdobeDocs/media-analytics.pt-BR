@@ -1,12 +1,13 @@
 ---
 title: Tempo gasto com a reprodução da mídia
-description: “Saiba como usar o painel Tempo gasto com a reprodução da mídia para analisar o tempo de reprodução e entender sobre o pico de simultaneidade e onde ocorreram quedas.”
+description: Saiba como usar o painel Tempo gasto com a reprodução de mídia para analisar o tempo gasto com a reprodução e para entender o pico de simultaneidade e onde ocorreram as quedas.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 95%
+ht-degree: 89%
 
 ---
 
@@ -19,7 +20,7 @@ A análise do tempo gasto com a reprodução permite compreender onde ocorreram 
 No Analysis Workspace, o Tempo gasto com a reprodução é a quantidade de tempo gasto visualizando os fluxos de mídia em um momento específico e inclui os períodos de pausa, buffer e tempo para iniciar. Com o Tempo gasto com a reprodução da mídia, você pode dividir a duração da reprodução em intervalos de tempo diferentes, como 5 minutos, 15 minutos, 30 minutos ou 1 hora.
 
 
-O Tempo gasto com a reprodução da mídia ajuda na análise da reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar. Para acessar o painel Tempo gasto com a reprodução da mídia, navegue até um conjunto de relatórios com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace. [Saiba mais...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
+O Tempo gasto com a reprodução da mídia ajuda na análise da reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar. Para acessar o painel Tempo gasto com a reprodução da mídia, navegue até um conjunto de relatórios com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace. [Saiba mais...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=pt-BR)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
