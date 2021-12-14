@@ -1,13 +1,13 @@
 ---
-title: 'Mídia de streaming da Adobe no Adobe Analytics '
+title: Mídia de streaming da Adobe no Adobe Analytics
 description: '"Saiba mais sobre a medição de mídia de streaming mais avançada para conteúdo, áudio e anúncios. Conheça o Adobe Analytics para mídia de streaming."'
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '880'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '930'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,10 @@ Os benefícios do Adobe Analytics para streaming de mídia incluem monitoramento
 ## Medição de pulsação {#heartbeat}
 
 O Adobe Analytics usa &quot;pulsações&quot; para coletar métricas de vídeo. Durante a reprodução do vídeo, as pulsações são enviadas ao servidor de rastreamento de pulsação para medir o tempo de reprodução. As chamadas de pulsação são enviadas a cada dez segundos. As pulsações resultam em métricas de envolvimento granulares com o vídeo e relatórios de fallout de vídeo mais precisos. O Adobe Analytics para streaming de mídia mede as pulsações usando o Adobe Launch com a extensão do Media Analytics, o SDK de mídia e a API de coleção de mídia. Os componentes `AppMeasurement` e `VisitorID` são usados para receber dados de vídeo.
+
+>[!NOTE]
+>A Adobe Experience Platform Launch está sendo reformulada como um conjunto de tecnologias de coleção de dados na Experience Platform. Como resultado, várias alterações de terminologia foram implementadas na documentação do produto. Consulte o seguinte [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=pt-BR) para obter uma referência consolidada das alterações de terminologia.
+
 
 Usar pulsações, o Adobe Analytics para streaming de mídia oferece os seguintes benefícios:
 

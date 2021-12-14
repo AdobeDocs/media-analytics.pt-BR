@@ -4,14 +4,17 @@ description: Saiba como migrar do SDK de mídia para o Launch para iOS.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
-workflow-type: ht
-source-wordcount: '360'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '412'
 ht-degree: 100%
 
 ---
 
 # Migração do SDK do Media independente para o Adobe Launch - iOS
+
+>[!NOTE]
+>A Adobe Experience Platform Launch está sendo reformulada como um conjunto de tecnologias de coleção de dados na Experience Platform. Como resultado, várias alterações de terminologia foram implementadas na documentação do produto. Consulte o seguinte [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=pt-BR) para obter uma referência consolidada das alterações de terminologia.
 
 ## Configuração
 

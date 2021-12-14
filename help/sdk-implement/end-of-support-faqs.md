@@ -4,16 +4,20 @@ description: Este tópico inclui perguntas frequentes sobre o fim do suporte par
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 78%
+source-wordcount: '723'
+ht-degree: 80%
 
 ---
 
 # Perguntas frequentes sobre o fim do suporte ao SDK do Media Analytics
 
-Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para o SDKs do Media Analytics para iOS e Android. Após 31 de agosto de 2021, a Adobe não fornecerá correções, atualizações relacionadas ao SO ou suporte para o SDK do Media Analytics.  Durante o processo de migração para esses novos SDKs do Experience Platform, lembre-se de que as [extensões do Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) devem ser implementadas para habilitar o Adobe Analytics for Streaming Media.
+Com o fim do suporte para SDKs móveis da versão 4 em 31 de agosto de 2021, a Adobe também encerrará o suporte para o SDKs do Media Analytics para iOS e Android. Após 31 de agosto de 2021, a Adobe não fornecerá correções, atualizações relacionadas ao SO ou suporte para o SDK do Media Analytics.  Durante o processo de migração para esses novos SDKs do Experience Platform, lembre-se de que a variável [Extensões do Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) deve ser implementado para habilitar o Adobe Analytics para mídia de transmissão.
+
+>[!NOTE]
+>A Adobe Experience Platform Launch está sendo reformulada como um conjunto de tecnologias de coleção de dados na Experience Platform. Como resultado, várias alterações de terminologia foram implementadas na documentação do produto. Consulte o seguinte [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=pt-BR) para obter uma referência consolidada das alterações de terminologia.
+
 
 ## 5 principais itens que você deve conhecer
 
