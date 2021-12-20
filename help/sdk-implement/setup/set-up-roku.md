@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: ht
+source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
+workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -140,32 +140,27 @@ O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativo
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-   <br/><br/>
-
    **APIs públicas adicionais**
 
    **DebugLogging**
-|  Método   | Descrição | 
-| --- | --- | 
-| `setDebugLogging` | Usado para ativar ou desativar o log de depuração do SDK.  <br/><br/>`ADBMobile().setDebugLogging(true)` | 
-| `getDebugLogging` | Retorna verdadeiro se o log de depuração estiver ativado.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
-   <br/><br/>
+   |  Método   | Descrição |
+   | --- | --- |
+   | `setDebugLogging` | Usado para ativar ou desativar o log de depuração do SDK.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | Retorna true se o log de depuração estiver ativado.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
-|  Constante   | Descrição | 
-| --- | --- | 
-| `PRIVACY_STATUS_OPT_IN` | Constante a ser transmitida ao chamar setPrivacyStatus para aceitação. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
-| `PRIVACY_STATUS_OPT_OUT` | Constante a ser transmitida ao chamar setPrivacyStatus para recusa. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
-   <br/>
+   |  Constante   | Descrição |
+   | --- | --- |
+   | `PRIVACY_STATUS_OPT_IN` | Constante a ser transmitida ao chamar setPrivacyStatus para aceitar. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | Constante a ser transmitida ao chamar setPrivacyStatus para rejeitar. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  Método   | Descrição |
    | --- | --- |
    | `setPrivacyStatus` | Define o status de privacidade no SDK.  <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
    | `getPrivacyStatus` | Obtém o status de privacidade atual definido no SDK.  <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
-   <br/><br/>
    >[!IMPORTANT]
    >
    >Certifique-se de chamar a função `processMessages` e `processMediaMessages` no loop do evento principal a cada 250 ms, para garantir que o SDK envie os pings corretamente.
