@@ -1,17 +1,17 @@
 ---
-title: '"Migração do SDK do Media independente para o Adobe Launch - Android"'
-description: Saiba como migrar do SDK do Media para o Launch para Android.
+title: '"Migração do Media SDK independente para o Adobe Launch - Android"'
+description: Saiba como migrar do Media SDK para o Launch para Android.
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Migração do SDK do Media independente para o Adobe Launch - Android
+# Migração do Media SDK independente para o Adobe Launch - Android
 
 >[!NOTE]
 >A Adobe Experience Platform Launch está sendo reformulada como um conjunto de tecnologias de coleção de dados na Experience Platform. Como resultado, várias alterações de terminologia foram implementadas na documentação do produto. Consulte o seguinte [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=pt-BR) para obter uma referência consolidada das alterações de terminologia.
