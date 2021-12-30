@@ -5,9 +5,9 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Para dispositivos ou plataformas que não têm suporte para SDK no momento ou em
 
 A tabela abaixo lista os dispositivos e as plataformas compatíveis no momento. Para baixar a versão mais recente do SDK, consulte [Baixar SDKs](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html?lang=pt-BR). Se um dispositivo não estiver listado, entre em contato com o Atendimento ao cliente ou com o consultor de soluções para saber o status desse dispositivo.
 
-| Plataformas e dispositivos de transmissão |  | Coleta de dados com o SDK do AEP Mobile | SDK do Media | API da coleção de mídia |
+| Plataformas e dispositivos de transmissão |  | Coleção de dados com o SDK móvel do AEP | SDK do Media | API da coleção de mídia |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Web móvel |  |  |  |  |
 |  | Navegadores JavaScript | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
