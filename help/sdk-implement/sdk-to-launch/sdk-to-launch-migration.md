@@ -1,19 +1,19 @@
 ---
 seo-title: Migrating from the standalone Media SDK to Adobe Launch
-title: Migração do SDK do Media independente para o Adobe Launch
+title: Migração do Media SDK independente para o Adobe Launch
 seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
-description: Saiba como migrar do SDK do Media para o Launch.
+description: Saiba como migrar do Media SDK para o Launch.
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Migração do SDK do Media independente para o Adobe Launch
+# Migração do Media SDK independente para o Adobe Launch
 
 >[!NOTE]
 >A Adobe Experience Platform Launch está sendo reformulada como um conjunto de tecnologias de coleção de dados na Experience Platform. Como resultado, várias alterações de terminologia foram implementadas na documentação do produto. Consulte o seguinte [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=pt-BR) para obter uma referência consolidada das alterações de terminologia.
@@ -29,7 +29,7 @@ As extensões estão disponíveis aos clientes do Launch por uma experiência de
 
 O Adobe Media Analytics para áudio e vídeo está disponível como uma extensão do Launch para Web e dispositivos móveis:
 
-* [Documentação do Launch para Web](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [Documentação do Launch para Web](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=pt-BR)
 * [Documentação do Launch para dispositivos móveis ](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## Plataformas
