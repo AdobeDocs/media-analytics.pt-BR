@@ -6,13 +6,13 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Configurar Roku{#set-up-roku}
+# Configurar Roku {#set-up-roku}
 
 ## Pré-requisitos
 
@@ -122,7 +122,7 @@ O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativo
 
    Após a configuração ser concluída, uma ID de visitante da Experience Cloud é gerada e incluída em todas as ocorrências. Outras IDs de visitante, como `custom` e `automatically-generated`, continuam a ser enviadas com cada ocorrência.
 
-   **Métodos do Serviço de ID de visitante da Experience Cloud.**
+   **Métodos do Serviço de ID de visitante da Experience Cloud**
 
    >[!TIP]
    >
@@ -146,15 +146,15 @@ O SDK do Roku 2.x para soluções da Experience Cloud permite avaliar aplicativo
 
    |  Método   | Descrição |
    | --- | --- |
-   | `setDebugLogging` | Usado para ativar ou desativar o log de depuração do SDK.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
-   | `getDebugLogging` | Retorna true se o log de depuração estiver ativado.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+   | `setDebugLogging` | Usado para ativar ou desativar o log de depuração do SDK. <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | Retorna verdadeiro se o log de depuração estiver ativado.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
 
-   |  Constante   | Descrição |
+   | Constante   | Descrição |
    | --- | --- |
-   | `PRIVACY_STATUS_OPT_IN` | Constante a ser transmitida ao chamar setPrivacyStatus para aceitar. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
-   | `PRIVACY_STATUS_OPT_OUT` | Constante a ser transmitida ao chamar setPrivacyStatus para rejeitar. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
+   | `PRIVACY_STATUS_OPT_IN` | Constante a ser transmitida ao chamar setPrivacyStatus para aceitação. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | Constante a ser transmitida ao chamar setPrivacyStatus para recusa. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  Método   | Descrição |
    | --- | --- |
