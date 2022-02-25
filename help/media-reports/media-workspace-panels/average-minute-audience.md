@@ -4,14 +4,19 @@ description: Saiba como usar o painel Público-alvo médio por minuto para anali
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
+source-git-commit: a138edbfd7b5136f038cc9397e53521110446076
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 7%
+source-wordcount: '271'
+ht-degree: 9%
 
 ---
 
 # Público-alvo médio por minuto da mídia {#media-average-minute-audience}
+
+>[!NOTE]
+>
+>No momento, esse recurso está em testes limitados.
+
 
 Os clientes do Media Analytics podem usar o painel de público-alvo médio de minuto para entender melhor o consumo médio de seu conteúdo. O público-alvo de minuto médio permite comparações da programação de qualquer comprimento ou gênero. Além disso, os clientes podem comparar ou anexar esse público-alvo de minuto médio digital às métricas de minuto médio linear da TV. Esse painel oferece mais flexibilidade para medir o público-alvo médio em períodos de tempo personalizados, bem como quando a classificação de duração foi atualizada após o fato. A métrica de público-alvo de minuto médio atual só funciona se a duração estiver disponível no momento do processamento.
 
