@@ -5,10 +5,10 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 75%
+source-wordcount: '577'
+ht-degree: 71%
 
 ---
 
@@ -63,13 +63,13 @@ Para fluxos AO VIVO, é necessário definir o valor do indicador de reprodução
 
 ### No início
 
-Para mídia AO VIVO, quando um usuário começa a reproduzir o fluxo, é necessário definir `l:event:playhead` para o número de segundos desde a meia-noite UTC desse dia. Isso é o oposto ao VOD, no qual você define o indicador de reprodução como &quot;0&quot;.
+Para mídia AO VIVO, quando um usuário começa a reproduzir o fluxo, é necessário definir `l:event:playhead` ao número de segundos desde a meia-noite UTC nesse dia. Isso é o oposto ao VOD, no qual você define o indicador de reprodução como &quot;0&quot;. Observação: Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado como o número de segundos a partir do início do item de mídia, começando com 0.
 
-Por exemplo, digamos que um evento de transmissão AO VIVO comece à meia-noite e tenha uma duração de 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Então, digamos que um usuário comece a reproduzir esse fluxo AO VIVO às 12h. Nesse cenário, você deve definir `l:event:playhead` como 43200 (12 horas desde a meia-noite UTC nesse dia, em segundos).
+Por exemplo, digamos que um evento de transmissão AO VIVO comece à meia-noite e tenha uma duração de 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Então, digamos que um usuário comece a reproduzir esse fluxo AO VIVO às 12h. Nesse cenário, você deve definir `l:event:playhead` a 43200 (12 horas desde a meia-noite UTC nesse dia em segundos).
 
 ### Ao pausar
 
-A mesma lógica de &quot;indicador de reprodução em tempo real&quot; aplicada no início da reprodução deve ser aplicada quando o usuário pausa a reprodução. Quando o usuário retorna para reproduzir o fluxo AO VIVO, você deve definir o valor `l:event:playhead` de acordo com o novo número de segundos desde a meia-noite UTC, _not_ até o ponto em que o usuário pausou o fluxo AO VIVO.
+A mesma lógica de &quot;indicador de reprodução em tempo real&quot; aplicada no início da reprodução deve ser aplicada quando o usuário pausa a reprodução. Quando o usuário retorna para reproduzir o fluxo AO VIVO, você deve definir a variável `l:event:playhead` valor de acordo com o novo número de segundos desde a meia-noite UTC, _not_ ao ponto em que o usuário pausou o fluxo AO VIVO.
 
 ## Código de exemplo {#sample-code}
 

@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
+source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 90%
+source-wordcount: '771'
+ht-degree: 85%
 
 ---
 
@@ -103,7 +103,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
    * **Metadados padrão**
 
-   [Implementar metadados padrão no Roku ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Implementar metadados padrão no Roku ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Anexar o objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
@@ -145,7 +145,8 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
 1. **Atualizar valor do indicador de reprodução**
 
-   Quando alterações no indicador de reprodução de mídia notificam o SDK, chamando a API `mediaUpdatePlayhead`. Para vídeo sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. Para transmissão ao vivo, o valor é especificado como o número de segundos desde a meia-noite UTC nesse dia.
+   Quando as alterações no indicador de reprodução de mídia notificam o SDK, chamando `mediaUpdatePlayhead` API. <br /> Para vídeo sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissão ao vivo, se o reprodutor não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC desse dia. <br /> Observação: Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado como o número de segundos a partir do início do item de mídia, começando com 0.
+
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)

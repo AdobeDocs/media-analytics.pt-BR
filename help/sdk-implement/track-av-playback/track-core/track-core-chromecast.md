@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '750'
+ht-degree: 85%
 
 ---
 
@@ -87,6 +87,14 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
    ```
    ADBMobile.media.trackPlay();
+   ```
+
+1. **Atualizar valor do indicador de reprodução**
+
+   Atualizar `mediaUpdatePlayhead`&quot; posiciona várias vezes quando o indicador de reprodução muda. <br /> Para vídeo sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissão ao vivo, se o reprodutor não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC desse dia. <br />  Observação: Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado como o número de segundos a partir do início do item de mídia, começando com 0.
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **Rastrear a conclusão da reprodução**

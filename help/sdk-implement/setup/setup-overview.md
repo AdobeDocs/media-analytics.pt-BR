@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 94%
+source-wordcount: '781'
+ht-degree: 89%
 
 ---
 
@@ -60,7 +60,7 @@ Complete as etapas de implementação a seguir:
    |  Nome do método  |  Descrição  | Obrigatório |
    | --- | --- | :---: |
    | `getQoSObject()` | Retorna a instância `MediaObject` que contém as informações de QoS atuais. Esse método será chamado várias vezes durante uma sessão de reprodução. A implementação do player sempre deve retornar os dados de QoS mais recentes. | Sim |
-   | `getCurrentPlaybackTime()` | Retorna a posição atual do indicador de reprodução. Para rastreamento de VOD, o valor é especificado em segundos a partir do início do item de mídia. Para rastreamento LINEAR/LIVE, o valor é especificado como o número de segundos desde a meia-noite UTC nesse dia. | Sim |
+   | `getCurrentPlaybackTime()` | Retorna a posição atual do indicador de reprodução. <br /> Para rastreamento de VOD, o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissão ao vivo, se o reprodutor não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC desse dia. <br /> Observação: Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado como o número de segundos a partir do início do item de mídia, começando com 0. | Sim |
 
    >[!TIP]
    >
