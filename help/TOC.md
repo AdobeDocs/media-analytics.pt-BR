@@ -6,9 +6,9 @@ breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
 source-git-commit: 5465631bf29e746d7d5dc07603f57fd7033935c4
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '833'
+ht-degree: 100%
 
 ---
 
@@ -145,7 +145,7 @@ ht-degree: 0%
       + [Descrições do parâmetro Heartbeat](sdk-implement/validation/heartbeat-params.md)
       + Depuração {#debugging}
          + [Depuração do SDK](sdk-implement/validation/debugging/sdk-debugging.md)
-   + Análises em aplicativos OTT {#analytics-with-ott}
+   + Analytics em aplicativos OTT {#analytics-with-ott}
       + [Rastrear estados do aplicativo](sdk-implement/analytics-with-ott/track-app-states.md)
       + [Rastrear ações do aplicativo](sdk-implement/analytics-with-ott/track-app-actions.md)
       + [Definir IDs de usuário](sdk-implement/analytics-with-ott/set-user-ids.md)
@@ -211,8 +211,8 @@ ht-degree: 0%
       + [Relatório de faixa de horário de mídia](media-reports/media-default-reports/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Painéis do Media Workspace {#media-workspace-panels}
-   + [Painel Público-alvo médio por minuto da mídia](media-reports/media-workspace-panels/average-minute-audience.md)
-   + [Painel de visualizadores simultâneos de mídia](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+   + [Painel Audiência média por minuto da mídia](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [Painel Visualizadores simultâneos de mídia](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Painel Tempo gasto com a reprodução da mídia](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [Modelos do Media Workspace](media-reports/media-workspace-templates.md)
    + [Obter dados de visualizadores simultâneos por meio da API](media-reports/media-default-reports/get-concurrent-json20.md)
