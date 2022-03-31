@@ -1,18 +1,18 @@
 ---
-title: Implementar SDKs do Media explicados
-description: '"Saiba como configurar o SDK do Media para rastreamento de mídia em aplicativos móveis, OTT e do navegador (JS)."'
+title: Explicação sobre a implementação de SDKs de mídia
+description: “Saiba como configurar o SDK de mídia para rastreamento de mídia em seus aplicativos móveis, OTT e para navegadores (JS).”
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Visão geral da configuração{#setup-overview}
+# Visão geral da configuração {#setup-overview}
 
 As instruções a seguir se aplicam aos SDKs do Media 2.x. Se estiver implementando uma versão 1.x do SDK do Media, consulte a [Documentação do SDK do Media 1.x.](/help/sdk-implement/download-sdks.md) Para obter os integradores do Primetime, consulte a _Documentação de SDK do Media do Primetime_ abaixo.
 
@@ -34,7 +34,7 @@ A tabela a seguir descreve as versões mínimas da plataforma compatíveis com c
 | Safari | v7+ |
 | IE | v11+ |
 
-## Diretrizes de implementação gerais {#general-implementation-guidelines}
+## Diretrizes gerais de implementação {#general-implementation-guidelines}
 
 Há três componentes principais do SDK envolvidos no rastreamento de mídia:
 * Config Media Heartbeat - A configuração contém as configurações básicas do relatórios.
@@ -60,7 +60,7 @@ Complete as etapas de implementação a seguir:
    |  Nome do método  |  Descrição  | Obrigatório |
    | --- | --- | :---: |
    | `getQoSObject()` | Retorna a instância `MediaObject` que contém as informações de QoS atuais. Esse método será chamado várias vezes durante uma sessão de reprodução. A implementação do player sempre deve retornar os dados de QoS mais recentes. | Sim |
-   | `getCurrentPlaybackTime()` | Retorna a posição atual do indicador de reprodução. <br /> Para rastreamento de VOD, o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissão ao vivo, se o reprodutor não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC desse dia. <br /> Observação: Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado como o número de segundos a partir do início do item de mídia, começando com 0. | Sim |
+   | `getCurrentPlaybackTime()` | Retorna a posição atual do indicador de reprodução. <br /> Para rastreamento de VOD, o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC daquele dia. <br /> Observação: ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado para o número de segundos desde o início do item de mídia, começando com 0. | Sim |
 
    >[!TIP]
    >
@@ -157,6 +157,6 @@ O rastreamento de mídia funciona da mesma forma em todas as plataformas, deskto
 | Primetime | <ul> <li> Android: [Configurar o Media Analytics](https://helpx.adobe.com/br/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS: [Configurar o Media Analytics](https://helpx.adobe.com/br/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS: [Configurar o Media Analytics](https://helpx.adobe.com/br/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [Configurar para TVML ](vhl_tvml.pdf) |
 
-## Documentação de SDK do Media do Primetime {#primetime-docs}
+## Documentação do SDK de mídia do Primetime {#primetime-docs}
 
 * [Guias do usuário do Primetime](https://helpx.adobe.com/br/support/primetime.html)
