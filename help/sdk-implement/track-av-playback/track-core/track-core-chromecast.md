@@ -1,18 +1,18 @@
 ---
 title: Saiba como rastrear a reprodução principal no Chromecast
-description: Saiba como implementar o rastreamento principal usando o SDK do Media no Chromecast.
+description: Saiba como implementar o rastreamento principal usando o SDK de mídia no Chromecast.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Rastreamento da reprodução principal no Chromecast{#track-core-playback-on-chromecast}
+# Rastreamento da reprodução principal no Chromecast {#track-core-playback-on-chromecast}
 
 Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
@@ -24,7 +24,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
    Identifique quando o usuário aciona a intenção de reproduzir (o usuário clica em Reproduzir e/ou a reprodução automática está ativada) e crie uma instância `MediaObject`.
 
-   **`MediaObject`Referência da API:**
+   Referência da API **`MediaObject`:**
 
    [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
 
@@ -32,11 +32,11 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>);
    ```
 
-   **`StreamType`Constantes de:**
+   Constantes de **`StreamType`:**
 
    [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
-   **`MediaType`Constantes de:**
+   Constantes de **`MediaType`:**
 
    [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
@@ -91,7 +91,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
 1. **Atualizar valor do indicador de reprodução**
 
-   Atualizar `mediaUpdatePlayhead`&quot; posiciona várias vezes quando o indicador de reprodução muda. <br /> Para vídeo sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissão ao vivo, se o reprodutor não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC desse dia. <br />  Observação: Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado como o número de segundos a partir do início do item de mídia, começando com 0.
+   Atualize o valor de posição do `mediaUpdatePlayhead` várias vezes quando o indicador de reprodução mudar. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC daquele dia. <br /> Observação: ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado para o número de segundos desde o início do item de mídia, começando com 0.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
