@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear a reprodução principal no Roku
-description: Saiba como implementar o rastreamento principal usando o SDK do Media no Roku.
+description: Saiba como implementar o rastreamento principal usando o SDK de mídia no Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
 
-   **`StreamType`Constantes de:**
+   Constantes de **`StreamType`:**
 
    | Nome da constante | Descrição   |
    |---|---|
@@ -44,7 +44,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | Tipo de fluxo para audiobook |
    | `MEDIA_STREAM_TYPE_PODCAST` | Tipo de fluxo para podcast |
 
-   **`MediaType`Constantes de:**
+   Constantes de **`MediaType`:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -145,7 +145,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
 1. **Atualizar valor do indicador de reprodução**
 
-   Quando as alterações no indicador de reprodução de mídia notificam o SDK, chamando `mediaUpdatePlayhead` API. <br /> Para vídeo sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissão ao vivo, se o reprodutor não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC desse dia. <br /> Observação: Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado como o número de segundos a partir do início do item de mídia, começando com 0.
+   Quando o indicador de reprodução de mídia for modificado, notifique o SDK chamando a API `mediaUpdatePlayhead`. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC daquele dia. <br /> Observação: ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado para o número de segundos desde o início do item de mídia, começando com 0.
 
 
    ```
