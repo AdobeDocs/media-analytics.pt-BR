@@ -1,18 +1,18 @@
 ---
 title: Conteúdo principal ao vivo
-description: Veja um exemplo de como rastrear o conteúdo ao vivo usando o SDK do Media.
+description: Veja um exemplo de como rastrear conteúdo ao vivo usando o SDK de mídia.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Conteúdo principal ao vivo{#live-main-content}
+# Conteúdo principal ao vivo {#live-main-content}
 
 ## Cenário {#scenario}
 
@@ -22,7 +22,7 @@ Neste cenário, há um ativo ao vivo sem anúncios reproduzidos por 40 segundos 
 |---|---|---|---|
 | Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção **[!UICONTROL Reproduzir]**, ou um evento de reprodução automática. |
 | O primeiro quadro da mídia é reproduzido. | `trackPlay` | Heartbeat Content Play | Esse método aciona o temporizador. Os heartbeats são enviados a cada 10 segundos enquanto a reprodução continuar. |
-| O conteúdo é reproduzido. |  | Content Heartbeats |  |
+| O conteúdo é reproduzido. |  | Conteúdo Heartbeats |  |
 | A sessão foi encerrada. | `trackSessionEnd` |  | `SessionEnd` significa o fim de uma sessão de exibição. Essa API deve ser chamada mesmo se o usuário não consumir a mídia até o fim. |
 
 ## Parâmetros {#parameters}
@@ -42,7 +42,7 @@ Diversos valores observados nas Chamadas do Adobe Analytics Content Start estar�
 | `s:stream:type` | live |  |
 | `s:meta:*` | opcional | Metadados personalizados definidos na mídia |
 
-## Content Heartbeats {#content-heartbeats}
+## Conteúdo Heartbeats {#content-heartbeats}
 
 Durante a reprodução da mídia, há um temporizador que enviará um ou mais heartbeats (ou pings) a cada 10 segundos para o conteúdo principal e a cada segundo para os anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffering e várias outras coisas. O conteúdo exato de cada heartbeat está além do escopo desse documento, o mais importante para validar é que os heartbeats são acionados de forma consistente enquanto a reprodução continuar.
 
@@ -59,17 +59,17 @@ Não haverá uma chamada completa neste cenário, porque o streaming ao vivo nã
 
 ## Configurações de valor do indicador de reprodução
 
-Para fluxos AO VIVO, é necessário definir o valor do indicador de reprodução como o número de segundos desde a meia-noite em UTC nesse dia, para que, nos relatórios, os analistas possam determinar em que ponto os usuários estão entrando e deixando o fluxo ao vivo em uma exibição de 24 horas.
+Para transmissões AO VIVO, você precisa definir o valor do indicador de reprodução como o número de segundos desde a meia-noite UTC daquele dia, para que, nos relatórios, os analistas possam determinar em que ponto os usuários estão entrando e saindo da transmissão AO VIVO em uma exibição de 24 horas.
 
 ### No início
 
-Para mídia AO VIVO, quando um usuário começa a reproduzir o fluxo, é necessário definir `l:event:playhead` ao número de segundos desde a meia-noite UTC nesse dia. Isso é o oposto ao VOD, no qual você define o indicador de reprodução como &quot;0&quot;. Observação: Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado como o número de segundos a partir do início do item de mídia, começando com 0.
+Para mídia AO VIVO, quando um usuário começa a reproduzir a transmissão, é necessário definir o `l:event:playhead` como o número de segundos desde a meia-noite UTC daquele dia. É diferente do VOD, onde você definiria o indicador de reprodução como “0”. Observação: ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado para o número de segundos desde o início do item de mídia, começando com 0.
 
-Por exemplo, digamos que um evento de transmissão AO VIVO comece à meia-noite e tenha uma duração de 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Então, digamos que um usuário comece a reproduzir esse fluxo AO VIVO às 12h. Nesse cenário, você deve definir `l:event:playhead` a 43200 (12 horas desde a meia-noite UTC nesse dia em segundos).
+Por exemplo, digamos que um evento de transmissão AO VIVO comece à meia-noite e tenha uma duração de 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Então, digamos que um usuário comece a reproduzir esse fluxo AO VIVO às 12h. Nesse cenário, você deve definir o `l:event:playhead` como 43200 (12 horas desde a meia-noite UTC daquele dia em segundos).
 
 ### Ao pausar
 
-A mesma lógica de &quot;indicador de reprodução em tempo real&quot; aplicada no início da reprodução deve ser aplicada quando o usuário pausa a reprodução. Quando o usuário retorna para reproduzir o fluxo AO VIVO, você deve definir a variável `l:event:playhead` valor de acordo com o novo número de segundos desde a meia-noite UTC, _not_ ao ponto em que o usuário pausou o fluxo AO VIVO.
+A mesma lógica de &quot;indicador de reprodução em tempo real&quot; aplicada no início da reprodução deve ser aplicada quando o usuário pausa a reprodução. Quando o usuário voltar a reproduzir a transmissão AO VIVO, você deve definir o valor do `l:event:playhead` de acordo com o novo número de segundos desde a meia-noite UTC, _não_ de acordo com o ponto em que o usuário pausou a transmissão AO VIVO.
 
 ## Código de exemplo {#sample-code}
 
