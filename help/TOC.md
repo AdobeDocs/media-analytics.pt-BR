@@ -6,7 +6,7 @@ breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
 source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
 ht-degree: 100%
 
@@ -135,7 +135,7 @@ ht-degree: 100%
       + [Reprodução de VOD com buffering](sdk-implement/tracking-scenarios/vod-buffering.md)
       + [Vários rastreadores de VOD ao mesmo tempo](sdk-implement/tracking-scenarios/vod-multi-trackers.md)
       + [Um rastreador de VOD para várias sessões](sdk-implement/tracking-scenarios/vod-multi-track-one-session.md)
-      + [Conteúdo principal ao vivo](sdk-implement/tracking-scenarios/live-main-content.md)
+      + [Conteúdo principal ao vivo ](sdk-implement/tracking-scenarios/live-main-content.md)
       + [Conteúdo principal ao vivo com monitoramento sequencial](sdk-implement/tracking-scenarios/live-sequential.md)
    + Validação {#validation}
       + [Visão geral da validação](sdk-implement/validation/validation-overview.md)
