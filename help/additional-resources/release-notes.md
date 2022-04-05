@@ -3,10 +3,10 @@ title: Notas de versão do Adobe Analytics for Streaming Media
 description: Veja as notas de versão do Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
+source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '525'
+ht-degree: 68%
 
 ---
 
@@ -48,7 +48,7 @@ Novos tutoriais e cursos do Analytics
 
 | Recurso | Disponibilidade geral | Descrição |
 | ----------- | ---------- | -------------- |
-| **Tempo gasto com reprodução de mídia** | 28 de setembro de 2021 | O recurso Tempo gasto da reprodução de mídia de transmissão da Adobe fornece informações valiosas sobre o envolvimento do visualizador e permite que as organizações de mídia obtenham insights mais profundos e detalhados sobre o engajamento do usuário a cada minuto, por meio da análise avançada de tempo gasto com recursos de faixa horária. É possível observar o tempo gasto visualizando seus fluxos de mídia em um período específico. É possível dividir a duração da reprodução em diferentes granularidades, incluindo as novas granularidades de 5, 15 e 30 minutos. [Saiba mais...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| **Tempo gasto com reprodução de mídia** | 28 de setembro de 2021 | O recurso Tempo gasto da reprodução de mídia de transmissão da Adobe fornece informações valiosas sobre o envolvimento do visualizador e permite que as organizações de mídia obtenham insights mais profundos e detalhados sobre o engajamento do usuário a cada minuto, por meio da análise avançada de tempo gasto com recursos de faixa horária. É possível observar o tempo gasto visualizando seus fluxos de mídia em um período específico. É possível dividir a duração da reprodução em diferentes granularidades, incluindo as novas granularidades de 5, 15 e 30 minutos. [Saiba mais...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## Janeiro de 2021
 
@@ -65,7 +65,7 @@ Novos recursos do Media Analytics
 
 | Recurso | Disponibilidade geral | Descrição |
 | -------- | -------------------- | ----------- |
-| **Painel Visualizador simultâneo de mídia no Workspace** | 17 de setembro de 2020 | O painel Visualizadores simultâneos de mídia permite compreender onde ocorreu o pico de simultaneidade ou onde as quedas ocorreram. Ele fornece informações importantes sobre a qualidade do conteúdo e o engajamento do visualizador, além de ajudar na solução de problemas ou no planejamento de volume/escala. [Saiba mais…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| **Painel Visualizador simultâneo de mídia no Workspace** | 17 de setembro de 2020 | O painel Visualizadores simultâneos de mídia permite compreender onde ocorreu o pico de simultaneidade ou onde as quedas ocorreram. Ele fornece informações importantes sobre a qualidade do conteúdo e o engajamento do visualizador, além de ajudar na solução de problemas ou no planejamento de volume/escala. [Saiba mais…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## Julho de 2020
