@@ -6,17 +6,17 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Ativação de relatórios de mídia{#media-reports-enablement}
+# Ativação de relatórios de mídia {#media-reports-enablement}
 
 Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado antes do envio dos dados de mídia.
 
-Os clientes avançados podem usar os painéis de mídia no Analysis Workspace somente após a ativação do Media Core e a ativação do rastreamento para [Qualidade da experiência](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
+Os clientes avançados podem usar os painéis de mídia no Analysis Workspace somente após a ativação do Media Core e do rastreamento para a [Qualidade da experiência](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=pt-BR).
 
 >[!TIP]
 >
