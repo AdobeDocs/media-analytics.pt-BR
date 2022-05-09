@@ -210,11 +210,11 @@ ht-degree: 100%
       + [Detalhes da mídia](media-reports/media-default-reports/media-reports-detail.md)
       + [Relatório de faixa de horário de mídia](media-reports/media-default-reports/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](media-reports/media-default-reports/media-concurrent-viewers.md)
-   + Painéis do Media Workspace {#media-workspace-panels}
+   + Painéis do Espaço de trabalho de mídia {#media-workspace-panels}
    + [Painel Audiência média por minuto da mídia](media-reports/media-workspace-panels/average-minute-audience.md)
    + [Painel Visualizadores simultâneos de mídia](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Painel Tempo gasto com a reprodução da mídia](media-reports/media-workspace-panels/media-playback-time-spent.md)
-   + [Modelos do Media Workspace](media-reports/media-workspace-templates.md)
+   + [Modelos do Espaço de trabalho de mídia](media-reports/media-workspace-templates.md)
    + [Obter dados de visualizadores simultâneos por meio da API](media-reports/media-default-reports/get-concurrent-json20.md)
    + [Obter dados de Tempo gasto com a reprodução da mídia por meio da API](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
 + [Rastrear o conteúdo baixado](media-collection-api/track-downloaded-content.md)
