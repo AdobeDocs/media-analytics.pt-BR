@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Obter dados de relatório JSON de visualizadores simultâneos {#get-concurrent-viewers-json-report-data}
+# Obter dados de relatório JSON de visualizadores simultâneos{#get-concurrent-viewers-json-report-data}
 
 Você pode obter dados de relatório de visualizadores simultâneos usando a _*versão 1.4*_ das APIs do Analytics:
 * [APIs do Analytics ](https://github.com/AdobeDocs/analytics-1.4-apis)
