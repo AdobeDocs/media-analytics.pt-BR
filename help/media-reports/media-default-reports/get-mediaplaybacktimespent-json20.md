@@ -3,13 +3,13 @@ title: 'Obter dados de relatório JSON de tempo gasto com a reprodução de míd
 description: Saiba como obter dados de relatório de tempo gasto com a reprodução de mídia usando as APIs do Analytics 2.0. Visualize uma solicitação e uma resposta de exemplo.
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
-workflow-type: tm+mt
+exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
+workflow-type: ht
 source-wordcount: '205'
 ht-degree: 100%
 
 ---
-
 
 # Obter dados de relatório JSON de tempo gasto com a reprodução de mídia com as APIs do Analytics 2.0 {#get-media-playback-time-spent-json-report-data}
 
