@@ -1,19 +1,18 @@
 ---
 title: Atualização de vários estados do player de uma só vez
 description: Este tópico descreve o recurso Rastreamento de vários estados do player.
-exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 7a28674024739593431a942d5e0a498294bbe793
+source-git-commit: fdbb777547181422b81ff6f7874bec3d317d02e9
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 10%
+source-wordcount: '186'
+ht-degree: 9%
 
 ---
 
 # Rastreamento de vários estados do player
 
-Há situações em que dois estados do player começam e terminam ao mesmo tempo ou quando o fim de um estado também é o início de outro estado. Observando o exemplo a seguir:
+Às vezes, dois estados do player começam e terminam ao mesmo tempo ou o fim de um estado também é o início de outro estado, como mostrado na imagem a seguir:
 
 ![Vários estados do player](assets/multiple-player-states.svg)
 
@@ -25,18 +24,22 @@ A implementação atual permite ambos os cenários:
 - `stateStart(fullScreen)` - t1
 - `stateEnd(fullScreen)` - t2
 
-No entanto, o cliente precisa emitir muitas `stateStart` e `stateEnd` para sinalizar várias alterações de estado simultâneas. Para otimizar esse comportamento comum, um novo `statesUpdate` O tipo de evento foi implementado, o que encerra uma lista de estados e inicia uma lista de novos estados.
+No entanto, isso requer que você emita várias `stateStart` e `stateEnd` para sinalizar várias alterações de estado simultâneas. Para otimizar esse comportamento comum, um novo `statesUpdate` O tipo de evento foi implementado, o que encerra uma lista de estados e inicia uma lista de novos estados.
 
 Uso da nova `statesUpdate` , a lista acima de eventos se torna:
 - `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` - t0
 - `statesUpdate(statesEnd=[mute, pictureInPicture], statesStart=[fullScreen])` - t1
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
-O número de chamadas de atualizações de estado foi reduzido de 6 para 3 para o mesmo comportamento. O último evento também poderia ter sido simples `stateEnd(fullScreen)`.
+O número de chamadas de atualizações de estado foi reduzido de seis para três para o mesmo comportamento. O último evento também poderia ter sido simples `stateEnd(fullScreen)`.
 
-## Implementação da API da coleção de mídia
+## Implementação da API da coleção de mídia {#mpst-api}
 
-Exemplos:
+Você pode usar a API Media Collection para implementar o rastreamento de vários estados do player.
+
+### Exemplo
+
+A seguir, um exemplo de implementação da API Media Collection para rastreamento de vários estados do player.
 
 ```
 // statesUpdate (ex: mute and pictureInPicture are switched on)
