@@ -1,11 +1,11 @@
 ---
 title: Parâmetros de capítulo
-description: '"Saiba mais sobre parâmetros de capítulo para implementação, rede e relatórios."'
+description: "Saiba mais sobre parâmetros de capítulo para implementação, rede e relatórios."
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 85%
@@ -68,8 +68,8 @@ Descrição dos dados da tabela:
 ### Capítulo
 
 |   Implementação   | Parâmetros de rede | Relatórios |
-| --- | --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **Chave de SDK:**<br/> Definida automaticamente </li> <li> **Chave da API:**<br/> N/D </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Fechamento do capítulo </li> <li> **Versão mín. do SDK:** 1.3 </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/> A ID gerada automaticamente do capítulo.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>name) </li> <li> **Heartbeat:**<br/> (s:stream:chapter_id) </li> </ul> | <ul> <li> **Disponível:**<br/> Sim </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do relatório:**<br/> Chapter </li> <li> **Dados de contexto:**<br/> (a.media.chapter.<br/>name) </li> <li> **Feed de dados:**<br/> videochapter </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>name) </li> <li> **Caminho do campo XDM:**<br/> media.mediaTimed.mediaChapter.<br/>chapterAssetReference.@id </li> <li> **Caminho do campo XDM do relatório:**<br/> mediaReporting.chapterDetails.chapterID </li> </ul> |
+| --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> **Chave de SDK:**<br/> Definida automaticamente </li> <li> **Chave da API:**<br/> N/D </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Fechamento do capítulo </li> <li> **Versão mín. do SDK:** 1.3 </li> <li> **Valor de exemplo:**<br/>  </li><li> **Descrição:**<br/> A ID gerada automaticamente do capítulo.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>name) </li> <li> **Heartbeat:**<br/> (s:stream:chapter_id) </li> </ul> | <ul> <li> **Disponível:**<br/> Sim </li> <li> **Variável reservada:**<br/> eVar </li> <li> **Expiração:**<br/> No HIT </li> <li> **Nome do relatório:**<br/> Chapter </li> <li> **Dados de contexto:**<br/> (a.media.chapter.<br/>name) </li> <li> **Feed de dados:**<br/> videochapter </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>name) </li> <li> **Caminho do campo XDM:**<br/> media.mediaTimed.mediaChapter.<br/>chapterAssetReference.@id </li> <li> **Caminho do campo XDM do relatório:**<br/> mediaReporting.chapterDetails.ID </li> </ul> |
 
 ## Métricas de capítulo {#chapter-Metrics}
 

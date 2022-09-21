@@ -1,11 +1,11 @@
 ---
 title: Parâmetros de estado do player
-description: '"Saiba mais sobre os parâmetros de rastreamento do estado do player para tela cheia, legenda de fechamento, mudo e propriedades de imagem."'
+description: "Saiba mais sobre os parâmetros de rastreamento do estado do player para tela cheia, legenda de fechamento, mudo e propriedades de imagem."
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 91%
@@ -41,7 +41,7 @@ Descrição dos dados da tabela:
 
 ## Propriedades do estado do player {#player-state-properties}
 
-Os recursos de rastreamento do estado do player podem ser conectados a um fluxo de áudio ou vídeo. As métricas padronizadas de rastreamento do estado do player são armazenadas como variáveis de solução. Os estados padrão são: tela cheia, mudo, legendas ocultas, picture in picture e em foco.
+Os recursos de rastreamento do estado do player podem ser conectados a um fluxo de áudio ou vídeo. As métricas padronizadas de rastreamento do estado do player são armazenadas como variáveis de solução. Os estados padrão são: tela cheia, mudo, closedCaptioning, pictureInPicture e inFocus.
 
 ### Propriedades da Tela cheia
 
