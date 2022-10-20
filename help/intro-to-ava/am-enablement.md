@@ -4,10 +4,10 @@ description: Saiba como vincular ações do aplicativo aos dados de rastreamento
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 3e996d243d060a6fd07d2ddbabf05e39eca40758
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 O Adobe Audience Manager (AAM), uma plataforma de gerenciamento de dados (DMP), ajuda a reunir os ativos de dados do seu público, facilitando a coleta de informações comercialmente relevantes sobre os visitantes do site, a criação de segmentos comercializáveis e a veiculação de conteúdo e publicidade direcionada ao público certo.
 
-Com o AAM, você não está vinculado a um vendedor de dados, troca ou plataforma do lado da demanda. Além disso, o AAM é completamente agnóstico quando se trata dos ativos de dados de seus parceiros. Com acesso a várias fontes de dados, o AAM oferece aos publicadores digitais a capacidade de usar uma grande variedade de dados de terceiros e nosso Data Co-op privado. Para saber mais sobre o AAM, consulte a documentação do AAM [Documentação do produto Audience Manager](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.html).
+Com o AAM, você não está vinculado a um vendedor de dados, troca ou plataforma do lado da demanda. Além disso, o AAM é completamente agnóstico quando se trata dos ativos de dados de seus parceiros. Com acesso a várias fontes de dados, o AAM oferece aos editores digitais a capacidade de usar uma grande variedade de dados de terceiros. Para saber mais sobre o AAM, consulte a documentação do AAM [Documentação do produto Audience Manager](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.html).
 
 **Transferência dados do VA para o AAM -** Para conteúdo em vídeo e anúncios em vídeo, as métricas e os metadados coletados usando variáveis de solução (reservadas) podem ser automaticamente enviados para o AAM. A transferência de dados está disponível em todas as plataformas, como desktop, dispositivos móveis e OTT. Para habilitar essa transferência de dados do lado do servidor, é necessário entrar em contato com o Atendimento ao cliente da Adobe e solicitar que esse feed seja habilitado.
 
