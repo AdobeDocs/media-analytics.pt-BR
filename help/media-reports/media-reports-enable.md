@@ -6,8 +6,8 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: ht
-source-wordcount: '952'
+workflow-type: tm+mt
+source-wordcount: '950'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Os clientes avançados podem usar os painéis de mídia no Analysis Workspace so
 1. Em [Reports &amp; Analytics](https://my.omniture.com/login/), clique em **[!UICONTROL Admin > Conjuntos de relatórios].**
 1. Selecione o(s) conjunto(s) de relatórios no(s) qual(is) você está coletando dados de mídia e clique em **[!UICONTROL Editar configurações > Gerenciamento de mídia > Relatórios de mídia].**
 
-   ![](assets/media-reporting.png){width=&quot;400px&quot;}
+   ![](assets/media-reporting.png){width="400px"}
 
 1. Na página **[!UICONTROL Relatórios de mídia]**, ative **[!UICONTROL Mídia principal]** e, como opção, **[!UICONTROL Anúncios de mídia],** **[!UICONTROL Capítulos de mídia],** e **[!UICONTROL Qualidade de mídia].**
 
