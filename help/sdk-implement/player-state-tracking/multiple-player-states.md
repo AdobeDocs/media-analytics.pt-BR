@@ -4,9 +4,9 @@ description: Este tópico descreve o recurso Rastreamento de vários estados do 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fdbb777547181422b81ff6f7874bec3d317d02e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
@@ -24,22 +24,25 @@ A implementação atual permite ambos os cenários:
 - `stateStart(fullScreen)` - t1
 - `stateEnd(fullScreen)` - t2
 
-No entanto, isso requer que você emita várias `stateStart` e `stateEnd` para sinalizar várias alterações de estado simultâneas. Para otimizar esse comportamento comum, um novo `statesUpdate` O tipo de evento foi implementado, o que encerra uma lista de estados e inicia uma lista de novos estados.
+No entanto, isso requer que você emita vários eventos `stateStart` e `stateEnd` para sinalizar várias alterações de estado simultâneas. Para
+otimizar esse comportamento comum, um novo tipo de evento `statesUpdate` foi implementado, que encerra uma lista de estados 
+e inicia uma lista de novos estados.
 
-Uso da nova `statesUpdate` , a lista acima de eventos se torna:
+Ao utilizar o novo evento `statesUpdate`, a lista de eventos acima se torna:
 - `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` - t0
 - `statesUpdate(statesEnd=[mute, pictureInPicture], statesStart=[fullScreen])` - t1
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
-O número de chamadas de atualizações de estado foi reduzido de seis para três para o mesmo comportamento. O último evento também poderia ter sido simples `stateEnd(fullScreen)`.
+O número de chamadas de atualizações de estado foi reduzido de seis para três para o mesmo comportamento. O último evento
+também poderia ter sido um simples `stateEnd(fullScreen)`.
 
 ## Implementação da API da coleção de mídia {#mpst-api}
 
-Você pode usar a API Media Collection para implementar o rastreamento de vários estados do player.
+Você pode usar a API de coleção de mídia para implementar o monitoramento de vários estados do player.
 
 ### Exemplo
 
-A seguir, um exemplo de implementação da API Media Collection para rastreamento de vários estados do player.
+A seguir, veja um exemplo de implementação da API de coleção de mídia para monitoramento de vários estados do player.
 
 ```
 // statesUpdate (ex: mute and pictureInPicture are switched on)
@@ -111,4 +114,4 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## Implementação do SDK de mídia
 
-Não há implementação do SDK do Media.
+Não há implementação do SDK de mídia.
