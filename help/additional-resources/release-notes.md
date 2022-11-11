@@ -3,8 +3,8 @@ title: Notas de versão do Adobe Analytics para mídia de streaming
 description: Visualizar as notas de versão do Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
-workflow-type: ht
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ Para obter informações sobre novos recursos, correções e informações impor
 
 | Recurso | Descrição | Data de direcionamento ou atualização |
 | ----------- | ---------- | -------------- |
-| Tempo gasto com a reprodução da mídia | O recurso Tempo gasto com a reprodução da mídia de streaming da Adobe fornece informações valiosas sobre o envolvimento do visualizador e permite que as organizações de mídia obtenham insights mais profundos e detalhados sobre o engajamento do usuário a cada minuto, por meio da análise avançada de tempo gasto com recursos de faixa horária. É possível observar o tempo gasto visualizando seus fluxos de mídia em um período específico. É possível dividir a duração da reprodução em diferentes granularidades, incluindo as novas granularidades de 5, 15 e 30 minutos. [Saiba mais...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) | Setembro de 2021 |
-| Painel Visualizador simultâneo de mídia no Analytics Workspace | Entenda onde o pico de simultaneidade ocorreu ou onde as quedas ocorreram. Obtenha insights importantes sobre a qualidade do conteúdo e o envolvimento do visualizador, além de ajuda na solução de problemas ou no planejamento de volume e escala. [Saiba mais...](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Painel Visualizadores simultâneos de mídia no Analytics Workspace (tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=pt-BR#analysis-workspace) | Setembro de 2020 <br><br><br>Janeiro de 2021 |
+| Tempo gasto com a reprodução da mídia | O recurso Tempo gasto com a reprodução da mídia de streaming da Adobe fornece informações valiosas sobre o envolvimento do visualizador e permite que as organizações de mídia obtenham insights mais profundos e detalhados sobre o engajamento do usuário a cada minuto, por meio da análise avançada de tempo gasto com recursos de faixa horária. É possível observar o tempo gasto visualizando seus fluxos de mídia em um período específico. É possível dividir a duração da reprodução em diferentes granularidades, incluindo as novas granularidades de 5, 15 e 30 minutos. [Saiba mais...](/help/reporting/workspace/media-playback-time-spent.md) | Setembro de 2021 |
+| Painel Visualizador simultâneo de mídia no Analytics Workspace | Entenda onde o pico de simultaneidade ocorreu ou onde as quedas ocorreram. Obtenha insights importantes sobre a qualidade do conteúdo e o envolvimento do visualizador, além de ajuda na solução de problemas ou no planejamento de volume e escala. [Saiba mais...](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Painel Visualizadores simultâneos de mídia no Analytics Workspace (tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=pt-BR#analysis-workspace) | Setembro de 2020 <br><br><br>Janeiro de 2021 |
 | Dispositivos e plataformas compatíveis | A Extensão Media Launch com SDK AEP agora é compatível com os seguintes dispositivos OTT: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | Junho de 2020 |
 
 
