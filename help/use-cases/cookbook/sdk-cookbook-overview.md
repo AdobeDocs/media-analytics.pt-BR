@@ -4,7 +4,7 @@ description: "Explorar tópicos do guia específicos do SDK "
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 42%
@@ -16,7 +16,7 @@ ht-degree: 42%
 
 REVISAR OU REMOVER PÁGINA - MOVER TÓPICOS PARA A seção CASO DE USO
 
-SDK do Media e os casos de uso da API da coleção de mídia: [Guia do Media Analytics.](/help/media-analytics-cookbook/media-analytics-cookbook.md)
+SDK do Media e os casos de uso da API da coleção de mídia: [Guia do Media Analytics.](/help/use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
 
 ## Casos de uso do SDK do Media
 
