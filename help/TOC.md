@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '865'
 ht-degree: 78%
 
 ---
@@ -54,10 +54,6 @@ ht-degree: 78%
          + [Condições de tempo limite](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
          + [Controlar a ordem dos eventos](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [Enfileirar eventos quando a resposta das sessões é lenta](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-      + Linhas do tempo do rastreamento de mídia {#mc-api-timelines}
-         + [Linha do tempo 1 - Visualização do conteúdo até o fim](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
-         + [Linha do tempo 2 - Usuário abandona a sessão](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
-         + [Linha do tempo 3 - Capítulos](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + Variáveis {#variables}
       + [Parâmetros de streaming de mídia](implementation/variables/audio-video-parameters.md)
       + [Parâmetros de publicidade](implementation/variables/ad-parameters.md)
@@ -174,6 +170,7 @@ ht-degree: 78%
    + [Obter dados de visualizadores simultâneos por meio da API](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [Obter dados de Tempo gasto com a reprodução da mídia por meio da API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Casos de uso {#media-use-cases}
+   + [Casos de uso do SDK do Media](use-cases/cookbook/sdk-cookbook-overview.md)
    + Rastreamento do estado do player {#player-state-tracking}
       + [Visão geral ](use-cases/player-state-tracking/player-state-overview.md)
       + [Estados padrão e personalizados](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -183,7 +180,6 @@ ht-degree: 78%
    + [Rastrear o conteúdo baixado offline](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [O manuseio de aplicativos é interrompido durante a reprodução](use-cases/cookbook/app-interrupts.md)
-   + [Casos de uso do SDK do Media](use-cases/cookbook/sdk-cookbook-overview.md)
    + [Atribuição de fluxo de mídia](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Resumo de sessões inativas](use-cases/cookbook/resuming-inactive.md)
    + [Rastreamento do Roku no SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
