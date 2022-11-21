@@ -4,13 +4,13 @@ description: Introdução ao Adobe Analytics para mídia de streaming.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
+source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '439'
 ht-degree: 6%
 
 ---
-
 
 # Introdução {#getting-started}
 
@@ -47,10 +47,6 @@ O **APIs da coleção de mídia** permite personalizar a implementação do med
 Para obter informações sobre como usar as APIs Media Collection, consulte [Documentação da API de mídia de streaming](/help/implementation/media-collection-api/mc-api-overview.md).
 
 ## Adobe Extensions {#adobe-extensions}
-
->[!NOTE]
->
->PRECISA DE INTRO PARA AS EXTENSÕES
 
 * O [**Extensão Adobe Medium Analytics for Audio and Video**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) (Extensão do Media Analytics), é necessário para implementações do iOS e tvOS. Ele fornece a funcionalidade necessária para adicionar a instância do rastreador a um site ou projeto de tag. A extensão do MA também requer a extensão do Analytics e a extensão Experience Cloud ID.
 
