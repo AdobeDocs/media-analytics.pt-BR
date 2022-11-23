@@ -12,11 +12,11 @@ ht-degree: 16%
 
 ---
 
-# Visão geral da mídia de streaming do Adobe Analytics for
+# Visão geral do Adobe Analytics para mídia de streaming
 
 ![Banner](./assets/media_analytics_banner.png)
 
-O Adobe Analytics para streaming de mídia é um complemento do Adobe Analytics que fornece ferramentas eficientes de medição para áudio, vídeo e anúncios. Com o Analytics for Streaming Media, você obtém detalhes granulares de duração, paradas e inícios quase em tempo real que permitem avaliar e combinar métricas de vídeo e áudio. Esses insights permitem entender os hábitos de visualização e acompanhamento de seus clientes e aumentar a participação com recomendações altamente personalizadas.
+O Adobe Analytics para mídia de streaming é um complemento do Adobe Analytics que fornece ferramentas eficientes de medição para áudio, vídeo e anúncios. Com o Analytics para mídia de streaming, você obtém detalhes granulares de duração, paradas e inícios quase em tempo real que permitem avaliar e combinar métricas de vídeo e áudio. Esses insights permitem entender os hábitos de visualização e acompanhamento de seus clientes e aumentar a participação com recomendações altamente personalizadas.
 
 O Adobe Analytics para mídia de streaming permite que você acompanhe a jornada completa do cliente em seu site e em aplicativos de transmissão. Você pode combinar métricas de mídia de transmissão com outros recursos do Adobe Analytics, como Audience Analytics, Mobile ou Cross-Device Analytics. As métricas se integram facilmente aos Relatórios do Adobe Analytics e a outros produtos da Adobe Experience Platform. A medição de mídia permite categorizar seus dados em várias dimensões e segmentos, capturando todos os metadados necessários para fazer uma análise completa e detalhada. Em seguida, você pode analisar dados e atribuir critérios de sucesso a mídias totalmente consumidas, tempo médio gasto e anúncios concluídos.
 
