@@ -1,18 +1,18 @@
 ---
-title: Como rastrear o conteúdo baixado offline na mídia de transmissão do Adobe
+title: Como rastrear o conteúdo baixado offline na mídia de transmissão da Adobe
 description: Saiba como usar o recurso Conteúdo baixado para rastrear o consumo de mídia quando um usuário está offline.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Rastrear o conteúdo baixado{#track-downloaded-content}
+# Rastrear o conteúdo baixado {#track-downloaded-content}
 
 ## Visão geral {#overview}
 
@@ -47,7 +47,7 @@ O recurso Conteúdo baixado é a versão offline (padrão) da API Media Collecti
 ### Ordem dos eventos
 
 * O primeiro evento na carga do lote deve ser `sessionStart` como de costume com a API Media Collection.
-* **Você deve incluir `media.downloaded: true`** nos parâmetros de metadados padrão (`params` chave) no evento `sessionStart` para indicar ao back-end que você está enviando o conteúdo baixado. Se este parâmetro não estiver presente ou for definido como &quot;false&quot; quando você enviar o conteúdo baixado, a API retornará um código de resposta 400 (Solicitação inválida). Esse parâmetro distingue o conteúdo baixado do conteúdo em tempo real para o back-end. Se `media.downloaded: true` estiver configurado em uma sessão em tempo real, também resultará em uma resposta 400 da API.
+* **Você deve incluir `media.downloaded: true`** nos parâmetros de metadados padrão (`params` chave) no evento `sessionStart` para indicar ao back-end que você está enviando o conteúdo baixado. Se este parâmetro não estiver presente ou for definido como “false” quando você enviar o conteúdo baixado, a API retornará um código de resposta 400 (Solicitação inválida). Esse parâmetro distingue o conteúdo baixado do conteúdo em tempo real para o back-end. Se `media.downloaded: true` estiver configurado em uma sessão em tempo real, também resultará em uma resposta 400 da API.
 * É da responsabilidade da implementação armazenar corretamente os eventos do reprodutor na ordem em que aparecem.
 
 ### Códigos de resposta
@@ -109,12 +109,12 @@ POST /api/v1/downloaded HTTP/1.1
 
 >[!IMPORTANT]
 >
->O conteúdo baixado também poderia ser enviado anteriormente para o `/api/v1/sessions` API. Essa maneira de rastrear o conteúdo baixado é **obsoleto** e será **removido** no futuro.
+>O conteúdo baixado também poderia ser enviado anteriormente para a `/api/v1/sessions` API. Essa maneira de rastrear o conteúdo baixado está **obsoleta** e será **removida** no futuro.
 
 
-O `/api/v1/sessions` A API só aceitará eventos de inicialização de sessão.
-Ao usar a nova API, a variável `media.downloaded` O sinalizador não é mais necessário.
-É altamente recomendável usar a variável `/api/v1/downloaded` API para novas implementações de conteúdo baixadas, bem como atualização de implementações existentes que dependem da API antiga.
+A `/api/v1/sessions` API só aceitará eventos de inicialização de sessão.
+Ao usar a nova API, o sinalizador `media.downloaded` anteriormente obrigatório não é mais necessário.
+É altamente recomendável usar a API `/api/v1/downloaded` para novas implementações de conteúdo baixadas, bem como atualização de implementações existentes que dependem da API antiga.
 
 
 ```
