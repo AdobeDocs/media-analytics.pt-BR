@@ -1,14 +1,14 @@
 ---
-title: Visão geral da mídia de streaming do Adobe Analytics for
-description: Use o Streaming Media Analytics para obter insight poderoso sobre conteúdo, áudio e anúncios.
+title: Visão geral do Adobe Analytics para mídia de streaming
+description: Use o Analytics para mídia de streaming e obtenha insights avançados de conteúdo, áudio e anúncios.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
@@ -16,34 +16,34 @@ ht-degree: 16%
 
 ![Banner](./assets/media_analytics_banner.png)
 
-O Adobe Analytics para mídia de streaming é um complemento do Adobe Analytics que fornece ferramentas eficientes de medição para áudio, vídeo e anúncios. Com o Analytics para mídia de streaming, você obtém detalhes granulares de duração, paradas e inícios quase em tempo real que permitem avaliar e combinar métricas de vídeo e áudio. Esses insights permitem entender os hábitos de visualização e acompanhamento de seus clientes e aumentar a participação com recomendações altamente personalizadas.
+O Adobe Analytics para mídia de streaming é um complemento do Adobe Analytics que fornece ferramentas eficientes de medição para áudio, vídeo e anúncios. Com o Analytics para mídia de streaming, você obtém detalhes precisos sobre duração, interrupções e inicializações quase em tempo real, o que permite avaliar e combinar métricas de vídeo e áudio. Esses insights permitem entender os hábitos de visualização e acompanhamento de seus clientes e aumentar o engajamento com recomendações altamente personalizadas.
 
-O Adobe Analytics para mídia de streaming permite que você acompanhe a jornada completa do cliente em seu site e em aplicativos de transmissão. Você pode combinar métricas de mídia de transmissão com outros recursos do Adobe Analytics, como Audience Analytics, Mobile ou Cross-Device Analytics. As métricas se integram facilmente aos Relatórios do Adobe Analytics e a outros produtos da Adobe Experience Platform. A medição de mídia permite categorizar seus dados em várias dimensões e segmentos, capturando todos os metadados necessários para fazer uma análise completa e detalhada. Em seguida, você pode analisar dados e atribuir critérios de sucesso a mídias totalmente consumidas, tempo médio gasto e anúncios concluídos.
+O Adobe Analytics para mídia de streaming permite acompanhar a jornada do cliente completa em seu site e aplicativos de streaming. Você pode combinar métricas de mídia de streaming com outros recursos do Adobe Analytics, como o Analytics para dispositivos móveis, Audience Analytics ou Cross-Device Analytics. Essas métricas se integram facilmente aos relatórios do Adobe Analytics e a outros produtos da Adobe Experience Platform. A medição de mídia permite categorizar seus dados em várias dimensões e segmentos, capturando todos os metadados necessários para fazer uma análise completa e detalhada. Em seguida, você pode analisar dados e atribuir critérios de sucesso a mídias totalmente consumidas, tempo médio gasto e anúncios concluídos.
 
-Você pode medir métricas vitais do delivery relacionadas à Qualidade da experiência (QoE), como quadros ignorados, tempo gasto no buffering e taxa média de bits. E as métricas podem ser combinadas com os dados do seu site ou aplicativo para visualizar o caminho e os interesses do cliente, para fornecer recomendações aprimoradas e personalizar as experiências do cliente usando o Adobe Experience Platform.
+Você pode medir métricas essenciais de entrega relacionadas à Qualidade de experiência (QoE), como quadros ignorados, tempo gasto no buffering e taxa média de bits. Adicionalmente, as métricas podem ser combinadas com os dados do seu site ou aplicativo para visualizar o caminho e os interesses do cliente, o que permite fornecer recomendações aprimoradas e personalizar a experiência dos clientes usando a Adobe Experience Platform.
 
 ## Como funciona
 
-Os dados de rastreamento de mídia de transmissão são coletados de um reprodutor com os SDKs do Media, as APIs da coleção de mídia ou as Extensões de mídia (com tags). Todos os dados granulares (até 10 segundos) são enviados ao Serviço do Media Analytics que coleta e processa os dados de cada sessão de reprodução individual. Quando a sessão de reprodução termina, os dados de rastreamento calculados são enviados ao Adobe Analytics para armazenamento e relatórios. Com as implementações do Adobe Customer Journey Analytics (CJA), os dados podem ser enviados para o CJA usando o ADC (Conector de dados do Analytics) para que os clientes possam usar o CJA como uma ferramenta de relatórios.
+Os dados de acompanhamento das mídias de streaming são coletados de um player por meio dos SDKs de mídia, das APIs da coleção de mídia ou das extensões de mídia (através de tags). Todos os dados granulares (até 10 segundos) são enviados ao serviço do Media Analytics que coleta e processa os dados de cada sessão de reprodução individual. Quando a sessão de reprodução termina, os dados de acompanhamento calculados são enviados ao Adobe Analytics para armazenamento e relatórios. Com as implementações do Adobe Customer Journey Analytics (CJA), os dados podem ser enviados para o CJA usando o Conector de dados do Analytics (ADC), para que os clientes possam usar o CJA como uma ferramenta de relatórios.
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 
 <div style="text-align: center;">
-<img src="./assets/streaming-process1.png" alt="Processo de mídia de transmissão" width="75%">
+<img src="./assets/streaming-process1.png" alt="Processo de streaming de mídia" width="75%">
 </div>
 
 ## Recursos
 
 Os benefícios do Adobe Analytics para streaming de mídia incluem monitoramento em tempo real, análise detalhada, insights acionáveis e oportunidades de monetização.
 
-* **Análise em tempo real**: Tome decisões acionáveis em tempo real utilizando as principais métricas de desempenho, como inícios de mídia, em vários canais.
+* **Análise em tempo real**: tome decisões acionáveis em tempo real, utilizando as principais métricas de desempenho, como inicializações de mídia, em vários canais.
 
-* **Impulsionar o envolvimento**: Envolva totalmente os usuários com menos eventos de buffer e entenda onde e quando os anúncios devem ser exibidos no conteúdo para fornecer uma experiência perfeita e menos intrusiva que oferece visitas repetidas.
+* **Promover o engajamento**: envolva totalmente os usuários com menos eventos de buffer e entenda onde e quando os anúncios devem ser exibidos no conteúdo para fornecer uma experiência fluida e menos intrusiva, o que resulta no retorno de usuários.
 
-* **Imagem holística**: Combine vários pontos de dados em todos os distribuidores de conteúdo para obter uma visão completa de todas as atividades de mídia. Meça a participação e as visualizações/escutas em todos os canais possíveis por meio do recurso Federated Analytics.
+* **Visão integral**: combine vários pontos de dados em todos os distribuidores de conteúdo para obter uma visão completa de todas as atividades de mídia. Além disso, meça o engajamento e as visualizações/acompanhamentos em todos os canais possíveis por meio do recurso do Federated Analytics.
 
-* **Maior granularidade**: Avalie o comportamento de visualização no nível mais granular, incluindo o momento do dia do visitante individual, os visualizadores simultâneos ou os ouvintes por minuto e a duração média do conteúdo consumido.
+* **Mais granularidade**: avalie o comportamento de visualização em mais detalhes, incluindo a hora de visita do visitante individual, os visualizadores/ouvintes simultâneos por minuto e a duração média do conteúdo consumido.
 
-* **Medição precisa**: Meça os vários dispositivos usados para o consumo de mídia, incluindo OTT, smartphone, tablet, desktop e muito mais, para monitorar os padrões e os hábitos de envolvimento do usuário.
+* **Medição precisa**: meça os vários dispositivos usados para o consumo de mídia, incluindo OTT, smartphones, tablets, dispositivos de desktop e muito mais, permitindo monitorar os padrões e hábitos de engajamento do usuário.
 
-* **Segmentação**: Aplique classificações aos seus players, dispositivos, gêneros, capítulos e shows para ver como cada um tem impacto em suas visualizações/escutas gerais e na participação do cliente com conteúdo, áudio, anúncios e combinações.
+* **Segmentação**: aplique classificações a seus players, dispositivos, gêneros, capítulos e séries para observar o impacto de cada um em suas visualizações/acompanhamentos gerais e no engajamento do cliente com o conteúdo, áudio, anúncios e combinações.
