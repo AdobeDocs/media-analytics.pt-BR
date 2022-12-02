@@ -1,17 +1,17 @@
 ---
 title: Relatórios de visualizadores simultâneos de mídia
-description: "Saiba como usar o painel Visualizadores simultâneos de mídia para analisar visualizadores simultâneos e entender o pico de simultaneidade e quedas."
+description: “Saiba como usar o painel Visualizadores simultâneos de mídia para analisar visualizadores simultâneos e entender o pico de simultaneidade e quedas.”
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Visão geral de visualizadores simultâneos de mídia {#media-concurrent-viewers}
+# Visão geral dos visualizadores simultâneos de mídia {#media-concurrent-viewers}
 
 A análise de visualizadores simultâneos permite compreender onde ocorreu o pico de simultaneidade ou onde ocorreram quedas, para fornecer informações valiosas sobre a qualidade do conteúdo e engajamento do visualizador e para ajudar na solução de problemas ou no planejamento de volume e escala.
 
