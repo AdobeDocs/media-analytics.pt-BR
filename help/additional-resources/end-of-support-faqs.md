@@ -5,15 +5,15 @@ exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '690'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Perguntas frequentes sobre o fim do suporte ao SDK móvel do Media Analytics
 
-Com o fim do suporte à versão 4 dos SDKs móveis em 31 de agosto de 2021, o Adobe também encerrará o suporte aos SDKs móveis do Media Analytics para iOS e Android. Após 31 de agosto de 2021, o Adobe não fornecerá correções, atualizações relacionadas ao SO ou suporte para o SDK móvel do Media Analytics.  Durante o processo de migração para esses novos SDKs da Experience Platform, lembre-se de que as [extensões do Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) devem ser implementadas para habilitar o Adobe Analytics para Streaming de Mídia.
+Com o fim do suporte à versão 4 dos SDKs móveis em 31 de agosto de 2021, a Adobe também encerrará o suporte aos SDKs móveis do Media Analytics para iOS e Android. Após 31 de agosto de 2021, a Adobe não fornecerá correções, atualizações de sistema operacional ou suporte para o SDK móvel do Media Analytics.  Durante o processo de migração para esses novos SDKs da Experience Platform, lembre-se de que as [extensões do Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) devem ser implementadas para habilitar o Adobe Analytics para Streaming de Mídia.
 
 >[!NOTE]
 >A Adobe Experience Platform Launch está sendo reformulada como um conjunto de tecnologias de coleção de dados na Experience Platform. Como resultado, várias alterações de terminologia foram implementadas na documentação do produto. Consulte o seguinte [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=pt-BR) para obter uma referência consolidada das alterações de terminologia.
@@ -23,11 +23,11 @@ Com o fim do suporte à versão 4 dos SDKs móveis em 31 de agosto de 2021, o Ad
 
 1. Os SDKs v4 móveis não terão mais suporte após 31 de agosto de 2021. Você deve migrar para os SDKs móveis da Adobe Experience Platform (AEP) para iOS e Android. Para obter mais informações, consulte [Perguntas frequentes sobre o fim do suporte aos SDKs móveis versão 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
-1. A implementação do Analytics para Streaming de Mídia exige o SDK móvel da AEP e o uso das extensões do Analytics e do Media Analytics. A partir de 1º de setembro de 2021, você deverá usar os novos SDKs móveis e extensões da AEP.  As extensões do Media Analytics são configuradas usando Tags de Adobe (coleta de dados).  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
+1. A implementação do Analytics para Streaming de Mídia exige o SDK móvel da AEP e o uso das extensões do Analytics e do Media Analytics. A partir de 1º de setembro de 2021, você deverá usar os novos SDKs móveis e extensões da AEP.  As extensões do Media Analytics são configuradas usando Tags da Adobe (coleção de dados).  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
 
 1. O desenvolvimento de recursos terminou para os SDKs do Media Analytics para iOS e Android.  Os novos recursos que foram introduzidos a partir do último trimestre de 2019 são ativados usando as extensões do Media Analytics e a API de coleção da mídia.
 
-1. Os SDKs do Roku e Chromecast permanecem disponíveis os clientes do Analytics para Streaming de Mídia. Os SDKs Roku e Chromecast continuarão tendo suporte e serão aprimorados como SDKs independentes.  Se você usar o JS SDK para o Media Analytics, poderá continuar a usar o SDK independente ou habilitar a extensão do Media Analytics usando a Coleta de dados do Adobe (anteriormente Adobe Launch).
+1. Os SDKs do Roku e Chromecast permanecem disponíveis os clientes do Analytics para Streaming de Mídia. Os SDKs Roku e Chromecast continuarão tendo suporte e serão aprimorados como SDKs independentes.  Se você utiliza o SDK JS do Media Analytics, poderá continuar a usar o SDK independente ou habilitar a extensão do Media Analytics usando a Coleção de dados da Adobe (antigo Adobe Launch).
 
 1. Antes de 1º de setembro de 2021, a Adobe pode, a seu critério exclusivo, desenvolver novas correções para problemas de alto impacto técnico ou exposição dos negócios. Com base na informações fornecidas pelo cliente, a Adobe determinará o grau de impacto e exposição e as atividades resultantes.
 
@@ -49,7 +49,7 @@ Caso tenha alguma dúvida, entre em contato com o Gerente de sucesso de clientes
 
 [Extensões do Media Analytics: Migração para Android](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 
-[Extensões do Media Analytics: Migração do iOS](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+[Extensões do Media Analytics: Migração para iOS](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
 
    [Extensões do Media Analytics: novas implementações](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
@@ -61,6 +61,6 @@ Caso tenha alguma dúvida, entre em contato com o Gerente de sucesso de clientes
 
    Sim, para tvOS (versão 10+), a implementação recomendada é a migração para as extensões do Media Analytics.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - iOS](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md).
 
-1. **Esse fim do suporte afeta o SDK para Fire TV e AndroidTV? &#x200B;**
+1. **Este fim de suporte afeta o SDK do Fire TV e Android TV?**
 
-   Sim, para Fire TV e AndroidTV, a implementação recomendada é a migração para as extensões do Media Analytics.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - Android](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md).
+   Sim, para o Fire TV e Android TV, a implementação recomendada é a migração para as extensões do Media Analytics.  Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch - Android](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md).
