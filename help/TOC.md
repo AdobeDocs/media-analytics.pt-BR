@@ -6,36 +6,36 @@ breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
 source-git-commit: 7b33301495a6596ce5e343e9e720d15619da2af9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '865'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Analytics para mídia de streaming {#using}
 
-+ [Guia do Streaming Media Analytics](media-overview.md)
++ [Guia do Analytics para mídia de streaming](media-overview.md)
 + Notas de versão {#release-notes}
-   + [Notas de versão da mídia de transmissão](additional-resources/release-notes.md)
+   + [Notas de versão de mídias de streaming](additional-resources/release-notes.md)
 + Introdução {#getting-started}
    + [Visão geral](getting-started/getting-started.md)
    + [SDKs, bibliotecas e extensões](getting-started/download-sdks.md)
    + [Dispositivos compatíveis](getting-started/supported-devices.md)
    + [Pré-requisitos ](getting-started/prereqs.md)
    + [Fim do suporte](additional-resources/end-of-support-faqs.md)
-   + [Documentação de mídia de transmissão](getting-started/implementation-documentation.md)
+   + [Documentação de mídia de streaming](getting-started/implementation-documentation.md)
 + Implementação {#implementation}
    + [Visão geral da implementação](implementation/overview.md)
-   + SDKs do Media - Implementação {#media-sdk}
-      + [Visão geral do SDK do Media](implementation/media-sdk/media-sdk-overview.md)
+   + SDKs de mídia - Implementação {#media-sdk}
+      + [Visão geral do SDK de mídia](implementation/media-sdk/media-sdk-overview.md)
       + Instalar e configurar {#setup}
          + [Instalar SDKs da Web](implementation/media-sdk/setup/web-implementation.md)
          + [Instalar SDKs móveis](implementation/media-sdk/setup/mobile-implementation.md)
          + Instalar SDKs de OTT {#ott-setup}
             + [Instalar o SDK do Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Instalar o SDK do Roku](implementation/media-sdk/setup/set-up-roku.md)
-   + APIs da coleção de mídia - Implementação {#streaming-media-apis}
+   + APIs de coleção de mídia - Implementação {#streaming-media-apis}
       + [Coleção de mídia](implementation/media-collection-api/mc-api-overview.md)
       + [Início rápido da API](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
       + [Solicitação de sessões](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -55,7 +55,7 @@ ht-degree: 78%
          + [Controlar a ordem dos eventos](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [Enfileirar eventos quando a resposta das sessões é lenta](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
    + Variáveis {#variables}
-      + [Parâmetros de streaming de mídia](implementation/variables/audio-video-parameters.md)
+      + [Parâmetros de mídia de streaming](implementation/variables/audio-video-parameters.md)
       + [Parâmetros de publicidade](implementation/variables/ad-parameters.md)
       + [Parâmetros de capítulo ](implementation/variables/chapter-parameters.md)
       + [Parâmetros de estado do player ](implementation/variables/player-state-parameters.md)
@@ -74,59 +74,59 @@ ht-degree: 78%
       + [Painel Audiência média por minuto da mídia](reporting/workspace/average-minute-audience.md)
       + [Painel Visualizadores simultâneos de mídia](reporting/workspace/media-concurrent-viewers-overview.md)
       + [Painel Tempo gasto com a reprodução da mídia](reporting/workspace/media-playback-time-spent.md)
-   + [Modelos do Espaço de trabalho de mídia](reporting/workspace/media-workspace-templates.md)
+   + [Modelos do Espaço de trabalho de mídia ](reporting/workspace/media-workspace-templates.md)
    + [Obter dados de visualizadores simultâneos por meio da API](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [Obter dados de Tempo gasto com a reprodução da mídia por meio da API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Casos de uso {#media-use-cases}
-   + [Casos de uso do SDK do Media](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [Casos de uso do SDK de mídia](use-cases/cookbook/sdk-cookbook-overview.md)
    + Rastreamento do estado do player {#player-state-tracking}
       + [Visão geral ](use-cases/player-state-tracking/player-state-overview.md)
       + [Estados padrão e personalizados](use-cases/player-state-tracking/standard-and-custom-states.md)
       + [Implementação e relatórios](use-cases/player-state-tracking/implementation-and-reporting.md)
-      + [Rastreamento de vários estados do player](use-cases/player-state-tracking/multiple-player-states.md)
-      + [Exemplos de rastreamento do estado do player](use-cases/player-state-tracking/player-state-examples.md)
-   + [Rastrear o conteúdo baixado offline](use-cases/track-downloaded-content.md)
-   + [Federated Analytics](use-cases/federated-analytics.md)
+      + [Acompanhamento do estado de vários players](use-cases/player-state-tracking/multiple-player-states.md)
+      + [Exemplos de acompanhamento do estado do player](use-cases/player-state-tracking/player-state-examples.md)
+   + [Acompanhar o conteúdo baixado offline](use-cases/track-downloaded-content.md)
+   + [Federated Analytics ](use-cases/federated-analytics.md)
    + [O manuseio de aplicativos é interrompido durante a reprodução](use-cases/cookbook/app-interrupts.md)
    + [Atribuição de fluxo de mídia](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Resumo de sessões inativas](use-cases/cookbook/resuming-inactive.md)
-   + [Rastreamento do Roku no SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [Intervalos de transmissão entre anúncios](use-cases/cookbook/fix-ad-play-ad.md)
+   + [Acompanhamento do Roku no SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
+   + [Manuseio de intervalos entre anúncios](use-cases/cookbook/fix-ad-play-ad.md)
    + Linhas do tempo {#timelines}
       + [Início e término do capítulo](use-cases/timelines/chapter-start-end.md)
       + [Exibir até o fim do conteúdo](use-cases/timelines/view-to-end-of-content.md)
-      + [Sessão de abandono](use-cases/timelines/user-abandons-session.md)
-   + Usar o Analytics em aplicativos OTT {#analytics-with-ott}
+      + [Abandonar sessão](use-cases/timelines/user-abandons-session.md)
+   + Uso do Analytics em aplicativos OTT {#analytics-with-ott}
       + [Rastrear estados do aplicativo](use-cases/analytics-with-ott/track-app-states.md)
       + [Rastrear ações do aplicativo](use-cases/analytics-with-ott/track-app-actions.md)
       + [Definir IDs de usuário](use-cases/analytics-with-ott/set-user-ids.md)
       + [OTT e Audience Manager ](use-cases/analytics-with-ott/ott-am.md)
       + [OTT e Experience Cloud ](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Privacidade e segurança {#streaming-media-privacy}
-   + [Configurações de saída e privacidade](privacy/opt-out-privacy.md)
+   + [Configurações da opção de rejeição e privacidade](privacy/opt-out-privacy.md)
    + [Segurança](privacy/security.md)
 + Implementações herdadas {#legacy-implementations}
-   + [Legado - Visão geral](legacy/setup/legacy-setup-overview.md)
-   + [Legado — Baixar SDKs](legacy/legacy-download-sdks.md)
-   + Legado - SDKs do Media {#legacy-media-sdks}
-      + [Legado - Visão geral do SDK do Media](legacy/media-sdk/setup/setup-overview.md)
+   + [Herdados - Visão geral](legacy/setup/legacy-setup-overview.md)
+   + [Herdados - Baixar SDKs](legacy/legacy-download-sdks.md)
+   + Herdados - SDKs de mídia {#legacy-media-sdks}
+      + [Herdados - Visão geral do SDK de mídia](legacy/media-sdk/setup/setup-overview.md)
       + [Configurar Android](legacy/media-sdk/setup/set-up-android.md)
       + [Configurar iOS](legacy/media-sdk/setup/set-up-ios.md)
       + Configurar JavaScript {#setup-javascript}
          + [Configurar o JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + Legado - SDK do Media para migração do Launch {#sdk-to-launch}
+   + Herdados - SDK de mídia para migração do Launch {#sdk-to-launch}
       + [Visão geral](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - SDK do Media para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - SDK do Media para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - SDK do Media para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+      + [Android - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [Sobre a medição de pulsação](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime e Análise de mídia de transmissão](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Ativação do gerenciamento de público-alvo do Adobe](legacy/intro-to-ava/am-enablement.md)
+   + [Adobe Primetime e Analytics para mídia de streaming](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Capacitação de gerenciamento de público da Adobe](legacy/intro-to-ava/am-enablement.md)
    + [Implementação de link personalizado](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-   + Rastreamento de marcos herdados {#legacy-milestone-tracking}
-      + [Rastreamento de marcos herdados](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
-      + [Migrar etapa para VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-      + [Migrar Marco para CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+   + Rastreamento de marcos herdado {#legacy-milestone-tracking}
+      + [Rastreamento de marcos herdado](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+      + [Migrar marco para VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [Migrar marco para CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Validação {#validation}
       + [Visão geral da validação](legacy/validation/validation-overview.md)
       + [Teste 1: reprodução padrão](legacy/validation/test1-standard-playback.md)
@@ -137,9 +137,9 @@ ht-degree: 78%
          + [Depuração do SDK](legacy/validation/debugging/sdk-debugging.md)
    + [Migração herdada: VHL 1.x para VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
    + [Configurar o JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-   + [Comparação de código v1.x para v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
-   + [Rastreamento de APIs 1x para 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
-   + [Legado - Introdução ao AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
+   + [Comparação de código: v1.x e v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
+   + [Acompanhamento de APIs: 1x a 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
+   + [Herdados - Introdução ao AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [Caminho do lado do cliente](legacy/intro-to-ava/implementation-paths/client-side-path.md)
    + Acompanhamento {#track-av-playback}
       + [Visão geral ](use-cases/track-av-playback/track-core-overview.md)
