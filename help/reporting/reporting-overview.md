@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
 >
 >Para aproveitar os novos recursos, os clientes do Media Analytics devem ativar novamente o rastreamento de mídia para RSIDs.
 
-1. Em [Adobe Analytics](https://experience.adobe.com) click **[!UICONTROL Administração > Conjuntos de relatórios].**
+1. Em [Adobe Analytics](https://experience.adobe.com), clique em **[!UICONTROL Admin > Conjuntos de relatórios].**
 1. Selecione o(s) conjunto(s) de relatórios no(s) qual(is) você está coletando dados de mídia e clique em **[!UICONTROL Editar configurações > Gerenciamento de mídia > Relatórios de mídia].**
 
    ![](assets/media-reporting.png){width="400px"}
@@ -35,7 +35,7 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
 
    * **Anúncios da mídia**
 
-      As avaliações dos anúncios de mídia são utilizadas para avaliar os anúncios no conteúdo de mídia. Esse recurso utiliza as eVars de solução para avaliar Anúncios, Nome do reprodutor do anúncio, Pod de anúncios e Posição do anúncio no pod. Os eventos de solução serão usados para Inícios de anúncio, Conclusões de anúncio, Tempo gasto no anúncio e Tempo gasto no vídeo.
+      As avaliações dos anúncios de mídia são utilizadas para avaliar os anúncios no conteúdo de mídia. Esse recurso utiliza as Evars de solução para medir Anúncios, Nome do player do anúncio, Pod de anúncios e Posição do anúncio no pod. Os eventos de solução serão usados para Inícios de anúncio, Conclusões de anúncio, Tempo gasto no anúncio e Tempo gasto no vídeo.
 
    * **Capítulos da mídia**
 
@@ -69,4 +69,4 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
 
 >[!IMPORTANT]
 >
->Não altere os nomes de classificação de nenhuma variável listada nas tabelas de métricas e metadados (por exemplo, [Parâmetros de áudio e vídeo](/help/metrics-and-metadata/audio-video-parameters.md)) que estão descritos em Relatório/variável reservada como &quot;classificação&quot;. As classificações de mídia são definidas quando um conjunto de relatórios é ativado para rastreamento de mídia. Periodicamente, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reativar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são ativadas verificando os nomes das variáveis. Se algum deles estiver faltando, a Adobe os adicionará novamente.
+>Não altere os nomes de classificação de nenhuma variável listada nas tabelas de métricas e metadados (por exemplo, [Parâmetros de áudio e vídeo](/help/metrics-and-metadata/audio-video-parameters.md)) que estão descritos em Relatório/variável reservada como “classificação”. As classificações de mídia são definidas quando um conjunto de relatórios é ativado para rastreamento de mídia. Periodicamente, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reativar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são ativadas verificando os nomes das variáveis. Se algum deles estiver faltando, a Adobe os adicionará novamente.
