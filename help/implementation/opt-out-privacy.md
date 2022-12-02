@@ -1,24 +1,24 @@
 ---
-title: Explicação de recusa e privacidade
-description: Saiba como lidar com aceitação, recusa e privacidade.
+title: Explicação sobre a opção de rejeição e privacidade
+description: Aprenda a gerenciar a opção de aceitação, rejeição e privacidade.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Opção de rejeição e privacidade{#opt-out-and-privacy}
+# Opção de rejeição e privacidade {#opt-out-and-privacy}
 
 ## Opção de rejeição/aceitação {#opt-out-opt-in}
 
 Você pode decidir se uma atividade de rastreamento é permitida em um determinado dispositivo:
 
-* **Aplicativos móveis -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `AdobeMobile`. Para recusar o rastreamento, você precisa usar a biblioteca do `AdobeMobile`. Para obter mais informações sobre as configurações de recusa e privacidade da `AdobeMobile`, consulte [Configurações de recusa e privacidade](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html).
+* **Aplicativos móveis -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `AdobeMobile`. Para recusar o rastreamento, você precisa usar a biblioteca do `AdobeMobile`. Para obter mais informações sobre as configurações de recusa e privacidade da `AdobeMobile`, consulte [Configurações de recusa e privacidade](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=pt-BR).
 * **Aplicativos do JavaScript/navegador -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `VisitorAPI`. Para excluir o rastreamento do, você precisa fazer a exclusão do serviço Visitor API. Para obter mais informações sobre recusa e privacidade, consulte [Serviço de Identidade da Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR)
 * **Os aplicativos OTT (Chromecast, Roku) -** Os SDKs de OTT fornecem APIs preparadas para o Regulamento Geral sobre a Proteção de Dados (GDPR), que permitem definir sinalizadores de status `opt` para a coleta e a transmissão de dados e para recuperar as identidades armazenadas localmente.
 
@@ -36,15 +36,15 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
 
          * **Chromecast:**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
          * **Roku:**
 
-                &quot;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
             >[!IMPORTANT]
             >
@@ -53,28 +53,28 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
 
          * **Chromecast:**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             
          * **Roku:**
 
-                &quot;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             * **Retorna a configuração atual:**
 
          * **Chromecast:**
 
-                &quot;
+                ```
                 ADBMobile.config.getPrivacyStatus()
-                &quot;
+                ```
             
          * **Roku:**
 
-                &quot;
+                ```
                 ADBMobile().getPrivacyStatus()
-                &quot;
+                ```
             Depois de alterar a configuração de privacidade usando `setPrivacyStatus`, a alteração torna-se permanente até ser alterada novamente usando este método ou ao desinstalar e instalar o aplicativo.
 
 ## Recuperar identificadores armazenados (aplicativos OTT) {#retrieving-stored-identifiers-ott-apps}
