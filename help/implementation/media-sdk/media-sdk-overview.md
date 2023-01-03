@@ -1,15 +1,15 @@
 ---
 title: Como implementar os SDKs do Adobe Streaming Media
-description: Saiba mais sobre como implementar o Adobe Analytics para mídia de transmissão usando os SDKs do Media.
+description: Saiba mais sobre como implementar o Adobe Analytics para mídia de streaming usando os SDKs do Media.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
-
 
 # Visão geral do SDK do Media {#implementation-overview}
 
@@ -22,7 +22,7 @@ Implemente os SDKs do Streaming Media na estrutura do reprodutor de vídeo e nos
 | Plataforma | Versão |
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [SDK do Media para JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Extensão do Adobe Medium Analytics com tags (coleta de dados) para Javascript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Extensão do Adobe Medium Analytics com tags (coleção de dados) para Javascript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
 ### Implementação móvel
 
@@ -33,7 +33,7 @@ Implemente os SDKs do Streaming Media na estrutura do reprodutor de vídeo e nos
 
 * A extensão iOS Media Analytics for Audio and Video é compatível com iOS, iPadOS e tvOS.
 
-### Implementação excedente
+### Implementação Over-the-top (OTT)
 
 | Plataforma | Versão |
 |:------:|:-----|

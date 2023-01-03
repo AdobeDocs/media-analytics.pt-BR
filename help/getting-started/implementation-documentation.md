@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
+workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Use as informações na tabela a seguir para localizar a documentação do méto
 | Implementação | Documentação |
 |:-----------------------:|----------------|
 | **Web** | * [Implementação da Web para mídia de transmissão](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Implementação da Web com extensão Adobe Media Analytics para Áudio e Vídeo ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=pt-BR) |
-| **Dispositivo móvel** | *[Guia do SDK do Adobe Experience Platform Mobile](https://aep-sdks.gitbook.io/docs/) <br> *[Extensão Adobe Media Analytics para Áudio e Vídeo](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)<br> *[Versões atuais do SDK móvel](https://developer.adobe.com/client-sdks/documentation/) <br> *[Implementação móvel para mídia de transmissão](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
+| **Dispositivo móvel** | *[Guia do SDK do Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/) <br> *[Extensão Adobe Media Analytics para Áudio e Vídeo](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Versões atuais do SDK móvel](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Implementação móvel para mídia de transmissão](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
 | **OTT** | *[SDK do Chromecast 3.0 para soluções da Adobe Marketing Cloud](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Configurar Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[Configurar Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **APIs da Adobe Experience Platform** | *[APIs da coleção de mídia](/help/implementation/media-collection-api/mc-api-overview.md) |
 
@@ -33,7 +33,7 @@ A tabela abaixo lista a documentação sobre os produtos da Adobe usados com a A
 
 | Produto | Documentação |
 |:-----------------------:|----------------|
-| **Adobe Analytics** | *[Guia de implementação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR)<br> *[Guia de componentes do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=pt-BR)<br> *[Guia de ferramentas do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=pt-BR)<br> *[Tutoriais do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=pt-BR#tutoriais) <br> *[APIs do Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Implementação móvel do Analytics](https://developer.adobe.com/client-sdks/documentation/) |
+| **Adobe Analytics** | *[Guia de implementação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR)<br> *[Guia de componentes do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=pt-BR)<br> *[Guia de ferramentas do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=pt-BR)<br> *[Tutoriais do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=pt-BR#tutoriais) <br> *[APIs do Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Implementação móvel do Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
 | **Tags** | *[Documentação de tags da Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) |
 
 ## Tutoriais do Adobe Enterprise {#adobe-tutorials}

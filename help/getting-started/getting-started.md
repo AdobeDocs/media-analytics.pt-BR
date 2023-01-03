@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
-workflow-type: ht
-source-wordcount: '439'
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ A solução Adobe Analytics para mídia de transmissão é fornecida para as seg
 * Over-the-top
 * Qualquer dispositivo conectado que possa ser usado para mídia de transmissão ou integração de servidor para servidor
 
-Para obter mais informações, consulte [Dispositivos e plataformas compatíveis](#_Supported_devices_and).
+Para obter mais informações, consulte [Dispositivos e plataformas compatíveis](/help/getting-started/supported-devices.md).
 
 >[!IMPORTANT]
 >
@@ -45,11 +45,3 @@ Para obter informações sobre como baixar e instalar SDKs de mídia, consulte [
 As **APIs da Coleção de mídia** permitem personalizar a implementação de análise de mídia. Use as APIs da Coleção de mídia para chamar diretamente os servidores da Adobe e executar, praticamente, qualquer ação que você possa realizar usando os SDKs e muito mais. Personalize sua coleção de dados para criar relatórios que explorem, obtenham insights ou respondam a perguntas importantes sobre seus dados de mídia de transmissão.
 
 Para obter informações sobre como usar as APIs da Coleção de mídia, consulte [Documentação da API de mídia de streaming](/help/implementation/media-collection-api/mc-api-overview.md).
-
-## Extensões da Adobe {#adobe-extensions}
-
-* A [**extensão do Adobe Media Analytics para Áudio e Vídeo**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=pt-BR) (Extensão do Media Analytics), é necessária para implementações do iOS e tvOS. Essa extensão fornece a funcionalidade para adicionar a instância do rastreador a um site ou projeto de tag. A extensão do MA também requer a extensão do Analytics e a extensão da ID da Experience Cloud.
-
-* [Extensão do Analytics versão 1.6 ou superior](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=pt-BR) — Essa extensão permite carregar a biblioteca JavaScript do SDK da Web da Adobe Experience Platform para enviar dados para soluções da Adobe.
-
-* [Extensão da ID da Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=pt-BR) — Essa extensão implementa o Serviço de ID da Experience Cloud, que identifica visitantes em todas as soluções da Experience Cloud. O serviço do Experience Cloud ID é uma extensão de personalização na Adobe Experience Platform.
