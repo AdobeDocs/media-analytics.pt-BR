@@ -6,7 +6,7 @@ exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '596'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 
 ### Variáveis opcionais
 
-| Marco | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
+| Milestone | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/D | Não disponível. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/D | Não disponível. |
@@ -58,7 +58,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 
 ### Variáveis de rastreamento de anúncios
 
-| Marco | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
+| Milestone | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/D | Não disponível. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/D | Não disponível. |
@@ -68,7 +68,7 @@ As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link 
 
 ### Métodos do módulo de mídia
 
-| Marco | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
+| Milestone | Sintaxe do Milestone | Link personalizado | Link personalizado Sintaxe |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | `s.tl()` | `s.linkTrackVars` <br> `  = 'events,` <br> `     prop10,` <br> `     eVar10,` <br> `     eVar12,` <br> `     eVar15,` <br> `     contextData.video.name,` <br> `     contextData.video.view';` <br> `s.linkTrackEvents ` <br> `  = 'event2';` <br> `s.prop10` <br> `   = mediaName;` <br> `s.eVar10` <br> `  = mediaName;` <br> `s.eVar12` <br> `  = "video";` <br> `s.eVar15` <br> `  = mediaPlayerName;` <br> `s.events` <br> `  = 'event2';` <br> `s.contextData['video.name']` <br> `  = mediaName;` <br> `s.contextData['video.view']` <br> `  = 'true';` <br> `s.tl(this,'o','Video Start');` |
 | mediaName | `mediaName`: (obrigatório) o nome do vídeo conforme você quer que ele seja exibido nos relatórios de vídeo. | Definir eVar ou variável dos dados de contexto na chamada de link. | `s.prop10 = mediaName;` <br> `s.eVar10 = mediaName;` <br> `s.contextData['video.name']` <br> `  = mediaName;` |
