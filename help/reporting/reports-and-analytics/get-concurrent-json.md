@@ -3,7 +3,7 @@ title: Obter dados de relatório JSON de visualizadores simultâneos
 description: Obter dados de relatório JSON de visualizadores simultâneos
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
