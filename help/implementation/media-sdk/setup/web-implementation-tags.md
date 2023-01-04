@@ -3,14 +3,15 @@ title: Como configurar uma implementação da Web para o Analytics para mídia d
 description: Saiba como implementar o Adobe Streaming Media para aplicativos Web.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
+exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
+source-git-commit: a6dba33839bba976b67a9b1e9669fce266d1cabd
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 9%
 
 ---
 
-# Implementar o Analytics usando a extensão Media Analytics
+# Instalar o Analytics usando a extensão Media Analytics
 
 Você pode usar a extensão Adobe Medium Analytics para implementar o Analytics. A extensão do Media Analytics adiciona o principal SDK de mídia JavaScript (Media 3.x SDK). Essa extensão fornece a funcionalidade necessária para adicionar a instância do Media Tracker a um site ou projeto habilitado para tags.
 
