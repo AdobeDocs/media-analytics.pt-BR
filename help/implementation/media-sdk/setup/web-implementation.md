@@ -4,20 +4,18 @@ description: Saiba como implementar o Adobe Streaming Media para aplicativos Web
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
+source-git-commit: d0ea5f9d8ee61475aa40c606fb79659dfd6b3870
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 73%
+source-wordcount: '453'
+ht-degree: 70%
 
 ---
 
-# Instalar SDKs da Web {#install-web-sdks}
+# Implementar o Analytics usando JavaScript {#install-web-sdks}
 
-Esta seção inclui informações sobre como instalar o SDK independente da Web e configurar o JavaScript.
+As informações nesta página descrevem como instalar o SDK independente da Web e configurar o JavaScript.
 
-* [SDK da Web independente](/help/implementation/media-sdk/setup/web-implementation.md)
-
-* [SDK de extensão da Web](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=pt-BR){target=_blank}
+Como alternativa, você pode usar a extensão Adobe Medium Analytics para implementar o Analytics, conforme descrito em [Implementar o Analytics usando a extensão Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Pré-requisitos  {#prerequesites}
 

@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: c2750af493d9cd526e776a27c51452d3a8fe25cb
+source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 99%
+source-wordcount: '887'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,9 @@ ht-degree: 99%
    + SDKs de mídia - Implementação {#media-sdk}
       + [Visão geral do SDK de mídia](implementation/media-sdk/media-sdk-overview.md)
       + Instalar e configurar {#setup}
-         + [Instalar SDKs da Web](implementation/media-sdk/setup/web-implementation.md)
+         + Instalar SDKs da Web {#install-web-sdk}
+            + [Implementar o Analytics usando JavaScript](implementation/media-sdk/setup/web-implementation.md)
+            + [Implementar o Analytics usando a extensão Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Instalar SDKs móveis](implementation/media-sdk/setup/mobile-implementation.md)
          + Instalar SDKs de OTT {#ott-setup}
             + [Instalar o SDK do Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)

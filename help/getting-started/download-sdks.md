@@ -5,9 +5,9 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '385'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,7 @@ As tags da Adobe Experience Platform são a próxima geração de recursos de ge
 
 | Plataforma compatível | Versão |  APIs   |  Documentação  |  Amostra  |
 |:---:|---|---|---|---|
-| ![Ícone do JavaScript](assets/javascript-icon.png) | Web - [SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referência da API JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Configurar o SDK de mídia v3.x para JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Amostra do SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![Ícone do JavaScript](assets/javascript-icon.png) | Web - [SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referência da API JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Implementar o Analytics usando JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Amostra do SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![Ícone do JavaScript](assets/javascript-icon.png) | Web - Extensão de mídia |  | [Extensão do Adobe Media Analytics (SDK 3.x) para áudio e vídeo com o uso de tags (coleção de dados)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=pt-BR) | [Amostra da extensão do Adobe Media Analytics (SDK 3.x) para áudio e vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### Implementação móvel {#get-mobile-extension}
