@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: f25a661c9ad4af1aa1cd97854c26fda44cc6816e
+source-git-commit: 97d5d1df35bb282cac803500e1ddd72d654aef6e
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 97%
@@ -26,10 +26,10 @@ ht-degree: 97%
    + Fim do suporte {#end-of-support}
       + [Fim do suporte ao SDK móvel do Media Analytics](additional-resources/end-of-support-faqs.md)
       + Herdados - SDK de mídia para migração do Launch {#sdk-to-launch}
-      + [Visão geral](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [Visão geral](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+         + [Android - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [JavaScript - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [Documentação de mídia de streaming](getting-started/implementation-documentation.md)
 + Implementação {#implementation}
    + [Visão geral da implementação](implementation/overview.md)
