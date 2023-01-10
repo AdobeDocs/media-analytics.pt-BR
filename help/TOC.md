@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 9ff1cf4f622f9f2d34275297ffbc3ebf92c2f1ba
+source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 97%
+source-wordcount: '895'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 97%
    + [SDKs, bibliotecas e extensões](getting-started/download-sdks.md)
    + Fim do suporte {#end-of-support}
       + [Fim do suporte ao SDK móvel do Media Analytics](additional-resources/end-of-support-faqs.md)
-      + Herdados - SDK de mídia para migração do Launch {#sdk-to-launch}
+      + Legado - SDK do Media independente para a migração do Launch {#sdk-to-launch}
          + [Visão geral](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
