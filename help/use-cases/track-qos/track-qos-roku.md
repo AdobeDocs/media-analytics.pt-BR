@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear a qualidade da experiência no Roku
-description: "Saiba mais sobre como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media no Roku."
+description: “Saiba como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK de mídia no Roku.”
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
