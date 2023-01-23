@@ -1,14 +1,14 @@
 ---
-title: "Reprodução de VOD com anúncios precedentes"
-description: "Veja um exemplo de como rastrear o conteúdo de VOD que contém anúncios precedentes usando o SDK do Media."
+title: “Reprodução de VOD com anúncios antes da exibição”
+description: “Veja um exemplo de como rastrear conteúdo de VOD que contém anúncios antes da exibição usando o SDK de mídia.”
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Semelhante às chamadas `Heartbeat Content Complete`, quando a reprodução do a
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## Exemplo de código para ad break antes da exibição {#sample-code-for-a-pre-roll-ad-break}
+## Exemplo de código para um ad break antes da exibição {#sample-code-for-a-pre-roll-ad-break}
 
 Neste cenário, o VOD consiste em um anúncio antes da exibição, um segundo anúncio antes da exibição e, em seguida, o conteúdo é reproduzido.
 
