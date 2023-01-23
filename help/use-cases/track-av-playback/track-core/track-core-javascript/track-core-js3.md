@@ -1,13 +1,13 @@
 ---
-title: Saiba Como Rastrear A Reprodução Principal Usando O JavaScript v3.x
-description: Saiba como implementar o rastreamento principal usando o SDK do Media em um navegador com aplicativos JavaScript 3.x.
+title: Saiba como rastrear a reprodução principal usando o JavaScript v3.x
+description: Saiba como implementar o rastreamento principal usando o SDK de mídia em um navegador que utiliza aplicativos JavaScript 3.x.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,18 +28,18 @@ Esta documentação abrange o rastreamento na versão 3.x do SDK.
    | --- | --- | --- |
    | `name` | string | String não vazia que indica o nome da mídia. |
    | `id` | string | String não vazia que indica um identificador de mídia exclusivo. |
-   | `length` | número | Número positivo que indica a duração da mídia em segundos. Use 0 se o comprimento for desconhecido. |
+   | `length` | number | Número positivo que indica a duração da mídia em segundos. Use 0 se o comprimento for desconhecido. |
    | `streamType` | string |  |
    | `mediaType` |  | Tipo de mídia (áudio ou vídeo). |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nome da constante | Descrição   |
    |---|---|
    | `VOD` | Tipo de fluxo para vídeo sob demanda. |
    | `AOD` | Tipo de fluxo para áudio sob demanda. |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
