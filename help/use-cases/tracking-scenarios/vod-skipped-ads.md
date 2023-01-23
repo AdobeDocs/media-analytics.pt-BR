@@ -1,14 +1,14 @@
 ---
 title: Reprodução de VOD com anúncios ignorados
-description: Veja um exemplo de como rastrear o conteúdo de VOD no qual o usuário ignorou os anúncios usando o SDK do Media.
+description: Veja um exemplo de como rastrear um conteúdo de VOD no qual o usuário ignorou os anúncios usando o SDK de mídia.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Esse cenário é idêntico ao cenário de [Reprodução de VOD com anúncios pre
 | Acionador   | Método do Heartbeat  | Chamadas de rede   | Notas   |
 | --- | --- | --- | --- |
 | Cliques do usuário [!UICONTROL Reproduzir] | `trackSessionStart()` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não sabe que há um anúncio antes da exibição. Essas chamadas de rede ainda são idênticas às chamadas do cenário [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
-| O anúncio começa. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
+| O anúncio começa. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Início de anúncios do Analytics, Início de anúncios do Heartbeat |  |
 | O primeiro quadro do anúncio é reproduzido. | `trackPlay()` | Heartbeat Ad Play | Quando o conteúdo do anúncio é reproduzido antes do conteúdo principal, os heartbeats serão iniciados quando o anúncio for reproduzido. |
 | O anúncio é reproduzido. |  | Ad Heartbeats (Pulsações do anúncio) |  |
 | O anúncio é ignorado. | `trackEvent:trackAdSkip` |  | Não há chamada de rede de anúncio concluída. |
@@ -35,7 +35,7 @@ Esse cenário é idêntico ao cenário de [Reprodução de VOD com anúncios pre
 
 ## Parâmetros {#parameters}
 
-Os parâmetros são idênticos aos da [reprodução de VOD com anúncios antes da exibição](/help/use-cases/tracking-scenarios/vod-preroll-ads.md), exceto por não terem anúncios concluídos e nenhuma chamada ad break concluída.
+Os parâmetros são idênticos aos da [reprodução de VOD com anúncios antes da exibição](/help/use-cases/tracking-scenarios/vod-preroll-ads.md), exceto por não terem anúncios concluídos e nenhuma chamada de ad break concluída.
 
 ## Código de exemplo {#sample-code}
 
