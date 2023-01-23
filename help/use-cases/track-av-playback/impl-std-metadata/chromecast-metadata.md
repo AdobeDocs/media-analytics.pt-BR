@@ -1,14 +1,14 @@
 ---
 title: Explicação das chaves de metadados do Chromecast
-description: Saiba como definir metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento no Chromecast.
+description: Saiba como definir metadados padrão de vídeo e anúncio para serem enviados com chamadas de rastreamento no Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '139'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Os metadados padrão de vídeo e anúncio podem ser definidos em objetos de info
 | ID do site | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | URL da arte | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Implementações de amostra para o Chromecast {#sample-implementations-for-chromecast}
+## Implementações de exemplo para o Chromecast {#sample-implementations-for-chromecast}
 
 ### Vídeo
 
