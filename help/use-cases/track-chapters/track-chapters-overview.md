@@ -1,14 +1,14 @@
 ---
-title: Saiba como rastrear capítulos e segmentos explicados
-description: Como implementar o rastreamento de capítulo e segmento com o SDK do Media.
+title: Saiba como rastrear capítulos e segmentos
+description: Como implementar o rastreamento de capítulo e segmento com o SDK de mídia.
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ As instruções a seguir fornecem orientação para a implementação usando SDK
 
 O rastreamento de capítulos e segmentos está disponível para capítulos ou segmentos de mídia definidos de forma personalizada. Alguns usos comuns para o rastreamento de capítulos são definir segmentos personalizados com base no conteúdo de mídia (como entradas de beisebol) ou definir segmentos de conteúdo entre ad breaks. O rastreamento de capítulos **não** é necessário para implementações de heartbeat de mídia principais.
 
-O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítulo e capítulos ignorados. Você pode usar a API do reprodutor de mídia com lógica de segmentação personalizada para identificar eventos do reprodutor e para preencher as variáveis de capítulo obrigatórias e opcionais.
+O rastreamento do capítulo inclui inícios de capítulo, conclusões de capítulo e capítulos ignorados. Você pode usar a API do reprodutor de mídia com lógica de segmentação personalizada para identificar eventos do player e para preencher as variáveis de capítulo obrigatórias e opcionais.
 
-## Eventos do reprodutor
+## Eventos do player
 
 ### No início do capítulo
 
