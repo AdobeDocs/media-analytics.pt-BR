@@ -1,13 +1,13 @@
 ---
 title: Saiba como rastrear anúncios usando o JavaScript 3.x
-description: Implementar o rastreamento de anúncios nos aplicativos do navegador (JS) usando o SDK do Media.
+description: Implementar o rastreamento de anúncios nos aplicativos de navegador (JS) usando o SDK de mídia.
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 >[!IMPORTANT]
 >
->Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
+>Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constantes de rastreamento do anúncio
 
@@ -37,9 +37,9 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
    | Nome da variável | Tipo | Descrição |
    | --- | --- | --- |
-   | `name` | string | String não vazia que indica o nome do adbreak (antes da exibição, intermediário e posterior). |
-   | `position` | número | A posição do número do ad break, começando com 1. |
-   | `startTime` | número | Valor do indicador de reprodução no início do ad break. |
+   | `name` | string | String não vazia que indica o nome do ad break (precedente, intermediário e posterior). |
+   | `position` | number | A posição do número do ad break, começando com 1. |
+   | `startTime` | number | Valor do indicador de reprodução no início do ad break. |
 
    Criação do objeto Ad break:
 
@@ -62,10 +62,10 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
    | Nome da variável | Tipo | Descrição |
    | --- | --- | --- |
-   | `name` | string | String não vazia que indica o nome da publicidade. |
+   | `name` | string | String não vazia que indica o nome do anúncio. |
    | `adId` | string | String não vazia que indica o identificador de anúncio. |
-   | `position` | número | A posição do número do anúncio no adbreak, começando com 1. |
-   | `length` | número | Número positivo que indica a duração do anúncio. |
+   | `position` | number | O número da posição do anúncio no ad break, começando com 1. |
+   | `length` | number | Número positivo que indica a duração do anúncio. |
 
    Criação do objeto de anúncio:
 
@@ -79,7 +79,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
-   * [Implementar Metadados de publicidade padrão no JavaScript](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+   * [Implementar metadados de publicidade padrão no JavaScript](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do anúncio atual:
 
       ```js
