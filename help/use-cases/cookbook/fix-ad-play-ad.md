@@ -1,14 +1,14 @@
 ---
-title: Resolver a exibição da reprodução principal entre anúncios
-description: "Saiba como lidar com chamadas inesperadas de main:play entre anúncios."
+title: Resolvendo o problema da reprodução principal aparecendo entre os anúncios
+description: “Saiba como lidar com chamadas de reprodução principal inesperadas entre anúncios.”
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Ao usar o Adobe Debug ou um farejador de pacotes de rede, como o Charles, se voc
 * Início do anúncio: `s:event:type=start` &amp; `s:asset:type=ad`
 * Reprodução do anúncio: `s:event:type=play` &amp; `s:asset:type=ad`
 * Anúncio concluído: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Reprodução do conteúdo principal: `s:event:type=play` &amp; `s:asset:type=main`**(esperado)**
+* Reprodução do conteúdo principal: `s:event:type=play` &amp; `s:asset:type=main` **(esperado)**
 
 ## RESOLUÇÃO
 
