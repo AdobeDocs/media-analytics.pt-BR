@@ -1,14 +1,14 @@
 ---
 title: Reprodução de VOD sem anúncios
-description: Visualize um exemplo de rastreamento de reprodução de VOD sem anúncios.
+description: Um exemplo de rastreamento de reprodução de VOD sem anúncios.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Este cenário inclui um ativo de VOD sem anúncios e é reproduzido uma vez do i
 | Acionador | Método do Heartbeat | Chamadas de rede | Notas   |
 |---|---|---|---|
 | Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção Reproduzir ou um evento de reprodução automática. |
-| Primeiro quadro do Media | `trackPlay` | Heartbeat Content Play | Esse método aciona o temporizador e a partir desse ponto, as pulsações serão enviadas a cada 10 segundos durante a reprodução. |
+| Primeiro quadro do Media | `trackPlay` | Reprodução de conteúdo do Heartbeat | Esse método aciona o temporizador e a partir desse ponto, as pulsações serão enviadas a cada 10 segundos durante a reprodução. |
 | Reproduções de conteúdo |  | Content Heartbeats |  |
 | O conteúdo é concluído | `trackComplete` | Heartbeat Content Complete | *Concluído* significa que o fim do indicador de reprodução foi atingido. |
 
@@ -41,7 +41,7 @@ Vários dos mesmos valores que você vê nas chamadas de Heartbeat também são 
 | `s:asset:media_id` | &lt;O nome da sua mídia> |  |
 | `s:meta:*` | opcional | Metadados personalizados que são configurados na mídia. |
 
-## Heartbeat Content Play {#heartbeat-content-play}
+## Reprodução de conteúdo do Heartbeat {#heartbeat-content-play}
 
 Esses parâmetros devem ser quase idênticos à chamada de `Heartbeat Content Start`, mas a principal diferença é o parâmetro `s:event:type`. Todos os outros parâmetros ainda devem existir.
 
@@ -50,11 +50,11 @@ Esses parâmetros devem ser quase idênticos à chamada de `Heartbeat Content St
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Pulsações de conteúdo {#content-heartbeats}
+## Conteúdo do Heartbeats {#content-heartbeats}
 
 Durante a reprodução da mídia, um temporizador envia ao menos um heartbeat a cada 10 segundos. Essas pulsações contêm informações sobre reprodução, anúncios, buffering e assim por diante. O conteúdo exato de cada pulsação está além do escopo desse documento, mas o problema crítico é que as pulsações são acionadas de forma consistente enquanto a reprodução continua.
 
-Nas pulsações de conteúdo, procure pelos seguintes parâmetros:
+Nas conteúdo do Heartbeats, procure pelos seguintes parâmetros:
 
 | Parâmetros | Valor | Notas   |
 |---|---|---|
