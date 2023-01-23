@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear a reprodução principal no iOS
-description: Saiba como implementar o rastreamento principal usando o SDK do Media no iOS.
+description: Saiba como implementar o rastreamento principal usando o SDK de mídia no iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -44,7 +44,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | Tipo de fluxo para audiobook |
    | `ADBMediaHeartbeatStreamTypePODCAST` | Tipo de fluxo para podcast |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
