@@ -1,14 +1,14 @@
 ---
-title: Saiba mais sobre as linhas do tempo de rastreamento de mídia � usuário abandona a sessão
-description: Saiba mais sobre a linha do tempo do indicador de reprodução e a ação da � do usuário correspondente quando uma sessão de vídeo é abandonada. Saiba mais sobre os detalhes de cada ação e solicitações.
+title: Saiba mais sobre as linhas do tempo de rastreamento de mídia ‐ Usuário abandona a sessão
+description: Saiba mais sobre a linha do tempo do indicador de reprodução e a ação do usuário correspondente quando uma sessão de vídeo é abandonada. Saiba mais sobre os detalhes de cada ação e solicitação.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Os diagramas a seguir ilustram a linha do tempo do indicador de reprodução e a
 | --- | :---: | :---: | --- |
 | Botão Reproduzir automaticamente ou Reproduzir pressionado | 0 | 0 | `/api/v1/sessions` |
 
-Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. Retorna uma ID de sessão (`{sid}`) ao cliente usada para identificar todas as chamadas de rastreamento subsequentes na sessão. O estado do reprodutor ainda não é &quot;reproduzindo&quot;, mas &quot;iniciando&quot;.  [Os parâmetros obrigatórios da sessão](../mc-api-ref/mc-api-sessions-req.md) devem ser incluídos no mapa `params` no corpo da solicitação.  No back-end, essa chamada gera uma chamada de inicialização do Adobe Analytics.
+Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. Retorna uma ID de sessão (`{sid}`) ao cliente usada para identificar todas as chamadas de rastreamento subsequentes na sessão. O estado do player ainda não é “reproduzindo”, mas “iniciando”.  [Os parâmetros obrigatórios da sessão](../mc-api-ref/mc-api-sessions-req.md) devem ser incluídos no mapa `params` no corpo da solicitação.  No back-end, essa chamada gera uma chamada de inicialização do Adobe Analytics.
 
 ```json
 {
@@ -155,11 +155,11 @@ O primeiro anúncio precedente terminou.
 }
 ```
 
-### Ação 7 - Quebra de anúncio concluída {#Action-7}
+### Ação 7 - Ad break concluído {#Action-7}
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear conclusão de ad break antes da exibição | 12º | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear conclusão de ad break antes da exibição | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 O ad break está concluído. Durante todo o ad break, o player permaneceu no estado de &quot;reprodução&quot;.
 
@@ -177,9 +177,9 @@ O ad break está concluído. Durante todo o ad break, o player permaneceu no est
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear evento de reprodução | 12º | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear evento de reprodução | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Mova o reprodutor para o estado &quot;reproduzindo&quot;; comece a rastrear o início da reprodução do conteúdo.
+Altere o estado do player para “reproduzindo”; comece a rastrear o início da reprodução do conteúdo.
 
 ```json
 {
@@ -230,11 +230,11 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Ação 11 — Erro {#Action-11}
+### Ação 11 - Erro {#Action-11}
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Ocorre um erro, o aplicativo envia informações de erro. | 32 | 20º | `/api/v1/sessions/{sid}/events` |
+| Ocorre um erro, o aplicativo envia informações de erro. | 32 | 20 | `/api/v1/sessions/{sid}/events` |
 
 ```json
 {
@@ -250,7 +250,7 @@ Envie um ping ao back-end a cada 10 segundos.
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O aplicativo se recupera do erro, o usuário pressiona Play | 37 | 20º | `/api/v1/sessions/{sid}/events` |
+| O aplicativo se recupera do erro, o usuário pressiona Play | 37 | 20 | `/api/v1/sessions/{sid}/events` |
 
 ```json
 {
@@ -283,7 +283,7 @@ Envie um ping ao back-end a cada 10 segundos.
 }
 ```
 
-### Ação 14 - Início de quebra de anúncio {#Action-14}
+### Ação 14 - Início do ad break {#Action-14}
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
@@ -310,7 +310,7 @@ Anúncio intermediário de 8 segundos: envie `adBreakStart` .
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear início do anúncio nº 1 durante a exibição | 45º | 33º | `/api/v1/sessions/{sid}/events` |
+| Rastrear início do anúncio nº 1 durante a exibição | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 Rastreie o anúncio intermediário.
 
@@ -336,11 +336,11 @@ Rastreie o anúncio intermediário.
 }
 ```
 
-### Ação 16 — Fechar aplicativo {#Action-16}
+### Ação 16 - Fechar aplicativo {#Action-16}
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| O usuário fecha o aplicativo. O aplicativo determina que o usuário abandonou a visualização e não retornou para esta sessão. | 48 | 33º | `/api/v1/sessions/{sid}/events` |
+| O usuário fecha o aplicativo. O aplicativo determina que o usuário abandonou a visualização e não retornou para esta sessão. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
 Envie `sessionEnd` para o back-end do VA para indicar que a sessão deve ser encerrada imediatamente, sem processamento adicional.
 
