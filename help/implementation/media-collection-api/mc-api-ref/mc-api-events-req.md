@@ -1,14 +1,14 @@
 ---
-title: Ponto de extremidade da solicitação de eventos da API da coleção de mídia de streaming �
-description: "Quais são os parâmetros de ponto de extremidade e as respostas da solicitação dos eventos da API da coleção de mídia?"
+title: Ponto de acesso da solicitação de eventos ‐ da API da coleção de mídia de transmissão
+description: "Quais são as respostas e parâmetros do ponto de acesso da solicitação dos eventos da API da coleção de mídia?"
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Access-Control-Expose-Headers Location
 | Código de resposta HTTP | Descrição | Itens de ação do cliente |
 |---|---|---|
 | **204** | **Sem conteúdo.** <br/><br/>O Heartbeat foi salvo com sucesso. | N/D |
-| **400** | **Solicitação inválida.** <br/><br/>Solicitação com formato inapropriado. | Verifique os [esquemas de validação JSON](mc-api-json-validation.md) para o tipo de solicitação. |
+| **400** | **Solicitação inválida.**<br/><br/>Solicitação com formato inapropriado. | Verifique os [esquemas de validação JSON](mc-api-json-validation.md) para o tipo de solicitação. |
 | **404** | **Não encontrado.** <br/><br/>A ID da sessão para a sessão de mídia não foi encontrada no serviço de back-end. | O aplicativo cliente deve usar a API [Solicitação de sessões](mc-api-sessions-req.md) para criar outra sessão de mídia e o rastreamento de relatórios nela. |
 | **410** | **Excluído.** <br/><br/>A sessão de mídia foi encontrada no serviço de back-end, mas o cliente não pode mais relatar atividade nela. | O aplicativo cliente deve usar a API [Solicitação de sessões](mc-api-sessions-req.md) para criar outra sessão de mídia e o rastreamento de relatórios nela. |
 | **500** | **Erro do servidor** | N/D |
