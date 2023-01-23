@@ -1,18 +1,18 @@
 ---
 title: Conteúdo principal ao vivo com rastreamento sequencial
-description: Veja um exemplo de como rastrear o conteúdo ao vivo com o rastreamento sequencial usando o SDK do Media.
+description: Veja um exemplo de como rastrear o conteúdo ao vivo com rastreamento sequencial usando o SDK de mídia.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Conteúdo principal ao vivo com monitoramento sequencial{#live-main-content-with-sequential-tracking}
+# Conteúdo principal ao vivo com rastreamento sequencial{#live-main-content-with-sequential-tracking}
 
 ## Cenário {#scenario}
 
@@ -23,11 +23,11 @@ Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/use
 | Acionador | Método do Heartbeat |  Chamadas de rede  |  Notas   |
 | --- | --- | --- | --- |
 | Cliques do usuário [!UICONTROL Reproduzir] | trackSessionStart | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não detecta um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
-| O primeiro quadro do conteúdo é reproduzido. | trackPlay | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
+| O primeiro quadro do conteúdo é reproduzido. | trackPlay | Reprodução de conteúdo do Heartbeat | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
 | Reproduções de conteúdo |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | Sessão1 finalizada (episódio1 encerrado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão1 do primeiro episódio foi atingida e assistida completamente. Antes de iniciar a sessão para o próximo episódio, esta sessão deve ser encerrada. |
 | Episódio2 iniciado (sessão2 iniciada) | trackSessionStart | Início do conteúdo do Analytics Heartbeat Content Start | Isso ocorre porque o usuário assistiu ao primeiro episódio e em seguida assistiu o segundo |
-| 1º quadro do Media | trackPlay | Heartbeat Content Play | Esse método aciona o temporizador e a partir desse ponto, os heartbeats serão enviados a cada 10 segundos enquanto a reprodução continuar. |
+| 1º quadro do Media | trackPlay | Reprodução de conteúdo do Heartbeat | Esse método aciona o temporizador e a partir desse ponto, os heartbeats serão enviados a cada 10 segundos enquanto a reprodução continuar. |
 | Reproduções de conteúdo |  | Content Heartbeats |  |
 | Sessão encerrada (episódio 2 finalizado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão 2 do segundo episódio foi atingida e assistida completamente. Antes de iniciar a sessão para o próximo episódio, esta sessão deve ser encerrada. |
 
@@ -46,16 +46,16 @@ Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/use
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *opcional* | Metadados personalizados definidos na mídia |
 
-## Heartbeat Content Play {#heartbeat-content-play}
+## Reprodução de conteúdo do Heartbeat {#heartbeat-content-play}
 
-Isso deve ser quase idêntico à chamada de Heartbeat Content Start, mas com a principal diferença nos &quot;s:event:type&quot;. Todos os parâmetros devem estar em vigor aqui.
+Isso deve ser quase idêntico à chamada de Início do conteúdo do Heartbeat, mas com uma diferença no parâmetro “s:event:type”. Todos os parâmetros devem estar em vigor aqui.
 
 | Parâmetro | Valor | Notas |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Conteúdo Heartbeats {#content-heartbeats}
+## Conteúdo do Heartbeats {#content-heartbeats}
 
 Durante a reprodução da mídia, há um temporizador que enviará um ou mais heartbeats a cada 10 segundos para o conteúdo principal e a cada segundo para os anúncios. Esses heartbeats contêm informações sobre reprodução, anúncios, buffering e várias outras coisas. O conteúdo exato de cada heartbeat está além do escopo desse documento, o mais importante para validar é que os heartbeats são acionados de forma consistente enquanto a reprodução continuar.
 
