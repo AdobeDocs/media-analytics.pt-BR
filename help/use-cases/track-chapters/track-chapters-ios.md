@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear capítulos e segmentos no iOS
-description: Saiba mais sobre como implementar o rastreamento de capítulo e segmento usando o SDK do Media no iOS.
+description: Saiba como implementar o rastreamento de capítulos e segmentos usando o SDK de mídia no iOS.
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
