@@ -1,13 +1,13 @@
 ---
 title: Sobre o rastreamento do estado do player
-description: Saiba mais sobre o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e relatar estados do player.
+description: Saiba mais sobre o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e informar os estados do player.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Para otimizar a experiência do seu produto e o valor da sua empresa, é importa
 
 O Rastreamento de estado do player oferece a capacidade de capturar a interação do visualizador durante a reprodução usando um conjunto padrão de variáveis de solução para as funções de tela cheia, legendas ocultas, mudo, picture in picture e em foco.  O Rastreamento de estado do player também oferece a flexibilidade para criar estados personalizados do player. Você pode usar variáveis de Rastreamento do estado do player em relatórios no Analysis Workspace.
 
-Para capturar alterações, o Rastreamento de estado do player atualiza os metadados de medição de vídeo. Por exemplo, para determinar o engajamento de vídeo &quot;verdadeiro&quot;, o Rastreamento de estado do player mede o tempo gasto com o som em relação às visualizações de vídeo passivas ou não engajadas quando o som está desligado ou o tempo gasto no modo Normal versus Tela cheia.
+Para capturar alterações, o Rastreamento de estado do player atualiza os metadados de medição de vídeo. Por exemplo, para determinar o engajamento de vídeo “true”, o Rastreamento de estado do player mede o tempo gasto com o som em relação às visualizações de vídeo passivas ou não engajadas quando o som está desligado ou o tempo gasto no modo Normal versus Tela cheia.
 
 O Rastreamento de estado do player oferece os seguintes benefícios:
 
@@ -32,7 +32,7 @@ O Rastreamento de estado do player oferece os seguintes benefícios:
 
 O Rastreamento do estado do player exige um dos seguintes itens para a coleta de dados:
 * Media JS SDK 3.0+
-* SDK do Chromecast 3.0 para soluções da Adobe Marketing Cloud
+* SDK do Chromecast 3.0 para Soluções da Adobe Marketing Cloud
 * Extensão do Media Analytics (para usar com o SDK da Adobe Experience Platform (AEP))
    * Web: Adobe Media Analytics (SDK 3.x) para áudio e vídeo v1.0+
    * Móvel: Adobe Media Analytics para áudio e vídeo v2.0+
