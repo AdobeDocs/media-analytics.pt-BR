@@ -1,14 +1,14 @@
 ---
 title: Reprodução de VOD com buffering
-description: Veja um exemplo de como rastrear o conteúdo de VOD usando o SDK do Media.
+description: Veja um exemplo de como rastrear conteúdo VOD usando o SDK de mídia.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ A menos que seja especificado, as chamadas de rede desse cenário correspondem �
 | Acionador   | Método do Heartbeat   | Chamadas de rede   | Notas   |
 |---|---|---|---|
 | Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Pode ser um usuário que clicou na opção **[!UICONTROL Reproduzir]**, ou um evento de reprodução automática. |
-| O primeiro quadro do vídeo é reproduzido. | `trackPlay` | Heartbeat Content Play | Esse método aciona o temporizador. Os heartbeats são enviados a cada 10 segundos enquanto a reprodução continuar. |
+| O primeiro quadro do vídeo é reproduzido. | `trackPlay` | Reprodução de conteúdo do Heartbeat | Esse método aciona o temporizador. Os heartbeats são enviados a cada 10 segundos enquanto a reprodução continuar. |
 | O conteúdo é reproduzido. |  | Content Heartbeats |  |
 | Os buffering inicia. | `trackEvent:BufferStart` | Buffer do Heartbeat |  |
 | O conteúdo está em buffer. |  | Content Heartbeats |  |
