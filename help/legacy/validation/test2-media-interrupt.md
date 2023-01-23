@@ -1,20 +1,20 @@
 ---
-title: Teste 2 Interrupção de mídia
+title: 'Teste 2: Interrupção de mídia'
 description: Saiba mais sobre o teste de interrupção de mídia usado na validação.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Teste 2: Interrupção de mídia{#test-media-interruption}
 
-Esse caso de teste valida o comportamento de interrupção móvel.
+Esse caso de teste valida o comportamento de interrupção em dispositivos móveis.
 
 ## Procedimento de teste
 
@@ -40,7 +40,7 @@ Você deve concluir e registrar essas tarefas na seguinte ordem:
 
    Para obter parâmetros de chamada e metadados, consulte [Detalhes da chamada de teste.](/help/legacy/validation/test-call-details.md#play-main-content)
 
-   Veja também o [Rastreamento de anúncios](/help/use-cases/track-ads/track-ads-overview.md) instruções para obter informações adicionais sobre essas chamadas de anúncios.
+   Veja também as instruções do [Rastreamento de anúncios](/help/use-cases/track-ads/track-ads-overview.md) da plataforma para obter informações adicionais sobre essas chamadas de anúncios.
 
 1. **Mover o aplicativo ou o navegador para o segundo plano**
 
