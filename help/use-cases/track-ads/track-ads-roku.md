@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear anúncios no Roku
-description: Implemente o rastreamento de anúncios nos aplicativos Roku usando o SDK do Media.
+description: Implementar o rastreamento de anúncios nos aplicativos do Roku usando o SDK de mídia.
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
-   * [Implementar Metadados de publicidade padrão no Roku ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   * [Implementar metadados de publicidade padrão no Roku ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do ativo de anúncio atual:
 
       ```
