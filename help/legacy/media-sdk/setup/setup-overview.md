@@ -6,29 +6,29 @@ exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Legado - Visão geral da configuração do SDK do Media {#setup-overview}
+# Herdados - Visão geral da configuração do SDK de mídia {#setup-overview}
 
-Depois de baixar o SDK do Media para seu aplicativo de vídeo ou reprodutor, siga as informações desta seção para configurar e implementar o SDK do Media.
+Após baixar o SDK de mídia para seu aplicativo de vídeo ou player, siga as informações desta seção para configurar e implementar o SDK de mídia.
 
 
 ## Diretrizes gerais de implementação {#general-implementation-guidelines}
 
-Há três componentes principais do SDK usados no rastreamento de mídia de transmissão do Adobe:
-* Configuração do Media Heartbeat — A `MediaHeartbeatConfig` contém as configurações básicas para relatórios.
-* Delegar Media Heartbeat — O `MediaHeartbeatDelegate` controla o tempo de reprodução e o objeto QoS.
-* Heartbeat De Mídia — O `MediaHeartbeat` é a biblioteca principal que contém membros e métodos.
+Há três componentes principais do SDK usados no rastreamento de mídia de streaming da Adobe:
+* Configuração do Heartbeat de mídia - O `MediaHeartbeatConfig` contém as configurações básicas para relatórios.
+* Delegar Heartbeat de mídia - O `MediaHeartbeatDelegate` controla o tempo de reprodução e o objeto QoS.
+* Heartbeat de mídia - O `MediaHeartbeat` é a biblioteca principal que contém membros e métodos.
 
-## Implementar o SDK do Media de transmissão
+## Implementar o SDK de mídia de streaming
 
-Para configurar e usar o SDK do Streaming Media, conclua as seguintes etapas de implementação:
+Para configurar e usar o SDK de mídia de streaming, conclua as seguintes etapas de implementação:
 
-1. Crie um `MediaHeartbeatConfig` e defina os valores do parâmetro de configuração.
+1. Crie uma instância `MediaHeartbeatConfig` e defina os valores do parâmetro de configuração.
 
    |  Nome da variável  | Descrição  | Obrigatório |  Valor padrão  |
    |---|---|:---:|---|
