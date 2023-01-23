@@ -1,14 +1,14 @@
 ---
 title: Reprodução de VOD com busca no conteúdo principal
-description: Veja um exemplo de como rastrear o conteúdo de VOD no qual a busca ocorreu usando o SDK do Media.
+description: Um exemplo de como rastrear o conteúdo de VOD no qual uma busca ocorreu usando o SDK de mídia.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/use
 | Acionador   | Método do Heartbeat   | Chamadas de rede   | Notas   |
 | --- | --- | --- | --- |
 | Cliques do usuário [!UICONTROL Reproduzir] | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não detecta um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
-| O primeiro quadro do conteúdo é reproduzido. | `trackPlay` | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
+| O primeiro quadro do conteúdo é reproduzido. | `trackPlay` | Reprodução de conteúdo do Heartbeat | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
 | Reproduções de conteúdo |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | O usuário inicia a operação de busca no conteúdo | `trackSeekStart` |  | Nenhum heartbeat é enviado até a conclusão da busca, por exemplo, `trackSeekComplete` |
 | A operação de busca é concluída | `trackSeekComplete` |  | As pulsações voltam a ser enviadas, pois a busca foi concluída.  Dica: o valor do indicador de reprodução deve representar o novo indicador de reprodução correto após a busca. |
