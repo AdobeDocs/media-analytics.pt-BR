@@ -5,7 +5,7 @@ exl-id: 5f26fbce-d861-4b38-8497-ce010082f3a7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '32'
 ht-degree: 100%
 
@@ -17,6 +17,6 @@ ht-degree: 100%
 
 [Atribuição de fluxo de mídia](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
 
-## Tópicos do guia do SDK do Media
+## Tópicos do guia do SDK de mídia
 
-[Guia do SDK do Media](/help/use-cases/cookbook/sdk-cookbook-overview.md)
+[Guia do SDK de mídia](/help/use-cases/cookbook/sdk-cookbook-overview.md)
