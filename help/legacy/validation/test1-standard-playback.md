@@ -1,14 +1,14 @@
 ---
-title: Teste 1 Reprodução Padrão
+title: 'Teste 1: reprodução padrão'
 description: Saiba mais sobre o teste de reprodução padrão usado na validação.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
