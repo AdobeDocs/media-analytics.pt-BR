@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear anúncios no Android
-description: Implementar o rastreamento de anúncios em aplicativos Android usando o SDK do Media.
+description: Implementar o rastreamento de anúncios em aplicativos Android usando o SDK de mídia.
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
-   * [Implementar Metadados de publicidade padrão no Android ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+   * [Implementar metadados de publicidade padrão no Android ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
 
    help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md
 
