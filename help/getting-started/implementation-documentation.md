@@ -6,9 +6,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Use as informações na tabela a seguir para localizar a documentação do méto
 |:-----------------------:|----------------|
 | **Web** | * [Implementação da Web para mídia de transmissão](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Implementação da Web com extensão Adobe Media Analytics para Áudio e Vídeo ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=pt-BR) |
 | **Dispositivo móvel** | *[Guia do SDK do Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/) <br> *[Extensão Adobe Media Analytics para Áudio e Vídeo](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Versões atuais do SDK móvel](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Implementação móvel para mídia de transmissão](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
-| **OTT** | *[SDK do Chromecast 3.0 para soluções da Adobe Marketing Cloud](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Configurar Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[Configurar Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **OTT** | *[SDK do Chromecast 3.0 para Soluções da Adobe Marketing Cloud](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Configurar Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[Configurar Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **APIs da Adobe Experience Platform** | *[APIs da coleção de mídia](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## Documentação adicional {#additional-documentation}
