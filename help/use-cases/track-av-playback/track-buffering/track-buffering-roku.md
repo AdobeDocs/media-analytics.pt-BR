@@ -1,14 +1,14 @@
 ---
-title: Saiba como rastrear buffering no Roku
+title: Saiba como rastrear o buffering no Roku
 description: Saiba como rastrear eventos de buffering no Roku.
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
