@@ -6,9 +6,9 @@ exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Para obter mais informações sobre a documentação do SDK do Adobe Mobile, con
 
 ## Implementação do SDK
 
-1. Adicione a biblioteca baixada do SDK do Media ao projeto.
+1. Adicione a biblioteca baixada do SDK de mídia no projeto.
 
    1. Expanda o arquivo zip do Android (por exemplo, `MediaSDK-android-v2.*.zip`).
    1. Verifique se o arquivo `MediaSDK.jar` existe no diretório `libs/`.
@@ -142,4 +142,4 @@ Para adicionar essas permissões, adicione as seguintes linhas no seu arquivo `A
 
 Nas versões 2.x, todos os métodos públicos foram consolidados na classe `com.adobe.primetime.va.simple.MediaHeartbeat` para facilitar o trabalho dos desenvolvedores. Além disso, todas as configurações foram consolidadas na classe `com.adobe.primetime.va.simple.MediaHeartbeatConfig`
 
-Para obter informações sobre a migração de 1.x para 2.x, consulte a documentação Implementação herdada .
+Para obter informações sobre a migração da versão 1.x para a 2.x, consulte a documentação de Implementação herdada.
