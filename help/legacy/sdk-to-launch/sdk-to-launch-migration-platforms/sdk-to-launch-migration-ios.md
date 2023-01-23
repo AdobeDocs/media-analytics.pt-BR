@@ -5,9 +5,9 @@ exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -95,8 +95,7 @@ ADBMediaHeartbeat* tracker =
 
 [Referência da API do Media - Criar Media Tracker](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
-Antes de criar o rastreador, registre a extensão de mídia e
-as extensões dependentes no núcleo móvel.
+Antes de criar o rastreador, registre a extensão de mídia as extensões dependentes no núcleo móvel.
 
 ```objective-c
 // Register the extension once during app launch
