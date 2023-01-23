@@ -1,13 +1,13 @@
 ---
-title: Saiba Como Rastrear O Buffering Usando O JavaScript 3.x
+title: Saiba como rastrear o buffering usando o JavaScript 3.x
 description: Saiba como rastrear eventos de buffering em aplicativos de navegador (JS).
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ As instruções a seguir fornecem orientação para a implementação em todos o
 
 >[!IMPORTANT]
 >
->Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
+>Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constantes de rastreamento de buffer
 
