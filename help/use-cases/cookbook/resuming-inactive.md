@@ -1,14 +1,14 @@
 ---
 title: Resumo de sessões inativas
-description: Saiba como lidar com a retomada de uma sessão inativa.
+description: Como lidar com a retomada de uma sessão inativa.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '158'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
