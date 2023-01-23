@@ -1,12 +1,13 @@
 ---
 title: Como configurar um SDK móvel usando tags para mídia de transmissão
-description: Saiba como implementar o Adobe Streaming Media para aplicativos móveis.
+description: Saiba como implementar a mídia de transmissão da Adobe para aplicativos móveis.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -16,20 +17,20 @@ Para implementar a mídia de transmissão para aplicativos móveis no Android ou
 
 * **SDK móvel da Adobe Experience Platform**
 
-   Para coletar dados, use Tags no Adobe Experience Platform. Tags na Adobe Experience Platform é uma solução de gerenciamento de tags que permite implantar o código do Analytics junto com outros requisitos de marcação.
+   Para coletar dados, use Tags na Adobe Experience Platform. Tags na Adobe Experience Platform é uma solução de gerenciamento de tags que permite implantar o código do Analytics junto com outros requisitos de marcação.
 
-* **SDK do Media para Android** ou **SDK do Media para iOS**
+* **SDK de mídia para Android** ou **SDK de mídia para iOS**
 
-* **Extensão Adobe Media Analytics for Audio and Video**
+* **Extensão do Adobe Media Analytics para áudio e vídeo**
 
-Para baixar os SDKs e obter recursos adicionais de documentação, consulte [Obter SDKs do Media, extensões usando tags e SDKs OTT](/help/getting-started/download-sdks.md)
+Para baixar os SDKs e obter recursos adicionais de documentação, consulte [Obter SDKs de mídia, extensões usando tags e SDKs OTT](/help/getting-started/download-sdks.md)
 
 * **Obter parâmetros de configuração válidos**
 
-   Esses parâmetros podem ser obtidos de um representante do Adobe após a configuração da sua conta do Analytics.
+   Esses parâmetros podem ser obtidos com um representante da Adobe após a configuração da conta do Analytics.
 
-* **Inclua as seguintes APIs no reprodutor de mídia**
+* **Inclua as seguintes APIs em seu reprodutor de mídia**
 
    * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
 
-   * *Uma API que fornece informações sobre o reprodutor* - Isso inclui informações sobre a reprodução no momento, como o nome da mídia, a posição do indicador de reprodução, os anúncios ou o capítulo.
+   * *Uma API que fornece informações sobre o reprodutor* - Isto inclui informações sobre a reprodução no momento, como o nome da mídia, a posição do indicador de reprodução, os anúncios ou o capítulo.
