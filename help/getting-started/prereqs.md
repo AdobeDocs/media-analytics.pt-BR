@@ -6,9 +6,9 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Solicite o URL do servidor de rastreamento de mídia ao seu representante do Ado
 `collection-api-server` URL do SDK móvel, do SDK do JavaScript e do servidor de rastreamento da API não coletora do Roku. Os nomes de domínio para a implementação da API são: `[your_namespace].hb-api.omtrdc.net`.
 
 1. **Baixe o SDK de mídia atual ou implemente as extensões necessárias**<br>
-Dependendo do caminho de implementação, [baixar o SDK atual](download-sdks.md) para plataformas da Web, móveis ou OTT. As extensões necessárias devem ser implementadas para habilitar os caminhos de extensões do Adobe Analytics para mídia de streaming.
+Dependendo do caminho de implementação, [baixar o SDK atual](download-sdks.md) para plataformas da Web, móveis ou OTT. As extensões necessárias devem ser implementadas para ativar os caminhos de extensões do Adobe Analytics para mídia de streaming.
 
 1. **Ativar relatórios do Adobe Analytics**<br>
 Para permitir o uso de relatórios no Analytics e visualizar os dados de conteúdo e anúncios coletados, é necessário ativar os relatórios no Analytics. Consulte [Ativação de relatórios de mídia](/help/reporting/media-reports-enable.md).
