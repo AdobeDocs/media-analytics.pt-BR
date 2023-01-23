@@ -1,20 +1,20 @@
 ---
 title: Visão geral da migração
-description: Saiba mais sobre como migrar das versões 1.x para 2.x do SDK do Media.
+description: Saiba como migrar das versões 1.x para 2.x do SDK de mídia.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-# Visão geral da migração herdada para VHL 1.x para VHL 2.x {#migration-overview}
+# Visão geral da migração herdada do VHL 1.x para VHL 2.x {#migration-overview}
 
-A migração do VHL 1.x para o VHL 2.x é simples, com a nova versão apresentando APIs simplificadas para inicialização, configuração e representantes do reprodutor.i
+A migração do VHL 1.x para o VHL 2.x é simples, e a nova versão apresenta APIs simplificadas para inicialização, configuração e delegações de player.
 
 Aqui estão as principais diferenças entre as versões 1.x e 2.x:
 
