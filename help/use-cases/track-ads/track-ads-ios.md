@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear anúncios no iOS
-description: Implementar o rastreamento de anúncios em aplicativos iOS usando o SDK do Media.
+description: Implementar o rastreamento de anúncios em aplicativos de iOS usando o SDK de mídia.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
-   * [Implementar Metadados de publicidade padrão no iOS ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * [Implementar metadados de publicidade padrão no iOS ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do anúncio atual:
 
       ```
