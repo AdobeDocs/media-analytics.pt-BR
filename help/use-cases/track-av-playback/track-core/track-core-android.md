@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear a reprodução principal no Android
-description: Saiba como implementar o rastreamento principal usando o SDK do Media no Android.
+description: Saiba como implementar o rastreamento principal usando o SDK de mídia no Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '708'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -43,7 +43,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    | `AUDIOBOOK` | Tipo de fluxo para audiobook |
    | `PODCAST` | Tipo de fluxo para podcast |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
