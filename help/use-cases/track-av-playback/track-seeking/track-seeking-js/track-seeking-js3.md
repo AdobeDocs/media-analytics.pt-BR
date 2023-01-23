@@ -1,23 +1,23 @@
 ---
 title: Saiba como rastrear a busca usando o JavaScript 3.x
-description: Saiba como rastrear eventos de Início da busca e Conclusão da busca usando o SDK do Media em aplicativos de navegador (JS 3.x).
+description: Saiba como rastrear os eventos de Início da busca e Conclusão da busca usando o SDK de mídia em aplicativos de navegador (JS 3.x).
 exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '134'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Busca de faixa usando o JavaScript 3.x{#track-seeking-on-javascript}
+# Rastrear busca usando o JavaScript 3.x{#track-seeking-on-javascript}
 
 As instruções a seguir fornecem orientação para a implementação em todos os SDKs 3.x.
 
 >[!IMPORTANT]
 >
->Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
+>Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constantes de rastreamento de busca
 
