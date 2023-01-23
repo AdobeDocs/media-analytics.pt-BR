@@ -1,14 +1,14 @@
 ---
-title: Saiba como rastrear a qualidade da experiência no Android
-description: "Saiba mais sobre como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media no Android."
+title: Saiba como rastrear a qualidade de experiência no Android
+description: “Saiba como implementar o rastreamento da qualidade de experiência (QoE, QoS) usando o SDK de mídia no Android.”
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ As instruções a seguir fornecem orientação para a implementação em todos o
    ```
 
 1. Verifique se o método `getQoSObject()` retorna as informações de QoS mais atualizadas.
-1. Quando a reprodução altera as taxas de bits, chame o evento `BitrateChange` na instância do Heartbeat de mídia:
+1. Quando a reprodução alterar as taxas de bits, chame o evento `BitrateChange` na instância do heartbeat de mídia:
 
    ```java
    public void onBitrateChange(Observable observable, Object data) {  
