@@ -1,14 +1,14 @@
 ---
 title: Saiba como implementar metadados padrão no Android
-description: Saiba como definir metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento no Android.
+description: Saiba como definir metadados padrão de vídeo e anúncio para serem enviados com chamadas de rastreamento no Android.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '106'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
