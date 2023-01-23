@@ -1,13 +1,13 @@
 ---
 title: Saiba como rastrear capítulos e segmentos usando o JavaScript 3.x
-description: Saiba mais sobre como implementar o rastreamento de capítulo e segmento usando o SDK do Media em aplicativos de navegador (JS).
+description: Saiba mais sobre a implementação do rastreamento de capítulos e segmentos usando o SDK de mídia em aplicativos de navegador (JS).
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ As instruções a seguir fornecem orientação para a implementação usando SDK
 
 >[!IMPORTANT]
 >
-> Se estiver implementando uma versão anterior do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixe SDKs.](/help/getting-started/download-sdks.md)
+> Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
@@ -30,9 +30,9 @@ As instruções a seguir fornecem orientação para a implementação usando SDK
    | Nome da variável | Tipo | Descrição |
    | --- | --- | --- |
    | `name` | string | String não vazia que indica o nome do capítulo. |
-   | `position` | número | A posição do capítulo no conteúdo, começando com 1. |
-   | `length` | número | Número positivo que indica o comprimento do capítulo. |
-   | `startTime` | número | Valor do indicador de reprodução no início do capítulo. |
+   | `position` | number | A posição do capítulo no conteúdo, começando com 1. |
+   | `length` | number | Número positivo que indica a duração do capítulo. |
+   | `startTime` | number | Valor do indicador de reprodução no início do capítulo. |
 
    Objeto do capítulo:
 
