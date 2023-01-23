@@ -1,14 +1,14 @@
 ---
 title: Rastrear estados do aplicativo
-description: Os estados do aplicativo são telas ou exibições diferentes do aplicativo. Saiba como rastrear o estado do aplicativo em seu aplicativo usando a chamada trackState .
+description: Os estados de aplicativos são as diferentes telas ou visualizações no aplicativo. Saiba como rastrear o estado do aplicativo usando a chamada trackState.
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
