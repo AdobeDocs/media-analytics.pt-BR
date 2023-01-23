@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear erros no Android
-description: Saiba mais sobre como implementar o rastreamento de erros usando o SDK do Media no Android.
+description: Saiba como implementar o rastreamento de erros usando o SDK de mídia no Android.
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
