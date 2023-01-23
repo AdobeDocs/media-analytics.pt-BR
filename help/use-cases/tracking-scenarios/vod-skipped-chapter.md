@@ -1,14 +1,14 @@
 ---
 title: Reprodução de VOD com um capítulo ignorado
-description: Veja um exemplo de como rastrear o conteúdo de VOD no qual o usuário ignorou um capítulo usando o SDK do Media.
+description: Um exemplo de como rastrear o conteúdo de VOD no qual o usuário pulou um capítulo usando o SDK de mídia.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
