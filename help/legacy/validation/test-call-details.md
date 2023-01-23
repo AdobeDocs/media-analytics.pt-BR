@@ -1,20 +1,20 @@
 ---
 title: Detalhes da chamada de teste
-description: Explore as chamadas que devem ser feitas para validar sua implementação.
+description: Explore as chamadas que você deve fazer para validar sua implementação.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Detalhes da chamada de teste{#test-call-details}
 
-## Iniciar o reprodutor de mídia {#start-the-media-player}
+## Iniciar o player de mídia {#start-the-media-player}
 
 ### Chamada de início do Adobe Analytics (AppMeasurement)  {#aa-start-call}
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Título do episódio |
 | _**`a.media.name`**_ | _**123456**_ |
-| _**`a.media.length`**_ | _**120º**_ |
+| _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML 5 |
 | _**`a.media.view`**_ | _**true**_ |
 | `a.contentType` | vod |
@@ -116,7 +116,7 @@ ht-degree: 98%
 | `l:event:duration` | 4 |
 | `s:asset:name` | Título do episódio |
 | `s:asset:video_id` | 123456 |
-| `l:asset:length` | 120º |
+| `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
 
@@ -141,7 +141,7 @@ ht-degree: 98%
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
-| _**`a.media.ad.view`**_ | _**Verdadeiro**_ |
+| _**`a.media.ad.view`**_ | _**true**_ |
 | _**`custom.[value]`**_ | _**Campos de metadados**_ |
 | _**`a.media.[value]`**_ | _**Campos de metadados padrão**_ |
 
@@ -184,9 +184,9 @@ ht-degree: 98%
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
-| _**`l:asset:length`**_ | _**120º**_ |
+| _**`l:asset:length`**_ | _**120**_ |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**Publicidade**_ |
 | _**`s:meta:custom.[value]`**_ | _**Campos de metadados personalizados**_ |
 | _**`s:meta:a.media.[value]`**_ | _**Campos de metadados padrão**_ |
 
@@ -231,43 +231,43 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| `s:asset:type` | ad |
+| `s:asset:type` | Publicidade |
 
 ### Chamada de reprodução de anúncio do Media Analytics (heartbeats)  {#ma-ad-play-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | _**`s:event:type`**_ | _**play**_ |
-| `l:event:playhead` | 15. |
+| `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15. |
+| `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**Publicidade**_ |
 
 ### Chamada de pausa de anúncio do Media Analytics (heartbeats)  {#ma-ad-pause-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
-| `l:event:playhead` | 15. |
+| `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15. |
+| `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**Publicidade**_ |
 
 ### Chamada de anúncio concluído do Adobe Analytics do Media Analytics (heartbeats)  {#ma-aa-ad-complete-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | _**`s:event:type`**_ | _**complete**_ |
-| `l:event:playhead` | 15. |
+| `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15. |
+| `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**Publicidade**_ |
 
 ## Reproduzir conteúdo principal {#play-main-content}
 
@@ -276,11 +276,11 @@ ht-degree: 98%
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `s:event:type` | play |
-| _**`l:event:playhead`**_ | _**29º**_ |
+| _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
 | `s:asset:name` | Título do episódio |
 | `s:asset:video_id` | 123456 |
-| `l:asset:length` | 120º |
+| `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
 
@@ -296,10 +296,10 @@ ht-degree: 98%
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
-| _**`l:event:playhead`**_ | _**29º**_ |
+| _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | Título do episódio |
 | `s:asset:video_id` | 123456 |
-| `l:asset:length` | 120º |
+| `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
