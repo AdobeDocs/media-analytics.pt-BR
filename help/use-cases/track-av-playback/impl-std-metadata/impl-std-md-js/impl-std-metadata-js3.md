@@ -1,13 +1,13 @@
 ---
 title: Saiba como implementar metadados padrão usando o JavaScript 3.x
-description: Saiba como definir metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento em aplicativos de navegador (JS 3.x).
+description: Saiba como definir metadados padrão de vídeo e anúncio para serem enviados com chamadas de rastreamento em aplicativos de navegador (JS 3.x).
 exl-id: 228ba000-10e2-4906-8417-265a03367a9b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '48'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 ## Implementação
 
-Exemplifique um objeto de dados de contexto e preencha as variáveis de metadados Padrão desejadas. Por exemplo:
+Instanciar um objeto de dados de contexto e preencher as variáveis de metadados padrão desejadas. Por exemplo:
 
 ```js
 _onVideoLoad = function () {
