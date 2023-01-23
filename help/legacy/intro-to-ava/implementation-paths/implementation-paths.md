@@ -5,15 +5,15 @@ exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '650'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Caminhos de implementação {#implementation-paths}
 
-**ESSE CONTEÚDO FOI MOVIDO PARA O ARQUIVO DE CAMINHOS DE IMPLEMENTAÇÃO ATUAL**
+**ESTE CONTEÚDO FOI MOVIDO PARA O ARQUIVO DE CAMINHOS DE IMPLEMENTAÇÃO ATUAL**
 
 Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de vendas, pois o Streaming de Mídia do Analytics tem uma SKU exclusiva e seus preços variam de acordo com o modelo, com base em chamadas de servidor ou fluxos de vídeo.
 
