@@ -1,13 +1,13 @@
 ---
 title: Implementação e Relatórios
-description: Saiba como implementar o recurso de rastreamento do estado do player, incluindo .
+description: 'Saiba como implementar o recurso de rastreamento do estado do player, incluindo:'
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 As métricas fornecidas para cada estado individual são computadas e enviadas para o Adobe Analytics como parâmetros de dados de contexto e armazenadas para fins de relatórios. Três métricas estão disponíveis para cada estado:
 
-* `a.media.states.[state.name].set = true` — Definido como verdadeiro se o estado foi definido pelo menos uma vez para cada reprodução específica de um fluxo.
+* `a.media.states.[state.name].set = true` — Definido como true se o estado foi definido pelo menos uma vez para cada reprodução específica de um fluxo.
 * `a.media.states.[state.name].count = 4` — Identifica o número de ocorrências de um estado durante cada reprodução individual de um fluxo
 * `a.media.states.[state.name].time = 240` — Identifica a duração total do estado em segundos para cada reprodução individual de um fluxo
 
