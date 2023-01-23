@@ -1,14 +1,14 @@
 ---
-title: Saiba Como Rastrear O Buffering Usando O JavaScript 2.x
+title: Saiba como rastrear o buffering usando o JavaScript 2.x
 description: Saiba como rastrear eventos de buffering em aplicativos de navegador (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '121'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
