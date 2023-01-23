@@ -1,14 +1,14 @@
 ---
 title: Explicação sobre o rastreamento da reprodução do conteúdo
-description: "Saiba mais sobre como rastrear a reprodução principal, incluindo o rastreamento da carga da mídia, o início da mídia, a pausa da mídia e a conclusão da mídia. "
+description: “Saiba mais sobre o rastreamento da reprodução principal, incluindo o rastreamento da carga de mídia, início de mídia, pausa de mídia e conclusão de mídia. ”
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 >
 >Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
 
-## Eventos do reprodutor
+## Eventos do player
 
 O rastreamento da reprodução principal inclui rastreamento da carga de mídia, início da mídia, pausa da mídia e conclusão da mídia. Embora não seja obrigatório, o rastreamento de buffering e busca também são componentes principais usados para rastrear a reprodução do conteúdo. Na API do media player, identifique os eventos do player que correspondem às chamadas de rastreamento do SDK da mídia, codifique os manipuladores de eventos para APIs de rastreamento de chamadas e preencha as variáveis obrigatórias e opcionais.
 
@@ -69,7 +69,7 @@ Cancelar alterações
 >A posição do indicador de reprodução é definida como parte do código de instalação e configuração. Para obter mais informações sobre `getCurrentPlayheadTime`, consulte [Visão geral: Diretrizes gerais de implementação.](/help/implementation/media-sdk/media-sdk-overview.md)
 
 
-## Implementação {#implement}
+## Implementar {#implement}
 
 1. **Configuração do rastreamento inicial -** Identifique quando o usuário aciona a intenção de reproduzir (o usuário clica em Reproduzir e/ou a reprodução automática está ativada) e crie uma instância `MediaObject` com as informações da mídia para nome do conteúdo, ID do conteúdo, duração do conteúdo e tipo de fluxo.
 
@@ -83,7 +83,7 @@ Cancelar alterações
    | `streamType` | Tipo de transmissão | Sim |
    | `mediaType` | Tipo de mídia (conteúdo de áudio ou vídeo) | Sim |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -94,7 +94,7 @@ Cancelar alterações
    | `AUDIOBOOK` | Tipo de fluxo para audiobook |
    | `PODCAST` | Tipo de fluxo para podcast |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
@@ -242,4 +242,4 @@ if (e.type == "buffered") {
 
 ## Validar {#validate}
 
-Para obter informações sobre como validar o *legado* implementação, consulte [Validação herdada.](/help/legacy/validation/validation-overview.md)
+Para obter informações sobre como validar sua implementação *herdada*, consulte [Validação herdada.](/help/legacy/validation/validation-overview.md)
