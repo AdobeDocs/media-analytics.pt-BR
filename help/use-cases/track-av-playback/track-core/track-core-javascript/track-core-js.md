@@ -1,20 +1,20 @@
 ---
-title: Saiba Como Rastrear A Reprodução Principal Usando O JavaScript 2.x
-description: Saiba como implementar o rastreamento principal usando o SDK do Media em um navegador com aplicativos JavaScript 2.x.
+title: Saiba como rastrear a reprodução principal usando o JavaScript 2.x
+description: Saiba como implementar o rastreamento principal usando o SDK de mídia em um navegador que utiliza aplicativos JavaScript 2.x.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '689'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Rastrear a reprodução principal usando o JavaScript 2.x{#track-core-playback-on-javascript}
 
-As instruções a seguir fornecem orientação para a implementação em SDKs 2.x.
+As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x.
 
 >[!IMPORTANT]
 >Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs](/help/getting-started/download-sdks.md).
@@ -33,7 +33,7 @@ As instruções a seguir fornecem orientação para a implementação em SDKs 2.
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nome da constante | Descrição   |
    |---|---|
@@ -44,7 +44,7 @@ As instruções a seguir fornecem orientação para a implementação em SDKs 2.
    | `AUDIOBOOK` | Tipo de fluxo para audiobook. |
    | `PODCAST` | Tipo de fluxo para podcast. |
 
-   **`MediaType`Constantes de:**
+   **`MediaType`Constantes:**
 
    | Nome da constante | Descrição |
    |---|---|
