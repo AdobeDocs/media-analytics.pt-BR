@@ -1,18 +1,18 @@
 ---
-title: Saiba como implementar metadados de anúncio padrão no iOS
+title: Saiba como implementar metadados de publicidade padrão no iOS
 description: Como usar metadados de anúncio padrão no rastreamento de anúncios no iOS.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Implementar Metadados de publicidade padrão no iOS {#implement-standard-ad-metadata-on-ios}
+# Implementar metadados de publicidade padrão no iOS {#implement-standard-ad-metadata-on-ios}
 
 ## Constantes de anúncio
 
