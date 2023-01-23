@@ -1,14 +1,14 @@
 ---
 title: Vários rastreadores de VOD ao mesmo tempo
-description: Veja um exemplo de como rastrear VOD usando vários rastreadores em paralelo.
+description: Visualizar um exemplo de como rastrear VOD usando vários rastreadores em paralelo.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
