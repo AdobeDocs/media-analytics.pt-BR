@@ -1,13 +1,13 @@
 ---
 title: Sobre estados padrão e personalizados
-description: Saiba mais sobre o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e relatar estados padrão e personalizados do player.
+description: Saiba mais sobre o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e informar estados padrão e personalizados do player.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '279'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
