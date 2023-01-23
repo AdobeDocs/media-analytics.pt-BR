@@ -1,14 +1,14 @@
 ---
-title: Saiba Como Implementar Metadados Padrão No Roku
-description: Saiba como definir metadados de vídeo e anúncio padrão para serem enviados com chamadas de rastreamento no Roku.
+title: Saiba como implementar metadados padrão no Roku
+description: Saiba como configurar metadados de vídeo e anúncios padrão a serem enviados com chamadas de rastreamento no Roku.
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
