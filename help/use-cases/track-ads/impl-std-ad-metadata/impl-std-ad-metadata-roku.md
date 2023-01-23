@@ -6,13 +6,13 @@ exl-id: d2c0a1e0-8d40-4f60-a82d-5860550ac152
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '50'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
-# Implementar Metadados de publicidade padrão no Roku {#implement-standard-ad-metadata-on-roku}
+# Implementar metadados de publicidade padrão no Roku {#implement-standard-ad-metadata-on-roku}
 
 ## Implementar Metadados de publicidade padrão
 
