@@ -1,18 +1,18 @@
 ---
-title: Saiba como rastrear a qualidade da experiência usando o JavaScript 2.x
-description: "Saiba mais sobre como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media em aplicativos de navegador usando o JavaScript 2.x."
+title: Saiba como rastrear a qualidade de experiência usando o JavaScript 2.x
+description: “Saiba mais sobre como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK de mídia em aplicativos de navegador que utilizam JavaScript 2.x.”
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Rastrear a qualidade da experiência usando o JavaScript 2.x{#track-quality-of-experience-on-javascript}
+# Rastrear a qualidade de experiência usando o JavaScript 2.x{#track-quality-of-experience-on-javascript}
 
 As instruções a seguir fornecem orientação para a implementação em todos os SDKs 2.x.
 
