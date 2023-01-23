@@ -1,35 +1,35 @@
 ---
-title: Visão geral dos casos de uso do SDK do Media
+title: Visão geral dos casos de uso do SDK de mídia
 description: Saiba mais sobre casos de uso de mídia de streaming
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '78'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
-# Casos de uso da mídia de transmissão {#media-sdk-use-cases}
+# Casos de uso de mídia de streaming {#media-sdk-use-cases}
 
 * [Rastreamento do estado do player](/help/use-cases/player-state-tracking/player-state-overview.md)
-* [Rastrear o conteúdo baixado offline](/help/use-cases/track-downloaded-content.md)
-* [O manuseio de aplicativos é interrompido durante a reprodução](/help/use-cases/cookbook/app-interrupts.md)
+* [Acompanhar o conteúdo baixado offline](/help/use-cases/track-downloaded-content.md)
+* [Lidar com interrupções do aplicativo durante a reprodução](/help/use-cases/cookbook/app-interrupts.md)
 * [Lidar com lacunas que aparecem entre anúncios](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [Resumo de sessões inativas](/help/use-cases/cookbook/resuming-inactive.md)
 * [Rastreamento no SceneGraph (Roku)](/help/use-cases/cookbook/sdk-track-scenegraph.md)
 * [Atribuição de fluxo de mídia](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
 
-* Federado
-   * [Federated Analytics](/help/use-cases/federated-analytics.md)
+* Federated
+   * [Federated Analytics ](/help/use-cases/federated-analytics.md)
 
 * Linhas do tempo
    * [Início e término do capítulo](/help/use-cases/timelines/chapter-start-end.md)
    * [Exibir até o fim do conteúdo](/help/use-cases/timelines/view-to-end-of-content.md)
-   * [Sessão de abandono](/help/use-cases/timelines/user-abandons-session.md)
+   * [Abandonar sessão](/help/use-cases/timelines/user-abandons-session.md)
 
-* Usar o Analytics em aplicativos OTT
+* Uso do Analytics em aplicativos OTT
    * [Rastrear estados do aplicativo](/help/use-cases/analytics-with-ott/track-app-states.md)
    * [Rastrear ações do aplicativo](/help/use-cases/analytics-with-ott/track-app-actions.md)
    * [Definir IDs de usuário](/help/use-cases/analytics-with-ott/set-user-ids.md)
