@@ -1,13 +1,13 @@
 ---
 title: Como configurar uma implementação da Web para o Analytics para mídia de streaming
-description: Saiba como implementar o Adobe Streaming Media para aplicativos Web.
+description: Saiba como implementar a mídia de streaming da Adobe para aplicativos web.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 69%
+ht-degree: 90%
 
 ---
 
@@ -21,16 +21,16 @@ Como alternativa, você pode usar a extensão Adobe Medium Analytics para implem
 
 * **Obter parâmetros de configuração válidos**
 
-   Esses parâmetros podem ser obtidos de um representante do Adobe após a configuração da sua conta do Analytics.
+   Esses parâmetros podem ser obtidos com um representante da Adobe após a configuração da conta do Analytics.
 
-* **Implementar `AppMeasurement` e `Experience Cloud Identity Service` para JavaScript no aplicativo de mídia**
+* **Implementar o `AppMeasurement` e `Experience Cloud Identity Service` para JavaScript no aplicativo de mídia**
 
-   Para obter mais informações, consulte [Implementação do Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Implementação do serviço de identidade do Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=pt-BR).
+   Para obter mais informações, consulte [Implementação do Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Implementação do serviço de identidade da Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=pt-BR).
 
-* **Inclua as seguintes APIs no reprodutor de mídia**
+* **Inclua as seguintes APIs em seu reprodutor de mídia**
 
    * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
-   * *Uma API que fornece informações sobre o reprodutor* - Inclui informações sobre mídia, anúncios e capítulos reproduzidos no momento.
+   * *Uma API que fornece informações sobre o player* - Inclui informações sobre anúncios, capítulos e mídias que estão sendo reproduzidas no momento.
 
 ## Configurar o JavaScript 3.x {#set-up-javascript}
 
