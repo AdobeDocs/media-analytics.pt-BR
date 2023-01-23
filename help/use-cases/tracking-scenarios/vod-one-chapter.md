@@ -1,14 +1,14 @@
 ---
 title: Reprodução de VOD com um capítulo
-description: Visualize um exemplo de rastreamento de reprodução de VOD que contém um capítulo.
+description: Um exemplo de rastreamento de reprodução de VOD que contém um capítulo.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ A menos que seja especificado, as chamadas de rede desse cenário correspondem �
 |---|---|---|---|
 | Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | Ainda não informamos à biblioteca de avaliações que há um anúncio antes da exibição, portanto, essas chamadas de rede ainda são exatamente as mesmas do Single VoD. |
 | O capítulo é iniciado. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
-| O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Content Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
+| O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Reprodução de conteúdo do Heartbeat | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
 | O capítulo é reproduzido. |  | Chapter Heartbeats |  |
 | O capítulo foi concluído. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | É quando o final do capítulo é atingido. |
 | O conteúdo é reproduzido. |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
