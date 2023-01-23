@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear a qualidade da experiência no Chromecast
-description: "Saiba mais sobre como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media no Chromecast."
+description: “Saiba como implementar o rastreamento da qualidade da experiência (QoE, QoS) usando o SDK de mídia no Chromecast.”
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ As instruções a seguir fornecem orientação para a implementação em todos o
 
 O rastreamento da qualidade da experiência inclui qualidade do serviço (QoS) e rastreamento de erros; ambos são elementos opcionais e **não** são necessários para implementações de rastreamento de mídia principal. Você pode usar a API do reprodutor de mídia para identificar as variáveis relacionadas ao rastreamento de erros e QoS.
 
-## Eventos do reprodutor {#player-events}
+## Eventos do player {#player-events}
 
 ### Em todos os eventos de alteração da taxa de bits
 
@@ -35,7 +35,7 @@ O rastreamento da qualidade da experiência inclui qualidade do serviço (QoS) e
 
 Chame `trackError("media error id");`
 
-## Implementação {#implement}
+## Implementar {#implement}
 
 1. Identifique quando a taxa de bits for alterada durante a reprodução de mídia e crie a instância `MediaObject` usando as informações de QoS.
 
@@ -58,7 +58,7 @@ Chame `trackError("media error id");`
    qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10);
    ```
 
-1. Quando a reprodução altera as taxas de bits, chame o evento `BitrateChange` na instância do Heartbeat de mídia: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Quando a reprodução alterar as taxas de bits, chame o evento `BitrateChange` na instância do heartbeat de mídia: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
