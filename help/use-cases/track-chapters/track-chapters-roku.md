@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear capítulos e segmentos no Roku
-description: Saiba mais sobre como implementar o rastreamento de capítulo e segmento usando o SDK do Media no Roku.
+description: Saiba como implementar o rastreamento de capítulos e segmentos usando o SDK de mídia no Roku.
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '199'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
