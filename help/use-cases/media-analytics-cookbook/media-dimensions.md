@@ -5,30 +5,29 @@ exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
 # Atribuição de fluxo de mídia {#media-stream-attribution}
 
-Com a Atribuição de fluxo de mídia, é possível vincular as ações do aplicativo aos dados de rastreamento de mídia sem precisar de regras de processamento adicionais e variáveis personalizadas.
+Com a atribuição de fluxo de mídia, é possível vincular as ações do aplicativo aos dados de rastreamento de mídia sem precisar de regras de processamento adicionais e variáveis personalizadas.
 
 ## Dimensões de mídia fora do rastreamento de mídia
 
-É possível adicionar dimensões de mídia às chamadas do analytics, como exibições de página e links personalizados. Durante a implementação, 
-você deve adicionar os parâmetros de dados de contexto de mídia às chamadas de rastreamento do Analytics. Para exibir a lista completa dos parâmetros de dados de contexto disponíveis usados para mídia, consulte [Parâmetros de áudio e vídeo.](/help/implementation/variables/audio-video-parameters.md)
+Você pode adicionar dimensões de mídia às chamadas do Analytics, como exibições de página e links personalizados. Durante a implementação, você deve adicionar os parâmetros de dados de contexto de mídia às chamadas de rastreamento do Analytics. Para exibir a lista completa dos parâmetros de dados de contexto disponíveis para uso em mídias, consulte [Parâmetros de áudio e vídeo.](/help/implementation/variables/audio-video-parameters.md)
 
 Para ativar esse recurso para um relatório específico, reative a configuração de rastreamento de mídia no Admin Console.
 
 >[!NOTE]
 >
->As métricas de mídia são _not_ disponível para uso fora do rastreamento de mídia, pois a maioria é calculada pelo Streaming Media Analytics com base em eventos de pulsação. Além disso, é importante que as métricas de mídia não sejam infladas por implementações diferentes.
+>As métricas de mídia _não_ estão disponíveis para uso fora do rastreamento de mídia, pois a maioria delas é calculada pelo Analytics para mídia de streaming com base em eventos de pulsação. Além disso, é importante que as métricas de mídia não sejam infladas por implementações diferentes.
 
 ## Usar a atribuição de fluxo de mídia
 
-O exemplo do JavaScript abaixo gera uma chamada de rastreamento de Link personalizado com o nome definido como &quot;Banner de exemplo&quot;.
+O exemplo de JavaScript abaixo gera uma chamada de rastreamento de link personalizado com o nome definido como “Banner principal”.
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"
@@ -41,10 +40,10 @@ Nos relatórios do Analytics, é possível usar a eVar `Show` para analisar os d
 
 ## Casos de uso
 
-Os exemplos a seguir mostram casos de uso para o seguinte:
+Os exemplos a seguir mostram casos de uso para:
 
 * Posicionamento da categoria
-* Posicionamento do Hero
+* Posicionamento do principal
 * Engajamento
 * Subscrições
 
