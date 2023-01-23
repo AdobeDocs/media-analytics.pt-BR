@@ -6,9 +6,9 @@ exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -121,4 +121,4 @@ Para obter mais informações sobre a documentação do SDK do Adobe Mobile, con
 
 Na versão 2.x, todos os métodos públicos foram consolidados na classe `ADB.va.MediaHeartbeat` para facilitar o trabalho dos desenvolvedores. Além disso, todas as configurações foram consolidadas na classe `ADB.va.MediaHeartbeatConfig`
 
-Para obter informações sobre a migração de 1.x para 2.x, consulte a documentação Implementação herdada .
+Para obter informações sobre a migração da versão 1.x para a 2.x, consulte a documentação de Implementação herdada.
