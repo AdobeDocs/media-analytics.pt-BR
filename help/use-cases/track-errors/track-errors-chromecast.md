@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear erros no Chromecast
-description: Saiba mais sobre como implementar o rastreamento de erros usando o SDK do Media no Chromecast.
+description: Saiba como implementar o rastreamento de erros usando o SDK de mídia no Chromecast.
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 exl-id: 513772c2-582d-4b4b-92ed-0c32b99d7fdc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
