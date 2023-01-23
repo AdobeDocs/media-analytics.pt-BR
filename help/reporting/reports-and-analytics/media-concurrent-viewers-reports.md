@@ -6,13 +6,13 @@ exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 feature: "Media Analytics, Reports & Analytics Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Relatórios de visualizadores simultâneos de mídia {#media-concurrent-viewers}
+# Relatórios dos visualizadores simultâneos da mídia {#media-concurrent-viewers}
 
 O painel Visualizadores simultâneos de mídia exibe os visualizadores simultâneos durante um dia. Os dados podem ser filtrados por conteúdo, tipo de dispositivo ou país.
 
