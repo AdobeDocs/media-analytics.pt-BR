@@ -1,14 +1,14 @@
 ---
 title: Saiba como rastrear a busca no iOS
-description: Saiba como rastrear eventos de Início da busca e Conclusão da busca usando o SDK do Media no iOS.
+description: Saiba como rastrear os eventos de Início da busca e Conclusão da busca usando o SDK de mídia no iOS.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
