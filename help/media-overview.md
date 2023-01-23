@@ -6,9 +6,9 @@ exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Você pode medir métricas essenciais de entrega relacionadas à Qualidade de ex
 
 ## Como funciona
 
-Os dados de rastreamento de mídia de transmissão são coletados de um reprodutor usando os SDKs do Media ou as extensões do Adobe Experience Platform Media e as APIs de coleção de mídia. Todos os dados granulares (até 10 segundos) são enviados ao serviço do Media Analytics que coleta e processa os dados de cada sessão de reprodução individual. Quando a sessão de reprodução termina, os dados de acompanhamento calculados são enviados ao Adobe Analytics para armazenamento e relatórios. Com as implementações do Adobe Customer Journey Analytics (CJA), os dados podem ser enviados para o CJA usando o Conector de dados do Analytics (ADC), para que os clientes possam usar o CJA como uma ferramenta de relatórios.
+Os dados de rastreamento de mídia de transmissão são coletados de um reprodutor usando os SDKs de mídia ou as extensões de mídia do Adobe Experience Platform e as APIs de coleção de mídia. Todos os dados granulares (até 10 segundos) são enviados ao serviço do Media Analytics que coleta e processa os dados de cada sessão de reprodução individual. Quando a sessão de reprodução termina, os dados de acompanhamento calculados são enviados ao Adobe Analytics para armazenamento e relatórios. Com as implementações do Adobe Customer Journey Analytics (CJA), os dados podem ser enviados para o CJA usando o Conector de dados do Analytics (ADC), para que os clientes possam usar o CJA como uma ferramenta de relatórios.
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 
