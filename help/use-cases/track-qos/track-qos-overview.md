@@ -1,14 +1,14 @@
 ---
-title: Rastrear a qualidade da experiência explicada
-description: Uma visão geral da qualidade de rastreamento da experiência (QoE, QoS) usando o SDK do Media.
+title: Explicação sobre o rastreamento da qualidade de experiência
+description: Uma visão geral do rastreamento da qualidade de experiência (QoE, QoS) usando o SDK de mídia.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ As instruções a seguir fornecem orientação para a implementação em todos o
 
 O rastreamento da qualidade da experiência inclui qualidade do serviço (QoS) e rastreamento de erros; ambos são elementos opcionais e **não** são necessários para implementações de rastreamento de mídia principal. Você pode usar a API do reprodutor de mídia para identificar as variáveis relacionadas ao rastreamento de erros e QoS. Veja abaixo os principais elementos do rastreamento da qualidade da experiência:
 
-## Eventos do reprodutor {#player-events}
+## Eventos do player {#player-events}
 
 ### Em qualquer alteração de métrica de QoS:
 
