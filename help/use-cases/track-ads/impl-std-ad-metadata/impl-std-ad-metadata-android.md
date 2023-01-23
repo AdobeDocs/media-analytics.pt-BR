@@ -6,13 +6,13 @@ exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Implementar Metadados de publicidade padrão no Android {#implement-standard-ad-metadata-on-android}
+# Implementar metadados de publicidade padrão no Android {#implement-standard-ad-metadata-on-android}
 
 ## Constantes de anúncio
 
