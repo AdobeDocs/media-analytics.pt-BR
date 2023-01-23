@@ -1,18 +1,18 @@
 ---
 title: Enfileirar eventos quando a resposta das sessões é lenta
-description: Saiba o que fazer quando a ID de sessão for retornada após o reprodutor disparar eventos.
+description: Saiba o que fazer quando a ID de sessão for retornada após o player disparar eventos.
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Enfileirar eventos quando a resposta das sessões for lenta{#queueing-events-when-sessions-response-is-slow}
+# Enfileirar eventos quando a resposta das sessões é lenta{#queueing-events-when-sessions-response-is-slow}
 
 A API Media Collection é RESTful: ou seja, você faz uma solicitação HTTP e espera pela resposta. Isso é importante somente quando você faz uma [Solicitação de sessões](../mc-api-ref/mc-api-sessions-req.md) para obter uma ID de sessão no início da reprodução do vídeo. Isso é importante porque a ID da sessão é necessária para todas as chamadas de rastreamento subsequentes.
 
