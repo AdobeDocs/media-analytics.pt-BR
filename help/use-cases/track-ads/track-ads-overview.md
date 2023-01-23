@@ -1,14 +1,14 @@
 ---
-title: Explicação dos anúncios de rastreamento
-description: Visão geral da implementação do rastreamento de anúncios com o SDK do Media.
+title: Explicação sobre os anúncios de rastreamento
+description: Visão geral da implementação do rastreamento de anúncios com o SDK de mídia.
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciados, anúncios concluídos e anúncios ignorados. Use a API do reprodutor de mídia para identificar eventos importantes do reprodutor e preencher as variáveis de anúncio obrigatórias e opcionais. Consulte a lista abrangente de metadados aqui: [Parâmetros de anúncios.](../../implementation/variables/ad-parameters.md)
 
-## Eventos do reprodutor {#player-events}
+## Eventos do player {#player-events}
 
 
 ### No início de pausa de anúncio
@@ -52,7 +52,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 * Chame `trackEvent` para concluir o ad break.
 
-## Implemente o rastreamento de anúncios {#implement-ad-tracking}
+## Implementar o rastreamento de anúncios {#implement-ad-tracking}
 
 ### Constantes de rastreamento do anúncio
 
