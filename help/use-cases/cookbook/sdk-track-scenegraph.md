@@ -6,13 +6,13 @@ exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1169'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Roku — Rastreamento no SceneGraph {#tracking-in-scenegraph-roku}
+# Roku - Rastreamento no SceneGraph {#tracking-in-scenegraph-roku}
 
 ## Introdução {#introduction}
 
@@ -205,11 +205,11 @@ As APIs do `MediaHeartbeat` definidas globalmente na AdobeMobileLibrary herdada 
 
 | Método | Descrição |
 | --- | --- |
-| `adb_media_init_mediainfo` | Esse método retorna um objeto de Informações de mídia inicializado.  `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
-| `adb_media_init_adinfo` | Este método retorna o objeto de Informações do anúncio.  `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
-| `adb_media_init_chapterinfo` | Este método retorna o objeto de Informações do capítulo inicializado.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
-| `adb_media_init_adbreakinfo` | Este método retorna o objeto de Informações do AdBreak inicializado.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
-| `adb_media_init_qosinfo` | Este método retorna um objeto de Informações de QoS inicializado.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
+| `adb_media_init_mediainfo` | Esse método retorna um objeto de Informações de mídia inicializado. `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
+| `adb_media_init_adinfo` | Este método retorna o objeto de Informações do anúncio. `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
+| `adb_media_init_chapterinfo` | Este método retorna o objeto de Informações do capítulo inicializado. `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
+| `adb_media_init_adbreakinfo` | Este método retorna o objeto de Informações do AdBreak inicializado. `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
+| `adb_media_init_qosinfo` | Este método retorna um objeto de Informações de QoS inicializado. `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
 ## Implementação {#implementation}
 
@@ -219,7 +219,7 @@ As APIs do `MediaHeartbeat` definidas globalmente na AdobeMobileLibrary herdada 
 
    1. Copie `adbmobile.brs` (AdobeMobileLibrary) no diretório `pkg:/source/`.
 
-   1. Para obter suporte ao Scene Graph, copie `adbmobileTask.brs` e `adbMobileTask.xml` no diretório `pkg:/components/`.
+   1. Para obter suporte ao SceneGraph, copie `adbmobileTask.brs` e `adbMobileTask.xml` no diretório `pkg:/components/`.
 
 1. **Inicializar**
 
