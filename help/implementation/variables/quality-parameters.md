@@ -6,7 +6,7 @@ exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
 source-git-commit: 938fe4943b41b99fc0433b7dd60a7df5c44bff17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3320'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Este tópico contém a lista de dados de qualidade da experiência (QoE/QoS), in
 
 Descrição dos dados da tabela:
 
-* **Implementação:** Informações sobre valores e requisitos de implementação.
+* **Implementação:** informações sobre valores e requisitos de implementação.
    * *Chave* - Variável, definida manualmente no aplicativo ou automaticamente pelo SDK do Adobe Media.
    * *Obrigatório* - Indica se o parâmetro é necessário para o rastreamento básico de vídeo.
    * *Tipo* - Especifica o tipo da variável a ser definida, a string ou o número.
