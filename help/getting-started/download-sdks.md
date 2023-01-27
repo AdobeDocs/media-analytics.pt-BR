@@ -6,15 +6,15 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Obter SDKs de mídia, extensões que utilizam tags e SDKs OTT {#download-sdks}
 
-As informações nesta página incluem links para baixar os SDKs de mídia atuais e obter as extensões de mídia que usam tags.
+As informações nesta página incluem links para baixar os SDKs de mídia atuais e obter as extensões de mídia que utilizam tags.
 
 As tags da Adobe Experience Platform são a próxima geração de recursos de gerenciamento de tags de site e de SDKs móveis da Adobe. As tags oferecem uma forma simples de implantar e gerenciar todas as soluções de análise, de marketing e de anúncios necessárias para potencializar experiências de cliente relevantes. Para obter mais informações sobre tags, consulte [Visão geral das tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=pt-BR).
 
@@ -35,7 +35,7 @@ As tags da Adobe Experience Platform são a próxima geração de recursos de ge
 
 ### Implementação móvel {#get-mobile-extension}
 
-| Plataforma compatível | Versão |  Documentação   |  Amostras |
+| Plataforma compatível | Versão |  Documentação   |  Amostras  |
 |:---:|---|---|---|
 | ![Ícone do Android](assets/android-icon.png) | Android - Extensão de mídia | [Documentação do SDK móvel](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Amostra do Media Analytics para áudio e vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
 | ![Ícone do Apple iOS ](assets/ios-icon.png)<br> Ícone Adicionar tvOS | iOS/tvOS - Extensão de mídia | [Documentação do SDK móvel](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Amostra do Media Analytics para áudio e vídeo](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
