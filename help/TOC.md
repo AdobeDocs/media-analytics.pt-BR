@@ -6,9 +6,9 @@ breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 96%
    + [SDKs, bibliotecas e extensões](getting-started/download-sdks.md)
    + Fim do suporte {#end-of-support}
       + [Fim do suporte ao SDK móvel do Media Analytics](additional-resources/end-of-support-faqs.md)
-      + Legado - SDK do Media independente para a migração do Launch {#sdk-to-launch}
+      + Herdados - SDK de mídia independente para a migração do Launch {#sdk-to-launch} 
          + [Visão geral](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -38,7 +38,7 @@ ht-degree: 96%
       + Instalar e configurar {#setup}
          + Instalar SDKs da Web {#install-web-sdk}
             + [Instalar o Analytics usando JavaScript](implementation/media-sdk/setup/web-implementation.md)
-            + [Instalar o Analytics usando a extensão Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
+            + [Instalar o Analytics usando a extensão do Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Instalar SDKs móveis](implementation/media-sdk/setup/mobile-implementation.md)
          + Instalar SDKs de OTT {#ott-setup}
             + [Instalar o SDK do Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
@@ -95,7 +95,7 @@ ht-degree: 96%
       + [Exemplos de acompanhamento do estado do player](use-cases/player-state-tracking/player-state-examples.md)
    + [Acompanhar o conteúdo baixado offline](use-cases/track-downloaded-content.md)
    + [Federated Analytics ](use-cases/federated-analytics.md)
-   + [O manuseio de aplicativos é interrompido durante a reprodução](use-cases/cookbook/app-interrupts.md)
+   + [Lidar com interrupções do aplicativo durante a reprodução](use-cases/cookbook/app-interrupts.md)
    + [Atribuição de fluxo de mídia](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Resumo de sessões inativas](use-cases/cookbook/resuming-inactive.md)
    + [Acompanhamento do Roku no SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
@@ -110,7 +110,7 @@ ht-degree: 96%
       + [Definir IDs de usuário](use-cases/analytics-with-ott/set-user-ids.md)
       + [OTT e Audience Manager ](use-cases/analytics-with-ott/ott-am.md)
       + [OTT e Experience Cloud ](use-cases/analytics-with-ott/ott-experience-cloud.md)
-+ Acompanhamento {#tracking}
++ Rastreamento {#tracking}
    + Acompanhamento {#track-av-playback}
       + [Visão geral ](use-cases/track-av-playback/track-core-overview.md)
       + Rastrear a reprodução de streaming de mídia principal {#track-core}
@@ -168,7 +168,7 @@ ht-degree: 96%
          + [Configurar o JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
    + [Sobre a medição de pulsação](legacy/heartbeat-measurement.md)
    + [Adobe Primetime e Analytics para mídia de streaming](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Capacitação de gerenciamento de público da Adobe](legacy/intro-to-ava/am-enablement.md)
+   + [Capacitação de Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
    + [Implementação de link personalizado](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + Rastreamento de marcos herdado {#legacy-milestone-tracking}
       + [Rastreamento de marcos herdado](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
@@ -179,7 +179,7 @@ ht-degree: 96%
       + [Teste 1: reprodução padrão](legacy/validation/test1-standard-playback.md)
       + [Teste 2: Interrupção de mídia](legacy/validation/test2-media-interrupt.md)
       + [Detalhes da chamada de teste](legacy/validation/test-call-details.md)
-      + [Descrições do parâmetro Heartbeat](legacy/validation/heartbeat-params.md)
+      + [Descrições do parâmetro do Heartbeat](legacy/validation/heartbeat-params.md)
       + Depuração {#debugging}
          + [Depuração do SDK](legacy/validation/debugging/sdk-debugging.md)
    + [Migração herdada: VHL 1.x para VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
@@ -240,4 +240,4 @@ ht-degree: 96%
          + [Vários rastreadores de VOD ao mesmo tempo](use-cases/tracking-scenarios/vod-multi-trackers.md)
          + [Um rastreador de VOD para várias sessões](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
          + [Conteúdo principal ao vivo ](use-cases/tracking-scenarios/live-main-content.md)
-         + [Conteúdo principal ao vivo com monitoramento sequencial](use-cases/tracking-scenarios/live-sequential.md)
+         + [Conteúdo principal ao vivo com rastreamento sequencial](use-cases/tracking-scenarios/live-sequential.md)
