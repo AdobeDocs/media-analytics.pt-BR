@@ -5,9 +5,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 
 As informações nesta página descrevem como instalar o SDK independente da Web e configurar o JavaScript.
 
-Como alternativa, você pode usar a extensão Adobe Medium Analytics para implementar o Analytics, conforme descrito em [Implementar o Analytics usando a extensão Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+Como alternativa, você pode usar a extensão do Adobe Media Analytics para implementar o Analytics, conforme descrito em [Implementar o Analytics usando a extensão do Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Pré-requisitos  {#prerequesites}
 
