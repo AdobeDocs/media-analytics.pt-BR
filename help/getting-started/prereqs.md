@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '486'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 Para implementar o Adobe Analytics para mídia de streaming, conclua as seguintes tarefas:
 
 1. **Confirme seu modelo de preços de mídia de streaming**<br>
-O modelo de preços atual é baseado em transmissões de vídeo. Se necessário, entre em contato com seu representante de vendas ou gerente de conta para assinar uma nova ordem de venda, pois o Analytics para mídia de streaming é vendido separadamente do Adobe Analytics.
+O modelo de preços atual é baseado em transmissões de vídeo. Se necessário, entre em contato com o representante de vendas ou com a equipe de conta do Adobe para assinar uma nova ordem de venda, pois o Analytics para mídia de streaming é vendido separadamente da Adobe Analytics.
 
 1. **Confirme se você está implementando o Adobe Analytics**<br>
 O streaming de mídia no Adobe Analytics também requer uma implementação básica do Adobe Analytics. Consulte [Implementar o Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR) para obter mais informações.

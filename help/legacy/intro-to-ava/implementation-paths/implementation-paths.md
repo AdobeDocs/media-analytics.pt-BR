@@ -4,10 +4,10 @@ description: Saiba mais sobre os caminhos de implementação para o Streaming de
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '650'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 **ESTE CONTEÚDO FOI MOVIDO PARA O ARQUIVO DE CAMINHOS DE IMPLEMENTAÇÃO ATUAL**
 
-Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/gerente de conta para assinar uma nova ordem de vendas, pois o Streaming de Mídia do Analytics tem uma SKU exclusiva e seus preços variam de acordo com o modelo, com base em chamadas de servidor ou fluxos de vídeo.
+Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/equipe de conta Adobe para assinar uma nova ordem de vendas, pois o Streaming Media Analytics tem uma SKU exclusiva e seus preços variam de acordo com o modelo, com base em chamadas de servidor e fluxos de vídeo.
 
 ## Coleção de dados da Adobe Experience Platform com a extensão do Adobe Media Analytics
 
