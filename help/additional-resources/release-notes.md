@@ -3,10 +3,10 @@ title: Notas de versão do Adobe Analytics para mídia de streaming
 description: Visualizar as notas de versão do Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '854'
-ht-degree: 100%
+source-git-commit: 0c02fec77d6484774ea81e997529accddb19d175
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 92%
 
 ---
 
@@ -30,6 +30,7 @@ Para obter informações sobre novos recursos, correções e informações impor
 
 | Recurso | Descrição | Data alvo |
 | ----------- | ---------- | ------- |
+| Coleção de mídia: Integração com o Experience Edge (API e Mobile SDK) | Agora é possível usar a API da Experience Edge e o SDK móvel para implementar a Mídia de streaming, permitindo criar campanhas mais personalizadas e fornecer conteúdo mais personalizado, resultando em mais dados de rastreamento para gerar relatórios.<p>Esse aprimoramento fornece um método de coleta unificado em todas as soluções, como relatórios do CJA, RT-CDP, AJO e Encaminhamento de eventos.  [Saiba mais](/help/implementation/media-sdk/implementation-edge.md) | Fim de maio de 2023 |
 | Painel Visualizador simultâneo de mídia | Entenda onde o pico de simultaneidade ocorreu ou onde as quedas ocorreram. Obtenha insights importantes sobre a qualidade do conteúdo e o envolvimento do visualizador, além de ajuda na solução de problemas ou no planejamento de volume e escala. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=pt-BR) | 9 de agosto de 2022 |
 | Painel Tempo gasto com a reprodução da mídia | O painel Tempo gasto com a reprodução de mídia fornece informações valiosas sobre o envolvimento do visualizador e permite que as organizações de mídia obtenham insights mais profundos e detalhados sobre o envolvimento do usuário a cada minuto, por meio da análise avançada do tempo gasto com recursos de faixa horária. É possível observar o tempo gasto visualizando seus fluxos de mídia em um período específico. É possível dividir a duração da reprodução por diferentes granularidades, incluindo novas granularidades de 5 minutos, 15 minutos e 30 minutos. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=pt-BR) | 9 de agosto de 2022 |
 | Compartilhar anotações em cartões de pontuação para dispositivos móveis | Você pode exibir anotações criadas no Espaço de trabalho, nos Cartões de pontuação para dispositivos móveis. Isso permite compartilhar nuances de dados contextuais e insights sobre sua organização e campanhas diretamente em projetos do Cartão de pontuação para dispositivos móveis, visualizáveis no aplicativo móvel de painéis do Analytics. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=pt-BR) | 15 de junho de 2022 |

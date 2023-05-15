@@ -4,10 +4,10 @@ description: Saiba mais sobre como implementar o Adobe Analytics para mídia de 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
-source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
-workflow-type: ht
-source-wordcount: '202'
-ht-degree: 100%
+source-git-commit: e75eb6ddbcf693cd200159392dd3026ca55fc22d
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 95%
 
 ---
 
@@ -23,6 +23,7 @@ Implemente os SDKs de mídia de streaming na estrutura do player de vídeo e nos
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [SDK de mídia para JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 | <img src="assets/javascript-icon.png"> | [Extensão do Adobe Media Analytics com tags (coleção de dados) para Javascript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
 ### Implementação móvel
 
@@ -30,6 +31,8 @@ Implemente os SDKs de mídia de streaming na estrutura do player de vídeo e nos
 |:----:|:----|
 | <img src="assets/android-icon.png"> | [Extensão do Media Analytics da Adobe Experience Platform com tags (coleção de dados)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 | <img src="assets/apple-ios-icon.png"> | [Extensão do Media Analytics da Adobe Experience Platform com tags (coleção de dados)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/android-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/apple-ios-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 
 * A extensão de áudio e vídeo do Media Analytics para iOS é compatível com iOS, iPadOS e tvOS.
 

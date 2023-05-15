@@ -4,14 +4,14 @@ description: Saiba como implementar a mídia de streaming da Adobe para aplicati
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
-workflow-type: ht
-source-wordcount: '453'
-ht-degree: 100%
+source-git-commit: 9d7886a67e426089977cbe322d310c36604646d0
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 98%
 
 ---
 
-# Instalar o Analytics usando JavaScript {#install-web-sdks}
+# Instalar o Media Analytics usando JavaScript {#install-web-sdks}
 
 As informações nesta página descrevem como instalar o SDK independente da Web e configurar o JavaScript.
 

@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
+source-git-commit: 9b448c75604abe2683ab4d522a7197dfe1af55be
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 100%
             + [Instalar o Analytics usando JavaScript](implementation/media-sdk/setup/web-implementation.md)
             + [Instalar o Analytics usando a extensão do Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Instalar SDKs móveis](implementation/media-sdk/setup/mobile-implementation.md)
+         + [Instalar o Analytics com o Adobe Experience Platform Edge](implementation/media-sdk/implementation-edge.md)
          + Instalar SDKs de OTT {#ott-setup}
             + [Instalar o SDK do Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Instalar o SDK do Roku](implementation/media-sdk/setup/set-up-roku.md)
@@ -193,19 +194,19 @@ ht-degree: 100%
       + [Rastreamento da reprodução principal no iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
       + Rastreamento da reprodução principal no JavaScript {#track-core-javascript}
          + [Rastrear a reprodução principal no JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-      + [Rastrear buffering no Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [Rastrear buffering no iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + Rastrear buffering no JavaScript {#track-buffering-js}
-         + [Rastrear buffering no JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-      + [Busca de faixa no Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [Busca de faixa no iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + Busca de faixa no JavaScript {#track-seeking-js}
-         + [Busca de faixa no JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-      + [Implementar metadados padrão no Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [Implementar metadados padrão no iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [Chaves de metadados de iOS](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + Implementar metadados padrão no JavaScript {#impl-std-md-js}
-         + [Implementar metadados padrão no JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+         + [Rastrear buffering no Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+         + [Rastrear buffering no iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+         + Rastrear buffering no JavaScript {#track-buffering-js}
+            + [Rastrear buffering no JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+         + [Busca de faixa no Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Busca de faixa no iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + Busca de faixa no JavaScript {#track-seeking-js}
+            + [Busca de faixa no JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+         + [Implementar metadados padrão no Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [Implementar metadados padrão no iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+         + [Chaves de metadados de iOS](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + Implementar metadados padrão no JavaScript {#impl-std-md-js}
+            + [Implementar metadados padrão no JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + Rastreamento de anúncios {#track-ads}
          + [Rastrear anúncios no Android](use-cases/track-ads/track-ads-android.md)
          + [Rastrear anúncios no iOS](use-cases/track-ads/track-ads-ios.md)
