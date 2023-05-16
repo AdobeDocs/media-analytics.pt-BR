@@ -45,6 +45,7 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
             ```
+
          >[!IMPORTANT]
          >
          >Quando um usuário recusa o rastreamento, todos os dados e IDs persistentes do dispositivo são removidos até que o usuário volte a aceitar o rastreamento.
@@ -62,6 +63,7 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
+
       * **Retorna a configuração atual:**
 
          * **Chromecast:**
@@ -75,6 +77,7 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
             ```
             ADBMobile().getPrivacyStatus()
             ```
+
    Depois de alterar a configuração de privacidade usando `setPrivacyStatus`, a alteração torna-se permanente até ser alterada novamente usando este método ou ao desinstalar e instalar o aplicativo.
 
 ## Recuperar identificadores armazenados (aplicativos OTT) {#retrieving-stored-identifiers-ott-apps}
