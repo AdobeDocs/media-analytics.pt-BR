@@ -5,7 +5,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 0c02fec77d6484774ea81e997529accddb19d175
+source-git-commit: 0046f182f0288f164d6918cab3fa7db6c14e7b53
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 86%
@@ -24,7 +24,7 @@ As tags da Adobe Experience Platform são a próxima geração de recursos de ge
 >Para obter informações sobre como baixar SDKs herdadas, consulte [Herdados - Baixar SDKs](/help/legacy/legacy-download-sdks.md).<br>
 >Para obter informações importantes sobre o fim do suporte, consulte [Perguntas frequentes sobre o fim do suporte](/help/additional-resources/end-of-support-faqs.md).
 
-## SDKs do Media e bibliotecas móveis {#media-sdks-libraries}
+## SDKs de mídia e bibliotecas móveis {#media-sdks-libraries}
 
 ### Implementação da Web {#download-web-sdk}
 
@@ -32,7 +32,7 @@ As tags da Adobe Experience Platform são a próxima geração de recursos de ge
 |:---:|---|---|---|---|
 | ![Ícone do JavaScript](assets/javascript-icon.png) | Web - [SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referência da API JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Instalar o Analytics usando JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Amostra do SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![Ícone do JavaScript](assets/javascript-icon.png) | Web - Extensão de mídia |  | [Extensão do Adobe Media Analytics (SDK 3.x) para áudio e vídeo com o uso de tags (coleção de dados)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=pt-BR) | [Amostra da extensão do Adobe Media Analytics (SDK 3.x) para áudio e vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![Ícone do JavaScript](assets/javascript-icon.png) | Web - Experience Platform Edge (em breve) |  | [Instale o Analytics com o Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
+| ![Ícone do JavaScript](assets/javascript-icon.png) | Web - Experience Platform Edge (Em breve) |  | [Instale o Analytics com o Experience Platform Edge](/help/implementation/implementation-edge.md) |  |
 
 ### Implementação móvel {#get-mobile-extension}
 
@@ -40,8 +40,8 @@ As tags da Adobe Experience Platform são a próxima geração de recursos de ge
 |:---:|---|---|---|
 | ![Ícone do Android](assets/android-icon.png) | Android - Extensão de mídia | [Documentação do SDK móvel](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Amostra do Media Analytics para áudio e vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
 | ![Ícone do Apple iOS ](assets/ios-icon.png)<br>**tvOS** | iOS/tvOS - Extensão de mídia | [Documentação do SDK móvel](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Amostra do Media Analytics para áudio e vídeo](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Ícone do Android](assets/android-icon.png) | Android - Experience Platform Edge | [Instale o Analytics com o Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
-| ![Ícone do Apple iOS ](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge | [Instale o Analytics com o Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
+| ![Ícone do Android](assets/android-icon.png) | Android - Experience Platform Edge | [Instale o Analytics com o Experience Platform Edge](/help/implementation/implementation-edge.md) |  |
+| ![Ícone do Apple iOS ](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge | [Instale o Analytics com o Experience Platform Edge](/help/implementation/implementation-edge.md) |  |
 
 ### Implementação Over-the-top (OTT) {#download-ott-libraries}
 
