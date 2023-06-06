@@ -4,9 +4,9 @@ description: Saiba mais sobre o recurso de rastreamento do estado do player, inc
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '279'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '278'
 ht-degree: 100%
 
 ---
@@ -42,4 +42,4 @@ Os dados são calculados da mesma forma para estados padrão e personalizados, m
 
 Com a capacidade de criar estados personalizados, você pode capturar ações personalizadas e atualizar metadados personalizados durante uma sessão de reprodução.
 
-Para obter informações sobre como criar estados personalizados, consulte o [Guia de referência de API de mídia: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+Para obter informações sobre como criar estados personalizados, consulte o [Guia de referência de API de mídia: `createStateObject`](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)

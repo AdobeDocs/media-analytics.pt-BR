@@ -5,9 +5,9 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '7004'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '7002'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Esse tópico apresenta uma lista de dados de conteúdo de áudio e vídeo, inclu
 
 Descrição dos dados da tabela:
 
-* **Implementação:** Informações sobre valores e requisitos de implementação.
+* **Implementação:** informações sobre valores e requisitos de implementação.
    * *Chave* - Variável, definida manualmente no aplicativo ou automaticamente pelo SDK do Adobe Media.
    * *Obrigatório* - Indica se o parâmetro é necessário para o rastreamento básico de áudio e vídeo.
    * *Tipo* - Especifica o tipo da variável a ser definida, a string ou o número.
@@ -130,7 +130,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **Chave de SDK:**<br/> `config.downloadedcontent` </li> <li> **Chave de API:**<br/> obtida no back-end </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> booleano </li> <li> **Enviado com:**<br/> Início de mídia, Fechamento de mídia </li> <li> **Versão mín. Versão do SDK:** <br/>Inicie a extensão v1.1.0 do Android e iOS </li> <li> **Exemplo de valor:**<br/> true </li> <li> **Descrição:**<br/> Defina como true quando a ocorrência for gerada devido à reprodução de uma sessão de mídia de conteúdo baixada. Não apresente quando o conteúdo baixado não for reproduzido.<br/><br/>[Launch](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker-with-optional-configuration)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **Heartbeat:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **Disponível:**<br/> Usar regra de processamento personalizada </li> <li> **Variável reservada:**<br/> N/D </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.downloaded) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **Caminho do campo XDM:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **Caminho do campo XDM do relatório:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/> `config.downloadedcontent` </li> <li> **Chave de API:**<br/> obtida no back-end </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> booleano </li> <li> **Enviado com:**<br/> Início de mídia, Fechamento de mídia </li> <li> **Versão mín. Versão do SDK:** <br/>Inicie a extensão v1.1.0 do Android e iOS </li> <li> **Exemplo de valor:**<br/> true </li> <li> **Descrição:**<br/> Defina como true quando a ocorrência for gerada devido à reprodução de uma sessão de mídia de conteúdo baixada. Não apresente quando o conteúdo baixado não for reproduzido.<br/><br/>[Launch](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **Heartbeat:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **Disponível:**<br/> Usar regra de processamento personalizada </li> <li> **Variável reservada:**<br/> N/D </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.downloaded) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **Caminho do campo XDM:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **Caminho do campo XDM do relatório:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
 
 ### Nome do reprodutor de conteúdo
 
