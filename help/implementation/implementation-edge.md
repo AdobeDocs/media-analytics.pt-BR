@@ -4,9 +4,9 @@ description: Saiba como implementar a mídia de transmissão do Adobe.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: e3380ad898b551b6e0bbf5624d8419c5a95496f6
+source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1883'
 ht-degree: 11%
 
 ---
@@ -344,7 +344,7 @@ Para criar e configurar um esquema:
 
 ## Enviar dados para o Experience Platform Edge usando o SDK móvel da AEP
 
-Você pode usar o SDK móvel da Adobe Experience Platform para enviar dados móveis para a Experience Platform Edge. (Como alternativa, você pode usar uma implementação personalizada das APIs de borda.<!-- I guess we don't need/want to document this? -->)
+Você pode usar o SDK móvel da Adobe Experience Platform para enviar dados móveis para a Experience Platform Edge. (Como alternativa, você pode usar uma implementação personalizada das APIs de borda.<!-- Waiting for link from John -->)
 
 Use os seguintes recursos de documentação para concluir a implementação para iOS e Android:
 
@@ -352,5 +352,5 @@ Use os seguintes recursos de documentação para concluir a implementação para
 
 * [Referência da API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migrar para mídia de transmissão do Adobe para extensão de rede de borda](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) (Para usuários migrando da extensão do Media para o Edge)
+* [Migrar para mídia de transmissão do Adobe para extensão de rede de borda](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
