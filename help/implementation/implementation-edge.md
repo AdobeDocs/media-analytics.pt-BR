@@ -4,10 +4,10 @@ description: Saiba como implementar a mídia de transmissão do Adobe.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
+source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 11%
+source-wordcount: '1939'
+ht-degree: 10%
 
 ---
 
@@ -344,7 +344,7 @@ Para criar e configurar um esquema:
 
 ## Enviar dados para o Experience Platform Edge usando o SDK móvel da AEP
 
-Você pode usar o SDK móvel da Adobe Experience Platform para enviar dados móveis para a Experience Platform Edge. (Como alternativa, você pode usar uma implementação personalizada das APIs de borda.<!-- Waiting for link from John -->)
+Você pode usar o SDK móvel da Adobe Experience Platform para enviar dados móveis para a Experience Platform Edge.
 
 Use os seguintes recursos de documentação para concluir a implementação para iOS e Android:
 
@@ -354,3 +354,13 @@ Use os seguintes recursos de documentação para concluir a implementação para
 
 * [Migrar para mídia de transmissão do Adobe para extensão de rede de borda](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
+
+Como alternativa, você pode usar uma implementação personalizada das APIs de borda usando os seguintes recursos:
+
+* [Visão geral da API do Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+
+* [Introdução à API do Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+
+* [Guia de solução de problemas da API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+
+* [Uso do arquivo de especificação da API aberta para APIs do Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
