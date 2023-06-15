@@ -1,25 +1,63 @@
 ---
-title: Implementar mídia de transmissão no Adobe Analytics
+title: Implementar mídia de transmissão para Adobe Analytics ou Customer Journey Analytics
 description: Saiba mais sobre os caminhos de implementação da mídia de transmissão.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
-workflow-type: ht
-source-wordcount: '138'
-ht-degree: 100%
+source-git-commit: ade20d7ae3cbb525b3a8390a27e1d93201d83003
+workflow-type: tm+mt
+source-wordcount: '396'
+ht-degree: 13%
 
 ---
 
-# Implementar mídia de transmissão no Adobe Analytics
+# Implementar mídia de transmissão no Adobe Analytics ou Customer Journey Analytics
 
-O caminho de implementação a seguir depende da opção de usar a lógica integrada dos SDKs de mídia (a implementação padrão recomendada) ou se você opta por implantar e usar as APIs de coleção de mídia simples, mas poderosas e personalizáveis (RESTful).
+Há várias maneiras de implementar a mídia de transmissão. Para obter uma comparação detalhada dos dispositivos e plataformas compatíveis com os métodos de implementação descritos nesta página, consulte [Dispositivos e plataformas compatíveis](/help/getting-started/supported-devices.md).
 
-Escolha o caminho de implementação, dependendo das plataformas compatíveis. Alguns players não são compatíveis com os SDKs de mídia ou as extensões de mídia da Adobe Experience Platform. As APIs de coleção de mídia fornecem um método compatível para estes players. Para obter informações sobre dispositivos compatíveis, consulte [Dispositivos e plataformas compatíveis](/help/getting-started/supported-devices.md).
+## Métodos de implementação do Edge
 
-![Fluxo de mídia](media-sdk/assets/choose-media-flow2.png)
+Para a maioria dos casos, recomendamos usar o Edge ao implementar o Media Analytics para todos os novos clientes do Adobe Analytics ou do Customer Journey Analytics (CJA).
 
-Para obter informações sobre como baixar e instalar SDKs e extensões de mídia, consulte [Obter SDKs de mídia, extensões usando tags e SDKs OTT](/help/getting-started/download-sdks.md).
+* **Mídia para SDK/Extensão de Rede de Borda:** Coleta dados de dispositivos iOS e Android e os envia para o Edge. Os dados podem ser enviados para o CJA ou Adobe Analytics.
 
-Para obter informações sobre como usar as APIs da coleção de mídia, consulte [APIs da coleção de mídia](media-collection-api/mc-api-overview.md).
+  Para obter mais informações sobre o SDK/Extensão do Media for Edge Network, consulte [Instale o Media Analytics com Experience Platform Edge](/help/implementation/implementation-edge.md).
+
+  >[!NOTE]
+  >
+  >No momento, esse método de implementação não é compatível com o SDK da Web ou Roku. No entanto, ambos são compatíveis ao implementar com a API Media Edge.
+
+* **API Media Edge:** Pode ser personalizado para coletar dados de qualquer dispositivo ou formato (incluindo dispositivos móveis, da Web e dispositivos OTT) e enviar dados para o Edge. Os dados podem ser enviados para o CJA ou Adobe Analytics.
+
+  <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
+
+![Fluxo de trabalho do CJA](assets/cja-implementation.png)
+
+## Outros métodos de implementação
+
+Para a maioria dos casos, os métodos de implementação do Edge descritos acima são recomendados para o CJA e o Adobe Analytics, especialmente para novas implementações.
+
+Além dos métodos de implementação do Edge, outros métodos de implementação estão disponíveis. Esses métodos de implementação foram inicialmente projetados para uso com o Adobe Analytics. No entanto, os clientes com qualquer um dos métodos de implementação a seguir ainda podem disponibilizar dados no CJA criando uma [Conexão de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR).
+
+* **Extensão de mídia com tags:** A extensão do Adobe Medium Analytics para áudio e vídeo fornece a funcionalidade para adicionar a instância do Media Tracker a um site ou projeto habilitado para tags. Os dados são enviados para o Adobe Analytics.
+
+  Para obter informações sobre como instalar, configurar e implementar a Extensão de mídia com tags, consulte [Visão geral da extensão do Adobe Medium Analytics (SDK 3.x) para áudio e vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).
+
+* **SDK de mídia:**  Os dados são enviados para o Adobe Analytics.
+
+  Para obter informações sobre como baixar e instalar SDKs e extensões de mídia, consulte [Obter SDKs de mídia, extensões usando tags e SDKs OTT](/help/getting-started/download-sdks.md).
+
+* **API da coleção de mídia:** Rastreie eventos de áudio e vídeo usando chamadas RESTful HTTP. Os dados são enviados para o Adobe Analytics.
+
+  Para obter informações sobre como usar as APIs da coleção de mídia, consulte [APIs da coleção de mídia](media-collection-api/mc-api-overview.md).
+
+
+![Workflow do Analytics](assets/analytics-implementation.png)
+
+<!--
+(Not sure if we need the following paragraph and graphic. Paragraph is somewhat redundant with the intro paragraph of this article)
+Choose the implementation method depending on the supported platforms. Some players are not supported by the Media SDKs or the Adobe Experience Platform Media Extensions. The Media Collection APIs provide a way to support those players. For information on supported devices, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
+
+![Media Flow](media-sdk/assets/choose-media-flow2.png)
+-->
