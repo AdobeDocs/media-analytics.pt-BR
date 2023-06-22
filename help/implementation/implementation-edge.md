@@ -4,9 +4,9 @@ description: Saiba como implementar a mídia de transmissão do Adobe.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: b57db92ae4ce01e259424e3d71e36311af88ccac
+source-git-commit: 008f5a694ffa6416c0ff64f4f0ba06bf807ff5a6
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1778'
 ht-degree: 11%
 
 ---
@@ -46,60 +46,61 @@ Para criar e configurar um esquema:
 
    ![Grupos de campos adicionados](assets/schema-field-groups-added.png)
 
-
-As etapas a seguir desta seção são opcionais e as solicitações para a API Media Edge funcionarão mesmo sem ocultar os campos especificados na interface do esquema da AEP.
-No entanto, ocultar os campos tornará o esquema mais fácil de ler e entender, pois os campos ocultos não são usados pela API do Media Edge.
-As etapas a seguir se referem apenas aos campos no `MediaAnalytics Interaction Details` fieldgroup.
-
-1. No [!UICONTROL **Estrutura**] , selecione a `Media Collection Details` selecione [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
-
-   ![manage-related-fields](assets/manage-related-fields.png)
-
-   * No `Media Collection Details` oculte o `List Of States` campo.
-
-     ![ocultar estados da coleção de mídia](assets/schema-hide-media-collection-states.png)
-
-   * No `Media Collection Details` > `Advertising Details` oculte os seguintes campos de relatório: `Ad Completed`, `Ad Started`, e `Ad Time Played`.
-
-   * No `Media Collection Details` > `Advertising Pod Details` oculte o seguinte campo de relatório: `Ad Break ID`
-
-   * No `Media Collection Details` > `Chapter Details` oculte os seguintes campos de relatório: `Chapter ID`, `Chapter Completed`, `Chapter Started`, e `Chapter Time Played`.
-
-   * No `Media Collection Details` > `Qoe Data Details` oculte os seguintes campos de relatório: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, e `Total Stalling Duration`.
-
-   * No `Media Collection Details` > `Session Details` oculte os seguintes campos de relatório: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, e `Pccr`.
-
-   * No `Media Collection Details` > `List Of States End` e `Media Collection Details` > `List Of States Start` oculte os seguintes campos de relatório: `Player State Count`, `Player State Set`, e `Player State Time`.
-
-     ![campos a serem ocultados](assets/schema-hide-listofstates.png)
-
 1. Selecionar [!UICONTROL **Confirmar o**] para salvar as alterações.
 
-1. No [!UICONTROL **Estrutura**] , selecione a `List Of Media Collection Downloaded Content Events` selecione [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
+1. (Opcional) Você pode ocultar determinados campos que não são usados pela API do Media Edge. Ocultar esses campos facilita a leitura e a compreensão do schema, mas não é obrigatório. Esses campos se referem apenas àqueles no `MediaAnalytics Interaction Details` fieldgroup.
 
-   * No `List Of Media Collection Downloaded Content Events` > `Media Details` oculte o `List Of States` campo.
++++ Expanda aqui para exibir instruções nos campos que você pode ocultar.
 
-   * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` oculte os seguintes campos de relatório: `Ad Completed`, `Ad Started`, e `Ad Time Played`.
+   1. No [!UICONTROL **Estrutura**] , selecione a `Media Collection Details` selecione [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
 
-   * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` oculte o seguinte campo de relatório: `Ad Break ID`
+      ![manage-related-fields](assets/manage-related-fields.png)
 
-   * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` oculte os seguintes campos de relatório: `Chapter ID`, `Chapter Completed`, `Chapter Started`, e `Chapter Time Played`.
+      * No `Media Collection Details` oculte o `List Of States` campo.
 
-   * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` oculte os seguintes campos de relatório: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, e `Total Stalling Duration`.
+        ![ocultar estados da coleção de mídia](assets/schema-hide-media-collection-states.png)
 
-   * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` oculte os seguintes campos de relatório: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, e `Pccr`.
+      * No `Media Collection Details` > `Advertising Details` oculte os seguintes campos de relatório: `Ad Completed`, `Ad Started`, e `Ad Time Played`.
 
-   * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` e `Media Collection Details` > `List Of States Start` oculte os seguintes campos de relatório: `Player State Count`, `Player State Set`, e `Player State Time`.
+      * No `Media Collection Details` > `Advertising Pod Details` oculte o seguinte campo de relatório: `Ad Break ID`
 
-   * No `List Of Media Collection Downloaded Content Events` > `Media Details`  oculte o `Media Session ID` campo.
+      * No `Media Collection Details` > `Chapter Details` oculte os seguintes campos de relatório: `Chapter ID`, `Chapter Completed`, `Chapter Started`, e `Chapter Time Played`.
 
-1. Selecionar [!UICONTROL **Confirmar o**] para salvar as alterações.
+      * No `Media Collection Details` > `Qoe Data Details` oculte os seguintes campos de relatório: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, e `Total Stalling Duration`.
 
-1. No [!UICONTROL **Estrutura**] , selecione a `Media Reporting Details` selecione [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
+      * No `Media Collection Details` > `Session Details` oculte os seguintes campos de relatório: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, e `Pccr`.
 
-   * No `Media Reporting Details` oculte os seguintes campos: `Error Details`, `List Of States End`, `List of States Start`, e `Media Session ID`.
+      * No `Media Collection Details` > `List Of States End` e `Media Collection Details` > `List Of States Start` oculte os seguintes campos de relatório: `Player State Count`, `Player State Set`, e `Player State Time`.
 
-1. Selecionar [!UICONTROL **Confirmar o**] > [!UICONTROL **Salvar**]  para salvar as alterações.
+        ![campos a serem ocultados](assets/schema-hide-listofstates.png)
+
+   1. Selecionar [!UICONTROL **Confirmar o**] para salvar as alterações.
+
+   1. No [!UICONTROL **Estrutura**] , selecione a `List Of Media Collection Downloaded Content Events` selecione [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` oculte o `List Of States` campo.
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` oculte os seguintes campos de relatório: `Ad Completed`, `Ad Started`, e `Ad Time Played`.
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` oculte o seguinte campo de relatório: `Ad Break ID`
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` oculte os seguintes campos de relatório: `Chapter ID`, `Chapter Completed`, `Chapter Started`, e `Chapter Time Played`.
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` oculte os seguintes campos de relatório: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, e `Total Stalling Duration`.
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` oculte os seguintes campos de relatório: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, e `Pccr`.
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` e `Media Collection Details` > `List Of States Start` oculte os seguintes campos de relatório: `Player State Count`, `Player State Set`, e `Player State Time`.
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details`  oculte o `Media Session ID` campo.
+
+   1. Selecionar [!UICONTROL **Confirmar o**] para salvar as alterações.
+
+   1. No [!UICONTROL **Estrutura**] , selecione a `Media Reporting Details` selecione [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
+
+      * No `Media Reporting Details` oculte os seguintes campos: `Error Details`, `List Of States End`, `List of States Start`, e `Media Session ID`.
+
+   1. Selecionar [!UICONTROL **Confirmar o**] > [!UICONTROL **Salvar**]  para salvar as alterações.
 
 1. Continuar com [Criar um conjunto de dados na Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
