@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '531'
-ht-degree: 100%
+source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 72%
 
 ---
 
@@ -24,13 +24,18 @@ Você pode medir métricas essenciais de entrega relacionadas à Qualidade de ex
 
 ## Como funciona
 
-Os dados de rastreamento de mídia de transmissão são coletados de um reprodutor usando os SDKs de mídia ou as extensões de mídia do Adobe Experience Platform e as APIs de coleção de mídia. Todos os dados granulares (até 10 segundos) são enviados ao serviço do Media Analytics que coleta e processa os dados de cada sessão de reprodução individual. Quando a sessão de reprodução termina, os dados de acompanhamento calculados são enviados ao Adobe Analytics para armazenamento e relatórios. Com as implementações do Adobe Customer Journey Analytics (CJA), os dados podem ser enviados para o CJA usando o Conector de dados do Analytics (ADC), para que os clientes possam usar o CJA como uma ferramenta de relatórios.
+Os dados de rastreamento de mídia de transmissão são coletados de um player usando a Extensão/SDK de rede de borda, a Extensão de mídia com tags, SDKs de mídia, API de borda de mídia ou a API de coleção de mídia.
 
-<!-- ![streaming media process](./assets/streaming-process1.png) -->
+Todos os dados granulares (até 10 segundos) são enviados para o Media Analytics Service ou para a Experience Edge (dependendo da [método de implementação](/help/implementation/overview.md) você escolher), que coletam e processam os dados de cada sessão de reprodução individual.
 
-<div style="text-align: center;">
-<img src="./assets/streaming-process1.png" alt="Processo de streaming de mídia" width="75%">
-</div>
+Após o término de uma sessão de reprodução, os dados de rastreamento calculados são enviados ao Adobe Analytics ou ao Customer Journey Analytics para armazenamento e relatórios.
+
+>[!NOTE]
+>
+>Com implementações de Customer Journey Analytics, os dados podem ser enviados para o Customer Journey Analytics usando o Experience Edge ou o ADC (Conector de dados Analytics).
+
+
+Consulte [Implementar mídia de transmissão para Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md) para obter mais informações.
 
 ## Recursos
 
