@@ -4,7 +4,7 @@ description: “Saiba mais sobre os principais dispositivos, como iOS, Android, 
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: deae677d9e8b4dc241765cf5d168fcd71b9c8310
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 58%
@@ -25,7 +25,7 @@ Para dispositivos que não são compatíveis com SDK no momento ou em situaçõe
 
 A tabela abaixo lista os dispositivos compatíveis no momento. Se um dispositivo não estiver listado, entre em contato com o Atendimento ao cliente ou com o consultor de soluções para saber o status desse dispositivo.
 
-Para obter mais informações sobre como implementar o Media on Edge, consulte [Instale o Media Analytics com Experience Platform Edge](/help/implementation/implementation-edge.md).
+Para obter mais informações sobre como implementar o Media on Edge, consulte [Instale o Media Analytics com Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Plataformas e dispositivos de transmissão | | Mídia para SDK/Extensão de rede de borda | API Media Edge | Extensão de mídia com tags ou SDK móvel da AEP | SDK do Media | API da coleção de mídia |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

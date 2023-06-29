@@ -5,8 +5,8 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Cancelar alterações
 
 >[!TIP]
 >
->A posição do indicador de reprodução é definida como parte do código de instalação e configuração. Para obter mais informações sobre `getCurrentPlayheadTime`, consulte [Visão geral: Diretrizes gerais de implementação.](/help/implementation/media-sdk/media-sdk-overview.md)
+>A posição do indicador de reprodução é definida como parte do código de instalação e configuração. Para obter mais informações sobre `getCurrentPlayheadTime`, consulte [Visão geral: Diretrizes gerais de implementação.](/help/implementation/media-sdk-overview.md)
 
 
 ## Implementar {#implement}
@@ -107,13 +107,13 @@ Cancelar alterações
 
    * **Metadados padrão -**
 
-      >[!NOTE]
-      >
-      >Anexar o objeto de metadados padrão ao objeto de mídia é opcional.
+     >[!NOTE]
+     >
+     >Anexar o objeto de metadados padrão ao objeto de mídia é opcional.
 
-      Exemplifique um objeto de metadados padrão, preencha as variáveis desejadas e defina o objeto de metadados no objeto de Heartbeat de mídia.
+     Exemplifique um objeto de metadados padrão, preencha as variáveis desejadas e defina o objeto de metadados no objeto de Heartbeat de mídia.
 
-      Consulte a lista completa de metadados aqui: [Parâmetros de áudio e vídeo.](../../implementation/variables/audio-video-parameters.md)
+     Consulte a lista completa de metadados aqui: [Parâmetros de áudio e vídeo.](../../implementation/variables/audio-video-parameters.md)
 
    * **Metadados personalizados -** Crie um objeto variável para as variáveis personalizadas e preencha com os dados deste conteúdo.
 
