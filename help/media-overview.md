@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 72%
+source-wordcount: '563'
+ht-degree: 68%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 72%
 
 ![Banner](./assets/media_analytics_banner.png)
 
-O Adobe Analytics para mídia de streaming é um complemento do Adobe Analytics que fornece ferramentas eficientes de medição para áudio, vídeo e anúncios. Com o Analytics para mídia de streaming, você obtém detalhes precisos sobre duração, interrupções e inicializações quase em tempo real, o que permite avaliar e combinar métricas de vídeo e áudio. Esses insights permitem entender os hábitos de visualização e acompanhamento de seus clientes e aumentar o engajamento com recomendações altamente personalizadas.
+O Adobe Analytics para mídia de streaming é um complemento do Adobe Analytics e do Customer Journey Analytics que fornece ferramentas eficientes de medição para áudio, vídeo e anúncios. Com o Analytics para mídia de streaming, você obtém detalhes precisos sobre duração, interrupções e inicializações quase em tempo real, o que permite avaliar e combinar métricas de vídeo e áudio. Esses insights permitem entender os hábitos de visualização e acompanhamento de seus clientes e aumentar o engajamento com recomendações altamente personalizadas.
 
 O Adobe Analytics para mídia de streaming permite acompanhar a jornada do cliente completa em seu site e aplicativos de streaming. Você pode combinar métricas de mídia de streaming com outros recursos do Adobe Analytics, como o Analytics para dispositivos móveis, Audience Analytics ou Cross-Device Analytics. Essas métricas se integram facilmente aos relatórios do Adobe Analytics e a outros produtos da Adobe Experience Platform. A medição de mídia permite categorizar seus dados em várias dimensões e segmentos, capturando todos os metadados necessários para fazer uma análise completa e detalhada. Em seguida, você pode analisar dados e atribuir critérios de sucesso a mídias totalmente consumidas, tempo médio gasto e anúncios concluídos.
 
