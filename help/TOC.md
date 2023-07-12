@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: cb45048d77edc188b5fdbd60ae89c165ff9befa0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '900'
 ht-degree: 96%
 
 ---
@@ -169,7 +169,7 @@ ht-degree: 96%
       + [Configurar Android](legacy/media-sdk/setup/set-up-android.md)
       + [Configurar iOS](legacy/media-sdk/setup/set-up-ios.md)
       + Configurar JavaScript {#setup-javascript}
-         + [Configurar o JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
+         + [Configurar o JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Sobre a medição de pulsação](legacy/heartbeat-measurement.md)
    + [Adobe Primetime e Analytics para mídia de streaming](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Capacitação de Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
@@ -187,7 +187,6 @@ ht-degree: 96%
       + Depuração {#debugging}
          + [Depuração do SDK](legacy/validation/debugging/sdk-debugging.md)
    + [Migração herdada: VHL 1.x para VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
-   + [Configurar o JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Comparação de código: v1.x e v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [Acompanhamento de APIs: 1x a 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [Herdados - Introdução ao AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
