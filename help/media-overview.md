@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
+source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 68%
+source-wordcount: '589'
+ht-degree: 65%
 
 ---
 
@@ -21,6 +21,11 @@ O Adobe Analytics para mídia de streaming é um complemento do Adobe Analytics 
 O Adobe Analytics para mídia de streaming permite acompanhar a jornada do cliente completa em seu site e aplicativos de streaming. Você pode combinar métricas de mídia de streaming com outros recursos do Adobe Analytics, como o Analytics para dispositivos móveis, Audience Analytics ou Cross-Device Analytics. Essas métricas se integram facilmente aos relatórios do Adobe Analytics e a outros produtos da Adobe Experience Platform. A medição de mídia permite categorizar seus dados em várias dimensões e segmentos, capturando todos os metadados necessários para fazer uma análise completa e detalhada. Em seguida, você pode analisar dados e atribuir critérios de sucesso a mídias totalmente consumidas, tempo médio gasto e anúncios concluídos.
 
 Você pode medir métricas essenciais de entrega relacionadas à Qualidade de experiência (QoE), como quadros ignorados, tempo gasto no buffering e taxa média de bits. Adicionalmente, as métricas podem ser combinadas com os dados do seu site ou aplicativo para visualizar o caminho e os interesses do cliente, o que permite fornecer recomendações aprimoradas e personalizar a experiência dos clientes usando a Adobe Experience Platform.
+
+>[!IMPORTANT]
+>
+>Para implementar a transmissão de mídia da Adobe Analytics, entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para garantir que a transmissão de mídia faça parte do seu portfólio de produtos.
+
 
 ## Como funciona
 
