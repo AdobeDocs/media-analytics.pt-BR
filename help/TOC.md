@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 + [Guia do Analytics para mídia de streaming](media-overview.md)
 + Notas de versão {#release-notes}
-   + [Notas de versão de mídias de streaming](additional-resources/release-notes.md)
+   + [Notas de versão da Mídia de streaming](additional-resources/release-notes.md)
 + Introdução {#getting-started}
    + [Pré-requisitos ](getting-started/prereqs.md)
    + [Dispositivos compatíveis](getting-started/supported-devices.md)
@@ -33,10 +33,10 @@ ht-degree: 96%
 + Implementação {#implementation}
    + [Visão geral da implementação](implementation/overview.md)
    + Implementações do Edge (recomendado) {#edge-recommended}
-      + SDKs do Media Edge / Extensão {#media-edge-sdk}
-         + [SDKs do Media Edge / Configuração de extensão](/help/implementation/edge/implementation-edge.md)
-         + [SDKs móveis do Media Edge](/help/implementation/edge/edge-mobile-sdk.md)
-      + [API Media Edge](/help/implementation/edge/implementation-edge-api.md)
+      + SDKs/Extensão de borda de mídia {#media-edge-sdk}
+         + [Configuração de SDKs/extensão de borda de mídia](/help/implementation/edge/implementation-edge.md)
+         + [SDKs móveis de borda de mídia](/help/implementation/edge/edge-mobile-sdk.md)
+      + [API de borda de mídia](/help/implementation/edge/implementation-edge-api.md)
    + Implementações somente do Adobe Analytics {#analytics-only}
       + SDKs de mídia / Extensão {#media-sdk}
          + [SDK da Web JavaScript](implementation/media-sdk/setup/web-implementation.md)
