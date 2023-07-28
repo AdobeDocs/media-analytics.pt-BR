@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: b33a6205d5c6921c4ee0fcfc968593c62461c2a0
+source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '897'
 ht-degree: 100%
 
 ---
@@ -33,11 +33,13 @@ ht-degree: 100%
 + Implementação {#implementation}
    + [Visão geral da implementação](implementation/overview.md)
    + Implementações do Edge (recomendado) {#edge-recommended}
+      + [Pré-requisitos ](/help/implementation/edge/prerequisites-edge.md)
       + SDKs/Extensão de borda de mídia {#media-edge-sdk}
          + [Configuração de SDKs/extensão de borda de mídia](/help/implementation/edge/implementation-edge.md)
          + [SDKs móveis de borda de mídia](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de borda de mídia](/help/implementation/edge/implementation-edge-api.md)
    + Implementações somente do Adobe Analytics {#analytics-only}
+      + [Pré-requisitos ](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + SDKs de mídia / Extensão {#media-sdk}
          + [SDK da Web JavaScript](implementation/media-sdk/setup/web-implementation.md)
          + [Extensão do Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
