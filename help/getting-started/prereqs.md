@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 60702b2cf466df7a1b328743c5d5f4c1834d9554
+source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 75%
+source-wordcount: '442'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ Antes de começar a implementar a Mídia de streaming, conclua as seguintes tare
 Antes de começar a implementar a Mídia de streaming, reveja a [Visão geral das mídias de streaming](/help/media-overview.md) para garantir que a mídia de transmissão atenda às suas necessidades.
 
 1. **Confirme seu modelo de preços de mídia de streaming**<br>
-O modelo de preços atual é baseado em transmissões de vídeo. Se necessário, entre em contato com o representante de vendas ou com a equipe de conta do Adobe para assinar uma nova ordem de venda, pois o Analytics para mídia de streaming é vendido separadamente da Adobe Analytics.
+O modelo de preços atual é baseado em transmissões de vídeo. Se necessário, entre em contato com o representante de vendas ou com a equipe de conta do Adobe, já que a mídia de streaming é vendida separadamente, como um complemento do Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Ativar relatórios do Adobe Analytics**<br>
 Para permitir o uso de relatórios no Analytics e visualizar os dados de conteúdo e anúncios coletados, é necessário ativar os relatórios no Analytics. Consulte [Ativação de relatórios de mídia](/help/reporting/media-reports-enable.md).
@@ -46,3 +46,5 @@ Para permitir o uso de relatórios no Analytics e visualizar os dados de conteú
    * [Pré-requisitos para implementações exclusivas do Adobe Analytics](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
    * [Pré-requisitos para implementações do Edge](/help/implementation/edge/prerequisites-edge.md)
+
+   Use o [Visão geral da implementação](/help/implementation/overview.md) para determinar qual método de implementação é adequado para você.
