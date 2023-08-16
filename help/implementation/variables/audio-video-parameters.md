@@ -6,13 +6,13 @@ exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 28fcf03600585e3d6a067eca99560218bfef0e05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7001'
 ht-degree: 100%
 
 ---
 
-# Parâmetros de áudio e vídeo{#audio-and-video-parameters}
+# Parâmetros de áudio e vídeo {#audio-and-video-parameters}
 
 Esse tópico apresenta uma lista de dados de conteúdo de áudio e vídeo, incluindo valores de dados de contexto, que a Adobe coleta por meio de variáveis da solução.
 
@@ -372,7 +372,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <ul> <li> **Chave de SDK:**<br/> Definida automaticamente </li> <li> **Chave da API:**<br/> N/D </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Fechamento de mídia </li> <li> **Versão mín. do SDK:** Any </li> <li> **Exemplo de valor:**<br/> TRUE </li> <li> **Descrição:**<br/> O indicador de reprodução passa o marcador de 25% do conteúdo com base na duração do conteúdo. O marcador é contado apenas uma vez, mesmo se a busca for regressiva. Se a busca for para frente, os marcadores ignorados não serão contados.    <br/> **Importante:** somente poderá ser verdadeiro se estiver definido. Se não for definido, nenhum valor será retornado.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/D </li> <li> **Heartbeats:**<br/> N/D </li> </ul> | <ul> <li> **Disponível:**<br/> Sim </li> <li> **Variável reservada:**<br/> event </li> <li> **Nome do relatório:**<br/> 25% Progress Marker </li> <li> **Dados de contexto:**<br/> (a.media.progress25) </li> <li> **Feed de dados:**<br/> videoprogress25 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress25) </li> <li> **Caminho do campo XDM:**<br/> media.mediaTimed.progress25.value </li> <li> **Caminho do campo XDM do relatório:**<br/> mediaReporting.sessionDetails.hasProgress25 </li> </ul> |
 
-### Marcador de progresso de 50%
+### Marcador de progresso 50%
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
