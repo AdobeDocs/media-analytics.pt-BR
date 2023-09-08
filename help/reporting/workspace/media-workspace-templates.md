@@ -5,25 +5,41 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '210'
-ht-degree: 100%
+source-git-commit: 41de1573b001deb65f525af9c5c648d85cac8629
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 11%
 
 ---
 
-# Modelos do Espaço de trabalho de mídia {#media-workspace-templates}
+# Relatórios de mídia no Analysis Workspace {#media-workspace-templates}
 
-O Workspace do Adobe Analytics oferece a capacidade de configurar rapidamente os painéis para analisar seus dados de rastreamento. Ao criar um novo projeto ou acessar o Espaço de trabalho para gerenciar um projeto existente, é possível escolher entre modelos padrão que abrangem cenários comuns de rastreamento geral, como atração, consumo de mídia de streaming e muito mais. Você também pode criar, modificar e salvar seus próprios modelos personalizados.
+>[!NOTE]
+>
+>*Relatórios* no Espaço de trabalho eram conhecidos anteriormente como *modelos*.
 
-Você trabalha com modelos na guia Espaço de trabalho no Adobe Analytics ao criar ou gerenciar um projeto. Ao entrar pela primeira vez no Espaço de trabalho, você verá as opções de criação de um novo projeto ou de abertura de um projeto existente:
+O Analysis Workspace oferece um conjunto de relatórios pré-criados que estão disponíveis por padrão e que podem ser usados para analisar dados. Para obter mais informações sobre todos os relatórios padrão disponíveis, consulte [Exibir relatórios](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Página de aterrissagem do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=pt-BR).
 
-* **Criar um novo projeto -** ao clicar no botão **[!UICONTROL Criar novo projeto]** no Espaço de trabalho, uma caixa de diálogo é exibida na qual é possível selecionar a partir da sua coleção de modelos (incluindo Padrão e Personalizado):
+Alguns desses relatórios são particularmente úteis para analisar dados de mídia de transmissão, conforme descrito nas seções a seguir.
 
-   ![](/help/reporting/assets/all-templates-audio.png)
+## Entender os relatórios de mídia padrão
 
-   Por exemplo, se você escolher o modelo de **[!UICONTROL Consumo de áudio]**, será apresentado um projeto com o seguinte painel orientado para áudio:
+Veja a seguir uma lista dos relatórios padrão que são úteis ao analisar dados de mídia de transmissão:
 
-   ![](/help/reporting/assets/aa-workspace.png)
+* [!UICONTROL **Consumo de conteúdo de mídia**]: cria um relatório que mostra qual conteúdo é mais consumido e envolve os usuários.
 
-* **Gerenciar projetos -** Em um projeto existente, você pode modificar a apresentação de dados e Salvar como para criar sua própria coleção de modelos personalizados.
+* [!UICONTROL **Consumo de streaming de mídia**]: cria um relatório com um painel, conforme mostrado no exemplo abaixo.
+
+* [!UICONTROL **Recenticidade, frequência e fidelidade de mídia**]: cria um relatório que mostra a recenticidade (quantos dias desde a última visita), frequência (quantas visitas por visitante) e fidelidade (com que frequência as coortes de usuários retornam ao site)
+
+Por exemplo, se você escolher a variável  [!UICONTROL **Consumo de streaming de mídia**] relatório, um projeto com o seguinte painel é apresentado:
+
+![](/help/reporting/assets/aa-workspace.png)
+
+## Usar relatórios de mídia padrão
+
+Você pode usar os relatórios de mídia padrão das seguintes maneiras: ao criar um novo projeto. Você também pode ou ao modificar um projeto existente.
+
+* **Ao criar um novo projeto:** Para obter informações sobre como criar um novo projeto a partir de um relatório padrão, consulte [Criar um projeto a partir de um projeto em branco ou de um relatório](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) in [Criar projetos no Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+
+* **Ao criar um relatório de empresa personalizado:** Para obter informações sobre como criar um relatório de empresa personalizado, consulte [Criar um relatório de empresa personalizado](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in [Página de aterrissagem do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=pt-BR).
