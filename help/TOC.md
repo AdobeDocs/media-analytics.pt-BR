@@ -6,9 +6,9 @@ breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
 source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -84,12 +84,12 @@ ht-degree: 96%
    + Relatórios de mídia padrão {#media-default-reports}
       + [Visão geral dos relatórios padrão](reporting/reports-and-analytics/default-reports-overview.md)
       + [Visão geral da mídia ](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Detalhes da mídia ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Detalhes da mídia](reporting/reports-and-analytics/media-reports-detail.md)
       + [Relatório de faixa horária de mídia](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + API de mídia {#media-api}
       + [Obter dados de visualizadores simultâneos](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [Obter dados de Tempo gasto com reprodução de mídia](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+      + [Obter dados de Tempo gasto com a reprodução da mídia](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Casos de uso {#media-use-cases}
    + [Casos de uso do SDK de mídia](use-cases/cookbook/sdk-cookbook-overview.md)
    + Rastreamento do estado do player {#player-state-tracking}
