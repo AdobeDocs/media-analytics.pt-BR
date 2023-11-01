@@ -4,8 +4,8 @@ description: Saiba como implementar o rastreamento principal usando o SDK de mí
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 Esta documentação abrange o rastreamento na versão 3.x do SDK.
 
 >[!IMPORTANT]
-> Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs](/help/getting-started/download-sdks.md)
+>
+>Se estiver implementando uma versão anterior do SDK, você pode baixar os Guias dos desenvolvedores Anterior aqui: [Baixar SDKs](/help/getting-started/download-sdks.md)
 
 1. **Configuração de rastreamento inicial**
 
@@ -29,8 +30,8 @@ Esta documentação abrange o rastreamento na versão 3.x do SDK.
    | `name` | string | String não vazia que indica o nome da mídia. |
    | `id` | string | String não vazia que indica um identificador de mídia exclusivo. |
    | `length` | number | Número positivo que indica a duração da mídia em segundos. Use 0 se o comprimento for desconhecido. |
-   | `streamType` | string |  |
-   | `mediaType` |  | Tipo de mídia (áudio ou vídeo). |
+   | `streamType` | string |   |
+   | `mediaType` | | Tipo de mídia (áudio ou vídeo). |
 
    **`StreamType`Constantes:**
 
@@ -60,30 +61,30 @@ Esta documentação abrange o rastreamento na versão 3.x do SDK.
 
    * **Metadados padrão**
 
-      >[!NOTE]
-      >
-      >Anexar os metadados padrão é opcional.
+     >[!NOTE]
+     >
+     >Anexar os metadados padrão é opcional.
 
       * Referência da API de chaves de metadados de mídia - [Chaves de metadados padrão - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         Consulte o conjunto completo de metadados aqui: [Parâmetros de áudio e vídeo](/help/implementation/variables/audio-video-parameters.md)
+        Consulte o conjunto completo de metadados aqui: [Parâmetros de áudio e vídeo](/help/implementation/variables/audio-video-parameters.md)
+
    * **Metadados personalizados**
 
-      Crie um objeto variável para as variáveis personalizadas e preencha com os dados desta mídia. Por exemplo:
+     Crie um objeto variável para as variáveis personalizadas e preencha com os dados desta mídia. Por exemplo:
 
-      ```js
-      /* Set context data */
-       var contextData = {};
-      
-       //Standard metadata
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
-      
-       //Custom metadata
-       contextData["isUserLoggedIn"] = "false";
-       contextData["tvStation"] = "Sample TV Station";
-      ```
-
+     ```js
+     /* Set context data */
+      var contextData = {};
+     
+      //Standard metadata
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
+     
+      //Custom metadata
+      contextData["isUserLoggedIn"] = "false";
+      contextData["tvStation"] = "Sample TV Station";
+     ```
 
 1. **Rastrear a intenção de iniciar a reprodução**
 

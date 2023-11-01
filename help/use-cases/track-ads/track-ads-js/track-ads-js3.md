@@ -4,10 +4,10 @@ description: Implementar o rastreamento de anúncios nos aplicativos de navegado
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '362'
-ht-degree: 100%
+source-git-commit: fd9f0a7f4592c01082bcad015351d9128df2f8c9
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 88%
 
 ---
 
@@ -77,22 +77,22 @@ As instruções a seguir fornecem orientação para a implementação usando os 
                                    <LENGTH>);
    ```
 
-1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
+1. (Opcional) Anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
    * [Implementar metadados de publicidade padrão no JavaScript](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do anúncio atual:
 
-      ```js
-      /* Set context data */
-      // Standard metadata keys provided by adobe.
-      adMetadata[ADB.Media.AdMetadataKeys]  ="Sample Advertiser";
-      adMetadata[ADB.Media.AdMetadataKeys] = "Sample Campaign";
-      
-      // Custom metadata keys
-      adMetadata["affiliate"] = "Sample affiliate";
-      adMetadata["campaign"] = "Sample ad campaign";
-      adMetadata["creative"] = "Sample creative";
-      ```
+     ```js
+     /* Set context data */
+     // Standard metadata keys provided by adobe.
+     adMetadata[ADB.Media.AdMetadataKeys]  ="Sample Advertiser";
+     adMetadata[ADB.Media.AdMetadataKeys] = "Sample Campaign";
+     
+     // Custom metadata keys
+     adMetadata["affiliate"] = "Sample affiliate";
+     adMetadata["campaign"] = "Sample ad campaign";
+     adMetadata["creative"] = "Sample creative";
+     ```
 
 1. Chame `trackEvent()` com o evento `AdStart` na instância `MediaHeartbeat` para começar a rastrear a reprodução de anúncio.
 
@@ -130,3 +130,33 @@ As instruções a seguir fornecem orientação para a implementação usando os 
    ```
 
 Consulte o cenário de rastreamento [Reprodução de VOD com anúncios antes da exibição](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) para obter mais informações.
+
+## Rastreamento de anúncios granulares
+
+É possível configurar o rastreamento granular de anúncios para habilitar `1 second` rastreamento de anúncios.
+
+Essas informações devem ser fornecidas ao iniciar uma sessão de rastreamento.
+
+>[!NOTE]
+>
+>   O intervalo de ping de anúncio padrão é `10 seconds`.
+
+
+**Sintaxe**
+
+```javascript
+ADB.Media.MediaObjectKey = {
+   GranularAdTracking: "media.granularadtracking"
+   }
+```
+
+**Exemplo**
+
+```javascript
+var mediaObject = ADB.Media.createMediaObject("media-name", "media-id", 60, ADB.Media.StreamType.VOD, ADB.Media.MediaType.Video);
+
+// Enable granular ad tracking
+mediaObject[ADB.Media.MediaObjectKey.GranularAdTracking] = true;
+
+tracker.trackSessionStart(mediaObject);
+```
