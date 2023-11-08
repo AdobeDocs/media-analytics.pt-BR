@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '750'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 93%
 
 ---
 
@@ -46,24 +46,24 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
    * **Metadados de vídeo padrão**
 
-      [Implementar metadados padrão no Chromecast](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+     [Implementar metadados padrão no Chromecast](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
-      >[!NOTE]
-      >
-      >Anexar o objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
+     >[!NOTE]
+     >
+     >Anexar o objeto de metadados de vídeo padrão ao objeto de mídia é opcional.
 
    * **Metadados personalizados**
 
-      Crie um objeto variável para as variáveis personalizadas e preencha com os dados deste vídeo. Por exemplo:
+     Crie um objeto variável para as variáveis personalizadas e preencha com os dados deste vídeo. Por exemplo:
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **Rastrear a intenção de iniciar a reprodução**
 
@@ -91,11 +91,17 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
 1. **Atualizar valor do indicador de reprodução**
 
-   Atualize o valor de posição do `mediaUpdatePlayhead` várias vezes quando o indicador de reprodução mudar. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC daquele dia. <br /> Observação: ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado para o número de segundos desde o início do item de mídia, começando com 0.
+   Atualize o valor de posição do `mediaUpdatePlayhead` várias vezes quando o indicador de reprodução mudar. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC daquele dia.
 
    ```
-   ADBMobile().mediaUpdatePlayhead(position)
+   ADBMobile().media.updatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >Considere o seguinte ao chamar o `media.updatePlayhead` API:
+   >* Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado para o número de segundos desde o início do item de mídia, começando com 0.
+   >* Ao usar SDKs de mídia, você deve chamar o `media.updatePlayhead` pelo menos uma vez por segundo.
 
 1. **Rastrear a conclusão da reprodução**
 

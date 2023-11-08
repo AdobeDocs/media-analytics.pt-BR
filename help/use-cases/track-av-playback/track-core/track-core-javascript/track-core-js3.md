@@ -4,10 +4,10 @@ description: Saiba como implementar o rastreamento principal usando o SDK de mí
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 91%
 
 ---
 
@@ -125,6 +125,20 @@ Esta documentação abrange o rastreamento na versão 3.x do SDK.
    ```js
    tracker.trackPlay();
    ```
+
+1. **Atualizar valor do indicador de reprodução**
+
+   Quando o indicador de reprodução de mídia for alterado, notifique o SDK, chamando o `mediaUpdatePlayhead` API. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC daquele dia.
+
+   ```
+   tracker.updatePlayhead(position)
+   ```
+
+   >[!NOTE]
+   >
+   >Considere o seguinte ao chamar o `tracker.updatePlayhead` API:
+   >* Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado para o número de segundos desde o início do item de mídia, começando com 0.
+   >* Ao usar SDKs de mídia, você deve chamar o `tracker.updatePlayhead` pelo menos uma vez por segundo.
 
 1. **Rastrear a conclusão da reprodução**
 

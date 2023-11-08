@@ -5,8 +5,8 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 100%
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 
 Esta documentação abrange o rastreamento na versão 2.x do SDK.
 >[!IMPORTANT]
+>
 >Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores 1.x para Android aqui: [Baixar SDKs](/help/getting-started/download-sdks.md).
 
 1. **Configuração de rastreamento inicial**
@@ -61,26 +62,26 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
    * **Metadados padrão**
 
-      [Implementar metadados padrão no Android](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+     [Implementar metadados padrão no Android](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
-      >[!NOTE]
-      >
-      >Anexar o objeto de metadados padrão ao objeto de mídia é opcional.
+     >[!NOTE]
+     >
+     >Anexar o objeto de metadados padrão ao objeto de mídia é opcional.
 
       * Referência da API de chaves de metadados da mídia - [Chaves de metadados padrão - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * Consulte o conjunto completo de metadados aqui: [Parâmetros de áudio e vídeo](/help/implementation/variables/audio-video-parameters.md)
+
    * **Metadados personalizados**
 
-      Crie um dicionário para as variáveis personalizadas e preencha com os dados desta mídia. Por exemplo:
+     Crie um dicionário para as variáveis personalizadas e preencha com os dados desta mídia. Por exemplo:
 
-      ```java
-      HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>();
-      mediaMetadata.put("isUserLoggedIn", "false");
-      mediaMetadata.put("tvStation", "Sample TV Station");
-      mediaMetadata.put("programmer", "Sample programmer");
-      ```
-
+     ```java
+     HashMap<String, String> mediaMetadata =  
+       new HashMap<String, String>();
+     mediaMetadata.put("isUserLoggedIn", "false");
+     mediaMetadata.put("tvStation", "Sample TV Station");
+     mediaMetadata.put("programmer", "Sample programmer");
+     ```
 
 1. **Rastrear a intenção de iniciar a reprodução**
 
