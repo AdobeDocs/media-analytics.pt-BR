@@ -4,9 +4,9 @@ description: Este tópico inclui perguntas frequentes sobre o fim do suporte par
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b955b20495a504020a214c3a9e32b676701ee4cc
+source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '602'
 ht-degree: 79%
 
 ---
@@ -20,7 +20,7 @@ Isso significa que o Adobe não fornece mais correções, atualizações relacio
 
 ## 5 principais itens que você deve conhecer
 
-1. A partir de 31 de agosto de 2021, não haverá mais suporte para SDKs v4 móveis. Você deve migrar para os SDKs móveis da Adobe Experience Platform (AEP) para iOS e Android. Para obter mais informações, consulte [Perguntas frequentes sobre o fim do suporte aos SDKs móveis versão 4](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/).
+1. A partir de 31 de agosto de 2021, não haverá mais suporte para SDKs v4 móveis. Você deve migrar para os SDKs móveis da Adobe Experience Platform (AEP) para iOS e Android.
 
 1. A implementação do Analytics para Streaming de Mídia exige o SDK móvel da AEP e o uso das extensões do Analytics e do Media Analytics. A partir de 1º de setembro de 2021, você deverá usar os novos SDKs móveis e extensões da AEP.  As extensões do Media Analytics são configuradas usando Tags da Adobe (coleção de dados). Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
 
