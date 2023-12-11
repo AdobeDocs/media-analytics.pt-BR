@@ -3,17 +3,17 @@ title: Saiba mais sobre dispositivos e plataformas compatíveis
 description: “Saiba mais sobre os principais dispositivos, como iOS, Android, dispositivos OTT e navegadores JavaScript compatíveis com o Adobe Analytics para mídia de streaming.”
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
-role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
 # Dispositivos e plataformas compatíveis {#devices-supported}
 
-O Adobe Analytics para mídia de streaming é compatível com todos os principais dispositivos, incluindo:
+O Adobe Analytics para streaming de mídia é compatível com todos os principais dispositivos, incluindo:
 
 * Smartphones e tablets iOS e Android
 * Dispositivos OTT para Roku, Fire TV e Android TV
@@ -27,7 +27,7 @@ A tabela abaixo lista os dispositivos compatíveis no momento. Se um dispositivo
 
 Para obter mais informações sobre como implementar o Media on Edge, consulte [Instale o Media Analytics com Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-| Plataformas e dispositivos de transmissão | | Mídia para SDK/Extensão de rede de borda | API Media Edge | Extensão de mídia com tags ou SDK móvel da AEP | SDK do Media | API da coleção de mídia |
+| Plataformas e dispositivos de transmissão | | Mídia para SDK/Extensão de rede de borda | API de borda de mídia | Extensão de mídia com tags ou SDK móvel da AEP | SDK do Media | API da coleção de mídia |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Web móvel | | | | | |
 | | Navegadores JavaScript | (Em breve) | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) |
