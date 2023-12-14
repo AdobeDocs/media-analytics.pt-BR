@@ -5,27 +5,27 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
 source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Dispositivos e plataformas compatíveis {#devices-supported}
 
-O Adobe Analytics para streaming de mídia é compatível com todos os principais dispositivos, incluindo:
+O Adobe Analytics para mídia de streaming é compatível com todos os principais dispositivos, inclusive:
 
 * Smartphones e tablets iOS e Android
 * Dispositivos OTT para Roku, Fire TV e Android TV
 * Navegadores JavaScript para desktop e notebook
 
-Os SDKs são atualizados regularmente quando novas versões de dispositivos são lançadas, e você pode usar os SDKs para integrar com players nativos de cada plataforma individual ou qualquer outro reprodutor de mídia disponível.
+Os SDKs são atualizados regularmente quando novas versões de dispositivos são lançadas, e você pode usá-los para integrar aos reprodutores de mídia nativos de cada plataforma individual ou qualquer outro reprodutor de mídia disponível.
 
-Para dispositivos que não são compatíveis com SDK no momento ou em situações em que pode ser necessário personalizar a implementação, você pode usar a API Media Collection ou a API Media Edge. Essas APIs permitem fazer chamadas RESTful API diretamente de um dispositivo para o back-end do Media Analytics.
+Para dispositivos que não são compatíveis com o SDK ou em situações em que pode ser necessário personalizar a implementação, é possível usar a API de coleção de mídia ou a API de borda de mídia. Essas APIs permitem fazer chamadas de API RESTful diretamente de um dispositivo para o back-end do Media Analytics.
 
 A tabela abaixo lista os dispositivos compatíveis no momento. Se um dispositivo não estiver listado, entre em contato com o Atendimento ao cliente ou com o consultor de soluções para saber o status desse dispositivo.
 
-Para obter mais informações sobre como implementar o Media on Edge, consulte [Instale o Media Analytics com Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+Para obter mais informações sobre a implementação de mídia no Edge, consulte [Instalação do Media Analytics com o Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Plataformas e dispositivos de transmissão | | Mídia para SDK/Extensão de rede de borda | API de borda de mídia | Extensão de mídia com tags ou SDK móvel da AEP | SDK do Media | API da coleção de mídia |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
