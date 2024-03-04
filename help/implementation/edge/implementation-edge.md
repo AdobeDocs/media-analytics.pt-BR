@@ -3,11 +3,11 @@ title: Instale o Media Analytics com Experience Platform Edge
 description: Saiba como implementar a mídia de transmissão de Adobe com o Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
+source-git-commit: 68710e8d68266c62ded94a14892ddc78a0807a49
 workflow-type: tm+mt
-source-wordcount: '1777'
-ht-degree: 11%
+source-wordcount: '1738'
+ht-degree: 9%
 
 ---
 
@@ -52,51 +52,58 @@ Para criar e configurar um esquema:
 
 +++ Expanda aqui para exibir instruções nos campos que você pode ocultar.
 
-   1. No [!UICONTROL **Estrutura**] , selecione a `Media Collection Details` selecione [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
+   1. No [!UICONTROL **Estrutura**] , selecione a `Media Collection Details` e selecione [!UICONTROL **Gerenciar campos relacionados**].
 
       ![manage-related-fields](assets/manage-related-fields.png)
 
-      * No `Media Collection Details` oculte o `List Of States` campo.
-
-        ![ocultar estados da coleção de mídia](assets/schema-hide-media-collection-states.png)
+   1. Ative a opção para [!UICONTROL **Mostrar nomes de exibição para campos**], em seguida, atualize o esquema da seguinte maneira:
 
       * No `Media Collection Details` > `Advertising Details` oculte os seguintes campos de relatório: `Ad Completed`, `Ad Started`, e `Ad Time Played`.
 
       * No `Media Collection Details` > `Advertising Pod Details` oculte o seguinte campo de relatório: `Ad Break ID`
 
-      * No `Media Collection Details` > `Chapter Details` oculte os seguintes campos de relatório: `Chapter ID`, `Chapter Completed`, `Chapter Started`, e `Chapter Time Played`.
+      * No `Media Collection Details` > `Chapter Details` oculte os seguintes campos de relatório: `Chapter Completed`, `Chapter ID`, `Chapter Started`, e `Chapter Time Played`.
 
-      * No `Media Collection Details` > `Qoe Data Details` oculte os seguintes campos de relatório: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, e `Total Stalling Duration`.
+      * No `Media Collection Details` oculte o `List Of States` campo.
 
-      * No `Media Collection Details` > `Session Details` oculte os seguintes campos de relatório: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, e `Pccr`.
+        ![ocultar estados da coleção de mídia](assets/schema-hide-media-collection-states.png)
 
       * No `Media Collection Details` > `List Of States End` e `Media Collection Details` > `List Of States Start` oculte os seguintes campos de relatório: `Player State Count`, `Player State Set`, e `Player State Time`.
 
         ![campos a serem ocultados](assets/schema-hide-listofstates.png)
 
+      * No `Media Collection Details` > `Qoe Data Details` oculte os seguintes campos de relatório: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Impacted Streams`, `Buffer Events`, `Dropped Frame Impacted Streams`, `Drops Before Starts`, `Errors`, `External Error IDs`, `Error Impacted Streams`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Impacted Streams`, `Stalling Events`, `Total Buffer Duration`, e `Total Stalling Duration`.
+
+      * No `Media Collection Details` > `Session Details` oculte os seguintes campos de relatório: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Media Session ID`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pev3`, `Pccr`, `Total Pause Duration`, `Unique Time Played`, e `Video Segment`.
+
    1. Selecionar [!UICONTROL **Confirmar o**] para salvar as alterações.
 
-   1. No [!UICONTROL **Estrutura**] , selecione a `List Of Media Collection Downloaded Content Events` selecione [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
+   1. No [!UICONTROL **Estrutura**] , ative a opção para [!UICONTROL **Mostrar nomes de exibição para campos**], em seguida, selecione a `List Of Media Collection Downloaded Content Events` campo.
 
-      * No `List Of Media Collection Downloaded Content Events` > `Media Details` oculte o `List Of States` campo.
+   1. Selecionar [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
+
 
       * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` oculte os seguintes campos de relatório: `Ad Completed`, `Ad Started`, e `Ad Time Played`.
 
       * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` oculte o seguinte campo de relatório: `Ad Break ID`
 
-      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` oculte os seguintes campos de relatório: `Chapter ID`, `Chapter Completed`, `Chapter Started`, e `Chapter Time Played`.
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` oculte os seguintes campos de relatório: `Chapter Completed`, `Chapter ID`, `Chapter Started`, e `Chapter Time Played`.
 
-      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` oculte os seguintes campos de relatório: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, e `Total Stalling Duration`.
-
-      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` oculte os seguintes campos de relatório: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, e `Pccr`.
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` oculte o `List Of States` campo.
 
       * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` e `Media Collection Details` > `List Of States Start` oculte os seguintes campos de relatório: `Player State Count`, `Player State Set`, e `Player State Time`.
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` oculte os seguintes campos de relatório: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Events`, `Buffer Impacted Streams`, `Drops Before Starts`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Errors`, `External Error IDs`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, `Stalling Impacted Streams`, `Total Buffer Duration`, e `Total Stalling Duration`.
+
+      * No `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` oculte os seguintes campos de relatório: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Media Session ID`, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pccr`, `Pev3`, `Total Pause Duration`, `Unique Time Played`, e `Video Segment`.
 
       * No `List Of Media Collection Downloaded Content Events` > `Media Details`  oculte o `Media Session ID` campo.
 
    1. Selecionar [!UICONTROL **Confirmar o**] para salvar as alterações.
 
-   1. No [!UICONTROL **Estrutura**] , selecione a `Media Reporting Details` selecione [!UICONTROL **Gerenciar campos relacionados**], em seguida, atualize o esquema da seguinte maneira:
+   1. No [!UICONTROL **Estrutura**] , selecione a `Media Reporting Details` selecione [!UICONTROL **Gerenciar campos relacionados**].
+
+   1. Ative a opção para [!UICONTROL **Mostrar nomes de exibição para campos**], em seguida, atualize o esquema da seguinte maneira:
 
       * No `Media Reporting Details` oculte os seguintes campos: `Error Details`, `List Of States End`, `List of States Start`, e `Media Session ID`.
 
@@ -146,7 +153,9 @@ Para criar e configurar um esquema:
 
      ![Opção do Media Analytics](assets/datastream-media-check.png)
 
-1. Continuar com [Criar uma conexão no Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
+1. Agora você está pronto para implementar o [API Media Edge](/help/implementation/edge/implementation-edge-api.md) ou [SDK do Media Edge](/help/implementation/edge/edge-mobile-sdk.md) para começar a coletar dados do media analytics.
+
+   Depois de coletar alguns dados, você pode [Criar uma conexão no Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
 ## Criar uma conexão no Customer Journey Analytics
 
@@ -175,7 +184,7 @@ Para criar e configurar um esquema:
 
 1. Certifique-se de ter criado uma conexão no Customer Journey Analytics, conforme descrito em [Criar uma conexão no Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
-1. No Customer Jornada Analytics, crie uma visualização de dados conforme descrito em [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR).
+1. No Customer Jornada Analytics, crie uma visualização de dados conforme descrito em [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en).
 
    Ao criar a visualização de dados, as seguintes seleções de configuração são necessárias para implementar a Mídia de transmissão:
 
@@ -196,7 +205,7 @@ Para criar e configurar um esquema:
       | Tempo gasto no conteúdo | mediaReporting.sessionDetails.timePlayed |
       | Tempo gasto com a mídia | mediaReporting.sessionDetails.totalTimePlayed |
       | Tempo de reprodução exclusivo | mediaReporting.sessionDetails.uniqueTimePlayed |
-      | Marcador de progresso de 10% | mediaReporting.sessionDetails.hasProgress10 |
+      | Marcador de progresso 10% | mediaReporting.sessionDetails.hasProgress10 |
       | Público-alvo médio por minuto | mediaReporting.sessionDetails.averageMinuteAudience |
 
 
@@ -290,7 +299,7 @@ Para criar e configurar um esquema:
 
    ![Painel Tempo gasto com a reprodução da mídia](assets/media-playback-time-spent-panels.png)
 
-1. Compartilhe o projeto conforme descrito em [Compartilhar projetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=pt-BR).
+1. Compartilhe o projeto conforme descrito em [Compartilhar projetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
@@ -304,7 +313,7 @@ Você pode usar o SDK móvel da Adobe Experience Platform para enviar dados móv
 
 Use os seguintes recursos de documentação para concluir a implementação para iOS e Android:
 
-* [Comece já](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+* [Introdução](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [Referência da API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
