@@ -5,10 +5,10 @@ uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 90%
 
 ---
 
@@ -26,10 +26,10 @@ Para obter informações sobre métricas calculadas do Adobe Analytics, consulte
 |---|---|---|
 | Média de anúncios por transmissão da mídia | Anúncio iniciado por mídia iniciada | `Ad Starts / Media Starts` |
 | Média de capítulos por transmissão da mídia | Capítulo iniciado por mídia iniciada | `Chapter Start / Media Starts` |
-| Média Tempo gasto com a mídia | Tempo total gasto por inicializações de mídia (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| Média Tempo gasto no conteúdo | Tempo gasto no conteúdo por inicializações de conteúdo (HH:MM:SS) | `Content Time Spent / Content Start` |
-| Média Tempo gasto com anúncio | Tempo gasto no anúncio por inicializações de anúncio (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| Média Tempo gasto com capítulo | Tempo gasto com capítulo por inicializações de capítulo (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| Média Tempo gasto com a mídia | Tempo total gasto por inicializações de mídia (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
+| Média Tempo gasto no conteúdo | Tempo gasto no conteúdo por inicializações de conteúdo (`HH:MM:SS`) | `Content Time Spent / Content Start` |
+| Média Tempo gasto com anúncio | Tempo gasto no anúncio por inicializações de anúncio (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
+| Média Tempo gasto com capítulo | Tempo gasto com capítulo por inicializações de capítulo (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
 | Taxa de conclusão da mídia | Taxa de Conclusão de conteúdo vs. Mídia iniciada (%) | `Content Completes/ Media Starts` |
 | Taxa de conclusão do conteúdo | Taxa de Conclusão de conteúdo vs. Inícios de conteúdo (%) | `Content Completes / Content Starts` |
 | Taxa de conclusão do anúncio | Taxa de Conclusões de anúncio vs. Inícios de anúncio (%) | `Ad Completes / Ad Starts` |
