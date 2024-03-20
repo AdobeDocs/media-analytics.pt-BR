@@ -5,10 +5,10 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 268b381e6c28f0ebcbb9d31777b6d23a46be70bc
 workflow-type: tm+mt
 source-wordcount: '6995'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -186,7 +186,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementação   | Parâmetros de rede | Relatórios |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **Chave de SDK:**<br/> Definida automaticamente </li> <li> **Chave da API:**<br/> N/D </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Fechamento de mídia </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Exemplo de valor:**<br/> “js-2.0.1.88-c8c0b1” </li> <li> **Descrição:**<br/> A versão do SDK do Media usada para a sessão de rastreamento. <br/><br/>Os clientes terão que criar suas próprias regras de processamento para que o valor esteja disponível para os relatórios.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats:**<br/> (<code>s:sp:hb_version</code>) </li> </ul> | <ul> <li> **Disponível:**<br/> Usar regra de processamento personalizada </li> <li> **Variável reservada:**<br/> N/D </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.vhlVersion) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> <li> **Caminho do campo XDM:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>vhlVersion </li> <li> **Caminho do campo XDM da coleção:**<br/> mediaCollection.implementationDetails.<br/>version </li> <li> **Caminho do campo XDM do relatório:**<br/> mediaReporting.implementationDetails.<br/>version </li> </ul> |
+| <ul> <li> **Chave de SDK:**<br/> Definida automaticamente </li> <li> **Chave da API:**<br/> N/D </li> <li> **Obrigatório:**<br/> Não </li> <li> **Tipo:**<br/> sequência de caracteres </li> <li> **Enviado com:**<br/> Fechamento de mídia </li> <li> **Versão mín. do SDK:** 1.5.7 </li> <li> **Exemplo de valor:**<br/> “js-2.0.1.88-c8c0b1” </li> <li> **Descrição:**<br/> A versão do SDK do Media usada para a sessão de rastreamento. <br/><br/>Os clientes terão que criar suas próprias regras de processamento para que o valor esteja disponível para os relatórios.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats:**<br/> (<code>s:sp:hb_version</code>) </li> </ul> | <ul> <li> **Disponível:**<br/> Usar regra de processamento personalizada </li> <li> **Variável reservada:**<br/> N/D </li> <li> **Nome do relatório:**<br/> Personalizado </li> <li> **Dados de contexto:**<br/> (a.media.vhlVersion) </li> <li> **Feed de dados:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> <li> **Caminho do campo XDM:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>vhlVersion </li> <li> **Caminho do campo XDM da coleção:**<br/> implementationDetails.<br/>version </li> <li> **Caminho do campo XDM do relatório:**<br/> implementationDetails.<br/>version </li> </ul> |
 
 ## Metadados de transmissão de mídia padrão {#standard-audio-and-video-metadata}
 
