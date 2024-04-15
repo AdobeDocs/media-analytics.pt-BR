@@ -4,16 +4,16 @@ description: Visualizar as notas de versão do Adobe Analytics.
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
+source-git-commit: 649438cebb6868d3d5799629317596c08c1c086f
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 91%
+source-wordcount: '871'
+ht-degree: 86%
 
 ---
 
-# Notas de versão da Adobe Analytics para mídia de streaming (maio de 2023)
+# Notas de versão do Adobe Analytics para mídia de streaming (maio de 2023)
 
-**Última atualização**: 12 de maio de 2023
+**Última atualização**: sábado, 12 de maio de 2023
 
 ## Recursos relacionados
 
@@ -31,7 +31,8 @@ Para obter informações sobre novos recursos, correções e informações impor
 
 | Recurso | Descrição | Data alvo |
 | ----------- | ---------- | ------- |
-| Coleção de mídia: integração com a Experience Edge (API e SDK móvel) | Agora você pode usar a API da Experience Edge e o SDK móvel para implementar a mídia de transmissão, permitindo criar campanhas mais personalizadas e fornecer conteúdo mais personalizado, resultando em mais dados de rastreamento para relatar.<p>Esse aprimoramento fornece um método de coleta unificada em todas as soluções, como relatórios de Customer Journey Analytics, RT-CDP, AJO e encaminhamento de eventos.  [Saiba mais](/help/implementation/edge/implementation-edge.md) | 12 de maio de 2023 |
+| Enviar dados do Roku para o Adobe Experience Platform Edge | Agora quando [instalação do Media Analytics com Experience Platform Edge](/help/implementation/edge/implementation-edge.md), você pode usar o SDK do Adobe Experience Platform Roku para enviar dados de mídia de transmissão para o Adobe Experience Platform. | 12 de abril de 2024 |
+| Coleção de mídia: integração com a Experience Edge (API e SDK móvel) | Agora você pode usar a API da Experience Edge e o SDK móvel para implementar a mídia de transmissão, permitindo criar campanhas mais personalizadas e fornecer conteúdo mais personalizado, resultando em mais dados de rastreamento para relatar.<p>Esse aprimoramento fornece um método de coleta unificada em todas as soluções, como relatórios de Customer Journey Analytics, RT-CDP, AJO e encaminhamento de eventos.  [Saiba mais](/help/implementation/edge/implementation-edge.md) | sábado, 12 de maio de 2023 |
 | Painel Visualizador simultâneo de mídia | Entenda onde o pico de simultaneidade ocorreu ou onde as quedas ocorreram. Obtenha insights importantes sobre a qualidade do conteúdo e o envolvimento do visualizador, além de ajuda na solução de problemas ou no planejamento de volume e escala. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=pt-BR) | 9 de agosto de 2022 |
 | Painel Tempo gasto com a reprodução da mídia | O painel Tempo gasto com a reprodução de mídia fornece informações valiosas sobre o envolvimento do visualizador e permite que as organizações de mídia obtenham insights mais profundos e detalhados sobre o envolvimento do usuário a cada minuto, por meio da análise avançada do tempo gasto com recursos de faixa horária. É possível observar o tempo gasto visualizando seus fluxos de mídia em um período específico. É possível dividir a duração da reprodução por diferentes granularidades, incluindo novas granularidades de 5 minutos, 15 minutos e 30 minutos. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=pt-BR) | 9 de agosto de 2022 |
 | Compartilhar anotações em cartões de pontuação para dispositivos móveis | Você pode exibir anotações criadas no Espaço de trabalho, nos Cartões de pontuação para dispositivos móveis. Isso permite compartilhar nuances de dados contextuais e insights sobre sua organização e campanhas diretamente em projetos do Cartão de pontuação para dispositivos móveis, visualizáveis no aplicativo móvel de painéis do Analytics. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=pt-BR) | 15 de junho de 2022 |
