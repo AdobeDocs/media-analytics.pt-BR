@@ -5,14 +5,14 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: ht
-source-wordcount: '471'
-ht-degree: 100%
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 81%
 
 ---
 
-# Implementar mídia de transmissão no Adobe Analytics ou Customer Journey Analytics
+# Implementação da Mídia de streaming para Adobe Analytics ou Customer Journey Analytics
 
 Há várias maneiras de implementar a Mídia de streaming. Para obter uma comparação detalhada dos dispositivos e plataformas compatíveis com os métodos de implementação descritos nesta página, consulte [Dispositivos e plataformas compatíveis](/help/getting-started/supported-devices.md).
 
@@ -20,19 +20,15 @@ Há várias maneiras de implementar a Mídia de streaming. Para obter uma compar
 
 Recomendamos o uso do Edge ao implementar o Media Analytics para todos os novos clientes do Adobe Analytics ou Customer Journey Analytics.
 
-* **Mídia para SDK/Extensão da Rede de Borda:** coleta dados de dispositivos iOS e Android e os envia para o Edge. Os dados poderão então ser enviados para o Customer Journey Analytics ou Adobe Analytics.
+* **Mídia para SDK do Edge Network / Extensão:** Coleta dados da Web, de dispositivos iOS e Android ou de dispositivos Roku e os envia para o Edge Network. Os dados poderão então ser enviados para o Customer Journey Analytics ou Adobe Analytics.
 
-  Para obter mais informações sobre a Mídia para SDK/Extensão da Rede de borda, consulte [Instalação do Media Analytics com Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+  Para obter mais informações sobre o Media for Edge Network SDK / Extension, consulte [Instale o Media Analytics com Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-  >[!NOTE]
-  >
-  >No momento, esse método de implementação não é compatível com o SDK da Web ou Roku. No entanto, ambos são compatíveis ao implementar com a API de borda de mídia.
+* **API Media Edge:** Pode ser personalizado para coletar dados de qualquer dispositivo ou formato (incluindo dispositivos móveis, da Web e over-the-top) e enviar dados para o Edge Network. Os dados poderão então ser enviados para o Customer Journey Analytics ou Adobe Analytics.
 
-* **API de borda de mídia:** pode ser personalizada para coletar dados de qualquer dispositivo ou formato (incluindo dispositivos móveis, da web e dispositivos OTT) e enviá-los para o Edge. Os dados poderão então ser enviados para o Customer Journey Analytics ou Adobe Analytics.
+  Para obter mais informações sobre a API do Media Edge, consulte [Visão geral da API do Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
-  <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
-
-![Fluxo de trabalho do CJA](assets/cja-implementation.png)
+![Fluxo de trabalho do CJA](assets/streaming-media-edge.png)
 
 ## Métodos de implementação somente do Adobe Analytics
 

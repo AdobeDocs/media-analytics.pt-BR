@@ -4,9 +4,9 @@ description: Saiba como implementar a mídia de transmissão de Adobe com o Expe
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1837'
 ht-degree: 9%
 
 ---
@@ -17,15 +17,11 @@ A Adobe Experience Platform Edge permite enviar dados destinados a vários produ
 
 O gráfico a seguir ilustra como uma implementação do Media Analytics pode usar o Experience Platform Edge para disponibilizar dados no Analysis Workspace, no Adobe Analytics ou no Customer Journey Analytics:
 
-![Fluxo de trabalho do CJA](assets/cja-implementation.png)
+![Fluxo de trabalho do CJA](assets/streaming-media-edge.png)
 
 Para obter uma visão geral de todas as opções de implementação, incluindo métodos de implementação que não usam o Experience Platform Edge, consulte [Implementar mídia de transmissão para Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
 
->[!IMPORTANT]
->
->A mídia de transmissão ainda não está integrada ao SDK da Web da AEP.
-
-Independentemente de você usar o SDK móvel ou a API para implementar a mídia de transmissão com o Experience Edge, primeiro é necessário concluir as seguintes seções:
+Independentemente de você usar o SDK da Web da Adobe Experience Platform, o SDK móvel da Adobe Experience Platform, o SDK Roku da Adobe Experience Platform ou a API para implementar mídia de transmissão com o Experience Edge, primeiro é necessário concluir as seguintes seções:
 
 ## Configurar o esquema no Adobe Experience Platform
 
@@ -35,7 +31,13 @@ Para criar e configurar um esquema:
 
 1. No Adobe Experience Platform, comece a criar o esquema conforme descrito em [Criar e editar esquemas na interface](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   Ao criar o esquema, escolha [!UICONTROL **XDM ExperienceEvent**] do [!UICONTROL **Criar esquema**] menu suspenso.
+1. Na página Detalhes do esquema, ao criar o esquema, escolha [!UICONTROL **Evento de experiência**] ao escolher a classe base para o esquema.
+
+   ![Grupos de campos adicionados](assets/schema-experience-event.png)
+
+1. Selecione [!UICONTROL **Próximo**].
+
+1. Especifique um nome para exibição de esquema e uma descrição e selecione [!UICONTROL **Concluir**].
 
 1. No [!UICONTROL **Composição**] área, no [!UICONTROL **Grupos de campos**] , selecione [!UICONTROL **Adicionar**], em seguida, pesquise e adicione os seguintes novos grupos de campos ao esquema:
    * `Adobe Analytics ExperienceEvent Template`
@@ -46,7 +48,7 @@ Para criar e configurar um esquema:
 
    ![Grupos de campos adicionados](assets/schema-field-groups-added.png)
 
-1. Selecionar [!UICONTROL **Confirmar o**] para salvar as alterações.
+1. Selecionar [!UICONTROL **Salvar**] para salvar as alterações.
 
 1. (Opcional) Você pode ocultar determinados campos que não são usados pela API do Media Edge. Ocultar esses campos facilita a leitura e a compreensão do schema, mas não é obrigatório. Esses campos se referem apenas àqueles no `MediaAnalytics Interaction Details` fieldgroup.
 
@@ -141,7 +143,7 @@ Para criar e configurar um esquema:
 
       * [!UICONTROL **Adobe Analytics**] (se estiver usando o Adobe Analytics)
 
-        Se estiver usando o Adobe Analytics, defina um conjunto de relatórios, conforme descrito na seção [Definir um conjunto de relatórios](#define-a-report-suite) neste artigo.
+        Se estiver usando o Adobe Analytics, defina um conjunto de relatórios, conforme descrito em [Criar um conjunto de relatórios](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (se estiver usando o Customer Journey Analytics)
 
@@ -310,6 +312,10 @@ Para criar e configurar um esquema:
 ## Enviar dados para o Experience Platform Edge
 
 Dependendo do tipo de dados que você deseja enviar para o Experience Platform Edge, é possível usar qualquer um dos seguintes métodos:
+
+### Web: usar o SDK da Web do Adobe Experience Platform
+
+
 
 ### Dispositivo móvel: usar o SDK móvel da Adobe Experience Platform
 
