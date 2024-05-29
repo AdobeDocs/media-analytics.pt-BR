@@ -4,9 +4,9 @@ description: Saiba como implementar a mídia de transmissão de Adobe com o Expe
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1862'
 ht-degree: 9%
 
 ---
@@ -315,7 +315,11 @@ Dependendo do tipo de dados que você deseja enviar para o Experience Platform E
 
 ### Web: usar o SDK da Web do Adobe Experience Platform
 
+* [Introdução](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
+* [Enviar dados da Web para o Edge com o SDK da Web da Adobe Experience Platform](/help/implementation/edge/edge-web-sdk.md)
+
+* [Migrar para mídia de transmissão do Adobe para extensão Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Dispositivo móvel: usar o SDK móvel da Adobe Experience Platform
 
