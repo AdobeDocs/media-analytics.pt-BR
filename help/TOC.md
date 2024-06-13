@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para mídia de streaming
 breadcrumb-title: Guia do Media Analytics
 user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: b5a95af55d782a14fc5fd6b8d5b9f206c797212e
+source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 99%
+source-wordcount: '900'
+ht-degree: 98%
 
 ---
 
@@ -99,13 +99,13 @@ ht-degree: 99%
       + [Implementação e relatórios](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [Acompanhamento do estado de vários players](use-cases/player-state-tracking/multiple-player-states.md)
       + [Exemplos de acompanhamento do estado do player](use-cases/player-state-tracking/player-state-examples.md)
-   + [Acompanhar o conteúdo baixado offline](use-cases/track-downloaded-content.md)
+   + [Rastrear o conteúdo baixado ](use-cases/track-downloaded-content.md)
    + [Federated Analytics ](use-cases/federated-analytics.md)
    + [Lidar com interrupções do aplicativo durante a reprodução](use-cases/cookbook/app-interrupts.md)
    + [Atribuição de fluxo de mídia](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Resumo de sessões inativas](use-cases/cookbook/resuming-inactive.md)
-   + [Acompanhamento do Roku no SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [Manuseio de intervalos entre anúncios](use-cases/cookbook/fix-ad-play-ad.md)
+   + [Rastreamento do Roku no SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
+   + [Lidar com lacunas entre anúncios](use-cases/cookbook/fix-ad-play-ad.md)
    + Linhas do tempo {#timelines}
       + [Início e término do capítulo](use-cases/timelines/chapter-start-end.md)
       + [Exibir até o fim do conteúdo](use-cases/timelines/view-to-end-of-content.md)
