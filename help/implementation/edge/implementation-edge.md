@@ -1,27 +1,27 @@
 ---
-title: Instale o Media Analytics com Experience Platform Edge
-description: Saiba como implementar a mídia de transmissão de Adobe com o Experience Platform Edge.
+title: Implementar o complemento de coleção de mídia de streaming usando o Edge Network
+description: Saiba como o complemento Coleção de mídia de transmissão pode ser implementado com o Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1883'
 ht-degree: 9%
 
 ---
 
-# Instale o Media Analytics com Experience Platform Edge
+# Implementar o complemento de coleção de mídia de streaming usando o Edge Network
 
-A Adobe Experience Platform Edge permite enviar dados destinados a vários produtos para um local centralizado. A Experience Edge encaminha as informações apropriadas para os produtos desejados. Esse conceito permite consolidar os esforços de implementação, especialmente abrangendo várias soluções de dados.
+A rede de borda da Adobe Experience Platform permite enviar dados destinados a vários produtos a um local centralizado. A Experience Edge encaminha as informações apropriadas para os produtos desejados. Esse conceito permite consolidar os esforços de implementação, especialmente abrangendo várias soluções de dados.
 
-O gráfico a seguir ilustra como uma implementação do Media Analytics pode usar o Experience Platform Edge para disponibilizar dados no Analysis Workspace, no Adobe Analytics ou no Customer Journey Analytics:
+O gráfico a seguir ilustra como o Complemento de coleção de mídia de transmissão do Adobe pode ser implementado para usar o Experience Platform Edge para disponibilizar dados no Analysis Workspace, no Adobe Analytics ou no Customer Journey Analytics:
 
 ![Fluxo de trabalho do CJA](assets/streaming-media-edge.png)
 
-Para obter uma visão geral de todas as opções de implementação, incluindo métodos de implementação que não usam o Experience Platform Edge, consulte [Implementar mídia de transmissão para Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
+Para obter uma visão geral de todas as opções de implementação, incluindo métodos de implementação que não usam o Experience Platform Edge, consulte [Implementar o complemento Coleção de mídia de transmissão](/help/implementation/overview.md).
 
-Independentemente de você usar o SDK da Web da Adobe Experience Platform, o SDK móvel da Adobe Experience Platform, o SDK Roku da Adobe Experience Platform ou a API para implementar mídia de transmissão com o Experience Edge, primeiro é necessário concluir as seguintes seções:
+Independentemente de você usar o Adobe Experience Platform Web SDK, o Adobe Experience Platform Mobile SDK, o Adobe Experience Platform Roku SDK ou a API para implementar o complemento de coleção de mídia de transmissão com o Experience Edge, primeiro é necessário concluir as seguintes seções:
 
 ## Configurar o esquema no Adobe Experience Platform
 
@@ -155,7 +155,7 @@ Para criar e configurar um esquema:
 
      ![Opção do Media Analytics](assets/datastream-media-check.png)
 
-1. Agora você está pronto para implementar o [API Media Edge](/help/implementation/edge/implementation-edge-api.md) ou [SDK do Media Edge](/help/implementation/edge/edge-mobile-sdk.md) para começar a coletar dados do media analytics.
+1. Agora você está pronto para implementar o [API do Media Edge](/help/implementation/edge/implementation-edge-api.md) ou [SDK do Media Edge](/help/implementation/edge/edge-mobile-sdk.md) para começar a coletar dados do media analytics.
 
    Depois de coletar alguns dados, você pode [Criar uma conexão no Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
@@ -170,7 +170,7 @@ Para criar e configurar um esquema:
 
 1. No Customer Journey Analytics, crie uma conexão conforme descrito em [Criar uma conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR).
 
-   Ao criar a conexão, as seguintes seleções de configuração são necessárias para implementar a Mídia de transmissão:
+   Ao criar a conexão, as seguintes seleções de configuração são necessárias para implementar o Complemento de coleção de mídia de streaming:
 
    1. Selecione o conjunto de dados criado anteriormente, conforme descrito em [Criar um conjunto de dados na Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
@@ -188,7 +188,7 @@ Para criar e configurar um esquema:
 
 1. No Customer Jornada Analytics, crie uma visualização de dados conforme descrito em [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt_BR).
 
-   Ao criar a visualização de dados, as seguintes seleções de configuração são necessárias para implementar a Mídia de transmissão:
+   Ao criar a visualização de dados, as seguintes seleções de configuração são necessárias para implementar o complemento de coleção de mídia de streaming:
 
    1. No [!UICONTROL **Conexão**] selecione a conexão criada anteriormente, conforme descrito em [Criar uma conexão no Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
@@ -317,13 +317,13 @@ Dependendo do tipo de dados que você deseja enviar para o Experience Platform E
 
 * [Introdução](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-* [Enviar dados da Web para o Edge com o SDK da Web da Adobe Experience Platform](/help/implementation/edge/edge-web-sdk.md)
+* [Enviar dados da Web para a Edge com o SDK da Web da Adobe Experience Platform](/help/implementation/edge/edge-web-sdk.md)
 
 * [Migrar para mídia de transmissão do Adobe para extensão Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Dispositivo móvel: usar o SDK móvel da Adobe Experience Platform
 
-Use os seguintes recursos de documentação para concluir a implementação para iOS e Android:
+Use os seguintes recursos de documentação para concluir a implementação para o iOS e o Android:
 
 * [Introdução](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
@@ -343,14 +343,14 @@ Use os seguintes recursos de documentação para concluir a implementação para
 
 No momento, a API é a única maneira compatível de enviar dados da Web para o Experience Platform Edge.
 
-A API também está disponível se você quiser usar uma implementação personalizada das APIs de borda.
+A API também está disponível se você quiser usar uma implementação personalizada das APIs do Edge.
 
-Para obter mais informações sobre a API de borda de mídia, consulte os seguintes recursos:
+Para obter mais informações sobre a API do Media Edge, consulte os seguintes recursos:
 
 * [Visão geral da API do Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
 * [Introdução à API do Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Guia de solução de problemas da API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+* [Guia de solução de problemas da API do Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
 * [Uso do arquivo de especificação da API aberta para APIs do Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)

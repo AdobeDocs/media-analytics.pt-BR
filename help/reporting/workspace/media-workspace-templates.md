@@ -5,7 +5,7 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 9%
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->*Relatórios* no Espaço de trabalho eram conhecidos anteriormente como *modelos*.
+>*Relatórios* no Workspace eram conhecidos anteriormente como *modelos*.
 
 O Analysis Workspace oferece um conjunto de relatórios pré-criados que estão disponíveis por padrão e que podem ser usados para analisar dados. Para obter mais informações sobre todos os relatórios padrão disponíveis, consulte [Exibir relatórios](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Página de aterrissagem do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=pt-BR).
 

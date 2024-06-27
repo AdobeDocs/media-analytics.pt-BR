@@ -1,16 +1,17 @@
 ---
-title: Enviar dados da Web para o Edge com o SDK da Web da Adobe Experience Platform
+title: Enviar dados da Web para a Edge com o SDK da Web da Adobe Experience Platform
 description: Saiba como enviar dados de mídia de transmissão do Adobe para o Experience Platform Edge com o SDK da Web da Adobe Experience Platform.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Enviar dados da Web para o Edge com o SDK da Web da Adobe Experience Platform
+# Enviar dados da Web para a Edge com o SDK da Web da Adobe Experience Platform
 
 A partir da versão 2.20.0, a variável `streamingMedia` componente do Adobe Experience Platform [SDK da Web](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) O permite que você colete dados relacionados a sessões de mídia no seu site. Os dados coletados podem incluir informações sobre reprodução de mídia, pausas, conclusões e outros eventos relacionados.
 
@@ -22,14 +23,14 @@ Para clientes que estão usando o SDK do Media JS, o SDK da Web fornece um camin
 
 Para usar o `streamingMedia` do SDK da Web, você deve atender aos seguintes pré-requisitos:
 
-* Antes de enviar dados do Media Analytics para o Edge, primeiro conclua as etapas em [Instale o Media Analytics com Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+* Antes de enviar dados de streaming de mídia para o Edge, primeiro conclua as etapas em [Instale o complemento Coleção de mídia de streaming com o Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 * Verifique se você tem acesso ao Adobe Experience Platform e/ou Adobe Analytics.
 * Você deve usar o SDK da Web versão 2.20.0 ou posterior. Consulte a [Visão geral de instalação do SDK da Web](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) para saber como instalar a versão mais recente.
 * Ativar o **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** opção para a sequência de dados que você está usando.
 * Certifique-se de que o esquema usado pelo fluxo de dados inclua os campos de esquema Coleção de mídia.
-* Configure o recurso Mídia de transmissão na configuração do SDK da Web, conforme mostrado nesta página, por meio da [extensão de tag](#tag-extension) ou por meio da [Biblioteca JavaScript](#library).
+* Configure o recurso Mídia de transmissão na configuração do SDK da Web, conforme mostrado nesta página, por meio da [extensão de tag](#tag-extension) ou por meio da [Biblioteca do JavaScript](#library).
 
-Siga as etapas descritas nesta página para migrar sua implementação do Analytics para mídia de streaming do Media JS para o SDK da Web.
+Siga as etapas descritas nesta página para migrar a implementação do complemento Coleção de mídia de transmissão do Media JS para o SDK da Web.
 
 ### Etapa 1: instalar o SDK da Web do Experience Platform
 

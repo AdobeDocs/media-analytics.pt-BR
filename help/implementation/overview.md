@@ -1,30 +1,30 @@
 ---
-title: Implementação da Mídia de streaming para Adobe Analytics ou Customer Journey Analytics
-description: Saiba mais sobre os caminhos de implementação da mídia de transmissão.
+title: Implementar o complemento Coleção de mídia de transmissão
+description: Saiba mais sobre os caminhos de implementação para o complemento Coleção de mídia de streaming.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 81%
+source-wordcount: '459'
+ht-degree: 69%
 
 ---
 
-# Implementação da Mídia de streaming para Adobe Analytics ou Customer Journey Analytics
+# Implementar o complemento Coleção de mídia de transmissão
 
-Há várias maneiras de implementar a Mídia de streaming. Para obter uma comparação detalhada dos dispositivos e plataformas compatíveis com os métodos de implementação descritos nesta página, consulte [Dispositivos e plataformas compatíveis](/help/getting-started/supported-devices.md).
+Há várias maneiras de implementar o complemento Adobe Streaming Media Collection. Para obter uma comparação detalhada dos dispositivos e plataformas compatíveis com os métodos de implementação descritos nesta página, consulte [Dispositivos e plataformas compatíveis](/help/getting-started/supported-devices.md).
 
 ## Métodos de implementação do Edge
 
-Recomendamos o uso do Edge ao implementar o Media Analytics para todos os novos clientes do Adobe Analytics ou Customer Journey Analytics.
+Recomendamos usar o Edge ao implementar o Complemento de coleção de mídia de transmissão para todos os novos clientes do Adobe Analytics ou Customer Journey Analytics.
 
 * **Mídia para SDK do Edge Network / Extensão:** Coleta dados da Web, de dispositivos iOS e Android ou de dispositivos Roku e os envia para o Edge Network. Os dados poderão então ser enviados para o Customer Journey Analytics ou Adobe Analytics.
 
-  Para obter mais informações sobre o Media for Edge Network SDK / Extension, consulte [Instale o Media Analytics com Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+  Para obter mais informações sobre o Media for Edge Network SDK / Extension, consulte [Implementar o complemento de coleção de mídia de streaming usando o Edge Network](/help/implementation/edge/implementation-edge.md).
 
-* **API Media Edge:** Pode ser personalizado para coletar dados de qualquer dispositivo ou formato (incluindo dispositivos móveis, da Web e over-the-top) e enviar dados para o Edge Network. Os dados poderão então ser enviados para o Customer Journey Analytics ou Adobe Analytics.
+* **API do Media Edge:** Pode ser personalizado para coletar dados de qualquer dispositivo ou formato (incluindo dispositivos móveis, da Web e over-the-top) e enviar dados para o Edge Network. Os dados poderão então ser enviados para o Customer Journey Analytics ou Adobe Analytics.
 
   Para obter mais informações sobre a API do Media Edge, consulte [Visão geral da API do Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 

@@ -5,9 +5,9 @@ uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '199'
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '201'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ As instruções a seguir fornecem orientação para a implementação usando SDK
 >
 > Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
 
-## Implementar Metadados de publicidade padrão
+## Implementar metadados de publicidade padrão
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 

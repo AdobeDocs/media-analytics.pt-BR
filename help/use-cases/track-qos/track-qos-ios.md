@@ -5,10 +5,10 @@ uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ As instruções a seguir fornecem orientação para a implementação em todos o
 >
 >Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
 
-## Implementação do QOS
+## Implementar QOS
 
 1. Identifique quando a taxa de bits for alterada durante a reprodução de mídia e crie a instância `MediaObject` usando as informações de QoS.
 
@@ -47,7 +47,7 @@ As instruções a seguir fornecem orientação para a implementação em todos o
    ```
 
 1. Verifique se o método `getQoSObject` retorna as informações de QoS mais atualizadas.
-1. Quando a reprodução altera as taxas de bits, chame o evento `BitrateChange` na instância do Heartbeat de mídia:
+1. Quando a reprodução alterar as taxas de bits, chame o evento `BitrateChange` na instância do heartbeat de mídia:
 
    ```
    - (void)onBitrateChange:(NSNotification *)notification {

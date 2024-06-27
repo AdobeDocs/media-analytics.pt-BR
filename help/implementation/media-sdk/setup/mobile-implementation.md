@@ -4,21 +4,21 @@ description: Saiba como implementar a mídia de transmissão da Adobe para aplic
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 93%
+source-wordcount: '198'
+ht-degree: 81%
 
 ---
 
 # Instalar SDKs móveis {#install-mobile-sdks}
 
-Para implementar a mídia de transmissão para aplicativos móveis no Android ou iOS, instale e configure o seguinte:
+Para implementar o Complemento de coleção de mídia de streaming para aplicativos móveis no Android ou iOS, instale e configure o seguinte:
 
 * **SDK móvel da Adobe Experience Platform**
 
   Para coletar dados, use uma das seguintes opções:
-   * Tags na Adobe Experience Platform. Tags na Adobe Experience Platform é uma solução de gerenciamento de tags que permite implantar o código do Analytics junto com outros requisitos de marcação.
+   * Tags no Adobe Experience Platform. Tags na Adobe Experience Platform é uma solução de gerenciamento de tags que permite implantar o código do Analytics junto com outros requisitos de marcação.
    * Adobe Experience Platform Edge
 
 * **SDK de mídia para Android** ou **SDK de mídia para iOS**

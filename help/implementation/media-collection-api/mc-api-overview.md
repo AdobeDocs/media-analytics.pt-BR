@@ -6,18 +6,18 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Visão geral da API de coleção de mídia{#overview}
+# Visão geral da API de coleção de mídia {#overview}
 
 A API Media Collection é a alternativa RESTful da Adobe para o SDK do Media no lado do cliente. Com a API Media Collection, o reprodutor pode rastrear eventos de áudio e vídeo usando chamadas RESTful HTTP.
 
-A API Media Collection é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK do Media também são relevantes para a API Media Collection. Por exemplo, ambas as soluções usam os mesmos [Parâmetros de streaming de mídia](../variables/audio-video-parameters.md), e os dados de rastreamento de streaming de mídia coletados levam aos mesmos [Relatórios e análises.](/help/reporting/media-reports-enable.md)
+A API Media Collection é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK do Media também são relevantes para a API Media Collection. Por exemplo, ambas as soluções usam o mesmo [Parâmetros de streaming de mídia](../variables/audio-video-parameters.md)e os dados de rastreamento de streaming de mídia coletados levam aos mesmos [Relatórios e análise.](/help/reporting/media-reports-enable.md)
 
 ## Fluxos de dados de rastreamento de mídia {#media-tracking-data-flows}
 
@@ -37,11 +37,11 @@ Os dados de rastreamento capturados com a API Media Collection são enviados e p
 
 * **`sessions`-** Estabelece uma sessão com o servidor e retorna uma ID de sessão que será usada nas chamadas de `events` subsequentes. Seu aplicativo realiza essa chamada uma vez no início de uma sessão de rastreamento.
 
-   `{uri}/api/v1/sessions`
+  `{uri}/api/v1/sessions`
 
 * **`events`-** Envia os dados de rastreamento de mídia.
 
-   `{uri}/api/v1/sessions/{session-id}/events`
+  `{uri}/api/v1/sessions/{session-id}/events`
 
 ### Corpo da solicitação {#mc-api-request-body}
 

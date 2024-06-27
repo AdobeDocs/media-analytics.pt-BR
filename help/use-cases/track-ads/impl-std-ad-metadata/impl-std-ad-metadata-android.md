@@ -5,8 +5,8 @@ uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardAdMetadata` | Constante para anexar os Metadados de publicidade padrão ao `MediaObject` do anúncio. |
 
-## Implementar Metadados de publicidade padrão
+## Implementar metadados de publicidade padrão
 
 Para metadados de anúncios padrão, crie um dicionário de pares de valores-chave de metadados de anúncios padrão usando as chaves da sua plataforma:
 

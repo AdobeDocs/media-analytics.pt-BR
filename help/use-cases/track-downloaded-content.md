@@ -1,14 +1,14 @@
 ---
-title: Como rastrear o conteúdo baixado offline na mídia de transmissão da Adobe
+title: Como rastrear o conteúdo baixado offline no complemento Streaming Media Collection
 description: Saiba como usar o recurso Conteúdo baixado para rastrear o consumo de mídia quando um usuário está offline.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 98%
 
 ---
 
@@ -22,11 +22,11 @@ Compare as duas abordagens:
 
 * Online
 
-   Com esta abordagem em tempo real, o reprodutor de mídia envia dados de rastreamento sobre cada evento do reprodutor e envia pings de rede a cada dez segundos (a cada segundo para anúncios), um por um, para o back-end.
+  Com esta abordagem em tempo real, o reprodutor de mídia envia dados de rastreamento sobre cada evento do reprodutor e envia pings de rede a cada dez segundos (a cada segundo para anúncios), um por um, para o back-end.
 
 * Offline (recurso Conteúdo baixado)
 
-   Com essa abordagem de processamento em lote, os mesmos eventos de sessão precisam ser gerados, mas são armazenados no dispositivo até que sejam enviados para o back-end como uma única sessão (consulte o exemplo abaixo).
+  Com essa abordagem de processamento em lote, os mesmos eventos de sessão precisam ser gerados, mas são armazenados no dispositivo até que sejam enviados para o back-end como uma única sessão (consulte o exemplo abaixo).
 
 Cada abordagem tem suas vantagens e desvantagens:
 * O cenário online é rastreado em tempo real; isso requer uma verificação de conectividade antes de cada chamada de rede.

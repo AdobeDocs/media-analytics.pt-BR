@@ -1,20 +1,21 @@
 ---
 title: Federated Analytics
-description: O serviço Federated Analytics fornece um sistema para o compartilhamento de dados do Adobe Analytics para mídia de transmissão entre dois parceiros.
+description: O serviço Federated Analytics fornece um sistema para compartilhar dados de mídia de transmissão entre dois parceiros.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '552'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 80%
 
 ---
 
 # Federated Analytics {#federated-analytics}
 
-O serviço Federated Analytics fornece um sistema para o compartilhamento de dados do Adobe Media Analytics (áudio e vídeo) entre dois parceiros. Os dados de avaliação de vídeo padronizados criados pelo Media Analytics são a marca do Federated Analytics e permitem que os mesmos dados fluam em um único relatório de várias fontes.
+O serviço Federated Analytics fornece um sistema para o compartilhamento de dados de mídia de transmissão (áudio e vídeo) entre dois parceiros.
+Os dados de medição padronizados criados pelo Complemento de coleção de mídia de streaming são a marca do Federated Analytics, permitindo que os mesmos dados fluam para um único relatório de várias fontes.
 Por meio das regras e lógicas que regem o Federated Analytics, os dados são facilmente controlados e individualizados para atender às necessidades de cada parceria. O Federated Analytics torna a avaliação de áudio e vídeo mais eficiente, simplificada e acionável.
 
 ## Benefícios {#benefits}
@@ -39,7 +40,7 @@ Por meio das regras e lógicas que regem o Federated Analytics, os dados são fa
 * **Contrato de transmissão de mídia:** O receptor e o remetente devem ter contratado o Adobe Analytics para fluxos de mídia antes de obter acesso aos dados de áudio e vídeo no Adobe Analytics. Entre em contato com a equipe de conta para obter mais detalhes.
 * **Adendo federado:** cada Remetente e Destinatário deve ter um adendo assinado em vigor com a Adobe para enviar ou receber dados. É necessário um adendo por cliente, e não um adendo por parceria. Entre em contato com a equipe de conta para obter mais detalhes.
 
-* **Implementação do Media Analytics:** o remetente deve ter o Media Analytics implementado em todos os players que farão parte do conjunto de dados federado. Somente os dados do Media Analytics estão disponíveis para federação. Consulte a documentação: [Medição de streaming de mídia no Adobe Analytics](/help/media-overview.md)
+* **Implementação do complemento Coleção de mídia de transmissão:** O Remetente deve ter o Complemento de Coleção de Mídia de Streaming implementado em todos os players que farão parte do conjunto de dados federado. Somente dados de mídia de transmissão estão disponíveis para federação. Para obter mais informações, consulte [Visão geral do complemento Coleção de mídia de transmissão do Adobe](/help/media-overview.md).
 
 * **Contrato de consultoria da Adobe:** para a configuração inicial de regras federadas entre o destinatário e o remetente, é valioso trabalhar com os serviços de consultoria para analisar os dados e criar o contrato de compartilhamento de dados.
 

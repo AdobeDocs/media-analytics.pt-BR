@@ -5,10 +5,10 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ As instruções a seguir fornecem orientação para a implementação em todos o
 >
 >Se estiver implementando uma versão 1.x do SDK, você pode baixar os Guias dos desenvolvedores 1.x aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
 
-## Implementação do QOS
+## Implementar QOS
 
 1. Identifique quando a taxa de bits muda durante a reprodução da mídia e use a API de `mediaUpdateQoS` para atualizar as informações de QoS no SDK do Media.
 

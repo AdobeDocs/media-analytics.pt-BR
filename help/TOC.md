@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Adobe Analytics para mídia de streaming
-breadcrumb-title: Guia do Media Analytics
-user-guide-description: Implementar o Adobe Analytics para mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
+user-guide-title: Complemento de coleção de mídia de streaming
+breadcrumb-title: Guia de coleção de mídia de streaming
+user-guide-description: Implemente A Mídia De Transmissão. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 98%
+source-wordcount: '895'
+ht-degree: 94%
 
 ---
 
 
-# Adobe Analytics para mídia de streaming {#using}
+# Complemento de coleção de mídia de streaming {#using}
 
-+ [Guia do Analytics para mídia de streaming](media-overview.md)
++ [Guia de coleção de mídia de streaming](media-overview.md)
 + Notas de versão {#release-notes}
-   + [Notas de versão da Mídia de streaming](additional-resources/release-notes.md)
+   + [Notas de versão da coleção de mídia de streaming](additional-resources/release-notes.md)
 + Introdução {#getting-started}
    + [Pré-requisitos ](getting-started/prereqs.md)
    + [Dispositivos compatíveis](getting-started/supported-devices.md)
-   + [Documentação de mídia de streaming](getting-started/implementation-documentation.md)
+   + [Documentação de implementação da coleção de mídia de transmissão](getting-started/implementation-documentation.md)
    + [SDKs, bibliotecas e extensões](getting-started/download-sdks.md)
    + Fim do suporte {#end-of-support}
       + [Fim do suporte ao SDK móvel do Media Analytics](additional-resources/end-of-support-faqs.md)
@@ -172,7 +172,7 @@ ht-degree: 98%
       + Configurar JavaScript {#setup-javascript}
          + [Configurar o JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Sobre a medição de pulsação](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime e Analytics para mídia de streaming](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Capacitação de Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
    + [Implementação de link personalizado](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + Rastreamento de marcos herdado {#legacy-milestone-tracking}

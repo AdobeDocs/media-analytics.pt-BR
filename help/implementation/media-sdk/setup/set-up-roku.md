@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 93%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 100%
 
 ## Pré-requisitos  {#roku-prerequisites}
 
-* **Obter parâmetros de configuração válidos para o Media Analytics**
+* **Obter parâmetros de configuração válidos para o Complemento de coleção de mídia de streaming**
 
-   Estes parâmetros podem ser obtidos de um representante da Adobe após a configuração da conta de análise de mídia.
-* **Inclua as seguintes APIs em seu player de mídia**
+  Esses parâmetros podem ser obtidos de um representante do Adobe após a configuração da conta do complemento Coleção de mídia de transmissão do Adobe.
+* **Inclua as seguintes APIs em seu reprodutor de mídia**
 
    * _Uma API para assinar eventos do player_ - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
    * _Uma API que fornece informações sobre o player_ - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
@@ -35,9 +35,10 @@ O SDK 2.x do Roku para soluções da Experience Cloud permite avaliar aplicativo
       * `adbmobile.brs`: Esse arquivo de biblioteca será incluído na pasta de origem do aplicativo Roku.
 
       * `ADBMobileConfig.json`: Esse arquivo de configuração do SDK foi personalizado para o aplicativo.
+
    1. Adicione o arquivo da biblioteca e o arquivo de configuração JSON à origem do projeto.
 
-      O JSON usado para configurar o Adobe Mobile tem uma chave exclusiva para o Media Analytics chamada `mediaHeartbeat`. Os parâmetros de configuração do Media Analytics devem estar contidos nessa chave.
+      O JSON usado para configurar o Adobe Mobile tem uma chave exclusiva para o Media Analytics chamada `mediaHeartbeat`. Os parâmetros de configuração do Media Analytics pertencem a essa chave.
 
       >[!TIP]
       >
@@ -99,7 +100,6 @@ O SDK 2.x do Roku para soluções da Experience Cloud permite avaliar aplicativo
       >[!IMPORTANT]
       >
       >Se `mediaHeartbeat` for configurado incorretamente, o módulo de mídia (VHL) entrará em um estado de erro e deixará de enviar chamadas de rastreamento.
-
 
 1. Configurar a ID de visitante da Experience Cloud.
 

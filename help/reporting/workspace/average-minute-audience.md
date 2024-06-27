@@ -4,10 +4,10 @@ description: Saiba como usar o painel Público médio por minuto de mídia para 
 feature: Media Analytics, Workspace Basics
 role: User, Admin
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -22,4 +22,4 @@ No Analysis Workspace, a Audiência média por minuto é o tempo gasto visualiza
 
 O painel Audiência média por minuto da mídia fornece análises de público-alvo médio por minuto, pelo conteúdo específico selecionado se a duração for disponibilizada por meio das classificações.
 
-O painel Audiência média por minuto da mídia também fornece análises durante um período de tempo selecionado, que pode ser filtrado por conteúdo específico, independentemente da duração estar ou não disponível usando as classificações. Para acessar o painel Audiência média por minuto da mídia, navegue até um conjunto de relatórios com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace. [Saiba mais...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=pt-BR)
+O painel Audiência média por minuto da mídia também fornece análises durante um período de tempo selecionado, que pode ser filtrado por conteúdo específico, independentemente da duração estar ou não disponível usando as classificações. Para acessar o painel Audiência média por minuto da mídia, navegue até um conjunto de relatórios com os componentes de mídia de transmissão ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace. [Saiba mais...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=pt-BR)

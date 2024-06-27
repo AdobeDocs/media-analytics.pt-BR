@@ -5,10 +5,10 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: e0a8d2d16a746a717d54bdb171f66f3a7d112251
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Os clientes avançados podem usar os painéis de mídia no Analysis Workspace so
 
 >[!TIP]
 >
->Para aproveitar os novos recursos, os clientes do Media Analytics devem ativar novamente o rastreamento de mídia para RSIDs.
+>Para aproveitar os novos recursos, os clientes de mídia de transmissão existentes devem reativar o rastreamento de mídia para suas RSIDs.
 
 1. Em [Reports &amp; Analytics](https://my.omniture.com/login/), clique em **[!UICONTROL Admin > Conjuntos de relatórios].**
 1. Selecione o(s) conjunto(s) de relatórios no(s) qual(is) você está coletando dados de mídia e clique em **[!UICONTROL Editar configurações > Gerenciamento de mídia > Relatórios de mídia].**
@@ -33,27 +33,28 @@ Os clientes avançados podem usar os painéis de mídia no Analysis Workspace so
 
    * **Mídia principal**
 
-      A medição de mídia principal é usada para conteúdo de mídia. Isso usará eVars de solução (ou personalizadas) para acompanhar Conteúdo, Tipo de conteúdo, Nome do reprodutor de conteúdo e Canal de conteúdo. Os eventos de solução (ou personalizados) serão utilizados para Inícios de mídia, Inícios de conteúdo, Conclusões de conteúdo e Tempo gasto no conteúdo.
+     A medição de mídia principal é usada para conteúdo de mídia. Isso usará eVars de solução (ou personalizadas) para acompanhar Conteúdo, Tipo de conteúdo, Nome do reprodutor de conteúdo e Canal de conteúdo. Os eventos de solução (ou personalizados) serão utilizados para Inícios de mídia, Inícios de conteúdo, Conclusões de conteúdo e Tempo gasto no conteúdo.
 
    * **Anúncios da mídia**
 
-      As avaliações dos anúncios de mídia são utilizadas para avaliar os anúncios no conteúdo de mídia. Essa avaliação usará eVars de solução para medir Anúncio, Nome do player do anúncio, Pod de anúncio e Anúncio na posição do pod. Os eventos de solução serão usados para Inícios de anúncio, Conclusões de anúncio, Tempo gasto no anúncio e Tempo gasto no vídeo.
+     As avaliações dos anúncios de mídia são utilizadas para avaliar os anúncios no conteúdo de mídia. Essa avaliação usará eVars de solução para medir Anúncio, Nome do player do anúncio, Pod de anúncio e Anúncio na posição do pod. Os eventos de solução serão usados para Inícios de anúncio, Conclusões de anúncio, Tempo gasto no anúncio e Tempo gasto no vídeo.
 
    * **Capítulos da mídia**
 
-      A medição de capítulos de vídeo é utilizada para medir os capítulos. Um capítulo é uma subdivisão do conteúdo em uma única mídia. O capítulo usará uma eVar de solução para armazenar a ID do capítulo. Os eventos de solução serão usados para Inícios de capítulo, Conclusões de capítulo e Tempo gasto no capítulo. Metadados de capítulo adicionais de Nome do capítulo e Posição do capítulo serão fornecidos como classificações da ID do capítulo.
+     A medição de capítulos de vídeo é utilizada para medir os capítulos. Um capítulo é uma subdivisão do conteúdo em uma única mídia. O capítulo usará uma eVar de solução para armazenar a ID do capítulo. Os eventos de solução serão usados para Inícios de capítulo, Conclusões de capítulo e Tempo gasto no capítulo. Metadados de capítulo adicionais de Nome do capítulo e Posição do capítulo serão fornecidos como classificações da ID do capítulo.
 
    * **Qualidade da mídia**
 
-      A avaliação da qualidade do vídeo é utilizada para avaliar a qualidade da reprodução do conteúdo. Essa avaliação usará eVars de solução para armazenar Hora de início, Eventos de buffer, Duração total do buffer, Switches de taxa de bits, Taxa média de bits, Erros e Quadros descartados. Eventos de solução serão usados para Hora de início, Solta antes de iniciar, Fluxos impactados pelo buffer, Eventos do buffer, Duração total do buffer, A alteração na taxa de bits impactou os fluxos, Alterações na taxa de bits, Média da taxa de bits, Fluxos impactados por erros, Eventos de erro, O quadro solto impactou os fluxos e Quadros soltos.
+     A avaliação da qualidade do vídeo é utilizada para avaliar a qualidade da reprodução do conteúdo. Essa avaliação usará eVars de solução para armazenar Hora de início, Eventos de buffer, Duração total do buffer, Switches de taxa de bits, Taxa média de bits, Erros e Quadros descartados. Eventos de solução serão usados para Hora de início, Solta antes de iniciar, Fluxos impactados pelo buffer, Eventos do buffer, Duração total do buffer, A alteração na taxa de bits impactou os fluxos, Alterações na taxa de bits, Média da taxa de bits, Fluxos impactados por erros, Eventos de erro, O quadro solto impactou os fluxos e Quadros soltos.
 
    * **Metadados de vídeo e anúncio de vídeo**
 
-      Os metadados podem ser inseridos em uma mídia e/ou em um anúncio para descrever e classificar ainda mais a mídia ou anúncio. Os metadados de mídia e anúncios padrão serão coletados pelas variáveis e classificações da solução. Os valores para incluir: Programa, Temporada, Episódio, ID do ativo, Gênero, Data da primeira exibição, Data da primeira versão digital, Classificação do conteúdo, Originador, Rede, Tipo de programa, Carregamentos de anúncios, MVPD, Autorizado, Parte do dia, ID de sessão de mídia, Anunciante, ID da campanha e ID de criação.
+     Os metadados podem ser inseridos em uma mídia e/ou em um anúncio para descrever e classificar ainda mais a mídia ou anúncio. Os metadados de mídia e anúncios padrão serão coletados pelas variáveis e classificações da solução. Os valores para incluir: Programa, Temporada, Episódio, ID do ativo, Gênero, Data da primeira exibição, Data da primeira versão digital, Classificação do conteúdo, Originador, Rede, Tipo de programa, Carregamentos de anúncios, MVPD, Autorizado, Parte do dia, ID de sessão de mídia, Anunciante, ID da campanha e ID de criação.
 
    * **Metadados de áudio e de anúncio de áudio**
 
-      Os metadados podem ser anexados a um áudio e/ou anúncio para descreverem e categorizar o áudio e/ou anúncio. Os metadados padrão são coletados por meio das variáveis e classificações da solução. Os valores incluem: Artista, Álbum, Gravadora, Autor, Publicador, Estação de rádio, Programa, Temporada, Episódio, ID do ativo, Gênero, Data da primeira exibição, Data da primeira exibição virtual, Classificação do conteúdo, Originador, Tipo de programa, Parte do dia, ID da sessão de mídia, Anunciante, ID da campanha e ID Creative.
+     Os metadados podem ser anexados a um áudio e/ou anúncio para descreverem e categorizar o áudio e/ou anúncio. Os metadados padrão são coletados por meio das variáveis e classificações da solução. Os valores incluem: Artista, Álbum, Gravadora, Autor, Publicador, Estação de rádio, Programa, Temporada, Episódio, ID do ativo, Gênero, Data da primeira exibição, Data da primeira exibição virtual, Classificação do conteúdo, Originador, Tipo de programa, Parte do dia, ID da sessão de mídia, Anunciante, ID da campanha e ID Creative.
+
    A habilitação de cada módulo reserva um conjunto de variáveis e cria um novo conjunto de relatórios. Com exceção da Qualidade, não haverá dados nos relatórios, a menos que a implementação correspondente tenha sido concluída. A implementação do módulo Principal também implementa o módulo Qualidade se você ativá-lo.
 
    Se você ainda não estiver rastreando anúncios, capítulos ou qualidade de reprodução, será possível ativar opções adicionais a qualquer momento.
