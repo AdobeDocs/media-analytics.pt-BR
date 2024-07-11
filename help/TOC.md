@@ -1,21 +1,21 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Complemento de coleção de mídia de streaming
-breadcrumb-title: Guia de coleção de mídia de streaming
-user-guide-description: Implemente A Mídia De Transmissão. Inclui o SDK de mídia e a API de coleta de mídia.
+user-guide-title: Complemento Coleção de mídia de transmissão
+breadcrumb-title: Guia da Coleção de mídia de transmissão
+user-guide-description: Implemente mídias de transmissão. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
 source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
 
-# Complemento de coleção de mídia de streaming {#using}
+# Complemento Coleção de mídia de transmissão {#using}
 
-+ [Guia de coleção de mídia de streaming](media-overview.md)
++ [Guia da Coleção de mídia de transmissão](media-overview.md)
 + Notas de versão {#release-notes}
    + [Notas de versão da coleção de mídia de streaming](additional-resources/release-notes.md)
 + Introdução {#getting-started}
