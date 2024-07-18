@@ -6,8 +6,8 @@ exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1106'
+workflow-type: tm+mt
+source-wordcount: '1159'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Esta chamada indica _a intenção do usuário de reproduzir_ um vídeo. Retorna 
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Temporizador do evento ping de início do aplicativo | 0 | 0 |  |
+| Temporizador do evento ping de início do aplicativo | 0 | 0 | |
 
 Inicie seu temporizador de ping. O primeiro evento de ping deve disparar 1 segundo se houver anúncios precedentes, 10 segundos se não houver.
 

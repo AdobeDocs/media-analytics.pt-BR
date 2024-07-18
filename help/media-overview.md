@@ -68,4 +68,4 @@ Após o término de uma sessão de reprodução, os dados de rastreamento calcul
 >Com as implementações do Customer Journey Analytics, os dados podem ser enviados para o Customer Journey Analytics usando o Experience Edge ou o Conector de dados do Analytics (ADC).
 
 
-Para obter informações detalhadas sobre os vários métodos de implementação, consulte [Implementar o complemento Coleção de mídia de transmissão para Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
+Para obter informações detalhadas sobre os vários métodos de implementação, consulte [Implementar o Complemento de Coleção de Mídia de Streaming para Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).

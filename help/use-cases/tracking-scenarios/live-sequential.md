@@ -6,9 +6,9 @@ exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 97%
 
 ---
 
@@ -24,11 +24,11 @@ Este cenário é igual ao cenário [Reprodução de VOD sem anúncios](/help/use
 | --- | --- | --- | --- |
 | Cliques do usuário [!UICONTROL Reproduzir] | trackSessionStart | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não detecta um anúncio precedente; portanto, essas chamadas de rede são idênticas ao cenário de [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | O primeiro quadro do conteúdo é reproduzido. | trackPlay | Reprodução de conteúdo do Heartbeat | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, o Heartbeats começa quando o capítulo é iniciado. |
-| Reproduções de conteúdo |  | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
-| Sessão1 finalizada (episódio1 encerrado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão1 do primeiro episódio foi atingida e assistida completamente. Antes de iniciar a sessão para o próximo episódio, esta sessão deve ser encerrada. |
+| Reproduções de conteúdo | | Content Heartbeats | Essa chamada de rede é a mesma do cenário de [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
+| Sessão1 finalizada (episódio1 finalizado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão1 do primeiro episódio foi atingida e assistida completamente. Antes de iniciar a sessão para o próximo episódio, esta sessão deve ser encerrada. |
 | Episódio2 iniciado (sessão2 iniciada) | trackSessionStart | Início do conteúdo do Analytics Heartbeat Content Start | Isso ocorre porque o usuário assistiu ao primeiro episódio e em seguida assistiu o segundo |
 | 1º quadro do Media | trackPlay | Reprodução de conteúdo do Heartbeat | Esse método aciona o temporizador e a partir desse ponto, os heartbeats serão enviados a cada 10 segundos enquanto a reprodução continuar. |
-| Reproduções de conteúdo |  | Content Heartbeats |  |
+| Reproduções de conteúdo | | Content Heartbeats | |
 | Sessão encerrada (episódio 2 finalizado) | trackComplete/trackSessionEnd | Heartbeat Content Complete | Concluído significa que a sessão 2 do segundo episódio foi atingida e assistida completamente. Antes de iniciar a sessão para o próximo episódio, esta sessão deve ser encerrada. |
 
 ## Parâmetros {#parameters}

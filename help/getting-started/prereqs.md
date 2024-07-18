@@ -16,13 +16,13 @@ ht-degree: 62%
 
 Antes de começar a implementar o Complemento Adobe Streaming Media Collection, conclua as seguintes tarefas:
 
-1. **Revise a visão geral do complemento Coleção de mídia de transmissão**<br>
-Antes de começar a implementar o Complemento de coleção de mídia de transmissão, reveja o [Visão geral do complemento Coleção de mídia de streaming](/help/media-overview.md) para garantir que atenda às suas necessidades.
+1. **Revise a visão geral do complemento Coleção de Mídia de Streaming**<br>
+Antes de começar a implementar o Complemento de Coleção de Mídia de Streaming, revise a [visão geral do Complemento de Coleção de Mídia de Streaming](/help/media-overview.md) para verificar se ele atende às suas necessidades.
 
 1. **Confirme seu modelo de preços**<br>
 O modelo de preços atual do complemento Adobe Streaming Media Collection baseia-se em transmissões de vídeo. Se necessário, entre em contato com o representante de vendas ou com a equipe de conta do Adobe, pois o complemento é vendido separadamente para Adobe Analytics e Adobe Experience Platform.
 
-1. **Ativar o Adobe Analytics Reports**<br>
+1. **Habilitar Relatórios do Adobe Analytics**<br>
 Para permitir relatórios no Analytics ou Customer Journey Analytics e exibir os dados de conteúdo e anúncios coletados, é necessário habilitar os relatórios. Consulte [Ativação de relatórios de mídia](/help/reporting/media-reports-enable.md).
 
 1. **Implementar o Adobe Experience Platform Identity Service na Experience Cloud**

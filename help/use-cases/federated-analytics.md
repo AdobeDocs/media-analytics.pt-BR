@@ -40,7 +40,7 @@ Por meio das regras e lógicas que regem o Federated Analytics, os dados são fa
 * **Contrato de transmissão de mídia:** O receptor e o remetente devem ter contratado o Adobe Analytics para fluxos de mídia antes de obter acesso aos dados de áudio e vídeo no Adobe Analytics. Entre em contato com a equipe de conta para obter mais detalhes.
 * **Adendo federado:** cada Remetente e Destinatário deve ter um adendo assinado em vigor com a Adobe para enviar ou receber dados. É necessário um adendo por cliente, e não um adendo por parceria. Entre em contato com a equipe de conta para obter mais detalhes.
 
-* **Implementação do complemento Coleção de mídia de transmissão:** O Remetente deve ter o Complemento de Coleção de Mídia de Streaming implementado em todos os players que farão parte do conjunto de dados federado. Somente dados de mídia de transmissão estão disponíveis para federação. Para obter mais informações, consulte [Visão geral do complemento Coleção de mídia de transmissão do Adobe](/help/media-overview.md).
+* **Implementação do Complemento de Coleção de Mídia de Streaming:** o Remetente deve ter o Complemento de Coleção de Mídia de Streaming implementado em todos os players que farão parte do conjunto de dados federado. Somente dados de mídia de transmissão estão disponíveis para federação. Para obter mais informações, consulte [Visão geral do complemento Coleção de mídia de streaming de Adobe](/help/media-overview.md).
 
 * **Contrato de consultoria da Adobe:** para a configuração inicial de regras federadas entre o destinatário e o remetente, é valioso trabalhar com os serviços de consultoria para analisar os dados e criar o contrato de compartilhamento de dados.
 

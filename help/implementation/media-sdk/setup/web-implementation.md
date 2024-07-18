@@ -15,7 +15,7 @@ ht-degree: 92%
 
 As informações nesta página descrevem como instalar o SDK independente da Web e configurar o JavaScript.
 
-Como alternativa, você pode usar a extensão Adobe Medium Analytics para implementar o complemento de coleção de mídia de transmissão Adobe, conforme descrito em [Implementar o Analytics usando a extensão do Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+Como alternativa, você pode usar a extensão Adobe Medium Analytics para implementar o Complemento Adobe Streaming Media Collection, conforme descrito em [Implementar o Analytics usando a extensão Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Pré-requisitos  {#prerequesites}
 

@@ -12,7 +12,7 @@ ht-degree: 71%
 
 ---
 
-# Métricas calculadas {#calculated-metrics}
+# Métricas calculadas{#calculated-metrics}
 
 As métricas calculadas para o complemento Adobe Streaming Media Collection são métricas personalizadas que permitem obter dados de streaming de mídia direcionados, como o tempo médio de anúncio gasto ou anúncios médios por fluxo de mídia.
 
@@ -26,8 +26,8 @@ Para obter informações sobre métricas calculadas do Adobe Analytics, consulte
 |---|---|---|
 | Média de anúncios por transmissão da mídia | Anúncio iniciado por mídia iniciada | `Ad Starts / Media Starts` |
 | Média de capítulos por transmissão da mídia | Capítulo iniciado por mídia iniciada | `Chapter Start / Media Starts` |
-| Média Tempo gasto com a mídia | Tempo total gasto por inicializações de mídia (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
-| Média Tempo gasto no conteúdo | Tempo gasto no conteúdo por inicializações de conteúdo (`HH:MM:SS`) | `Content Time Spent / Content Start` |
+| Média Tempo gasto com a mídia | Tempo Total Gasto por Inicializações de Mídia (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
+| Média Tempo gasto no conteúdo | Tempo gasto no conteúdo por inicializações do conteúdo (`HH:MM:SS`) | `Content Time Spent / Content Start` |
 | Média Tempo gasto com anúncio | Tempo gasto no anúncio por inicializações de anúncio (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
 | Média Tempo gasto com capítulo | Tempo gasto com capítulo por inicializações de capítulo (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
 | Taxa de conclusão da mídia | Taxa de Conclusão de conteúdo vs. Mídia iniciada (%) | `Content Completes/ Media Starts` |

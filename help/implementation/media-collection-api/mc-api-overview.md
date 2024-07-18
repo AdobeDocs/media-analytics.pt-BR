@@ -17,7 +17,7 @@ ht-degree: 93%
 
 A API Media Collection é a alternativa RESTful da Adobe para o SDK do Media no lado do cliente. Com a API Media Collection, o reprodutor pode rastrear eventos de áudio e vídeo usando chamadas RESTful HTTP.
 
-A API Media Collection é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK do Media também são relevantes para a API Media Collection. Por exemplo, ambas as soluções usam o mesmo [Parâmetros de streaming de mídia](../variables/audio-video-parameters.md)e os dados de rastreamento de streaming de mídia coletados levam aos mesmos [Relatórios e análise.](/help/reporting/media-reports-enable.md)
+A API Media Collection é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK do Media também são relevantes para a API Media Collection. Por exemplo, ambas as soluções usam os mesmos [Parâmetros de streaming de mídia](../variables/audio-video-parameters.md), e os dados de rastreamento de streaming de mídia coletados levam aos mesmos [Relatórios e Análises.](/help/reporting/media-reports-enable.md)
 
 ## Fluxos de dados de rastreamento de mídia {#media-tracking-data-flows}
 

@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 88%
 
 ---
@@ -135,7 +135,7 @@ Consulte o cenário de rastreamento [Reprodução de VOD com anúncios antes da 
 
 O intervalo de ping de anúncio padrão é `10 seconds`.
 
-É possível configurar o rastreamento granular de anúncios para habilitar `1 second` rastreamento de anúncios.
+Você pode configurar o rastreamento granular de anúncios para habilitar o rastreamento de anúncios de `1 second`.
 
 >[!IMPORTANT]
 >

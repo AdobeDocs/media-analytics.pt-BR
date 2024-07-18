@@ -18,4 +18,4 @@ O Media Analytics (Heartbeats) é uma solução de rastreamento de mídia padron
 
 As integrações do lado do cliente são implementadas apenas com o Media Analytics. É possível escolher implementar o SDK do Media ou a API da coleção do Media (ou ambos). O caminho do lado do cliente pode ser usado em qualquer player, incluindo players de cliente e/ou OVP, como Brightcove, Ooyala, thePlatform e assim por diante.
 
-Se o Media Analytics for o seu caminho pretendido, consulte [Obter SDKs de mídia, extensões que usam tags e SDKs OTT](/help/getting-started/download-sdks.md) e [API Media Collection.](/help/implementation/media-collection-api/mc-api-overview.md)
+Se o Media Analytics for o caminho pretendido, consulte [Obter SDKs de Mídia, Extensões usando Tags, e SDKs OTT](/help/getting-started/download-sdks.md) e [API de Coleção de Mídia.](/help/implementation/media-collection-api/mc-api-overview.md)

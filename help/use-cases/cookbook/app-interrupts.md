@@ -21,7 +21,7 @@ A reprodução em um aplicativo de mídia pode ser interrompida de várias manei
 
 >[!NOTE]
 >
->Chamando `trackSessionStart` quando o aplicativo retorna do plano de fundo, a reprodução até esse ponto pode não contar para o tempo total de reprodução, juntamente com marcadores de progresso anteriores, segmentos e assim por diante. Em vez disso, chame `trackPlay` quando o aplicativo retornar e/ou a reprodução da mídia for retomada.
+>Chamar `trackSessionStart` quando o aplicativo retorna do plano de fundo pode resultar na não contabilização da reprodução até esse ponto no tempo total de reprodução, juntamente com marcadores de progresso anteriores, segmentos, etc. Em vez disso, chame `trackPlay` quando o aplicativo retornar e/ou a reprodução da mídia for retomada.
 
 ## Perguntas frequentes sobre o manuseio de interrupções de aplicativos: {#faq-about-handling-application-interrupts}
 

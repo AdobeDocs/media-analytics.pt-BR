@@ -26,7 +26,7 @@ Lista de parâmetros do Media Analytics que a Adobe coleta e processa no servido
 | `l:event:duration` | SDK de mídia | (Obrigatório)<br/><br/>Esse valor é definido internamente (em milissegundos) pelo SDK do Media, e não pelo reprodutor. É usado para calcular as métricas de tempo gasto no backend. Por exemplo: a.media.totalTimePlayed é calculado como uma soma da duração de todas os heartbeats de reprodução (type=play) gerados. <br/>*Observação:* Esse parâmetro é definido como 0 para determinados eventos, pois eles são &quot;eventos de alteração de estado&quot; (por exemplo, type=complete, type=chapter_complete ou type=bitrate_change). |
 | `l:event:playhead` | VideoInfo | (Obrigatório)<br/><br/>O indicador de reprodução estava dentro do ativo (principal ou anúncio) em operação no momento em que o evento foi gravado. |
 | `s:event:sid` | SDK de mídia | (Obrigatório)<br/><br/>A ID da sessão (uma sequência de caracteres gerada aleatoriamente). Todos os eventos de uma sessão específica (vídeo + anúncios) devem ser idênticos. |
-| `l:asset:duration` / `l:asset:length` <br/>(Renomeado da duração de duração) | VideoInfo | (Obrigatório)<br/><br/>O comprimento do ativo de vídeo do ativo principal. |
+| `l:asset:duration` / `l:asset:length` <br/>(Renomeado da duração) | VideoInfo | (Obrigatório)<br/><br/>O comprimento do ativo de vídeo do ativo principal. |
 | `s:asset:publisher` | MediaHeartbeatConfig | (Obrigatório)<br/><br/>O editor do ativo. |
 | `s:asset:video_id` | VideoInfo | (Obrigatório)<br/><br/>Uma ID que identifica exclusivamente o vídeo no catálogo do editor. |
 | `s:asset:type` | SDK de mídia | (Obrigatório)<br/><br/>O tipo de ativo (principal ou anúncio). |

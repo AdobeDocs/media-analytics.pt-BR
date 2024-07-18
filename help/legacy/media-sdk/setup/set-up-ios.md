@@ -166,9 +166,9 @@ Com o lançamento da nova Apple TV, agora é possível criar aplicativos para ex
 
 Execute as seguintes etapas no projeto Xcode. Este guia foi escrito supondo que seu projeto tem um público-alvo que é um aplicativo da Apple TV direcionado ao tvOS:
 
-1. Arraste o `VideoHeartbeat_TV.a` arquivo de biblioteca no do seu projeto `lib` pasta.
+1. Arraste o arquivo de biblioteca `VideoHeartbeat_TV.a` para a pasta `lib` do seu projeto.
 
-1. No **[!UICONTROL Fases de criação]** do destino do seu aplicativo tvOS, expanda a variável **[!UICONTROL Vincular binário com bibliotecas]** e adicione as seguintes bibliotecas:
+1. Na guia **[!UICONTROL Criar fases]** do destino do seu aplicativo tvOS, expanda a seção **[!UICONTROL Link binário com bibliotecas]** e adicione as seguintes bibliotecas:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

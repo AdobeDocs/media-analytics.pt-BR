@@ -6,8 +6,8 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '385'
+workflow-type: tm+mt
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -22,11 +22,11 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
 * **Aplicativos do JavaScript/navegador -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `VisitorAPI`. Para excluir o rastreamento do, você precisa fazer a exclusão do serviço Visitor API. Para obter mais informações sobre recusa e privacidade, consulte [Serviço de Identidade da Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR)
 * **Os aplicativos OTT (Chromecast, Roku) -** Os SDKs de OTT fornecem APIs preparadas para o Regulamento Geral sobre a Proteção de Dados (GDPR), que permitem definir sinalizadores de status `opt` para a coleta e a transmissão de dados e para recuperar as identidades armazenadas localmente.
 
-   >[!NOTE]
-   >
-   >As chamadas de rastreamento de heartbeat de mídia também estarão desativadas se o status de privacidade estiver definido como recusar.
+  >[!NOTE]
+  >
+  >As chamadas de rastreamento de heartbeat de mídia também estarão desativadas se o status de privacidade estiver definido como recusar.
 
-   Você pode decidir se os dados do Analytics são enviados ou não em um determinado dispositivo usando as seguintes configurações:
+  Você pode decidir se os dados do Analytics são enviados ou não em um determinado dispositivo usando as seguintes configurações:
 
    * A configuração `privacyDefault` no arquivo de configuração `ADBMobile.json` Isso controla a configuração inicial e é mantida até a alteração no código.
 
@@ -36,46 +36,49 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
 
          * **Chromecast:**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                ```
-            
-            >[!IMPORTANT]
-            >
-            >Quando um usuário recusa o rastreamento, todos os dados e IDs persistentes do dispositivo são removidos até que o usuário volte a aceitar o rastreamento.
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+               ```
+           
+           >[!IMPORTANT]
+           >
+           >Quando um usuário recusa o rastreamento, todos os dados e IDs persistentes do dispositivo são removidos até que o usuário volte a aceitar o rastreamento.
+
       * **Ativar novamente:**
 
          * **Chromecast:**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                ```
-            * **Retorna a configuração atual:**
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+               ```
+           
+      * **Retorna a configuração atual:**
 
          * **Chromecast:**
 
-                ```
-                ADBMobile.config.getPrivacyStatus()
-                ```
-            
+               ```
+               ADBMobile.config.getPrivacyStatus()
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().getPrivacyStatus()
-                ```
-            Depois de alterar a configuração de privacidade usando `setPrivacyStatus`, a alteração torna-se permanente até ser alterada novamente usando este método ou ao desinstalar e instalar o aplicativo.
+               ```
+               ADBMobile().getPrivacyStatus()
+               ```
+           
+  Depois de alterar a configuração de privacidade usando `setPrivacyStatus`, a alteração torna-se permanente até ser alterada novamente usando este método ou ao desinstalar e instalar o aplicativo.
 
 ## Recuperar identificadores armazenados (aplicativos OTT) {#retrieving-stored-identifiers-ott-apps}
 
@@ -98,12 +101,12 @@ Por exemplo:
 
 * **Chromecast:**
 
-   ```
-   ADBMobile.config.getAllIdentifiersAsync(callback)
-   ```
+  ```
+  ADBMobile.config.getAllIdentifiersAsync(callback)
+  ```
 
 * **Roku:**
 
-   ```
-   vids = ADBMobile().getAllIdentifiers()
-   ```
+  ```
+  vids = ADBMobile().getAllIdentifiers()
+  ```

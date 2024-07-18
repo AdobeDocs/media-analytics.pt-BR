@@ -6,8 +6,8 @@ exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
-workflow-type: ht
-source-wordcount: '600'
+workflow-type: tm+mt
+source-wordcount: '627'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Essa chamada sinaliza _a intenção do usuário de reproduzir_ um vídeo. Retorn
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Temporizador do evento ping de início do aplicativo | 0 | 0 |  |
+| Temporizador do evento ping de início do aplicativo | 0 | 0 | |
 
 Inicie o temporizador de ping do aplicativo. O primeiro evento de ping deve disparar 1 segundo se houver anúncios precedentes, 10 segundos se não houver.
 
@@ -312,7 +312,7 @@ Anúncio intermediário de 8 segundos: envie `adBreakStart` .
 | --- | :---: | :---: | --- |
 | Rastrear início do anúncio nº 1 durante a exibição | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Rastreia o anúncio intermediário.
+Rastreie o anúncio intermediário.
 
 ```json
 {

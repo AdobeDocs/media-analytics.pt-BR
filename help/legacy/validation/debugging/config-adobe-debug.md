@@ -6,8 +6,8 @@ exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '651'
+workflow-type: tm+mt
+source-wordcount: '618'
 ht-degree: 100%
 
 ---
@@ -73,18 +73,17 @@ Baixe e instale o certificado SSL:
    1. Conclua um dos seguintes procedimentos:
 
       * [Adicionar certificados à loja de Autoridades de Certificação Raiz Confiáveis para um computador local](https://technet.microsoft.com/pt-br/library/cc754841.aspx#BKMK_addlocal)
+
    1. Para o Firefox, conclua o procedimento em [Instalar o certificado raiz no Mozilla Firefox](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox).
 
       Você pode precisar sair e reabrir o Firefox para visualizar a alteração.
+
    **Dispositivos iOS**
    1. Defina seu dispositivo iOS para usar o Adobe Debug como proxy HTTP clicando em **[!UICONTROL Configurações do aplicativo]** **>** **[!UICONTROL Configurações Wi-Fi]**.
 
    1. No Safari, acesse [Debug](https://proxy.debug.adobe.com/ssl).
 
       O Safari solicitará que você instale o certificado SSL.
-
-
-
 
 ## Instale o Certificado SSL para o seu dispositivo móvel {#install-sSL-for-mobile-device}
 

@@ -6,9 +6,9 @@ exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -27,12 +27,14 @@ Para criar um novo relatório de depuração:
 
       * [!UICONTROL Nome de usuário] e [!UICONTROL Segredo compartilhado] - Esses campos são opcionais, mas você pode adicionar suas credenciais da API de serviços da Web ao Adobe Debug para exibir os nomes e as configurações das variáveis do conjunto de relatórios.
 
-         Você pode acessar seguindo um dos seguintes procedimentos:
+        Você pode acessar seguindo um dos seguintes procedimentos:
 
          * [!UICONTROL Analytics > Administrador > Configurações da empresa > Serviços da Web]
-         * [!UICONTROL Analytics > Administrador > Gerenciamento de usuários > Usuários > Configurações de usuário individual] Para criar uma credencial da API de serviços da Web para um novo usuário, no [!UICONTROL Gerenciamento de usuários], adicione o usuário ao grupo de usuários de **Acesso ao serviço da Web**.
+         * [!UICONTROL Analytics > Administrador > Gerenciamento de usuários > Usuários > Configurações de usuário individual] Para criar uma credencial da API de serviços da Web para um novo usuário, em [!UICONTROL Gerenciamento de usuários], adicione o usuário ao grupo de usuários **Acesso ao serviço da Web**.
+
       * [!UICONTROL Endpoint padrão] — Os dados nesse campo são fornecidos pela Adobe e não podem ser alterados.
       * [!UICONTROL Endpoint adicional] — Adicione `CNAMES`, se estiverem em uso, para rastrear um servidor como `metrics.companyname.com`
+
    * **Hearbeats de vídeo (Media Analytics)**
 
       * [!UICONTROL Endpoint padrão] — Os dados nesse campo são fornecidos pela Adobe e não podem ser alterados.

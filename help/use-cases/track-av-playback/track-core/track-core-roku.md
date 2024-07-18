@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 92%
+source-wordcount: '795'
+ht-degree: 88%
 
 ---
 
@@ -150,7 +150,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
 1. **Atualizar valor do indicador de reprodução**
 
-   Quando o indicador de reprodução de mídia for alterado, notifique o SDK, chamando o `mediaUpdatePlayhead` API. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor pode ser especificado como o número de segundos desde a meia-noite UTC daquele dia.
+   Quando o indicador de reprodução de mídia for alterado, notifique o SDK chamando a API `mediaUpdatePlayhead`. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor poderá ser especificado como o número de segundos desde a meia-noite UTC daquele dia.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -158,9 +158,9 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
    >[!NOTE]
    >
-   >Considere o seguinte ao chamar o `mediaUpdatePlayhead` API:
+   >Considere o seguinte ao chamar a API `mediaUpdatePlayhead`:
    >* Ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado para o número de segundos desde o início do item de mídia, começando com 0.
-   >* Ao usar SDKs de mídia, você deve chamar o `mediaUpdatePlayhead` pelo menos uma vez por segundo.
+   >* Ao usar SDKs de mídia, você deve chamar a API `mediaUpdatePlayhead` pelo menos uma vez por segundo.
 
 
 1. **Rastrear a conclusão da reprodução**

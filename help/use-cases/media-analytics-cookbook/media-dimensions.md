@@ -23,7 +23,7 @@ Para ativar esse recurso para um relatório específico, reative a configuraçã
 
 >[!NOTE]
 >
->As métricas de mídia são _não_ disponível para uso fora do rastreamento de mídia, pois a maioria deles é calculada pelo complemento Coleção de mídia de streaming com base em eventos de heartbeat. Além disso, é importante que as métricas de mídia não sejam infladas por implementações diferentes.
+>As métricas de mídia _não_ estão disponíveis para uso fora do rastreamento de mídia porque a maioria delas é calculada pelo Complemento de Coleção de Mídia de Streaming com base em eventos de heartbeat. Além disso, é importante que as métricas de mídia não sejam infladas por implementações diferentes.
 
 ## Usar a atribuição de fluxo de mídia
 

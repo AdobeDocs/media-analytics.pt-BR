@@ -15,7 +15,7 @@ ht-degree: 76%
 
 Com o fim do suporte à versão 4 dos SDKs móveis em 31 de agosto de 2021, o Adobe também encerrou o suporte aos SDKs móveis do Media Analytics para iOS e Android. (Isso não inclui o SDK do Media Analytics para plataformas da Web (JS) e OTT, como Chromecast e Roku, que ainda são compatíveis.)
 
-Isso significa que o Adobe não fornece mais correções, atualizações relacionadas ao SO ou suporte para o SDK móvel do Media Analytics. Ao migrar para os novos SDKs do Experience Platform, esteja ciente de que a variável [Extensões do Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) deve ser implementado para habilitar o Complemento Adobe Streaming Media Collection.
+Isso significa que o Adobe não fornece mais correções, atualizações relacionadas ao SO ou suporte para o SDK móvel do Media Analytics. Ao migrar para os novos SDKs do Experience Platform, esteja ciente de que as [extensões do Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) devem ser implementadas para habilitar o Complemento Adobe Streaming Media Collection.
 
 
 ## 5 principais itens que você deve conhecer

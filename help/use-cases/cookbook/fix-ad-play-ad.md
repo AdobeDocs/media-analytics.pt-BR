@@ -6,8 +6,8 @@ exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '448'
+workflow-type: tm+mt
+source-wordcount: '450'
 ht-degree: 100%
 
 ---
@@ -52,9 +52,9 @@ Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depoi
 
 * **Chame`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Chame isso somente se o anúncio anterior não tiver sido concluído. Considere um valor booleano para manter um estado &quot;`isinAd`&quot; para o anúncio anterior.
+  >[!NOTE]
+  >
+  >Chame isso somente se o anúncio anterior não tiver sido concluído. Considere um valor booleano para manter um estado &quot;`isinAd`&quot; para o anúncio anterior.
 
 * Crie a instância do objeto de anúncio para o ativo de anúncio: por exemplo, `adObject`.
 * Preencha os metadados do anúncio, `adCustomMetadata`.
@@ -65,9 +65,9 @@ Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depoi
 
 * **Não faça uma chamada**
 
-   >[!NOTE]
-   >
-   >Se o aplicativo souber que se trata do último anúncio no ad break, chame `trackEvent:AdComplete` aqui e ignore a configuração de `trackEvent:AdComplete` no `trackEvent:AdBreakComplete`
+  >[!NOTE]
+  >
+  >Se o aplicativo souber que se trata do último anúncio no ad break, chame `trackEvent:AdComplete` aqui e ignore a configuração de `trackEvent:AdComplete` no `trackEvent:AdBreakComplete`
 
 **Ao ignorar o anúncio:**
 
@@ -77,8 +77,8 @@ Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depoi
 
 * **Chame`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Se esta etapa já tiver sido realizada como parte da última chamada `trackEvent:AdComplete`, isso poderá ser ignorado.
+  >[!NOTE]
+  >
+  >Se esta etapa já tiver sido realizada como parte da última chamada `trackEvent:AdComplete`, isso poderá ser ignorado.
 
 * Chame `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.

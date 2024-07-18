@@ -6,9 +6,9 @@ exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ Esse cenário é o mesmo da [reprodução VOD com um capítulo](/help/use-cases/
 
 | Acionador | Método do Heartbeat | Chamadas de rede   | Notas |
 |---|---|---|---|
-| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não sabe que há um anúncio antes da exibição. Essas chamadas de rede ainda são idênticas às chamadas do cenário [Reprodução sem interrupções no iOS](vod-no-intrs-details.md). |
+| Cliques do usuário **[!UICONTROL Reproduzir]** | `trackSessionStart` | Início do conteúdo do Analytics, Início do conteúdo do Heartbeat | A biblioteca de avaliações não sabe que há um anúncio antes da exibição. Essas chamadas de rede ainda são exatamente as mesmas do cenário [Reprodução sem interrupções no iOS](vod-no-intrs-details.md). |
 | O capítulo é iniciado. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | O primeiro quadro do capítulo é reproduzido. | `trackPlay` | Heartbeat Chapter Play | Quando o conteúdo do capítulo é reproduzido antes do conteúdo principal, queremos iniciar os heartbeats quando o capítulo for iniciado. |
 | O capítulo é reproduzido. |  | Chapter Heartbeats |  |
@@ -35,7 +35,7 @@ Esse cenário é o mesmo da [reprodução VOD com um capítulo](/help/use-cases/
 
 ## Parâmetros {#parameters}
 
-Os parâmetros usados durante a reprodução do capítulo são idênticos aos parâmetros do [Reprodução de VOD com um capítulo](/help/use-cases/tracking-scenarios/vod-one-chapter.md), exceto que não há uma chamada de rede de capítulo concluído.
+Os parâmetros usados durante a reprodução do capítulo são idênticos aos da [reprodução VOD com um capítulo](/help/use-cases/tracking-scenarios/vod-one-chapter.md), exceto que não há uma chamada de rede de capítulo concluído.
 
 ## Código de exemplo {#sample-code}
 

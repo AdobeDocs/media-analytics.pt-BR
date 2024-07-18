@@ -2,8 +2,8 @@
 title: Novidades do Media Analytics
 description: As novidades incluem informações sobre novos recursos e notificações.
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '607'
+workflow-type: tm+mt
+source-wordcount: '601'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ As Notas de versão da Adobe Experience Cloud descrevem novos recursos, correç�
 | ----------- | ---------- | ---------- |
 | [Painel Visualizador simultâneo de mídia](media-reports/media-workspace-panels/media-concurrent-viewers.md) | 17 de setembro de 2020 | O painel Visualizadores simultâneos de mídia no Workspace permite compreender onde ocorreu o pico de simultaneidade ou onde as quedas ocorreram. Ele fornece informações importantes sobre a qualidade do conteúdo e o engajamento do visualizador, além de ajudar na solução de problemas ou no planejamento de volume/escala. |
 | [Dispositivos e plataformas compatíveis](../getting-started/supported-devices.md) | 18 de junho de 2020 | A [!UICONTROL Extensão Media Launch] com o SDK móvel da AEP agora é compatível com os seguintes dispositivos OTT:<ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul> |
-| [Rastreamento do estado do player](https://experienceleague.adobe.com/docs/media-analytics/using/player-state-tracking/player-state-overview.html?lang=pt-BR) | 29 de maio de 2020 | Os clientes do [!UICONTROL Media Analytics] podem capturar a interação do visualizador durante a reprodução usando um conjunto padrão de variáveis de solução para tela cheia, legendas ocultas, mudo, picture-in-picture e em foco. Você também tem flexibilidade para criar estados personalizados do player. As variáveis de [!UICONTROL Rastreamento de estado do player] agora estão disponíveis para relatórios no [!UICONTROL Analysis Workspace]. Esse recurso exige um dos seguintes: <ul><li>Media [!DNL JavaScript] SDK 3.0 ou superior</li><li>Para uso com o SDK [!DNL Adobe Experience Platform] (AEP):</li><li>[!UICONTROL Extensão do Media Analytics] (para Web): [!UICONTROL Adobe Media Analytics] (SDK 3.x) for Audio and Video v1.0 ou superior</li><li>[!UICONTROL Extensão do Media Analytics] (para dispositivos móveis): [!UICONTROL Adobe Media Analytics for Audio] and Video v2.0 ou superior</li><li>[!UICONTROL Coleção de mídia]</li></ul> |
+| [Rastreamento do estado do player](https://experienceleague.adobe.com/docs/media-analytics/using/player-state-tracking/player-state-overview.html?lang=pt-BR) | sábado, 29 de maio de 2020 | Os clientes do [!UICONTROL Media Analytics] podem capturar a interação do visualizador durante a reprodução usando um conjunto padrão de variáveis de solução para tela cheia, legendas ocultas, mudo, picture-in-picture e em foco. Você também tem flexibilidade para criar estados personalizados do player. As variáveis de [!UICONTROL Rastreamento de estado do player] agora estão disponíveis para relatórios no [!UICONTROL Analysis Workspace]. Esse recurso exige um dos seguintes: <ul><li>Media [!DNL JavaScript] SDK 3.0 ou superior</li><li>Para uso com o SDK [!DNL Adobe Experience Platform] (AEP):</li><li>[!UICONTROL Extensão do Media Analytics] (para Web): [!UICONTROL Adobe Media Analytics] (SDK 3.x) for Audio and Video v1.0 ou superior</li><li>[!UICONTROL Extensão do Media Analytics] (para dispositivos móveis): [!UICONTROL Adobe Media Analytics for Audio] and Video v2.0 ou superior</li><li>[!UICONTROL Coleção de mídia]</li></ul> |
 
 
 ## Notificações importantes

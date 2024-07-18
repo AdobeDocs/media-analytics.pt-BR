@@ -16,7 +16,7 @@ ht-degree: 93%
 
 ## Pré-requisitos  {#roku-prerequisites}
 
-* **Obter parâmetros de configuração válidos para o Complemento de coleção de mídia de streaming**
+* **Obter parâmetros de configuração válidos para o Complemento de Coleção de Mídia de Streaming**
 
   Esses parâmetros podem ser obtidos de um representante do Adobe após a configuração da conta do complemento Coleção de mídia de transmissão do Adobe.
 * **Inclua as seguintes APIs em seu reprodutor de mídia**

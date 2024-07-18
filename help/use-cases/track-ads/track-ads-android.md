@@ -6,8 +6,8 @@ exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '360'
+workflow-type: tm+mt
+source-wordcount: '364'
 ht-degree: 100%
 
 ---
@@ -90,13 +90,12 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do anúncio atual:
 
-      ```java
-      // Setting Ad Metadata
-      HashMap<String, String> adMetadata = new HashMap<String, String>();
-      adMetadata.put("affiliate", "Sample affiliate");
-      adMetadata.put("campaign", "Sample ad campaign");
-      ```
-
+     ```java
+     // Setting Ad Metadata
+     HashMap<String, String> adMetadata = new HashMap<String, String>();
+     adMetadata.put("affiliate", "Sample affiliate");
+     adMetadata.put("campaign", "Sample ad campaign");
+     ```
 
 1. Chame `trackEvent()` com o evento `AdStart` na instância `MediaHeartbeat` para começar a rastrear a reprodução de anúncio.
 
