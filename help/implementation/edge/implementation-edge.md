@@ -4,10 +4,10 @@ description: Saiba como o complemento Coleção de mídia de transmissão pode s
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 9%
+source-wordcount: '2154'
+ht-degree: 8%
 
 ---
 
@@ -111,6 +111,30 @@ Para criar e configurar um esquema:
 
    1. Selecione [!UICONTROL **Confirmar**] > [!UICONTROL **Salvar**] para salvar as alterações.
 
++++
+
+1. (Opcional) É possível adicionar metadados personalizados ao esquema. Isso permite incluir metadados adicionais definidos pelo usuário que podem ser personalizados para necessidades ou contextos específicos. Essa flexibilidade é útil em cenários nos quais os esquemas existentes não abrangem os pontos de dados desejados. (Você também pode trabalhar com metadados personalizados com APIs do Media Edge. Para obter mais informações, consulte [Criar metadados personalizados com APIs do Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
+
++++ Expanda aqui para visualizar instruções sobre como adicionar metadados personalizados ao esquema.
+
+   1. Localize o nome do locatário da organização selecionando [!UICONTROL **Informações da conta**] > [!UICONTROL **Orgs atribuídas**] > [!UICONTROL _**nome da organização**_] > [!UICONTROL **locatário**].
+
+      Esses campos personalizados serão recebidos por meio desse caminho. (Por exemplo, nome do locatário: _dcbl → caminho myCustomField: _dcbl.myCustomField.)
+
+   1. Adicione um grupo de campos personalizado ao esquema de mídia definido.
+
+      ![adicionar-metadados-personalizados](assets/add-custom-metadata-fieldgroup.png)
+
+   1. Adicione campos personalizados que deseja rastrear ao grupo de campos.
+
+      ![adicionar-metadados-personalizados](assets/add-custom-fields.png)
+
+   1. [Use o caminho gerado](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) para o campo personalizado na carga da sua solicitação.
+
+      ![adicionar-metadados-personalizados](assets/custom-fields-path.png)
+
++++
+
 1. Continue com [Criar um conjunto de dados no Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
 ## Criar um conjunto de dados na Adobe Experience Platform
@@ -135,8 +159,8 @@ Para criar e configurar um esquema:
 
      >[!IMPORTANT]
      >
-         >     Não selecione [!UICONTROL **Salvar e Adicionar Mapeamento**] porque isso resultará em erros de mapeamento para o campo Carimbo de data/hora.
-     
+     >Não selecione [!UICONTROL **Salvar e Adicionar Mapeamento**] porque isso resultará em erros de mapeamento para o campo Carimbo de data/hora.
+
      ![Criar sequência de dados e selecionar esquema](assets/datastream-create-schema.png)
 
    * Adicione um dos seguintes serviços ao fluxo de dados, dependendo se você estiver usando Adobe Analytics ou Customer Journey Analytics:
@@ -151,7 +175,7 @@ Para criar e configurar um esquema:
 
      ![Adicionar o serviço Adobe Analytics](assets/datastream-add-service.png)
 
-   * Expanda [!UICONTROL **Opções Avançadas**] e habilite a opção [!UICONTROL **Media Analytics**].
+      * Expanda [!UICONTROL **Opções Avançadas**] e habilite a opção [!UICONTROL **Media Analytics**].
 
      ![Opção do Media Analytics](assets/datastream-media-check.png)
 
@@ -164,7 +188,6 @@ Para criar e configurar um esquema:
 >[!NOTE]
 >
 >O procedimento a seguir é necessário somente se estiver usando o Customer Journey Analytics.
-
 
 1. Certifique-se de ter criado uma sequência de dados conforme descrito em [Configurar uma sequência de dados no Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
 
@@ -301,11 +324,22 @@ Para criar e configurar um esquema:
 
    ![Painel Tempo gasto com a reprodução da mídia](assets/media-playback-time-spent-panels.png)
 
+1. (Condicional) Se você adicionou metadados personalizados ao esquema, conforme descrito na Etapa 8 de [Configurar o esquema no Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform), será necessário definir a persistência para os campos personalizados, conforme descrito em [Configurações do componente de Persistência](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) no guia Customer Journey Analytics.
+
+   Quando os dados chegarem no Customer Journey Analytics, a dimensão ID de usuário personalizada estará disponível.
+
+   ![setup-custom-metadata](assets/custom-metadata-dimension.png)
+
+   >[!NOTE]
+   >
+   >Se você configurar o Adobe Analytics como um upstream para seu fluxo de dados, os metadados personalizados também estarão presentes em ContextData, com o nome definido no esquema (sem o prefixo do locatário, por exemplo, myCustomField). Isso permite usar todos os recursos do Adobe Analytics disponíveis para ContextData, como [criação de uma regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
+
 1. Compartilhe o projeto conforme descrito em [Compartilhar projetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
    >   Se os usuários com os quais você deseja compartilhar não estiverem disponíveis, verifique se eles têm acesso de usuário e administrador ao Customer Journey Analytics na Adobe Admin Console.
+
 
 1. Continue com [Enviar dados para o Experience Platform Edge](#send-data-to-experience-platform-edge).
 
