@@ -5,10 +5,10 @@ user-guide-title: Complemento Coleção de mídia de transmissão
 breadcrumb-title: Guia da Coleção de mídia de transmissão
 user-guide-description: Implemente mídias de transmissão. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 97%
       + [Acompanhamento do estado de vários players](use-cases/player-state-tracking/multiple-player-states.md)
       + [Exemplos de acompanhamento do estado do player](use-cases/player-state-tracking/player-state-examples.md)
    + [Rastrear o conteúdo baixado ](use-cases/track-downloaded-content.md)
-   + [Federated Analytics ](use-cases/federated-analytics.md)
+   + [Federated Media](use-cases/federated-media.md)
    + [Lidar com interrupções do aplicativo durante a reprodução](use-cases/cookbook/app-interrupts.md)
    + [Atribuição de fluxo de mídia](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Resumo de sessões inativas](use-cases/cookbook/resuming-inactive.md)

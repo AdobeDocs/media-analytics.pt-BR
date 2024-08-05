@@ -4,10 +4,10 @@ description: Saiba como as pulsações são usadas para coletar métricas de ví
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 86%
+ht-degree: 75%
 
 ---
 
@@ -24,5 +24,5 @@ Usar pulsações no complemento Coleção de mídia de streaming oferece os segu
 | Integrações | O Experience Cloud ID é vinculado à Adobe Experience Cloud para facilitar a análise cruzada. Com a integração automática da Adobe Experience Cloud, você pode segmentar os públicos de mídia, direcioná-los e criar recomendações de mídia de acordo com as preferências do usuário. |
 | Preços | Rastreamento transparente por fluxo de mídia (único) |
 | Implementação e suporte | Configuração simplificada com atualizações e melhorias contínuas. Com um processo de implementação simplificado, você pode mapear variáveis rapidamente por meio da API do player e validar implementações usando a ferramenta Adobe Debug para garantir que todas as variáveis necessárias sejam rastreadas com precisão. |
-| Compartilhamento de parceiros | Federated Analytics e métricas certificadas. Com dados compartilhados por meio do Federated Analytics, você pode capitalizar sobre nossos recursos de compartilhamento de mídia líderes de setor, para avaliar dados de maneira integral em todos os seus parceiros de distribuição de mídia, sejam eles operadores, programadores ou distribuidores. |
+| Compartilhamento de parceiros | Federated Media e Métricas certificadas. Com dados compartilhados por meio da Federated Media, você pode capitalizar nossos recursos de compartilhamento de mídia, pioneiros no setor, para avaliar dados de forma holística em todos os seus parceiros de distribuição de mídia: operadores, programadores e distribuidores. |
 | Rastreamento avançado | Rastreamento de conteúdo baixado, rastreamento de recuperação de erros e visualizadores simultâneos. Você pode rastrear o conteúdo de mídia de streaming que é baixado e reproduzido em um dispositivo, independentemente de sua conexão. |
