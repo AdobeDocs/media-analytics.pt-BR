@@ -5,7 +5,7 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 05a1335daa8164324c7f33de373d96e14cb9f4f7
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 60%
@@ -18,6 +18,9 @@ O serviço Federated Media fornece um sistema para o compartilhamento de dados d
 Os dados de medição padronizados criados pelo Complemento de coleção de mídia de streaming são a marca da Federated Media, permitindo que os mesmos dados fluam para um único relatório de várias fontes.
 Por meio das regras e lógicas que regem a Federated Media, os dados são facilmente controlados e individualizados para atender às necessidades de cada parceria.
 A Federated Media torna a medição de áudio e vídeo mais eficiente, simplificada e acionável.
+
+
+![](assets/media-federated.png)
 
 ## Benefícios {#benefits}
 
