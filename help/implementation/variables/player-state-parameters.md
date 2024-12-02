@@ -1,6 +1,6 @@
 ---
 title: Parâmetros de estado do player
-description: “Saiba mais sobre os parâmetros de monitoramento do estado do player para propriedades de tela cheia, legendas ocultas, mudo e picture in picture.”
+description: Saiba mais sobre os parâmetros de rastreamento do estado do player para propriedades de tela cheia, legendas ocultas, mudo e picture in picture.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
 feature: "Media Analytics, Variables"

@@ -1,13 +1,13 @@
 ---
 title: Relatórios de visualizadores simultâneos de mídia
-description: “Saiba como usar o painel Visualizadores simultâneos de mídia para analisar visualizadores simultâneos e entender o pico de simultaneidade e quedas.”
+description: Saiba como usar o painel Visualizadores simultâneos de mídia para analisar visualizadores simultâneos e entender o pico de simultaneidade e quedas.
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin
 source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 

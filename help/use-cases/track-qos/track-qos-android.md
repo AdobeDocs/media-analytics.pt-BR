@@ -1,6 +1,6 @@
 ---
 title: Saiba como rastrear a qualidade de experiência no Android
-description: “Saiba como implementar o rastreamento da qualidade de experiência (QoE, QoS) usando o SDK de mídia no Android.”
+description: Saiba mais sobre como implementar o rastreamento de qualidade de experiência (QoE, QoS) usando o SDK do Media no Android.
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 

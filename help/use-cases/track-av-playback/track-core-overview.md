@@ -1,6 +1,6 @@
 ---
 title: Explicação sobre o rastreamento da reprodução do conteúdo
-description: “Saiba mais sobre o rastreamento da reprodução principal, incluindo o rastreamento da carga de mídia, início de mídia, pausa de mídia e conclusão de mídia. ”
+description: 'Saiba mais sobre o rastreamento da reprodução principal, incluindo o rastreamento da carga de mídia, início da mídia, pausa da mídia e conclusão da mídia. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 0d53e62069a65b252e004e21943ecdbd011a3658
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: „Migração do SDK de mídia independente para o Adobe Launch - iOS“
+title: Migração do Media SDK independente para o Adobe Launch - iOS
 description: Saiba como migrar do SDK de mídia para o Launch para iOS.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

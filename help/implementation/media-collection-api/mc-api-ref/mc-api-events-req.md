@@ -1,6 +1,6 @@
 ---
 title: Ponto de acesso da solicitação de eventos ‐ da API da coleção de mídia de transmissão
-description: "Quais são as respostas e parâmetros do ponto de acesso da solicitação dos eventos da API da coleção de mídia?"
+description: Quais são os parâmetros e as respostas do ponto de extremidade de solicitação de eventos da API Media Collection?
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 

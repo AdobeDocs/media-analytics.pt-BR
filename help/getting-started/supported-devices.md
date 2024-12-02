@@ -1,6 +1,6 @@
 ---
 title: Saiba mais sobre dispositivos e plataformas compatíveis
-description: "Saiba mais sobre os principais dispositivos, como iOS, Android, dispositivos OTT e navegadores JavaScript compatíveis com o complemento Coleção de mídia de streaming."
+description: Saiba mais sobre os principais dispositivos, como iOS, Android, dispositivos OTT e navegadores JavaScript compatíveis com o complemento Coleção de mídia de streaming.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
