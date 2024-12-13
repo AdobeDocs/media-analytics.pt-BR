@@ -5,17 +5,17 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 05a1335daa8164324c7f33de373d96e14cb9f4f7
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 60%
+source-wordcount: '571'
+ht-degree: 61%
 
 ---
 
 # Federated Media{#federated-media}
 
 O serviço Federated Media fornece um sistema para o compartilhamento de dados de mídia de transmissão (áudio e vídeo) entre dois parceiros.
-Os dados de medição padronizados criados pelo Complemento de coleção de mídia de streaming são a marca da Federated Media, permitindo que os mesmos dados fluam para um único relatório de várias fontes.
+Os dados de medição padronizados criados pela Coleção de mídia de streaming são a marca da Federated Media, permitindo que os mesmos dados fluam em um único relatório de várias fontes.
 Por meio das regras e lógicas que regem a Federated Media, os dados são facilmente controlados e individualizados para atender às necessidades de cada parceria.
 A Federated Media torna a medição de áudio e vídeo mais eficiente, simplificada e acionável.
 
@@ -44,7 +44,7 @@ A Federated Media torna a medição de áudio e vídeo mais eficiente, simplific
 * **Contrato de transmissão de mídia:** O receptor e o remetente devem ter contratado o Adobe Analytics para fluxos de mídia antes de obter acesso aos dados de áudio e vídeo no Adobe Analytics. Entre em contato com a equipe de conta para obter mais detalhes.
 * **Adendo federado:** cada Remetente e Destinatário deve ter um adendo assinado em vigor com a Adobe para enviar ou receber dados. É necessário um adendo por cliente, e não um adendo por parceria. Entre em contato com a equipe de conta para obter mais detalhes.
 
-* **Implementação do Complemento de Coleção de Mídia de Streaming:** o Remetente deve ter o Complemento de Coleção de Mídia de Streaming implementado em todos os players que farão parte do conjunto de dados federado. Somente dados de mídia de transmissão estão disponíveis para federação. Para obter mais informações, consulte [Visão geral do complemento Coleção de mídia de streaming de Adobe](/help/media-overview.md).
+* **Implementação da Coleção de Mídia de Streaming:** o Remetente deve ter a Coleção de Mídia de Streaming implementada em todos os players que farão parte do conjunto de dados federado. Somente dados de mídia de transmissão estão disponíveis para federação. Para obter mais informações, consulte [visão geral da Coleção de mídia de streaming de Adobe](/help/media-overview.md).
 
 * **Contrato de consultoria da Adobe:** para a configuração inicial de regras federadas entre o destinatário e o remetente, é valioso trabalhar com os serviços de consultoria para analisar os dados e criar o contrato de compartilhamento de dados.
 

@@ -1,13 +1,13 @@
 ---
 title: Explicação sobre a implementação de SDKs de mídia
-description: Saiba como configurar o SDK de mídia para rastreamento de mídia em seus aplicativos para dispositivos móveis, OTT e do navegador (JS).
+description: Saiba como configurar o Media SDK para rastreamento de mídia em seus aplicativos móveis, OTT e do navegador (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '617'
 ht-degree: 94%
 
 ---
@@ -19,7 +19,7 @@ Após baixar o SDK de mídia para seu aplicativo de vídeo ou player, siga as in
 
 ## Diretrizes gerais de implementação {#general-implementation-guidelines}
 
-Há três componentes principais do SDK usados no rastreamento com o complemento Coleção de mídia de transmissão:
+Há três componentes principais do SDK usados no rastreamento com a coleção de mídia de transmissão:
 * Configuração do Heartbeat de mídia - O `MediaHeartbeatConfig` contém as configurações básicas para relatórios.
 * Delegar Heartbeat de mídia - O `MediaHeartbeatDelegate` controla o tempo de reprodução e o objeto QoS.
 * Heartbeat de mídia - O `MediaHeartbeat` é a biblioteca principal que contém membros e métodos.

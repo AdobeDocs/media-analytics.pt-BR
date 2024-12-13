@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Complemento Coleção de mídia de transmissão
+user-guide-title: Coleção de mídia de streaming
 breadcrumb-title: Guia da Coleção de mídia de transmissão
 user-guide-description: Implemente mídias de transmissão. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '893'
 ht-degree: 96%
 
 ---
 
 
-# Complemento Coleção de mídia de transmissão {#using}
+# Coleção de mídia de streaming {#using}
 
 + [Guia da Coleção de mídia de transmissão](media-overview.md)
 + Notas de versão {#release-notes}
@@ -36,8 +36,8 @@ ht-degree: 96%
       + [Pré-requisitos ](/help/implementation/edge/prerequisites-edge.md)
       + SDKs/Extensão de borda de mídia {#media-edge-sdk}
          + [Configuração de SDKs/extensão de borda de mídia](/help/implementation/edge/implementation-edge.md)
-         + [SDK da Web do Media Edge](/help/implementation/edge/edge-web-sdk.md)
-         + [SDK móvel do Media Edge](/help/implementation/edge/edge-mobile-sdk.md)
+         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
+         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de borda de mídia](/help/implementation/edge/implementation-edge-api.md)
    + Implementações somente do Adobe Analytics {#analytics-only}
       + [Pré-requisitos ](/help/implementation/media-sdk/setup/prerequisites-analytics.md)

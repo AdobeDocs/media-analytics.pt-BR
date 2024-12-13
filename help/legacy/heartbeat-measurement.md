@@ -4,18 +4,18 @@ description: Saiba como as pulsações são usadas para coletar métricas de ví
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '313'
 ht-degree: 75%
 
 ---
 
 # Sobre a medição de pulsação
 
-O complemento Coleção de mídia de transmissão do Adobe usa &quot;heartbeats&quot; para coletar métricas de vídeo. Durante a reprodução do vídeo, as pulsações são enviadas ao servidor de rastreamento de pulsação para medir o tempo de reprodução. As chamadas de pulsação são enviadas a cada dez segundos. As pulsações resultam em métricas de envolvimento granulares com o vídeo e relatórios de fallout de vídeo mais precisos. A mídia de transmissão mede as pulsações usando o Adobe Launch com a extensão do Media Analytics, o SDK de mídia e a API de coleção de mídia. Os componentes `AppMeasurement` e `VisitorID` são usados para receber dados de vídeo.
+A coleção de mídia de transmissão do Adobe usa &quot;heartbeats&quot; para coletar métricas de vídeo. Durante a reprodução do vídeo, as pulsações são enviadas ao servidor de rastreamento de pulsação para medir o tempo de reprodução. As chamadas de pulsação são enviadas a cada dez segundos. As pulsações resultam em métricas de envolvimento granulares com o vídeo e relatórios de fallout de vídeo mais precisos. A mídia de transmissão mede as pulsações usando o Adobe Launch com a extensão do Media Analytics, o Media SDK e a API Media Collection. Os componentes `AppMeasurement` e `VisitorID` são usados para receber dados de vídeo.
 
-Usar pulsações no complemento Coleção de mídia de streaming oferece os seguintes benefícios:
+Usar pulsações na coleção de mídia de streaming oferece os seguintes benefícios:
 
 | Recurso | Descrição |
 |---|---|

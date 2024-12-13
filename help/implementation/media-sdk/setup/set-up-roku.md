@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 1375fb3260d5c4ca703827b3d73174f4e475f76d
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 93%
+source-wordcount: '664'
+ht-degree: 94%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 93%
 
 ## Pré-requisitos  {#roku-prerequisites}
 
-* **Obter parâmetros de configuração válidos para o Complemento de Coleção de Mídia de Streaming**
+* **Obter parâmetros de configuração válidos para a Coleção de Mídia de Streaming**
 
-  Esses parâmetros podem ser obtidos de um representante do Adobe após a configuração da conta do complemento Coleção de mídia de transmissão do Adobe.
+  Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta de Coleção de mídia de transmissão da Adobe.
 * **Inclua as seguintes APIs em seu reprodutor de mídia**
 
    * _Uma API para assinar eventos do player_ - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.

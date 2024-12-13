@@ -4,16 +4,16 @@ description: Saiba como implementar a mídia de transmissão da Adobe para aplic
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 81%
+source-wordcount: '197'
+ht-degree: 82%
 
 ---
 
 # Instalar SDKs móveis {#install-mobile-sdks}
 
-Para implementar o Complemento de coleção de mídia de streaming para aplicativos móveis no Android ou iOS, instale e configure o seguinte:
+Para implementar a Coleção de mídia de transmissão para aplicativos móveis no Android ou no iOS, instale e configure o seguinte:
 
 * **SDK móvel da Adobe Experience Platform**
 

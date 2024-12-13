@@ -1,23 +1,23 @@
 ---
-title: Saiba mais sobre os pré-requisitos do complemento Adobe Streaming Media Collection
-description: Introdução ao Complemento de coleção de mídia de streaming. Saiba o que é necessário para a implementação do.
+title: Saiba mais sobre os pré-requisitos para a coleção de mídia de transmissão do Adobe
+description: Introdução à coleção de mídia de streaming. Saiba o que é necessário para a implementação do.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 62%
+source-wordcount: '428'
+ht-degree: 64%
 
 ---
 
-# Pré-requisitos  {#prerequisites}
+# Pré-requisitos {#prerequisites}
 
-Antes de começar a implementar o Complemento Adobe Streaming Media Collection, conclua as seguintes tarefas:
+Antes de começar a implementar a Coleção de mídia de transmissão do Adobe, conclua as seguintes tarefas:
 
-1. **Revise a visão geral do complemento Coleção de Mídia de Streaming**<br>
-Antes de começar a implementar o Complemento de Coleção de Mídia de Streaming, revise a [visão geral do Complemento de Coleção de Mídia de Streaming](/help/media-overview.md) para verificar se ele atende às suas necessidades.
+1. **Revise a visão geral da Coleção de Mídia de Streaming**<br>
+Antes de começar a implementar a Coleção de Mídia de Streaming, revise a [Visão geral da Coleção de Mídia de Streaming](/help/media-overview.md) para verificar se ela atende às suas necessidades.
 
 1. **Confirme seu modelo de preços**<br>
 O modelo de preços atual do complemento Adobe Streaming Media Collection baseia-se em transmissões de vídeo. Se necessário, entre em contato com o representante de vendas ou com a equipe de conta do Adobe, pois o complemento é vendido separadamente para Adobe Analytics e Adobe Experience Platform.
@@ -41,7 +41,7 @@ Para permitir relatórios no Analytics ou Customer Journey Analytics e exibir os
 
 1. **Exibir os pré-requisitos adicionais para seu método de implementação**
 
-   Dependendo de como você planeja implementar o Complemento de coleção de mídia de transmissão, exiba os pré-requisitos de um dos seguintes métodos de implementação:
+   Dependendo de como você planeja implementar a Coleção de mídia de transmissão, exiba os pré-requisitos de um dos seguintes métodos de implementação:
 
    * [Pré-requisitos para implementações somente do Adobe Analytics](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
