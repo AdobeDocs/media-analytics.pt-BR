@@ -4,25 +4,25 @@ description: 'Saiba como implementar o recurso de rastreamento do estado do play
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 78%
 
 ---
 
 # Implementação e relatórios
 
-Durante uma sessão de reprodução, cada ocorrência de estado (início ao fim) deve ser rastreada individualmente. O SDK de mídia e a API da coleção de mídia fornecem novos métodos de rastreamento para esse recurso.
+Durante uma sessão de reprodução, cada ocorrência de estado (início ao fim) deve ser rastreada individualmente. O Media SDK e a API de coleção de mídia fornecem métodos de rastreamento para esse recurso.
 
-O SDK de mídia inclui dois novos métodos para rastreamento de estado personalizado:
+O Media SDK inclui dois métodos para rastreamento de estado personalizado:
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-A API da coleção de mídia inclui dois novos eventos que têm `media.stateName` como o parâmetro obrigatório:
+A API da coleção de mídia inclui dois eventos que têm `media.stateName` como o parâmetro obrigatório:
 
 `stateStart` e `stateEnd`
 
@@ -91,11 +91,11 @@ As métricas fornecidas para cada estado individual são computadas e enviadas p
 
 ## Relatórios
 
-Todas as métricas do estado do player podem ser usadas para qualquer visualização de relatórios disponível no Analysis Workspace ou em um componente (segmento, métricas calculadas) assim que um conjunto de relatórios é ativado para o rastreamento do estado do player. As novas métricas podem ser ativadas no Admin Console para cada relatório individual usando a Configuração do relatórios de mídia (Editar configurações > Gerenciamento de mídia > Relatórios de mídia).
+Todas as métricas do estado do player podem ser usadas para qualquer visualização de relatórios disponível no Analysis Workspace ou em um componente (segmento, métricas calculadas) assim que um conjunto de relatórios é ativado para o rastreamento do estado do player. Essas métricas podem ser ativadas no Admin Console para cada relatório individual usando a Configuração do relatórios de mídia (Editar configurações > Gerenciamento de mídia > Relatórios de mídia).
 
 ![](assets/report-setup.png)
 
-No Analytics Workspace, todas as novas propriedades estão localizadas no painel de métricas. Por exemplo, você pode pesquisar por `full screen` para visualizar os dados do estado de tela cheia no painel de métricas.
+No Analysis Workspace, todas as novas propriedades estão localizadas no painel de métricas. Por exemplo, você pode pesquisar por `full screen` para visualizar os dados do estado de tela cheia no painel de métricas.
 
 ![](assets/full-screen-report.png)
 
