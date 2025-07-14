@@ -3,9 +3,9 @@ title: Saiba mais sobre a migração do Marco para Link personalizado
 description: Saiba como alterar as variáveis de Marco para os métodos de Link personalizado e de módulo de Marco para a sintaxe de Link personalizado.
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 97%

@@ -2,9 +2,9 @@
 title: O que é a atribuição de fluxo de mídia?
 description: Saiba como vincular ações do aplicativo aos dados de rastreamento de mídia sem precisar de regras de processamento adicionais e variáveis personalizadas.
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 88%
@@ -27,7 +27,7 @@ Para ativar esse recurso para um relatório específico, reative a configuraçã
 
 ## Usar a atribuição de fluxo de mídia
 
-O exemplo de JavaScript abaixo gera uma chamada de rastreamento de link personalizado com o nome definido como “Banner principal”.
+O exemplo de JavaScript abaixo gera uma chamada de rastreamento de link personalizado com o nome definido como “banner hero”.
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"

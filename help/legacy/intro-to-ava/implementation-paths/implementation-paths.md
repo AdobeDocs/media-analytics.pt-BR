@@ -2,9 +2,9 @@
 title: Quais caminhos de implementação de transmissão de mídia estão disponíveis?
 description: Saiba mais sobre os caminhos de implementação para o Streaming de Mídia da Adobe, incluindo a Coleção de dados da Adobe Experience Platform.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 **ESTE CONTEÚDO FOI MOVIDO PARA O ARQUIVO DE CAMINHOS DE IMPLEMENTAÇÃO ATUAL**
 
-Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/equipe de conta Adobe para assinar uma nova ordem de vendas, pois o Streaming Media Analytics tem uma SKU exclusiva e seus preços variam de acordo com o modelo, com base em chamadas de servidor e fluxos de vídeo.
+Para cada caminho de implementação, os clientes precisam entrar em contato com o representante de vendas/equipe de conta da Adobe para assinar uma nova ordem de vendas, pois o Streaming Media Analytics tem uma SKU exclusiva e seus preços variam de acordo com o modelo, com base em chamadas de servidor e fluxos de vídeo.
 
 ## Coleção de dados da Adobe Experience Platform com a extensão do Adobe Media Analytics
 
@@ -33,7 +33,7 @@ A extensão do Adobe Media Analytics (MA) adiciona o Media SDK JavaScript princi
 
 A Coleção de dados da Adobe com a extensão do Media Analytics exige o seguinte:
 * Você deve ser um cliente da Adobe Experience Cloud.
-* Você deve implantar o código de incorporação de Coleção de dados ou DTM nas páginas da Web.
+* Você deve implantar o código incorporado de Coleção de dados ou DTM nas páginas da Web.
 * [Extensão do Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=pt-BR)
 * [Extensão do Experience Cloud ID](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=pt-BR)
 

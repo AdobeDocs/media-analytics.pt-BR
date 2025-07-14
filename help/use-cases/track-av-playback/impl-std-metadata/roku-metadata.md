@@ -3,12 +3,12 @@ title: Explicação sobre as chaves de metadados do Roku
 description: Saiba mais sobre as chaves de metadados do Roku disponíveis e visualize toda a lista de constantes de metadados padrão.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 98%
+ht-degree: 91%
 
 ---
 
@@ -76,7 +76,7 @@ Você pode usar as seguintes constantes para rastrear eventos de mídia:
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | Constante para definir metadados no `MediaInfo` `trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` | Constante para definir os metadados de anúncios no `EventData` `trackEvent` |
-| `MEDIA_RESUMED` | Constante para enviar um heartbeat de vídeo retomada. Para retomar o rastreamento de vídeo de um conteúdo anteriormente interrompido, você precisa definir a propriedade `MEDIA_RESUMED` no objeto `mediaInfo` quando chamar `mediaTrackLoad`. (`MEDIA_RESUMED` não é um evento que você pode rastrear usando a API `mediaTrackEvent`.) `MEDIA_RESUMED` deve ser definido como true quando um aplicativo deseja continuar a rastrear o conteúdo que um usuário parou de assistir, mas que agora pretende retomar. <br/><br/>Por exemplo, digamos que um usuário assista 30% do conteúdo e então feche o aplicativo. Isso levará à sessão que está sendo encerrada. Posteriormente, se o usuário retornar ao mesmo conteúdo e o aplicativo permitir que ele retome do ponto em que parou, o aplicativo deverá definir `MEDIA_RESUMED` como &quot;true&quot; enquanto chama a API `mediaTrackLoad`. O resultado é que essas duas sessões de mídia diferentes para o mesmo conteúdo de vídeo podem ser vinculadas. Este é um exemplo de implementação: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Isso criará uma nova sessão para o vídeo, mas também fará com que o SDK envie uma solicitação de heartbeat contendo o tipo de evento “retomar”, que pode ser usado nos relatórios para vincular duas sessões de mídia diferentes. |
+| `MEDIA_RESUMED` | Constante para enviar um heartbeat de vídeo retomada. Para retomar o rastreamento de vídeo de um conteúdo anteriormente interrompido, você precisa definir a propriedade `MEDIA_RESUMED` no objeto `mediaInfo` quando chamar `mediaTrackLoad`. (`MEDIA_RESUMED` não é um evento que você pode rastrear usando a API `mediaTrackEvent`.) `MEDIA_RESUMED` deve ser definido como verdadeiro quando um aplicativo deseja continuar a rastrear o conteúdo que um usuário parou de assistir, mas que agora pretende retomar. <br/><br/>Por exemplo, digamos que um usuário assista 30% do conteúdo e então feche o aplicativo. Isso levará à sessão que está sendo encerrada. Posteriormente, se o usuário retornar ao mesmo conteúdo e o aplicativo permitir que ele retome do ponto em que parou, o aplicativo deverá definir `MEDIA_RESUMED` como &quot;true&quot; enquanto chama a API `mediaTrackLoad`. O resultado é que essas duas sessões de mídia diferentes para o mesmo conteúdo de vídeo podem ser vinculadas. Este é um exemplo de implementação: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Isso criará uma nova sessão para o vídeo, mas também fará com que o SDK envie uma solicitação de heartbeat contendo o tipo de evento “retomar”, que pode ser usado nos relatórios para vincular duas sessões de mídia diferentes. |
 
 ### Constantes de tipo de conteúdo
 

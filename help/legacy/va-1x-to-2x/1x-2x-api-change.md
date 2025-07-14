@@ -3,9 +3,9 @@ title: Conversão da API da versão 1.x para a 2.x
 description: Explora referências de APIs e lista as APIs de rastreamento necessárias e opcionais para as versões 1.x e 2.x do SDK de mídia.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 100%

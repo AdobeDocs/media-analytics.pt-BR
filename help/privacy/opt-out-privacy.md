@@ -3,9 +3,9 @@ title: Explicação sobre a opção de rejeição e privacidade
 description: Aprenda a gerenciar a opção de aceitação, rejeição e privacidade.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 94%
@@ -20,7 +20,7 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
 
 * **Aplicativos para dispositivos móveis -** As extensões de mídia respeitam as configurações de privacidade na coleção de dados. Para recusar o rastreamento, você precisa configurar a privacidade como [Recusar tags](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) ou [Atualizar o status de privacidade no SDK móvel](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus).
 * **Aplicativos do JavaScript/navegador -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `VisitorAPI`. Para excluir o rastreamento do, você precisa fazer a exclusão do serviço Visitor API. Para obter mais informações sobre recusa e privacidade, consulte [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR).
-* **Os aplicativos OTT (Chromecast, Roku) -** Os SDKs de OTT fornecem APIs preparadas para o Regulamento Geral sobre a Proteção de Dados (GDPR), que permitem definir sinalizadores de status `opt` para a coleta e a transmissão de dados e para recuperar as identidades armazenadas localmente.
+* **Os aplicativos OTT (Chromecast, Roku) -** Os SDKs de OTT fornecem APIs preparadas para o Regulamento Geral sobre a Proteção de Dados (RGPD), que permitem definir sinalizadores de status `opt` para a coleta e a transmissão de dados e para recuperar as identidades armazenadas localmente.
 
   >[!NOTE]
   >

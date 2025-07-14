@@ -4,9 +4,9 @@ title: Migração do Media SDK independente para o Adobe Launch
 seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
 description: Saiba como migrar do Media SDK para o Launch.
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 100%

@@ -3,9 +3,9 @@ title: Parâmetros de anúncio
 description: Saiba mais sobre parâmetros de anúncios, incluindo a implementação, rede e variáveis de relatório para dados de vídeo de anúncio.
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 89%
@@ -37,13 +37,13 @@ Descrição dos dados da tabela:
 >[!IMPORTANT]
 >
 >Não altere os nomes de classificação de nenhuma variável listada abaixo que esteja
->descrita em Relatório/variável reservada como “classificação”.
->As classificações de mídia são definidas quando um conjunto de relatórios é ativado para rastreamento
->de mídia. De tempos em tempos, a Adobe adiciona novas propriedades e, quando isso ocorre,
->os clientes devem reativar seus conjuntos de relatórios para obter acesso a novas propriedades
->de mídia. Durante o processo de atualização, a Adobe determina se as
->classificações são ativadas verificando os nomes das variáveis. Se alguma delas
->estiver ausente, a Adobe adicionará novamente as que estiverem faltando.
+>>descrita em Relatório/variável reservada como “classificação”.
+>>As classificações de mídia são definidas quando um conjunto de relatórios é ativado para rastreamento
+>>de mídia. De tempos em tempos, a Adobe adiciona novas propriedades e, quando isso ocorre,
+>>os clientes devem reativar seus conjuntos de relatórios para obter acesso a novas propriedades
+>>de mídia. Durante o processo de atualização, a Adobe determina se as
+>>classificações são ativadas verificando os nomes das variáveis. Se alguma delas
+>>estiver ausente, a Adobe adicionará novamente as que estiverem faltando.
 
 ## Dados de vídeo do anúncio {#ad-video-data}
 

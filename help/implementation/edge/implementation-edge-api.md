@@ -1,19 +1,19 @@
 ---
-title: Implemente a coleção de mídia de transmissão usando a API Edge Network
-description: Recursos sobre a instalação do Media Analytics com a API Experience Platform Edge.
-feature: Media Analytics
+title: Implementar a coleção de mídia de transmissão usando a API do Edge Network
+description: Recursos sobre a instalação do Media Analytics com a API do Experience Platform Edge.
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-# Implemente a coleção de mídia de transmissão usando a API Edge Network
+# Implementar a coleção de mídia de transmissão usando a API do Edge Network
 
-Se não conseguir usar o [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md), você poderá enviar dados para o Edge Network Adobe Experience Platform diretamente por meio de uma API.
+Se você não conseguir usar o [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md), poderá enviar dados para o Adobe Experience Platform Edge Network diretamente por meio de uma API.
 
 Para obter informações sobre como fazer uma implementação personalizada das APIs do Edge, use os seguintes recursos:
 

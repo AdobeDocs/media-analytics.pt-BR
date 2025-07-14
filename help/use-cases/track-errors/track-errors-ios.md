@@ -3,9 +3,9 @@ title: Saiba como rastrear erros no iOS
 description: Saiba como implementar o rastreamento de erros usando o SDK de mídia no iOS.
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 exl-id: c4ce7092-a102-41da-80a6-a4359f925708
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 100%

@@ -3,9 +3,9 @@ title: Como rastrear o conteúdo baixado offline na coleção de mídia de trans
 description: Saiba como usar o recurso Conteúdo baixado para rastrear o consumo de mídia quando um usuário está offline.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 98%
@@ -53,7 +53,7 @@ O recurso Conteúdo baixado é a versão offline (padrão) da API Media Collecti
 ### Códigos de resposta
 
 * 201 - Criado: Solicitação bem-sucedida; os dados são válidos e a sessão foi criada e será processada.
-* 400 - Solicitação incorreta; falha na validação do schema, todos os dados são descartados, nenhum dado de sessão será processado.
+* 400 - Solicitação incorreta; falha na validação do esquema, todos os dados são descartados, nenhum dado de sessão será processado.
 
 ## Integração com o Adobe Analytics {#integration-with-adobe-analtyics}
 

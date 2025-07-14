@@ -3,12 +3,12 @@ title: Reprodução de VOD com um capítulo
 description: Um exemplo de rastreamento de reprodução de VOD que contém um capítulo.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ A menos que seja especificado, as chamadas de rede desse cenário correspondem �
 
 ## Parâmetros {#parameters}
 
-Quando a reprodução do capítulo começar, uma chamada `Heartbeat Chapter Start` é enviada. Se o início do capítulo não coincidir com a marcação de 10 segundos, a chamada `Heartbeat Chapter Start` é atrasada em alguns segundos e é direcionada para o próximo intervalo de 10 segundos.
+Quando a reprodução do capítulo começar, uma chamada `Heartbeat Chapter Start` é enviada. Se o início do capítulo não coincidir com o temporizador de 10 segundos, a chamada `Heartbeat Chapter Start` é atrasada em alguns segundos e é direcionada para o próximo intervalo de 10 segundos.
 
 Quando isso ocorre, uma chamada `Content Heartbeat` é emitida no mesmo intervalo. É possível diferenciar os dois examinando o tipo de evento e o tipo de ativo:
 

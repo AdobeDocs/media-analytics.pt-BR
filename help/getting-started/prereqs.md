@@ -1,11 +1,11 @@
 ---
-title: Saiba mais sobre os pré-requisitos para a coleção de mídia de transmissão do Adobe
+title: Saiba mais sobre os pré-requisitos da coleção de mídia de streaming do Adobe
 description: Introdução à coleção de mídia de streaming. Saiba o que é necessário para a implementação do.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: "Media Analytics, System Requirements"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 64%
@@ -14,16 +14,16 @@ ht-degree: 64%
 
 # Pré-requisitos {#prerequisites}
 
-Antes de começar a implementar a Coleção de mídia de transmissão do Adobe, conclua as seguintes tarefas:
+Antes de começar a implementar a Coleção de mídia de streaming do Adobe, conclua as seguintes tarefas:
 
 1. **Revise a visão geral da Coleção de Mídia de Streaming**<br>
 Antes de começar a implementar a Coleção de Mídia de Streaming, revise a [Visão geral da Coleção de Mídia de Streaming](/help/media-overview.md) para verificar se ela atende às suas necessidades.
 
 1. **Confirme seu modelo de preços**<br>
-O modelo de preços atual do complemento Adobe Streaming Media Collection baseia-se em transmissões de vídeo. Se necessário, entre em contato com o representante de vendas ou com a equipe de conta do Adobe, pois o complemento é vendido separadamente para Adobe Analytics e Adobe Experience Platform.
+O modelo de preços atual do complemento Adobe Streaming Media Collection é baseado em transmissões de vídeo. Se necessário, entre em contato com o representante de vendas ou com a equipe de conta da Adobe, pois o complemento é vendido separadamente para a Adobe Analytics e a Adobe Experience Platform.
 
 1. **Habilitar Relatórios do Adobe Analytics**<br>
-Para permitir relatórios no Analytics ou Customer Journey Analytics e exibir os dados de conteúdo e anúncios coletados, é necessário habilitar os relatórios. Consulte [Ativação de relatórios de mídia](/help/reporting/media-reports-enable.md).
+Para permitir relatórios no Analytics ou Customer Journey Analytics e visualizar os dados de conteúdo e anúncios coletados, é necessário habilitar os relatórios. Consulte [Ativação de relatórios de mídia](/help/reporting/media-reports-enable.md).
 
 1. **Implementar o Adobe Experience Platform Identity Service na Experience Cloud**
 

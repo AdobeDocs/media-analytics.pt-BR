@@ -2,9 +2,9 @@
 title: Saiba como rastrear a reprodução principal usando o JavaScript v3.x
 description: Saiba como implementar o rastreamento principal usando o SDK de mídia em um navegador que utiliza aplicativos JavaScript 3.x.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 87%
@@ -128,7 +128,7 @@ Esta documentação abrange o rastreamento na versão 3.x do SDK.
 
 1. **Atualizar valor do indicador de reprodução**
 
-   Quando o indicador de reprodução de mídia for alterado, notifique o SDK chamando a API `mediaUpdatePlayhead`. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor poderá ser especificado como o número de segundos desde a meia-noite UTC daquele dia.
+   Quando o indicador de reprodução de mídia for alterado, notifique a SDK chamando a API `mediaUpdatePlayhead`. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor poderá ser especificado como o número de segundos desde a meia-noite UTC daquele dia.
 
    ```
    tracker.updatePlayhead(position)

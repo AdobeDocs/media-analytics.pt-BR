@@ -2,9 +2,9 @@
 title: Saiba quais são as perguntas frequentes sobre o fim do suporte ao SDK do Media Analytics
 description: Este tópico inclui perguntas frequentes sobre o fim do suporte para SDKs do Media Analytics.
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 76%
@@ -13,14 +13,14 @@ ht-degree: 76%
 
 # Perguntas frequentes sobre o fim do suporte ao SDK móvel do Media Analytics
 
-Com o fim do suporte à versão 4 dos SDKs móveis em 31 de agosto de 2021, o Adobe também encerrou o suporte aos SDKs móveis do Media Analytics para iOS e Android. (Isso não inclui o Media Analytics SDK para plataformas da Web (JS) e OTT, como Chromecast e Roku, que ainda são compatíveis.)
+Com o fim do suporte à versão 4 dos SDKs móveis em 31 de agosto de 2021, a Adobe também encerrou o suporte aos SDKs móveis do Media Analytics para iOS e Android. (Isso não inclui o Media Analytics SDK para plataformas da Web (JS) e OTT, como Chromecast e Roku, que ainda são compatíveis.)
 
-Isso significa que o Adobe não fornece mais correções, atualizações relacionadas ao SO ou suporte para o Media Analytics Mobile SDK. Ao migrar para os novos SDKs do Experience Platform, esteja ciente de que as [extensões do Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) devem ser implementadas para habilitar o Adobe Streaming Media Collection.
+Isso significa que o Adobe não fornece mais correções, atualizações relacionadas ao SO ou suporte para o Media Analytics Mobile SDK. Ao migrar para os novos SDKs do Experience Platform, esteja ciente de que as [extensões do Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) devem ser implementadas para habilitar a Coleção de Mídia de Streaming do Adobe.
 
 
 ## 5 principais itens que você deve conhecer
 
-1. A partir de 31 de agosto de 2021, não haverá mais suporte para SDKs v4 móveis. Você deve migrar para os SDKs móveis da Adobe Experience Platform (AEP) para iOS e Android.
+1. A partir de 31 de agosto de 2021, não haverá mais suporte para SDKs v4 móveis. Você deve migrar para os SDKs móveis do Adobe Experience Platform (AEP) para iOS e Android.
 
 1. A implementação do Analytics para Streaming de Mídia exige o SDK móvel da AEP e o uso das extensões do Analytics e do Media Analytics. A partir de 1º de setembro de 2021, você deverá usar os novos SDKs móveis e extensões da AEP.  As extensões do Media Analytics são configuradas usando Tags da Adobe (coleção de dados). Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
 
@@ -28,7 +28,7 @@ Isso significa que o Adobe não fornece mais correções, atualizações relacio
 
 1. Os SDKs do Roku e Chromecast permanecem disponíveis os clientes do Analytics para Streaming de Mídia. Os SDKs do Roku e Chromecast continuarão recebendo suporte e sendo aprimorados como SDKs independentes. Se você utiliza o SDK JS do Media Analytics, poderá continuar a usar o SDK independente ou habilitar a extensão do Media Analytics usando a Coleção de dados da Adobe (antigo Adobe Launch).
 
-Caso tenha alguma dúvida, entre em contato com a equipe de conta do Adobe.
+Caso tenha alguma dúvida, entre em contato com a equipe de conta da Adobe.
 
 ## Perguntas frequentes
 

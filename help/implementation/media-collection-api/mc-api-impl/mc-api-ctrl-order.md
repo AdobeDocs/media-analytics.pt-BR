@@ -3,9 +3,9 @@ title: Controlar a ordem dos eventos
 description: Saiba mais sobre o controle da ordem dos eventos e como, em alguns casos, os eventos são reordenados com base no carimbo de data e hora fornecido no objeto playerTime.
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%

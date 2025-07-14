@@ -3,9 +3,9 @@ title: Explicação sobre a implementação de SDKs de mídia
 description: Saiba como configurar o Media SDK para rastreamento de mídia em seus aplicativos móveis, OTT e do navegador (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 94%
@@ -125,7 +125,7 @@ As implementações de rastreamento do Media Analytics geram dois tipos de chama
 
   O servidor de rastreamento do Analytics deve terminar com “`.sc.omtrdc.net`” ou ser um CNAME.
 
-* **&#x200B; Servidor do Media Analytics (Heartbeats)**
+* ** Servidor do Media Analytics (Heartbeats)**
 Este sempre tem o formato &quot;`[your_namespace].hb.omtrdc.net`&quot;. O valor &quot;`[your_namespace]`&quot; especifica sua empresa e é fornecido pela Adobe.
 
 O rastreamento de mídia funciona da mesma forma em todas as plataformas, desktops e dispositivos móveis. O rastreamento de áudio funciona atualmente em plataformas móveis. Para todas as chamadas de rastreamento, há algumas variáveis universais principais que precisam ser validadas:

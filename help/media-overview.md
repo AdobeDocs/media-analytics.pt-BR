@@ -1,22 +1,22 @@
 ---
-title: Visão geral da coleção de mídia de transmissão Adobe
-description: Use a Coleção de mídia de streaming para obter insights avançados de conteúdo, áudio e anúncios.
+title: Visão geral da coleção de streaming de mídia do Adobe
+description: Use a Coleção de mídia de transmissão para obter insight avançados para conteúdo, áudio e anúncios.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 65%
 
 ---
 
-# Visão geral da coleção de mídia de transmissão Adobe
+# Visão geral da coleção de streaming de mídia do Adobe
 
 ![Banner](./assets/media_analytics_banner.png)
 
-A Coleção de mídia de transmissão do Adobe fornece ferramentas eficientes de coleção, medição e personalização para streaming de conteúdo de mídia, como áudio, vídeo e anúncios para provedores de mídia de transmissão. Você pode combinar métricas de transmissão de mídia com recursos como Audience Analytics, Mobile ou Cross-Device Analytics.
+A Coleção de mídia de transmissão da Adobe fornece ferramentas eficientes de coleção, medição e personalização para streaming de conteúdo de mídia, como áudio, vídeo e anúncios para provedores de mídia de transmissão. Você pode combinar métricas de transmissão de mídia com recursos como Audience Analytics, Mobile ou Cross-Device Analytics.
 
 Os dados de mídia de transmissão se integram facilmente aos seguintes produtos da Adobe Experience Platform:
 
@@ -30,7 +30,7 @@ Os dados de mídia de transmissão se integram facilmente aos seguintes produtos
 
 >[!IMPORTANT]
 >
->Para implementar a coleção de mídia de transmissão, entre em contato com o representante de vendas de Adobe ou com a equipe de conta de Adobe para garantir que o complemento coleção de mídia de transmissão faça parte do seu portfólio de produtos.
+>Para implementar a Coleção de mídia de transmissão, entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para garantir que o complemento Coleção de mídia de transmissão faça parte do seu portfólio de produtos.
 
 ## Recursos principais
 
@@ -68,4 +68,4 @@ Após o término de uma sessão de reprodução, os dados de rastreamento calcul
 >Com as implementações do Customer Journey Analytics, os dados podem ser enviados para o Customer Journey Analytics usando o Experience Edge ou o Conector de dados do Analytics (ADC).
 
 
-Para obter informações detalhadas sobre os vários métodos de implementação, consulte [Implementar a coleção de mídia de transmissão para Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
+Para obter informações detalhadas sobre os vários métodos de implementação, consulte [Implementar a coleção de mídia de streaming para Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).

@@ -3,9 +3,9 @@ title: API da coleção de mídia de transmissão — ponto de acesso da solicit
 description: O que são os parâmetros de ponto de extremidade de solicitação de sessões da API Media Collection e as respostas?
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 90%

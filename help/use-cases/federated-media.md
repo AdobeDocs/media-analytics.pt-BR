@@ -3,9 +3,9 @@ title: Federated Media
 description: O serviço Federated Media fornece um sistema para o compartilhamento de dados de mídia de transmissão entre dois parceiros.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 61%
@@ -44,7 +44,7 @@ A Federated Media torna a medição de áudio e vídeo mais eficiente, simplific
 * **Contrato de transmissão de mídia:** O receptor e o remetente devem ter contratado o Adobe Analytics para fluxos de mídia antes de obter acesso aos dados de áudio e vídeo no Adobe Analytics. Entre em contato com a equipe de conta para obter mais detalhes.
 * **Adendo federado:** cada Remetente e Destinatário deve ter um adendo assinado em vigor com a Adobe para enviar ou receber dados. É necessário um adendo por cliente, e não um adendo por parceria. Entre em contato com a equipe de conta para obter mais detalhes.
 
-* **Implementação da Coleção de Mídia de Streaming:** o Remetente deve ter a Coleção de Mídia de Streaming implementada em todos os players que farão parte do conjunto de dados federado. Somente dados de mídia de transmissão estão disponíveis para federação. Para obter mais informações, consulte [visão geral da Coleção de mídia de streaming de Adobe](/help/media-overview.md).
+* **Implementação da Coleção de Mídia de Streaming:** o Remetente deve ter a Coleção de Mídia de Streaming implementada em todos os players que farão parte do conjunto de dados federado. Somente dados de mídia de transmissão estão disponíveis para federação. Para obter mais informações, consulte [Visão geral da coleção de streaming de mídia do Adobe](/help/media-overview.md).
 
 * **Contrato de consultoria da Adobe:** para a configuração inicial de regras federadas entre o destinatário e o remetente, é valioso trabalhar com os serviços de consultoria para analisar os dados e criar o contrato de compartilhamento de dados.
 
@@ -55,7 +55,7 @@ Para participar de Mídia Federada, baixe e conclua o formulário do [Contrato d
 ## Processo {#process}
 
 1. O Remetente e o Destinatário trabalham juntos para preencher o formulário do Contrato de regras de federação. O formulário do Contrato de regras de federação contém campos especiais para a equipe de engenharia e deve ser editado SOMENTE usando o Adobe Acrobat. [Baixe o Acrobat gratuitamente.](https://get.adobe.com/br/reader/)
-1. Os serviços de consultoria fornecem um arquivo de dados de exemplo para o Destinatário com dados reais dos players do remetente, para confirmar que regras corretas de compartilhamento de dados são definidas, desde que os arquivos de dados estejam disponíveis.
+1. Os serviços de consultoria fornecem um arquivo de dados de amostra para o Destinatário com dados reais dos players do remetente, para confirmar que regras corretas de compartilhamento de dados são definidas, desde que os arquivos de dados estejam disponíveis.
 1. O remetente e o destinatário garantem que o contrato de compartilhamento de dados atenda a todos os requisitos contratuais entre as duas partes.
 1. Os serviços de consultoria enviam o formulário preenchido para o Adobe Engineering para configurar as regras de compartilhamento de dados.
 1. Os dados são compartilhados com o conjunto de relatórios de desenvolvimento do Adobe Analytics ou com a sequência de dados do Adobe Experience Platform, onde o Destinatário verificará e validará os dados.

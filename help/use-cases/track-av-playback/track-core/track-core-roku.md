@@ -3,9 +3,9 @@ title: Saiba como rastrear a reprodução principal no Roku
 description: Saiba como implementar o rastreamento principal usando o SDK de mídia no Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 88%
@@ -150,7 +150,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
 1. **Atualizar valor do indicador de reprodução**
 
-   Quando o indicador de reprodução de mídia for alterado, notifique o SDK chamando a API `mediaUpdatePlayhead`. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor poderá ser especificado como o número de segundos desde a meia-noite UTC daquele dia.
+   Quando o indicador de reprodução de mídia for alterado, notifique a SDK chamando a API `mediaUpdatePlayhead`. <br /> Para vídeos sob demanda (VOD), o valor é especificado em segundos a partir do início do item de mídia. <br /> Para transmissões ao vivo, se o player não fornecer informações sobre a duração do conteúdo, o valor poderá ser especificado como o número de segundos desde a meia-noite UTC daquele dia.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)

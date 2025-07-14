@@ -1,10 +1,10 @@
 ---
 title: Atualização de vários estados do player de uma só vez
 description: Este tópico descreve o recurso Rastreamento de vários estados do player.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 7a512a81-a6d1-4d0c-a4fe-91e9b11419db
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%

@@ -3,9 +3,9 @@ title: Acesse links para baixar SDKs do Media Analytics
 description: Links de download de SDKs para plataformas disponíveis, incluindo Android, iOS, JavaScript, Chromecast e Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 81%
@@ -22,7 +22,7 @@ As tags da Adobe Experience Platform são a próxima geração de recursos de ge
 >[!NOTE]
 >
 >Para obter informações sobre como baixar SDKs herdadas, consulte [Herdados - Baixar SDKs](/help/legacy/legacy-download-sdks.md).<br>
->Para obter informações importantes sobre o fim do suporte, consulte [Perguntas frequentes sobre o fim do suporte](/help/additional-resources/end-of-support-faqs.md).
+>>Para obter informações importantes sobre o fim do suporte, consulte [Perguntas frequentes sobre o fim do suporte](/help/additional-resources/end-of-support-faqs.md).
 
 ## SDKs de mídia e bibliotecas móveis {#media-sdks-libraries}
 

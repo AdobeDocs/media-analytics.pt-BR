@@ -3,9 +3,9 @@ title: Reprodução de VOD com um capítulo ignorado
 description: Um exemplo de como rastrear o conteúdo de VOD no qual o usuário pulou um capítulo usando o SDK de mídia.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 85%
@@ -35,7 +35,7 @@ Esse cenário é o mesmo da [reprodução VOD com um capítulo](/help/use-cases/
 
 ## Parâmetros {#parameters}
 
-Os parâmetros usados durante a reprodução do capítulo são idênticos aos da [reprodução VOD com um capítulo](/help/use-cases/tracking-scenarios/vod-one-chapter.md), exceto que não há uma chamada de rede de capítulo concluído.
+Os parâmetros usados durante a reprodução do capítulo são idênticos aos da [reprodução do VOD com um capítulo](/help/use-cases/tracking-scenarios/vod-one-chapter.md), exceto que não há uma chamada de rede de capítulo concluído.
 
 ## Código de exemplo {#sample-code}
 
