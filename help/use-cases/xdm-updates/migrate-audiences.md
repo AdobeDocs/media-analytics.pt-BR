@@ -12,15 +12,15 @@ ht-degree: 2%
 
 # Migrar públicos-alvo para os novos campos de mídia de transmissão
 
-Este documento descreve como um público-alvo que usa campos do tipo de dados &quot;Mídia&quot; da Coleção de mídia de transmissão da Adobe deve ser migrado para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de relatórios de mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).&quot;
+Este documento descreve como um público-alvo que usa campos do tipo de dados &quot;Mídia&quot; da Coleção de mídia de transmissão da Adobe deve ser migrado para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de relatórios de mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details).&quot;
 
 ## Migrar um público-alvo
 
-Para migrar um público do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de relatórios de mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite o público e, em cada regra, substitua o campo antigo do tipo de dados obsoleto pelo novo campo correspondente do novo tipo de dados:
+Para migrar um público do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de relatórios de mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite o público e, em cada regra, substitua o campo antigo do tipo de dados obsoleto pelo novo campo correspondente do novo tipo de dados:
 
 1. Localize regras que contenham campos do tipo de dados &quot;Mídia&quot; obsoleto. Todos os campos começam com o caminho `media.mediaTimed`.
 
-1. Duplique essas regras usando campos do novo tipo de dados &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
+1. Duplique essas regras usando campos do novo tipo de dados &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
 
 1. Mantenha ambas as regras em vigor até validar que os públicos-alvo estão funcionando como esperado.
 
@@ -28,7 +28,7 @@ Para migrar um público do tipo de dados antigo chamado &quot;Mídia&quot; para 
 
 1. Verifique se os públicos-alvo ainda estão funcionando como esperado.
 
-Consulte o parâmetro [ID de Conteúdo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) na página [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
+Consulte o parâmetro [ID de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) na página [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
 
 ![Caminhos antigos e novos do campo XDM](assets/field-paths-updated.jpeg)
 
@@ -56,7 +56,7 @@ Para facilitar o cumprimento das diretrizes de migração, considere o exemplo a
 
    ![Editar público-alvo](assets/audience-edit5.jpeg)
 
-1. Consulte a página [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters) para mapear entre os campos antigos. O caminho de campo antigo pode ser encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo pode ser encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;. Por exemplo, para o parâmetro [Inícios da mídia](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), o correspondente para `media.mediaTimed.impressions.value` é `mediaReporting.sessionDetails.isViewed`.
+1. Consulte a página [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters) para mapear entre os campos antigos. O caminho de campo antigo pode ser encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo pode ser encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;. Por exemplo, para o parâmetro [Inícios da mídia](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), o correspondente para `media.mediaTimed.impressions.value` é `mediaReporting.sessionDetails.isViewed`.
 
    ![Caminho XDM atualizado](assets/updated-xdm-path.jpeg)
 
