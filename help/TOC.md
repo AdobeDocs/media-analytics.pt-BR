@@ -5,10 +5,10 @@ user-guide-title: Coleção de mídia de streaming
 breadcrumb-title: Guia da Coleção de mídia de transmissão
 user-guide-description: Implemente mídias de transmissão. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 96%
+source-wordcount: '922'
+ht-degree: 81%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 # Coleção de mídia de streaming {#using}
 
 + [Guia da Coleção de mídia de transmissão](media-overview.md)
-+ Notas de versão {#release-notes}
++ Notas de versão  {#release-notes}
    + [Notas de versão da coleção de mídia de streaming](additional-resources/release-notes.md)
 + Introdução {#getting-started}
    + [Pré-requisitos ](getting-started/prereqs.md)
@@ -25,7 +25,7 @@ ht-degree: 96%
    + [SDKs, bibliotecas e extensões](getting-started/download-sdks.md)
    + Fim do suporte {#end-of-support}
       + [Fim do suporte ao SDK móvel do Media Analytics](additional-resources/end-of-support-faqs.md)
-      + Herdados - SDK de mídia independente para a migração do Launch {#sdk-to-launch} 
+      + Herdados - Media SDK independente para a migração do Launch {#sdk-to-launch}
          + [Visão geral](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -33,14 +33,14 @@ ht-degree: 96%
 + Implementação {#implementation}
    + [Visão geral da implementação](implementation/overview.md)
    + Implementações do Edge (recomendado) {#edge-recommended}
-      + [Pré-requisitos ](/help/implementation/edge/prerequisites-edge.md)
-      + SDKs/Extensão de borda de mídia {#media-edge-sdk}
+      + [Pré-requisitos](/help/implementation/edge/prerequisites-edge.md)
+      + SDKs do Media Edge / Extensão {#media-edge-sdk}
          + [Configuração de SDKs/extensão de borda de mídia](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de borda de mídia](/help/implementation/edge/implementation-edge-api.md)
    + Implementações somente do Adobe Analytics {#analytics-only}
-      + [Pré-requisitos ](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+      + [Pré-requisitos](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + SDKs de mídia / Extensão {#media-sdk}
          + [SDK da Web JavaScript](implementation/media-sdk/setup/web-implementation.md)
          + [Extensão do Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
@@ -48,7 +48,7 @@ ht-degree: 96%
          + SDKs OTT {#ott-setup}
             + [Instalar o SDK do Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Instalar o SDK do Roku](implementation/media-sdk/setup/set-up-roku.md)
-      + APIs de coleção de mídia - Implementação {#streaming-media-apis}
+      + APIs da coleção de mídia - Implementação {#streaming-media-apis}
          + [Coleção de mídia](implementation/media-collection-api/mc-api-overview.md)
          + [Início rápido da API](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
          + [Solicitação de sessões](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -103,6 +103,13 @@ ht-degree: 96%
    + [Federated Media](use-cases/federated-media.md)
    + [Lidar com interrupções do aplicativo durante a reprodução](use-cases/cookbook/app-interrupts.md)
    + [Atribuição de fluxo de mídia](use-cases/media-analytics-cookbook/media-dimensions.md)
+   + Migrar campos XDM para o conector de origem do Analytics {#xdm-updates}
+      + [Atualizar conector de origem para novos campos de mídia de transmissão XDM](/help/use-cases/xdm-updates/updated-xdm-fields.md)
+      + [Migrar públicos](/help/use-cases/xdm-updates/migrate-audiences.md)
+      + [Migrar configuração do CJA](/help/use-cases/xdm-updates/migrate-cja-setup.md)
+      + [Migrar preparação de dados](/help/use-cases/xdm-updates/migrate-dataprep.md)
+      + [Migrar perfis](/help/use-cases/xdm-updates/migrate-profiles.md)
+      + [Mapeamento de parâmetros de mídia](/help/use-cases/xdm-updates/parameters-mapping.md)
    + [Resumo de sessões inativas](use-cases/cookbook/resuming-inactive.md)
    + [Rastreamento do Roku no SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
    + [Lidar com lacunas entre anúncios](use-cases/cookbook/fix-ad-play-ad.md)
@@ -117,12 +124,12 @@ ht-degree: 96%
       + [OTT e Audience Manager ](use-cases/analytics-with-ott/ott-am.md)
       + [OTT e Experience Cloud ](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Rastreamento {#tracking}
-   + [Visão geral ](use-cases/track-av-playback/track-core-overview.md)
+   + [Visão geral](use-cases/track-av-playback/track-core-overview.md)
    + Rastrear a reprodução de streaming de mídia principal {#track-core}
       + [Rastrear a reprodução principal no JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
       + [Rastreamento da reprodução principal no Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
       + [Rastreamento da reprodução principal no Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
-   + Monitoramento de buffering {#track-buffering}
+   + Rastrear buffering {#track-buffering}
       + [Rastrear buffering no JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
       + [Rastrear buffering no Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
       + [Rastrear buffering no Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
@@ -137,7 +144,7 @@ ht-degree: 96%
       + [Implementar metadados padrão no Roku ](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
       + [Parâmetros de metadados padrão — Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
    + Rastreamento de anúncios {#track-ads}
-      + [Visão geral ](use-cases/track-ads/track-ads-overview.md)
+      + [Visão geral](use-cases/track-ads/track-ads-overview.md)
       + [Rastrear anúncios no JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
       + [Rastrear anúncios no Chromecast](use-cases/track-ads/track-ads-chromecast.md)
       + [Rastrear anúncios no Roku](use-cases/track-ads/track-ads-roku.md)
@@ -145,17 +152,17 @@ ht-degree: 96%
          + [Implementar metadados de anúncio padrão no JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [Implementar Metadados de publicidade padrão no Roku ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Rastrear capítulos e segmentos {#track-chapters}
-      + [Visão geral ](use-cases/track-chapters/track-chapters-overview.md)
+      + [Visão geral](use-cases/track-chapters/track-chapters-overview.md)
       + [Rastrear capítulos e segmentos no JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
       + [Rastrear capítulos e segmentos no Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
       + [Rastrear capítulos e segmentos no Roku](use-cases/track-chapters/track-chapters-roku.md)
    + Rastrear a qualidade da experiência {#track-qos}
-      + [Visão geral ](use-cases/track-qos/track-qos-overview.md)
+      + [Visão geral](use-cases/track-qos/track-qos-overview.md)
       + [Rastrear a qualidade da experiência no JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
       + [Rastrear a qualidade da experiência no Chromecast](use-cases/track-qos/track-qos-chromecast.md)
       + [Rastrear a qualidade da experiência no Roku](use-cases/track-qos/track-qos-roku.md)
    + Rastrear erros {#track-errors}
-      + [Visão geral ](use-cases/track-errors/track-errors-overview.md)
+      + [Visão geral](use-cases/track-errors/track-errors-overview.md)
       + [Rastrear erros no JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
       + [Rastrear erros no Chromecast](use-cases/track-errors/track-errors-chromecast.md)
       + [Rastrear erros no Roku](use-cases/track-errors/track-errors-roku.md)
@@ -217,7 +224,7 @@ ht-degree: 96%
             + [Rastrear anúncios no JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
             + [Implementar Metadados de publicidade padrão no Android ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
             + [Implementar Metadados de publicidade padrão no iOS ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-            + Implementar Metadados de anúncio padrão no JavaScript {#impl-std-ad-md-js}
+            + Implementar metadados de anúncio padrão no JavaScript {#impl-std-ad-md-js}
                + [Implementar metadados de anúncio padrão no JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
       + Rastrear capítulos e segmentos {#track-chapters}
          + [Rastrear capítulos e segmentos no Android](use-cases/track-chapters/track-chapters-android.md)
