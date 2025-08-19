@@ -5,9 +5,9 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 94%
 
 ---
@@ -19,7 +19,7 @@ Após baixar o SDK de mídia para seu aplicativo de vídeo ou player, siga as in
 
 ## Diretrizes gerais de implementação {#general-implementation-guidelines}
 
-Há três componentes principais do SDK usados no rastreamento com a coleção de mídia de transmissão:
+Há três componentes principais do SDK usados no rastreamento com os serviços de mídia de transmissão:
 * Configuração do Heartbeat de mídia - O `MediaHeartbeatConfig` contém as configurações básicas para relatórios.
 * Delegar Heartbeat de mídia - O `MediaHeartbeatDelegate` controla o tempo de reprodução e o objeto QoS.
 * Heartbeat de mídia - O `MediaHeartbeat` é a biblioteca principal que contém membros e métodos.
@@ -125,7 +125,7 @@ As implementações de rastreamento do Media Analytics geram dois tipos de chama
 
   O servidor de rastreamento do Analytics deve terminar com “`.sc.omtrdc.net`” ou ser um CNAME.
 
-* **&#x200B; Servidor do Media Analytics (Heartbeats)**
+* ** Servidor do Media Analytics (Heartbeats)**
 Este sempre tem o formato &quot;`[your_namespace].hb.omtrdc.net`&quot;. O valor &quot;`[your_namespace]`&quot; especifica sua empresa e é fornecido pela Adobe.
 
 O rastreamento de mídia funciona da mesma forma em todas as plataformas, desktops e dispositivos móveis. O rastreamento de áudio funciona atualmente em plataformas móveis. Para todas as chamadas de rastreamento, há algumas variáveis universais principais que precisam ser validadas:

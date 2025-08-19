@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 94%
+source-wordcount: '675'
+ht-degree: 92%
 
 ---
 
@@ -16,9 +16,10 @@ ht-degree: 94%
 
 ## Pré-requisitos  {#roku-prerequisites}
 
-* **Obter parâmetros de configuração válidos para a Coleção de Mídia de Streaming**
+* **Obter parâmetros de configuração válidos para os serviços de streaming de mídia do Adobe**
 
-  Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta da Coleção de mídia de transmissão da Adobe.
+  Esses parâmetros podem ser obtidos de um representante da Adobe após a configuração da sua conta do complemento Adobe Streaming Media Collection ou do complemento Adobe Analytics para streaming de mídia.
+
 * **Inclua as seguintes APIs em seu reprodutor de mídia**
 
    * _Uma API para assinar eventos do player_ - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
@@ -171,4 +172,4 @@ O SDK 2.x do Roku para soluções da Experience Cloud permite avaliar aplicativo
    | `processMediaMessages` | Responsável por transmitir os eventos de mídia ao SDK para serem manipulados. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=pt-BR) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

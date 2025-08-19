@@ -1,19 +1,19 @@
 ---
-title: Como configurar um SDK móvel usando tags para mídia de transmissão
-description: Saiba como implementar a mídia de transmissão da Adobe para aplicativos móveis.
+title: Como configurar uma SDK móvel usando tags para serviços de mídia de transmissão
+description: Saiba como implementar os serviços de mídia de transmissão da Adobe para aplicativos móveis.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 82%
+source-wordcount: '199'
+ht-degree: 70%
 
 ---
 
 # Instalar SDKs móveis {#install-mobile-sdks}
 
-Para implementar a Coleção de mídia de transmissão para aplicativos móveis no Android ou no iOS, instale e configure o seguinte:
+Para implementar os serviços de mídia de transmissão da Adobe para aplicativos móveis no Android ou iOS, instale e configure o seguinte:
 
 * **SDK móvel da Adobe Experience Platform**
 

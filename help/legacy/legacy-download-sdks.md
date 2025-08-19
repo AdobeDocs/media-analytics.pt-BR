@@ -4,10 +4,10 @@ description: Links para downloads de SDK legados para plataformas disponíveis, 
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 73%
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ Para obter informações sobre como baixar SDKs **atuais** consulte [Baixar SDKs
 
 Para obter informações importantes sobre o fim do suporte, consulte [Perguntas frequentes sobre o fim do suporte](/help/additional-resources/end-of-support-faqs.md).
 
-## Mídia de transmissão e a extensão de análise de mídia da Adobe
+## Mídia de streaming e a extensão do Adobe Media Analytics
 
 A extensão da análise de mídia da Adobe adiciona o principal SDK de mídia JavaScript (SDK 2.x de mídia) para áudio e vídeo. Esta extensão fornece a funcionalidade de adicionar a instância do rastreador `MediaHeartbeat` a um site ou projeto de Coleção de dados.
 
@@ -27,7 +27,7 @@ A coleção de dados da Adobe com a extensão de análise de mídia exige o segu
 * Você deve ser um cliente da Adobe Experience Cloud.
 * Você deve implantar o código incorporado de Coleção de dados ou DTM nas páginas da Web.
 * Você deve configurar a [Extensão do Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=pt-BR).
-* Você deve configurar a [Extensão Adobe Media Analytics para áudio e vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=pt-BR).
+* Você deve configurar a [Extensão Adobe Media Analytics para áudio e vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * Você deve configurar a [Extensão de ID da Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=pt-BR).
 
 ## Baixe os Media SDKs 2.x {#download-2x-sdks}

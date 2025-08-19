@@ -4,7 +4,7 @@ description: Saiba como vincular ações do aplicativo aos dados de rastreamento
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 88%
@@ -23,7 +23,7 @@ Para ativar esse recurso para um relatório específico, reative a configuraçã
 
 >[!NOTE]
 >
->As métricas de mídia _não_ estão disponíveis para uso fora do rastreamento de mídia porque a maioria delas é calculada pela Coleção de mídia de streaming com base em eventos de heartbeat. Além disso, é importante que as métricas de mídia não sejam infladas por implementações diferentes.
+>As métricas de mídia _não_ estão disponíveis para uso fora do rastreamento de mídia porque a maioria delas é calculada pelos serviços de mídia de streaming com base em eventos de heartbeat. Além disso, é importante que as métricas de mídia não sejam infladas por implementações diferentes.
 
 ## Usar a atribuição de fluxo de mídia
 

@@ -1,19 +1,19 @@
 ---
 title: Saiba mais sobre dispositivos e plataformas compatíveis
-description: Saiba mais sobre os principais dispositivos, como iOS, Android, dispositivos OTT e navegadores JavaScript compatíveis com a Coleção de mídia de streaming.
+description: Saiba mais sobre os principais dispositivos, como iOS, Android, dispositivos OTT e navegadores JavaScript compatíveis com os serviços de mídia de transmissão da Adobe.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 77%
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
 # Dispositivos e plataformas compatíveis {#devices-supported}
 
-A Coleção de mídia de streaming do Adobe é compatível com todos os principais dispositivos, incluindo:
+Os serviços de streaming de mídia da Adobe são compatíveis com todos os principais dispositivos, incluindo:
 
 * Smartphones e tablets iOS e Android
 * Dispositivos OTT para Roku, Fire TV e Android TV
@@ -21,7 +21,7 @@ A Coleção de mídia de streaming do Adobe é compatível com todos os principa
 
 Os SDKs são atualizados regularmente quando novas versões de dispositivos são lançadas, e você pode usá-los para integrar aos reprodutores de mídia nativos de cada plataforma individual ou qualquer outro reprodutor de mídia disponível.
 
-Para dispositivos que não são compatíveis com o SDK ou em situações em que pode ser necessário personalizar a implementação, é possível usar a API de coleção de mídia ou a API de borda de mídia. Essas APIs permitem fazer chamadas RESTful API diretamente de um dispositivo para o back-end da coleção de mídia de streaming.
+Para dispositivos que não são compatíveis com o SDK ou em situações em que pode ser necessário personalizar a implementação, é possível usar a API de coleção de mídia ou a API de borda de mídia. Essas APIs permitem fazer chamadas RESTful API diretamente de um dispositivo para o back-end dos serviços de streaming de mídia da Adobe.
 
 A tabela abaixo lista os dispositivos compatíveis no momento. Se um dispositivo não estiver listado, entre em contato com o Atendimento ao cliente ou com o consultor de soluções para saber o status desse dispositivo.
 

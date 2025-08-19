@@ -1,13 +1,13 @@
 ---
 title: O que é o Adobe Primetime?
-description: Saiba mais sobre a solução Adobe Primetime e como ela ajuda a monetizar a transmissão de mídia.
+description: Saiba mais sobre a solução Adobe Primetime e como ela ajuda a monetizar os serviços de streaming de mídia.
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 82%
+source-wordcount: '255'
+ht-degree: 71%
 
 ---
 

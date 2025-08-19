@@ -1,24 +1,25 @@
 ---
-title: Migrar uma implementação do conector de origem do Analytics para campos atualizados de mídia de transmissão XDM
+title: Atualizar uma implementação do conector de origem do Analytics para novos campos XDM para serviços de mídia de transmissão
 description: Saiba mais sobre como migrar uma implementação do conector de origem do Analytics para campos atualizados de mídia de transmissão XDM
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+exl-id: d239b203-71ce-4307-884f-9d11cc623d04
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Atualizar uma implementação do conector de origem do Analytics para novos campos XDM para mídia de streaming
+# Atualizar uma implementação do conector de origem do Analytics para novos campos XDM para serviços de mídia de transmissão
 
 >[!NOTE]
 >
->Estas informações são destinadas às organizações que estão usando o [conector de origem do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics) para trazer dados de mídia de streaming do Adobe Analytics para a Adobe Experience Platform para uso com relatórios do Customer Journey Analytics ou qualquer outro serviço da Platform.
+>Estas informações são destinadas às organizações que estão usando o [conector de origem do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics) para trazer dados de streaming de mídia do Adobe Analytics para a Adobe Experience Platform para uso com relatórios do Customer Journey Analytics ou qualquer outro serviço da Platform.
 >
 >As alterações não afetam o Adobe Analytics como um aplicativo independente, incluindo a coleta de dados, o processamento e os relatórios. Ferramentas como Feeds de dados e Regras de processamento não são afetadas, portanto, não são necessárias atualizações na implementação do Analytics.
 
-Uma nova implementação da Coleta de dados do Adobe (conector de origem do Analytics) para o serviço de Mídia de streaming agora está disponível e migra de um conjunto de campos XDM para outro.
+Uma nova implementação da Coleta de dados do Adobe (conector de origem do Analytics) para o serviço de mídia de transmissão agora está disponível e migra de um conjunto de campos XDM para outro.
 
 ## Novo caminho do campo XDM
 
@@ -26,13 +27,13 @@ Como parte dessa migração, o caminho do campo XDM `mediaReporting` foi adicion
 
 ## Substituição do antigo caminho do campo XDM
 
-Todos os fluxos de Coleta de dados do Adobe (conector de origem do Analytics) que transferem dados de mídia de streaming do Adobe Analytics para o Adobe Experience Platform estão enviando dados no momento no novo caminho de campo XDM `mediaReporting` e no antigo caminho de campo XDM `media.mediaTimed`. Ambos os caminhos de campo estarão disponíveis por três meses, até o final de outubro de 2025. Após outubro, os campos `media.mediaTimed` serão totalmente descontinuados, e os dados assimilados após outubro incluirão apenas `mediaReporting`. Após a desativação, os campos `media.mediaTimed` não estarão mais visíveis na interface do esquema do Adobe Experience Platform e a assimilação de dados nesses campos será interrompida. Consequentemente, esses campos não estarão mais disponíveis para uso em nenhum serviço do Adobe Experience Platform.
+Todos os fluxos de Coleta de dados do Adobe (conector de origem do Analytics) que transferem dados de mídia de transmissão do Adobe Analytics para o Adobe Experience Platform estão enviando dados no momento no novo caminho do campo XDM `mediaReporting` e no caminho do campo XDM `media.mediaTimed` antigo. Ambos os caminhos de campo estarão disponíveis por três meses, até o final de outubro de 2025. Após outubro, os campos `media.mediaTimed` serão totalmente descontinuados, e os dados assimilados após outubro incluirão apenas `mediaReporting`. Após a desativação, os campos `media.mediaTimed` não estarão mais visíveis na interface do esquema do Adobe Experience Platform e a assimilação de dados nesses campos será interrompida. Consequentemente, esses campos não estarão mais disponíveis para uso em nenhum serviço do Adobe Experience Platform.
 
 Os dados assimilados antes dessa data permanecerão disponíveis para relatório.
 
 ## Diferenças adicionais com o novo caminho do campo XDM
 
-Com a nova implementação do conector de origem do Adobe para mídia de streaming, chamadas keep-alive do Adobe Analytics agora são assimiladas no Adobe Experience Platform.
+Com a nova implementação do conector de origem do Adobe para mídia de transmissão, as chamadas keep-alive do Adobe Analytics agora são assimiladas no Adobe Experience Platform.
 
 Anteriormente, essas chamadas não eram refletidas nos aplicativos da Platform, como o Customer Journey Analytics. Como resultado, sua organização pode observar as seguintes diferenças nos relatórios:
 
@@ -58,7 +59,7 @@ Há duas maneiras de migrar os relatórios do CJA:
 
   Para exibir uma lista de mapeamentos, consulte [Mapeamento de parâmetros do Media Analytics para Adobe Experience Platform e Customer Journey Analytics](/help/use-cases/xdm-updates/parameters-mapping.md).
 
-* **Se os dados históricos não forem obrigatórios**: é suficiente usar o Caminho do Campo XDM do Relatório no momento do relatório. Para obter mais informações, consulte [Migrar Customer Journey Analytics para usar os novos campos de Mídia de Streaming](/help/use-cases/xdm-updates/migrate-cja-setup.md).
+* **Se os dados históricos não forem obrigatórios**: é suficiente usar o Caminho do Campo XDM do Relatório no momento do relatório. Para obter mais informações, consulte [Migrar Customer Journey Analytics para usar os novos campos de mídia de streaming](/help/use-cases/xdm-updates/migrate-cja-setup.md).
 
 ### Real-Time CDP
 
@@ -66,7 +67,7 @@ Todos os públicos e perfis devem se basear em `mediaReporting`. Para obter mais
 
 ### Fluxo de dados e coleta de dados
 
-Configurações dinâmicas e mapeamento de dados devem usar `mediaReporting`. Para obter mais informações, consulte [Migrar preparação de dados de campos personalizados para os novos campos de mídia de streaming](/help/use-cases/xdm-updates/migrate-dataprep.md).
+Configurações dinâmicas e mapeamento de dados devem usar `mediaReporting`. Para obter mais informações, consulte [Migrar Preparo de Dados de campos personalizados para os novos campos de mídia de streaming](/help/use-cases/xdm-updates/migrate-dataprep.md).
 
 ### Outros serviços que devem ser migrados
 
@@ -87,4 +88,3 @@ Esteja ciente de que qualquer outro fluxo que dependa dos campos `media.mediaTim
 Todos os clientes que usam a Coleta de dados do Adobe para streaming de mídia devem concluir suas migrações dentro do período de transição designado.
 
 Se tiver dúvidas ou precisar de suporte, entre em contato com a equipe de suporte da Adobe.
-

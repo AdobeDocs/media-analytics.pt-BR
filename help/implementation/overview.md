@@ -1,24 +1,26 @@
 ---
-title: Implementar a coleção de mídia de transmissão
-description: Saiba mais sobre os caminhos de implementação para a coleção de mídia de transmissão.
+title: Implementar serviços de mídia de transmissão para Adobe Analytics ou Customer Journey Analytics
+description: Saiba mais sobre os caminhos de implementação para os serviços de streaming de mídia do Adobe.
 uuid: null
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 69%
+source-wordcount: '484'
+ht-degree: 65%
 
 ---
 
-# Implementar a coleção de mídia de transmissão
+# Implementar serviços de mídia de transmissão para Adobe Analytics ou Customer Journey Analytics
 
-Há várias maneiras de implementar a Coleção de mídia de streaming do Adobe. Para obter uma comparação detalhada dos dispositivos e plataformas compatíveis com os métodos de implementação descritos nesta página, consulte [Dispositivos e plataformas compatíveis](/help/getting-started/supported-devices.md).
+Há várias maneiras de implementar os serviços de streaming de mídia da Adobe. Para obter uma comparação detalhada dos dispositivos e plataformas compatíveis com os métodos de implementação descritos nesta página, consulte [Dispositivos e plataformas compatíveis](/help/getting-started/supported-devices.md).
 
 ## Métodos de implementação do Edge
 
-Recomendamos usar o Edge ao implementar a Coleção de mídia de transmissão para todos os novos clientes do Adobe Analytics ou do Customer Journey Analytics.
+Recomendamos usar o Edge ao implementar serviços de mídia de transmissão para todos os novos clientes da Adobe Analytics ou da Customer Journey Analytics.
+
+Os métodos de implementação do Edge usam o complemento Coleção de mídia de streaming.
 
 * **Media para Edge Network SDK / Extension:** Coleta dados de dispositivos da Web, iOS e Android ou Roku e os envia para a Edge Network. Os dados poderão então ser enviados para o Customer Journey Analytics ou Adobe Analytics.
 
@@ -35,6 +37,8 @@ Recomendamos usar o Edge ao implementar a Coleção de mídia de transmissão pa
 Os métodos de implementação do Edge descritos acima são recomendados para Customer Journey Analytics e Adobe Analytics, especialmente para novas implementações.
 
 Além dos métodos de implementação do Edge, outros métodos de implementação estão disponíveis. Esses métodos de implementação foram projetados para uso com o Adobe Analytics. No entanto, clientes com qualquer um dos métodos de implementação a seguir ainda podem disponibilizar dados no Customer Journey Analytics, criando uma [Conexão de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR).
+
+Os métodos de implementação exclusivos do Adobe Analytics usam o complemento Adobe Analytics para mídia de streaming.
 
 * **Extensão de mídia com tags:** a extensão do Adobe Media Analytics para áudio e vídeo fornece a funcionalidade para adicionar a instância do rastreador de mídia a sites ou projetos que tenham tags habilitadas. Os dados são enviados para o Adobe Analytics.
 

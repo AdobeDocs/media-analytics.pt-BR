@@ -1,13 +1,13 @@
 ---
-title: Como rastrear o conteúdo baixado offline na coleção de mídia de transmissão
+title: Como rastrear o conteúdo baixado offline nos serviços de mídia de transmissão
 description: Saiba como usar o recurso Conteúdo baixado para rastrear o consumo de mídia quando um usuário está offline.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '695'
 ht-degree: 98%
 
 ---

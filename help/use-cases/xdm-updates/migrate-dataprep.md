@@ -3,20 +3,21 @@ title: Migrar Preparo de dados para campos personalizados para os novos campos d
 description: Saiba como migrar o tipo de dados Preparação de dados para campos personalizados para os novos campos de mídia de transmissão
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 4e8bc7ba60c681510cb570c43a0f8193d4b39e11
+exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
 
 ---
 
-# Migrar Preparo de dados para campos personalizados para os novos campos de Mídia de transmissão
+# Migrar Preparo de dados para campos personalizados para os novos campos de mídia de transmissão
 
-Este documento descreve o processo de migração do serviço de Preparo de dados que existe sobre os fluxos de coleta de dados do Adobe ativados para dados de coleta de mídia de transmissão do Adobe. A migração converte um mapeamento de Preparo de Dados do tipo de dados da Coleção de Mídia de Streaming do Adobe chamado &quot;Mídia&quot; para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
+Este documento descreve o processo de migração do serviço de Preparo de dados que existe sobre os fluxos de coleta de dados do Adobe ativados para dados de coleta de mídia de transmissão do Adobe. A migração converte um mapeamento de Preparo de Dados do tipo de dados da Coleção de Mídia de Streaming do Adobe chamado &quot;Mídia&quot; para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
 
 ## Migrar preparação de dados para campos personalizados
 
-Para migrar os mapeamentos de Preparo de dados do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite os mapeamentos de Preparo de Dados:
+Para migrar os mapeamentos de Preparo de dados do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite os mapeamentos de Preparo de Dados:
 
 >[!IMPORTANT]
 >
@@ -24,7 +25,7 @@ Para migrar os mapeamentos de Preparo de dados do tipo de dados antigo chamado &
 
 1. Na Adobe Experience Platform, na seção [!UICONTROL **Fontes**], vá para a guia [!UICONTROL **Fluxos de Dados**].
 
-1. Localize o fluxo de dados responsável pela importação de dados de mídia de transmissão do Adobe Analytics para o Adobe Experience Platform por meio da coleção de dados do Adobe.
+1. Localize o fluxo de dados responsável pela importação de dados de mídia de transmissão do Adobe Analytics para o Adobe Experience Platform por meio da Coleção de dados da Adobe.
 
 1. Selecione [!UICONTROL **Atualizar fluxo de dados**] para modificar a configuração do Preparo de dados substituindo cada mapeamento de origem personalizado que contenha um campo obsoleto pelo novo campo correspondente do novo objeto XDM.
 
@@ -34,7 +35,7 @@ Para migrar os mapeamentos de Preparo de dados do tipo de dados antigo chamado &
 
 1. Valide se os mapeamentos ainda estão funcionando como esperado.
 
-Consulte o parâmetro [ID de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) na página [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
+Consulte o parâmetro [ID de Conteúdo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) na página [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
 
 ## Exemplo
 
@@ -42,7 +43,7 @@ Para facilitar o cumprimento das diretrizes de migração, considere o exemplo d
 
 1. Na Adobe Experience Platform, na seção [!UICONTROL **Fontes**], vá para a guia [!UICONTROL **Fluxos de Dados**].
 
-1. Localize o fluxo de dados responsável pela importação de dados de mídia de transmissão do Adobe Analytics para o Adobe Experience Platform por meio da coleção de dados do Adobe.
+1. Localize o fluxo de dados responsável pela importação de dados de mídia de transmissão do Adobe Analytics para o Adobe Experience Platform por meio da Coleção de dados da Adobe.
 
 1. Selecione **[!UICONTROL Atualizar fluxo de dados]** para inserir a interface de edição conforme mostrado na imagem abaixo.
 
@@ -76,7 +77,7 @@ Para facilitar o cumprimento das diretrizes de migração, considere o exemplo d
 
 No exemplo acima, todos os tipos de dados envolvidos eram String, então a substituição de mapeamento era direta.
 
-Se o tipo de dados do campo de origem for diferente do tipo de dados do campo de destino, você precisará seguir as diretrizes do [Guia de solução de problemas de Preparo de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/troubleshooting-guide), [Manuseio de formatos de dados com Preparo de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/data-handling) e [Funções de mapeamento de Preparo de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/data-handling).
+Se o tipo de dados do campo de origem for diferente do tipo de dados do campo de destino, você precisará seguir as diretrizes do [Guia de solução de problemas de Preparo de Dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide), [Manuseio de formatos de dados com Preparo de Dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) e [Funções de mapeamento de Preparo de Dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling).
 
 Por exemplo, se o tipo de origem for uma string e o tipo de destino for um booleano, o Preparo de dados poderá analisar automaticamente o valor e converter o valor de origem em um booleano.
 
@@ -89,5 +90,3 @@ Mapeando com `media.mediaTimed` para um campo personalizado.
 Mapeando com `mediaReporting` para o mesmo campo personalizado:
 
 ![Fluxo de dados do AEP continuado](assets/aep-dataflow7.jpeg)
-
-

@@ -1,22 +1,22 @@
 ---
-title: Visão geral da coleção de streaming de mídia do Adobe
-description: Use a Coleção de mídia de transmissão para obter insight avançados para conteúdo, áudio e anúncios.
+title: Visão geral da mídia de transmissão do Adobe
+description: Use as soluções Adobe para mídia de transmissão para obter insight avançados para conteúdo, áudio e anúncios.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 65%
+source-wordcount: '598'
+ht-degree: 59%
 
 ---
 
-# Visão geral da coleção de streaming de mídia do Adobe
+# Visão geral dos serviços de streaming de mídia da Adobe
 
 ![Banner](./assets/media_analytics_banner.png)
 
-A Coleção de mídia de transmissão da Adobe fornece ferramentas eficientes de coleção, medição e personalização para streaming de conteúdo de mídia, como áudio, vídeo e anúncios para provedores de mídia de transmissão. Você pode combinar métricas de transmissão de mídia com recursos como Audience Analytics, Mobile ou Cross-Device Analytics.
+Os serviços de streaming de mídia da Adobe fornecem ferramentas eficientes de coleta, medição e personalização de conteúdo de streaming de mídia, como áudio, vídeo e anúncios para provedores de streaming de mídia. Você pode combinar métricas de transmissão de mídia com recursos como Audience Analytics, Mobile ou Cross-Device Analytics.
 
 Os dados de mídia de transmissão se integram facilmente aos seguintes produtos da Adobe Experience Platform:
 
@@ -30,21 +30,21 @@ Os dados de mídia de transmissão se integram facilmente aos seguintes produtos
 
 >[!IMPORTANT]
 >
->Para implementar a Coleção de mídia de transmissão, entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para garantir que o complemento Coleção de mídia de transmissão faça parte do seu portfólio de produtos.
+>Para implementar os serviços de mídia de transmissão, entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para garantir que o complemento Customer Journey Analytics Streaming Media Collection ou Adobe Analytics for Streaming Media Add-on faça parte do seu portfólio de produtos.
 
 ## Recursos principais
 
-Os benefícios da coleção de mídia de transmissão incluem monitoramento em tempo real, análise detalhada, insights acionáveis, oportunidades de monetização e muito mais.
+Os benefícios dos serviços de mídia de transmissão incluem monitoramento em tempo real, análise detalhada, insights acionáveis, oportunidades de monetização e muito mais.
 
 * **Análise em tempo real**: tome decisões acionáveis em tempo real, utilizando as principais métricas de desempenho, como inicializações de mídia, em vários canais.
 
-  Com a Coleção de mídia de streaming, você obtém detalhes precisos sobre duração, interrupções e inicializações quase em tempo real, o que permite avaliar e combinar métricas de vídeo e áudio. Esses insights permitem entender os hábitos de visualização e acompanhamento de seus clientes e aumentar o engajamento com recomendações altamente personalizadas.
+  Com os serviços de mídia de transmissão, você obtém detalhes precisos sobre duração, interrupções e inicializações quase em tempo real, o que permite avaliar e combinar métricas de vídeo e áudio. Esses insights permitem entender os hábitos de visualização e acompanhamento de seus clientes e aumentar o engajamento com recomendações altamente personalizadas.
 
 * **Promover o engajamento**: envolva totalmente os usuários com menos eventos de buffer e entenda onde e quando os anúncios devem ser exibidos no conteúdo para fornecer uma experiência fluida e menos intrusiva, o que resulta no retorno de usuários.
 
 * **Visão integral**: combine vários pontos de dados em todos os distribuidores de conteúdo para obter uma visão completa de todas as atividades de mídia. Além disso, meça o engajamento e as visualizações/acompanhamentos em todos os canais possíveis.
 
-  A Coleção de mídia de transmissão permite rastrear a jornada completa do cliente em seu site e aplicativos de transmissão para visualizar o caminho e os interesses do cliente, além de fornecer recomendações aprimoradas e personalizar as experiências do cliente.  A medição de mídia permite categorizar seus dados em várias dimensões e segmentos, capturando todos os metadados necessários para fazer uma análise completa e detalhada. Em seguida, você pode analisar dados e atribuir critérios de sucesso a mídias totalmente consumidas, tempo médio gasto e anúncios concluídos.
+  Os serviços de mídia de transmissão permitem rastrear a jornada completa do cliente em todo o site e nos aplicativos de transmissão para visualizar o caminho e os interesses do cliente, além de fornecer recomendações aprimoradas e personalizar as experiências do cliente.  A medição de mídia permite categorizar seus dados em várias dimensões e segmentos, capturando todos os metadados necessários para fazer uma análise completa e detalhada. Em seguida, você pode analisar dados e atribuir critérios de sucesso a mídias totalmente consumidas, tempo médio gasto e anúncios concluídos.
 
 * **Métricas essenciais**: meça as métricas essenciais de entrega relacionadas à Qualidade da experiência (QoE), como quadros ignorados, tempo gasto no buffering e taxa média de bits.
 
@@ -57,7 +57,7 @@ Os benefícios da coleção de mídia de transmissão incluem monitoramento em t
 
 ## Como funciona
 
-Os dados de rastreamento de mídia de streaming são coletados de um player usando o SDK/Extensão Mídia para rede de borda, a Extensão de mídia com tags, os SDKs de mídia, a API de borda de mídia ou a API da coleção de mídia.
+Os dados de rastreamento dos serviços de mídia de transmissão são coletados de um player usando a Extensão/SDK do Media para Edge Network, a Extensão de mídia com tags, os SDKs de mídia, a API do Media Edge ou a API da coleção de mídia.
 
 Todos os dados granulares (até 10 segundos) são enviados para o Media Analytics Service ou para o Experience Edge (dependendo do [método de implementação](/help/implementation/overview.md) de sua escolha), que coletam e processam os dados para cada sessão de reprodução individual.
 
@@ -68,4 +68,4 @@ Após o término de uma sessão de reprodução, os dados de rastreamento calcul
 >Com as implementações do Customer Journey Analytics, os dados podem ser enviados para o Customer Journey Analytics usando o Experience Edge ou o Conector de dados do Analytics (ADC).
 
 
-Para obter informações detalhadas sobre os vários métodos de implementação, consulte [Implementar a coleção de mídia de streaming para Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
+Para obter informações detalhadas sobre os vários métodos de implementação, consulte [Implementar serviços de mídia de transmissão para Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
