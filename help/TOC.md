@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Guia de serviços de mídia de streaming
-breadcrumb-title: Guia de serviços de mídia de streaming
-user-guide-description: Implementar serviços de mídia de transmissão. Inclui o SDK de mídia e a API de coleta de mídia.
+user-guide-title: Guia de serviços para mídia de streaming
+breadcrumb-title: Guia de serviços para mídia de streaming
+user-guide-description: Implementar serviços de mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
 source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
 
-# Guia de serviços de mídia de streaming {#using}
+# Guia de serviços para mídia de streaming {#using}
 
 + [guia de serviços de streaming de mídia da Adobe](media-overview.md)
 + Notas de versão  {#release-notes}
@@ -180,7 +180,7 @@ ht-degree: 79%
          + [Configurar o JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Sobre a medição de pulsação](legacy/heartbeat-measurement.md)
    + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Capacitação de Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
+   + [Capacitação de gerenciamento de público-alvo da Adobe](legacy/intro-to-ava/am-enablement.md)
    + [Implementação de link personalizado](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + Rastreamento de marcos herdado {#legacy-milestone-tracking}
       + [Rastreamento de marcos herdado](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
