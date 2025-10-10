@@ -48,7 +48,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 1. Identifique o início do ativo de anúncio e crie uma instância `AdObject` usando as informações do anúncio.
 
-   Criação do objeto de anúncio:[ createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
+   Criação do objeto de anúncio:[&#x200B; createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);

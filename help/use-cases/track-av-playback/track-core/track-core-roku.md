@@ -104,7 +104,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
 
    * **Metadados padrão**
 
-[Implementar metadados padrão no Roku ](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Implementar metadados padrão no Roku &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
      >[!NOTE]
      >

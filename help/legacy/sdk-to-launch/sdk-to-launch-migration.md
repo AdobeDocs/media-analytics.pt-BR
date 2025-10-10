@@ -30,7 +30,7 @@ As extensões estão disponíveis aos clientes do Launch por uma experiência de
 O Adobe Media Analytics para áudio e vídeo está disponível como uma extensão do Launch para Web e dispositivos móveis:
 
 * [Documentação do Launch para Web](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=pt-BR)
-* [Documentação do Launch para dispositivos móveis ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
+* [Documentação do Launch para dispositivos móveis &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Plataformas
 

@@ -33,5 +33,5 @@ ht-degree: 92%
    * [Rastrear estados do aplicativo](/help/use-cases/analytics-with-ott/track-app-states.md)
    * [Rastrear ações do aplicativo](/help/use-cases/analytics-with-ott/track-app-actions.md)
    * [Definir IDs de usuário](/help/use-cases/analytics-with-ott/set-user-ids.md)
-   * [OTT e Audience Manager ](/help/use-cases/analytics-with-ott/ott-am.md)
-   * [OTT e Experience Cloud ](/help/use-cases/analytics-with-ott/ott-experience-cloud.md)
+   * [OTT e Audience Manager &#x200B;](/help/use-cases/analytics-with-ott/ott-am.md)
+   * [OTT e Experience Cloud &#x200B;](/help/use-cases/analytics-with-ott/ott-experience-cloud.md)

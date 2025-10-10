@@ -179,7 +179,7 @@ Envie um ping ao back-end a cada 1 segundo enquanto estiver em um anúncio.
 >[!NOTE]
 >
 >Anúncios subsequentes na linha do tempo ignorarão a exibição da série de pings de um segundo
->>por razões de brevidade...
+>&#x200B;>por razões de brevidade...
 
 ```json
 {

@@ -37,13 +37,13 @@ Descrição dos dados da tabela:
 >[!IMPORTANT]
 >
 >Não altere os nomes de classificação de nenhuma variável listada abaixo que esteja
->>descrita em Relatório/variável reservada como “classificação”.
->>As classificações de mídia são definidas quando um conjunto de relatórios é habilitado para rastreamento
->>de mídia. De tempos em tempos, a Adobe adiciona novas propriedades e, quando isso ocorre,
->>os clientes devem reabilitar seus conjuntos de relatórios para obter acesso a novas propriedades
->>de mídia. Durante o processo de atualização, a Adobe determina se as
->>classificações são habilitadas verificando os nomes das variáveis. Se alguma delas
->>estiver ausente, a Adobe adicionará novamente as que estiverem faltando.
+>&#x200B;>descrita em Relatório/variável reservada como “classificação”.
+>&#x200B;>As classificações de mídia são definidas quando um conjunto de relatórios é habilitado para rastreamento
+>&#x200B;>de mídia. De tempos em tempos, a Adobe adiciona novas propriedades e, quando isso ocorre,
+>&#x200B;>os clientes devem reabilitar seus conjuntos de relatórios para obter acesso a novas propriedades
+>&#x200B;>de mídia. Durante o processo de atualização, a Adobe determina se as
+>&#x200B;>classificações são habilitadas verificando os nomes das variáveis. Se alguma delas
+>&#x200B;>estiver ausente, a Adobe adicionará novamente as que estiverem faltando.
 
 ## Dados de vídeo do anúncio {#ad-video-data}
 
