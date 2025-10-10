@@ -141,7 +141,7 @@ Depois de [Criar um conjunto de dados de agendamento de programa](#create-a-prog
 
    1. Envie o arquivo .json que contém os registros de dados de agendamento de programa usando a ID do lote.
 
-      Para enviar informações de agendamento por push você deve usar APIs em lote do AEP, conforme descrito na [Visão geral da API de assimilação em lote](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
+      Para enviar informações de agendamento por push você deve usar APIs em lote do AEP, conforme descrito na [Visão geral da API de assimilação em lote](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/batch/overview).
 
       Considere o exemplo a seguir de uso de cURL para enviar um arquivo com os registros de agendamento:
 
@@ -301,9 +301,9 @@ O exemplo a seguir é de um arquivo .json de agendamento com dois registros. Cad
 
    Considere os seguintes exemplos de dimensões que você pode criar e criar relatórios no Customer Journey Analytics:
 
-   * **[&quot;_Nome do episódio_&quot;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: essa dimensão pode ajudá-lo a saber quais episódios de uma determinada série têm melhor desempenho.
+   * **[&quot;_Nome do episódio_&quot;](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: essa dimensão pode ajudá-lo a saber quais episódios de uma determinada série têm melhor desempenho.
 
-   * **[ID do ativo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[ID do ativo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. Continuar com [Analisar dados no Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 

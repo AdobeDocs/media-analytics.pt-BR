@@ -27,7 +27,7 @@ A coleção de dados da Adobe com a extensão de análise de mídia exige o segu
 * Você deve ser um cliente da Adobe Experience Cloud.
 * Você deve implantar o código incorporado de Coleção de dados ou DTM nas páginas da Web.
 * Você deve configurar a [Extensão do Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=pt-BR).
-* Você deve configurar a [Extensão Adobe Media Analytics para áudio e vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
+* Você deve configurar a [Extensão Adobe Media Analytics para áudio e vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=pt-BR).
 * Você deve configurar a [Extensão de ID da Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=pt-BR).
 
 ## Baixe os Media SDKs 2.x {#download-2x-sdks}
