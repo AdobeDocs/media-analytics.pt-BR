@@ -25,7 +25,7 @@ ht-degree: 92%
    * _Uma API para assinar eventos do player_ - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
    * _Uma API que fornece informações sobre o player_ - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
-O SDK 2.x do Roku para soluções da Experience Cloud permite avaliar aplicativos do Roku criados com BrightScript, utilizar e coletar dados de públicos por meio do gerenciamento de públicos e medir o engajamento com o vídeo através de eventos de vídeo.
+O SDK 2.x do Roku para soluções da Experience Cloud permite avaliar aplicativos do Roku criados com BrightScript, utilizar e coletar dados de públicos-alvos por meio do gerenciamento de públicos-alvos e medir o engajamento com o vídeo através de eventos de vídeo.
 
 ## Biblioteca móvel / Implementação do SDK
 
@@ -147,8 +147,8 @@ O SDK 2.x do Roku para soluções da Experience Cloud permite avaliar aplicativo
 
    |  Método   | Descrição |
    | --- | --- |
-   | `setDebugLogging` | Usado para ativar ou desativar o log de depuração do SDK. <br/><br/>`ADBMobile().setDebugLogging(true)` |
-   | `getDebugLogging` | Retorna true se o log de depuração estiver ativado.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+   | `setDebugLogging` | Usado para habilitar ou desabilitar o log de depuração do SDK. <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | Retorna true se o log de depuração estiver habilitado.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
 
@@ -172,4 +172,4 @@ O SDK 2.x do Roku para soluções da Experience Cloud permite avaliar aplicativo
    | `processMediaMessages` | Responsável por transmitir os eventos de mídia ao SDK para serem manipulados. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=pt-BR) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 100%
 
 ---
 
@@ -39,14 +39,12 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
                ```
                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
                ```
-
            
          * **Roku:**
 
                ```
                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
                ```
-
            
            >[!IMPORTANT]
            >
@@ -59,14 +57,12 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
                ```
                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
                ```
-
            
          * **Roku:**
 
                ```
                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
                ```
-
            
       * **Retorna a configuração atual:**
 
@@ -75,14 +71,12 @@ Você pode decidir se uma atividade de rastreamento é permitida em um determina
                ```
                ADBMobile.config.getPrivacyStatus()
                ```
-
            
          * **Roku:**
 
                ```
                ADBMobile().getPrivacyStatus()
                ```
-
            
   Depois de alterar a configuração de privacidade usando `setPrivacyStatus`, a alteração torna-se permanente até ser alterada novamente usando este método ou ao desinstalar e instalar o aplicativo.
 

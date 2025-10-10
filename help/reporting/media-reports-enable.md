@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado antes do envio dos dados de mídia.
 
-Os clientes avançados podem usar os painéis de mídia no Analysis Workspace somente após a ativação do Media Core e do rastreamento para a [Qualidade da experiência](/help/use-cases/track-qos/track-qos-overview.md).
+Os clientes avançados podem usar os painéis de mídia no Analysis Workspace somente após a habilitação do Media Core e do rastreamento para a [Qualidade da experiência](/help/use-cases/track-qos/track-qos-overview.md).
 
 >[!TIP]
 >
@@ -55,9 +55,9 @@ Os clientes avançados podem usar os painéis de mídia no Analysis Workspace so
 
      Os metadados podem ser anexados a um áudio e/ou anúncio para descreverem e categorizar o áudio e/ou anúncio. Os metadados padrão são coletados por meio das variáveis e classificações da solução. Os valores incluem: Artista, Álbum, Gravadora, Autor, Publicador, Estação de rádio, Programa, Temporada, Episódio, ID do ativo, Gênero, Data da primeira exibição, Data da primeira exibição virtual, Classificação do conteúdo, Originador, Tipo de programa, Parte do dia, ID da sessão de mídia, Anunciante, ID da campanha e ID Creative.
 
-   A habilitação de cada módulo reserva um conjunto de variáveis e cria um novo conjunto de relatórios. Com exceção da Qualidade, não haverá dados nos relatórios, a menos que a implementação correspondente tenha sido concluída. A implementação do módulo Principal também implementa o módulo Qualidade se você ativá-lo.
+   A habilitação de cada módulo reserva um conjunto de variáveis e cria um novo conjunto de relatórios. Com exceção da Qualidade, não haverá dados nos relatórios, a menos que a implementação correspondente tenha sido concluída. A implementação do módulo Principal também implementa o módulo Qualidade se você habilitá-lo.
 
-   Se você ainda não estiver rastreando anúncios, capítulos ou qualidade de reprodução, será possível ativar opções adicionais a qualquer momento.
+   Se você ainda não estiver rastreando anúncios, capítulos ou qualidade de reprodução, será possível habilitar opções adicionais a qualquer momento.
 
 1. Clique em **[!UICONTROL Salvar].**
 
@@ -72,4 +72,4 @@ Os clientes avançados podem usar os painéis de mídia no Analysis Workspace so
 
 >[!IMPORTANT]
 >
->Não altere os nomes de classificação de nenhuma variável listada nas tabelas de métricas e metadados (por exemplo, [Parâmetros de áudio e vídeo](/help/implementation/variables/audio-video-parameters.md)) que estão descritos em Relatório/variável reservada como “classificação”. As classificações de mídia são definidas quando um conjunto de relatórios é ativado para rastreamento de mídia. Periodicamente, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reativar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são ativadas verificando os nomes das variáveis. Se algum deles estiver faltando, a Adobe os adicionará novamente.
+>Não altere os nomes de classificação de nenhuma variável listada nas tabelas de métricas e metadados (por exemplo, [Parâmetros de áudio e vídeo](/help/implementation/variables/audio-video-parameters.md)) que estão descritos em Relatório/variável reservada como “classificação”. As classificações de mídia são definidas quando um conjunto de relatórios é habilitado para rastreamento de mídia. Periodicamente, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reabilitar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são habilitadas verificando os nomes das variáveis. Se algum deles estiver faltando, a Adobe os adicionará novamente.

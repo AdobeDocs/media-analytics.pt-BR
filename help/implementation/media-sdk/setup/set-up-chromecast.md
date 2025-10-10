@@ -26,9 +26,9 @@ Esta seção descreve os pré-requisitos para configurar uma instalação do Chr
    * *Uma API para assinar eventos do player* - O SDK de mídia exige que você chame um conjunto de APIs simples quando eventos ocorrem no player.
    * *Uma API que fornece informações sobre o player* - Essas informações incluem detalhes como o nome da mídia e a posição do indicador de reprodução.
 
-O Adobe Mobile Services fornece uma nova interface do usuário que reúne recursos de marketing móvel para aplicativos móveis de toda a Adobe Experience Cloud. Inicialmente, o Mobile Service fornece integração perfeita entre os recursos de análise e segmentação de aplicativos para as soluções do Adobe Analytics e do Adobe Target. Saiba mais pela [documentação do Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=pt-BR)
+O Adobe Mobile Services fornece uma nova interface do usuário que reúne recursos de marketing móvel para aplicativos móveis de toda a Adobe Experience Cloud. Inicialmente, o Mobile Service fornece integração perfeita entre os recursos de análise e direcionamento de aplicativos para as soluções do Adobe Analytics e do Adobe Target. Saiba mais pela [documentação do Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=pt-BR)
 
-A biblioteca móvel da Adobe para Chromecast v3.x para soluções da Experience Cloud permite avaliar aplicativos de Chromecast criados com JavaScript, utilizar e coletar dados de públicos por meio do gerenciamento de públicos e medir o engajamento com o vídeo.
+A biblioteca móvel da Adobe para Chromecast v3.x para soluções da Experience Cloud permite avaliar aplicativos de Chromecast criados com JavaScript, utilizar e coletar dados de públicos-alvos por meio do gerenciamento de públicos-alvos e medir o engajamento com o vídeo.
 
 ## Biblioteca móvel / Implementação do SDK
 
@@ -153,4 +153,4 @@ A biblioteca móvel da Adobe para Chromecast v3.x para soluções da Experience 
    }
    ```
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=pt-BR) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

@@ -37,7 +37,7 @@ Descrição dos dados da tabela:
 >[!IMPORTANT]
 >
 >Não altere os nomes de classificação de nenhuma variável listada abaixo descrita em Relatório/Variável reservada como “classificação”.\
->As classificações de mídia são definidas quando um conjunto de relatórios é ativado para rastreamento de mídia. Periodicamente, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reativar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são ativadas verificando os nomes das variáveis. Se algum deles estiver faltando, a Adobe os adicionará novamente.
+>As classificações de mídia são definidas quando um conjunto de relatórios é habilitado para rastreamento de mídia. Periodicamente, a Adobe adiciona novas propriedades e, quando isso ocorre, os clientes devem reabilitar seus conjuntos de relatórios para obter acesso às novas propriedades de mídia. Durante o processo de atualização, a Adobe determina se as classificações são habilitadas verificando os nomes das variáveis. Se algum deles estiver faltando, a Adobe os adicionará novamente.
 
 ## Propriedades do estado do player {#player-state-properties}
 

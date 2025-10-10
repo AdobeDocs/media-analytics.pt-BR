@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '588'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Para transmissões AO VIVO, você precisa definir o valor do indicador de reprod
 
 Para mídia AO VIVO, quando um usuário começa a reproduzir a transmissão, é necessário definir o `l:event:playhead` como o número de segundos desde a meia-noite UTC daquele dia. É diferente do VOD, onde você definiria o indicador de reprodução como “0”. Observação: ao usar marcadores de progresso, a duração do conteúdo é necessária e o indicador de reprodução precisa ser atualizado para o número de segundos desde o início do item de mídia, começando com 0.
 
-Por exemplo, digamos que um evento de transmissão AO VIVO comece à meia-noite e tenha uma duração de 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Então, digamos que um usuário comece a reproduzir esse fluxo AO VIVO às 12h. Nesse cenário, você deve definir o `l:event:playhead` como 43200 (12 horas desde a meia-noite UTC daquele dia em segundos).
+Por exemplo, digamos que um evento de transmissão AO VIVO comece à meia-noite e tenha uma duração de 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Em seguida, digamos que um usuário comece a reproduzir esse fluxo AO VIVO em 12:00pm. Nesse cenário, você deve definir o `l:event:playhead` como 43200 (12 horas desde a meia-noite UTC daquele dia em segundos).
 
 ### Ao pausar
 

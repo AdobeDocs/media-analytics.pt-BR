@@ -25,7 +25,7 @@ Cinco estados padrão do player estão disponíveis e você pode adicionar seus 
 
 Os dados são calculados da mesma forma para estados padrão e personalizados, mas os dados são armazenados de forma diferente para relatórios do Analytics.
 
-**Para estados padrão** — Ao ativar o rastreamento do estado do player pelo console de Gerenciamento de mídia nos relatórios do Analytics (lado administrativo), 15 variáveis de solução estão disponíveis para exportações de relatórios e dados.
+**Para estados padrão** — Ao habilitar o rastreamento do estado do player pelo console de Gerenciamento de mídia nos relatórios do Analytics (lado administrativo), 15 variáveis de solução estão disponíveis para exportações de relatórios e dados.
 
 **Para estados personalizados** — Você pode criar suas próprias regras de processamento para armazenar os valores calculados em eventos personalizados e, em seguida, usar essas regras para exportações de relatórios e dados.
 

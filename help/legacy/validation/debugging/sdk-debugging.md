@@ -7,14 +7,14 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '218'
+ht-degree: 100%
 
 ---
 
 # Depuração do SDK {#sdk-debugging}
 
-Você pode ativar e desativar o registro. O SDK do Media fornece um mecanismo abrangente de rastreamento/registro em toda a pilha de rastreamento de mídia. Você pode ativar ou desativar o registro, definindo o sinalizador `debugLogging` no objeto de configuração.
+Você pode habilitar e desabilitar o registro. O SDK do Media fornece um mecanismo abrangente de rastreamento/registro em toda a pilha de rastreamento de mídia. Você pode habilitar ou desabilitar o registro, definindo o sinalizador `debugLogging` no objeto de configuração.
 
 ## Exemplo de código para o log de depuração
 

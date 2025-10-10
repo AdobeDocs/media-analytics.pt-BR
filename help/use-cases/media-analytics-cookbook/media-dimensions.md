@@ -19,7 +19,7 @@ Com a atribuição de fluxo de mídia, é possível vincular as ações do aplic
 
 Você pode adicionar dimensões de mídia às chamadas do Analytics, como exibições de página e links personalizados. Durante a implementação, você deve adicionar os parâmetros de dados de contexto de mídia às chamadas de rastreamento do Analytics. Para exibir a lista completa dos parâmetros de dados de contexto disponíveis para uso em mídias, consulte [Parâmetros de áudio e vídeo.](/help/implementation/variables/audio-video-parameters.md)
 
-Para ativar esse recurso para um relatório específico, reative a configuração de rastreamento de mídia no Admin Console.
+Para habilitar esse recurso para um relatório específico, reabilite a configuração de rastreamento de mídia no Admin Console.
 
 >[!NOTE]
 >

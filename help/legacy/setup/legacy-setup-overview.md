@@ -56,7 +56,7 @@ Complete as etapas de implementação a seguir:
    | `appVersion` | Versão do aplicativo do reprodutor de vídeo/SDK | Não | String vazia |
    | `playerName` | Nome do media player em uso, ou seja, &quot;AVPlayer&quot;, &quot;HTML5 Player&quot;, &quot;My Custom Player&quot; | Não | String vazia |
    | `ssl` | Indica se as chamadas devem ser feitas em HTTPS | Não | false |
-   | `debugLogging` | Indica se o registro de depuração está ativado | Não | false |
+   | `debugLogging` | Indica se o registro de depuração está habilitado | Não | false |
 
 1. Implementar o `MediaHeartbeatDelegate`.
 
@@ -143,7 +143,7 @@ As implementações de rastreamento do Media Analytics geram dois tipos de chama
 
   O servidor de rastreamento do Analytics deve terminar com “`.sc.omtrdc.net`” ou ser um CNAME.
 
-* **&#x200B; Servidor do Media Analytics (Heartbeats)**
+* ** Servidor do Media Analytics (Heartbeats)**
 Este sempre tem o formato &quot;`[your_namespace].hb.omtrdc.net`&quot;. O valor &quot;`[your_namespace]`&quot; especifica sua empresa e é fornecido pela Adobe.
 
 O rastreamento de mídia funciona da mesma forma em todas as plataformas, desktops e dispositivos móveis. O rastreamento de áudio funciona atualmente em plataformas móveis. Para todas as chamadas de rastreamento, há algumas variáveis universais principais que precisam ser validadas:

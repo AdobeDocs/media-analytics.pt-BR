@@ -24,7 +24,7 @@ Isso significa que o Adobe não fornece mais correções, atualizações relacio
 
 1. Uma implementação dos serviços de mídia de transmissão do Adobe exige o AEP Mobile SDK e o uso das extensões do Analytics e do Media Analytics. A partir de 1º de setembro de 2021, você deverá usar os novos SDKs móveis e extensões da AEP.  As extensões do Media Analytics são configuradas usando Tags da Adobe (coleção de dados). Para obter mais informações, consulte [Migração do SDK de mídia independente para o Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
 
-1. O desenvolvimento de recursos terminou para os SDKs do Media Analytics para iOS e Android. Os novos recursos que foram introduzidos a partir do último trimestre de 2019 são ativados usando as extensões do Media Analytics e a API de coleção de mídia.
+1. O desenvolvimento de recursos terminou para os SDKs do Media Analytics para iOS e Android. Os novos recursos que foram introduzidos a partir do último trimestre de 2019 são habilitados usando as extensões do Media Analytics e a API de coleção de mídia.
 
 1. Os SDKs Roku e Chromecast permanecem disponíveis para clientes com o complemento Adobe Analytics para mídia de streaming e o complemento Customer Journey Analytics Streaming Media Collection. Os SDKs do Roku e Chromecast continuarão recebendo suporte e sendo aprimorados como SDKs independentes. Se você utiliza o SDK JS do Media Analytics, poderá continuar a usar o SDK independente ou habilitar a extensão do Media Analytics usando a Coleção de dados da Adobe (antigo Adobe Launch).
 
@@ -38,7 +38,7 @@ Caso tenha alguma dúvida, entre em contato com a equipe de conta da Adobe.
 
 1. **As implementações do SDK JS do Media Analytics serão afetadas por essa alteração? &#x200B;**
 
-   Não.  Os clientes que usam o JS SDK para o Media Analytics podem continuar a usar o SDK ou ativá-lo por meio do Adobe Launch.
+   Não.  Os clientes que usam o JS SDK para o Media Analytics podem continuar a usar o SDK ou habilitá-lo por meio do Adobe Launch.
 &#x200B;
 1. **Qual é o nível de esforço (LOE) para migrar para as extensões do Media Analytics? &#x200B;**
 

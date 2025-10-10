@@ -22,7 +22,7 @@ As tags da Adobe Experience Platform são a próxima geração de recursos de ge
 >[!NOTE]
 >
 >Para obter informações sobre como baixar SDKs herdadas, consulte [Herdados - Baixar SDKs](/help/legacy/legacy-download-sdks.md).<br>
->&#x200B;>Para obter informações importantes sobre o fim do suporte, consulte [Perguntas frequentes sobre o fim do suporte](/help/additional-resources/end-of-support-faqs.md).
+>>Para obter informações importantes sobre o fim do suporte, consulte [Perguntas frequentes sobre o fim do suporte](/help/additional-resources/end-of-support-faqs.md).
 
 ## SDKs de mídia e bibliotecas móveis {#media-sdks-libraries}
 
