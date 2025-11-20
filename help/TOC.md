@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
 workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 80%
 # Guia de serviços para mídia de streaming {#using}
 
 + [guia de serviços de streaming de mídia da Adobe](media-overview.md)
-+ Notas de versão  {#release-notes}
++ Notas de versão {#release-notes}
    + [Notas de versão dos serviços de mídia de streaming](additional-resources/release-notes.md)
 + Introdução {#getting-started}
-   + [Pré-requisitos &#x200B;](getting-started/prereqs.md)
+   + [Pré-requisitos ](getting-started/prereqs.md)
    + [Dispositivos compatíveis](getting-started/supported-devices.md)
    + [Documentação de implementação dos serviços de mídia de transmissão](getting-started/implementation-documentation.md)
    + [SDKs, bibliotecas e extensões](getting-started/download-sdks.md)
@@ -58,7 +58,7 @@ ht-degree: 80%
          + Implementar a API {#mc-api-impl}
             + [Definição do tipo de solicitação HTTP no seu reprodutor](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
             + [Obter uma ID de sessão](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-            + [Implementar uma solicitação de eventos &#x200B;](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+            + [Implementar uma solicitação de eventos ](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
             + [Esquemas de validação JSON](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
             + [Validar solicitações de evento](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
             + [Enviar eventos de ping](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
@@ -70,12 +70,12 @@ ht-degree: 80%
    + Variáveis {#variables}
       + [Parâmetros de mídia de streaming](implementation/variables/audio-video-parameters.md)
       + [Parâmetros de publicidade](implementation/variables/ad-parameters.md)
-      + [Parâmetros de capítulo &#x200B;](implementation/variables/chapter-parameters.md)
-      + [Parâmetros de estado do player &#x200B;](implementation/variables/player-state-parameters.md)
-      + [Parâmetros de qualidade &#x200B;](implementation/variables/quality-parameters.md)
-      + [Métricas calculadas &#x200B;](implementation/variables/calculated-metrics.md)
+      + [Parâmetros de capítulo ](implementation/variables/chapter-parameters.md)
+      + [Parâmetros de estado do player ](implementation/variables/player-state-parameters.md)
+      + [Parâmetros de qualidade ](implementation/variables/quality-parameters.md)
+      + [Métricas calculadas ](implementation/variables/calculated-metrics.md)
 + Relatórios {#media-reports}
-   + [Ativação de relatórios de mídia &#x200B;](reporting/media-reports-enable.md)
+   + [Ativação de relatórios de mídia ](reporting/media-reports-enable.md)
    + Painéis de mídia no Workspace {#media-workspace-panels}
       + [Painel Audiência média por minuto de mídia](reporting/workspace/average-minute-audience.md)
       + [Painel Visualizadores simultâneos de mídia](reporting/workspace/media-concurrent-viewers-overview.md)
@@ -84,7 +84,7 @@ ht-degree: 80%
    + [Segmentos de mídia](reporting/segments.md)
    + Relatórios de mídia padrão {#media-default-reports}
       + [Visão geral dos relatórios padrão](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Visão geral da mídia &#x200B;](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Visão geral da mídia ](reporting/reports-and-analytics/media-reports-overview.md)
       + [Detalhes da mídia](reporting/reports-and-analytics/media-reports-detail.md)
       + [Relatório de faixa horária de mídia](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
@@ -94,13 +94,13 @@ ht-degree: 80%
 + Casos de uso {#media-use-cases}
    + [Casos de uso do SDK de mídia](use-cases/cookbook/sdk-cookbook-overview.md)
    + Rastreamento do estado do player {#player-state-tracking}
-      + [Visão geral &#x200B;](use-cases/player-state-tracking/player-state-overview.md)
+      + [Visão geral ](use-cases/player-state-tracking/player-state-overview.md)
       + [Estados padrão e personalizados](use-cases/player-state-tracking/standard-and-custom-states.md)
       + [Implementação e relatórios](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [Acompanhamento do estado de vários players](use-cases/player-state-tracking/multiple-player-states.md)
       + [Exemplos de acompanhamento do estado do player](use-cases/player-state-tracking/player-state-examples.md)
    + [Rastrear dados do cronograma](/help/use-cases/track-schedule-data.md)
-   + [Rastrear o conteúdo baixado &#x200B;](use-cases/track-downloaded-content.md)
+   + [Rastrear o conteúdo baixado ](use-cases/track-downloaded-content.md)
    + [Federated Media](use-cases/federated-media.md)
    + [Lidar com interrupções do aplicativo durante a reprodução](use-cases/cookbook/app-interrupts.md)
    + [Atribuição de fluxo de mídia](use-cases/media-analytics-cookbook/media-dimensions.md)
@@ -122,8 +122,8 @@ ht-degree: 80%
       + [Rastrear estados do aplicativo](use-cases/analytics-with-ott/track-app-states.md)
       + [Rastrear ações do aplicativo](use-cases/analytics-with-ott/track-app-actions.md)
       + [Definir IDs de usuário](use-cases/analytics-with-ott/set-user-ids.md)
-      + [OTT e Audience Manager &#x200B;](use-cases/analytics-with-ott/ott-am.md)
-      + [OTT e Experience Cloud &#x200B;](use-cases/analytics-with-ott/ott-experience-cloud.md)
+      + [OTT e Audience Manager ](use-cases/analytics-with-ott/ott-am.md)
+      + [OTT e Experience Cloud ](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Rastreamento {#tracking}
    + [Visão geral](use-cases/track-av-playback/track-core-overview.md)
    + Rastrear a reprodução de streaming de mídia principal {#track-core}
@@ -142,16 +142,16 @@ ht-degree: 80%
       + [Implementar metadados padrão no JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
       + [Implementar metadados padrão no Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
       + [Parâmetros de metadados padrão — Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-      + [Implementar metadados padrão no Roku &#x200B;](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      + [Implementar metadados padrão no Roku ](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
       + [Parâmetros de metadados padrão — Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
-   + Rastreamento de anúncios {#track-ads}
+   + Rastrear anúncios {#track-ads}
       + [Visão geral](use-cases/track-ads/track-ads-overview.md)
       + [Rastrear anúncios no JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
       + [Rastrear anúncios no Chromecast](use-cases/track-ads/track-ads-chromecast.md)
       + [Rastrear anúncios no Roku](use-cases/track-ads/track-ads-roku.md)
       + Implementar metadados de anúncio padrão {#impl-std-ad-metadata}
          + [Implementar metadados de anúncio padrão no JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-         + [Implementar Metadados de publicidade padrão no Roku &#x200B;](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+         + [Implementar Metadados de publicidade padrão no Roku ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Rastrear capítulos e segmentos {#track-chapters}
       + [Visão geral](use-cases/track-chapters/track-chapters-overview.md)
       + [Rastrear capítulos e segmentos no JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
@@ -218,13 +218,13 @@ ht-degree: 80%
          + [Chaves de metadados de iOS](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
          + Implementar metadados padrão no JavaScript {#impl-std-md-js}
             + [Implementar metadados padrão no JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-      + Rastreamento de anúncios {#track-ads}
+      + Rastrear anúncios {#track-ads}
          + [Rastrear anúncios no Android](use-cases/track-ads/track-ads-android.md)
          + [Rastrear anúncios no iOS](use-cases/track-ads/track-ads-ios.md)
          + Rastrear anúncios no JavaScript {#track-ads-js}
             + [Rastrear anúncios no JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
-            + [Implementar Metadados de publicidade padrão no Android &#x200B;](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-            + [Implementar Metadados de publicidade padrão no iOS &#x200B;](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+            + [Implementar Metadados de publicidade padrão no Android ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+            + [Implementar Metadados de publicidade padrão no iOS ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
             + Implementar metadados de anúncio padrão no JavaScript {#impl-std-ad-md-js}
                + [Implementar metadados de anúncio padrão no JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
       + Rastrear capítulos e segmentos {#track-chapters}
@@ -238,7 +238,7 @@ ht-degree: 80%
             + [Rastrear a qualidade da experiência no JavaScript 2.x](use-cases/track-qos/track-qos-js/track-qos-js.md)
       + Rastrear erros {#track-errors}
          + [Rastrear erros no Android](use-cases/track-errors/track-errors-android.md)
-         + [Rastrear erros no iOS &#x200B;](use-cases/track-errors/track-errors-ios.md)
+         + [Rastrear erros no iOS ](use-cases/track-errors/track-errors-ios.md)
          + Rastrear erros no JavaScript {#track-errors-js}
             + [Rastrear erros no JavaScript 2.x](use-cases/track-errors/track-errors-js/track-errors-js.md)
       + Cenários de rastreamento {#tracking-scenarios}
@@ -251,5 +251,5 @@ ht-degree: 80%
          + [Reprodução de VOD com buffering](use-cases/tracking-scenarios/vod-buffering.md)
          + [Vários rastreadores de VOD ao mesmo tempo](use-cases/tracking-scenarios/vod-multi-trackers.md)
          + [Um rastreador de VOD para várias sessões](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
-         + [Conteúdo principal ao vivo &#x200B;](use-cases/tracking-scenarios/live-main-content.md)
+         + [Conteúdo principal ao vivo ](use-cases/tracking-scenarios/live-main-content.md)
          + [Conteúdo principal ao vivo com rastreamento sequencial](use-cases/tracking-scenarios/live-sequential.md)
