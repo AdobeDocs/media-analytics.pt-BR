@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Migrar Preparo de dados para campos personalizados para os novos campos de mídia de transmissão
 
-Este documento descreve o processo de migração do serviço de Preparo de dados que existe sobre os fluxos de coleta de dados do Adobe ativados para dados de coleta de mídia de transmissão do Adobe. A migração converte um mapeamento de Preparo de Dados do tipo de dados da Coleção de Mídia de Streaming do Adobe chamado &quot;Mídia&quot; para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
+Este documento descreve o processo de migração do serviço de Preparo de dados que existe sobre os fluxos de coleta de dados do Adobe ativados para dados de coleta de mídia de transmissão do Adobe. A migração converte um mapeamento de Preparo de Dados do tipo de dados da Coleção de Mídia de Streaming do Adobe chamado &quot;Mídia&quot; para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
 
 ## Migrar preparação de dados para campos personalizados
 
-Para migrar os mapeamentos de Preparo de dados do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite os mapeamentos de Preparo de Dados:
+Para migrar os mapeamentos de Preparo de dados do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite os mapeamentos de Preparo de Dados:
 
 >[!IMPORTANT]
 >
@@ -77,7 +77,7 @@ Para facilitar o cumprimento das diretrizes de migração, considere o exemplo d
 
 No exemplo acima, todos os tipos de dados envolvidos eram String, então a substituição de mapeamento era direta.
 
-Se o tipo de dados do campo de origem for diferente do tipo de dados do campo de destino, você precisará seguir as diretrizes do [Guia de solução de problemas de Preparo de Dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide), [Manuseio de formatos de dados com Preparo de Dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) e [Funções de mapeamento de Preparo de Dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling).
+Se o tipo de dados do campo de origem for diferente do tipo de dados do campo de destino, você precisará seguir as diretrizes do [Guia de solução de problemas de Preparo de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/troubleshooting-guide), [Manuseio de formatos de dados com Preparo de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/data-handling) e [Funções de mapeamento de Preparo de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/data-handling).
 
 Por exemplo, se o tipo de origem for uma string e o tipo de destino for um booleano, o Preparo de dados poderá analisar automaticamente o valor e converter o valor de origem em um booleano.
 

@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Migrar perfis para os novos campos de streaming de mídia
 
-Este documento descreve o processo de migração do serviço de filtragem de perfil que existe sobre os fluxos de coleta de dados do Adobe ativados para Adobe Analytics para dados de mídia de transmissão. A migração converte o serviço de filtragem de perfis de usar o tipo de dados de serviços de mídia de streaming da Adobe chamado &quot;Mídia&quot; para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
+Este documento descreve o processo de migração do serviço de filtragem de perfil que existe sobre os fluxos de coleta de dados do Adobe ativados para Adobe Analytics para dados de mídia de transmissão. A migração converte o serviço de filtragem de perfis de usar o tipo de dados de serviços de mídia de streaming da Adobe chamado &quot;Mídia&quot; para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
 
 ## Migrar perfis
 
-Para migrar a filtragem de perfil do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite as regras de filtragem de perfil existentes:
+Para migrar a filtragem de perfil do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite as regras de filtragem de perfil existentes:
 
 1. Na Adobe Experience Platform, na seção [!UICONTROL **Fontes**], vá para a guia [!UICONTROL **Fluxos de Dados**].
 

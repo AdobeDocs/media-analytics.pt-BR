@@ -172,4 +172,4 @@ O SDK 2.x do Roku para soluções da Experience Cloud permite avaliar aplicativo
    | `processMediaMessages` | Responsável por transmitir os eventos de mídia ao SDK para serem manipulados. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=pt-BR) -->
