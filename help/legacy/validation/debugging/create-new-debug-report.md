@@ -4,11 +4,11 @@ description: Saiba como criar um novo relatório de depuração.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 84%
+ht-degree: 44%
 
 ---
 
@@ -22,12 +22,12 @@ Para criar um novo relatório de depuração:
 
 1. Preencha os campos com as seguintes informações:
 
-   * **Nome do relatório** - Insira o nome do reprodutor e a data para que você possa rastrear facilmente o reprodutor durante a certificação e manter as marcas e plataformas separadas.
+   * **Nomear o relatório** - Insira o nome e a data do player para que você possa rastrear facilmente o player durante a certificação e manter as marcas e plataformas separadas.
    * **Adobe Analytics**
 
-      * [!UICONTROL Nome de usuário] e [!UICONTROL Segredo compartilhado] - Esses campos são opcionais, mas você pode adicionar suas credenciais da API de serviços da Web ao Adobe Debug para exibir os nomes e as configurações das variáveis do conjunto de relatórios.
+      * [!UICONTROL Nome de Usuário] e [!UICONTROL Segredo Compartilhado] - Esses campos são opcionais, mas você pode adicionar suas credenciais de API de serviços da Web ao Adobe Debug para exibir os nomes de variáveis e as configurações de variáveis do conjunto de relatórios.
 
-        Você pode acessar seguindo um dos seguintes procedimentos:
+        Você pode acessar o de uma das seguintes maneiras:
 
          * [!UICONTROL Analytics > Administrador > Configurações da empresa > Serviços da Web]
          * [!UICONTROL Analytics > Administrador > Gerenciamento de usuários > Usuários > Configurações de usuário individual] Para criar uma credencial da API de serviços da Web para um novo usuário, em [!UICONTROL Gerenciamento de usuários], adicione o usuário ao grupo de usuários **Acesso ao serviço da Web**.

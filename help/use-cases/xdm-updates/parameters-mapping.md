@@ -2,12 +2,12 @@
 title: Migrar públicos-alvo para o novo tipo de dados Adobe Analytics para mídia de streaming
 description: Saiba como migrar públicos-alvo para o novo tipo de dados Adobe Analytics para mídia de streaming
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 

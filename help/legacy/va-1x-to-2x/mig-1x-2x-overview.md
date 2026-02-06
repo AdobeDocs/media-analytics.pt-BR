@@ -4,11 +4,11 @@ description: Saiba como migrar das versões 1.x para 2.x do SDK de mídia.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 100%
 
 A migração do VHL 1.x para o VHL 2.x é simples, e a nova versão apresenta APIs simplificadas para inicialização, configuração e delegações de player.
 
-Aqui estão as principais diferenças entre as versões 1.x e 2.x:
+Estas são as principais diferenças entre 1.x e 2.x:
 
-* **Plug-ins, representantes -** Você não precisa mais implementar plug-ins e representantes para o Analytics, o VideoPlayer e o Heartbeat.
-* **Configuração -** Não é mais necessário representar as configurações para os plug-ins 1.x.
+* **Plug-ins, Representantes -** Não é mais necessário implementar plug-ins e delegados para o Analytics, VideoPlayer e Heartbeat.
+* **Configuração -** Não é mais necessário instanciar as configurações dos plug-ins 1.x.
 
 ## Benefícios do 2.x {#benefits-of-two-x}
 

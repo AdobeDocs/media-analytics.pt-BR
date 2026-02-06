@@ -4,11 +4,11 @@ description: Saiba como lidar com chamadas inesperadas de main:play entre anúnc
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 97%
+ht-degree: 75%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 Em alguns cenários de rastreamento de anúncios, você pode encontrar chamadas `main:play` que ocorrem inesperadamente entre o fim de um anúncio e o início do próximo anúncio. Se o atraso entre a chamada de conclusão do anúncio e a chamada de início do próximo anúncio for maior que 250 milissegundos, o SDK do Media recorrerá ao envio de chamadas `main:play`. Se esse recurso a `main:play` ocorrer durante um ad break precedente, a métrica de início de conteúdo poderá ser definida antecipadamente.
 
-Uma lacuna entre anúncios, como descrito acima, é interpretada pelo SDK do Media como conteúdo principal porque não há sobreposição a nenhum conteúdo de anúncio. O SDK do Media não tem nenhuma informação de anúncio definida nele e o reprodutor está no estado de execução. Se não houver informações de anúncio e o reprodutor estiver no estado de execução, o SDK do Media creditará a duração da lacuna em relação ao conteúdo principal por padrão. Ele não poderá creditar a duração da reprodução em relação às informações de anúncio nulas.
+Uma lacuna entre anúncios como os descritos acima é interpretada pelo Media SDK como conteúdo principal, pois não há sobreposição com nenhum conteúdo de anúncio. O Media SDK não tem nenhuma informação de anúncio definida e o reprodutor está no estado de reprodução. Se não houver informações de Anúncio e o estado do player for reproduzido, o Media SDK creditará a duração da lacuna em relação ao conteúdo principal por padrão. Ele não poderá creditar a duração da reprodução em relação às informações de anúncio nulas.
 
 ## IDENTIFICAÇÃO
 
@@ -40,9 +40,9 @@ Ao usar o Adobe Debug ou um farejador de pacotes de rede, como o Charles, se voc
 
 ***Atrasar o acionamento da chamada de Anúncio concluído.***
 
-Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depois para o primeiro anúncio, seguido imediatamente por `trackEvent:AdStart` para o segundo anúncio. O aplicativo deve esperar para chamar o evento `AdComplete` após a conclusão do primeiro anúncio. Certifique-se de chamar `trackEvent:AdComplete` para o último anúncio no ad break. Se o reprodutor identificar que o ativo de anúncio atual é o último no ad break, chame `trackEvent:AdComplete` imediatamente. Essa resolução resultará em menos de 1 segundo de tempo adicional gasto com o anúncio para a unidade de anúncio anterior.
+Lide com a lacuna no reprodutor, chamando `trackEvent:AdComplete` um pouco depois para o primeiro anúncio, seguido imediatamente por `trackEvent:AdStart` para o segundo anúncio. O aplicativo deve esperar para chamar o evento `AdComplete` após a conclusão do primeiro anúncio. Certifique-se de chamar `trackEvent:AdComplete` para o último anúncio no ad break. Se o reprodutor identificar que o ativo de anúncio atual é o último no ad break, chame `trackEvent:AdComplete` imediatamente. Esta resolução resultará em menos de um segundo de tempo de anúncio adicional gasto sendo atribuído à unidade de anúncio anterior.
 
-**No início do ad break, incluindo precedente:**
+**No início de ad break, incluindo antes da exibição:**
 
 * Crie a instância de objeto `adBreak` para o ad break; por exemplo, `adBreakObject`.
 

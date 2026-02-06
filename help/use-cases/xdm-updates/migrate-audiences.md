@@ -2,9 +2,9 @@
 title: Migrar públicos-alvo para o novo tipo de dados Adobe Analytics para mídia de streaming
 description: Saiba como migrar públicos-alvo para o novo tipo de dados Adobe Analytics para mídia de streaming
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 5664bf56-b228-430a-944c-faaab55fa108
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 2%
@@ -13,15 +13,15 @@ ht-degree: 2%
 
 # Migrar públicos-alvo para os novos campos de mídia de transmissão
 
-Este documento descreve como um público-alvo que usa campos do tipo de dados de serviços de mídia de transmissão da Adobe chamado &quot;Mídia&quot; deve ser migrado para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de relatórios de mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
+Este documento descreve como um público-alvo que usa campos do tipo de dados de serviços de mídia de transmissão da Adobe chamado &quot;Mídia&quot; deve ser migrado para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de relatórios de mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
 
 ## Migrar um público-alvo
 
-Para migrar um público do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de relatórios de mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite o público e, em cada regra, substitua o campo antigo do tipo de dados obsoleto pelo novo campo correspondente do novo tipo de dados:
+Para migrar um público do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes de relatórios de mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, edite o público e, em cada regra, substitua o campo antigo do tipo de dados obsoleto pelo novo campo correspondente do novo tipo de dados:
 
 1. Localize regras que contenham campos do tipo de dados &quot;Mídia&quot; obsoleto. Todos os campos começam com o caminho `media.mediaTimed`.
 
-1. Duplique essas regras usando campos do novo tipo de dados &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
+1. Duplique essas regras usando campos do novo tipo de dados &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
 
 1. Mantenha ambas as regras em vigor até validar que os públicos-alvo estão funcionando como esperado.
 

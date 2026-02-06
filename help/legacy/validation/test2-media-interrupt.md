@@ -4,11 +4,11 @@ description: Saiba mais sobre o teste de interrupção de mídia usado na valida
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '249'
+ht-degree: 100%
 
 ---
 

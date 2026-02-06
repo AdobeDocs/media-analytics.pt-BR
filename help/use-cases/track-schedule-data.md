@@ -2,9 +2,9 @@
 title: Carregar dados de agendamento para rastrear conteúdo ao vivo
 description: Saiba como fazer upload dos dados de agendamento para rastrear o conteúdo ao vivo.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-source-git-commit: 65cd7987acb677b4f4c863b42dc809b5a23c2ed1
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->A funcionalidade descrita neste artigo está na fase de teste limitado da versão e pode não estar disponível ainda em seu ambiente. Essa observação será removida quando a funcionalidade estiver em disponibilidade geral. Para obter informações sobre o processo de lançamento, consulte [versões de recursos do Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/releases/releases).
+>A funcionalidade descrita neste artigo está na fase de teste limitado da versão e pode não estar disponível ainda em seu ambiente. Essa observação será removida quando a funcionalidade estiver em disponibilidade geral. Para obter informações sobre o processo de lançamento, consulte [versões de recursos do Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
 
 Você pode fazer upload dos dados de programação do conteúdo de streaming de mídia ao vivo anterior para rastrear a visualização do conteúdo ao vivo com mais facilidade e precisão. Você pode rastrear a audiência de programas individuais e até mesmo de tópicos ou segmentos de programas específicos.
 
@@ -143,7 +143,7 @@ Depois de [Criar um conjunto de dados de agendamento de programa](#create-a-prog
 
    1. Envie o arquivo .json que contém os registros de dados de agendamento de programa usando a ID do lote.
 
-      Para enviar informações de agendamento por push você deve usar APIs em lote do AEP, conforme descrito na [Visão geral da API de assimilação em lote](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/batch/overview).
+      Para enviar informações de agendamento por push você deve usar APIs em lote do AEP, conforme descrito na [Visão geral da API de assimilação em lote](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
 
       Considere o exemplo a seguir de uso de cURL para enviar um arquivo com os registros de agendamento:
 

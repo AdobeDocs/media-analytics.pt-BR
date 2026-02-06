@@ -2,9 +2,9 @@
 title: Migrar públicos-alvo para o novo tipo de dados Adobe Analytics para mídia de streaming
 description: Saiba como migrar públicos-alvo para o novo tipo de dados Adobe Analytics para mídia de streaming
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # Migrar o Customer Journey Analytics para usar os novos campos de mídia de transmissão
 
-Este documento descreve como uma configuração do Customer Journey Analytics que usa o tipo de dados de serviços de mídia de transmissão Adobe chamado &quot;Mídia&quot; deve ser atualizada para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
+Este documento descreve como uma configuração do Customer Journey Analytics que usa o tipo de dados de serviços de mídia de transmissão Adobe chamado &quot;Mídia&quot; deve ser atualizada para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
 
 ## Migrar Customer Journey Analytics
 
-Para migrar uma configuração do Customer Journey Analytics do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes do relatório de mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, atualize as seguintes configurações que estão usando o tipo de dados antigo:
+Para migrar uma configuração do Customer Journey Analytics do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes do relatório de mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, atualize as seguintes configurações que estão usando o tipo de dados antigo:
 
 * Visualizações de dados
 
@@ -61,7 +61,7 @@ Você pode usar qualquer uma das seguintes opções para atualizar a visualizaç
 
    ![Caminho de campo antigo na exibição de dados](assets/old-field-data-view.jpeg)
 
-1. Verifique o novo campo correspondente na seção [Chapter offset](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) do artigo [Chapter parameters](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters).
+1. Verifique o novo campo correspondente na seção [Chapter offset](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) do artigo [Chapter parameters](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters).
 
 1. Localize o novo campo correspondente na visualização de dados.
 
@@ -81,7 +81,7 @@ Se você quiser criar um campo derivado para o &quot;Nome do capítulo&quot; que
 
    ![Personalizar o novo campo para criar uma visualização de dados](assets/create-derived-field2.jpeg)
 
-1. Preencha a cláusula [!UICONTROL **If**] usando o valor do **Caminho do Campo XDM do Relatório**, conforme mostrado no parâmetro [Nome do capítulo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) na página [Parâmetros de capítulo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters).
+1. Preencha a cláusula [!UICONTROL **If**] usando o valor do **Caminho do Campo XDM do Relatório**, conforme mostrado no parâmetro [Nome do capítulo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) na página [Parâmetros de capítulo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters).
 
    ![Nome do capítulo](assets/chapter-name.jpeg)
 
@@ -111,7 +111,7 @@ Se você quiser criar um campo derivado para o &quot;Nome do capítulo&quot; que
 
    ![Localizar campo com tipo de dados antigo](assets/locate-fields-with-old-datatype.jpeg)
 
-1. Verifique o novo campo correspondente na seção [Nome do Conteúdo (variável)](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) no artigo [Parâmetros de mídia de streaming](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable).
+1. Verifique o novo campo correspondente na seção [Nome do Conteúdo (variável)](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) no artigo [Parâmetros de mídia de streaming](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable).
 
 1. Substitua o campo antigo pelo novo campo.
 

@@ -2,9 +2,9 @@
 title: Atualizar uma implementação do conector de origem do Analytics para novos campos XDM para serviços de mídia de transmissão
 description: Saiba mais sobre como migrar uma implementação do conector de origem do Analytics para campos atualizados de mídia de transmissão XDM
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d239b203-71ce-4307-884f-9d11cc623d04
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%

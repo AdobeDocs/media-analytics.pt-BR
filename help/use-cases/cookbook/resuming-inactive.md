@@ -4,11 +4,11 @@ description: Como lidar com a retomada de uma sessão inativa.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 100%
 O SDK do Media rastreia automaticamente por quanto tempo a reprodução de mídia permanece em um dos seguintes estados inativos:
 
 * Pausado
-* Buscando
-* Paralisado
+* Busca
+* Parado
 * Buffering
 
 Se uma sessão de rastreamento de mídia se mantiver no estado inativo por mais de 30 minutos, ela será encerrada automaticamente. Se o usuário retomar a sessão após o estado inativo (`trackPlay`), o Media Heartbeat cria automaticamente uma nova sessão de vídeo com as informações e os metadados que foram utilizados anteriormente e envia um evento de retomada de heartbeat. Para obter mais informações, consulte [Parâmetros de áudio e vídeo.](/help/implementation/variables/audio-video-parameters.md)

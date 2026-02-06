@@ -4,11 +4,11 @@ description: Saiba como lidar com interrupções do rastreamento durante a repro
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 90%
+ht-degree: 63%
 
 ---
 
@@ -25,14 +25,14 @@ A reprodução em um aplicativo de mídia pode ser interrompida de várias manei
 
 ## Perguntas frequentes sobre o manuseio de interrupções de aplicativos: {#faq-about-handling-application-interrupts}
 
-* _Quanto tempo um aplicativo deve ficar em segundo plano para a sessão ser encerrada?_
+* _Por quanto tempo um aplicativo deve ser colocado em segundo plano antes do fechamento da sessão?_
 
-  Se o aplicativo permitir reprodução em segundo plano, ele poderá continuar a rastrear, chamando nossas APIs, e nós enviaremos nossos pings de rastreamento normais. No entanto, nem todos os aplicativos de áudio permitem a reprodução em segundo plano, exceto o YouTube vermelho. Se o aplicativo não permitir reprodução em segundo plano, é recomendado permanecer no Estado pausado por um minuto e então encerrar a sessão de rastreamento. O aplicativo não pode continuar enviando pings de Pausa porque, na maioria dos casos, ele não poderá determinar se o usuário retornará para continuar visualizando a mídia ou quando ela será fechada. Também não é recomendado enviar pings em segundo plano.
+  Se o aplicativo permitir reprodução em segundo plano, ele poderá continuar rastreando chamando nossas APIs e enviaremos todos os nossos pings de rastreamento regulares. No entanto, nem todos os aplicativos de áudio permitem a reprodução em segundo plano, exceto o YouTube vermelho. Se o aplicativo não permitir reprodução em segundo plano, é recomendado permanecer no Estado pausado por um minuto e então encerrar a sessão de rastreamento. O aplicativo não pode continuar enviando pings de Pausa porque, na maioria dos casos, ele não poderá determinar se o usuário retornará para continuar visualizando a mídia ou quando ela será fechada. Também é uma experiência ruim manter o envio de pings quando estiver em segundo plano.
 
-* _Qual é o jeito certo de lidar com o rastreamento reiniciado depois que o aplicativo entra em segundo plano por muito tempo?_
+* _Qual é a maneira correta de lidar com a reinicialização do rastreamento depois que o aplicativo ficou em segundo plano por um longo tempo?_
 
-  O aplicativo precisa chamar `trackSessionEnd` para encerrar a sessão de rastreamento. A partir da versão 2.1, o SDK envia um ping de “fim” para notificar o backend que a sessão de rastreamento foi terminada.
+  O aplicativo precisa chamar `trackSessionEnd` para encerrar a sessão de rastreamento. A partir da versão 2.1, o SDK envia um ping de &quot;fim&quot; para notificar o back-end que a sessão de rastreamento foi encerrada.
 
-* _E sobre reiniciar a mesma sessão?_
+* _Que tal reiniciar a mesma sessão?_
 
   Para obter informações sobre como retomar uma sessão de rastreamento, consulte [Retomar sessões inativas](resuming-inactive.md). O SDK envia um ping de retomada para notificar o back-end que o usuário está retomando manualmente a sessão.

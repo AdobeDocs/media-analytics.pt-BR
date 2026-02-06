@@ -4,11 +4,11 @@ description: Visão geral da implementação do rastreamento de anúncios com o 
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '510'
+ht-degree: 79%
 
 ---
 
@@ -72,7 +72,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
-   | `name` | Nome do ad break, como precedente, intermediário e posterior. | Sim |
+   | `name` | Nome do ad break, como antes da exibição, durante a exibição e depois da exibição. | Sim |
    | `position` | A posição do número do ad break no conteúdo, começando com 1. | Sim |
    | `startTime` | Valor do indicador de reprodução no início do ad break. | Sim |
 
@@ -85,14 +85,14 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
    | `name` | Nome amigável do anúncio. | Sim |
-   | `adId` | identificador exclusivo para o anúncio. | Sim |
+   | `adId` | Identificador exclusivo do anúncio. | Sim |
    | `position` | A posição do número do anúncio no ad break, começando com 1. | Sim |
-   | `length` | Duração do anúncio | Sim |
+   | `length` | Comprimento do anúncio | Sim |
 
 1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento por meio de variáveis de dados de contexto.
 
-   * **Metadados de publicidade padrão -** Para metadados de anúncios padrão, crie um dicionário de pares de valores-chave de Metadados de publicidade padrão usando as chaves da sua plataforma.
-   * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do anúncio atual.
+   * **Metadados de anúncio padrão -** Para metadados de anúncio padrão, crie um dicionário de pares de valores-chave de metadados de anúncio padrão usando as chaves da sua plataforma.
+   * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto variável para as variáveis de dados personalizadas e preencha com os dados do anúncio atual.
 
 1. Chame `trackEvent()` com o evento `AdStart` na instância `MediaHeartbeat` para começar a rastrear a reprodução de anúncio.
 

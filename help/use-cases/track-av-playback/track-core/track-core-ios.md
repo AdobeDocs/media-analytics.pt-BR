@@ -4,11 +4,11 @@ description: Saiba como implementar o rastreamento principal usando o SDK de mí
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '704'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -29,7 +29,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    | Nome da variável | Descrição | Obrigatório |
    |---|---|---|
    | `name` | Nome do vídeo | Sim |
-   | `mediaid` | identificador exclusivo do vídeo | Sim |
+   | `mediaid` | Identificador exclusivo do vídeo | Sim |
    | `length` | Duração do vídeo | Sim |
    | `streamType` | Tipo de fluxo (consulte _Constantes de StreamType_ abaixo) | Sim |
    | `mediaType` | Tipo de mídia (consulte _Constantes de MediaType_ abaixo) | Sim |
@@ -163,7 +163,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    * O usuário faz uma pausa explicitamente no aplicativo.
    * O player se coloca no estado Pausa.
    * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que ele mantenha a sessão aberta.
-   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou um pop-up de outro aplicativo ocorre, mas você deseja que o aplicativo mantenha a sessão ativa para que o usuário possa retomar o vídeo do ponto em que foi interrompido.
+   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou uma pop-up de outro aplicativo ocorre, mas você deseja que o aplicativo mantenha a sessão ativa para dar ao usuário a oportunidade de retomar o vídeo a partir do ponto de interrupção.
 
 1. Identifique o evento do reprodutor para reprodução e/ou continuação do vídeo a partir da pausa e chame `trackPlay`:
 
@@ -177,7 +177,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    >
    >Esta pode ser a mesma fonte de evento utilizada na Etapa 4. Verifique se cada chamada `trackPause()` da API está emparelhada a uma chamada `trackPlay()` da API quando a reprodução continuar.
 
-Consulte as informações adicionais sobre o rastreamento da reprodução principal:
+Consulte o seguinte para obter informações adicionais sobre o rastreamento da reprodução principal:
 
 * Cenários de rastreamento: [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Reprodutor de exemplo incluído com o SDK do iOS para um exemplo completo de rastreamento.
+* Exemplo de reprodutor incluído no SDK do iOS para obter um exemplo completo de rastreamento.

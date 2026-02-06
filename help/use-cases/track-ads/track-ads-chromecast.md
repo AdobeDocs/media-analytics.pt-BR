@@ -4,11 +4,11 @@ description: Implemente o rastreamento de anúncios nos aplicativos do Chromecas
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 1. Identifique o início do ativo de anúncio e crie uma instância `AdObject` usando as informações do anúncio.
 
-   Criação do objeto de anúncio:[&#x200B; createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
+   Criação do objeto de anúncio:[ createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);
@@ -56,7 +56,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
-   * **Metadados de publicidade padrão -** Para metadados de anúncios padrão, crie um dicionário de pares de valores-chave de Metadados de publicidade padrão usando as chaves da sua plataforma:
+   * **Metadados de anúncio padrão -** Para metadados de anúncio padrão, crie um dicionário de pares de valores-chave de metadados de anúncio padrão usando as chaves da sua plataforma:
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do ativo de anúncio atual:
 
 1. Chame `trackEvent()` com o evento `AdStart` para começar a rastrear a reprodução de anúncio.

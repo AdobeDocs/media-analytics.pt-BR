@@ -4,11 +4,11 @@ description: Saiba mais sobre as chaves de metadados do iOS disponíveis.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -27,18 +27,18 @@ De `ADBStandardMetadataKeys.h`:
 | `ADBVideoMetadataKeyEPISODE` | Episódio | Vídeo |
 | `ADBVideoMetadataKeyASSET_ID` | Ativo | Vídeo |
 | `ADBVideoMetadataKeyGENRE` | Gênero | Vídeo |
-| `ADBVideoMetadataKeyFIRST_AIR_DATE` | Data da primeira exibição | Vídeo |
+| `ADBVideoMetadataKeyFIRST_AIR_DATE` | Primeira transmissão | Vídeo |
 | `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | Primeira data digital | Vídeo |
 | `ADBVideoMetadataKeyRATING` | Classificação | Vídeo |
 | `ADBVideoMetadataKeyORIGINATOR` | Originador | Vídeo |
 | `ADBVideoMetadataKeyNETWORK` | Rede | Vídeo |
 | `ADBVideoMetadataKeySHOW_TYPE` | Mostrar tipo | Vídeo |
-| `ADBVideoMetadataKeyAD_LOAD` | Carregamento do anúncio | Vídeo |
+| `ADBVideoMetadataKeyAD_LOAD` | Carregamento de anúncio | Vídeo |
 | `ADBVideoMetadataKeyMVPD` | mvpd | Vídeo |
 | `ADBVideoMetadataKeyAUTHORIZED` | Autorização | Vídeo |
 | `ADBVideoMetadataKeyDAY_PART` | Faixa de horário | Vídeo |
 | `ADBVideoMetadataKeyFEED` | Feed | Vídeo |
-| `ADBVideoMetadataKeySTREAM_FORMAT` | Formato de transmissão | Vídeo |
+| `ADBVideoMetadataKeySTREAM_FORMAT` | Formato do fluxo | Vídeo |
 
 ## Chaves de metadados de áudio
 
@@ -57,7 +57,7 @@ De `ADBStandardMetadataKeys.h`:
 |---|---|---|
 | `ADBAdMetadataKeyADVERTISER` | Anunciante | Publicidade |
 | `ADBAdMetadataKeyCAMPAIGN_ID` | ID da campanha | Publicidade |
-| `ADBAdMetadataKeyCREATIVE_ID` | ID de criação | Publicidade |
-| `ADBAdMetadataKeyPLACEMENT_ID` | ID de posicionamento | Publicidade |
+| `ADBAdMetadataKeyCREATIVE_ID` | Creative Id | Publicidade |
+| `ADBAdMetadataKeyPLACEMENT_ID` | Id De Posicionamento | Publicidade |
 | `ADBAdMetadataKeySITE_ID` | ID do site | Publicidade |
-| `ADBAdMetadataKeyCREATIVE_URL` | URL da arte | Publicidade |
+| `ADBAdMetadataKeyCREATIVE_URL` | URL do Creative | Publicidade |

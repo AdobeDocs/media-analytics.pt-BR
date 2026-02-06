@@ -4,11 +4,11 @@ description: Saiba como implementar o rastreamento de capítulos e segmentos usa
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '201'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ As instruções a seguir fornecem orientação para a implementação usando SDK
 >
 > Se estiver implementando uma versão 1.x do SDK, você pode baixar o Guia dos desenvolvedores aqui: [Baixar SDKs.](/help/getting-started/download-sdks.md)
 
-## Implementar metadados de publicidade padrão
+## Implementar Metadados de publicidade padrão
 
 1. Identifique quando ocorre o evento de início do capítulo e crie a instância `ChapterObject` usando as informações do capítulo.
 
@@ -34,7 +34,7 @@ As instruções a seguir fornecem orientação para a implementação usando SDK
    | --- | --- | :---: |
    | `name` | Nome do capítulo | Sim |
    | `position` | Posição do capítulo | Sim |
-   | `length` | Extensão do capítulo | Sim |
+   | `length` | Comprimento do capítulo | Sim |
    | `startTime` | Hora de início do capítulo | Sim |
 
    Objeto do capítulo:

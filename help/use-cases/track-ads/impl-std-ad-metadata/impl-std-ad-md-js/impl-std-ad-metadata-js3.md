@@ -3,17 +3,17 @@ title: Saiba como implementar metadados de anúncio padrão usando o JavaScript 
 description: Como usar metadados de anúncio padrão no rastreamento de anúncios em um navegador que utiliza aplicativos JavaScript 3.x.
 exl-id: ba9abf1d-3778-49ef-a2fc-6c0eafa3b227
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '56'
+ht-degree: 92%
 
 ---
 
 # Implementar metadados de anúncio padrão usando o JavaScript 3.x{#implement-standard-ad-metadata-on-javascript}
 
-## Implementar metadados de publicidade padrão
+## Implementar Metadados de publicidade padrão
 
 Para metadados de anúncios padrão, crie um dicionário de pares de valores-chave de metadados de anúncios padrão usando as chaves da sua plataforma:
 

@@ -4,8 +4,8 @@ description: Conheça mais sobre a linha do tempo do indicador de reprodução e
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 99%
@@ -65,7 +65,7 @@ No back-end, essa chamada gera uma chamada de inicialização do Adobe Analytics
 
 | Ação | Linha do tempo de ação (segundos) | Posição do indicador de reprodução (segundos) | Solicitação de cliente |
 | --- | :---: | :---: | --- |
-| Temporizador do evento ping de início do aplicativo | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
+| Temporizador do evento ping de início do aplicativo | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 Inicie o temporizador de ping do aplicativo. O primeiro evento de ping deve disparar 1 segundo se houver anúncios precedentes, 10 segundos se não houver.
 
@@ -179,7 +179,7 @@ Envie um ping ao back-end a cada 1 segundo enquanto estiver em um anúncio.
 >[!NOTE]
 >
 >Anúncios subsequentes na linha do tempo ignorarão a exibição da série de pings de um segundo
->&#x200B;>por razões de brevidade...
+>por razões de brevidade...
 
 ```json
 {

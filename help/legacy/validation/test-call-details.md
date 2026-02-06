@@ -4,11 +4,11 @@ description: Explore as chamadas que você deve fazer para validar sua implement
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 100%
 
 **Notas:**
 
-* As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Veja os detalhes dos metadados abaixo.
-* A duração dos fluxos lineares deve ser definida para a melhor estimativa do programa atual.
+* As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Consulte os detalhes dos metadados abaixo.
+* O comprimento para fluxos lineares deve ser definido de acordo com a melhor estimativa para a exibição atual.
 
 ### Metadados padrão na chamada de início do Adobe Analytics (AppMeasurement)  {#std-metadata-aa}
 
@@ -78,8 +78,8 @@ ht-degree: 100%
 
 **Notas:**
 
-* As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Veja os detalhes dos metadados abaixo.
-* A posição do indicador de reprodução para fluxos lineares no início do vídeo deve ser definida para os segundos decorridos desde o início do programa atual, não 0.
+* As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Consulte os detalhes dos metadados abaixo.
+* A posição do indicador de reprodução para fluxos lineares no início do vídeo deve ser definida como os segundos decorridos desde o início do programa atual, não como 0.
 
 ### Metadados padrão na chamada de início do Media Analytics (heartbeats)  {#std-metadata-ma}
 
@@ -147,8 +147,8 @@ ht-degree: 100%
 
 **Notas:**
 
-* As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Veja os detalhes dos metadados abaixo.
-* A duração do anúncio deverá ser definida para -1, se não estiver disponível no início do anúncio.
+* As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Consulte os detalhes dos metadados abaixo.
+* O comprimento do anúncio pode ser definido como -1 se não estiver disponível no início do anúncio.
 
 ### Metadados padrão na chamada de início do anúncio do Adobe Analytics (AppMeasurement)  {#std-metadata-aa-ad-start}
 
@@ -192,8 +192,8 @@ ht-degree: 100%
 
 **Notas:**
 
-* As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Veja os detalhes dos metadados abaixo.
-* A duração do anúncio deverá ser definida para -1, se não estiver disponível no início do anúncio.
+* As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Consulte os detalhes dos metadados abaixo.
+* O comprimento do anúncio pode ser definido como -1 se não estiver disponível no início do anúncio.
 
 ### Metadados padrão na chamada de início do Media Analytics (heartbeats)  {#std-metadata-ma-ad-start}
 

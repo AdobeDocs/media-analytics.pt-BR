@@ -4,11 +4,11 @@ description: Saiba o que fazer quando a ID de sessão for retornada após o play
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '205'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ O reprodutor pode disparar eventos _antes da resposta das sessões ser retornada
 >
 >A [Solicitação de eventos](../mc-api-ref/mc-api-events-req.md) não retorna dados ao cliente além de um código de resposta HTTP.
 
-Verifique o Reprodutor de referência na sua distribuição para obter uma maneira de processar eventos antes de receber uma ID de sessão. Por exemplo:
+Verifique o reprodutor de referência na distribuição para saber como processar eventos antes de receber uma ID de sessão. Por exemplo:
 
 ```js
 var eventData = {};            // JSON payload 
@@ -75,7 +75,7 @@ VideoPlayer.prototype.getPlayerTime = function() {
 };
 ```
 
-**Processar eventos enfileirados -** O reprodutor de referência processa eventos enfileirados da seguinte forma:
+**Processar todos os eventos em fila -** O reprodutor de referência processa os eventos em fila da seguinte maneira:
 
 ```js
     […] 
@@ -92,4 +92,4 @@ VideoPlayer.prototype._processPendingEvents =
 }
 ```
 
-Continue a processar os eventos de rastreamento conforme ocorrerem.
+Continue a processar os eventos de rastreamento à medida que eles ocorrerem.

@@ -4,11 +4,11 @@ description: Saiba como implementar o rastreamento principal usando o SDK de mí
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 88%
+ht-degree: 81%
 
 ---
 
@@ -138,7 +138,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    * O usuário faz uma pausa explicitamente no aplicativo.
    * O player se coloca no estado Pausa.
    * (*Aplicativos móveis*) - O usuário coloca o aplicativo em segundo plano, mas você deseja que ele mantenha a sessão aberta.
-   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou um pop-up de outro aplicativo ocorre, mas você deseja que o aplicativo mantenha a sessão ativa para que o usuário possa retomar o vídeo do ponto em que foi interrompido.
+   * (*Aplicativos móveis*) - Qualquer tipo de interrupção de sistema que ocorra e faça com que um aplicativo seja colocado em segundo plano. Por exemplo, o usuário recebe uma chamada ou uma pop-up de outro aplicativo ocorre, mas você deseja que o aplicativo mantenha a sessão ativa para dar ao usuário a oportunidade de retomar o vídeo a partir do ponto de interrupção.
 
 1. Identifique o evento do reprodutor para reprodução e/ou continuação do vídeo a partir da pausa e chame [trackPlay:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)
 
@@ -151,4 +151,4 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    >Esta pode ser a mesma fonte de evento utilizada na Etapa 4. Verifique se cada chamada `trackPause()` da API está emparelhada a uma chamada `trackPlay()` da API quando a reprodução continuar.
 
 * Cenários de rastreamento: [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Reprodutor de exemplo incluído com o SDK do Chromecast para um exemplo completo de rastreamento.
+* Exemplo de reprodutor incluído no Chromecast SDK para obter um exemplo completo de rastreamento.

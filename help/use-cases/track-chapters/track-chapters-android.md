@@ -4,11 +4,11 @@ description: Saiba mais sobre a implementação do rastreamento de capítulos e 
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ As instruções a seguir fornecem orientação para a implementação usando SDK
    | --- | --- | :---: |
    | `name` | Nome do capítulo | Sim |
    | `position` | Posição do capítulo | Sim |
-   | `length` | Extensão do capítulo | Sim |
+   | `length` | Comprimento do capítulo | Sim |
    | `startTime` | Hora de início do capítulo | Sim |
 
    Objeto do capítulo:

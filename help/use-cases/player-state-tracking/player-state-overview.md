@@ -3,11 +3,11 @@ title: Sobre o rastreamento do estado do player
 description: Saiba mais sobre o recurso de rastreamento do estado do player, incluindo requisitos e diretrizes para implementar e informar os estados do player.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '406'
+ht-degree: 100%
 
 ---
 

@@ -4,11 +4,11 @@ description: Saiba como implementar o rastreamento principal usando o SDK de mí
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '689'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -68,8 +68,8 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
      >
      >Anexar o objeto de metadados padrão ao objeto de mídia é opcional.
 
-      * Referência da API de chaves de metadados da mídia - [Chaves de metadados padrão - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * Consulte o conjunto completo de metadados aqui: [Parâmetros de áudio e vídeo](/help/implementation/variables/audio-video-parameters.md)
+      * Referência da API de chaves de metadados de mídia - [Chaves de metadados padrão - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+      * Consulte o conjunto completo de metadados de vídeo aqui: [Parâmetros de áudio e vídeo](/help/implementation/variables/audio-video-parameters.md)
 
    * **Metadados personalizados**
 
@@ -174,7 +174,7 @@ Esta documentação abrange o rastreamento na versão 2.x do SDK.
    >
    >Esta pode ser a mesma fonte de evento utilizada na Etapa 4. Verifique se cada chamada da API de `trackPause()` está emparelhada a uma chamada da API de `trackPlay()` quando a reprodução de mídia for retomada.
 
-Consulte as informações adicionais sobre o rastreamento da reprodução principal:
+Consulte o seguinte para obter informações adicionais sobre o rastreamento da reprodução principal:
 
 * Cenários de rastreamento: [Reprodução de VOD sem anúncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Reprodutor de exemplo incluído com o SDK do Android para um exemplo completo de rastreamento.
+* Exemplo de reprodutor incluído no SDK do Android para obter um exemplo completo de rastreamento.

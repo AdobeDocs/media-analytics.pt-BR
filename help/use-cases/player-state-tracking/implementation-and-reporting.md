@@ -3,8 +3,8 @@ title: Implementação e Relatórios
 description: 'Saiba como implementar o recurso de rastreamento do estado do player, incluindo:'
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 78%
@@ -89,7 +89,7 @@ As métricas fornecidas para cada estado individual são computadas e enviadas p
 * `a.media.states.[state.name].count = 4` — Identifica o número de ocorrências de um estado durante cada reprodução individual de um fluxo
 * `a.media.states.[state.name].time = 240` — Identifica a duração total do estado em segundos para cada reprodução individual de um fluxo
 
-## Relatórios
+## Geração de relatórios
 
 Todas as métricas do estado do player podem ser usadas para qualquer visualização de relatórios disponível no Analysis Workspace ou em um componente (segmento, métricas calculadas) assim que um conjunto de relatórios é habilitado para o rastreamento do estado do player. Essas métricas podem ser ativadas no Admin Console para cada relatório individual usando a Configuração do relatórios de mídia (Editar configurações > Gerenciamento de mídia > Relatórios de mídia).
 

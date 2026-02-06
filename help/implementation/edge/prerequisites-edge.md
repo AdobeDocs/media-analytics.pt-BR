@@ -2,9 +2,9 @@
 title: Pré-requisitos para implementações somente do Adobe Analytics
 description: Saiba mais sobre os pré-requisitos para usar a coleção de mídia de transmissão com implementações somente do Adobe Analytics ou do Edge
 feature: Streaming Media, Workspace Basics
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 7b042e45-e35a-43d6-b59e-282573c6a326
-source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 10%
@@ -23,7 +23,7 @@ Ao implementar a Coleção de mídia de transmissão com o Edge, você também d
    * [Guia do Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=pt-BR)
    * [Implementação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR)
    * [Documentação do Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=pt-BR)
-   * [Documentação do Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=pt-BR)
+   * [Documentação do Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
 
 1. **Obter a URL do servidor de rastreamento de mídia**<br>
 Peça ao representante da Customer Journey Analytics a URL do servidor de rastreamento de mídia. <!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->

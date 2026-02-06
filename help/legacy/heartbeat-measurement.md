@@ -2,9 +2,9 @@
 title: Sobre a medição de pulsação
 description: Saiba como as pulsações são usadas para coletar métricas de vídeo.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 75%
@@ -13,7 +13,7 @@ ht-degree: 75%
 
 # Sobre a medição de pulsação
 
-Os serviços de mídia de transmissão da Adobe usam &quot;heartbeats&quot; para coletar métricas de vídeo. Durante a reprodução do vídeo, as pulsações são enviadas ao servidor de rastreamento de pulsação para medir o tempo de reprodução. As chamadas de pulsação são enviadas a cada dez segundos. As pulsações resultam em métricas de envolvimento granulares com o vídeo e relatórios de fallout de vídeo mais precisos. os serviços de mídia de transmissão medem as pulsações usando o Adobe Launch com a extensão do Media Analytics, o Media SDK e a API Media Collection. Os componentes `AppMeasurement` e `VisitorID` são usados para receber dados de vídeo.
+Os serviços de mídia de transmissão da Adobe usam &quot;heartbeats&quot; para coletar métricas de vídeo. Durante a reprodução do vídeo, as pulsações são enviadas ao servidor de rastreamento de pulsação para medir o tempo de reprodução. As chamadas de pulsação são enviadas a cada dez segundos. As pulsações resultam em métricas de engajamento granulares com o vídeo e relatórios de fallout de vídeo mais precisos. os serviços de mídia de transmissão medem as pulsações usando o Adobe Launch com a extensão do Media Analytics, o Media SDK e a API Media Collection. Os componentes `AppMeasurement` e `VisitorID` são usados para receber dados de vídeo.
 
 Usar pulsações nos serviços de streaming de mídia oferece os seguintes benefícios:
 

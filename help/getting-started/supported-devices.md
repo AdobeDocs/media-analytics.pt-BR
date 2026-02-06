@@ -4,7 +4,7 @@ description: Saiba mais sobre os principais dispositivos, como iOS, Android, dis
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 75%
@@ -27,12 +27,12 @@ A tabela abaixo lista os dispositivos compatíveis no momento. Se um dispositivo
 
 Para obter mais informações sobre como implementar o Media no Edge, consulte [Instalar a coleção de mídia de streaming com o Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-| Plataformas e dispositivos de transmissão | | Mídia para SDK/Extensão de rede de borda | API de borda de mídia | Extensão de mídia com tags ou SDK móvel da AEP | SDK do Media | API da coleção de mídia |
+| Plataformas e dispositivos de transmissão |  | Mídia para SDK/Extensão de rede de borda | API de borda de mídia | Extensão de mídia com tags ou SDK móvel da AEP | SDK do Media | API da coleção de mídia |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
-| Web/Web móvel | | | | | |
+| Web/Web móvel | | | | | | |
 | | Navegadores JavaScript | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) |
-| Aplicativo móvel | | | | | |
-| | Dispositivos iOS | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | | ![Compatível](/help/assets/icon-blue-check.png) | |
+| Aplicativo móvel | | | | | | |
+| | Dispositivos iOS | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | | ![Compatível](/help/assets/icon-blue-check.png) |
 | | Dispositivos Android | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | ![Compatível](/help/assets/icon-blue-check.png) | | ![Compatível](/help/assets/icon-blue-check.png) |
 | | Dispositivos Windows | | ![Compatível](/help/assets/icon-blue-check.png) | | | ![Compatível](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |

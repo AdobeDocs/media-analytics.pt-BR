@@ -4,11 +4,11 @@ description: Saiba como alterar as variáveis de Marco para os métodos de Link 
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 97%
+ht-degree: 79%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ## Visão geral  {#overview}
 
-Os principais conceitos de medição de vídeo são os mesmos para o rastreamento de Marco e Link personalizado, que estão realizando eventos do reprodutor de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores de reprodutores e mapeá-los para variáveis&#x200B;de análise. A abordagem de Link personalizado deve ser considerada como uma diminuição e simplificação da implementação e dos dados coletados. Com a solução de Link personalizado, nenhuma variável ou método é predefinido para a medição de vídeo, isso requer uma configuração personalizada completa. Deve ser possível atualizar o código de evento do reprodutor para apontar as chamadas de rastreamento de link personalizado para eventos básicos do reprodutor, como início e conclusão. Consulte [Guia de implementação de link personalizado](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md) para obter mais informações.
+Os conceitos principais de avaliação de vídeo são os mesmos para o rastreamento de Marco e Link personalizado, que está pegando eventos do player de vídeo e mapeando-os para métodos de análise, além de capturar metadados e valores do player e mapeá-los para variáveis de análise. A abordagem de link personalizado deve ser considerada como uma redução e simplificação da implementação e dos dados coletados. Com a solução Link personalizado, nenhuma variável ou método é predefinido para a avaliação de vídeo, isso requer uma configuração personalizada completa. Deve ser possível atualizar o código do evento do player para apontar para as chamadas de rastreamento de link personalizado para eventos básicos do player, como iniciar e concluir. Consulte [Guia de implementação de link personalizado](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md) para obter mais informações.
 
 As tabelas a seguir fornecem as traduções entre as soluções de Marco e Link personalizado.
 

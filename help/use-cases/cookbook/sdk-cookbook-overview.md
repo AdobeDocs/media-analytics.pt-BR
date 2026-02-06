@@ -3,8 +3,8 @@ title: Visão geral dos casos de uso do SDK de mídia
 description: Saiba mais sobre casos de uso de mídia de streaming
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 92%
@@ -33,5 +33,5 @@ ht-degree: 92%
    * [Rastrear estados do aplicativo](/help/use-cases/analytics-with-ott/track-app-states.md)
    * [Rastrear ações do aplicativo](/help/use-cases/analytics-with-ott/track-app-actions.md)
    * [Definir IDs de usuário](/help/use-cases/analytics-with-ott/set-user-ids.md)
-   * [OTT e Audience Manager &#x200B;](/help/use-cases/analytics-with-ott/ott-am.md)
-   * [OTT e Experience Cloud &#x200B;](/help/use-cases/analytics-with-ott/ott-experience-cloud.md)
+   * [OTT e Audience Manager ](/help/use-cases/analytics-with-ott/ott-am.md)
+   * [OTT e Experience Cloud ](/help/use-cases/analytics-with-ott/ott-experience-cloud.md)

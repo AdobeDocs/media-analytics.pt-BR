@@ -4,11 +4,11 @@ description: Como usar metadados de anúncio padrão no rastreamento de anúncio
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardAdMetadata` | Constante para anexar os Metadados de publicidade padrão ao `MediaObject` do anúncio. |
 
-## Implementar metadados de publicidade padrão
+## Implementar Metadados de publicidade padrão
 
 Para metadados de anúncios padrão, crie um dicionário de pares de valores-chave de metadados de anúncios padrão usando as chaves da sua plataforma:
 

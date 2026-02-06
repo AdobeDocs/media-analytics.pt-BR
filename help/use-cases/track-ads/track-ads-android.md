@@ -4,11 +4,11 @@ description: Implementar o rastreamento de anúncios em aplicativos Android usan
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -38,7 +38,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
-   | `name` | Nome do ad break, como precedente, intermediário e posterior. | Sim |
+   | `name` | Nome do ad break, como antes da exibição, durante a exibição e depois da exibição. | Sim |
    | `position` | A posição do número do ad break no conteúdo, começando com 1. | Sim |
    | `startTime` | Valor do indicador de reprodução no início do ad break. | Sim |
 
@@ -68,9 +68,9 @@ As instruções a seguir fornecem orientação para a implementação usando os 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
    | `name` | Nome amigável do anúncio. | Sim |
-   | `adId` | identificador exclusivo para o anúncio. | Sim |
+   | `adId` | Identificador exclusivo do anúncio. | Sim |
    | `position` | A posição do número do anúncio no ad break, começando com 1. | Sim |
-   | `length` | Duração do anúncio | Sim |
+   | `length` | Comprimento do anúncio | Sim |
 
    Criação do objeto de anúncio:
 

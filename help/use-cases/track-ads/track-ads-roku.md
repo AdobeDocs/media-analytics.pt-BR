@@ -4,11 +4,11 @@ description: Implementar o rastreamento de anúncios nos aplicativos do Roku usa
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
-   | `name` | Nome do ad break, como precedente, intermediário e posterior. | Sim |
+   | `name` | Nome do ad break, como antes da exibição, durante a exibição e depois da exibição. | Sim |
    | `position` | A posição do número do ad break, começando com 1. | Sim |
    | `startTime` | Valor do indicador de reprodução no início do ad break. | Sim |
 

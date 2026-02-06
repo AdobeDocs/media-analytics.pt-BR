@@ -4,11 +4,11 @@ description: Implementar o rastreamento de anúncios em aplicativos de iOS usand
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 88%
 
 ---
 
@@ -38,7 +38,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
-   | `name` | Nome do ad break, como precedente, intermediário e posterior. | Sim |
+   | `name` | Nome do ad break, como antes da exibição, durante a exibição e depois da exibição. | Sim |
    | `position` | A posição do número do ad break no conteúdo, começando com 1. | Sim |
    | `startTime` | Valor do indicador de reprodução no início do ad break. | Sim |
 
@@ -67,9 +67,9 @@ As instruções a seguir fornecem orientação para a implementação usando os 
    | Nome da variável | Descrição | Obrigatório |
    | --- | --- | :---: |
    | `name` | Nome amigável do anúncio. | Sim |
-   | `adId` | identificador exclusivo para o anúncio. | Sim |
+   | `adId` | Identificador exclusivo do anúncio. | Sim |
    | `position` | A posição do número do anúncio no ad break, começando com 1. | Sim |
-   | `length` | Duração do anúncio | Sim |
+   | `length` | Comprimento do anúncio | Sim |
 
    Criação do objeto de anúncio:
 
@@ -82,7 +82,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
-   * [Implementar metadados de publicidade padrão no iOS &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * [Implementar metadados de publicidade padrão no iOS ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **Metadados de anúncio personalizados -** Para metadados personalizados, crie um objeto de variável para as variáveis de dados personalizadas e preencha com os dados do anúncio atual:
 
      ```
