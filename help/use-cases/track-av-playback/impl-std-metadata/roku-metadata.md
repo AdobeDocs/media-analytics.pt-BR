@@ -5,16 +5,16 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 91%
+ht-degree: 80%
 
 ---
 
 # Chaves de metadados do Roku{#roku-metadata-keys}
 
-Os metadados padrão de vídeo, áudio e anúncios podem ser definidos em objetos de informação de mídia e anúncio respectivamente. Usando as chaves de constantes para metadados de vídeo/anúncio, defina o dicionário que contém os metadados padrão em um objeto de informação antes de chamar as APIs de rastreamento. Consulte as tabelas abaixo para obter a lista completa de constantes de metadados padrão, seguida de exemplos.
+Os metadados padrão de vídeo, áudio e anúncios podem ser definidos em objetos de informação de mídia e anúncio respectivamente. Usando as chaves de constantes para metadados de vídeo/anúncio, defina o dicionário contendo metadados padrão no objeto info antes de chamar as APIs de rastreamento. Consulte as tabelas abaixo para obter toda a lista de constantes de metadados padrão, seguida de amostra.
 
 ## Constantes de metadados de vídeo {#video-metadata-constants}
 
