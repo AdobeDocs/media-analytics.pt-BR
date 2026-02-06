@@ -35,7 +35,7 @@ As instruções a seguir fornecem orientação para a implementação usando SDK
    | `length` | Comprimento do capítulo | Sim |
    | `startTime` | Hora de início do capítulo | Sim |
 
-   Objeto do capítulo:[ createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
+   Objeto do capítulo:[&#x200B; createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
 
    ```js
    chapterInfo = ADBMobile.media.createChapterObject("First Chapter", 1, CHAPTER1_LENGTH, CHAPTER1_START_POS);

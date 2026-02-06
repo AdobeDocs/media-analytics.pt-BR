@@ -84,7 +84,7 @@ As instruções a seguir fornecem orientação para a implementação usando os 
 
 1. Opcionalmente, anexe metadados padrão e/ou de anúncio à sessão de rastreamento de mídia por meio de variáveis de dados de contexto.
 
-   * [Implementar metadados de publicidade padrão no Android ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+   * [Implementar metadados de publicidade padrão no Android &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
 
    help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md
 

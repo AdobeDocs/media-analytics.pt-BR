@@ -34,7 +34,7 @@ A tabela abaixo lista a documentação sobre os produtos da Adobe usados com os 
 | Produto | Documentação |
 |:-----------------------:|----------------|
 | **Adobe Analytics** | *[Guia de implementação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR)<br> *[Guia de componentes do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=pt-BR)<br> *[Guia de ferramentas do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=pt-BR)<br> *[Tutoriais do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=pt-BR#tutoriais) <br> *[APIs do Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Implementação móvel do Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
-| **Tags** | *[Documentação de tags da Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) |
+| **Tags** | *[Documentação de tags da Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) |
 
 ## Tutoriais do Adobe Enterprise {#adobe-tutorials}
 

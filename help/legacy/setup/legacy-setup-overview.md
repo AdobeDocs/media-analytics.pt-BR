@@ -143,7 +143,7 @@ As implementações de rastreamento do Media Analytics geram dois tipos de chama
 
   O servidor de rastreamento do Analytics deve terminar com “`.sc.omtrdc.net`” ou ser um CNAME.
 
-* ** Servidor do Media Analytics (Heartbeats)**
+* **&#x200B; Servidor do Media Analytics (Heartbeats)**
 Este sempre tem o formato &quot;`[your_namespace].hb.omtrdc.net`&quot;. O valor &quot;`[your_namespace]`&quot; especifica sua empresa e é fornecido pela Adobe.
 
 O rastreamento de mídia funciona da mesma forma em todas as plataformas, desktops e dispositivos móveis. O rastreamento de áudio funciona atualmente em plataformas móveis. Para todas as chamadas de rastreamento, há algumas variáveis universais principais que precisam ser validadas:
