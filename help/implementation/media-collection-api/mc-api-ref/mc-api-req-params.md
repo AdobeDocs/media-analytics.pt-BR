@@ -5,10 +5,10 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 98%
+source-wordcount: '1344'
+ht-degree: 96%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 98%
 | `media.qoe.framesPerSecond` | N | inteiro | Qualquer | O número de quadros por segundo |
 | `media.qoe.timeToStart` | N | inteiro | Qualquer | O tempo (em milissegundos) decorrido entre o momento em que o usuário aperta o play e o conteúdo é carregado e começa a ser reproduzido. |
 
-## Parâmetros da Lei de Privacidade do Consumidor da Califórnia (CCPA)  {#ccpa-params}
+## Parâmetros da Lei de Privacidade do Consumidor da Califórnia (CCPA) {#ccpa-params}
 
 | Chave da solicitação  | Obrigatório | Chave de tipo de solicitação | Definir em... |  Descrição  |
 | --- | :---: | :---: | :---: | --- |
@@ -124,7 +124,7 @@ Passe a ID de usuário da Experience Cloud (também conhecida como `MID` ou `MCI
 
 >[!NOTE]
 >
->O Media Analytics (MA) é integrado à família de aplicativos da Experience Cloud (Adobe Analytics, Audience Manager, Target, etc.). Você precisa de uma Experience Cloud ID para acessar esses aplicativos. _A ECID é o que você deve usar para identificar os usuários na maioria dos cenários._
+>O Media Analytics (MA) é integrado à família de aplicativos da Experience Cloud (Adobe Analytics, Audience Manager, Target, etc.). Você precisa de uma Experience Cloud ID para acessar esses aplicativos. _A ECID é o que você deve usar para identificar usuários na maioria dos cenários._
 
 ### appInstallationId
 
@@ -136,10 +136,12 @@ Passe a ID de usuário da Experience Cloud (também conhecida como `MID` ou `MCI
 >
 >O `appInstallationId` identifica exclusivamente o aplicativo *e o dispositivo*. Ele precisa ser exclusivo para cada aplicativo em cada dispositivo, ou seja, dois usuários usando a mesma versão do mesmo aplicativo em diferentes dispositivos devem enviar um `appInstallationId` diferente (exclusivo), separadamente.
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+<!-- 
+Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
 \<ul id="ul_iwc_fqt_pbb"\>
  \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
-</ul> -->
+</ul> 
+-->
 
 ### visitor.marketingCloudOrgId
 
