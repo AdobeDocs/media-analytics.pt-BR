@@ -4,10 +4,10 @@ description: Saiba como usar o painel Visualizadores simultâneos de mídia para
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+source-git-commit: 48e78a06bbcea0918bfa7d93dfc44bbcc8bddb22
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 88%
+source-wordcount: '192'
+ht-degree: 69%
 
 ---
 
@@ -21,4 +21,4 @@ No Analysis Workspace, Visualizadores simultâneos é o número de visitantes ú
 
 ## Obter visualizadores simultâneos por meio da API de relatórios do Analytics
 
-Você também pode obter dados do visualizador simultâneo por até um mês por vez com granularidade de nível de minuto usando a API de relatórios 2.0 do Analytics. A API de relatórios usa a mesma definição de visualizadores simultâneos que o Analysis Workspace.  Para obter mais informações, consulte [_*Obter dados de relatório JSON de visualizadores simultâneos com APIs do Analytics 2.0*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md).
+Você também pode obter dados do visualizador simultâneo por até um mês por vez com granularidade de nível de minuto usando a API de relatórios 2.0 do Analytics.  A API de relatórios usa a mesma definição de visualizadores simultâneos que o Analysis Workspace.  Para obter mais informações, consulte [_*Obter dados de relatório JSON de visualizadores simultâneos com APIs do Analytics 2.0*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md).
