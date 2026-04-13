@@ -4,10 +4,10 @@ description: Saiba como os serviços de streaming de mídia do Adobe podem ser i
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 8%
+source-wordcount: '2413'
+ht-degree: 10%
 
 ---
 
@@ -113,7 +113,7 @@ Para criar e configurar um esquema:
 
    +++
 
-1. (Opcional) É possível adicionar metadados personalizados ao esquema. Isso permite incluir metadados adicionais definidos pelo usuário que podem ser personalizados para necessidades ou contextos específicos. Essa flexibilidade é útil em cenários nos quais os esquemas existentes não abrangem os pontos de dados desejados. (Você também pode trabalhar com metadados personalizados com APIs do Media Edge. Para obter mais informações, consulte [Criar metadados personalizados com APIs do Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
+1. (Opcional) É possível adicionar metadados personalizados ao esquema. Isso permite incluir metadados adicionais definidos pelo usuário que podem ser personalizados para necessidades ou contextos específicos. Essa flexibilidade é útil em cenários nos quais os esquemas existentes não abrangem os pontos de dados desejados. (Você também pode trabalhar com metadados personalizados com APIs do Media Edge. Para obter mais informações, consulte [Suporte a metadados personalizados - formato XDM](/help/implementation/edge/implementation-edge-custom-metadata.md).
 
    +++ Expanda aqui para visualizar instruções sobre como adicionar metadados personalizados ao esquema.
 
@@ -226,7 +226,7 @@ Para criar e configurar um esquema:
       | Inícios da mídia | mediaReporting.sessionDetails.isViewed |
       | Visualizações do segmento de mídia | mediaReporting.sessionDetails.hasSegmentView |
       | Início do conteúdo | mediaReporting.sessionDetails.isPlayed |
-      | Conclusões de conteúdo | mediaReporting.sessionDetails.isCompleted |
+      | Conteúdo concluído | mediaReporting.sessionDetails.isCompleted |
       | Tempo gasto no conteúdo | mediaReporting.sessionDetails.timePlayed |
       | Tempo gasto com a mídia | mediaReporting.sessionDetails.totalTimePlayed |
       | Tempo de reprodução exclusivo | mediaReporting.sessionDetails.uniqueTimePlayed |
@@ -353,7 +353,7 @@ Dependendo do tipo de dados que deseja enviar para o Experience Platform Edge, v
 
 * [Enviar dados da Web para o Edge com o Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md)
 
-* [Migrar para Mídia de Streaming do Adobe para a extensão do Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migrar para a extensão Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Dispositivo móvel: usar o Adobe Experience Platform Mobile SDK
 
@@ -363,7 +363,7 @@ Use os seguintes recursos de documentação para concluir a implementação para
 
 * [Referência da API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migrar para Mídia de Streaming do Adobe para a extensão do Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migrar para a extensão Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Roku: Adobe Experience Platform Roku SDK
 
@@ -387,4 +387,4 @@ Para obter mais informações sobre a API do Media Edge, consulte os seguintes r
 
 * [Guia de solução de problemas da API do Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
-* [Usando o arquivo de Especificação Open API para APIs do Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
+* [Uso do arquivo de especificação da API aberta para APIs do Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
