@@ -3,7 +3,7 @@ title: Suporte a metadados personalizados - Formato XDM
 description: Saiba como enviar metadados personalizados com eventos de rastreamento de mídia usando o formato XDM da Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 1a6ce0ddca6e52f3ad10bd69210e52e634641272
+source-git-commit: da2fe856a32f9056752b9e2c2e339d43be20372a
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Os metadados personalizados são uma **matriz de objetos de valor de nome** dent
 }
 ```
 
-&lt;InlineAlert variant="warning" slots="text" />
+<InlineAlert variant="warning" slots="text" />
 
 `customMetadata` deve ser uma **matriz** dentro de `mediaCollection`, não no nível raiz `xdm`.
 
@@ -252,7 +252,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 Use o objeto `_data` quando precisar de metadados no Adobe Analytics que devem **não** ser armazenados em conjuntos de dados do AEP — por exemplo, sinalizadores temporários, variáveis de depuração ou dicas de processamento específicas do Analytics.
 
-&lt;InlineAlert variant="warning" slots="text" />
+<InlineAlert variant="warning" slots="text" />
 
 Os dados enviados via `_data` não são armazenados no Adobe Experience Platform e não estão disponíveis para o Real-Time CDP, Journey Orchestration ou outros serviços da AEP.
 
@@ -307,14 +307,14 @@ Neste exemplo:
 
 ## Local dos dados downstream
 
-&lt;InlineAlert variant="info" slots="text" />
+<InlineAlert variant="info" slots="text" />
 
 `xdm.mediaCollection.customMetadata` é o **caminho de API de entrada** usado para enviar metadados personalizados com eventos. Após o processamento, os dados são encaminhados ao Adobe Analytics como variáveis de dados de contexto e armazenados no Adobe Experience Platform em `mediaReporting.customMetadata` e como campos nivelados de nível superior.
 
 **Adobe Analytics:**
 - Após o processamento, os metadados personalizados são encaminhados para o Adobe Analytics como variáveis de dados de contexto. O prefixo `_tenant` é removido automaticamente, portanto, as regras de processamento referenciam somente o caminho do campo após `_tenant` (por exemplo, `_mycompany.contentCategory` torna-se `contentCategory`)
 - Os dados enviados via `_data` também são encaminhados ao Adobe Analytics e disponibilizados pelas regras de processamento
-- Use as regras de processamento para mapear variáveis de dados de contexto para eVars, props ou outras variáveis do Analytics. Consulte [Mapeamento de variável de dados para o Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping) para obter detalhes.
+- Use as regras de processamento para mapear variáveis de dados de contexto para eVars, props ou outras variáveis do Analytics. Consulte [Mapeamento de variável de dados para o Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) para obter detalhes.
 
 **Adobe Experience Platform:**
 - Os campos de metadados personalizados devem ser definidos como campos personalizados no esquema XDM (por exemplo, `_mycompany`) e podem ser armazenados e consultados no AEP como campos nivelados
@@ -334,8 +334,8 @@ Neste exemplo:
 ## Documentação relacionada
 
 - [Suporte a metadados personalizados](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — API MC (formato JSON)
-- [Tipo de dados de Detalhes da Coleção de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-collection-details) — Referência de esquema XDM
-- [Mapeamento de variável de dados para o Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping) — Mapeamento de dados de contexto do Analytics para campos XDM
+- [Tipo de dados de Detalhes da Coleção de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — Referência de esquema XDM
+- [Mapeamento de variável de dados para o Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) — Mapeamento de dados de contexto do Analytics para campos XDM
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management
 - [Ad endpoints](ads.md) — Track advertising impressions
