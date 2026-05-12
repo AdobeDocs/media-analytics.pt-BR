@@ -24,7 +24,7 @@ A variável de comprimento do capítulo é a duração do capítulo, em segundos
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.chapter.length` |
-| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Obrigatório** | Não (Mobile SDK); Sim (Edge, API Media Collection) |
 | **Enviado com** | Início do capítulo, fechamento do capítulo |
 

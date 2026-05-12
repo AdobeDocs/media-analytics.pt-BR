@@ -24,7 +24,7 @@ A variável bitrate é a taxa de bits de reprodução atual, em kilobits por seg
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.qoe.bitrateAverageBucket` |
-| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Eventos de qualidade (alteração da taxa de bits, buffer, erro), fechamento da sessão |
 

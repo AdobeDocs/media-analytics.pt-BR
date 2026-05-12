@@ -24,7 +24,7 @@ A variável dropped frames é a contagem de quadros que o reprodutor derrubou du
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.qoe.droppedFrameCount` |
-| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Eventos de qualidade, fechamento de sessão |
 

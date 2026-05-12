@@ -24,7 +24,7 @@ A variável de hora de início do ad break é o deslocamento do ad break no cont
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.podSecond` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Obrigatório** | Sim |
 | **Enviado com** | Início do anúncio, fechamento do anúncio |
 

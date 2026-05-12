@@ -24,7 +24,7 @@ A variável de classificação de conteúdo é a classificação de público-alv
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.rating` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.rating`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.rating`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início da sessão, fechamento da sessão |
 

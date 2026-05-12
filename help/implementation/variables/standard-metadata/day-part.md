@@ -24,7 +24,7 @@ A variável day part é o intervalo da hora do dia em que o conteúdo foi transm
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.dayPart` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início da sessão, fechamento da sessão |
 

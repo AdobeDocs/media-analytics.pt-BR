@@ -24,7 +24,7 @@ A variável de ID de conteúdo identifica exclusivamente cada parte do conteúdo
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.name` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obrigatório** | Sim |
 | **Enviado com** | Início da sessão, fechamento da sessão |
 

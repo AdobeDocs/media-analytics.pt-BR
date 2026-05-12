@@ -24,7 +24,7 @@ A variável episode é o número do episódio na temporada (normalmente um intei
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.episode` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início da sessão, fechamento da sessão |
 

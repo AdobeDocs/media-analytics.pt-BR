@@ -24,7 +24,7 @@ A variável de nome de conteúdo é o título legível do conteúdo (por exemplo
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.friendlyName` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início da sessão, fechamento da sessão |
 

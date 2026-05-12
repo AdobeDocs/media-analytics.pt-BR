@@ -24,7 +24,7 @@ A variável de rede é a rede de difusão ou o nome do canal (por exemplo, `"Fox
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.network` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.network`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.network`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início da sessão, fechamento da sessão |
 

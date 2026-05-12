@@ -28,7 +28,7 @@ A variável de gênero é o gênero de conteúdo conforme definido pelo produtor
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.genre` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início da sessão, fechamento da sessão |
 

@@ -24,7 +24,7 @@ A variável creative URL é o URL da campanha criativa. Use a variável para ras
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.creativeURL` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início do anúncio, fechamento do anúncio |
 

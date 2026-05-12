@@ -29,7 +29,7 @@ Valores recomendados:
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.contentType` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obrigatório** | Sim |
 | **Enviado com** | Início da sessão, fechamento da sessão |
 

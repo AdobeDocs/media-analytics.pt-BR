@@ -24,7 +24,7 @@ O estado mudo do player é rastreado quando o visualizador silencia e desativa o
 | Propriedade | Valor |
 | --- | --- |
 | **Variáveis de dados de contexto** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **Campo da coleção XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) e [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entradas com `name: "mute"`) |
+| **Campo da coleção XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-collection-details) e [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-collection-details) (entradas com `name: "mute"`) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início do estado, término do estado |
 

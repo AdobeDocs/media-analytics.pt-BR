@@ -24,7 +24,7 @@ O estado das legendas ocultas do player é rastreado quando o visualizador ativa
 | Propriedade | Valor |
 | --- | --- |
 | **Variáveis de dados de contexto** | `a.media.states.closedcaptioning.set`, `a.media.states.closedcaptioning.count`, `a.media.states.closedcaptioning.time` |
-| **Campo da coleção XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) e [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entradas com `name: "closedCaptioning"`) |
+| **Campo da coleção XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-collection-details) e [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-collection-details) (entradas com `name: "closedCaptioning"`) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início do estado, término do estado |
 

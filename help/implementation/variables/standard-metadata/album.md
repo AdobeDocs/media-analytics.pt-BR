@@ -24,7 +24,7 @@ A variável do álbum é o nome do álbum ao qual a faixa de áudio pertence (po
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.album` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.album`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.album`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Início da sessão, fechamento da sessão |
 

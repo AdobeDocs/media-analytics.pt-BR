@@ -24,7 +24,7 @@ A variável de duração do anúncio é a duração do anúncio em segundos. Def
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.length` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Obrigatório** | Sim |
 | **Enviado com** | Início do anúncio, fechamento do anúncio |
 

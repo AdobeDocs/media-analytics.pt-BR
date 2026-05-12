@@ -24,7 +24,7 @@ A variável de posição do capítulo é o índice do capítulo dentro do conte�
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.chapter.position` |
-| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Obrigatório** | Não (Mobile SDK); Sim (Edge, API Media Collection) |
 | **Enviado com** | Início do capítulo, fechamento do capítulo |
 
