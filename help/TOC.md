@@ -1,17 +1,18 @@
 ---
+source-git-commit: c9c4287b4b330ebc1a1ec8b7197b42ee45f7ff48
+workflow-type: tm+mt
+source-wordcount: '1345'
+ht-degree: 61%
+
+---
+﻿---
 product: adobe analytics
 audience: end-user
 user-guide-title: Guia de serviços para mídia de streaming
 breadcrumb-title: Guia de serviços para mídia de streaming
 user-guide-description: Implementar serviços de mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
-workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 79%
-
 ---
-
 
 # Guia de serviços para mídia de streaming {#using}
 
@@ -32,6 +33,71 @@ ht-degree: 79%
          + [JavaScript - SDK de mídia para o Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Implementação {#implementation}
    + [Visão geral da implementação](implementation/overview.md)
+   + Variáveis {#variables}
+      + Core {#core}
+         + [Canal de conteúdo](implementation/variables/core/content-channel.md)
+         + [ID de conteúdo](implementation/variables/core/content-id.md)
+         + [Extensão do conteúdo](implementation/variables/core/content-length.md)
+         + [Nome do conteúdo](implementation/variables/core/content-name.md)
+         + [Nome do reprodutor de conteúdo](implementation/variables/core/content-player-name.md)
+         + [Resumo de conteúdo](implementation/variables/core/content-resumes.md)
+         + [Tipo de conteúdo](implementation/variables/core/content-type.md)
+         + [Sinalizador de mídia baixada](implementation/variables/core/media-downloaded-flag.md)
+         + [Tipo de transmissão](implementation/variables/core/stream-type.md)
+      + Metadados padrão {#metadata}
+         + [Álbum](implementation/variables/standard-metadata/album.md)
+         + [Artista](implementation/variables/standard-metadata/artist.md)
+         + [ID do ativo](implementation/variables/standard-metadata/asset-id.md)
+         + [Autor](implementation/variables/standard-metadata/author.md)
+         + [Autorizado](implementation/variables/standard-metadata/authorized.md)
+         + [Classificação de conteúdo](implementation/variables/standard-metadata/content-rating.md)
+         + [Faixa de horário](implementation/variables/standard-metadata/day-part.md)
+         + [Episódio](implementation/variables/standard-metadata/episode.md)
+         + [Primeira transmissão](implementation/variables/standard-metadata/first-air-date.md)
+         + [Primeira data digital](implementation/variables/standard-metadata/first-digital-date.md)
+         + [Gênero](implementation/variables/standard-metadata/genre.md)
+         + [Rótulo](implementation/variables/standard-metadata/label.md)
+         + [Tipo de feed de mídia](implementation/variables/standard-metadata/media-feed-type.md)
+         + [MVPD](implementation/variables/standard-metadata/mvpd.md)
+         + [Rede](implementation/variables/standard-metadata/network.md)
+         + [Originador](implementation/variables/standard-metadata/originator.md)
+         + [Editor](implementation/variables/standard-metadata/publisher.md)
+         + [Temporada](implementation/variables/standard-metadata/season.md)
+         + [Programa](implementation/variables/standard-metadata/show.md)
+         + [Mostrar tipo](implementation/variables/standard-metadata/show-type.md)
+         + [Estação](implementation/variables/standard-metadata/station.md)
+         + [Formato do fluxo](implementation/variables/standard-metadata/stream-format.md)
+      + Anúncios {#ads}
+         + [Nome do ad break](implementation/variables/ads/ad-break-name.md)
+         + [Hora de início do ad break](implementation/variables/ads/ad-break-start-time.md)
+         + [ID do anúncio](implementation/variables/ads/ad-id.md)
+         + [Posição do anúncio no pod](implementation/variables/ads/ad-in-pod-position.md)
+         + [Comprimento do anúncio](implementation/variables/ads/ad-length.md)
+         + [Nome do anúncio](implementation/variables/ads/ad-name.md)
+         + [Nome do player do anúncio](implementation/variables/ads/ad-player-name.md)
+         + [Anunciante](implementation/variables/ads/advertiser.md)
+         + [ID da campanha](implementation/variables/ads/campaign-id.md)
+         + [ID de criação](implementation/variables/ads/creative-id.md)
+         + [URL da arte](implementation/variables/ads/creative-url.md)
+         + [ID de posicionamento](implementation/variables/ads/placement-id.md)
+         + [ID do site](implementation/variables/ads/site-id.md)
+      + Capítulos {#chapters}
+         + [Comprimento do capítulo](implementation/variables/chapters/chapter-length.md)
+         + [Nome do capítulo](implementation/variables/chapters/chapter-name.md)
+         + [Deslocamento de capítulo](implementation/variables/chapters/chapter-offset.md)
+         + [Posição do capítulo](implementation/variables/chapters/chapter-position.md)
+      + Qualidade {#quality}
+         + [Taxa de bits](implementation/variables/quality/bitrate.md)
+         + [Alteração da taxa de bits](implementation/variables/quality/bitrate-change.md)
+         + [Quadros soltos](implementation/variables/quality/dropped-frames.md)
+         + [Quadros por segundo](implementation/variables/quality/frames-per-second.md)
+         + [Hora de início](implementation/variables/quality/time-to-start.md)
+      + Estados do player {#player-state}
+         + [Legendas ocultas](implementation/variables/player-state/closed-captioning.md)
+         + [Tela cheia](implementation/variables/player-state/full-screen.md)
+         + [Em foco](implementation/variables/player-state/in-focus.md)
+         + [Mudo](implementation/variables/player-state/mute.md)
+         + [Picture in picture](implementation/variables/player-state/picture-in-picture.md)
    + Implementações do Edge (recomendado) {#edge-recommended}
       + [Pré-requisitos](/help/implementation/edge/prerequisites-edge.md)
       + SDKs do Media Edge / Extensão {#media-edge-sdk}
@@ -68,14 +134,121 @@ ht-degree: 79%
             + [Condições de tempo-limite](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Controlar a ordem dos eventos](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Enfileirar eventos quando a resposta das sessões é lenta](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + Variáveis {#variables}
-      + [Parâmetros de mídia de streaming](implementation/variables/audio-video-parameters.md)
-      + [Parâmetros de publicidade](implementation/variables/ad-parameters.md)
-      + [Parâmetros de capítulo](implementation/variables/chapter-parameters.md)
-      + [Parâmetros de estado do player](implementation/variables/player-state-parameters.md)
-      + [Parâmetros de qualidade](implementation/variables/quality-parameters.md)
-      + [Métricas calculadas](implementation/variables/calculated-metrics.md)
-+ Geração de relatórios {#media-reports}
++ Geração de relatórios {#reporting}
+   + Dimensões {#dimensions}
+      + [Publicidade](reporting/dimensions/ad.md)
+      + [Posição do anúncio no pod](reporting/dimensions/ad-in-pod-position.md)
+      + [Comprimento do anúncio](reporting/dimensions/ad-length.md)
+      + [Nome do anúncio](reporting/dimensions/ad-name.md)
+      + [Nome do player do anúncio](reporting/dimensions/ad-player-name.md)
+      + [Pod de anúncio](reporting/dimensions/ad-pod.md)
+      + [Anunciante](reporting/dimensions/advertiser.md)
+      + [Álbum](reporting/dimensions/album.md)
+      + [Artista](reporting/dimensions/artist.md)
+      + [ID do ativo](reporting/dimensions/asset-id.md)
+      + [Autor](reporting/dimensions/author.md)
+      + [Taxa média de bits (dimensão)](reporting/dimensions/average-bitrate.md)
+      + [Alterações na taxa de bits (dimensão)](reporting/dimensions/bitrate-changes.md)
+      + [Eventos de buffer (dimensão)](reporting/dimensions/buffer-events.md)
+      + [ID da campanha](reporting/dimensions/campaign-id.md)
+      + [Capítulo](reporting/dimensions/chapter.md)
+      + [Comprimento do capítulo](reporting/dimensions/chapter-length.md)
+      + [Nome do capítulo](reporting/dimensions/chapter-name.md)
+      + [Deslocamento de capítulo](reporting/dimensions/chapter-offset.md)
+      + [Posição do capítulo](reporting/dimensions/chapter-position.md)
+      + [Conteúdo](reporting/dimensions/content.md)
+      + [Canal de conteúdo](reporting/dimensions/content-channel.md)
+      + [Extensão do conteúdo](reporting/dimensions/content-length.md)
+      + [Nome do conteúdo](reporting/dimensions/content-name.md)
+      + [Nome do reprodutor de conteúdo](reporting/dimensions/content-player-name.md)
+      + [Classificação de conteúdo](reporting/dimensions/content-rating.md)
+      + [Segmento de conteúdo](reporting/dimensions/content-segment.md)
+      + [Tipo de conteúdo](reporting/dimensions/content-type.md)
+      + [ID de criação](reporting/dimensions/creative-id.md)
+      + [URL da arte](reporting/dimensions/creative-url.md)
+      + [Faixa de horário](reporting/dimensions/day-part.md)
+      + [Quadros soltos (dimensão)](reporting/dimensions/dropped-frames.md)
+      + [Episódio](reporting/dimensions/episode.md)
+      + [Erros](reporting/dimensions/errors.md)
+      + [IDs de erro externo](reporting/dimensions/external-error-ids.md)
+      + [Primeira transmissão](reporting/dimensions/first-air-date.md)
+      + [Primeira data digital](reporting/dimensions/first-digital-date.md)
+      + [Gênero](reporting/dimensions/genre.md)
+      + [Rótulo](reporting/dimensions/label.md)
+      + [Mídia baixada](reporting/dimensions/media-downloaded-flag.md)
+      + [Tipo de feed de mídia](reporting/dimensions/media-feed-type.md)
+      + [Caminho da mídia](reporting/dimensions/media-path.md)
+      + [ID da sessão de mídia](reporting/dimensions/media-session-id.md)
+      + [MVPD](reporting/dimensions/mvpd.md)
+      + [Rede](reporting/dimensions/network.md)
+      + [Originador](reporting/dimensions/originator.md)
+      + [ID de posicionamento](reporting/dimensions/placement-id.md)
+      + [IDs de erro do Player SDK](reporting/dimensions/player-sdk-error-ids.md)
+      + [Nome do pod](reporting/dimensions/pod-name.md)
+      + [Posição do pod](reporting/dimensions/pod-position.md)
+      + [Editor](reporting/dimensions/publisher.md)
+      + [Temporada](reporting/dimensions/season.md)
+      + [Programa](reporting/dimensions/show.md)
+      + [Mostrar tipo](reporting/dimensions/show-type.md)
+      + [ID do site](reporting/dimensions/site-id.md)
+      + [Estação](reporting/dimensions/station.md)
+      + [Formato do fluxo](reporting/dimensions/stream-format.md)
+      + [Tipo de transmissão](reporting/dimensions/stream-type.md)
+      + [Hora de início (dimensão)](reporting/dimensions/time-to-start.md)
+      + [Duração total do buffer (dimensão)](reporting/dimensions/total-buffer-duration.md)
+   + Métricas {#metrics}
+      + [Anúncio completo](reporting/metrics/ad-completes.md)
+      + [Contagem de anúncios](reporting/metrics/ad-count.md)
+      + [Anúncio iniciado](reporting/metrics/ad-starts.md)
+      + [Tempo gasto com o anúncio](reporting/metrics/ad-time-spent.md)
+      + [Autorizado](reporting/metrics/authorized.md)
+      + [Taxa média de bits (métrica)](reporting/metrics/average-bitrate.md)
+      + [Público-alvo médio a cada minuto](reporting/metrics/average-minute-audience.md)
+      + [Fluxos afetados pela alteração na taxa de bits](reporting/metrics/bitrate-change-impacted-streams.md)
+      + [Alterações na taxa de bits (métrica)](reporting/metrics/bitrate-changes.md)
+      + [Eventos de buffer (métrica)](reporting/metrics/buffer-events.md)
+      + [Fluxos afetados pelo buffer](reporting/metrics/buffer-impacted-streams.md)
+      + [Capítulo completo](reporting/metrics/chapter-completes.md)
+      + [Contagem de capítulo](reporting/metrics/chapter-count.md)
+      + [Início do capítulo](reporting/metrics/chapter-starts.md)
+      + [Tempo gasto com capítulo](reporting/metrics/chapter-time-spent.md)
+      + [Contagens de legendas ocultas](reporting/metrics/closed-captioning-count.md)
+      + [Duração total das legendas ocultas](reporting/metrics/closed-captioning-total-duration.md)
+      + [Conteúdo completo](reporting/metrics/content-completes.md)
+      + [Resumo de conteúdo](reporting/metrics/content-resumes.md)
+      + [Visualizações do segmento de conteúdo](reporting/metrics/content-segment-views.md)
+      + [Início do conteúdo](reporting/metrics/content-starts.md)
+      + [Tempo gasto com o conteúdo](reporting/metrics/content-time-spent.md)
+      + [Fluxos afetados por quedas de quadros](reporting/metrics/dropped-frame-impacted-streams.md)
+      + [Quadros soltos (métrica)](reporting/metrics/dropped-frames.md)
+      + [Quedas antes do início](reporting/metrics/drops-before-start.md)
+      + [Eventos de erro](reporting/metrics/error-events.md)
+      + [Fluxos afetados pelo erro](reporting/metrics/error-impacted-streams.md)
+      + [Fluxos estimados](reporting/metrics/estimated-streams.md)
+      + [Dados federados](reporting/metrics/federated-data.md)
+      + [Contagens de tela inteira](reporting/metrics/full-screen-count.md)
+      + [Duração total da tela inteira](reporting/metrics/full-screen-total-duration.md)
+      + [Contagens da função Em foco](reporting/metrics/in-focus-count.md)
+      + [Duração total da função Em foco](reporting/metrics/in-focus-total-duration.md)
+      + [Início da mídia](reporting/metrics/media-starts.md)
+      + [Tempo gasto com a mídia](reporting/metrics/media-time-spent.md)
+      + [Contagens da função Mudo](reporting/metrics/mute-count.md)
+      + [Duração total da função Mudo](reporting/metrics/mute-total-duration.md)
+      + [Pausar eventos](reporting/metrics/pause-events.md)
+      + [Fluxos afetados pausados](reporting/metrics/paused-impacted-streams.md)
+      + [Contagens de Picture in picture](reporting/metrics/picture-in-picture-count.md)
+      + [Duração total do Picture in picture](reporting/metrics/picture-in-picture-total-duration.md)
+      + [Marcadores de progresso](reporting/metrics/progress-markers.md)
+      + [Fluxos afetados pelas legendas ocultas](reporting/metrics/closed-captioning-streams-impacted.md)
+      + [Fluxos afetados pela tela cheia](reporting/metrics/full-screen-streams-impacted.md)
+      + [Fluxos afetados pela função em foco](reporting/metrics/in-focus-streams-impacted.md)
+      + [Fluxos afetados pela função mudo](reporting/metrics/mute-streams-impacted.md)
+      + [Fluxos afetados pelo picture in picture](reporting/metrics/picture-in-picture-streams-impacted.md)
+      + [Hora de início (métrica)](reporting/metrics/time-to-start.md)
+      + [Duração total do buffer (métrica)](reporting/metrics/total-buffer-duration.md)
+      + [Duração total da pausa](reporting/metrics/total-pause-duration.md)
+      + [Tempo de reprodução exclusivo](reporting/metrics/unique-time-played.md)
+   + [Métricas calculadas](reporting/calculated-metrics.md)
    + [Ativação de relatórios de mídia](reporting/media-reports-enable.md)
    + Painéis de mídia no Workspace {#media-workspace-panels}
       + [Painel Audiência média por minuto de mídia](reporting/workspace/average-minute-audience.md)
@@ -85,13 +258,13 @@ ht-degree: 79%
    + [Segmentos de mídia](reporting/segments.md)
    + Relatórios de mídia padrão {#media-default-reports}
       + [Visão geral dos relatórios padrão](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Visão geral da mídia &#x200B;](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Visão geral da mídia ](reporting/reports-and-analytics/media-reports-overview.md)
       + [Detalhes da mídia](reporting/reports-and-analytics/media-reports-detail.md)
       + [Relatório de faixa horária de mídia](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + API de mídia {#media-api}
       + [Obter dados de visualizadores simultâneos](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [Obter dados de Tempo gasto com a reprodução da mídia](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+      + [Obter dados de Tempo gasto com reprodução de mídia](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Casos de uso {#media-use-cases}
    + [Casos de uso do SDK de mídia](use-cases/cookbook/sdk-cookbook-overview.md)
    + Rastreamento do estado do player {#player-state-tracking}
