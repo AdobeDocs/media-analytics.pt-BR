@@ -16,7 +16,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **ID do ativo**dimensão de relatório. Consulte [ID do ativo](/help/implementation/variables/standard-metadata/asset-id.md) para saber como coletar essa variável.*
+*Esta página aborda a **ID do ativo**&#x200B;dimensão de relatório. Consulte [ID do ativo](/help/implementation/variables/standard-metadata/asset-id.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
