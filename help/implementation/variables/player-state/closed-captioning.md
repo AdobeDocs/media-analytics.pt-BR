@@ -1,0 +1,159 @@
+---
+title: Legendas ocultas
+description: Rastreie quando o visualizador ativa e desativa as legendas ocultas para que o back-end possa relatar o envolvimento de legendas.
+feature: Streaming Media
+role: Developer
+source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 9%
+
+---
+
+
+# Legendas ocultas
+
+>[!BEGINSHADEBOX]
+
+*Esta página aborda a coleta de dados para o estado de player **Legendas ocultas**. Consulte [Fluxos afetados pelas legendas ocultas](/help/reporting/metrics/closed-captioning-streams-impacted.md), [Contagens de legendas ocultas](/help/reporting/metrics/closed-captioning-count.md) e [Duração total das legendas ocultas](/help/reporting/metrics/closed-captioning-total-duration.md) para as métricas de relatório correspondentes.*
+
+>[!ENDSHADEBOX]
+
+O estado das legendas ocultas do player é rastreado quando o visualizador ativa e desativa as legendas. Acione um evento de início de estado quando as legendas estiverem ativadas e um evento de fim de estado quando as legendas estiverem desativadas. O back-end calcula três métricas desses eventos: fluxos afetados, contagem de entradas de estado e tempo total no estado.
+
+| Propriedade | Valor |
+| --- | --- |
+| **Variáveis de dados de contexto** | `a.media.states.closedcaptioning.set`, `a.media.states.closedcaptioning.count`, `a.media.states.closedcaptioning.time` |
+| **Campo da coleção XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) e [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entradas com `name: "closedCaptioning"`) |
+| **Obrigatório** | Não |
+| **Enviado com** | Início do estado, término do estado |
+
+## SDK da web
+
+Use [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview) para enviar um evento `media.statesUpdate` com o estado adicionado a `statesStart`:
+
+```javascript
+alloy("sendEvent", {
+  xdm: {
+    eventType: "media.statesUpdate",
+    mediaCollection: {
+      statesStart: [{ name: "closedCaptioning" }],
+      sessionID: "{sid}",
+      playhead: 60
+    }
+  }
+});
+```
+
+Quando o visualizador desabilitar legendas, enviar outro evento com o estado em `statesEnd`:
+
+```javascript
+alloy("sendEvent", {
+  xdm: {
+    eventType: "media.statesUpdate",
+    mediaCollection: {
+      statesEnd: [{ name: "closedCaptioning" }],
+      sessionID: "{sid}",
+      playhead: 90
+    }
+  }
+});
+```
+
+## SDK móvel
+
+Use `tracker.trackPlayerStateStart()` e `tracker.trackPlayerStateEnd()` com a constante `MediaConstants.PlayerState.CLOSED_CAPTION`.
+
+**iOS (Swift)**
+
+```swift
+let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.CLOSED_CAPTION)
+
+tracker.trackPlayerStateStart(info: stateObject)
+tracker.trackPlayerStateEnd(info: stateObject)
+```
+
+**Android (Kotlin)**
+
+```kotlin
+val stateObject = Media.createStateObject(MediaConstants.PlayerState.CLOSED_CAPTION)
+
+tracker.trackPlayerStateStart(stateObject)
+tracker.trackPlayerStateEnd(stateObject)
+```
+
+## Roku (BrightScript)
+
+Use `sendMediaEvent` para enviar um evento `media.statesUpdate` com o estado adicionado a `statesStart`:
+
+```brightscript
+m.aepSdk.sendMediaEvent({
+    "xdm": {
+        "eventType": "media.statesUpdate",
+        "mediaCollection": {
+            "statesStart": [{ "name": "closedCaptioning" }],
+            "playhead": 60
+        }
+    }
+})
+```
+
+Quando o visualizador desabilitar legendas, enviar outro evento com o estado em `statesEnd`:
+
+```brightscript
+m.aepSdk.sendMediaEvent({
+    "xdm": {
+        "eventType": "media.statesUpdate",
+        "mediaCollection": {
+            "statesEnd": [{ "name": "closedCaptioning" }],
+            "playhead": 90
+        }
+    }
+})
+```
+
+## API de borda de mídia
+
+Chame o ponto de extremidade [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/) com `closedCaptioning` em `statesStart` (ou `statesEnd` quando o visualizador desabilitar legendas):
+
+```json
+{
+  "events": [{
+    "xdm": {
+      "eventType": "media.statesUpdate",
+      "mediaCollection": {
+        "statesStart": [{ "name": "closedCaptioning" }],
+        "sessionID": "{sid}",
+        "playhead": 60
+      }
+    }
+  }]
+}
+```
+
+## SDK de mídia
+
+Use `ADB.Media.createStateObject` e a constante `ADB.Media.PlayerState.ClosedCaptioning`:
+
+```javascript
+var stateObject = ADB.Media.createStateObject(ADB.Media.PlayerState.ClosedCaptioning);
+
+tracker.trackPlayerStateStart(stateObject);
+tracker.trackPlayerStateEnd(stateObject);
+```
+
+## API da coleção de mídia
+
+Enviar uma solicitação POST `stateStart` quando as legendas estiverem habilitadas, e uma POST `stateEnd` quando estiverem desabilitadas:
+
+```json
+{
+  "playerTime": { "playhead": 60, "ts": 1699523820000 },
+  "eventType": "stateStart",
+  "params": {
+    "media.state.name": "closedCaptioning"
+  }
+}
+```
+
+Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
