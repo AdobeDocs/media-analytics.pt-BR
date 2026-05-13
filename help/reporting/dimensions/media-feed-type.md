@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Tipo de feed de mídia**dimensão de relatório. Consulte [Tipo de feed de mídia](/help/implementation/variables/standard-metadata/media-feed-type.md) para saber como coletar essa variável.*
+*Esta página abrange a **Tipo de feed de mídia**&#x200B;dimensão de relatório. Consulte [Tipo de feed de mídia](/help/implementation/variables/standard-metadata/media-feed-type.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

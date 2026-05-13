@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Parte do dia**da dimensão de relatório. Consulte [Parte do dia](/help/implementation/variables/standard-metadata/day-part.md) para saber como coletar essa variável.*
+*Esta página abrange a **Parte do dia**&#x200B;da dimensão de relatório. Consulte [Parte do dia](/help/implementation/variables/standard-metadata/day-part.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

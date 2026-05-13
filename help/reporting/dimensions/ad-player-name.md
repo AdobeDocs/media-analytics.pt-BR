@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **Dimensão de relatório do**player do anúncio. Consulte [Nome do player do anúncio](/help/implementation/variables/ads/ad-player-name.md) para saber como coletar essa variável.*
+*Esta página aborda a **Dimensão de relatório do**&#x200B;player do anúncio. Consulte [Nome do player do anúncio](/help/implementation/variables/ads/ad-player-name.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

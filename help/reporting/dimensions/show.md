@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Mostrar**dimensão de relatório. Consulte [Programa](/help/implementation/variables/standard-metadata/show.md) para saber como coletar essa variável.*
+*Esta página abrange a **Mostrar**&#x200B;dimensão de relatório. Consulte [Programa](/help/implementation/variables/standard-metadata/show.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

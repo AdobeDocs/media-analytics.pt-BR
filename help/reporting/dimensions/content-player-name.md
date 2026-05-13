@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **Nome do reprodutor de conteúdo**dimensão de relatório. Consulte [Nome do player de conteúdo](/help/implementation/variables/core/content-player-name.md) para saber como coletar essa variável.*
+*Esta página aborda a **Nome do reprodutor de conteúdo**&#x200B;dimensão de relatório. Consulte [Nome do player de conteúdo](/help/implementation/variables/core/content-player-name.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

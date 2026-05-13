@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Duração do conteúdo**dimensão de relatório. Consulte [Duração do conteúdo](/help/implementation/variables/core/content-length.md) para saber como coletar essa variável.*
+*Esta página abrange a **Duração do conteúdo**&#x200B;dimensão de relatório. Consulte [Duração do conteúdo](/help/implementation/variables/core/content-length.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

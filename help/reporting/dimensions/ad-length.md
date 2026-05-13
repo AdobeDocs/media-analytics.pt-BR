@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Comprimento do anúncio**dimensão de relatório. Consulte [Comprimento do anúncio](/help/implementation/variables/ads/ad-length.md) para saber como coletar essa variável.*
+*Esta página abrange a **Comprimento do anúncio**&#x200B;dimensão de relatório. Consulte [Comprimento do anúncio](/help/implementation/variables/ads/ad-length.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
