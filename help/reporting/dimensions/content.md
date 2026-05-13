@@ -28,7 +28,7 @@ O conteúdo é definido pelo reprodutor no início da sessão como um identifica
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.name` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. Persiste durante a visita. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `video, post_video` |
 
 >[!IMPORTANT]
