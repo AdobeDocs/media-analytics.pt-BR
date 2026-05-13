@@ -5,9 +5,15 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/98Oa98xntOkB9Fe3NQ30FUdvVk0JNKJMyzjgSTvncdI
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: 616
 ht-degree: 86%
 
 ---
@@ -16,26 +22,26 @@ ht-degree: 86%
 
 ## Iniciar o player de mídia {#start-the-media-player}
 
-### Chamada de início do Adobe Analytics (AppMeasurement)  {#aa-start-call}
+### Chamada de início do Adobe Analytics (AppMeasurement) {#aa-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Título do episódio |
-| _&#x200B;**`a.media.name`**&#x200B;_ | _&#x200B;**123456**&#x200B;_ |
-| _&#x200B;**`a.media.length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
+| _**`a.media.name`**_ | _**123456**_ |
+| _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML 5 |
-| _&#x200B;**`a.media.view`**&#x200B;_ | _&#x200B;**true**&#x200B;_ |
+| _**`a.media.view`**_ | _**true**_ |
 | `a.contentType` | vod |
-| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**Campos de metadados personalizados**&#x200B;_ |
-| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**Campos de metadados padrão**&#x200B;_ |
+| _**`custom.[value]`**_ | _**Campos de metadados personalizados**_ |
+| _**`a.media.[value]`**_ | _**Campos de metadados padrão**_ |
 
 **Notas:**
 
 * As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Consulte os detalhes dos metadados abaixo.
 * O comprimento para fluxos lineares deve ser definido de acordo com a melhor estimativa para a exibição atual.
 
-### Metadados padrão na chamada de início do Adobe Analytics (AppMeasurement)  {#std-metadata-aa}
+### Metadados padrão na chamada de início do Adobe Analytics (AppMeasurement) {#std-metadata-aa}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -54,34 +60,34 @@ ht-degree: 86%
 | `a.media.feed` | nenhum feed |
 | `a.media.stream_format` | 0 |
 
-### Metadados personalizados na chamada de início do Adobe Analytics (AppMeasurement)  {#custom-metadata-aa}
+### Metadados personalizados na chamada de início do Adobe Analytics (AppMeasurement) {#custom-metadata-aa}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `custom.metadataA` | valor |
 | `custom.metadataB` | valor |
 
-### Chamada de início do Media Analytics (heartbeats)  {#ma-start-call}
+### Chamada de início do Media Analytics (heartbeats) {#ma-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `s:event:type` | start |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**0**&#x200B;_ |
+| _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Título do episódio |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
-| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**Campos de metadados personalizados**&#x200B;_ |
-| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**Campos de metadados padrão**&#x200B;_ |
+| _**`s:meta:custom.[value]`**_ | _**Campos de metadados personalizados**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Campos de metadados padrão**_ |
 
 **Notas:**
 
 * As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Consulte os detalhes dos metadados abaixo.
 * A posição do indicador de reprodução para fluxos lineares no início do vídeo deve ser definida como os segundos decorridos desde o início do programa atual, não como 0.
 
-### Metadados padrão na chamada de início do Media Analytics (heartbeats)  {#std-metadata-ma}
+### Metadados padrão na chamada de início do Media Analytics (heartbeats) {#std-metadata-ma}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -100,18 +106,18 @@ ht-degree: 86%
 | `s:meta:a.media.feed` | nenhum feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Metadados personalizados na chamada de início do Media Analytics (heartbeats)  {#custom-metadata-ma}
+### Metadados personalizados na chamada de início do Media Analytics (heartbeats) {#custom-metadata-ma}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `s:meta:custom.metadata` | valor |
 | `s:meta:custom.metadata` | valor |
 
-### Chamada de início do Adobe Analytics do Media Analytics (heartbeats)  {#ma-aa-start}
+### Chamada de início do Adobe Analytics do Media Analytics (heartbeats) {#ma-aa-start}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_start**&#x200B;_ |
+| _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Título do episódio |
@@ -127,30 +133,30 @@ ht-degree: 86%
 
 ## Exibir a reprodução do anúncio {#view-ad-playback}
 
-### Chamada de início de anúncio do Adobe Analytics (AppMeasurement)  {#aa-ad-start-call}
+### Chamada de início de anúncio do Adobe Analytics (AppMeasurement) {#aa-ad-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| _&#x200B;**`pev2`**&#x200B;_ | _&#x200B;**msa_s**&#x200B;_ |
+| _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
-| _&#x200B;**`a.media.ad.name`**&#x200B;_ | _&#x200B;**9378**&#x200B;_ |
+| _**`a.media.ad.name`**_ | _**9378**_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | pré-rolagem |
-| _&#x200B;**`a.media.ad.length`**&#x200B;_ | _&#x200B;**15**&#x200B;_ |
+| _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML 5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
-| _&#x200B;**`a.media.ad.view`**&#x200B;_ | _&#x200B;**true**&#x200B;_ |
-| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**Campos de metadados**&#x200B;_ |
-| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**Campos de metadados padrão**&#x200B;_ |
+| _**`a.media.ad.view`**_ | _**true**_ |
+| _**`custom.[value]`**_ | _**Campos de metadados**_ |
+| _**`a.media.[value]`**_ | _**Campos de metadados padrão**_ |
 
 **Notas:**
 
 * As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Consulte os detalhes dos metadados abaixo.
 * O comprimento do anúncio pode ser definido como -1 se não estiver disponível no início do anúncio.
 
-### Metadados padrão na chamada de início do anúncio do Adobe Analytics (AppMeasurement)  {#std-metadata-aa-ad-start}
+### Metadados padrão na chamada de início do anúncio do Adobe Analytics (AppMeasurement) {#std-metadata-aa-ad-start}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -169,33 +175,33 @@ ht-degree: 86%
 | `a.media.feed` | nenhum feed |
 | `a.media.stream_format` | 0 |
 
-### Metadados personalizados na chamada de início de anúncio do Adobe Analytics (AppMeasurement)  {#custom-metadata-aa-ad-start}
+### Metadados personalizados na chamada de início de anúncio do Adobe Analytics (AppMeasurement) {#custom-metadata-aa-ad-start}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `custom.metadata` | valor |
 | `custom.metadata` | valor |
 
-### Chamada de início de anúncio do Media Analytics (heartbeats)  {#ma-ad-start-call}
+### Chamada de início de anúncio do Media Analytics (heartbeats) {#ma-ad-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**start**&#x200B;_ |
+| _**`s:event:type`**_ | _**start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
-| _&#x200B;**`l:asset:length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
+| _**`l:asset:length`**_ | _**120**_ |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**Publicidade**&#x200B;_ |
-| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**Campos de metadados personalizados**&#x200B;_ |
-| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**Campos de metadados padrão**&#x200B;_ |
+| _**`s:asset:type`**_ | _**Publicidade**_ |
+| _**`s:meta:custom.[value]`**_ | _**Campos de metadados personalizados**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Campos de metadados padrão**_ |
 
 **Notas:**
 
 * As variáveis de dados de contexto adicionais devem estar presentes e conter metadados. Consulte os detalhes dos metadados abaixo.
 * O comprimento do anúncio pode ser definido como -1 se não estiver disponível no início do anúncio.
 
-### Metadados padrão na chamada de início do Media Analytics (heartbeats)  {#std-metadata-ma-ad-start}
+### Metadados padrão na chamada de início do Media Analytics (heartbeats) {#std-metadata-ma-ad-start}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
@@ -214,18 +220,18 @@ ht-degree: 86%
 | `s:meta:a.media.feed` | nenhum feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Metadados personalizados na chamada de início de anúncio do Media Analytics (heartbeats)  {#custom-metadata-ma-ad-start}
+### Metadados personalizados na chamada de início de anúncio do Media Analytics (heartbeats) {#custom-metadata-ma-ad-start}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `s:meta:custom.metadata` | valor |
 | `s:meta:custom.metadata` | valor |
 
-### Chamada de início de anúncio do Adobe Analytics do Media Analytics (heartbeats)  {#ma-aa-ad-start-call}
+### Chamada de início de anúncio do Adobe Analytics do Media Analytics (heartbeats) {#ma-aa-ad-start-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_ad_start**&#x200B;_ |
+| _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
@@ -233,51 +239,51 @@ ht-degree: 86%
 | `s:stream:type` | vod |
 | `s:asset:type` | Publicidade |
 
-### Chamada de reprodução de anúncio do Media Analytics (heartbeats)  {#ma-ad-play-call}
+### Chamada de reprodução de anúncio do Media Analytics (heartbeats) {#ma-ad-play-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**play**&#x200B;_ |
+| _**`s:event:type`**_ | _**play**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**Publicidade**&#x200B;_ |
+| _**`s:asset:type`**_ | _**Publicidade**_ |
 
-### Chamada de pausa de anúncio do Media Analytics (heartbeats)  {#ma-ad-pause-call}
+### Chamada de pausa de anúncio do Media Analytics (heartbeats) {#ma-ad-pause-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pause**&#x200B;_ |
+| _**`s:event:type`**_ | _**pause**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**Publicidade**&#x200B;_ |
+| _**`s:asset:type`**_ | _**Publicidade**_ |
 
-### Chamada de anúncio concluído do Adobe Analytics do Media Analytics (heartbeats)  {#ma-aa-ad-complete-call}
+### Chamada de anúncio concluído do Adobe Analytics do Media Analytics (heartbeats) {#ma-aa-ad-complete-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**complete**&#x200B;_ |
+| _**`s:event:type`**_ | _**complete**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**Publicidade**&#x200B;_ |
+| _**`s:asset:type`**_ | _**Publicidade**_ |
 
 ## Reproduzir conteúdo principal {#play-main-content}
 
-### Chamada de reprodução do Media Analytics (heartbeats)  {#ma-play-call}
+### Chamada de reprodução do Media Analytics (heartbeats) {#ma-play-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
 | `s:event:type` | play |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
-| _&#x200B;**`l:event:duration`**&#x200B;_ | _&#x200B;**10189**&#x200B;_ |
+| _**`l:event:playhead`**_ | _**29**_ |
+| _**`l:event:duration`**_ | _**10189**_ |
 | `s:asset:name` | Título do episódio |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
@@ -291,12 +297,12 @@ ht-degree: 86%
 
 ## Pausar conteúdo principal {#pause-main-content}
 
-### Chamada de pausa do Media Analytics (heartbeats)  {#ma-pause-call}
+### Chamada de pausa do Media Analytics (heartbeats) {#ma-pause-call}
 
 | Parâmetro |  Valor (exemplo)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pause**&#x200B;_ |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
+| _**`s:event:type`**_ | _**pause**_ |
+| _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | Título do episódio |
 | `s:asset:video_id` | 123456 |

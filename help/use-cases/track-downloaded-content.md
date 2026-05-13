@@ -5,14 +5,20 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/rtLBRcyLB8D8HPBj-Qw5LD824Fu8KeUDsLokJCn2Wfc
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 98%
+source-wordcount: 721
+ht-degree: 93%
 
 ---
 
-# Rastrear o conteúdo baixado {#track-downloaded-content}
+# Rastrear o conteúdo baixado{#track-downloaded-content}
 
 ## Visão geral {#overview}
 
@@ -57,7 +63,7 @@ O recurso Conteúdo baixado é a versão offline (padrão) da API Media Collecti
 
 ## Integração com o Adobe Analytics {#integration-with-adobe-analtyics}
 
-Ao calcular as chamadas de início/fechamento do Analytics para o cenário de conteúdo baixado, o back-end define um campo adicional do Analytics chamado `ts.` Estes são carimbos de data e hora para o primeiro e o último evento recebido (início e conclusão). Esse mecanismo permite que uma sessão de mídia concluída seja colocada no momento correto (ou seja, mesmo que o usuário não volte a ficar online por vários dias, a sessão de mídia informa que ocorreu no momento em que o conteúdo foi realmente visualizado). Você deve habilitar esse mecanismo no Adobe Analytics criando um _conjunto de relatórios opcionais de carimbo de data e hora._ Para habilitar o conjunto de relatórios opcionais de carimbo de data e hora, consulte [Carimbos de data e hora opcionais.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=pt-BR)
+Ao calcular as chamadas de início/fechamento do Analytics para o cenário de conteúdo baixado, o back-end define um campo adicional do Analytics chamado `ts.` Estes são carimbos de data e hora para o primeiro e o último evento recebido (início e conclusão). Esse mecanismo permite que uma sessão de mídia concluída seja colocada no momento correto (ou seja, mesmo que o usuário não volte a ficar online por vários dias, a sessão de mídia informa que ocorreu no momento em que o conteúdo foi realmente visualizado). Você deve habilitar esse mecanismo no Adobe Analytics criando um conjunto de relatórios opcionais de _carimbo de data/hora._ Para habilitar um conjunto de relatórios opcionais de carimbo de data e hora, consulte [Carimbos opcionais de data e hora.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=pt-BR)
 
 ## Comparação de sessões de amostra {#sample-session-comparison}
 

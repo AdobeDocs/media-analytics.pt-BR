@@ -4,20 +4,25 @@ description: Saiba como migrar públicos-alvo para o novo tipo de dados Adobe An
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Y-Y-xWKm-zOzaQm8kMbgGx8r6BTNLl-Q5AltlF5v7aA
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: 759
 ht-degree: 1%
 
 ---
 
 # Migrar o Customer Journey Analytics para usar os novos campos de mídia de transmissão
 
-Este documento descreve como uma configuração do Customer Journey Analytics que usa o tipo de dados de serviços de mídia de transmissão Adobe chamado &quot;Mídia&quot; deve ser atualizada para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
+Este documento descreve como uma configuração do Customer Journey Analytics que usa o tipo de dados de serviços de mídia de transmissão Adobe chamado &quot;Mídia&quot; deve ser atualizada para usar o novo tipo de dados correspondente chamado &quot;[Detalhes de Relatórios de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.&quot;
 
 ## Migrar Customer Journey Analytics
 
-Para migrar uma configuração do Customer Journey Analytics do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes do relatório de mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, atualize as seguintes configurações que estão usando o tipo de dados antigo:
+Para migrar uma configuração do Customer Journey Analytics do tipo de dados antigo chamado &quot;Mídia&quot; para o novo tipo de dados chamado &quot;[Detalhes do relatório de mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, atualize as seguintes configurações que estão usando o tipo de dados antigo:
 
 * Visualizações de dados
 
@@ -43,7 +48,7 @@ Para migrar campos derivados para o novo tipo de dados:
 
 1. Substitua todos os campos antigos no campo derivado pelo novo campo correspondente de &quot;Detalhes de relatórios de mídia&quot;.
 
-Consulte o parâmetro [ID de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) na página [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
+Consulte o parâmetro [ID de Conteúdo](/help/reporting/dimensions/content.md) e o restante das variáveis de mídia de streaming documentadas em [Serviços de mídia de streaming](/help/media-overview.md) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
 
 ![Caminhos antigos e novos do campo XDM](assets/field-paths-updated.jpeg)
 
@@ -61,7 +66,7 @@ Você pode usar qualquer uma das seguintes opções para atualizar a visualizaç
 
    ![Caminho de campo antigo na exibição de dados](assets/old-field-data-view.jpeg)
 
-1. Verifique o novo campo correspondente na seção [Chapter offset](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) do artigo [Chapter parameters](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters).
+1. Verifique o novo campo correspondente no artigo [Chapter offset](/help/reporting/dimensions/chapter-offset.md).
 
 1. Localize o novo campo correspondente na visualização de dados.
 
@@ -81,7 +86,7 @@ Se você quiser criar um campo derivado para o &quot;Nome do capítulo&quot; que
 
    ![Personalizar o novo campo para criar uma visualização de dados](assets/create-derived-field2.jpeg)
 
-1. Preencha a cláusula [!UICONTROL **If**] usando o valor do **Caminho do Campo XDM do Relatório**, conforme mostrado no parâmetro [Nome do capítulo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) na página [Parâmetros de capítulo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters).
+1. Preencha a cláusula [!UICONTROL **If**] usando o valor do **Caminho do Campo XDM do Relatório**, conforme mostrado na página [Nome do capítulo](/help/reporting/dimensions/chapter-name.md).
 
    ![Nome do capítulo](assets/chapter-name.jpeg)
 
@@ -111,7 +116,7 @@ Se você quiser criar um campo derivado para o &quot;Nome do capítulo&quot; que
 
    ![Localizar campo com tipo de dados antigo](assets/locate-fields-with-old-datatype.jpeg)
 
-1. Verifique o novo campo correspondente na seção [Nome do Conteúdo (variável)](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) no artigo [Parâmetros de mídia de streaming](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable).
+1. Verifique o novo campo correspondente no artigo [Nome do conteúdo](/help/reporting/dimensions/content-name.md).
 
 1. Substitua o campo antigo pelo novo campo.
 
