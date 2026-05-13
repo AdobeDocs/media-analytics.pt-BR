@@ -18,7 +18,7 @@ A variável frames por segundo é a taxa de quadros atual do fluxo. Defina-o no 
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | Nenhum (o Adobe Analytics não atribui uma chave de dados de contexto reservada para a taxa de quadros) |
-| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Obrigatório** | Não |
 | **Enviado com** | Eventos de qualidade, fechamento de sessão |
 
