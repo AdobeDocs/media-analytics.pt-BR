@@ -3,9 +3,9 @@ title: Canal de conteúdo
 description: Defina o canal para identificar a estação de distribuição, rede ou propriedade onde o conteúdo é reproduzido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '214'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ A variável de canal de conteúdo identifica a estação de distribuição, a re
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.channel` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.channel` |
 | **Obrigatório** | Sim |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

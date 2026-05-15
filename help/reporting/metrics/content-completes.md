@@ -3,10 +3,10 @@ title: Conteúdo completo
 description: Conta as sessões cujo indicador de reprodução atingiu o fim do conteúdo.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 9%
+source-wordcount: '140'
+ht-degree: 10%
 
 ---
 
@@ -17,10 +17,11 @@ A métrica **Conteúdo concluído** conta as sessões cujo indicador de reprodu�
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.sessionDetails.isCompleted = true` quando um evento `media.sessionComplete` é recebido. A métrica é relatada na chamada de fechamento. Uma sessão que atinge o tempo limite sem um `sessionComplete` explícito não conta como uma conclusão.
+O back-end de mídia define `mediaReporting.sessionDetails.isCompleted = true` quando um evento [sessão concluída](/help/implementation/events/session/session-complete.md) é recebido. A métrica é relatada na chamada de fechamento. Uma sessão que atinge o tempo limite sem um `sessionComplete` explícito não conta como uma conclusão.
 
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.complete` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isCompleted`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isCompleted`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Audience Manager | `c_contextdata.a.media.complete` |

@@ -3,9 +3,9 @@ title: Formato do fluxo
 description: Defina o formato do fluxo para identificar o nível de qualidade (HD, SD ou outro rótulo que seu pipeline de entrega usa).
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 13%
 
 ---
@@ -24,9 +24,10 @@ A variável de formato de fluxo identifica a camada de qualidade do fluxo (norma
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.format` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.format` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

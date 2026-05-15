@@ -3,9 +3,9 @@ title: Nome do reprodutor de conteúdo
 description: Defina o nome do reprodutor para identificar qual reprodutor renderizou o conteúdo.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '223'
 ht-degree: 11%
 
 ---
@@ -24,9 +24,10 @@ A variável de nome do player de conteúdo identifica qual player renderizou o c
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.playerName` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.playerName` |
 | **Obrigatório** | Sim |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

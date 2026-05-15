@@ -3,9 +3,9 @@ title: ID de posicionamento
 description: Defina a ID de posicionamento para cada anúncio a fim de habilitar interrupções por posicionamento de anúncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 17%
 
 ---
@@ -24,9 +24,10 @@ A variável de ID de posicionamento identifica o posicionamento do anúncio (nor
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.placement` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.ad.placement` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início do anúncio, fechamento do anúncio |
+| **Enviado com** | [Início do anúncio](/help/implementation/events/ads/ad-start.md) e fechamento |
 
 ## SDK da web
 

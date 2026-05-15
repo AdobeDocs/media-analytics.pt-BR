@@ -3,9 +3,9 @@ title: Hora de início
 description: Defina o tempo de inicialização do reprodutor, em milissegundos, para que o back-end possa relatar a qualidade do tempo até o primeiro quadro.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ O tempo para iniciar a variável é o tempo decorrido, em milissegundos, entre o
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.qoe.timeToStart` |
-| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

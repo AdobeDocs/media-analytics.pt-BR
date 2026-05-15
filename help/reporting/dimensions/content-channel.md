@@ -3,10 +3,10 @@ title: Canal de conteúdo
 description: Informa a estação de distribuição, rede ou propriedade em que cada sessão foi reproduzida.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 6%
+source-wordcount: '161'
+ht-degree: 7%
 
 ---
 
@@ -28,8 +28,9 @@ O canal é definido pelo reprodutor no início da sessão e persiste pela duraç
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.channel` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `videochannel, post_videochannel` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `videochannel`, `post_videochannel` |
+| Audience Manager | `c_contextdata.a.media.channel` |
 
 >[!IMPORTANT]
 >

@@ -3,9 +3,9 @@ title: Faixa de horário
 description: Defina o período do dia (Manhã, Tarde, Horário nobre, Tarde da noite) quando o conteúdo era transmitido ou reproduzido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 13%
 
 ---
@@ -24,9 +24,10 @@ A variável day part é o intervalo da hora do dia em que o conteúdo foi transm
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.dayPart` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.dayPart` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

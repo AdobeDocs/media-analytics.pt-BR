@@ -3,9 +3,9 @@ title: Autorizado
 description: Sinalizar uma sessão como autenticada por meio do Adobe Pass para que seja contabilizada para o evento Autorizado.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '191'
 ht-degree: 15%
 
 ---
@@ -24,9 +24,10 @@ A variável autorizada sinaliza uma sessão cujo usuário foi autorizado por mei
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.pass.auth` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.pass.auth` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

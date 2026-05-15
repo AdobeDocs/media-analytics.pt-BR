@@ -3,9 +3,9 @@ title: Nome do pod
 description: Relata o nome amigável de cada ad break. Colete-a no Adobe Analytics usando uma classificação ou uma regra de processamento personalizada.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 415d20722965d510458d3c09004b6991b05ac264
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '431'
 ht-degree: 1%
 
 ---
@@ -23,15 +23,16 @@ A dimensão **Pod name** informa o nome amigável de cada ad break (por exemplo,
 
 ## Como essa dimensão é preenchida
 
-O nome do pod é originário do valor [Ad break name](/help/implementation/variables/ads/ad-break-name.md) que o player define em `media.adBreakStart`.
+O nome do pod é originário do valor [Ad break name](/help/implementation/variables/ads/ad-break-name.md) que o player define em [ad break start](/help/implementation/events/ads/ad-break-start.md).
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podFriendlyName` para uma eVar. |
+| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podFriendlyName` para uma eVar. |
 | Adobe Analytics (classificação) | Classificação da dimensão Pod de anúncio — A Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.ad.podFriendlyName`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |
+| Audience Manager | `c_contextdata.a.media.ad.podFriendlyName` |
 
 ## Abordagem de classificação
 
@@ -45,10 +46,10 @@ Essa abordagem fornece uma relação 1:1 garantida entre cada ID de pod e seu no
 
 ## Abordagem de regras de processamento
 
-Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podFriendlyName` para uma eVar. Essa abordagem captura o nome amigável como um valor por ocorrência sem exigir manutenção de classificação.
+Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podFriendlyName` para uma eVar. Essa abordagem captura o nome amigável como um valor por ocorrência sem exigir manutenção de classificação.
 
 A conclusão é que você perde a relação garantida 1:1 entre o nome do pod e a dimensão pai [pod de anúncio](ad-pod.md). Se sua implementação enviar valores inconsistentes para a mesma ID de pod nos eventos, vários nomes poderão aparecer no mesmo pod de anúncio. A atualização de um valor se aplica somente aos dados daquele ponto em diante.
 
 ## Itens de dimensão
 
-Cada item é o nome literal de ad break reportado em `media.adBreakStart`.
+Cada item é o nome de ad break literal relatado em [início de ad break](/help/implementation/events/ads/ad-break-start.md).

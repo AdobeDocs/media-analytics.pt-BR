@@ -3,10 +3,10 @@ title: Nome do reprodutor de conteúdo
 description: Informa qual player renderizou cada sessão de mídia.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 5%
+source-wordcount: '194'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **Nome do reprodutor de conteúdo**&#x200B;dimensão de relatório. Consulte [Nome do player de conteúdo](/help/implementation/variables/core/content-player-name.md) para saber como coletar essa variável.*
+*Esta página aborda a **Nome do reprodutor de conteúdo**dimensão de relatório. Consulte [Nome do player de conteúdo](/help/implementation/variables/core/content-player-name.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ O nome do player é definido pelo player no início da sessão e persiste pela d
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.playerName` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.playerName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `videoplayername, post_videoplayername` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `videoplayername`, `post_videoplayername` |
+| Audience Manager | `c_contextdata.a.media.playerName` |
 
 >[!IMPORTANT]
 >

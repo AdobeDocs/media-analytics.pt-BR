@@ -3,10 +3,10 @@ title: Pod de anúncio
 description: Informa cada ad break exclusivo, digitado por uma ID de pod gerada automaticamente.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 5%
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ A dimensão **Pod de anúncio** relata cada ad break exclusivo, digitado por uma
 
 ## Como essa dimensão é preenchida
 
-A ID do pod de anúncio é gerada automaticamente pela SDK quando `media.adBreakStart` é acionado. As implementações de API direta o constroem a partir do índice de quebra e da hora de início ou fornecem uma ID de pod personalizada.
+A ID do pod de anúncio é gerada automaticamente pela SDK quando um evento [ad break start](/help/implementation/events/ads/ad-break-start.md) é acionado. As implementações de API direta o constroem a partir do índice de quebra e da hora de início ou fornecem uma ID de pod personalizada.
 
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.ad.pod` quando o [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
-| Feeds de dados | `videoadpod, post_videoadpod` |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Feeds de dados | `videoadpod`, `post_videoadpod` |
+| Audience Manager | N/D |
 
 ## Itens de dimensão
 

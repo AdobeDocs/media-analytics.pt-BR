@@ -3,9 +3,9 @@ title: Nome do player do anúncio
 description: Defina o nome do reprodutor que renderiza os anúncios. O reprodutor de anúncios pode ser diferente do reprodutor de conteúdo principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '220'
 ht-degree: 11%
 
 ---
@@ -24,9 +24,10 @@ A variável de nome do player de anúncio identifica qual player renderizou cada
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.playerName` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.ad.playerName` |
 | **Obrigatório** | Sim |
-| **Enviado com** | Início do anúncio, fechamento do anúncio |
+| **Enviado com** | [Início do anúncio](/help/implementation/events/ads/ad-start.md) e fechamento |
 
 ## SDK da web
 

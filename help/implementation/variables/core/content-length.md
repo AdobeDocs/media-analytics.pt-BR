@@ -3,9 +3,9 @@ title: Extensão do conteúdo
 description: Defina a duração do conteúdo em segundos no início da sessão. Ele direciona marcadores de progresso e Audiência média por minuto.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '237'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ A variável de comprimento do conteúdo é a duração total do conteúdo em seg
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.length` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.length` |
 | **Obrigatório** | Sim |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

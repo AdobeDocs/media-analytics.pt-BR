@@ -3,9 +3,9 @@ title: Mostrar tipo
 description: Identifique o formato de conteúdo (episódio completo, pré-visualização, clipe ou outro) usando um código de número inteiro de sequência.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '197'
 ht-degree: 13%
 
 ---
@@ -31,9 +31,10 @@ Use-a para separar a visualização completa de programas do conteúdo curto, co
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.type` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.type` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

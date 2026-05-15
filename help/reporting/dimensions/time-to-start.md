@@ -3,10 +3,10 @@ title: Hora de início (dimensão)
 description: Relata o tempo decorrido antes da renderização do primeiro quadro.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 5%
+source-wordcount: '188'
+ht-degree: 6%
 
 ---
 
@@ -28,8 +28,9 @@ O reprodutor define `timeToStart` no objeto de QoE antes do acionamento da sess�
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.qoe.timeToStart` quando a [[!UICONTROL Qualidade de Mídia]](/help/reporting/media-reports-enable.md) está habilitada. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Feeds de dados | `videoqoetimetostartevar, post_videoqoetimetostartevar` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Feeds de dados | `videoqoetimetostartevar`, `post_videoqoetimetostartevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.timeToStart` |
 
 ## Itens de dimensão
 

@@ -3,10 +3,10 @@ title: Mostrar tipo
 description: Reporta o formato do conteúdo (episódio completo, pré-visualização, clipe ou outro).
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 9%
+source-wordcount: '143'
+ht-degree: 10%
 
 ---
 
@@ -28,8 +28,9 @@ O tipo de programa é definido pelo reprodutor no início da sessão.
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.type` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md) estão habilitados. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `videoshowtype, post_videoshowtype` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `videoshowtype`, `post_videoshowtype` |
+| Audience Manager | `c_contextdata.a.media.type` |
 
 ## Itens de dimensão
 

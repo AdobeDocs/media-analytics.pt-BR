@@ -3,9 +3,9 @@ title: Posição do anúncio no pod
 description: Defina a posição do índice do anúncio dentro do ad break principal. O primeiro anúncio tem índice 0.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '213'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ A variável de posição do anúncio no pod é a posição de índice zero do an
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.podPosition` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.ad.podPosition` |
 | **Obrigatório** | Sim |
-| **Enviado com** | Início do anúncio, fechamento do anúncio |
+| **Enviado com** | [Início do anúncio](/help/implementation/events/ads/ad-start.md) e fechamento |
 
 ## SDK da web
 

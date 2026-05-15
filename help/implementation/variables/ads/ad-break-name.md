@@ -3,10 +3,10 @@ title: Nome do ad break
 description: Defina o nome amigável do ad break principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 12%
+source-wordcount: '209'
+ht-degree: 11%
 
 ---
 
@@ -24,9 +24,10 @@ A variável de nome do ad break é o nome amigável do ad break (por exemplo, `"
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.podFriendlyName` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Obrigatório** | Sim (Mobile SDK); Não (Edge, API Media Collection) |
-| **Enviado com** | Início do anúncio, fechamento do anúncio |
+| **Enviado com** | [Início de quebra de anúncio](/help/implementation/events/ads/ad-break-start.md), anúncio fechado |
 
 ## SDK da web
 

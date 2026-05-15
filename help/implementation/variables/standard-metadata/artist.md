@@ -3,9 +3,9 @@ title: Artista
 description: Defina o nome do artista executante para o conteúdo de áudio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '175'
 ht-degree: 16%
 
 ---
@@ -24,9 +24,10 @@ A variável artist é o nome do artista executor do conteúdo de áudio (por exe
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.artist` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.artist` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

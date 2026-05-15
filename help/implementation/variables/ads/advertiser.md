@@ -3,9 +3,9 @@ title: Anunciante
 description: Defina a empresa ou marca em destaque em cada anúncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '174'
 ht-degree: 16%
 
 ---
@@ -24,9 +24,10 @@ A variável do anunciante é a empresa ou marca apresentada no anúncio (por exe
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.advertiser` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.ad.advertiser` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início do anúncio, fechamento do anúncio |
+| **Enviado com** | [Início do anúncio](/help/implementation/events/ads/ad-start.md) e fechamento |
 
 ## SDK da web
 

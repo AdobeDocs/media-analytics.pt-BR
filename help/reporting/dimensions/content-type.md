@@ -3,10 +3,10 @@ title: Tipo de conteúdo
 description: Relata o formato do fluxo (VOD, Ao vivo, Linear, podcast, música e assim por diante).
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 8%
+source-wordcount: '199'
+ht-degree: 9%
 
 ---
 
@@ -28,8 +28,9 @@ O tipo de conteúdo é definido pelo reprodutor no início da sessão e transpor
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.contentType` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.contentType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `videocontenttype, post_videocontenttype` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `videocontenttype`, `post_videocontenttype` |
+| Audience Manager | `c_contextdata.a.contentType` |
 
 >[!IMPORTANT]
 >

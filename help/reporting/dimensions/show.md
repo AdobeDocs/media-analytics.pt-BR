@@ -3,10 +3,10 @@ title: Programa
 description: Reporta o programa ou o nome de série do conteúdo de vídeo que faz parte de uma série.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 7%
+source-wordcount: '156'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Mostrar**&#x200B;dimensão de relatório. Consulte [Programa](/help/implementation/variables/standard-metadata/show.md) para saber como coletar essa variável.*
+*Esta página abrange a **Mostrar**dimensão de relatório. Consulte [Programa](/help/implementation/variables/standard-metadata/show.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ Mostrar é definido pelo reprodutor no início da sessão quando o conteúdo faz
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.show` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md) estão habilitados. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `videoshow, post_videoshow` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `videoshow`, `post_videoshow` |
+| Audience Manager | `c_contextdata.a.media.show` |
 
 ## Itens de dimensão
 

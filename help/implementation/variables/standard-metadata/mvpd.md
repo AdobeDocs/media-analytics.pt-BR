@@ -3,10 +3,10 @@ title: MVPD
 description: Defina o distribuidor de programação de vídeo multicanal quando o usuário se autenticar via Adobe Pass.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 15%
+source-wordcount: '196'
+ht-degree: 14%
 
 ---
 
@@ -24,9 +24,10 @@ A variável MVPD (distribuidor de programação de vídeo multicanal) é o cabo,
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.pass.mvpd` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.pass.mvpd` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

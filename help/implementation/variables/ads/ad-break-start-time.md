@@ -3,9 +3,9 @@ title: Hora de início do ad break
 description: Defina a hora de início (deslocamento) do ad break no conteúdo, em segundos.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '210'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ A variável de hora de início do ad break é o deslocamento do ad break no cont
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.podSecond` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.ad.podSecond` |
 | **Obrigatório** | Sim |
-| **Enviado com** | Início do anúncio, fechamento do anúncio |
+| **Enviado com** | [Início de quebra de anúncio](/help/implementation/events/ads/ad-break-start.md), anúncio fechado |
 
 ## SDK da web
 

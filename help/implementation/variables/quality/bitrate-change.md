@@ -3,7 +3,7 @@ title: Alteração da taxa de bits
 description: Acione um evento de alteração de taxa de bits sempre que o reprodutor alternar para uma taxa de bits diferente.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 11%
@@ -25,8 +25,9 @@ O evento de alteração da taxa de bits indica que o reprodutor mudou para uma t
 | --- | --- |
 | **Variável de dados de contexto** | (nenhum — contado pelo back-end) |
 | **Tipo de evento XDM** | `media.bitrateChange` |
+| **Característica do Audience Manager** | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 | **Obrigatório** | Não |
-| **Enviado com** | Sempre que o reprodutor altera a taxa de bits |
+| **Enviado com** | [Alteração na taxa de bits](/help/implementation/events/playback/bitrate-change.md) |
 
 ## SDK da web
 

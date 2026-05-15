@@ -3,10 +3,10 @@ title: Conteúdo
 description: Relata cada mídia executada, digitada pela ID de conteúdo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 5%
+source-wordcount: '249'
+ht-degree: 6%
 
 ---
 
@@ -28,8 +28,9 @@ O conteúdo é definido pelo reprodutor no início da sessão como um identifica
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.name` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. Persiste durante a visita. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `video, post_video` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `video`, `post_video` |
+| Audience Manager | `c_contextdata.a.media.name` |
 
 >[!IMPORTANT]
 >

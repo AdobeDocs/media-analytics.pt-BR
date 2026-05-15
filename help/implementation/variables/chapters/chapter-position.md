@@ -3,9 +3,9 @@ title: Posição do capítulo
 description: Defina o índice do capítulo dentro do conteúdo. A posição do capítulo é necessária para que a ID do capítulo seja gerada automaticamente corretamente.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '208'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ A variável de posição do capítulo é o índice do capítulo dentro do conte�
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.chapter.position` |
-| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.chapter.position` |
 | **Obrigatório** | Não (Mobile SDK); Sim (Edge, API Media Collection) |
-| **Enviado com** | Início do capítulo, fechamento do capítulo |
+| **Enviado com** | [Início do capítulo](/help/implementation/events/chapters/chapter-start.md), fechamento do capítulo |
 
 ## SDK da web
 

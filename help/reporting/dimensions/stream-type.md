@@ -3,10 +3,10 @@ title: Tipo de transmissão
 description: Registra se cada sessão de mídia era conteúdo de áudio ou vídeo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 5%
+source-wordcount: '322'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Tipo de fluxo**&#x200B;dimensão de relatório. Consulte [Tipo de fluxo](/help/implementation/variables/core/stream-type.md) para saber como coletar essa variável.*
+*Esta página abrange a **Tipo de fluxo**dimensão de relatório. Consulte [Tipo de fluxo](/help/implementation/variables/core/stream-type.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ O tipo de fluxo é definido pelo reprodutor no início da sessão e transportado
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.streamType` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videostreamtype` |
+| Audience Manager | `c_contextdata.a.media.streamType` |
 
 >[!IMPORTANT]
 >

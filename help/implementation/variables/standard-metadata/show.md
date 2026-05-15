@@ -3,9 +3,9 @@ title: Programa
 description: Defina o nome do programa para o conteúdo de vídeo que faz parte de uma série, de modo que os episódios sejam agrupados em um único programa nos relatórios.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '221'
 ht-degree: 13%
 
 ---
@@ -24,9 +24,10 @@ A variável show é o nome do programa ou da série (por exemplo, `"Blinding Lig
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.show` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.show`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.show` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

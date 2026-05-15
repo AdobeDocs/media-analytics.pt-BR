@@ -3,10 +3,10 @@ title: Comprimento do capítulo
 description: Defina a duração de cada capítulo, em segundos.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 14%
+source-wordcount: '179'
+ht-degree: 13%
 
 ---
 
@@ -24,9 +24,10 @@ A variável de comprimento do capítulo é a duração do capítulo, em segundos
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.chapter.length` |
-| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.chapter.length` |
 | **Obrigatório** | Não (Mobile SDK); Sim (Edge, API Media Collection) |
-| **Enviado com** | Início do capítulo, fechamento do capítulo |
+| **Enviado com** | [Início do capítulo](/help/implementation/events/chapters/chapter-start.md), fechamento do capítulo |
 
 ## SDK da web
 

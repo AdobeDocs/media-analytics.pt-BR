@@ -3,9 +3,9 @@ title: Quadros por segundo
 description: Defina a taxa de quadros atual no objeto de QoE para que o back-end tenha contexto de taxa de quadros para os relatórios de qualidade.
 feature: Streaming Media
 role: Developer
-source-git-commit: 0e6b5a8ef5738191276976ed31125016774c043d
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '225'
 ht-degree: 12%
 
 ---
@@ -18,9 +18,10 @@ A variável frames por segundo é a taxa de quadros atual do fluxo. Defina-o no 
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | Nenhum (o Adobe Analytics não atribui uma chave de dados de contexto reservada para a taxa de quadros) |
-| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Característica do Audience Manager** | N/D |
 | **Obrigatório** | Não |
-| **Enviado com** | Eventos de qualidade, fechamento de sessão |
+| **Enviado com** | Eventos de qualidade ([alteração na taxa de bits](/help/implementation/events/playback/bitrate-change.md), [início do buffer](/help/implementation/events/playback/buffer-start.md), [erro](/help/implementation/events/error.md)), fechamento da sessão |
 
 ## SDK da web
 

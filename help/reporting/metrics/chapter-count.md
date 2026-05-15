@@ -3,10 +3,10 @@ title: Contagem de capítulo
 description: Informa o número de capítulos iniciados durante uma sessão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 7%
+source-wordcount: '170'
+ht-degree: 10%
 
 ---
 
@@ -17,10 +17,11 @@ A métrica **Contagem de capítulos** informa o número de capítulos iniciados 
 
 ## Como essa métrica é calculada
 
-O back-end de mídia incrementa `mediaReporting.sessionDetails.chapterCount` em cada evento `media.chapterStart` recebido durante a sessão. A métrica é relatada na chamada de fechamento.
+O back-end de mídia incrementa `mediaReporting.sessionDetails.chapterCount` em cada evento de [início de capítulo](/help/implementation/events/chapters/chapter-start.md) recebido durante a sessão. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.chapterCount` para um evento personalizado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.chapterCount`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `event_list`, `post_event_list` (o evento personalizado para o qual sua regra de processamento mapeia `a.media.chapterCount`; consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Adobe Analytics | Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.chapterCount` para um evento personalizado. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.chapterCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `event_list`, `post_event_list` (o evento personalizado para o qual sua regra de processamento mapeia `a.media.chapterCount`; consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Audience Manager | N/D |

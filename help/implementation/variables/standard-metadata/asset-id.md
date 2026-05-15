@@ -3,10 +3,10 @@ title: ID do ativo
 description: Defina a ID do ativo, um identificador estável do setor para o ativo de mídia, como um EIDR ou ID do TMS/Gracenote.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 13%
+source-wordcount: '239'
+ht-degree: 12%
 
 ---
 
@@ -28,9 +28,10 @@ A variável ID do ativo é o identificador exclusivo do ativo de mídia subjacen
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.asset` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.asset` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início da sessão, fechamento da sessão |
+| **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
 ## SDK da web
 

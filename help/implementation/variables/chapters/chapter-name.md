@@ -3,10 +3,10 @@ title: Nome do capítulo
 description: Defina o nome amigável de cada capítulo para que o relatório de nível de capítulo possa ser dividido por título de capítulo.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 14%
+source-wordcount: '187'
+ht-degree: 13%
 
 ---
 
@@ -24,9 +24,10 @@ A variável de nome de capítulo é o título legível de um capítulo (por exem
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.chapter.friendlyName` |
-| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Característica do Audience Manager** | `c_contextdata.a.media.chapter.friendlyName` |
 | **Obrigatório** | Não |
-| **Enviado com** | Início do capítulo, fechamento do capítulo |
+| **Enviado com** | [Início do capítulo](/help/implementation/events/chapters/chapter-start.md), fechamento do capítulo |
 
 ## SDK da web
 
