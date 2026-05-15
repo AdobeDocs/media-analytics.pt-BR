@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **Posição do capítulo**da dimensão de relatório. Consulte [Posição do capítulo](/help/implementation/variables/chapters/chapter-position.md) para saber como coletar essa variável.*
+*Esta página aborda a **Posição do capítulo**&#x200B;da dimensão de relatório. Consulte [Posição do capítulo](/help/implementation/variables/chapters/chapter-position.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

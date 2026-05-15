@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **URL do Creative**dimensão de relatório. Consulte [URL do Creative](/help/implementation/variables/ads/creative-url.md) para saber como coletar essa variável.*
+*Esta página abrange a **URL do Creative**&#x200B;dimensão de relatório. Consulte [URL do Creative](/help/implementation/variables/ads/creative-url.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
