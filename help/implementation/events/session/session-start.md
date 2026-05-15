@@ -3,10 +3,10 @@ title: Início da sessão
 description: Sinalize o início de uma sessão de mídia e obtenha a ID de sessão necessária para todos os eventos subsequentes.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 12%
+source-wordcount: '221'
+ht-degree: 10%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 12%
 # Início da sessão
 
 O evento de início de sessão abre uma sessão de rastreamento de mídia. Deve ser o primeiro evento enviado para qualquer reprodução. A resposta retorna uma ID de sessão que todos os eventos subsequentes da mesma sessão devem incluir.
+
+Uma sessão expira automaticamente se **nenhum evento for recebido por 10 minutos** ou se houver **nenhum movimento do indicador de reprodução por 30 minutos**. Se uma sessão expirar, você deverá chamar o início da sessão novamente para obter uma nova ID de sessão.
 
 * **Pré-requisitos**: nenhum; sempre o primeiro evento
 * **Métrica associada**: [Inícios de mídia](/help/reporting/metrics/media-starts.md)

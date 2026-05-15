@@ -3,17 +3,17 @@ title: Ping
 description: Envie um heartbeat para manter a sessão de mídia ativa e rastrear o progresso da reprodução em intervalos regulares.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 6%
+source-wordcount: '218'
+ht-degree: 5%
 
 ---
 
 
 # Ping
 
-O evento ping é um heartbeat que mantém a sessão ativa e rastreia o progresso da reprodução. Enviá-lo em um cronômetro durante toda a reprodução.
+O evento ping é um heartbeat que mantém a sessão ativa e rastreia o progresso da reprodução. Enviá-lo em um cronômetro durante toda a reprodução. Nos SDKs móveis, os pings são enviados automaticamente; em todas as outras plataformas, eles devem ser enviados manualmente no intervalo especificado.
 
 * **Conteúdo principal**: primeiro ping 10 segundos após o início da reprodução, depois a cada 10 segundos
 * **Conteúdo do anúncio**: a cada 1 segundo durante o rastreamento do anúncio
