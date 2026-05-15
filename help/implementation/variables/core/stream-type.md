@@ -26,7 +26,7 @@ A definição correta do tipo de fluxo é fundamental para os relatórios de mí
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.streamType` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.streamType` |
 | **Obrigatório** | Sim |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |

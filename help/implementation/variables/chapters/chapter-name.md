@@ -24,7 +24,7 @@ A variável de nome de capítulo é o título legível de um capítulo (por exem
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.chapter.friendlyName` |
-| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.chapter.friendlyName` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início do capítulo](/help/implementation/events/chapters/chapter-start.md), fechamento do capítulo |

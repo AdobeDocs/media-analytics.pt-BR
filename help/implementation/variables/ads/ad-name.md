@@ -24,7 +24,7 @@ A variável de nome do anúncio é o título legível do anúncio (por exemplo, 
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.friendlyName` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.ad.friendlyName` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início do anúncio](/help/implementation/events/ads/ad-start.md) e fechamento |

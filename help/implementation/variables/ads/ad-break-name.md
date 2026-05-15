@@ -24,7 +24,7 @@ A variável de nome do ad break é o nome amigável do ad break (por exemplo, `"
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.podFriendlyName` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Obrigatório** | Sim (Mobile SDK); Não (Edge, API Media Collection) |
 | **Enviado com** | [Início de quebra de anúncio](/help/implementation/events/ads/ad-break-start.md), anúncio fechado |

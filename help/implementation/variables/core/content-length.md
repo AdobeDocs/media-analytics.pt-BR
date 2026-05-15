@@ -24,7 +24,7 @@ A variável de comprimento do conteúdo é a duração total do conteúdo em seg
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.length` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.length` |
 | **Obrigatório** | Sim |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |

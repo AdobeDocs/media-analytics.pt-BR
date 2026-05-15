@@ -24,7 +24,7 @@ A variável de deslocamento do capítulo é o deslocamento do capítulo dentro d
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.chapter.offset` |
-| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.chapter.offset` |
 | **Obrigatório** | Não (Mobile SDK); Sim (Edge, API Media Collection) |
 | **Enviado com** | [Início do capítulo](/help/implementation/events/chapters/chapter-start.md), fechamento do capítulo |

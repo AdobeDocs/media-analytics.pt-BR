@@ -24,7 +24,7 @@ A variável de estação é o nome ou a ID da estação de rádio que transmite 
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.station` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.station` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |

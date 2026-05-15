@@ -27,9 +27,9 @@ O Originador é definido pelo reprodutor no início da sessão.
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.originator` para uma eVar. |
+| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.originator` para uma eVar. |
 | Adobe Analytics (classificação) | Classificação da dimensão [Conteúdo (ID)](content.md) — a Adobe cria automaticamente essa classificação quando os **[[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md)** estão habilitados para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.originator`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.originator`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.originator`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |
 | Audience Manager | `c_contextdata.a.media.originator` |
@@ -46,7 +46,7 @@ Essa abordagem fornece uma relação garantida de :1 entre cada ID de conteúdo 
 
 ## Abordagem de regras de processamento
 
-Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.originator` para uma eVar. Essa abordagem captura o originador como um valor por ocorrência sem exigir manutenção de classificação.
+Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.originator` para uma eVar. Essa abordagem captura o originador como um valor por ocorrência sem exigir manutenção de classificação.
 
 A conclusão é que você perde a relação 1:1 garantida entre o originador e a dimensão [Conteúdo (ID)](content.md) principal. Se sua implementação enviar valores inconsistentes para a mesma ID de conteúdo em todos os eventos, vários originadores poderão aparecer no mesmo conteúdo. A atualização de um valor se aplica somente aos dados daquele ponto em diante.
 
