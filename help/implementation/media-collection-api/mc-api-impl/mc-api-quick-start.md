@@ -5,10 +5,22 @@ uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/F7NHDQkJVwVc-Th-blxBP8gifT7V55xLqlI1YT-pswc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 97%
+source-wordcount: 294
+ht-degree: 90%
 
 ---
 
@@ -53,7 +65,7 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >Você deve usar os tipos de dados corretos no corpo da solicitação JSON. Por exemplo, `analytics.enableSSL` exige um booleano, `media.length` é numérico, etc. Você pode verificar os tipos de parâmetros e requisitos de obrigatoriedade nos [esquemas de validação JSON.](mc-api-validate-reqs.md)
+   >Você deve usar os tipos de dados corretos no corpo da solicitação JSON. Por exemplo, `analytics.enableSSL` requer um booleano, `media.length` é numérico, etc. Você pode verificar os tipos de parâmetros e requisitos de obrigatoriedade nos [esquemas de validação JSON.](mc-api-validate-reqs.md)
 
 1. Envie Solicitações de sessões para o endpoint da API da coleção do MA. Se a carga da sua solicitação for inválida, identifique o problema e tente novamente até obter uma resposta `201 Created`. Neste exemplo `curl`, o corpo da solicitação JSON está em um arquivo denominado `sample_data_session`:
 

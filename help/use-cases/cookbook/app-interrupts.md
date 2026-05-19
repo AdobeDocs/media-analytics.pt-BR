@@ -5,14 +5,23 @@ uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/BlL-c1rf5d3juDKHybex9vrPvQsBIiNXVO2ug9LKl0g
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 63%
+source-wordcount: 358
+ht-degree: 55%
 
 ---
 
-# Lidar com interrupções do aplicativo durante a reprodução {#handling-application-interrupts-during-playback}
+# Lidar com interrupções do aplicativo durante a reprodução{#handling-application-interrupts-during-playback}
 
 A reprodução em um aplicativo de mídia pode ser interrompida de várias maneiras. Por exemplo, um usuário pode pressionar explicitamente o botão de pausa ou colocar o aplicativo em segundo plano. Independentemente da causa de uma interrupção na reprodução de uma mídia, as instruções de rastreamento são as mesmas.
 
@@ -35,4 +44,4 @@ A reprodução em um aplicativo de mídia pode ser interrompida de várias manei
 
 * _Que tal reiniciar a mesma sessão?_
 
-  Para obter informações sobre como retomar uma sessão de rastreamento, consulte [Retomar sessões inativas](resuming-inactive.md). O SDK envia um ping de retomada para notificar o back-end que o usuário está retomando manualmente a sessão.
+  Para obter informações sobre como retomar uma sessão de rastreamento, consulte [Retomando sessões inativas](resuming-inactive.md).O SDK envia um ping de retomada para notificar o back-end que o usuário está retomando manualmente a sessão.

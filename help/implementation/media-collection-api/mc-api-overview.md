@@ -6,10 +6,24 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/79XLYzuvi3neUuCrt3LcGEwnnaR038-mWHMuSrY797M
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 93%
+source-wordcount: 347
+ht-degree: 91%
 
 ---
 
@@ -17,7 +31,7 @@ ht-degree: 93%
 
 A API Media Collection é a alternativa RESTful da Adobe para o SDK do Media no lado do cliente. Com a API Media Collection, o reprodutor pode rastrear eventos de áudio e vídeo usando chamadas RESTful HTTP.
 
-A API Media Collection é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Isso significa que alguns aspectos da documentação do SDK do Media também são relevantes para a API Media Collection. Por exemplo, ambas as soluções usam os mesmos [Parâmetros de streaming de mídia](../variables/audio-video-parameters.md), e os dados de rastreamento de streaming de mídia coletados levam aos mesmos [Relatórios e Análises.](/help/reporting/media-reports-enable.md)
+A API Media Collection é essencialmente um adaptador e atua como uma versão no lado do servidor do SDK do Media. Os dados de rastreamento de streaming de mídia coletados levam aos mesmos [Relatórios e Análise](/help/reporting/media-reports-enable.md).
 
 ## Fluxos de dados de rastreamento de mídia {#media-tracking-data-flows}
 
@@ -78,20 +92,4 @@ Para cada `eventType`, há um [esquema de validação JSON](mc-api-ref/mc-api-js
 
 ### Tipos de evento {#mc-api-event-types}
 
-* `sessionStart`
-* `play`
-* `ping`
-* `pauseStart`
-* `bufferStart`
-* `adStart`
-* `adComplete`
-* `adSkip`
-* `adBreakStart`
-* `adBreakComplete`
-* `chapterStart`
-* `chapterSkip`
-* `chapterComplete`
-* `sessionEnd`
-* `sessionComplete`
-* `stateStart`
-* `stateEnd`
+Para obter a lista completa de tipos de evento com exemplos de implementação por SDK, consulte a [Visão geral dos eventos](/help/implementation/events/overview.md).

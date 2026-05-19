@@ -4,9 +4,22 @@ description: Saiba como migrar perfis para os novos campos de mídia de streamin
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/c1WHnEeZnI3PP6aO40pDHpJCi2Z0ERiNY8lCj4wyMiU
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: 533
 ht-degree: 0%
 
 ---
@@ -33,7 +46,7 @@ Para migrar a filtragem de perfil do tipo de dados antigo chamado &quot;Mídia&q
 
 1. Valide se os perfis ainda estão funcionando como esperado.
 
-Consulte o parâmetro [ID de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) na página [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo pode ser encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo pode ser encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
+Consulte o parâmetro [ID de Conteúdo](/help/reporting/dimensions/content.md) e o restante das variáveis de mídia de streaming documentadas em [Serviços de mídia de streaming](/help/media-overview.md) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo pode ser encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo pode ser encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
 
 ## Exemplo
 
@@ -56,7 +69,7 @@ Para facilitar o cumprimento das diretrizes de migração, considere o exemplo d
    ![Regras de filtro de fluxo de dados do AEP](assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   Para cada filtro que usa o objeto media.mediaTimed, encontre seu correspondente no objeto `mediaReporting` usando a página [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;. Por exemplo, para [Inícios da mídia](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), o correspondente para `media.mediaTimed.impressions.value` é `mediaReporting.sessionDetails.isViewed`.
+   Para cada filtro que usa o objeto media.mediaTimed, encontre seu correspondente no objeto `mediaReporting` usando as variáveis de mídia de streaming documentadas em [Serviços de mídia de streaming](/help/media-overview.md) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;. Por exemplo, para [Inícios da mídia](/help/reporting/metrics/media-starts.md), o correspondente para `media.mediaTimed.impressions.value` é `mediaReporting.sessionDetails.isViewed`.
 
    ![Campos XDM novos e antigos](assets/xdm-fields-new-and-old.jpeg)
 

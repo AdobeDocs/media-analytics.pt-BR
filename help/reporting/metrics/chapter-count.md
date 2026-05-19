@@ -1,0 +1,27 @@
+---
+title: Contagem de capítulo
+description: Informa o número de capítulos iniciados durante uma sessão.
+feature: Metrics
+role: User, Admin
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 10%
+
+---
+
+
+# Contagem de capítulo
+
+A métrica **Contagem de capítulos** informa o número de capítulos iniciados durante uma sessão. Use-o para comparar o consumo de capítulo entre o conteúdo. Para contagens de início de capítulo giradas por dimensões de capítulo (nome do capítulo, posição), use a métrica de inícios de capítulo disponível quando a categoria de variável Capítulos estiver ativada.
+
+## Como essa métrica é calculada
+
+O back-end de mídia incrementa `mediaReporting.sessionDetails.chapterCount` em cada evento de [início de capítulo](/help/implementation/events/chapters/chapter-start.md) recebido durante a sessão. A métrica é relatada na chamada de fechamento.
+
+| Sistema de relatório | Origem |
+| --- | --- |
+| Adobe Analytics | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.chapterCount` para um evento personalizado. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.chapterCount`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `event_list`, `post_event_list` (o evento personalizado para o qual sua regra de processamento mapeia `a.media.chapterCount`; consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Audience Manager | N/D |
