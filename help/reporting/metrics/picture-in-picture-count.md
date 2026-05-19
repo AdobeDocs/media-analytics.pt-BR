@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **métrica de relatórios de contagem de imagens**do Picture in picture. Consulte [Picture in picture](/help/implementation/variables/player-state/picture-in-picture.md) para saber como coletar essa variável.*
+*Esta página aborda a **métrica de relatórios de contagem de imagens**&#x200B;do Picture in picture. Consulte [Picture in picture](/help/implementation/variables/player-state/picture-in-picture.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
