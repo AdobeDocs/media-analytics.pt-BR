@@ -3,9 +3,9 @@ title: Capítulo completo
 description: Conta cada capítulo reproduzido até a conclusão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ A métrica **Capítulo concluído** conta todos os capítulos reproduzidos até 
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.chapterDetails.isCompleted = true` quando um evento [chapter complete](/help/implementation/events/chapters/chapter-complete.md) é recebido. A métrica é relatada na chamada de fechamento do capítulo. Os capítulos ignorados ou abandonados no meio da reprodução não contam como conclusões.
+O back-end de mídia define esse sinalizador quando um evento [chapter complete](/help/implementation/events/chapters/chapter-complete.md) é recebido. A métrica é relatada na chamada de fechamento do capítulo. Os capítulos ignorados ou abandonados no meio da reprodução não contam como conclusões.
 
 | Sistema de relatório | Origem |
 | --- | --- |

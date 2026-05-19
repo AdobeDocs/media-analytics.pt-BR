@@ -3,10 +3,10 @@ title: Quedas antes do início
 description: Conta sessões em que o visualizador saiu antes de qualquer conteúdo principal renderizado.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 9%
+source-wordcount: '211'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ A métrica **Desistências antes do início** conta sessões em que o visualizad
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.qoeDataDetails.isDroppedBeforeStart = true` para sessões que se fecham sem nunca produzir um evento [play](/help/implementation/events/playback/play.md) no conteúdo principal. A métrica é relatada na chamada de fechamento.
+O back-end de mídia define esse sinalizador para sessões que se fecham sem nunca produzir um evento [play](/help/implementation/events/playback/play.md) no conteúdo principal. A métrica é relatada na chamada de fechamento. Cenários comuns incluem: o visualizador sai durante um anúncio precedente, o reprodutor é interrompido indefinidamente na fase inicial de buffer ou um erro é acionado antes do primeiro evento de reprodução do conteúdo principal. Em todos esses casos, a sessão registra um [Início da mídia](/help/reporting/metrics/media-starts.md), mas nenhum [Início do conteúdo](/help/reporting/metrics/content-starts.md) e nenhum [Marcador de progresso](/help/reporting/metrics/progress-markers.md) foram registrados.
 
 | Sistema de relatório | Origem |
 | --- | --- |

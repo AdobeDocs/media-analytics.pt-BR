@@ -3,9 +3,9 @@ title: Contagem de anúncios
 description: Relata o número de anúncios iniciados durante uma sessão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '176'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ A métrica **Contagem de anúncios** informa o número de anúncios iniciados du
 
 ## Como essa métrica é calculada
 
-O back-end de mídia incrementa `mediaReporting.sessionDetails.adCount` em cada evento [ad start](/help/implementation/events/ads/ad-start.md) recebido durante a sessão. A métrica é relatada na chamada de fechamento.
+O back-end de mídia incrementa essa contagem a cada evento [ad start](/help/implementation/events/ads/ad-start.md) recebido durante a sessão. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |

@@ -3,10 +3,10 @@ title: Tempo gasto com o conteúdo
 description: Informa o total de segundos de reprodução do conteúdo principal ativo por sessão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 8%
+source-wordcount: '221'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ A métrica **Tempo gasto com conteúdo** relata o total de segundos de reproduç
 
 ## Como essa métrica é calculada
 
-O back-end de mídia soma o tempo decorrido do relógio de parede entre os eventos enquanto o reprodutor está no estado `play` no conteúdo principal. O tempo durante anúncios, pausas, eventos de buffer e interrupções é excluído. A métrica é relatada na chamada de fechamento. O valor é mostrado como `HH:MM:SS` no Analysis Workspace e em segundos nos Feeds de dados, Data Warehouse e APIs de relatórios.
+O back-end de mídia soma o tempo decorrido do relógio de parede entre os eventos enquanto o reprodutor está no estado `play` no conteúdo principal. O tempo durante anúncios, pausas, eventos de buffer e interrupções é excluído. Como somente o tempo de reprodução ativo é contado, a métrica pode exceder [Tamanho do conteúdo](/help/reporting/dimensions/content-length.md) quando um visualizador busca de forma retroativa e observa novamente um segmento. Cada passagem por um determinado segmento acumula tempo de reprodução adicional e pode acumular enquanto o usuário consumir e retroceder conteúdo em uma sessão. A métrica é relatada na chamada de fechamento. O valor é mostrado como `HH:MM:SS` no Analysis Workspace e em segundos nos Feeds de dados, Data Warehouse e APIs de relatórios.
 
 | Sistema de relatório | Origem |
 | --- | --- |

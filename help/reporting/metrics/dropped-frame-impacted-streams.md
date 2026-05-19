@@ -3,9 +3,9 @@ title: Fluxos afetados por quedas de quadros
 description: Conta sessões em que pelo menos um quadro foi descartado.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ A métrica **Queda de quadro afetou os fluxos** ao contar sessões em que pelo m
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams = true` se o valor `droppedFrames` do objeto de QoE for maior que zero no fechamento da sessão.
+O back-end de mídia define esse sinalizador se o valor `droppedFrames` do objeto de QoE for maior que zero no fechamento da sessão.
 
 | Sistema de relatório | Origem |
 | --- | --- |

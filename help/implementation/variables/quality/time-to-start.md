@@ -3,10 +3,10 @@ title: Hora de início
 description: Defina o tempo de inicialização do reprodutor, em milissegundos, para que o back-end possa relatar a qualidade do tempo até o primeiro quadro.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 12%
 >[!ENDSHADEBOX]
 
 O tempo para iniciar a variável é o tempo decorrido, em milissegundos, entre o reprodutor iniciar a reprodução e a renderização do primeiro quadro. Defina-o no objeto QoE antes do acionamento do evento de início da sessão. O Adobe armazena e relata o valor em segundos; passa milissegundos e o Adobe converte ao assimilar.
+
+>[!IMPORTANT]
+>
+>Assim que o player começar a renderizar quadros de conteúdo, pare a atualização de `timeToStart`. O valor pode aumentar durante a fase inicial de buffering ou carregamento, mas deve ser tratado como fixo a partir do momento em que a reprodução começa. Continuar a atualizá-la após a renderização do primeiro quadro produz uma métrica [Hora de início](/help/reporting/metrics/time-to-start.md) inflada ou incorreta.
 
 | Propriedade | Valor |
 | --- | --- |

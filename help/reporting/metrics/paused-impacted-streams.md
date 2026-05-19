@@ -3,9 +3,9 @@ title: Fluxos afetados pausados
 description: Conta sessões em que o visualizador foi pausado pelo menos uma vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '152'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ A métrica **Fluxos afetados pausados** conta sessões nas quais o visualizador 
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` na primeira vez que um evento de [início de pausa](/help/implementation/events/playback/pause-start.md) é recebido durante a sessão. A métrica é relatada na chamada de fechamento.
+O back-end de mídia define esse sinalizador na primeira vez que um evento [pause start](/help/implementation/events/playback/pause-start.md) é recebido durante a sessão. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |

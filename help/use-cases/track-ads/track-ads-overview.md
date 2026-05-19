@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 77%
+source-wordcount: 641
+ht-degree: 58%
 
 ---
 
@@ -110,7 +110,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 1. Chame `trackEvent()` com o evento `AdStart` na instância `MediaHeartbeat` para começar a rastrear a reprodução de anúncio.
 
-   Inclua uma referência na variável de metadados personalizada (ou um objeto vazio) como o terceiro parâmetro na chamada de evento.
+   Inclua uma referência na variável de metadados personalizada (ou um objeto vazio) como o terceiro parâmetro na chamada de evento. Enquanto o anúncio está sendo reproduzido, mantenha o indicador de reprodução de conteúdo (`l:event:playhead`) fixo na posição em que o ad break começou; avançá-lo durante a reprodução do anúncio estoura [O tempo gasto com o conteúdo](/help/reporting/metrics/content-time-spent.md).
 
 1. Quando a reprodução atingir o fim do anúncio, chame `trackEvent()` com o evento `AdComplete`.
 
@@ -120,7 +120,11 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 >[!IMPORTANT]
 >
->Certifique-se de NÃO incrementar o indicador de reprodução do reprodutor de conteúdo (`l:event:playhead`) durante a reprodução do anúncio (`s:asset:type=ad`). Se você fizer isso, as métricas de Tempo gasto do conteúdo serão afetadas negativamente.
+>**Anúncios precedentes: não chame `trackPlay` antes de `AdBreakStart` e `AdStart`.** O primeiro ping `play` no conteúdo principal incrementa [Início do conteúdo](/help/reporting/metrics/content-starts.md). Se `trackPlay` for chamado antes dos eventos de anúncio precedentes serem acionados e o visualizador sair durante o anúncio, o Início do conteúdo será incrementado mesmo se nenhum conteúdo principal tiver sido reproduzido. Para cenários antes da exibição, atrase `trackPlay` até depois de `AdBreakStart` e `AdStart` terem sido enviados.
+
+>[!NOTE]
+>
+>O valor do indicador de reprodução relatado durante a reprodução do anúncio representa a posição do visualizador no **conteúdo principal**, não dentro do anúncio. Para um anúncio precedente a um vídeo de 10 minutos, o indicador de reprodução é `0` em todo o anúncio. Para um anúncio intermediário que começa na marca de 5 minutos, o indicador de reprodução permanece em `300` (segundos) durante a duração do anúncio.
 
 O código de exemplo a seguir usa o SDK 2.x do JavaScript para um reprodutor de mídia HTML5.
 

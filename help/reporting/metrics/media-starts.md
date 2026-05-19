@@ -3,10 +3,10 @@ title: Início da mídia
 description: Conta todas as sessões de mídia iniciadas, incluindo sessões que terminaram em anúncios precedentes ou buffering.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 8%
+source-wordcount: '228'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ A métrica **Início da mídia** conta todas as sessões de mídia iniciadas. El
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.sessionDetails.isViewed = true` quando um evento [início de sessão](/help/implementation/events/session/session-start.md) é recebido. A métrica relatada é `1` por sessão. Inícios de mídia são relatados na chamada de início, não na chamada de fechamento. É a única métrica da Fase 1 que não espera pelo fechamento da sessão.
+O back-end de mídia define esse sinalizador quando um evento [início de sessão](/help/implementation/events/session/session-start.md) é recebido. A métrica relatada é `1` por sessão. Os inícios da mídia são relatados na chamada de início, não na chamada de fechamento; é a única métrica que não espera pelo fechamento da sessão. Todas as outras métricas de mídia, incluindo [Inícios do conteúdo](/help/reporting/metrics/content-starts.md), [Tempo gasto com o conteúdo](/help/reporting/metrics/content-time-spent.md) e [Marcadores de progresso](/help/reporting/metrics/progress-markers.md), são relatadas na chamada de fechamento e não estão disponíveis em tempo real durante a reprodução. [Início do anúncio](/help/reporting/metrics/ad-starts.md) é a única métrica adicional relatada em seu evento de acionamento, em vez de no fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |

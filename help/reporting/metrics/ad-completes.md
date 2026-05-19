@@ -3,9 +3,9 @@ title: Anúncio completo
 description: Conta cada anúncio reproduzido até a conclusão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ A métrica **Anúncio concluído** conta todos os anúncios reproduzidos até a 
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.advertisingDetails.isCompleted = true` quando um evento [anúncio concluído](/help/implementation/events/ads/ad-complete.md) é recebido. A métrica é relatada na chamada de fechamento de anúncio. Os anúncios ignorados ou abandonados não contam como conclusões.
+O back-end de mídia define esse sinalizador quando um evento [anúncio concluído](/help/implementation/events/ads/ad-complete.md) é recebido. A métrica é relatada na chamada de fechamento de anúncio. Os anúncios ignorados ou abandonados não contam como conclusões.
 
 | Sistema de relatório | Origem |
 | --- | --- |

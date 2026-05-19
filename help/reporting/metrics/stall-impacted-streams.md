@@ -3,9 +3,9 @@ title: Fluxos afetados pela paralisação
 description: Conta sessões em que pelo menos uma paralisação ocorreu durante a reprodução.
 feature: Metrics
 role: User, Admin
-source-git-commit: 1278355e0bfc67c635250c426edaf865fb658c37
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '178'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ A métrica **Fluxos afetados pela paralisação** conta sessões em que pelo men
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.qoeDataDetails.hasStallImpactedStreams = true` quando nenhum movimento do indicador de reprodução é gravado no conteúdo principal por pelo menos três eventos consecutivos durante a sessão. A métrica é relatada na chamada de fechamento.
+O back-end de mídia define esse sinalizador quando nenhum movimento do indicador de reprodução é gravado no conteúdo principal por pelo menos três eventos consecutivos durante a sessão. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |

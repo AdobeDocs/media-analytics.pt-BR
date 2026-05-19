@@ -3,10 +3,10 @@ title: Fim da sessão
 description: Feche imediatamente uma sessão de mídia quando o visualizador abandonar o conteúdo.
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 11%
+source-wordcount: '273'
+ht-degree: 8%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 11%
 O evento de término de sessão fecha imediatamente e irreversivelmente uma sessão de rastreamento de mídia. O término da sessão é um encerramento permanente — uma vez enviada, a sessão é encerrada e nenhum outro evento pode ser rastreado nela. Use Sessão somente quando tiver certeza de que nenhum evento adicional acontecerá, como quando o reprodutor for destruído ou a página for descarregada. Na maioria dos casos, é mais seguro permitir que a sessão expire naturalmente, em vez de correr o risco de interromper eventos que ainda podem chegar. Se o visualizador terminar o conteúdo, chame [Sessão concluída](session-complete.md).
 
 Sem um fim de sessão explícito, uma sessão é fechada automaticamente após 10 minutos sem eventos ou 30 minutos sem movimento do indicador de reprodução.
+
+>[!NOTE]
+>
+>Você pode chamar com segurança o término de uma sessão mais de uma vez para a mesma sessão. O backend fecha a sessão no primeiro evento e descarta silenciosamente todos os eventos subsequentes dessa ID de sessão, incluindo um segundo fim de sessão. Você não precisa se proteger contra chamadas duplicadas em condições de corrida, como um tempo limite de 30 minutos expirando ao mesmo tempo em que o visualizador fecha o reprodutor.
 
 * **Pré-requisitos**: [Início da sessão](session-start.md)
 * **Métrica associada**: nenhuma

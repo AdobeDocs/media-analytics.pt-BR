@@ -3,10 +3,10 @@ title: Contagens da função Em foco
 description: Relata o número de vezes que o reprodutor ganhou foco durante uma sessão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 8%
+source-wordcount: '165'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ A métrica **Em contagens de foco** informa o número de vezes que o player ganh
 
 ## Como essa métrica é calculada
 
-O back-end de mídia incrementa o campo `count` na entrada `inFocus` de `mediaReporting.states[]` em cada evento de início de estado de foco. A métrica é relatada na chamada de fechamento.
+O back-end de mídia incrementa essa contagem em cada evento de início de estado de foco. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |

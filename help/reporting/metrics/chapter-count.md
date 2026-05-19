@@ -3,10 +3,10 @@ title: Contagem de capítulo
 description: Informa o número de capítulos iniciados durante uma sessão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 10%
+source-wordcount: '172'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ A métrica **Contagem de capítulos** informa o número de capítulos iniciados 
 
 ## Como essa métrica é calculada
 
-O back-end de mídia incrementa `mediaReporting.sessionDetails.chapterCount` em cada evento de [início de capítulo](/help/implementation/events/chapters/chapter-start.md) recebido durante a sessão. A métrica é relatada na chamada de fechamento.
+O back-end de mídia incrementa essa contagem em cada evento de [início de capítulo](/help/implementation/events/chapters/chapter-start.md) recebido durante a sessão. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |

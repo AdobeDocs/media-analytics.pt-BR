@@ -3,10 +3,10 @@ title: Resumo de conteúdo
 description: Conta as sessões que retomaram uma reprodução interrompida anteriormente.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 10%
+source-wordcount: '171'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ A métrica **Resumo do conteúdo** conta sessões que retomaram uma reprodução
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.sessionDetails.hasResume = true` quando `mediaCollection.sessionDetails.hasResume` é `true` no evento [início de sessão](/help/implementation/events/session/session-start.md). O reprodutor deve sinalizar explicitamente a sessão como um currículo. A métrica é relatada na chamada de fechamento.
+O back-end de mídia define esse sinalizador quando `mediaCollection.sessionDetails.hasResume` é `true` no evento [início de sessão](/help/implementation/events/session/session-start.md). O reprodutor deve sinalizar explicitamente a sessão como um currículo. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |

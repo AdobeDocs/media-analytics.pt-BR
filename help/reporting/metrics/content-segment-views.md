@@ -3,9 +3,9 @@ title: Visualizações do segmento de conteúdo
 description: Conta segmentos nos quais ocorreu a reprodução do conteúdo principal ativo.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '185'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ A métrica **Visualizações de segmento de conteúdo** conta segmentos de conte
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define `mediaReporting.sessionDetails.hasSegmentView = true` para qualquer chamada de fechamento que cubra um segmento no qual pelo menos um evento [play](/help/implementation/events/playback/play.md) para conteúdo principal foi recebido. A métrica é relatada na chamada de fechamento. No caminho da API do Media Edge, as visualizações de segmento são acionadas nas mesmas condições que os inícios de conteúdo. Ambos exigem um evento [play](/help/implementation/events/playback/play.md) no conteúdo principal.
+O back-end de mídia define esse sinalizador para qualquer chamada de fechamento que cubra um segmento no qual pelo menos um evento [play](/help/implementation/events/playback/play.md) para conteúdo principal foi recebido. A métrica é relatada na chamada de fechamento. No caminho da API do Media Edge, as visualizações de segmento são acionadas nas mesmas condições que os inícios de conteúdo. Ambos exigem um evento [play](/help/implementation/events/playback/play.md) no conteúdo principal.
 
 | Sistema de relatório | Origem |
 | --- | --- |

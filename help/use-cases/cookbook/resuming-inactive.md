@@ -17,10 +17,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 151
-ht-degree: 98%
+source-wordcount: 398
+ht-degree: 37%
 
 ---
 
@@ -36,6 +36,18 @@ O SDK do Media rastreia automaticamente por quanto tempo a reprodução de mídi
 * Buffering
 
 Se uma sessão de rastreamento de mídia se mantiver no estado inativo por mais de 30 minutos, ela será encerrada automaticamente. Se o usuário retomar a sessão após o estado inativo (`trackPlay`), o Media Heartbeat cria automaticamente uma nova sessão de vídeo com as informações e os metadados que foram utilizados anteriormente e envia um evento de retomada de heartbeat.
+
+## Transferência entre dispositivos usando o sinalizador de retomada
+
+O mesmo mecanismo de continuação que lida com a continuação da sessão de aplicativo único também se aplica quando um visualizador transfere a reprodução entre dispositivos — por exemplo, transmitindo um vídeo de um telefone celular para uma TV ou receptor Chromecast. Como cada dispositivo executa sua própria instância do Media SDK, a entrega cria várias sessões por padrão. Use o sinalizador de retomada para uni-los em uma continuação lógica, de modo que o Analytics reporte a visualização combinada como uma única parte do engajamento, em vez de inicializações de mídia separadas.
+
+**Como implementar:**
+
+1. No **dispositivo de origem** (por exemplo, o telefone), chame `trackSessionEnd` quando o visualizador iniciar a conversão. Não chamar `trackComplete` — o conteúdo não foi concluído, está sendo movido para outro dispositivo.
+2. No **dispositivo de destino** (por exemplo, o Chromecast), chame `trackSessionStart` com o sinalizador de retomada definido como `true` e os mesmos metadados de conteúdo (nome, ID, comprimento) usados no dispositivo de origem. Passe a posição do indicador de reprodução para onde o visualizador parou no dispositivo de origem.
+3. Se o visualizador retornar posteriormente a reprodução para o dispositivo de origem, repita o mesmo padrão: `trackSessionEnd` no destino e `trackSessionStart` com o sinalizador de retomada na origem.
+
+Definir o sinalizador de retomada faz com que o Adobe Analytics incremente [retomas de conteúdo](/help/reporting/metrics/content-resumes.md) em vez de [inícios da mídia](/help/reporting/metrics/media-starts.md) para o segundo e seguintes trechos da entrega. Como não há nenhum mecanismo incorporado para compartilhar a ID da sessão entre instâncias do SDK, o sinalizador de retomada é uma declaração do lado do cliente. Você o transmite com base na lógica do aplicativo quando sabe que o visualizador continua uma sessão anterior.
 
 ## Retomar manualmente uma sessão fechada
 

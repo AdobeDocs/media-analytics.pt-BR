@@ -3,9 +3,9 @@ title: Contagens da função Mudo
 description: Informa o número de vezes que o visualizador silenciou o áudio durante uma sessão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ A métrica **Contagens da função Mudo** informa o número de vezes que o visua
 
 ## Como essa métrica é calculada
 
-O back-end de mídia incrementa o campo `count` na entrada `mute` de `mediaReporting.states[]` em cada evento de início de estado de mudo. A métrica é relatada na chamada de fechamento.
+O back-end de mídia incrementa essa contagem em cada evento de início de estado de mudo. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |
