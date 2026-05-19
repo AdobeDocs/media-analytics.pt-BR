@@ -6,18 +6,13 @@ exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/BlL-c1rf5d3juDKHybex9vrPvQsBIiNXVO2ug9LKl0g
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 358
-ht-degree: 55%
+source-wordcount: 473
+ht-degree: 41%
 
 ---
 
@@ -45,3 +40,11 @@ A reprodução em um aplicativo de mídia pode ser interrompida de várias manei
 * _Que tal reiniciar a mesma sessão?_
 
   Para obter informações sobre como retomar uma sessão de rastreamento, consulte [Retomando sessões inativas](resuming-inactive.md).O SDK envia um ping de retomada para notificar o back-end que o usuário está retomando manualmente a sessão.
+
+* _O que acontece se `trackSessionEnd` for chamado duas vezes para a mesma sessão?_
+
+  É seguro chamar `trackSessionEnd` mais de uma vez para a mesma sessão. O back-end fecha a sessão no primeiro evento e descarta silenciosamente todos os eventos subsequentes para essa ID de sessão, incluindo um segundo `trackSessionEnd`. Isso significa que as condições de corrida — por exemplo, o tempo limite de inatividade de 30 minutos acionado no mesmo momento em que o visualizador fecha o player — não produzem dados duplicados.
+
+* _O que acontece se `trackSessionStart` for chamado enquanto uma sessão já estiver ativa?_
+
+  O SDK ignora a segunda chamada `trackSessionStart` se a sessão ainda não tiver sido encerrada. Se você precisar iniciar uma nova sessão, chame `trackSessionEnd` primeiro para fechar explicitamente a atual e, em seguida, chame `trackSessionStart` para a nova sessão.

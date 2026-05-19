@@ -3,10 +3,10 @@ title: Quadros soltos
 description: Defina a contagem de quadros ignorados no objeto de QoE para que o back-end possa relatar a qualidade de queda de quadro.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -21,10 +21,14 @@ ht-degree: 12%
 
 A variável dropped frames é a contagem de quadros que o reprodutor derrubou durante a sessão. Defina-o no objeto de QoE e atualize o valor sempre que o reprodutor relatar novas quedas. O backend relata o valor mais recente no fechamento da sessão.
 
+>[!NOTE]
+>
+>Sempre passe o **total cumulativo** de quadros ignorados para toda a sessão até esse ponto, não um delta por intervalo. Se você redefinir o valor para `0` entre as atualizações, o back-end receberá `0` como o valor final e relatará zero quadros ignorados para a sessão, independentemente do que foi ignorado anteriormente.
+
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.qoe.droppedFrameCount` |
-| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Obrigatório** | Não |
 | **Enviado com** | Eventos de qualidade ([alteração na taxa de bits](/help/implementation/events/playback/bitrate-change.md), [início do buffer](/help/implementation/events/playback/buffer-start.md), [erro](/help/implementation/events/error.md)), fechamento da sessão |

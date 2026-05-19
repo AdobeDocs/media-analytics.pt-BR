@@ -3,9 +3,9 @@ title: Fluxos estimados
 description: Aproxima o número de fluxos de áudio ou vídeo por sessão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '190'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ A métrica **Fluxos estimados** aproxima o número de fluxos de áudio ou vídeo
 
 ## Como essa métrica é calculada
 
-O back-end de mídia computa `mediaReporting.sessionDetails.estimatedStreams = FLOOR(totalTimePlayed / 1800) + 1`, onde `totalTimePlayed` é [Tempo de mídia gasto](media-time-spent.md) em segundos. A métrica é relatada na chamada de fechamento.
+O back-end de mídia calcula essa métrica como `FLOOR(totalTimePlayed / 1800) + 1`, em que `totalTimePlayed` é [Tempo gasto com a mídia](media-time-spent.md) em segundos. A métrica é relatada na chamada de fechamento.
 
 | Tempo gasto com a mídia | Fluxos estimados |
 | --- | --- |
@@ -28,7 +28,7 @@ O back-end de mídia computa `mediaReporting.sessionDetails.estimatedStreams = F
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.estimatedStreams` para um evento personalizado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.estimatedStreams`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `event_list`, `post_event_list` (o evento personalizado para o qual sua regra de processamento mapeia `a.media.estimatedStreams`; consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Adobe Analytics | Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.estimatedStreams` para um evento personalizado. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.estimatedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `event_list`, `post_event_list` (o evento personalizado para o qual sua regra de processamento mapeia `a.media.estimatedStreams`; consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.estimatedStreams` |

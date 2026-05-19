@@ -6,24 +6,15 @@ exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/PguxKIzAL95WbMl5c0yJq9rYSqZgOGbbAYtxOI4eVOs
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 77%
+source-wordcount: 641
+ht-degree: 58%
 
 ---
 
@@ -110,7 +101,7 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 1. Chame `trackEvent()` com o evento `AdStart` na instância `MediaHeartbeat` para começar a rastrear a reprodução de anúncio.
 
-   Inclua uma referência na variável de metadados personalizada (ou um objeto vazio) como o terceiro parâmetro na chamada de evento.
+   Inclua uma referência na variável de metadados personalizada (ou um objeto vazio) como o terceiro parâmetro na chamada de evento. Enquanto o anúncio está sendo reproduzido, mantenha o indicador de reprodução de conteúdo (`l:event:playhead`) fixo na posição em que o ad break começou; avançá-lo durante a reprodução do anúncio estoura [O tempo gasto com o conteúdo](/help/reporting/metrics/content-time-spent.md).
 
 1. Quando a reprodução atingir o fim do anúncio, chame `trackEvent()` com o evento `AdComplete`.
 
@@ -120,7 +111,11 @@ A reprodução do anúncio inclui o rastreamento de ad breaks, anúncios iniciad
 
 >[!IMPORTANT]
 >
->Certifique-se de NÃO incrementar o indicador de reprodução do reprodutor de conteúdo (`l:event:playhead`) durante a reprodução do anúncio (`s:asset:type=ad`). Se você fizer isso, as métricas de Tempo gasto do conteúdo serão afetadas negativamente.
+>**Anúncios precedentes: não chame `trackPlay` antes de `AdBreakStart` e `AdStart`.** O primeiro ping `play` no conteúdo principal incrementa [Início do conteúdo](/help/reporting/metrics/content-starts.md). Se `trackPlay` for chamado antes dos eventos de anúncio precedentes serem acionados e o visualizador sair durante o anúncio, o Início do conteúdo será incrementado mesmo se nenhum conteúdo principal tiver sido reproduzido. Para cenários antes da exibição, atrase `trackPlay` até depois de `AdBreakStart` e `AdStart` terem sido enviados.
+
+>[!NOTE]
+>
+>O valor do indicador de reprodução relatado durante a reprodução do anúncio representa a posição do visualizador no **conteúdo principal**, não dentro do anúncio. Para um anúncio precedente a um vídeo de 10 minutos, o indicador de reprodução é `0` em todo o anúncio. Para um anúncio intermediário que começa na marca de 5 minutos, o indicador de reprodução permanece em `300` (segundos) durante a duração do anúncio.
 
 O código de exemplo a seguir usa o SDK 2.x do JavaScript para um reprodutor de mídia HTML5.
 

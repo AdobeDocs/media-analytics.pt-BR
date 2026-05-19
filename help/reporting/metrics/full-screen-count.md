@@ -3,9 +3,9 @@ title: Contagens de tela inteira
 description: Relata o número de vezes que o visualizador entrou em tela cheia durante uma sessão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '169'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **contagem de tela cheia**&#x200B;métrica de relatório. Consulte [Tela inteira](/help/implementation/variables/player-state/full-screen.md) para saber como coletar essa variável.*
+*Esta página aborda a **contagem de tela cheia**métrica de relatório. Consulte [Tela inteira](/help/implementation/variables/player-state/full-screen.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -23,11 +23,11 @@ A métrica **Contagens de tela cheia** informa o número de vezes que o visualiz
 
 ## Como essa métrica é calculada
 
-O back-end de mídia incrementa o campo `count` na entrada `fullscreen` de `mediaReporting.states[]` em cada evento de início de estado de tela cheia. A métrica é relatada na chamada de fechamento.
+O back-end de mídia incrementa essa contagem em cada evento de início de estado em tela cheia. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.states.fullscreen.count` quando o [[!UICONTROL Rastreamento do Estado do Player]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-reporting-details) entrada onde `name = "fullscreen"`, campo `count` |
-| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) entrada onde `name = "fullscreen"`, campo `count` |
+| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.states.fullscreen.count` |

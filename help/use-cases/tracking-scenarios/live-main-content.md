@@ -6,26 +6,15 @@ exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/oOshJZEQmXqgNh5l10-qhLMO8dmph6Tz9mpH0a4FePU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 98%
+source-wordcount: 749
+ht-degree: 77%
 
 ---
 
@@ -87,6 +76,17 @@ Por exemplo, digamos que um evento de transmissão AO VIVO comece à meia-noite 
 ### Ao pausar
 
 A mesma lógica de &quot;indicador de reprodução em tempo real&quot; aplicada no início da reprodução deve ser aplicada quando o usuário pausa a reprodução. Quando o usuário voltar a reproduzir a transmissão AO VIVO, você deve definir o valor do `l:event:playhead` de acordo com o novo número de segundos desde a meia-noite UTC, _não_ de acordo com o ponto em que o usuário pausou a transmissão AO VIVO.
+
+## Rastreamento de alterações do programa em um stream em tempo real {#live-program-changes}
+
+Quando um fluxo ao vivo faz a transição de um programa ou programa para outro — um padrão comum para propriedades de transmissão e cabo — cada programa deve ser rastreado como uma sessão separada. Isso permite relatar o engajamento e o tempo gasto por título individual em vez de atribuir todas as exibições a um único fluxo contínuo.
+
+**Abordagem recomendada:**
+
+1. Quando o programa atual terminar (ou quando o player sinalizar um evento de alteração de programa), chame `trackSessionEnd` para fechar a sessão atual.
+2. Quando o novo programa começar, chame `trackSessionStart` com os metadados do novo programa (nome, ID, tipo de conteúdo, etc.).
+
+O rastreamento de cada programa como sua própria sessão mantém o [Tempo gasto com conteúdo](/help/reporting/metrics/content-time-spent.md), os [marcadores de progresso](/help/reporting/metrics/progress-markers.md) e as métricas de conclusão no escopo do programa individual, além de permitir a geração de relatórios precisos de público por título. Use `trackSessionEnd` em vez de `trackComplete` para a transição — `trackComplete` sinaliza que o visualizador assistiu intencionalmente ao final de um conteúdo distinto, enquanto `trackSessionEnd` está correto aqui porque o fluxo continua com uma programação diferente em vez de terminar.
 
 ## Código de exemplo {#sample-code}
 
