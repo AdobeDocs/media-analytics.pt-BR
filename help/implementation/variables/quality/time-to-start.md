@@ -28,7 +28,7 @@ O tempo para iniciar a variável é o tempo decorrido, em milissegundos, entre o
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.qoe.timeToStart` |
-| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |

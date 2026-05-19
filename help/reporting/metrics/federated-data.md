@@ -23,7 +23,7 @@ Consulte o caso de uso [Federated Media](/help/use-cases/federated-media.md) par
 
 >[!TIP]
 >
->Se quiser usar dados federados como uma dimensão, crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie a variável de dados de contexto `a.media.federated` para uma eVar.
+>Se quiser usar dados federados como uma dimensão, crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie a variável de dados de contexto `a.media.federated` para uma eVar.
 
 ## Como essa métrica é calculada
 
@@ -32,6 +32,6 @@ O back-end de mídia define esse sinalizador quando a sessão é recebida por um
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.federated` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md) estão habilitados. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isFederated`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isFederated`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.federated` |
