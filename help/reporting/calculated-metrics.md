@@ -3,13 +3,12 @@ title: Métricas calculadas
 description: Métricas calculadas personalizadas para relatórios de mídia de transmissão no Adobe Analytics e no Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
+source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-
 
 # Métricas calculadas
 
@@ -34,3 +33,4 @@ Para criar essas métricas calculadas no Analysis Workspace, consulte a respecti
 | Taxa de duração do buffer de conteúdo | Taxa de duração total do buffer vs. tempo gasto com conteúdo | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Taxa de tempo para início do conteúdo | Taxa de tempo para iniciar vs. tempo gasto com conteúdo | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Taxa de tempo gasto com anúncio | Taxa de tempo gasto com anúncio vs. tempo gasto com conteúdo | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+
