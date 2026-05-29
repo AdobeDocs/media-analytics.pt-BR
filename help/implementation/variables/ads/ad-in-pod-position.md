@@ -3,10 +3,10 @@ title: Posição do anúncio no pod
 description: Defina a posição do índice do anúncio dentro do ad break principal. O primeiro anúncio tem índice 0.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 12%
+source-wordcount: '236'
+ht-degree: 7%
 
 ---
 
@@ -24,14 +24,18 @@ A variável de posição do anúncio no pod é a posição de índice zero do an
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.podPosition` |
-| **Campo da coleção XDM** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.ad.podPosition` |
 | **Obrigatório** | Sim |
 | **Enviado com** | [Início do anúncio](/help/implementation/events/ads/ad-start.md) e fechamento |
 
-## SDK da web
+## Tipos de implementação recomendados
 
-Definir `podPosition` dentro de `mediaCollection.advertisingDetails` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Definir `podPosition` dentro de `xdm.mediaCollection.advertisingDetails` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Transmita a posição como terceiro argumento para `createAdObject`.
-
-**iOS (Swift)**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -64,7 +66,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Transmita a posição como terceiro argumento para `createAdObject`.
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -75,9 +79,9 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Definir `podPosition` dentro de `mediaCollection.advertisingDetails` ao chamar `sendMediaEvent` para `media.adStart`:
+Definir `podPosition` dentro de `xdm.mediaCollection.advertisingDetails` ao chamar `sendMediaEvent` para `media.adStart`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -96,9 +100,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
-Chame o ponto de extremidade [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) com `podPosition` dentro de `mediaCollection.advertisingDetails`:
+Chame o ponto de extremidade [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) com `podPosition` dentro de `xdm.mediaCollection.advertisingDetails`:
 
 ```json
 {
@@ -120,7 +124,13 @@ Chame o ponto de extremidade [adStart](https://developer.adobe.com/data-collecti
 }
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Passar a posição como terceiro argumento para `ADB.Media.createAdObject`:
 
@@ -135,7 +145,21 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Passar a posição como terceiro argumento para `ADBMobile.media.createAdObject`:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",
+  "ad-2125",
+  1,
+  30
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB API da coleção de mídia]
 
 Incluir `media.ad.podPosition` no objeto `params`:
 
@@ -150,3 +174,5 @@ Incluir `media.ad.podPosition` no objeto `params`:
 ```
 
 Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+
+>[!ENDTABS]

@@ -3,10 +3,10 @@ title: Quadros soltos
 description: Defina a contagem de quadros ignorados no objeto de QoE para que o back-end possa relatar a qualidade de queda de quadro.
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 9%
+source-wordcount: '303'
+ht-degree: 5%
 
 ---
 
@@ -28,14 +28,18 @@ A variável dropped frames é a contagem de quadros que o reprodutor derrubou du
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.qoe.droppedFrameCount` |
-| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Obrigatório** | Não |
 | **Enviado com** | Eventos de qualidade ([alteração na taxa de bits](/help/implementation/events/playback/bitrate-change.md), [início do buffer](/help/implementation/events/playback/buffer-start.md), [erro](/help/implementation/events/error.md)), fechamento da sessão |
 
-## SDK da web
+## Tipos de implementação recomendados
 
-Definir `droppedFrames` dentro de `mediaCollection.qoeDataDetails` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Definir `droppedFrames` dentro de `xdm.mediaCollection.qoeDataDetails` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Passar quadros ignorados como quarto argumento para `createQoEObject`. Atualize o rastreador antes de qualquer evento de qualidade ser acionado.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -68,7 +70,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Passar quadros ignorados como quarto argumento para `createQoEObject`. Atualize o rastreador antes de qualquer evento de qualidade ser acionado.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -79,9 +83,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Definir `droppedFrames` dentro de `mediaCollection.qoeDataDetails` ao chamar `sendMediaEvent`:
+Definir `droppedFrames` dentro de `xdm.mediaCollection.qoeDataDetails` ao chamar `sendMediaEvent`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -98,9 +102,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
-Chame o ponto de extremidade [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) com `droppedFrames` dentro de `mediaCollection.qoeDataDetails`:
+Chame o ponto de extremidade [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) com `droppedFrames` dentro de `xdm.mediaCollection.qoeDataDetails`:
 
 ```json
 {
@@ -119,7 +123,13 @@ Chame o ponto de extremidade [bitrateChange](https://developer.adobe.com/data-co
 }
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Passar quadros ignorados como quarto argumento para `ADB.Media.createQoEObject`:
 
@@ -128,7 +138,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 0, 24, 3);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Passe a contagem cumulativa de quadros ignorados como o quarto argumento para `ADBMobile.media.createQoSObject` e atualize o rastreador:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames (cumulative total)
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB API da coleção de mídia]
 
 Incluir `media.qoe.droppedFrames` no objeto `params`:
 
@@ -143,3 +167,5 @@ Incluir `media.qoe.droppedFrames` no objeto `params`:
 ```
 
 Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+
+>[!ENDTABS]

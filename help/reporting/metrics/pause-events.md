@@ -3,7 +3,7 @@ title: Pausar eventos
 description: Conta cada pausa distinta que ocorreu durante uma sessão.
 feature: Metrics
 role: User, Admin
-source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 10%
@@ -22,6 +22,6 @@ O back-end de mídia incrementa essa contagem a cada evento de [início de pausa
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.pauseCount` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.pauseCount`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.pauseCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | N/D |

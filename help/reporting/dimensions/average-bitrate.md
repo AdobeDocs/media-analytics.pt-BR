@@ -3,7 +3,7 @@ title: Taxa média de bits (dimensão)
 description: Informa a taxa média de bits de cada sessão em intervalos de 100 kbps.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 7%
@@ -26,7 +26,7 @@ A dimensão **Taxa média de bits** informa a taxa média de bits de reproduçã
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.qoe.bitrateAverageBucket` quando a [[!UICONTROL Qualidade de Mídia]](/help/reporting/media-reports-enable.md) está habilitada. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Feeds de dados | `videoqoebitrateaverageevar`, `post_videoqoebitrateaverageevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 

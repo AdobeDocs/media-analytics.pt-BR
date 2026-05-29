@@ -3,7 +3,7 @@ title: Resumo de conteúdo
 description: Conta as sessões que retomaram uma reprodução interrompida anteriormente.
 feature: Metrics
 role: User, Admin
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 9%
@@ -23,11 +23,11 @@ A métrica **Resumo do conteúdo** conta sessões que retomaram uma reprodução
 
 ## Como essa métrica é calculada
 
-O back-end de mídia define esse sinalizador quando `mediaCollection.sessionDetails.hasResume` é `true` no evento [início de sessão](/help/implementation/events/session/session-start.md). O reprodutor deve sinalizar explicitamente a sessão como um currículo. A métrica é relatada na chamada de fechamento.
+O back-end de mídia define esse sinalizador quando `xdm.mediaCollection.sessionDetails.hasResume` é `true` no evento [início de sessão](/help/implementation/events/session/session-start.md). O reprodutor deve sinalizar explicitamente a sessão como um currículo. A métrica é relatada na chamada de fechamento.
 
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.resume` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | N/D |

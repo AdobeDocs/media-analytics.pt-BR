@@ -3,7 +3,7 @@ title: URL da arte
 description: Relata o URL do ativo de cada criativo de anúncio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **URL do Creative**&#x200B;dimensão de relatório. Consulte [URL do Creative](/help/implementation/variables/ads/creative-url.md) para saber como coletar essa variável.*
+*Esta página abrange a **URL do Creative**dimensão de relatório. Consulte [URL do Creative](/help/implementation/variables/ads/creative-url.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ A URL do Creative é definida pelo reprodutor a cada evento [ad start](/help/imp
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.creativeURL` para uma eVar. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.creativeURL` para uma eVar. |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Feeds de dados | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.ad.creativeURL`) |
 | Audience Manager | `c_contextdata.a.media.ad.creativeURL` |
 

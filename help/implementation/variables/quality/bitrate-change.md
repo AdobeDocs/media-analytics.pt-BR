@@ -3,10 +3,10 @@ title: Alteração da taxa de bits
 description: Acione um evento de alteração de taxa de bits sempre que o reprodutor alternar para uma taxa de bits diferente.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 11%
+source-wordcount: '260'
+ht-degree: 6%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda como implementar eventos de alteração na taxa de bits. Consulte [Alterações na taxa de bits (dimensão)](/help/reporting/dimensions/bitrate-changes.md) e [Alterações na taxa de bits (métrica)](/help/reporting/metrics/bitrate-changes.md) para as variáveis de relatório correspondentes.*
+*Esta página aborda como implementar eventos de alteração na taxa de bits. Consulte [[!UICONTROL Alterações na taxa de bits] (dimensão)](/help/reporting/dimensions/bitrate-changes.md) e [[!UICONTROL Alterações na taxa de bits] (métrica)](/help/reporting/metrics/bitrate-changes.md) para as variáveis de relatório correspondentes.*
 
 >[!ENDSHADEBOX]
 
-O evento de alteração da taxa de bits indica que o reprodutor mudou para uma taxa de bits diferente. Atualize primeiro o valor [Bitrate](/help/implementation/variables/quality/bitrate.md) no objeto de QoE e, em seguida, acione o evento de alteração de taxa de bits. O back-end usa a contagem desses eventos para calcular a dimensão e a métrica de alterações na taxa de bits, e os valores de taxa de bits resultantes alimentam a taxa de bits média.
+O evento de alteração da taxa de bits indica que o reprodutor mudou para uma taxa de bits diferente. Atualize primeiro o valor [Bitrate](/help/implementation/variables/quality/bitrate.md) no objeto de QoE e, em seguida, acione o evento de alteração de taxa de bits. O back-end usa a contagem desses eventos para calcular a dimensão [[!UICONTROL Alterações na taxa de bits]](/help/reporting/dimensions/bitrate-changes.md) e a métrica [[!UICONTROL Alterações na taxa de bits]](/help/reporting/metrics/bitrate-changes.md), e os valores de taxa de bits resultantes alimentam a [[!UICONTROL Taxa de bits média]](/help/reporting/metrics/average-bitrate.md).
 
 | Propriedade | Valor |
 | --- | --- |
@@ -29,7 +29,11 @@ O evento de alteração da taxa de bits indica que o reprodutor mudou para uma t
 | **Obrigatório** | Não |
 | **Enviado com** | [Alteração na taxa de bits](/help/implementation/events/playback/bitrate-change.md) |
 
-## SDK da web
+## Tipos de implementação recomendados
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Use [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview) para enviar um evento `media.bitrateChange` com a nova taxa de bits:
 
@@ -51,11 +55,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Atualize o objeto de QoE com a nova taxa de bits e acione o evento de alteração da taxa de bits.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 4500,
@@ -66,7 +68,9 @@ tracker.updateQoEObject(qoe: qoeObject)
 tracker.trackEvent(event: MediaEvent.BitrateChange, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Atualize o objeto de QoE com a nova taxa de bits e acione o evento de alteração da taxa de bits.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(4500L, 0.0, 24.0, 0L)
@@ -74,7 +78,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Use `sendMediaEvent` com `media.bitrateChange` para sinalizar uma alteração na taxa de bits. Incluir a nova taxa de bits em `qoeDataDetails`:
 
@@ -95,7 +99,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
 Chame o ponto de extremidade [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) com o `qoeDataDetails` atualizado:
 
@@ -116,7 +120,13 @@ Chame o ponto de extremidade [bitrateChange](https://developer.adobe.com/data-co
 }
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Atualize o objeto de QoE e acione o evento:
 
@@ -126,7 +136,22 @@ tracker.updateQoEObject(qoeObject);
 tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Atualize o objeto de QoS com a nova taxa de bits e acione o evento de alteração da taxa de bits:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  4500,  // bitrate (kbps)
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB API da coleção de mídia]
 
 Enviar uma solicitação POST `bitrateChange` com a nova taxa de bits:
 
@@ -141,3 +166,5 @@ Enviar uma solicitação POST `bitrateChange` com a nova taxa de bits:
 ```
 
 Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+
+>[!ENDTABS]

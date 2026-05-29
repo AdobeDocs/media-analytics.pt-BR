@@ -3,7 +3,7 @@ title: IDs de erro do Player SDK
 description: Relata identificadores de erro exclusivos gerados pelo SDK do reprodutor de conteúdo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 7%
@@ -22,7 +22,7 @@ O reprodutor passa IDs de erro de SDK do reprodutor para o rastreador em eventos
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.qoe.playerSdkErrors` quando a [[!UICONTROL Qualidade de Mídia]](/help/reporting/media-reports-enable.md) está habilitada. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Feeds de dados | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
 | Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 

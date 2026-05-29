@@ -5,29 +5,23 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 TQID: https://experienceleague.adobe.com/UBY26SeGZbGWHjwOm6-YZNET8fe5Gvvco7aIZ9Z7rZg
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-  - id: df312454-73c4-43f6-a90e-18f5043f074c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 472
-ht-degree: 93%
+source-wordcount: 449
+ht-degree: 78%
 
 ---
 
 # Instale o Media SDK usando o JavaScript {#install-web-sdks}
+
+>[!IMPORTANT]
+>
+>Esta página aborda a implementação do JavaScript Web SDK somente no Analytics. Para a implementação recomendada, consulte [Implementar mídia de transmissão usando o Edge Network](/help/implementation/edge/edge-web-sdk.md).
 
 As informações nesta página descrevem como instalar o SDK independente da Web e configurar o JavaScript.
 
@@ -41,7 +35,7 @@ Como alternativa, você pode usar a extensão do Adobe Media Analytics para impl
 
 * **Implementar o `AppMeasurement` e `Experience Cloud Identity Service` para JavaScript no aplicativo de mídia**
 
-  Para obter mais informações, consulte [Implementação do Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Implementação do serviço de identidade da Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=pt-BR).
+  Para obter mais informações, consulte [Implementação do Analytics usando o JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Identificação do visitante usando o AppMeasurement](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement).
 
 * **Inclua as seguintes APIs em seu reprodutor de mídia**
 
@@ -87,10 +81,6 @@ Como alternativa, você pode usar a extensão do Adobe Media Analytics para impl
 
    O Media SDK deve ser configurado uma vez por página da Web e a configuração se aplica a todas as instâncias do rastreador criadas.
 
-   >[!IMPORTANT]
-   >
-   > O Media SDK (3.x) usa a API Media Collection para rastrear mídia diferente do ponto de extremidade HB usado nos SDKs 2.x. Entre em contato com seu representante da Adobe para obter mais informações.
-
    Aqui está uma amostra de inicialização `MediaConfig`:
 
    ```js
@@ -120,6 +110,4 @@ Como alternativa, você pode usar a extensão do Adobe Media Analytics para impl
 
 ## Migrar do JavaScript 2.x para o 3.x
 
-Para obter informações detalhadas sobre a migração de 2.x para 3.x, consulte [Migração do 2.x para 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
-
-Para conteúdo herdado, consulte [Implementações herdadas](/help/legacy/media-sdk/setup/setup-overview.md)
+Para obter informações detalhadas sobre a migração de 2.x para 3.x, consulte [Migrar do JS SDK 2.x para 3.x](/help/implementation/media-sdk/setup/migrate-js-2x-to-3x.md).

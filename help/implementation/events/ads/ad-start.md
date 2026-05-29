@@ -3,10 +3,10 @@ title: Início do anúncio
 description: Sinal de que um anúncio individual começou a ser reproduzido.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 14%
+source-wordcount: '187'
+ht-degree: 8%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 14%
 O evento de início do anúncio sinaliza que um anúncio individual começou a ser reproduzido. Isso deve ocorrer dentro de um par [Ad break start](ad-break-start.md) / [Ad break complete](ad-break-complete.md).
 
 * **Pré-requisitos**: [Início da sessão](../session/session-start.md), [Início de quebra de anúncio](ad-break-start.md)
-* **Métrica associada**: [Início do anúncio](/help/reporting/metrics/ad-starts.md)
+* **Métrica associada**: [[!UICONTROL Início do anúncio]](/help/reporting/metrics/ad-starts.md)
 
 >[!IMPORTANT]
 >
 >Este evento deve estar entre `adBreakStart` e `adBreakComplete` delimitadores, mesmo quando um único anúncio é reproduzido. Sem esses delimitadores, os eventos de anúncio são ignorados e a duração do anúncio é contada como a duração do conteúdo principal.
 
-## SDK da web
+## Tipos de implementação recomendados
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Chame [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview) com `eventType: "media.adStart"` e o `advertisingDetails` necessário:
 
@@ -45,11 +49,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Passe o nome do anúncio, a ID, a posição do pod e o comprimento para `createAdObject`, depois chame `trackEvent`.
-
-**iOS (Swift)**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -60,7 +62,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Passe o nome do anúncio, a ID, a posição do pod e o comprimento para `createAdObject`, depois chame `trackEvent`.
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -71,7 +75,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Chame `sendMediaEvent` com `eventType: "media.adStart"` e o(a) `advertisingDetails` necessário(a):
 
@@ -93,7 +97,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
 Chame o ponto de extremidade [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) com o `advertisingDetails` necessário:
 
@@ -120,7 +124,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adStart?configId={datastreamID}"
 }'
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Passar o nome, a ID, a posição e o comprimento do anúncio para `ADB.Media.createAdObject`:
 
@@ -135,7 +145,22 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, null);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Passar o nome, a ID, a posição e o comprimento do anúncio para `ADBMobile.media.createAdObject`:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",  // name (friendly name)
+  "ad-2125",     // ad ID
+  0,             // position in pod
+  15             // length (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB API da coleção de mídia]
 
 Enviar uma POSTAGEM `adStart` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -151,3 +176,5 @@ Enviar uma POSTAGEM `adStart` para o [ponto de extremidade de eventos](/help/imp
   }
 }
 ```
+
+>[!ENDTABS]

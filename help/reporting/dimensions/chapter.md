@@ -3,7 +3,7 @@ title: Capítulo
 description: Relata cada capítulo exclusivo reproduzido, digitado por uma ID de capítulo gerada automaticamente.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 8%
@@ -22,7 +22,7 @@ A ID do capítulo é gerada automaticamente quando um evento de [início de cap�
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.chapter.name` quando [[!UICONTROL Capítulos de mídia]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Feeds de dados | `videochapter`, `post_videochapter` |
 | Audience Manager | N/D |
 

@@ -3,7 +3,7 @@ title: ID de criação
 description: Relata o identificador criativo do anúncio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **Creative ID**&#x200B;dimensão de relatório. Consulte [Creative ID](/help/implementation/variables/ads/creative-id.md) para saber como coletar essa variável.*
+*Esta página aborda a **Creative ID**dimensão de relatório. Consulte [Creative ID](/help/implementation/variables/ads/creative-id.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -25,9 +25,9 @@ A dimensão **Creative ID** informa o identificador criativo do anúncio. Use a 
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.creative` para uma eVar. |
+| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.creative` para uma eVar. |
 | Adobe Analytics (classificação) | Classificação da dimensão [Anúncio](ad.md) — a Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/media-reports-enable.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.ad.creative`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |
 | Audience Manager | `c_contextdata.a.media.ad.creative` |
@@ -44,7 +44,7 @@ Essa abordagem fornece uma relação garantida do :1 entre cada ID de anúncio e
 
 ## Abordagem de regras de processamento
 
-Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.creative` para uma eVar. Essa abordagem captura a ID criativa como um valor por ocorrência sem exigir manutenção de classificação.
+Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.creative` para uma eVar. Essa abordagem captura a ID criativa como um valor por ocorrência sem exigir manutenção de classificação.
 
 A conclusão é que você perde a relação garantida 1:1 entre a ID criativa e a dimensão pai [Anúncio](ad.md). Se a sua implementação enviar valores inconsistentes para a mesma ID de anúncio em todos os eventos, várias IDs criativas poderão aparecer sob o mesmo anúncio. A atualização de um valor se aplica somente aos dados daquele ponto em diante.
 

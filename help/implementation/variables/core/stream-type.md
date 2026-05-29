@@ -3,10 +3,10 @@ title: Tipo de transmissão
 description: Defina o tipo de fluxo para identificar se um fluxo de mídia é conteúdo de áudio ou vídeo.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 10%
+source-wordcount: '312'
+ht-degree: 7%
 
 ---
 
@@ -26,14 +26,18 @@ A definição correta do tipo de fluxo é fundamental para os relatórios de mí
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.streamType` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.streamType` |
 | **Obrigatório** | Sim |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
-## SDK da web
+## Tipos de implementação recomendados
 
-Definir `streamType` dentro de `mediaCollection.sessionDetails` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Definir `streamType` dentro de `xdm.mediaCollection.sessionDetails` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -55,11 +59,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Passar `Media.MediaType.Video` ou `Media.MediaType.Audio` como argumento `mediaType` para `createMediaObject`. Observe que o argumento `streamType` em `createMediaObject` controla a variável do tipo Content (VOD, Live, etc.), não essa variável.
-
-**iOS (Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "video-123",
@@ -71,7 +73,9 @@ let mediaObject = Media.createMediaObjectWith(name: "video-123",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Passar `Media.MediaType.Video` ou `Media.MediaType.Audio` como argumento `mediaType` para `createMediaObject`. Observe que o argumento `streamType` em `createMediaObject` controla a variável do tipo Content (VOD, Live, etc.), não essa variável.
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("video-123",
@@ -83,9 +87,9 @@ var mediaInfo = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Definir `streamType` dentro de `mediaCollection.sessionDetails` ao chamar `createMediaSession`:
+Definir `streamType` dentro de `xdm.mediaCollection.sessionDetails` ao chamar `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -107,9 +111,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
-Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) com `streamType` dentro de `mediaCollection.sessionDetails`:
+Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) com `streamType` dentro de `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -132,7 +136,13 @@ Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Passar `ADB.Media.MediaType.Video` ou `ADB.Media.MediaType.Audio` como quinto argumento para `Media.createMediaObject`:
 
@@ -148,7 +158,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Passar `ADBMobile.media.MediaType.Video` ou `ADBMobile.media.MediaType.Audio` como quinto argumento para `ADBMobile.media.createMediaObject`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "My Video",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB API da coleção de mídia]
 
 Inclua `media.streamType` no objeto `params` de sua solicitação POST `sessionStart`:
 
@@ -163,3 +188,5 @@ Inclua `media.streamType` no objeto `params` de sua solicitação POST `sessionS
 ```
 
 Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa e todos os campos obrigatórios.
+
+>[!ENDTABS]

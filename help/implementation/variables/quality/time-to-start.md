@@ -3,10 +3,10 @@ title: Hora de início
 description: Defina o tempo de inicialização do reprodutor, em milissegundos, para que o back-end possa relatar a qualidade do tempo até o primeiro quadro.
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 9%
+source-wordcount: '294'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a coleta de dados da variável **Hora de início**. Consulte [Hora de início](/help/reporting/dimensions/time-to-start.md) para obter a dimensão e a métrica de relatório correspondentes.*
+*Esta página aborda a coleta de dados da variável **Hora de início**. Consulte [[!UICONTROL Hora de início]](/help/reporting/dimensions/time-to-start.md) para obter a dimensão e a métrica de relatório correspondentes.*
 
 >[!ENDSHADEBOX]
 
@@ -23,19 +23,23 @@ O tempo para iniciar a variável é o tempo decorrido, em milissegundos, entre o
 
 >[!IMPORTANT]
 >
->Assim que o player começar a renderizar quadros de conteúdo, pare a atualização de `timeToStart`. O valor pode aumentar durante a fase inicial de buffering ou carregamento, mas deve ser tratado como fixo a partir do momento em que a reprodução começa. Continuar a atualizá-la após a renderização do primeiro quadro produz uma métrica [Hora de início](/help/reporting/metrics/time-to-start.md) inflada ou incorreta.
+>Assim que o player começar a renderizar quadros de conteúdo, pare a atualização de `timeToStart`. O valor pode aumentar durante a fase inicial de buffering ou carregamento, mas deve ser tratado como fixo a partir do momento em que a reprodução começa. Continuar a atualizá-la após a renderização do primeiro quadro produz uma métrica [[!UICONTROL Hora de início]](/help/reporting/metrics/time-to-start.md) inflada ou incorreta.
 
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.qoe.timeToStart` |
-| **Campo da coleção XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
-## SDK da web
+## Tipos de implementação recomendados
 
-Definir `timeToStart` dentro de `mediaCollection.qoeDataDetails` em `media.sessionStart` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Definir `timeToStart` dentro de `xdm.mediaCollection.qoeDataDetails` em `media.sessionStart` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -59,11 +63,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Passa o tempo de inicialização como segundo argumento (`startupTime`) para `createQoEObject`.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -74,7 +76,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Passa o tempo de inicialização como segundo argumento (`startupTime`) para `createQoEObject`.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -85,9 +89,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Definir `timeToStart` dentro de `mediaCollection.qoeDataDetails` em `media.sessionStart` ao chamar `createMediaSession`:
+Definir `timeToStart` dentro de `xdm.mediaCollection.qoeDataDetails` em `media.sessionStart` ao chamar `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -111,9 +115,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
-Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) com `timeToStart` dentro de `mediaCollection.qoeDataDetails`:
+Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) com `timeToStart` dentro de `xdm.mediaCollection.qoeDataDetails`:
 
 ```json
 {
@@ -138,7 +142,13 @@ Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Passar o tempo para iniciar como segundo argumento para `ADB.Media.createQoEObject`:
 
@@ -147,7 +157,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 30000, 24, 0);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Passe o tempo de inicialização em milissegundos como segundo argumento (`startupTime`) para `ADBMobile.media.createQoSObject` e atualize o rastreador:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,   // bitrate
+  0,      // startupTime (ms)
+  24,     // fps
+  0       // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB API da coleção de mídia]
 
 Incluir `media.qoe.timeToStart` no objeto `params` em `sessionStart`:
 
@@ -162,3 +186,5 @@ Incluir `media.qoe.timeToStart` no objeto `params` em `sessionStart`:
 ```
 
 Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+
+>[!ENDTABS]

@@ -3,7 +3,7 @@ title: Métricas calculadas
 description: Métricas calculadas personalizadas para relatórios de mídia de transmissão no Adobe Analytics e no Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
@@ -14,23 +14,23 @@ ht-degree: 5%
 
 As métricas calculadas para os serviços de streaming de mídia da Adobe são métricas personalizadas criadas a partir das métricas de streaming de mídia padrão, que permitem obter taxas como tempo médio de anúncio gasto ou taxa de conclusão de mídia sem alterar a implementação.
 
-Para criar essas métricas calculadas no Analysis Workspace, consulte a respectiva visão geral em [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/components/calculated-metrics/cm-overview) ou [Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
+Para criar essas métricas calculadas no Analysis Workspace, consulte a respectiva visão geral em [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview) ou [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
 
 | Métrica calculada | Descrição | Fórmula |
 | --- | --- | --- |
-| Média anúncios por fluxo de mídia | Anúncio iniciado por mídia iniciada | [`Ad Starts`](/help/reporting/metrics/ad-starts.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Média capítulos por fluxo de mídia | Início do capítulo por mídia iniciada | [`Chapter Starts`](/help/reporting/metrics/chapter-starts.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Média tempo gasto com a mídia | Tempo total gasto por inicializações de mídia (`HH:MM:SS`) | [`Media Time Spent`](/help/reporting/metrics/media-time-spent.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Média tempo gasto com o conteúdo | Tempo gasto no conteúdo por inicializações de conteúdo (`HH:MM:SS`) | [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) / [`Content Starts`](/help/reporting/metrics/content-starts.md) |
-| Média tempo gasto com o anúncio | Tempo gasto no anúncio por inicializações de anúncio (`HH:MM:SS`) | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Ad Starts`](/help/reporting/metrics/ad-starts.md) |
-| Média tempo gasto com capítulo | Tempo gasto no capítulo por inicializações do capítulo (`HH:MM:SS`) | [`Chapter Time Spent`](/help/reporting/metrics/chapter-time-spent.md) / [`Chapter Starts`](/help/reporting/metrics/chapter-starts.md) |
-| Taxa de conclusão da mídia | Taxa de conteúdo concluído vs. mídia iniciada | [`Content Completes`](/help/reporting/metrics/content-completes.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Taxa de conclusão do conteúdo | Taxa de conteúdo concluído vs. inícios de conteúdo | [`Content Completes`](/help/reporting/metrics/content-completes.md) / [`Content Starts`](/help/reporting/metrics/content-starts.md) |
-| Taxa de conclusão do anúncio | Taxa de conclusões de anúncios vs. inícios de anúncios | [`Ad Completes`](/help/reporting/metrics/ad-completes.md) / [`Ad Starts`](/help/reporting/metrics/ad-starts.md) |
-| Taxa de conclusão do capítulo | Taxa de conclusões de capítulo vs. inícios de capítulo | [`Chapter Completes`](/help/reporting/metrics/chapter-completes.md) / [`Chapter Starts`](/help/reporting/metrics/chapter-starts.md) |
-| Soltar antes da taxa inicial | Taxa de quedas antes do início vs. início da mídia | [`Drops Before Start`](/help/reporting/metrics/drops-before-start.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Taxa de duração da pausa do conteúdo | Taxa de duração total da pausa vs. tempo gasto com conteúdo | [`Total Pause Duration`](/help/reporting/metrics/total-pause-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
-| Taxa de duração do buffer de conteúdo | Taxa de duração total do buffer vs. tempo gasto com conteúdo | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
-| Taxa de tempo para início do conteúdo | Taxa de tempo para iniciar vs. tempo gasto com conteúdo | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
-| Taxa de tempo gasto com anúncio | Taxa de tempo gasto com anúncio vs. tempo gasto com conteúdo | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+| Média anúncios por fluxo de mídia | [[!UICONTROL Início do anúncio]](/help/reporting/metrics/ad-starts.md) por [[!UICONTROL Início da mídia]](/help/reporting/metrics/media-starts.md) | `[Ad starts] / [Media starts]` |
+| Média capítulos por fluxo de mídia | [[!UICONTROL Início do capítulo]](/help/reporting/metrics/chapter-starts.md) por [[!UICONTROL Início da mídia]](/help/reporting/metrics/media-starts.md) | `[Chapter starts] / [Media starts]` |
+| Média tempo gasto com a mídia | [[!UICONTROL Tempo gasto com a mídia]](/help/reporting/metrics/media-time-spent.md) por [[!UICONTROL Inícios da mídia]](/help/reporting/metrics/media-starts.md) (`HH:MM:SS`) | `[Media time spent] / [Media starts]` |
+| Média tempo gasto com o conteúdo | [[!UICONTROL Tempo gasto do conteúdo]](/help/reporting/metrics/content-time-spent.md) por [[!UICONTROL Inícios do conteúdo]](/help/reporting/metrics/content-starts.md) (`HH:MM:SS`) | `[Content time spent] / [Content starts]` |
+| Média tempo gasto com o anúncio | [[!UICONTROL Tempo gasto com anúncio]](/help/reporting/metrics/ad-time-spent.md) por [[!UICONTROL Início do anúncio]](/help/reporting/metrics/ad-starts.md) (`HH:MM:SS`) | `[Ad time spent] / [Ad starts]` |
+| Média tempo gasto com capítulo | [[!UICONTROL Tempo gasto com capítulo]](/help/reporting/metrics/chapter-time-spent.md) por [[!UICONTROL Inícios de capítulo]](/help/reporting/metrics/chapter-starts.md) (`HH:MM:SS`) | `[Chapter time spent] / [Chapter starts]` |
+| Taxa de conclusão da mídia | Taxa de [[!UICONTROL Conclusões de conteúdo]](/help/reporting/metrics/content-completes.md) vs. [[!UICONTROL Inícios da mídia]](/help/reporting/metrics/media-starts.md) | `[Content completes] / [Media starts]` |
+| Taxa de conclusão do conteúdo | Taxa de [[!UICONTROL Conclusões de conteúdo]](/help/reporting/metrics/content-completes.md) vs. [[!UICONTROL Inícios de conteúdo]](/help/reporting/metrics/content-starts.md) | `[Content completes] / [Content starts]` |
+| Taxa de conclusão do anúncio | Taxa de [[!UICONTROL Anúncio concluído]](/help/reporting/metrics/ad-completes.md) vs. [[!UICONTROL Anúncio iniciado]](/help/reporting/metrics/ad-starts.md) | `[Ad completes] / [Ad starts]` |
+| Taxa de conclusão do capítulo | Taxa de [[!UICONTROL Conclusões de capítulo]](/help/reporting/metrics/chapter-completes.md) vs. [[!UICONTROL Inícios de capítulo]](/help/reporting/metrics/chapter-starts.md) | `[Chapter completes] / [Chapter starts]` |
+| Soltar antes da taxa inicial | Taxa de [[!UICONTROL Desistências antes do início]](/help/reporting/metrics/drops-before-start.md) vs. [[!UICONTROL Início da mídia]](/help/reporting/metrics/media-starts.md) | `[Drops before start] / [Media starts]` |
+| Taxa de duração da pausa do conteúdo | Taxa de [[!UICONTROL Duração total da pausa]](/help/reporting/metrics/total-pause-duration.md) vs. [[!UICONTROL Tempo gasto com conteúdo]](/help/reporting/metrics/content-time-spent.md) | `[Total pause duration] / [Content time spent]` |
+| Taxa de duração do buffer de conteúdo | Taxa de [[!UICONTROL Duração total do buffer]](/help/reporting/metrics/total-buffer-duration.md) vs. [[!UICONTROL Tempo gasto com o conteúdo]](/help/reporting/metrics/content-time-spent.md) | `[Total buffer duration] / [Content time spent]` |
+| Taxa de tempo para início do conteúdo | Taxa de [[!UICONTROL Tempo para iniciar]](/help/reporting/metrics/time-to-start.md) vs. [[!UICONTROL Tempo gasto com o conteúdo]](/help/reporting/metrics/content-time-spent.md) | `[Time to start] / [Content time spent]` |
+| Taxa de tempo gasto com anúncio | Taxa de [[!UICONTROL Tempo gasto com anúncio]](/help/reporting/metrics/ad-time-spent.md) vs. [[!UICONTROL Tempo gasto com conteúdo]](/help/reporting/metrics/content-time-spent.md) | `[Ad time spent] / [Content time spent]` |
 

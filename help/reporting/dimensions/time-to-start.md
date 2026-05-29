@@ -3,7 +3,7 @@ title: Hora de início (dimensão)
 description: Relata o tempo decorrido antes da renderização do primeiro quadro.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a dimensão **Hora de início**. O Adobe Analytics preenche automaticamente uma [Hora de início (métrica)](/help/reporting/metrics/time-to-start.md) emparelhada a partir da mesma variável de dados de contexto `a.media.qoe.timeToStart`. O Customer Journey Analytics expõe um único campo `mediaReporting.qoeDataDetails.timeToStart` que você pode usar como dimensão ou métrica. Consulte [Hora de início](/help/implementation/variables/quality/time-to-start.md) para saber como coletar essa variável.*
+*Esta página aborda a dimensão **Hora de início**. O Adobe Analytics preenche automaticamente uma [Hora de início (métrica)](/help/reporting/metrics/time-to-start.md) emparelhada a partir da mesma variável de dados de contexto `a.media.qoe.timeToStart`. O Customer Journey Analytics expõe um único campo `xdm.mediaReporting.qoeDataDetails.timeToStart` que você pode usar como dimensão ou métrica. Consulte [Hora de início](/help/implementation/variables/quality/time-to-start.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ O reprodutor define `timeToStart` no objeto de QoE antes do acionamento da sess�
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.qoe.timeToStart` quando a [[!UICONTROL Qualidade de Mídia]](/help/reporting/media-reports-enable.md) está habilitada. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Feeds de dados | `videoqoetimetostartevar`, `post_videoqoetimetostartevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.timeToStart` |
 

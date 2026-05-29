@@ -6,120 +6,212 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
-source-wordcount: 382
-ht-degree: 92%
+source-wordcount: 750
+ht-degree: 4%
 
 ---
 
-# Opção de rejeição e privacidade{#opt-out-and-privacy}
+# Opção de rejeição e privacidade
 
-## Opção de rejeição/aceitação {#opt-out-opt-in}
+Quando um usuário recusa o rastreamento, a biblioteca de mídia de transmissão interrompe imediatamente todas as atividades de coleta de dados. Nenhuma chamada de início de sessão, nenhum ping de heartbeat e nenhum dado de rastreamento de eventos é enviado aos servidores de coleta de dados da Adobe para esse usuário.
 
-Você pode decidir se uma atividade de rastreamento é permitida em um determinado dispositivo:
+## Opção de rejeição/aceitação
 
-* **Aplicativos para dispositivos móveis -** As extensões de mídia respeitam as configurações de privacidade na coleção de dados. Para recusar o rastreamento, você precisa configurar a privacidade como [Recusar tags](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) ou [Atualizar o status de privacidade no SDK móvel](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus).
-* **Aplicativos do JavaScript/navegador -** A biblioteca do VA respeita as configurações de recusa e privacidade da biblioteca do `VisitorAPI`. Para excluir o rastreamento do, você precisa fazer a exclusão do serviço Visitor API. Para obter mais informações sobre recusa e privacidade, consulte [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR).
-* **Os aplicativos OTT (Chromecast, Roku) -** Os SDKs de OTT fornecem APIs preparadas para o Regulamento Geral sobre a Proteção de Dados (RGPD), que permitem definir sinalizadores de status `opt` para a coleta e a transmissão de dados e para recuperar as identidades armazenadas localmente.
+Os controles de recusa operam por dispositivo ou navegador. O respeito pelo consentimento do usuário é responsabilidade da organização de implementação. Para obter uma visão geral das práticas de privacidade da Adobe, consulte o [Centro de Privacidade da Adobe](https://www.adobe.com/br/privacy.html).
 
-  >[!NOTE]
-  >
-  >As chamadas de rastreamento de heartbeat de mídia também estarão desativadas se o status de privacidade estiver definido como recusar.
+## Tipos de implementação recomendados
 
-  Você pode decidir se os dados do Analytics são enviados ou não em um determinado dispositivo usando as seguintes configurações:
+>[!BEGINTABS]
 
-   * A configuração `privacyDefault` no arquivo de configuração `ADBMobile.json` Isso controla a configuração inicial e é mantida até a alteração no código.
+>[!TAB Web SDK]
 
-   * O método `ADBMobile().setPrivacyStatus()`.
+O Web SDK respeita as preferências de consentimento definidas usando o comando `setConsent`. Quando o consentimento é definido como `"out"`, o Web SDK interrompe o encaminhamento de todos os eventos, incluindo chamadas de rastreamento de streaming de mídia, para a Edge Network. O estado de consentimento persiste no armazenamento do navegador entre as sessões.
 
-      * **Rejeitar:**
+Antes de implementar a opção de recusa, verifique se o Web SDK está configurado com o componente de Mídia de transmissão. Para obter mais informações, consulte [Configurar Web SDK](../implementation/edge/edge-web-sdk.md).
 
-         * **Chromecast:**
+Definir o consentimento para recusa usando o padrão de consentimento do Adobe 2.0:
 
-           ```
-           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-           ```
+```javascript
+alloy("setConsent", {
+  consent: [{
+    standard: "Adobe",
+    version: "2.0",
+    value: {
+      collect: { val: "n" }
+    }
+  }]
+});
+```
 
-         * **Roku:**
+Valores de consentimento:
 
-           ```
-           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-           ```
+* `"y"`: Aceitação (coleta de dados permitida)
+* `"n"`: Recusa (coleta de dados suprimida)
+* `"p"`: Pendente (aguardando decisão do usuário; nenhum dado coletado até ser resolvido)
 
-        >[!IMPORTANT]
-        >
-        >Quando um usuário recusa o rastreamento, todos os dados e IDs persistentes do dispositivo são removidos até que o usuário volte a aceitar o rastreamento.
+Para restaurar o rastreamento, chame `setConsent` novamente com `"y"` como o valor `collect.val`.
 
-      * **Ativar novamente:**
+Consulte o [comando setConsent](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent) na documentação do Web SDK para outros formatos, incluindo o IAB TCF 2.0.
 
-         * **Chromecast:**
+>[!TAB iOS]
 
-           ```
-           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-           ```
+O Adobe Experience Platform Mobile SDK respeita o status de privacidade definido usando `MobileCore.setPrivacyStatus()`. Definir o status como `.optedOut` suprime toda a coleta de dados em todas as extensões do AEP, incluindo Mídia de Streaming. O status persiste entre sessões de aplicativo.
 
-         * **Roku:**
+```swift
+MobileCore.setPrivacyStatus(.optedOut)
+```
 
-           ```
-           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-           ```
+Para restaurar o rastreamento, defina o status de privacidade novamente como `.optedIn`:
 
-      * **Retorna a configuração atual:**
+```swift
+MobileCore.setPrivacyStatus(.optedIn)
+```
 
-         * **Chromecast:**
+Para obter mais informações, consulte [Privacidade e GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus) na documentação do AEP Mobile SDK.
 
-           ```
-           ADBMobile.config.getPrivacyStatus()
-           ```
+>[!TAB Android]
 
-         * **Roku:**
+O Adobe Experience Platform Mobile SDK respeita o status de privacidade definido usando `MobileCore.setPrivacyStatus()`. Definir o status como `MobilePrivacyStatus.OPT_OUT` suprime toda a coleta de dados em todas as extensões do AEP, incluindo Mídia de Streaming. O status persiste entre sessões de aplicativo.
 
-           ```
-           ADBMobile().getPrivacyStatus()
-           ```
+```kotlin
+MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_OUT)
+```
 
-  Depois de alterar a configuração de privacidade usando `setPrivacyStatus`, a alteração torna-se permanente até ser alterada novamente usando este método ou ao desinstalar e instalar o aplicativo.
+Para restaurar o rastreamento, defina o status de privacidade novamente como `MobilePrivacyStatus.OPT_IN`:
 
-## Recuperar identificadores armazenados (aplicativos OTT) {#retrieving-stored-identifiers-ott-apps}
+```kotlin
+MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
+```
 
-Essas informações ajudam a recuperar identidades de usuário armazenadas localmente do aplicativo Roku.
+Para obter mais informações, consulte [Privacidade e GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus) na documentação do AEP Mobile SDK.
 
->[!IMPORTANT]
->
->O método para recuperar todos os identificadores obtém todas as identidades de usuário conhecidas e persistidas pelo SDK. Você deve chamar esse método **antes** de um usuário recusar.
+>[!TAB Roku]
 
-As identidades armazenadas localmente são retornadas em uma sequência JSON, que pode conter:
+O AEP Roku SDK usa `setConsent()` com o padrão de consentimento do Adobe 2.0. A configuração de `collect.val` a `"n"` interrompe imediatamente toda a coleta de dados, incluindo os eventos de streaming de mídia.
 
-* Contexto da empresa - IDs de organização IMS
-* IDs de usuário
-* Experience Cloud ID (MCID)
-* IDs de fonte de dados (DPID, DPUUID)
-* IDs do Analytics (AVID, AID, VID e RSIDs associados)
-* ID do Audience Manager (UUID)
+Valores de consentimento:
 
-Por exemplo:
+* `"y"` — Aceitação (coleta de dados permitida)
+* `"n"` — Recusa (coleta de dados suprimida)
+* `"p"` — Pendente (aguardando decisão do usuário; nenhum dado coletado até ser resolvido)
 
-* **Chromecast:**
+```brightscript
+currentDate = CreateObject("roDateTime")
+timestampInISO8601 = currentDate.ToISOString("milliseconds")
 
-  ```
-  ADBMobile.config.getAllIdentifiersAsync(callback)
-  ```
+collectConsentNo = {
+  "consent": [{
+    "standard": "Adobe",
+    "version": "2.0",
+    "value": {
+      "metadata": { "time": timestampInISO8601 },
+      "collect": { "val": "n" }
+    }
+  }]
+}
 
-* **Roku:**
+m.aepSdk.setConsent(collectConsentNo)
+```
 
-  ```
-  vids = ADBMobile().getAllIdentifiers()
-  ```
+Para restaurar o rastreamento, defina `collect.val` como `"y"` e chame `setConsent()` novamente.
+
+Você também pode definir um valor de consentimento padrão na inicialização do SDK usando `updateConfiguration()` com a chave `ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT`. Para obter mais informações, consulte a [documentação do AEP Roku SDK](https://github.com/adobe/aepsdk-roku).
+
+>[!TAB API do Media Edge]
+
+A API do Media Edge é uma implementação do lado do servidor. Nenhuma camada do SDK impõe o consentimento automaticamente — seu aplicativo deve verificar o status de consentimento do usuário antes de fazer qualquer chamada de API e suprimir solicitações de usuários que se excluíram.
+
+Para recusa total, não PUBLIQUE no ponto de extremidade `/va/v2/sessions` (ou em qualquer ponto de extremidade de evento subsequente) para usuários que recusaram:
+
+```javascript
+// Check consent status before initiating a media session
+if (userHasOptedOut) {
+  // Do not call the Media Edge API
+  return;
+}
+
+// Only call the API for users who have not opted out
+fetch("https://edge.adobedc.net/va/v2/sessions", {
+  method: "POST",
+  body: JSON.stringify(sessionStartPayload)
+});
+```
+
+Para obter mais informações, consulte a [API do Media Edge](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/).
+
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
+
+A biblioteca Media SDK JS 3.x adia para o estado de não participação da API do visitante da Adobe (serviço de identidade). Quando um usuário recusa o uso da API de visitante, o Media SDK suprime automaticamente todas as chamadas de rastreamento.
+
+```javascript
+var visitor = Visitor.getInstance("YOUR_ORG_ID@AdobeOrg");
+visitor.setOptOut(true);
+```
+
+Substitua `YOUR_ORG_ID@AdobeOrg` pela ID da organização da Adobe Admin Console.
+
+Para restaurar o rastreamento, passe `false` para `setOptOut()`.
+
+Para obter mais informações, consulte [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR).
+
+>[!TAB Chromecast]
+
+O Chromecast Media SDK 3.x respeita o status de privacidade definido usando `ADBMobile.config.setPrivacyStatus()`. Definir o status como `PRIVACY_STATUS_OPT_OUT` suprime toda a coleta de dados.
+
+```javascript
+ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT);
+```
+
+Para restaurar o rastreamento, defina o status novamente como Opted in:
+
+```javascript
+ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN);
+```
+
+Você também pode definir o status de privacidade padrão na inicialização do SDK no objeto `ADBMobileConfig`:
+
+```javascript
+var ADBMobileConfig = {
+  "analytics": {
+    "privacyDefault": "optedout"
+  }
+};
+```
+
+>[!TAB API da coleção de mídia]
+
+A API da coleção de mídia é uma implementação do lado do servidor. Seu aplicativo deve verificar o status de consentimento do usuário antes de fazer chamadas de API e suprimir solicitações de usuários que recusaram a adesão.
+
+Para recusa completa, não publique no endpoint de sessões para usuários que recusaram.
+
+Para recusas parciais em CCPA, inclua sinalizadores de recusa no objeto `params` de sua solicitação `sessionStart`:
+
+```json
+{
+  "playerTime": { "playhead": 0, "ts": 1699523820000 },
+  "eventType": "sessionStart",
+  "params": {
+    "analytics.optOutServerSideForwarding": true,
+    "analytics.optOutShare": true
+  }
+}
+```
+
+* `analytics.optOutServerSideForwarding`: Defina como `true` para recusar o compartilhamento de dados entre a Adobe Analytics e outras soluções da Experience Cloud (como o Audience Manager).
+* `analytics.optOutShare`: Defina como `true` para recusar o compartilhamento de dados federados com outros clientes do Adobe Analytics.
+
+Para obter uma lista completa dos parâmetros disponíveis, consulte a [Referência de parâmetros da solicitação da API Media Collection](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md).
+
+>[!ENDTABS]

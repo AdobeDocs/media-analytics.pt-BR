@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 62%
+source-wordcount: '437'
+ht-degree: 89%
 
 ---
 # Contribuir com o artigo
@@ -21,13 +21,13 @@ A maneira como você contribui depende de quem você é e do tipo de alteraçõe
 
 ### Pequenas alterações
 
-Caso esteja contribuindo com pequenas atualizações de livre e espontânea vontade, visite o artigo e clique no link **Editar** no artigo que vai para a origem GitHub do artigo. Em seguida, use a interface do usuário do GitHub para fazer suas atualizações. Consulte o [Guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR) para obter mais informações.
+Caso esteja contribuindo com pequenas atualizações de livre e espontânea vontade, visite o artigo e clique no link **Editar** que vai para a origem GitHub do artigo. Em seguida, use a interface do GitHub para fazer as atualizações. Consulte o [Guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR) para obter mais informações.
 
 As pequenas correções ou esclarecimentos que você envia para a documentação e os exemplos de código deste repositório são abrangidos pelos termos de uso da Adobe.
 
 ### Grandes alterações ou novos artigos de membros da comunidade
 
-Se você fizer parte da comunidade da Adobe e quiser criar um novo artigo ou enviar grandes alterações, use a guia Problemas no repositório Git para enviar um problema e iniciar uma conversa com a equipe de documentação. Depois de concordar com um plano, você precisará trabalhar com um funcionário para ajudá-lo a inserir o novo conteúdo por meio de uma combinação de trabalho nos repositórios públicos e privados.
+Se você fizer parte da comunidade da Adobe e quiser criar um novo artigo ou enviar alterações importantes, use a guia Issues (Problemas) no repositório Git para enviar um problema e iniciar uma conversa com a equipe de documentação. Depois de concordar com um plano, você precisará da ajuda de um funcionário para inserir o novo conteúdo por meio de uma combinação de trabalho nos repositórios públicos e privados.
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Grandes alterações dos funcionários da Adobe
 
-Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução da Adobe Experience Cloud e seu trabalho for contribuir com ou criar artigos técnicos, deverá usar o repositório privado [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução CX Enterprise e seu trabalho for contribuir com ou criar artigos técnicos, deverá usar o repositório privado [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## Ferramentas e configuração
 
@@ -48,7 +48,7 @@ Consulte o [Guia do colaborador dos documentos da Adobe](https://experienceleagu
 Todos os artigos deste repositório usam GitHub Flavored Markdown. Se você não estiver familiarizado com o Markdown, consulte:
 
 * [Noções básicas sobre o Markdown](https://docs.github.com/pt/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
-* [Cheatsheet de markdown para impressão](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Folha de consulta do markdown para impressão](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Rótulos
 

@@ -3,7 +3,7 @@ title: Faixa de horário
 description: Reporta o período do dia (Manhã, Tarde, Horário nobre, Tarde da Noite) quando o conteúdo era transmitido ou reproduzido.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Parte do dia**&#x200B;da dimensão de relatório. Consulte [Parte do dia](/help/implementation/variables/standard-metadata/day-part.md) para saber como coletar essa variável.*
+*Esta página abrange a **Parte do dia**da dimensão de relatório. Consulte [Parte do dia](/help/implementation/variables/standard-metadata/day-part.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ A parte do dia é definida pelo reprodutor no início da sessão.
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.dayPart` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md) estão habilitados. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videodaypart`, `post_videodaypart` |
 | Audience Manager | `c_contextdata.a.media.dayPart` |
 
