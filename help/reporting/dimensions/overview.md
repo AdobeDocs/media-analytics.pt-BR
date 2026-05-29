@@ -3,7 +3,7 @@ title: Visão geral das dimensões de mídia de streaming
 description: Saiba como as dimensões de mídia de transmissão são preenchidas e organizadas no Adobe Analytics e no Customer Journey Analytics.
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -36,6 +36,6 @@ As dimensões de mídia de transmissão seguem três padrões de população pri
 
 >[!MORELIKETHIS]
 >
->* [Visão geral das métricas](../metrics/overview.md): referência às métricas de mídia de transmissão
->* [Mapeamento de parâmetros](/help/implementation/parameters-mapping.md): concluir referência de variável para coluna para XDM
->* [Segmentos de mídia](/help/reporting/segments.md): segmentos internos que usam dimensões de mídia de streaming
+>* [Visão geral dos eventos](/help/implementation/events/overview.md): os eventos do player que preenchem dimensões
+>* [Visão geral das variáveis](/help/implementation/variables/overview.md): os dados que os eventos carregam para o Adobe
+>* [Visão geral das métricas](/help/reporting/metrics/overview.md): as métricas de relatório que as variáveis preenchem

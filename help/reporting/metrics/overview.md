@@ -3,9 +3,9 @@ title: Visão geral das métricas de streaming de mídia
 description: Saiba como as métricas de transmissão de mídia são calculadas e organizadas no Adobe Analytics e no Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,6 @@ As métricas de mídia de transmissão seguem quatro padrões de cálculo princi
 
 >[!MORELIKETHIS]
 >
->* [Visão geral das dimensões](../dimensions/overview.md): referência às dimensões de mídia de streaming
->* [Métricas calculadas](/help/reporting/calculated-metrics.md): taxas e métricas derivadas criadas a partir das métricas base acima
->* [Mapeamento de parâmetros](/help/implementation/parameters-mapping.md): concluir referência de evento para coluna para XDM
->* [Visão geral dos eventos](/help/implementation/events/overview.md): os eventos do player que direcionam o cálculo da métrica
+>* [Visão geral dos eventos](/help/implementation/events/overview.md): os eventos do player que preenchem as métricas
+>* [Visão geral das variáveis](/help/implementation/variables/overview.md): os dados que os eventos carregam para o Adobe
+>* [Visão geral das dimensões](/help/reporting/dimensions/overview.md): as dimensões de relatório que as variáveis preenchem
