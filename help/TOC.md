@@ -5,9 +5,9 @@ user-guide-title: Guia de serviços para mídia de streaming
 breadcrumb-title: Guia de serviços para mídia de streaming
 user-guide-description: Implementar serviços de mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '753'
 ht-degree: 35%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 35%
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de borda de mídia](/help/implementation/edge/implementation-edge-api.md)
       + [Suporte a metadados personalizados](implementation/edge/implementation-edge-custom-metadata.md)
-      + [Mapeamento e validação de dados do AEP](/help/implementation/edge/platform-data.md)
+      + [Esquema de relatório XDM](/help/implementation/edge/platform-data.md)
    + Implementações somente do Adobe Analytics {#analytics-only}
       + [Pré-requisitos](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + [Ativação de relatórios de mídia](implementation/media-sdk/setup/media-reports-enable.md)
@@ -292,7 +292,7 @@ ht-degree: 35%
    + [Segmentos de mídia](reporting/segments.md)
    + Relatórios de mídia padrão {#media-default-reports}
       + [Visão geral dos relatórios padrão](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Visão geral da mídia &#x200B;](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Visão geral da mídia ](reporting/reports-and-analytics/media-reports-overview.md)
       + [Detalhes da mídia](reporting/reports-and-analytics/media-reports-detail.md)
       + [Relatório de faixa horária de mídia](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
