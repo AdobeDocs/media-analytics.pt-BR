@@ -24,7 +24,7 @@ O conteúdo retoma os sinalizadores de variável em uma sessão que retoma uma r
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.resume` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | N/D |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md) |

@@ -24,7 +24,7 @@ A primeira variável de data digital é a data em que o conteúdo foi exibido em
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.digitalDate` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.digitalDate` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |

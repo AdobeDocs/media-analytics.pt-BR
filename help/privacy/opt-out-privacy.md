@@ -65,7 +65,7 @@ Valores de consentimento:
 
 Para restaurar o rastreamento, chame `setConsent` novamente com `"y"` como o valor `collect.val`.
 
-Consulte o [comando setConsent](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent) na documentação do Web SDK para outros formatos, incluindo o IAB TCF 2.0.
+Consulte o [comando setConsent](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/commands/setconsent) na documentação do Web SDK para outros formatos, incluindo o IAB TCF 2.0.
 
 >[!TAB iOS]
 

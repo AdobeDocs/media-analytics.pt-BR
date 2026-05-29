@@ -45,7 +45,7 @@ Como alternativa, você pode usar a extensão do Adobe Media Analytics para impl
 
 * **Implementar o `AppMeasurement` e `Experience Cloud Identity Service` para JavaScript no aplicativo de mídia**
 
-  Para obter mais informações, consulte [Implementação do Analytics usando o JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Identificação do visitante usando o AppMeasurement](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement).
+  Para obter mais informações, consulte [Implementação do Analytics usando o JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR) e [Identificação do visitante usando o AppMeasurement](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/appmeasurement).
 
 * **Inclua as seguintes APIs em seu reprodutor de mídia**
 
