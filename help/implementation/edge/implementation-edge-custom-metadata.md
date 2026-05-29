@@ -3,7 +3,7 @@ title: Suporte a metadados personalizados - Formato XDM
 description: Saiba como enviar metadados personalizados com eventos de rastreamento de mídia usando o formato XDM da Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 2%
@@ -310,7 +310,7 @@ Neste exemplo:
 
 &lt;InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata` é o **caminho de API de entrada** usado para enviar metadados personalizados com eventos. Após o processamento, os dados são encaminhados ao Adobe Analytics como variáveis de dados de contexto e armazenados no Adobe Experience Platform em `mediaReporting.customMetadata` e como campos nivelados de nível superior.
+`xdm.mediaCollection.customMetadata` é o **caminho de API de entrada** usado para enviar metadados personalizados com eventos. Após o processamento, os dados são encaminhados ao Adobe Analytics como variáveis de dados de contexto e armazenados no Adobe Experience Platform em `xdm.mediaReporting.customMetadata` e como campos nivelados de nível superior.
 
 **Adobe Analytics:**
 
@@ -323,7 +323,7 @@ Neste exemplo:
 - Os campos de metadados personalizados devem ser definidos como campos personalizados no esquema XDM (por exemplo, `_mycompany`) e podem ser armazenados e consultados no AEP como campos nivelados
 
   ![Definição de campo personalizado no esquema XDM](assets/custom_metadata.png)
-- Para relatórios e consultas, os metadados personalizados estão disponíveis em `mediaReporting.customMetadata` e também como campos nivelados de nível superior. Use o que for mais adequado para seu caso de uso.
+- Para relatórios e consultas, os metadados personalizados estão disponíveis em `xdm.mediaReporting.customMetadata` e também como campos nivelados de nível superior. Use o que for mais adequado para seu caso de uso.
 - Acessível para segmentação, Journey Orchestration e ativação do Real-Time CDP
 
 ## Comportamento

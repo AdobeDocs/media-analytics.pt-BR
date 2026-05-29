@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ A funcionalidade de agendamento de dados para mídia de streaming funciona da se
 
 Para fazer upload dos dados do agendamento de conteúdo antigo em tempo real, o ambiente de mídia de streaming deve atender aos seguintes pré-requisitos:
 
-* A Coleção de Mídia de Streaming deve estar habilitada para rastreamento no conteúdo para o qual você deseja carregar dados de agendamento, conforme descrito em [Visão geral do rastreamento](/help/use-cases/track-av-playback/track-core-overview.md). <!--specifics??? -->
+* A Coleção de Mídia de Streaming deve estar habilitada para rastreamento no conteúdo para o qual você deseja carregar dados de agendamento, conforme descrito em [Visão geral do rastreamento](/help/implementation/events/session/overview.md). <!--specifics??? -->
 
 * Use a coleção de mídia de transmissão com o Customer Journey Analytics. A capacidade de carregar dados de agendamento não está disponível com o Adobe Analytics.
 
@@ -317,9 +317,9 @@ O exemplo a seguir é de um arquivo .json de agendamento com dois registros. Cad
 
    Considere os seguintes exemplos de dimensões que você pode criar e criar relatórios no Customer Journey Analytics:
 
-   * **[&quot;_Nome do episódio_&quot;](/help/reporting/dimensions/episode.md)**: essa dimensão pode ajudá-lo a saber quais episódios de uma determinada série têm melhor desempenho.
+   * **[[!UICONTROL Episódio]](/help/reporting/dimensions/episode.md)**: essa dimensão pode ajudá-lo a saber quais episódios de uma determinada série têm melhor desempenho.
 
-   * **[ID do ativo](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL ID do ativo]](/help/reporting/dimensions/asset-id.md)**
 
 1. Continuar com [Analisar dados no Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 

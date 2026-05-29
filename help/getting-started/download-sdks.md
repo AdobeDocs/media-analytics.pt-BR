@@ -23,10 +23,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 571
-ht-degree: 84%
+source-wordcount: 522
+ht-degree: 81%
 
 ---
 
@@ -36,19 +36,13 @@ As informações nesta página incluem links para baixar os SDKs de mídia atuai
 
 As tags da Adobe Experience Platform são a próxima geração de recursos de gerenciamento de tags de site e de SDKs móveis da Adobe. As tags oferecem uma forma simples de implantar e gerenciar todas as soluções de análise, de marketing e de anúncios necessárias para potencializar experiências de cliente relevantes. Para obter mais informações sobre tags, consulte [Visão geral das tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=pt-BR).
 
-
->[!NOTE]
->
->Para obter informações sobre como baixar SDKs herdados, consulte [Herdados - Baixar SDKs](/help/legacy/legacy-download-sdks.md).<br>
->Para obter informações importantes sobre o fim do suporte, consulte [Perguntas frequentes sobre o fim do suporte](/help/additional-resources/end-of-support-faqs.md).
-
 ## SDKs de mídia e bibliotecas móveis {#media-sdks-libraries}
 
 ### Implementação da Web {#download-web-sdk}
 
 | Plataforma compatível | Soluções compatíveis | Método de implementação | Versão |  APIs   |  Documentação  |  Amostra  |
 |:---:|---|---|---|---| ---| ---|
-| ![Ícone do JavaScript &#x200B;](assets/javascript-icon.png)</br>**API do JavaScript** | Adobe Analytics | Somente do Analytics | Web - [SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referência da API JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Instalar o Media SDK usando o JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Amostra do SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![Ícone do JavaScript &#x200B;](assets/javascript-icon.png)</br>**API do JavaScript** | Adobe Analytics | Somente do Analytics | Web - [SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referência da API JavaScript](/help/implementation/media-sdk/setup/js-3x-api-reference.md) | [Instalar o Media SDK usando o JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Amostra do SDK de mídia para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![Ícone do JavaScript &#x200B;](assets/javascript-icon.png)</br>**API do JavaScript** | Adobe Analytics | Somente do Analytics | Web - Extensão de mídia |  | [Extensão do Adobe Media Analytics (SDK 3.x) para áudio e vídeo com o uso de tags (coleção de dados)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=pt-BR) | [Amostra da extensão do Adobe Media Analytics (SDK 3.x) para áudio e vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web - Experience Platform Edge |  | [Implementar a Coleção de Mídia de Streaming do Customer Journey Analytics usando o Edge Network](/help/implementation/edge/implementation-edge.md) <p>e</p><p>[Enviar dados da Web para o Edge com o Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md)</p> | |
 
@@ -65,6 +59,5 @@ As tags da Adobe Experience Platform são a próxima geração de recursos de ge
 
 | Plataforma compatível | Soluções compatíveis | Método de implementação | Versão |  APIs   |  Documentação  |
 |:---:|---|---|---|---|---|
-| ![Ícone do Chromecast &#x200B;](assets/chromecast-icon.png)</br>**Chromecast** | Adobe Analytics | Somente do Analytics | [SDK para Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Referência da API do Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configurar o SDK móvel v3.x para Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
-| ![Ícone do Roku &#x200B;](assets/roku-icon.png)</br>**Roku** | Adobe Analytics | Somente do Analytics | [SDK para Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Configurar o SDK móvel v2.x para Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| ![Ícone do Chromecast &#x200B;](assets/chromecast-icon.png)</br>**Chromecast** | Adobe Analytics | Somente do Analytics | [SDK para Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Referência da API do Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configurar Chromecast SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/docs/2.x/chromecast-setup.md) |
 | ![Ícone do Roku &#x200B;](assets/roku-icon.png)</br>**Roku** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main) |  | [Instalar o Media SDK usando o JavaScript](/help/implementation/edge/implementation-edge.md) |

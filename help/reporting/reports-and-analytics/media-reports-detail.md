@@ -17,15 +17,15 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 50
-ht-degree: 56%
+ht-degree: 8%
 
 ---
 
 # Detalhes da mídia{#media-detail}
 
-O painel Detalhes da mídia exibe as métricas detalhadas para todo o conteúdo, incluindo visualizadores simultâneos, inícios de conteúdo, taxa de conclusão, tempo gasto e início do anúncio.
+O painel Detalhes da mídia exibe métricas detalhadas para todo o conteúdo, incluindo visualizadores simultâneos, [[!UICONTROL Início do conteúdo]](/help/reporting/metrics/content-starts.md), taxa de conclusão, tempo gasto e [[!UICONTROL Início do anúncio]](/help/reporting/metrics/ad-starts.md).
 
 ![](assets/media_detail.png)

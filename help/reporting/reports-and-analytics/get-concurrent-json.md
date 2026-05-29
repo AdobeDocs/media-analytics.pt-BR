@@ -2,10 +2,10 @@
 title: Obter dados de relatório JSON de visualizadores simultâneos
 description: Obter dados de relatório JSON de visualizadores simultâneos
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 100%
+source-wordcount: '150'
+ht-degree: 84%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 # Obter dados de relatório JSON de visualizadores simultâneos{#get-concurrent-viewers-json-report-data}
 
 Você pode obter dados de relatório de visualizadores simultâneos usando a _*versão 1.4*_ das APIs do Analytics:
-* [APIs do Analytics ](https://github.com/AdobeDocs/analytics-1.4-apis)
+* [APIs do Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filtre os dados usando qualquer segmento criado na interface. Para filtrar por uma ID de conteúdo específica, crie um novo segmento.
@@ -56,7 +56,7 @@ Uma carga de solicitação de amostra para esse cenário seria semelhante a:
 ```
 
 <!--
-You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
+You can extract the concurrent viewers report data using the API Explorer as follows. 
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:

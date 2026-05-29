@@ -3,10 +3,10 @@ title: Fim da sessão
 description: Feche imediatamente uma sessão de mídia quando o visualizador abandonar o conteúdo.
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 8%
+source-wordcount: '300'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,11 @@ Sem um fim de sessão explícito, uma sessão é fechada automaticamente após 1
 * **Pré-requisitos**: [Início da sessão](session-start.md)
 * **Métrica associada**: nenhuma
 
-## SDK da web
+## Tipos de implementação recomendados
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview) com `eventType: "media.sessionEnd"`:
 
@@ -40,23 +44,23 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Chame `trackSessionEnd` quando o visualizador fechar o reprodutor ou sair.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackSessionEnd()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Chame `trackSessionEnd` quando o visualizador fechar o reprodutor ou sair.
 
 ```kotlin
 tracker.trackSessionEnd()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Chamar `sendMediaEvent` com `eventType: "media.sessionEnd"`:
 
@@ -71,7 +75,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
 Chame o ponto de extremidade [sessionEnd](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionend):
 
@@ -92,7 +96,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionEnd?configId={datastreamI
 }'
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Chame `trackSessionEnd` quando o visualizador fechar o reprodutor ou sair:
 
@@ -100,7 +110,15 @@ Chame `trackSessionEnd` quando o visualizador fechar o reprodutor ou sair:
 tracker.trackSessionEnd();
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Chame `trackSessionEnd` quando o visualizador fechar o reprodutor ou sair:
+
+```javascript
+ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB API da coleção de mídia]
 
 Enviar uma POSTAGEM `sessionEnd` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -110,3 +128,5 @@ Enviar uma POSTAGEM `sessionEnd` para o [ponto de extremidade de eventos](/help/
   "eventType": "sessionEnd"
 }
 ```
+
+>[!ENDTABS]

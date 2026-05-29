@@ -3,10 +3,10 @@ title: Início do estado
 description: Sinal de que o reprodutor de mídia entrou em um estado de reprodutor rastreado.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 13%
+source-wordcount: '192'
+ht-degree: 7%
 
 ---
 
@@ -18,9 +18,13 @@ O evento de início de estado indica que o reprodutor de mídia entrou em um est
 Nomes de estados válidos: `fullscreen`, `mute`, `closedCaptioning`, `pictureInPicture`, `inFocus`
 
 * **Pré-requisitos**: [Início da sessão](../session/session-start.md)
-* **Métrica associada**: varia por estado; consulte [Rastreamento do estado do player](/help/use-cases/player-state-tracking/implementation-and-reporting.md)
+* **Métrica associada**: varia por estado; consulte [Rastrear estados do player](/help/implementation/events/player-state/overview.md)
 
-## SDK da web
+## Tipos de implementação recomendados
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Chame [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview) com `eventType: "media.statesUpdate"` e o nome do estado em `statesStart`:
 
@@ -55,11 +59,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Use `trackPlayerStateStart` com um objeto de estado criado a partir da constante `MediaConstants.PlayerState` apropriada.
-
-**iOS (Swift)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.FULLSCREEN)
@@ -67,7 +69,9 @@ let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerSt
 tracker.trackEvent(event: MediaEvent.StateStart, info: stateObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Use `trackPlayerStateStart` com um objeto de estado criado a partir da constante `MediaConstants.PlayerState` apropriada.
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
@@ -75,7 +79,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateStart, stateObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Chame `sendMediaEvent` com `eventType: "media.statesUpdate"` e o nome do estado em `statesStart`:
 
@@ -91,7 +95,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
 Chame o ponto de extremidade [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/) com o nome de estado em `statesStart`:
 
@@ -113,7 +117,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/statesUpdate?configId={datastrea
 }'
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Usar `ADB.Media.createStateObject` com a constante `ADB.Media.PlayerState` apropriada:
 
@@ -123,7 +133,17 @@ var stateObject = ADB.Media.createStateObject(ADB.Media.PlayerState.Fullscreen);
 tracker.trackPlayerStateStart(stateObject);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Usar `ADBMobile.media.createStateObject` com a constante `ADBMobile.media.PlayerState` apropriada:
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.FullScreen);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+```
+
+>[!TAB API da coleção de mídia]
 
 Enviar uma POSTAGEM `stateStart` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -136,3 +156,5 @@ Enviar uma POSTAGEM `stateStart` para o [ponto de extremidade de eventos](/help/
   }
 }
 ```
+
+>[!ENDTABS]

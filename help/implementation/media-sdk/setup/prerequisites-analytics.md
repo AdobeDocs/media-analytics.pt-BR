@@ -20,7 +20,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
 source-wordcount: 243
 ht-degree: 14%
@@ -44,4 +44,4 @@ Peça ao representante da Adobe Analytics o URL do servidor de rastreamento de m
 Dependendo do caminho de implementação, [baixe o SDK](/help/getting-started/download-sdks.md) atual para plataformas da Web, móveis ou OTT. As extensões necessárias devem ser implementadas para habilitar o complemento Adobe Analytics para mídia de streaming.
 
 1. **Habilitar Relatórios do Adobe Analytics**<br>
-Para permitir relatórios no Analytics e visualizar os dados de conteúdo e anúncios coletados, é necessário habilitar os relatórios no Analytics. Consulte [Ativação de relatórios de mídia](/help/reporting/media-reports-enable.md).
+Para permitir relatórios no Analytics e visualizar os dados de conteúdo e anúncios coletados, é necessário habilitar os relatórios no Analytics. Consulte [Ativação de relatórios de mídia](/help/implementation/media-sdk/setup/media-reports-enable.md).

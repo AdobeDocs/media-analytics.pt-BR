@@ -3,10 +3,10 @@ title: ID do ativo
 description: Defina a ID do ativo, um identificador estável do setor para o ativo de mídia, como um EIDR ou ID do TMS/Gracenote.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 12%
+source-wordcount: '275'
+ht-degree: 8%
 
 ---
 
@@ -28,14 +28,18 @@ A variável ID do ativo é o identificador exclusivo do ativo de mídia subjacen
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.asset` |
-| **Campo da coleção XDM** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.asset` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
 
-## SDK da web
+## Tipos de implementação recomendados
 
-Definir `assetID` dentro de `mediaCollection.sessionDetails` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Definir `assetID` dentro de `xdm.mediaCollection.sessionDetails` ao chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -51,11 +55,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Passe a ID do ativo como uma chave de metadados no argumento HashMap para `trackSessionStart`. Use `MediaConstants.VideoMetadataKeys.ASSET_ID`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -64,7 +66,9 @@ metadata[MediaConstants.VideoMetadataKeys.ASSET_ID] = "89745363"
 tracker.trackSessionStart(info: mediaObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Passe a ID do ativo como uma chave de metadados no argumento HashMap para `trackSessionStart`. Use `MediaConstants.VideoMetadataKeys.ASSET_ID`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -73,7 +77,7 @@ metadata[MediaConstants.VideoMetadataKeys.ASSET_ID] = "89745363"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Use `createMediaSession` para definir `assetID` dentro de `sessionDetails`:
 
@@ -91,9 +95,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
-Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) com `assetID` dentro de `mediaCollection.sessionDetails`:
+Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) com `assetID` dentro de `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -116,7 +120,13 @@ Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Passar a ID do ativo no objeto `contextData` usando `ADB.Media.VideoMetadataKeys.AssetId`:
 
@@ -127,7 +137,20 @@ contextData[ADB.Media.VideoMetadataKeys.AssetId] = "89745363";
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Use `ADBMobile.media.VideoMetadataKeys.ASSET_ID` para definir a ID do ativo na propriedade `StandardMediaMetadata` do objeto de mídia antes de chamar `trackSessionStart`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var standardMetadata = {};
+standardMetadata[ADBMobile.media.VideoMetadataKeys.ASSET_ID] = "89745363";
+mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB API da coleção de mídia]
 
 Incluir `media.assetId` no objeto `params`:
 
@@ -142,3 +165,5 @@ Incluir `media.assetId` no objeto `params`:
 ```
 
 Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+
+>[!ENDTABS]

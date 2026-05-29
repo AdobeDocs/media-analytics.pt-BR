@@ -3,7 +3,7 @@ title: Posição do capítulo
 description: Informa o índice de cada capítulo dentro do conteúdo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 2%
@@ -29,7 +29,7 @@ A posição do capítulo é definida pelo reprodutor em cada evento de [início 
 | --- | --- |
 | Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.chapter.position` para uma eVar. |
 | Adobe Analytics (classificação) | Classificação da dimensão [Capítulo](chapter.md) — a Adobe cria automaticamente essa classificação quando **[[!UICONTROL Capítulos de mídia]](/help/reporting/media-reports-enable.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.index`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.index`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.chapter.position`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |
 | Audience Manager | `c_contextdata.a.media.chapter.position` |

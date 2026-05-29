@@ -3,10 +3,10 @@ title: Início da sessão
 description: Sinalize o início de uma sessão de mídia e obtenha a ID de sessão necessária para todos os eventos subsequentes.
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 10%
+source-wordcount: '352'
+ht-degree: 5%
 
 ---
 
@@ -18,9 +18,13 @@ O evento de início de sessão abre uma sessão de rastreamento de mídia. Deve 
 Uma sessão expira automaticamente se **nenhum evento for recebido por 10 minutos** ou se houver **nenhum movimento do indicador de reprodução por 30 minutos**. Se uma sessão expirar, você deverá chamar o início da sessão novamente para obter uma nova ID de sessão.
 
 * **Pré-requisitos**: nenhum; sempre o primeiro evento
-* **Métrica associada**: [Inícios de mídia](/help/reporting/metrics/media-starts.md)
+* **Métrica associada**: [[!UICONTROL Inícios de mídia]](/help/reporting/metrics/media-starts.md)
 
-## SDK da web
+## Tipos de implementação recomendados
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Chame [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview) com `eventType: "media.sessionStart"` e o `sessionDetails` necessário. A resposta inclui a ID da sessão em `handle[].payload[].sessionId` (tipo `media-analytics:new-session`). Armazene este valor e passe-o como `sessionID` em todos os eventos subsequentes.
 
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Chame `trackSessionStart` com um objeto de mídia e metadados opcionais.
-
-**iOS (Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "video-123",
@@ -59,7 +61,9 @@ let mediaObject = Media.createMediaObjectWith(name: "video-123",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Chame `trackSessionStart` com um objeto de mídia e metadados opcionais.
 
 ```kotlin
 val mediaObject = Media.createMediaObject("video-123",
@@ -71,7 +75,7 @@ val mediaObject = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Chame `createMediaSession` com os detalhes de sessão necessários:
 
@@ -94,7 +98,7 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
 Chame o ponto de extremidade [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart). A resposta inclui a ID da sessão em `handle[].payload[].sessionId` (tipo `media-analytics:new-session`).
 
@@ -120,7 +124,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 }'
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Chame `trackSessionStart` com um objeto de mídia criado usando `ADB.Media.createMediaObject`:
 
@@ -136,7 +146,23 @@ var mediaObject = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaObject, null);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Chame `trackSessionStart` com um objeto de mídia criado usando `ADBMobile.media.createMediaObject`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "video-123",                        // name
+  "video-id-123",                     // media ID
+  128,                                // length (seconds)
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB API da coleção de mídia]
 
 Enviar uma POSTAGEM `sessionStart` para o [ponto de extremidade de sessões](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). O cabeçalho de resposta `Location` contém a ID de sessão a ser usada em todas as solicitações de evento subsequentes.
 
@@ -153,3 +179,171 @@ Enviar uma POSTAGEM `sessionStart` para o [ponto de extremidade de sessões](/he
   }
 }
 ```
+
+>[!ENDTABS]
+
+## Retomar uma sessão
+
+Ao retomar uma sessão fechada anteriormente — por exemplo, após uma transferência entre dispositivos ou após o aplicativo restaurar o estado de reprodução salvo — defina o sinalizador de retomada no início da sessão. Isso faz com que o Analytics incremente [[!UICONTROL Resumo do conteúdo]](/help/reporting/metrics/content-resumes.md) em vez de [[!UICONTROL Inícios da mídia]](/help/reporting/metrics/media-starts.md).
+
+## Tipos de implementação recomendados
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Adicionar `hasResume: true` a `sessionDetails`:
+
+```javascript
+alloy("sendEvent", {
+  xdm: {
+    eventType: "media.sessionStart",
+    mediaCollection: {
+      sessionDetails: {
+        name: "video-123",
+        length: 128,
+        contentType: "vod",
+        playerName: "HTML5 Player",
+        channel: "Sports",
+        streamType: "video",
+        hasResume: true
+      },
+      playhead: 0
+    }
+  }
+});
+```
+
+>[!TAB iOS]
+
+Defina a chave `resumed` no objeto de mídia antes de chamar `trackSessionStart`:
+
+```swift
+var mediaObject = Media.createMediaObjectWith(name: "video-123",
+                                               id: "video-id-123",
+                                           length: 128,
+                                       streamType: MediaConstants.StreamType.VOD,
+                                        mediaType: MediaType.Video)
+
+mediaObject[MediaConstants.MediaObjectKey.resumed] = true
+tracker.trackSessionStart(info: mediaObject, metadata: nil)
+```
+
+>[!TAB Android]
+
+Defina a chave `RESUMED` no objeto de mídia antes de chamar `trackSessionStart`:
+
+```kotlin
+val mediaObject = Media.createMediaObject("video-123", "video-id-123", 128,
+                                          MediaConstants.StreamType.VOD,
+                                          Media.MediaType.Video)
+
+mediaObject[Media.MediaObjectKey.RESUMED] = true
+tracker.trackSessionStart(mediaObject, null)
+```
+
+>[!TAB Roku]
+
+Adicionar `"hasResume": true` a `sessionDetails`:
+
+```brightscript
+m.aepSdk.createMediaSession({
+    "xdm": {
+        "eventType": "media.sessionStart",
+        "mediaCollection": {
+            "sessionDetails": {
+                "name": "video-123",
+                "length": 128,
+                "contentType": "vod",
+                "playerName": "Roku Player",
+                "channel": "Sports",
+                "streamType": "video",
+                "hasResume": true
+            },
+            "playhead": 0
+        }
+    }
+})
+```
+
+>[!TAB API do Media Edge]
+
+Adicionar `"hasResume": true` a `sessionDetails`:
+
+```sh
+curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastreamID}" \
+--header 'Content-Type: application/json' \
+--data '{
+  "events": [{
+    "xdm": {
+      "eventType": "media.sessionStart",
+      "mediaCollection": {
+        "sessionDetails": {
+          "name": "video-123",
+          "playerName": "HTML5 Player",
+          "contentType": "VOD",
+          "length": 128,
+          "channel": "Sports",
+          "hasResume": true
+        },
+        "playhead": 0
+      }
+    }
+  }]
+}'
+```
+
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
+
+Definir a chave `MediaResumed` no objeto de mídia:
+
+```javascript
+var mediaObject = ADB.Media.createMediaObject(
+  "video-123", "video-id-123", 128,
+  ADB.Media.StreamType.VOD, ADB.Media.MediaType.Video
+);
+
+mediaObject[ADB.Media.MediaObjectKey.MediaResumed] = true;
+tracker.trackSessionStart(mediaObject, null);
+```
+
+>[!TAB Chromecast]
+
+Definir a chave `MediaResumed` no objeto de mídia:
+
+```javascript
+var mediaObject = ADBMobile.media.createMediaObject(
+  "video-123", "video-id-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video
+);
+
+mediaObject[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
+ADBMobile.media.trackSessionStart(mediaObject, null);
+```
+
+>[!TAB API da coleção de mídia]
+
+Adicionar `"media.resume": true` ao objeto `params`:
+
+```json
+{
+  "playerTime": { "playhead": 0, "ts": 1699523820000 },
+  "eventType": "sessionStart",
+  "params": {
+    "media.channel": "Sports",
+    "media.playerName": "HTML5 Player",
+    "media.contentType": "vod",
+    "media.length": 128,
+    "media.id": "video-123",
+    "media.resume": true
+  }
+}
+```
+
+>[!ENDTABS]

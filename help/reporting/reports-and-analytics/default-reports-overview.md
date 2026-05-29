@@ -22,10 +22,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 355
-ht-degree: 92%
+source-wordcount: 358
+ht-degree: 50%
 
 ---
 
@@ -33,14 +33,14 @@ ht-degree: 92%
 
 O Adobe Analytics fornece vários relatórios e métricas para rastrear o desempenho da mídia em seu site.
 
-Além das métricas e dimensões disponíveis ao habilitar cada um dos módulos, há três relatórios de estilo de painel adicionais que ficam disponíveis quando você habilita o módulo Media Core. Habilitar o módulo Anúncios também altera a aparência de alguns desses relatórios de estilo de painel ao adicionar métricas e filtros adicionais.
+Além das métricas e dimensões disponíveis ao habilitar cada um dos módulos, há três relatórios de estilo de painel adicionais que ficam disponíveis quando você habilita o módulo [!UICONTROL Mídia principal]. Habilitar o módulo [!UICONTROL Anúncios] também altera a aparência de alguns desses relatórios de estilo de painel ao adicionar métricas e filtros adicionais.
 
 Os relatórios de mídia estão listados na guia **[!UICONTROL Relatórios]**. Navegue para > **[!UICONTROL Mídia]** > **[!UICONTROL Engajamento de mídia]** e selecione de:
 
 | Relatório de mídia | Descrição     | Insights comerciais comuns       |
 | --- | --- | --- |
-| [Visão geral da mídia &#x200B;](media-reports-overview.md) | Exibe várias medidas de agregação para monitorar rapidamente se a mídia está funcionando como esperado. Um gráfico exibe os inícios de mídia ao lado das impressões do anúncio, para que você possa ter uma exibição rápida e comparar as métricas. | <ul> <li>Totais das métricas principais, incluindo inícios de conteúdo, taxa de conclusão, tempo médio no stream e itens de mídia médios por visita.  </li> <li>O conteúdo total e os inícios de anúncio para mídia filtrados por tipo de dispositivo ou país.  </li> </ul> |
-| [Detalhes da mídia &#x200B;](media-reports-detail.md) | Exibe métricas detalhadas para todos os itens de mídia, incluindo inícios, visualizadores simultâneos, taxa de conclusão, percentual de reprodução e impressões de anúncios. | <ul> <li>Totais das principais métricas, incluindo inícios de mídia, inícios de conteúdo e anúncio e conteúdo médio por visita.  </li> <li>O conteúdo total e os inícios de anúncio para mídia filtrados por tipo de dispositivo ou país.  </li> </ul> |
-| [Faixa de horário da mídia &#x200B;](media-reports-daypart.md) | Exibe inícios do conteúdo por hora do dia para que você visualize rapidamente quando o público-alvo está envolvido. | <ul> <li>Engajamento no Audience por hora do dia.  </li> <li>Engajamento no Audience em relação aos intervalos de datas anteriores.  </li> </ul> |
+| [Visão geral da mídia &#x200B;](media-reports-overview.md) | Exibe várias medidas de agregação para monitorar rapidamente se a mídia está funcionando como esperado. Um gráfico exibe [[!UICONTROL Inícios de mídia]](/help/reporting/metrics/media-starts.md) ao lado das impressões do anúncio, para que você possa visualizar e comparar essas métricas rapidamente. | <ul> <li>Totais das métricas principais, incluindo [[!UICONTROL Inícios do conteúdo]](/help/reporting/metrics/content-starts.md), taxa de conclusão, tempo médio no fluxo e itens de mídia médios por visita.  </li> <li>Total de [[!UICONTROL Início do conteúdo]](/help/reporting/metrics/content-starts.md) e [[!UICONTROL Início do anúncio]](/help/reporting/metrics/ad-starts.md) para mídia filtrada por tipo de dispositivo ou país.  </li> </ul> |
+| [Detalhes da mídia &#x200B;](media-reports-detail.md) | Exibe métricas detalhadas para todos os itens de mídia, incluindo inícios, visualizadores simultâneos, taxa de conclusão, percentual de reprodução e impressões de anúncios. | <ul> <li>Totais das métricas principais, incluindo [[!UICONTROL Inícios de mídia]](/help/reporting/metrics/media-starts.md), [[!UICONTROL Inícios de conteúdo]](/help/reporting/metrics/content-starts.md) e [[!UICONTROL Inícios de anúncio]](/help/reporting/metrics/ad-starts.md), e conteúdo médio por visita.  </li> <li>Total de [[!UICONTROL Início do conteúdo]](/help/reporting/metrics/content-starts.md) e [[!UICONTROL Início do anúncio]](/help/reporting/metrics/ad-starts.md) para mídia filtrada por tipo de dispositivo ou país.  </li> </ul> |
+| [Faixa de horário da mídia &#x200B;](media-reports-daypart.md) | Exibe [[!UICONTROL Inícios do conteúdo]](/help/reporting/metrics/content-starts.md) por hora do dia, para que você visualize rapidamente quando o público-alvo está envolvido. | <ul> <li>Engajamento no Audience por hora do dia.  </li> <li>Engajamento no Audience em relação aos intervalos de datas anteriores.  </li> </ul> |
 | [Visualizadores simultâneos de mídia &#x200B;](media-concurrent-viewers-reports.md) | Exibe visualizadores simultâneos durante um dia. Os dados podem ser filtrados por conteúdo, tipo de dispositivo ou país. | <ul> <li>Engajamento no Audience por minuto em um intervalo de 24 horas.  </li> </ul> |
 | Eventos de mídia e variáveis de mídia | Relatórios adicionais estão disponíveis. Métricas de mídia e dimensões são variáveis padrão do Analytics, que podem ser relatadas de modo direto e adicionadas a outros relatórios do Analytics. | <ul> <li>Conversão de mídia (Eventos que ocorrem após a visualização da mídia) gerando um relatório com visitas que incluem um tipo de conteúdo de mídia.  </li> <li>Fluxo de mídia próximo/anterior usando o nome de mídia prop.  </li> </ul> |

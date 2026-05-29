@@ -18,7 +18,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 109
 ht-degree: 81%
@@ -27,7 +27,7 @@ ht-degree: 81%
 
 # Visão geral da mídia{#media-overview}
 
-O painel Visão geral da mídia foi projetado para permitir que você monitore a mídia no seu site. A Visão geral da mídia apresenta diversas medidas agregadas para monitorar rapidamente se a mídia está funcionando como previsto. Um gráfico exibe os inícios de conteúdo ao lado dos inícios de anúncio, para que você visualize rapidamente essas métricas para cada item de mídia.
+O painel Visão geral da mídia foi projetado para permitir que você monitore a mídia no seu site. A Visão geral da mídia apresenta diversas medidas agregadas para monitorar rapidamente se a mídia está funcionando como previsto. Um gráfico exibe [[!UICONTROL Início do conteúdo]](/help/reporting/metrics/content-starts.md) ao lado de [[!UICONTROL Início do anúncio]](/help/reporting/metrics/ad-starts.md) para permitir que você veja rapidamente essas métricas para cada item de mídia.
 
 ![](assets/media_overview.png)
 

@@ -3,10 +3,10 @@ title: Ad break concluído
 description: Sinal de que todos os anúncios em um ad break foram concluídos.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 16%
+source-wordcount: '156'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,11 @@ O evento de ad break concluído sinaliza que todos os anúncios em um ad break f
 >
 >Todo `adBreakStart` deve ter um `adBreakComplete` correspondente. Sem o finalizador de fechamento, os eventos de anúncio são ignorados e a duração do anúncio é atribuída ao conteúdo principal.
 
-## SDK da web
+## Tipos de implementação recomendados
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview) com `eventType: "media.adBreakComplete"`:
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Chame `trackEvent` com o tipo de evento `AdBreakComplete`.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.AdBreakComplete, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Chame `trackEvent` com o tipo de evento `AdBreakComplete`.
 
 ```kotlin
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Chamar `sendMediaEvent` com `eventType: "media.adBreakComplete"`:
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
 Chame o ponto de extremidade [adBreakComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakcomplete):
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakComplete?configId={datast
 }'
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Chamar `trackEvent` com o tipo de evento `AdBreakComplete`:
 
@@ -98,7 +108,15 @@ Chamar `trackEvent` com o tipo de evento `AdBreakComplete`:
 tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Chamar `trackEvent` com o tipo de evento `AdBreakComplete`:
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB API da coleção de mídia]
 
 Enviar uma POSTAGEM `adBreakComplete` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -108,3 +126,5 @@ Enviar uma POSTAGEM `adBreakComplete` para o [ponto de extremidade de eventos](/
   "eventType": "adBreakComplete"
 }
 ```
+
+>[!ENDTABS]

@@ -3,10 +3,10 @@ title: Início do buffer
 description: Sinal de que o reprodutor de mídia entrou em um estado de buffering.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 15%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 15%
 O evento de início de buffer indica que o reprodutor de mídia entrou em um estado de buffering.
 
 * **Pré-requisitos**: [Início da sessão](../session/session-start.md)
-* **Métrica associada**: [Eventos de buffer](/help/reporting/metrics/buffer-events.md)
+* **Métrica associada**: [[!UICONTROL Eventos de buffer]](/help/reporting/metrics/buffer-events.md)
 
 >[!NOTE]
 >
@@ -24,7 +24,11 @@ O evento de início de buffer indica que o reprodutor de mídia entrou em um est
 >
 >**SDK móvel:** Chame `trackEvent(BufferComplete)` quando o player sair do buffering e, em seguida, chame `trackPlay()` para retomar a reprodução.
 
-## SDK da web
+## Tipos de implementação recomendados
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Chamar [`sendEvent`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/sendevent/overview) com `eventType: "media.bufferStart"`:
 
@@ -40,11 +44,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvel
+>[!TAB iOS]
 
 Chame `trackEvent` com `BufferStart` quando o player entrar em um estado de buffering e `BufferComplete` quando ele sair.
-
-**iOS (Swift)**
 
 ```swift
 // Buffer starts
@@ -54,7 +56,9 @@ tracker.trackEvent(event: MediaEvent.BufferStart, info: nil, metadata: nil)
 tracker.trackEvent(event: MediaEvent.BufferComplete, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Chame `trackEvent` com `BufferStart` quando o player entrar em um estado de buffering e `BufferComplete` quando ele sair.
 
 ```kotlin
 // Buffer starts
@@ -64,7 +68,7 @@ tracker.trackEvent(Media.Event.BufferStart, null, null)
 tracker.trackEvent(Media.Event.BufferComplete, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Chamar `sendMediaEvent` com `eventType: "media.bufferStart"`:
 
@@ -79,7 +83,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de borda de mídia
+>[!TAB API do Media Edge]
 
 Chame o ponto de extremidade [bufferStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bufferstart/):
 
@@ -100,7 +104,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/bufferStart?configId={datastream
 }'
 ```
 
-## SDK de mídia
+>[!ENDTABS]
+
+## Tipos de implementação herdada (somente Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Chamar `trackEvent` com o tipo de evento `BufferStart`:
 
@@ -108,7 +118,19 @@ Chamar `trackEvent` com o tipo de evento `BufferStart`:
 tracker.trackEvent(ADB.Media.Event.BufferStart, null, null);
 ```
 
-## API da coleção de mídia
+>[!TAB Chromecast]
+
+Chame `trackEvent` com `BufferStart` quando o player entrar em um estado de buffering e `BufferComplete` quando ele sair:
+
+```javascript
+// Buffer starts
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
+
+// Buffer ends
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
+```
+
+>[!TAB API da coleção de mídia]
 
 Enviar uma POSTAGEM `bufferStart` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -118,3 +140,5 @@ Enviar uma POSTAGEM `bufferStart` para o [ponto de extremidade de eventos](/help
   "eventType": "bufferStart"
 }
 ```
+
+>[!ENDTABS]

@@ -16,14 +16,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 131
-ht-degree: 82%
+source-wordcount: 153
+ht-degree: 70%
 
 ---
 
 # Instalar serviços de streaming de mídia usando a extensão do Media Analytics
+
+>[!IMPORTANT]
+>
+>Esta página aborda a implementação da extensão do Media Analytics somente no Analytics. Para a implementação recomendada, consulte [Implementar mídia de transmissão usando o Edge Network](/help/implementation/edge/edge-web-sdk.md).
 
 Você pode usar a extensão do Adobe Media Analytics para implementar os serviços de streaming de mídia da Adobe. A extensão do Media Analytics adiciona o SDK de mídia JavaScript principal (SDK Media 3.x). Essa extensão fornece a funcionalidade de adicionar a instância do rastreador de mídia para projetos ou sites que tenham tags habilitadas.
 

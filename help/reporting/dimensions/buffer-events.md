@@ -3,7 +3,7 @@ title: Eventos de buffer (dimensão)
 description: Relata a contagem de eventos de buffer por sessão.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a dimensão **Eventos de buffer**. O Adobe Analytics preenche automaticamente um par de [Eventos de buffer (métrica)](/help/reporting/metrics/buffer-events.md) da mesma variável de dados de contexto `a.media.qoe.bufferCount`. O Customer Journey Analytics expõe um único campo `mediaReporting.qoeDataDetails.bufferCount` que você pode usar como dimensão ou métrica.*
+*Esta página abrange a dimensão **Eventos de buffer**. O Adobe Analytics preenche automaticamente um par de [Eventos de buffer (métrica)](/help/reporting/metrics/buffer-events.md) da mesma variável de dados de contexto `a.media.qoe.bufferCount`. O Customer Journey Analytics expõe um único campo `xdm.mediaReporting.qoeDataDetails.bufferCount` que você pode usar como dimensão ou métrica.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ O back-end de mídia incrementa a contagem toda vez que o player entra em um est
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.qoe.bufferCount` quando a [[!UICONTROL Qualidade de Mídia]](/help/reporting/media-reports-enable.md) está habilitada. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Feeds de dados | `videoqoebuffercountevar`, `post_videoqoebuffercountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferCount` |
 
