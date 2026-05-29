@@ -1,5 +1,5 @@
 ---
-title: Mapeamento de dados da API do Media Edge e validação da plataforma
+title: Esquema de relatório XDM
 description: Saiba quais eventos de API do Media Edge geram eventos de experiência no Adobe Experience Platform e como validar sua implementação usando o esquema XDM do mediaReporting.
 feature: Streaming Media
 role: User, Admin, Developer
@@ -15,26 +15,26 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 763
 ht-degree: 4%
 
 ---
 
 
-# Mapeamento de dados da API do Media Edge e validação da plataforma
+# Esquema de relatório XDM
 
-Ao enviar eventos de rastreamento de mídia usando a API do Media Edge ou um Media Edge SDK, o back-end do Media Analytics processa esses eventos e grava eventos de experiência computados em conjuntos de dados do Adobe Experience Platform. Entender quais eventos atingem a Platform e o que o back-end calcula para você ajuda a validar sua implementação e criar relatórios precisos no Customer Journey Analytics ou no Adobe Analytics.
+Ao enviar eventos de rastreamento de mídia usando o Adobe Experience Platform Edge Network, o back-end do Media Analytics processa esses eventos e grava eventos de experiência computados em conjuntos de dados da plataforma. Entender quais eventos atingem a Platform e o que o back-end calcula para você ajuda a validar sua implementação e criar relatórios precisos no Customer Journey Analytics ou no Adobe Analytics.
 
-O Media Edge usa dois esquemas XDM distintos:
+Dois esquemas XDM distintos são usados em partes diferentes do pipeline de coleta e relatórios:
 
 | Esquema | Namespace | Direção | Propósito |
 |---|---|---|---|
-| Coleção de mídia | `xdm.mediaCollection` | Cliente → Adobe | O que o reprodutor envia para cada evento de rastreamento |
-| Relatórios de mídia | `xdm.mediaReporting` | Adobe → Plataforma | O que o back-end grava nos conjuntos de dados após o processamento |
+| Coleção de mídia | `xdm.mediaCollection` | Cliente → Adobe | O que o reprodutor envia para cada evento de rastreamento. Usado por [variáveis](/help/implementation/variables/). |
+| Relatórios de mídia | `xdm.mediaReporting` | Adobe → Plataforma | O que o back-end grava nos conjuntos de dados após o processamento. Usado por [dimensões](/help/reporting/dimensions/overview.md) e [métricas](/help/reporting/metrics/overview.md). |
 
-Os campos presentes em `mediaReporting`, mas ausentes na sua carga do `mediaCollection`, são **computados por back-end** — derivados da sequência completa de eventos em uma sessão. Esses campos nunca são enviados; o Adobe os gera.
+Os campos presentes em `mediaReporting`, mas ausentes na carga `mediaCollection`, são derivados da sequência completa de eventos em uma sessão. Esses campos nunca são enviados; o Adobe os gera.
 
 ## Eventos que gravam em conjuntos de dados da plataforma
 
