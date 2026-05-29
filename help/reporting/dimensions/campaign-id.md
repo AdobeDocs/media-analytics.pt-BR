@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **ID da campanha**dimensão de relatório. Consulte [ID da campanha](/help/implementation/variables/ads/campaign-id.md) para saber como coletar essa variável.*
+*Esta página aborda a **ID da campanha**&#x200B;dimensão de relatório. Consulte [ID da campanha](/help/implementation/variables/ads/campaign-id.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

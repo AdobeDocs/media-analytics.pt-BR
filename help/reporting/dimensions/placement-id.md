@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **ID de posicionamento**dimensão de relatório. Consulte [ID de posicionamento](/help/implementation/variables/ads/placement-id.md) para saber como coletar essa variável.*
+*Esta página aborda a **ID de posicionamento**&#x200B;dimensão de relatório. Consulte [ID de posicionamento](/help/implementation/variables/ads/placement-id.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

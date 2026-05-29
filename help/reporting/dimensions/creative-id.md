@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **Creative ID**dimensão de relatório. Consulte [Creative ID](/help/implementation/variables/ads/creative-id.md) para saber como coletar essa variável.*
+*Esta página aborda a **Creative ID**&#x200B;dimensão de relatório. Consulte [Creative ID](/help/implementation/variables/ads/creative-id.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

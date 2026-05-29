@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **duração total da tela cheia**da métrica de relatório. Consulte [Tela inteira](/help/implementation/variables/player-state/full-screen.md) para saber como coletar essa variável.*
+*Esta página aborda a **duração total da tela cheia**&#x200B;da métrica de relatório. Consulte [Tela inteira](/help/implementation/variables/player-state/full-screen.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 

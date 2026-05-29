@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **Posição do pod**dimensão de relatório. Consulte [Hora de início do ad break](/help/implementation/variables/ads/ad-break-start-time.md) para saber como coletar essa variável.*
+*Esta página aborda a **Posição do pod**&#x200B;dimensão de relatório. Consulte [Hora de início do ad break](/help/implementation/variables/ads/ad-break-start-time.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
