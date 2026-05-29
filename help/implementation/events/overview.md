@@ -3,9 +3,9 @@ title: Visão geral dos eventos de mídia de transmissão
 description: Saiba mais sobre os tipos de evento de mídia e a ordem em que eles devem ser enviados.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -69,3 +69,9 @@ Os cinco estados rastreáveis são: `fullscreen`, `mute`, `closedCaptioning`, `p
 ## Eventos de erro
 
 O evento [Erro](error.md) registra uma falha de reprodução durante uma sessão — uma solicitação de fluxo com falha, um erro de codec ou uma falha de entrega externa. Enviá-lo sempre que ocorrer um erro significativo. Um evento de erro não fecha a sessão; a reprodução pode continuar e os eventos subsequentes são rastreados na mesma sessão. Se o erro for irrecuperável, siga-o com Session end para fechar explicitamente a sessão.
+
+>[!MORELIKETHIS]
+>
+>* [Visão geral das variáveis](/help/implementation/variables/overview.md): os dados que os eventos carregam para o Adobe
+>* [Visão geral das dimensões](/help/reporting/dimensions/overview.md): as dimensões de relatório que os eventos preenchem
+>* [Visão geral das métricas](/help/reporting/metrics/overview.md): as métricas de relatório que os eventos preenchem

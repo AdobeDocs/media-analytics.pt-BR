@@ -3,9 +3,9 @@ title: Visão geral das métricas de streaming de mídia
 description: Saiba como as métricas de transmissão de mídia são calculadas e organizadas no Adobe Analytics e no Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -31,13 +31,12 @@ As métricas de mídia de transmissão seguem quatro padrões de cálculo princi
 
 | Sistema de relatório | Como as métricas chegam |
 | --- | --- |
-| Adobe Analytics | Preenchida com [Variáveis de dados de contexto](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/vars/page-vars/contextdata). Algumas métricas preenchem automaticamente eventos de solução usando essas variáveis de dados de contexto, enquanto outras devem ser mapeadas para um evento personalizado usando [Regras de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). As métricas que preenchem valores automaticamente devem ter sua respectiva [configuração de conjunto de relatórios de mídia de streaming](../../implementation/media-sdk/setup/media-reports-enable.md) habilitada primeiro. |
-| Customer Journey Analytics | Campos XDM em `xdm.mediaReporting.sessionDetails` e nós relacionados, originados de qualquer conjunto de dados que inclua dados de mídia de streaming. Você deve criar cada métrica com as configurações desejadas em [configurações do componente de Visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
+| Adobe Analytics | Preenchida com [Variáveis de dados de contexto](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/vars/page-vars/contextdata). Algumas métricas preenchem automaticamente eventos de solução usando essas variáveis de dados de contexto, enquanto outras devem ser mapeadas para um evento personalizado usando [Regras de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). As métricas que preenchem valores automaticamente devem ter sua respectiva [configuração de conjunto de relatórios de mídia de streaming](../../implementation/media-sdk/setup/media-reports-enable.md) habilitada primeiro. |
+| Customer Journey Analytics | Campos XDM em `xdm.mediaReporting.sessionDetails` e nós relacionados, originados de qualquer conjunto de dados que inclua dados de mídia de streaming. Você deve criar cada métrica com as configurações desejadas em [configurações do componente de Visualização de dados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
 | Feeds de dados | As métricas aparecem nas colunas `event_list` e `post_event_list` como IDs de evento. Cada arquivo de feed contém um arquivo `events.csv` que contém a pesquisa de todas as métricas, incluindo as métricas de mídia de transmissão. |
 
 >[!MORELIKETHIS]
 >
->* [Visão geral das dimensões](../dimensions/overview.md): referência às dimensões de mídia de streaming
->* [Métricas calculadas](/help/reporting/calculated-metrics.md): taxas e métricas derivadas criadas a partir das métricas base acima
->* [Mapeamento de parâmetros](/help/implementation/parameters-mapping.md): concluir referência de evento para coluna para XDM
->* [Visão geral dos eventos](/help/implementation/events/overview.md): os eventos do player que direcionam o cálculo da métrica
+>* [Visão geral dos eventos](/help/implementation/events/overview.md): os eventos do player que preenchem as métricas
+>* [Visão geral das variáveis](/help/implementation/variables/overview.md): os dados que os eventos carregam para o Adobe
+>* [Visão geral das dimensões](/help/reporting/dimensions/overview.md): as dimensões de relatório que as variáveis preenchem
