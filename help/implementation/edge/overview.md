@@ -117,7 +117,7 @@ Para padronizar a coleta de dados entre aplicativos que usam o Adobe Experience 
 
    +++ Expanda para exibir instruções sobre como adicionar metadados personalizados ao esquema.
 
-   1. Localize o nome do locatário da organização selecionando **[!UICONTROL Informações da conta]** > **[!UICONTROL Orgs atribuídas]** > [!UICONTROL _**nome da organização**_] > **[!UICONTROL locatário]**.
+   1. Localize o nome do locatário da organização selecionando **[!UICONTROL Informações da conta]** > **[!UICONTROL Orgs atribuídas]** > [!UICONTROL _&#x200B;**nome da organização**&#x200B;_] > **[!UICONTROL locatário]**.
 
       Campos personalizados são recebidos por meio desse caminho. (Por exemplo, nome do locatário: _dcbl → caminho myCustomField: _dcbl.myCustomField.)
 

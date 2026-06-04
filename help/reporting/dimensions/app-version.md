@@ -15,7 +15,7 @@ ht-degree: 4%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **versão do aplicativo**dimensão de relatório. Consulte [Versão do aplicativo](/help/implementation/variables/core/app-version.md) para saber como coletar essa variável.*
+*Esta página aborda a **versão do aplicativo**&#x200B;dimensão de relatório. Consulte [Versão do aplicativo](/help/implementation/variables/core/app-version.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
