@@ -18,7 +18,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 449
 ht-degree: 7%
@@ -31,7 +31,7 @@ A API Media Collection permite enviar pares de valores chave personalizados junt
 
 Para disponibilizar esses dados no Analysis Workspace, os clientes devem definir eVars personalizadas e configurar regras de processamento para preenchê-las de acordo com seu caso de uso. Depois de mapeados para eVars ou props, os dados também ficam disponíveis no Adobe Experience Platform por meio dos caminhos do eVar correspondentes, desde que o [Conector de origem do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics) esteja configurado.
 
-Para implementações baseadas em XDM usando o Experience Edge, consulte [Suporte a metadados personalizados - formato XDM](/help/implementation/edge/implementation-edge-custom-metadata.md).
+Para implementações baseadas em XDM usando o Experience Edge, consulte [Suporte a metadados personalizados - formato XDM](/help/implementation/edge/custom-metadata.md).
 
 ## Visão geral
 
@@ -80,8 +80,8 @@ Os metadados personalizados são um **objeto** simples (pares de valores chave) 
 
 ### Requisitos de nomenclatura de chave
 
-- Evite usar o prefixo `media.` em chaves de metadados personalizadas, ele mapeia para campos de mídia padrão e pode substituí-los nos relatórios do Analytics
-- O prefixo `a.` é reservado para metadados padrão do Adobe e não deve ser usado
+* Evite usar o prefixo `media.` em chaves de metadados personalizadas, ele mapeia para campos de mídia padrão e pode substituí-los nos relatórios do Analytics
+* O prefixo `a.` é reservado para metadados padrão do Adobe e não deve ser usado
 
 ## Metadados personalizados do conteúdo principal
 
@@ -173,19 +173,19 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 
 ## Comportamento
 
-- Todos os valores de metadados personalizados devem ser **cadeias de caracteres**. Converta números e booleanos antes de enviar.
-- Os metadados personalizados aparecem no Analytics com um prefixo `c.` (por exemplo, `contentCategory` → `c.contentCategory`)
-- Mapear metadados personalizados para eVars, props ou variáveis de dados de contexto por meio de regras de processamento do Analytics
-- `sessionStart` metadados persistem para a sessão inteira; as atualizações exigem uma nova sessão
-- Cada evento do `adStart` e do `chapterStart` pode carregar diferentes metadados personalizados
+* Todos os valores de metadados personalizados devem ser **cadeias de caracteres**. Converta números e booleanos antes de enviar.
+* Os metadados personalizados aparecem no Analytics com um prefixo `c.` (por exemplo, `contentCategory` → `c.contentCategory`)
+* Mapear metadados personalizados para eVars, props ou variáveis de dados de contexto por meio de regras de processamento do Analytics
+* `sessionStart` metadados persistem para a sessão inteira; as atualizações exigem uma nova sessão
+* Cada evento do `adStart` e do `chapterStart` pode carregar diferentes metadados personalizados
 
 ## Documentação relacionada
 
-- [Suporte a metadados personalizados - Formato XDM](/help/implementation/edge/implementation-edge-custom-metadata.md) — Enviar metadados personalizados via Experience Edge para o Analytics e o AEP
-- [Conector de origem do Adobe Analytics para dados do conjunto de relatórios](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Trazer dados do Analytics para a Adobe Experience Platform
+* [Suporte a metadados personalizados - Formato XDM](/help/implementation/edge/custom-metadata.md) — Enviar metadados personalizados via Experience Edge para o Analytics e o AEP
+* [Conector de origem do Adobe Analytics para dados do conjunto de relatórios](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Trazer dados do Analytics para a Adobe Experience Platform
 
 <!--
-- [Session endpoints](sessions.md) — Session lifecycle management
-- [Ad endpoints](ads.md) — Track advertising impressions
-- [Chapter endpoints](chapters.md) — Segment content into chapters
+* [Session endpoints](sessions.md) — Session lifecycle management
+* [Ad endpoints](ads.md) — Track advertising impressions
+* [Chapter endpoints](chapters.md) — Segment content into chapters
 -->

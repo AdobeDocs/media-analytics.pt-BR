@@ -3,7 +3,7 @@ title: Posição do pod
 description: Relata o deslocamento de cada ad break no conteúdo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -28,7 +28,7 @@ A posição do pod é definida com base no valor de [Tempo de início de ad brea
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podSecond` para uma eVar. |
-| Adobe Analytics (classificação) | Classificação da dimensão [Pod de anúncio](ad-pod.md) — a Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/media-reports-enable.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
+| Adobe Analytics (classificação) | Classificação da dimensão [Pod de anúncio](ad-pod.md) — a Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/setup/analytics-reporting.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.ad.podSecond`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |
@@ -36,7 +36,7 @@ A posição do pod é definida com base no valor de [Tempo de início de ad brea
 
 ## Abordagem de classificação
 
-O Adobe cria a estrutura de classificação Posição do pod automaticamente quando **[[!UICONTROL Anúncios de mídia]](/help/reporting/media-reports-enable.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter a classificação usando [Conjuntos de classificações](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+O Adobe cria a estrutura de classificação Posição do pod automaticamente quando **[[!UICONTROL Anúncios de mídia]](/help/reporting/setup/analytics-reporting.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter a classificação usando [Conjuntos de classificações](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Essa abordagem fornece uma relação garantida de :1 entre cada ID de pod de anúncio e sua posição. As atualizações de classificação se aplicam retroativamente a todos os dados históricos dessa ID.
 

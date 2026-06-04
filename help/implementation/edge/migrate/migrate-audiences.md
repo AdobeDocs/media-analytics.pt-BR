@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 516
 ht-degree: 1%
@@ -43,49 +43,49 @@ Para migrar um público do tipo de dados antigo chamado &quot;Mídia&quot; para 
 
 Consulte o parâmetro [ID de Conteúdo](/help/reporting/dimensions/content.md) e o restante das variáveis de mídia de streaming documentadas em [Serviços de mídia de streaming](/help/media-overview.md) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
 
-![Caminhos antigos e novos do campo XDM](assets/field-paths-updated.jpeg)
+![Caminhos antigos e novos do campo XDM](../../assets/field-paths-updated.jpeg)
 
 ## Exemplo
 
 Para facilitar o cumprimento das diretrizes de migração, considere o exemplo a seguir, que contém um público-alvo com uma única regra. Como o público-alvo tem uma única regra, é necessário aplicar as diretrizes de migração apenas uma vez.
 
-1. Selecione o botão [!UICONTROL **Editar público-alvo**] no canto superior direito.
+1. Selecione o botão **[!UICONTROL Editar público-alvo]** no canto superior direito.
 
 1. Localize as regras configuradas para o público-alvo.
 
-   ![Editar público-alvo](assets/audience-edit.jpeg)
+   ![Editar público-alvo](../../assets/audience-edit.jpeg)
 
-   ![Editar público-alvo](assets/audience-edit2.jpeg)
+   ![Editar público-alvo](../../assets/audience-edit2.jpeg)
 
 1. Selecione a regra para abrir sua configuração.
 
-   ![Editar público-alvo](assets/audience-edit3.jpeg)
+   ![Editar público-alvo](../../assets/audience-edit3.jpeg)
 
 1. (Opcional) Para exibir o caminho do campo usado na regra, selecione o botão de informações próximo ao nome do campo.
 
-   ![Editar público-alvo](assets/audience-edit4.jpeg)
+   ![Editar público-alvo](../../assets/audience-edit4.jpeg)
 
 1. Identifique o nome do campo (neste caso, &quot;Inícios da mídia&quot;).
 
-   ![Editar público-alvo](assets/audience-edit5.jpeg)
+   ![Editar público-alvo](../../assets/audience-edit5.jpeg)
 
 1. Consulte as variáveis de mídia de streaming documentadas em [Serviços de mídia de streaming](/help/media-overview.md) para mapear entre os campos antigos. O caminho de campo antigo pode ser encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo pode ser encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;. Por exemplo, para o parâmetro [Inícios da mídia](/help/reporting/metrics/media-starts.md), o correspondente para `media.mediaTimed.impressions.value` é `xdm.mediaReporting.sessionDetails.isViewed`.
 
-   ![Caminho XDM atualizado](assets/updated-xdm-path.jpeg)
+   ![Caminho XDM atualizado](../../assets/updated-xdm-path.jpeg)
 
 1. Adicione a mesma regra da existente usando o novo campo.
 
-   ![Adicionar regra](assets/add-rule.jpeg)
+   ![Adicionar regra](../../assets/add-rule.jpeg)
 
-   ![Adicionar regra](assets/add-rule2.jpeg)
+   ![Adicionar regra](../../assets/add-rule2.jpeg)
 
-   ![Adicionar regra](assets/add-rule3.jpeg)
+   ![Adicionar regra](../../assets/add-rule3.jpeg)
 
-1. Selecione [!UICONTROL **Salvar**] para salvar a audiência. Você pode manter essa configuração pelo tempo necessário para validar se o público-alvo ainda está funcionando como esperado.
+1. Selecione **[!UICONTROL Salvar]** para salvar a audiência. Você pode manter essa configuração pelo tempo necessário para validar se o público-alvo ainda está funcionando como esperado.
 
-1. Após a conclusão da validação, remova o campo antigo e selecione [!UICONTROL **Salvar**] para salvar o público-alvo.
+1. Após a conclusão da validação, remova o campo antigo e selecione **[!UICONTROL Salvar]** para salvar o público-alvo.
 
-   ![Adicionar regra](assets/add-rule4.jpeg)
+   ![Adicionar regra](../../assets/add-rule4.jpeg)
 
 1. Valide o público-alvo novamente.
 

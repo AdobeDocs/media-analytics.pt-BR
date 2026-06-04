@@ -1,41 +1,22 @@
 ---
-title: Ativação de relatórios de mídia
-description: Saiba mais sobre o conjunto de relatórios de mídia que coleta métricas de mídia.  Siga estas etapas para configurar relatórios de mídia antes do envio dos dados de mídia.
-uuid: d306068d-a308-4b6e-8a72-742dda0de428
-exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+title: Configurar relatórios para implementações somente do Analytics
+description: Ative os módulos do conjunto de relatórios de mídia no Adobe Analytics para que os dados de mídia de transmissão possam ser coletados e relatados.
 feature: Streaming Media
-role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
-  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
-  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+role: User, Admin
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 20%
+source-wordcount: '580'
+ht-degree: 8%
 
 ---
 
-# Ativação de relatórios de mídia
+# Configurar relatórios para implementações somente do Analytics
+
+Para que uma implementação somente no Analytics possa coletar dados de mídia de transmissão, cada conjunto de relatórios que recebe esses dados deve ser configurado para habilitar os módulos de mídia apropriados. Esta página descreve como ativar esses módulos e onde encontrar os relatórios resultantes.
+
+* **Pré-requisitos**: uma implementação do Adobe Analytics. Consulte a [visão geral da implementação somente do Analytics](/help/implementation/analytics-only/overview.md) e o método de implementação escolhido.
+
+## Ativar relatórios de mídia em um conjunto de relatórios
 
 Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado antes do envio dos dados de mídia.
 
@@ -44,11 +25,11 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
 
    ![Captura de tela do menu do gerenciador de conjunto de relatórios](assets/media-reporting.png)
 
-1. Na página **[!UICONTROL Relatórios de Mídia]**, habilite os componentes de mídia de streaming desejados (veja abaixo).
+1. Na página **[!UICONTROL Relatórios de Mídia]**, habilite os módulos de mídia de streaming desejados (veja abaixo).
 
 1. Selecione **[!UICONTROL Salvar].**
 
-   Se esse conjunto de relatórios já estiver configurado para coletar dados de mídia, uma página de configuração adicional será exibida depois de clicar em **[!UICONTROL Salvar]**. Se você visualizar a página **[!UICONTROL Avaliação da mídia principal]**, continue para a próxima etapa.
+   Se este conjunto de relatórios já estiver configurado para coletar dados de mídia, uma página de configuração adicional será exibida depois que você selecionar **[!UICONTROL Salvar]**. Se você visualizar a página **[!UICONTROL Avaliação da mídia principal]**, continue para a próxima etapa.
 
 ## Módulos de streaming de mídia disponíveis
 
@@ -141,7 +122,7 @@ A avaliação de mídia inclui os seguintes módulos:
       * [[!UICONTROL Duração total do buffer]](/help/reporting/metrics/total-buffer-duration.md)
 * **[!UICONTROL Metadados de vídeo]**: permite o rastreamento de atributos padrão de conteúdo de vídeo, como programa, temporada e gênero.
    * **Dimensões:**
-      * [!UICONTROL Carregamentos de anúncio]
+      * [[!UICONTROL Carregamentos de anúncio]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL Parte do dia]](/help/reporting/dimensions/day-part.md)
       * [[!UICONTROL Episódio]](/help/reporting/dimensions/episode.md)
       * [[!UICONTROL Gênero]](/help/reporting/dimensions/genre.md)
@@ -178,3 +159,9 @@ A avaliação de mídia inclui os seguintes módulos:
       * [[!UICONTROL Fluxos afetados pela função em foco]](/help/reporting/metrics/in-focus-streams-impacted.md)
       * [[!UICONTROL Fluxos afetados pela função mudo]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL Fluxos afetados pela imagem na imagem]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+
+>[!MORELIKETHIS]
+>
+>* [Relatórios de mídia no Workspace](/help/reporting/workspace/media-workspace-templates.md)
+>* [Visão geral das dimensões](/help/reporting/dimensions/overview.md)
+>* [Visão geral das métricas](/help/reporting/metrics/overview.md)

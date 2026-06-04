@@ -3,7 +3,7 @@ title: Fluxos afetados pela alteração na taxa de bits
 description: Conta sessões em que ocorreu pelo menos uma alteração de taxa de bits.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 10%
@@ -21,7 +21,7 @@ O back-end de mídia define esse sinalizador na primeira vez que um evento de [a
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.qoe.bitrateChange` quando a [[!UICONTROL Qualidade de Mídia]](/help/reporting/media-reports-enable.md) está habilitada. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.qoe.bitrateChange` quando a [[!UICONTROL Qualidade de Mídia]](/help/reporting/setup/analytics-reporting.md) está habilitada. |
 | Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateChange` |

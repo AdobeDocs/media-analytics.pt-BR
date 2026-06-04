@@ -3,7 +3,7 @@ title: Caminho da mídia
 description: Registra a ID de conteúdo como uma variável de tráfego para análise de caminho.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 5%
@@ -21,7 +21,7 @@ O caminho da mídia é derivado automaticamente da ID de conteúdo definida no i
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletada automaticamente dos dados de contexto `a.media.name` como uma variável de tráfego (prop) quando o [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Coletada automaticamente dos dados de contexto `a.media.name` como uma variável de tráfego (prop) quando o [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | N/D — use [Conteúdo](content.md) para análise de caminho |
 | Feeds de dados | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |

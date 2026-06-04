@@ -3,7 +3,7 @@ title: Episódio
 description: Reporta o número do episódio em uma temporada.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 10%
@@ -27,7 +27,7 @@ O episódio é definido pelo reprodutor no início da sessão.
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.episode` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md) estão habilitados. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.episode` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/setup/analytics-reporting.md) estão habilitados. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.episode`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videoepisode`, `post_videoepisode` |
 | Audience Manager | `c_contextdata.a.media.episode` |

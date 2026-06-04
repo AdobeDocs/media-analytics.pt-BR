@@ -3,7 +3,7 @@ title: Faixa de horário
 description: Reporta o período do dia (Manhã, Tarde, Horário nobre, Tarde da Noite) quando o conteúdo era transmitido ou reproduzido.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -27,7 +27,7 @@ A parte do dia é definida pelo reprodutor no início da sessão.
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.dayPart` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md) estão habilitados. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.dayPart` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/setup/analytics-reporting.md) estão habilitados. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videodaypart`, `post_videodaypart` |
 | Audience Manager | `c_contextdata.a.media.dayPart` |

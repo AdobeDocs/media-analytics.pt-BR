@@ -19,7 +19,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 369
 ht-degree: 10%
@@ -40,13 +40,13 @@ Alguns desses relatórios são particularmente úteis para analisar dados de mí
 
 Veja a seguir uma lista dos relatórios padrão que são úteis ao analisar dados de mídia de transmissão:
 
-* [!UICONTROL **Consumo de conteúdo de mídia**]: cria um relatório que mostra qual conteúdo é mais consumido e envolve os usuários.
+* **[!UICONTROL Consumo de conteúdo de mídia]**: cria um relatório que mostra qual conteúdo é mais consumido e envolve os usuários.
 
-* [!UICONTROL **Consumo de streaming de mídia**]: cria um relatório com um painel, conforme mostrado no exemplo abaixo.
+* **[!UICONTROL Consumo de streaming de mídia]**: cria um relatório com um painel, conforme mostrado no exemplo abaixo.
 
-* [!UICONTROL **Recenticidade, frequência, fidelidade de mídia**]: cria um relatório que mostra a recenticidade (quantos dias desde a última visita), a frequência (quantas visitas por visitante) e a fidelidade (com que frequência os coortes de usuários retornam ao site)
+* **[!UICONTROL Recenticidade, frequência, fidelidade de mídia]**: cria um relatório que mostra a recenticidade (quantos dias desde a última visita), a frequência (quantas visitas por visitante) e a fidelidade (com que frequência os coortes de usuários retornam ao site)
 
-Por exemplo, se você escolher o relatório [!UICONTROL **Consumo de streaming de mídia**], será apresentado um projeto com o seguinte painel:
+Por exemplo, se você escolher o relatório **[!UICONTROL Consumo de streaming de mídia]**, será apresentado um projeto com o seguinte painel:
 
 ![](/help/reporting/assets/aa-workspace.png)
 

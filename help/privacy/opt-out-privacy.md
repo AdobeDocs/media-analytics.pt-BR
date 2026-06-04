@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 750
 ht-degree: 4%
@@ -41,7 +41,7 @@ Os controles de recusa operam por dispositivo ou navegador. O respeito pelo cons
 
 O Web SDK respeita as preferências de consentimento definidas usando o comando `setConsent`. Quando o consentimento é definido como `"out"`, o Web SDK interrompe o encaminhamento de todos os eventos, incluindo chamadas de rastreamento de streaming de mídia, para a Edge Network. O estado de consentimento persiste no armazenamento do navegador entre as sessões.
 
-Antes de implementar a opção de recusa, verifique se o Web SDK está configurado com o componente de Mídia de transmissão. Para obter mais informações, consulte [Configurar Web SDK](../implementation/edge/edge-web-sdk.md).
+Antes de implementar a opção de recusa, verifique se o Web SDK está configurado com o componente de Mídia de transmissão. Para obter mais informações, consulte [Configurar Web SDK](../implementation/edge/web-sdk.md).
 
 Definir o consentimento para recusa usando o padrão de consentimento do Adobe 2.0:
 

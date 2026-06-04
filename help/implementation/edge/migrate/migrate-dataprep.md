@@ -18,7 +18,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 700
 ht-degree: 0%
@@ -37,11 +37,11 @@ Para migrar os mapeamentos de Preparo de dados do tipo de dados antigo chamado &
 >
 >Para evitar a perda de dados, verifique se o conector de origem do Analytics foi implantado usando os novos campos `mediaReporting` antes de concluir as etapas desta seção.
 
-1. Na Adobe Experience Platform, na seção [!UICONTROL **Fontes**], vá para a guia [!UICONTROL **Fluxos de Dados**].
+1. Na Adobe Experience Platform, na seção **[!UICONTROL Fontes]**, vá para a guia **[!UICONTROL Fluxos de Dados]**.
 
 1. Localize o fluxo de dados responsável pela importação de dados de mídia de transmissão do Adobe Analytics para o Adobe Experience Platform por meio da Coleção de dados da Adobe.
 
-1. Selecione [!UICONTROL **Atualizar fluxo de dados**] para modificar a configuração do Preparo de dados substituindo cada mapeamento de origem personalizado que contenha um campo obsoleto pelo novo campo correspondente do novo objeto XDM.
+1. Selecione **[!UICONTROL Atualizar fluxo de dados]** para modificar a configuração do Preparo de dados substituindo cada mapeamento de origem personalizado que contenha um campo obsoleto pelo novo campo correspondente do novo objeto XDM.
 
 1. Localize os mapeamentos que contêm campos de origem do objeto &quot;Mídia&quot; obsoleto.
 
@@ -55,19 +55,19 @@ Consulte o parâmetro [ID de Conteúdo](/help/reporting/dimensions/content.md) e
 
 Para facilitar o cumprimento das diretrizes de migração, considere o exemplo de fluxo de dados a seguir que contém um único mapeamento. Nesse caso, você precisa aplicar as diretrizes de migração apenas uma vez.
 
-1. Na Adobe Experience Platform, na seção [!UICONTROL **Fontes**], vá para a guia [!UICONTROL **Fluxos de Dados**].
+1. Na Adobe Experience Platform, na seção **[!UICONTROL Fontes]**, vá para a guia **[!UICONTROL Fluxos de Dados]**.
 
 1. Localize o fluxo de dados responsável pela importação de dados de mídia de transmissão do Adobe Analytics para o Adobe Experience Platform por meio da Coleção de dados da Adobe.
 
 1. Selecione **[!UICONTROL Atualizar fluxo de dados]** para inserir a interface de edição conforme mostrado na imagem abaixo.
 
-   ![Fluxo de dados do AEP](assets/aep-dataflow.jpeg)
+   ![Fluxo de dados do AEP](../../assets/aep-dataflow.jpeg)
 
 1. Na guia **[!UICONTROL Mapeamento]**, selecione **[!UICONTROL Personalizado]**.
 
 1. Identifique os mapeamentos personalizados que dependem dos campos `media.mediaTimed` como fontes.
 
-   ![Fluxo de dados do AEP continuado](assets/aep-dataflow2.jpeg)
+   ![Fluxo de dados do AEP continuado](../../assets/aep-dataflow2.jpeg)
 
    Neste exemplo, como você criou um grupo de campos personalizados no esquema na organização de desenvolvimento, o campo de destino está abaixo de `_dcbl`. O caminho do grupo de campos personalizados é diferente com base no nome da organização.
 
@@ -75,17 +75,17 @@ Para facilitar o cumprimento das diretrizes de migração, considere o exemplo d
 
    Por exemplo, para Rede, o correspondente para `media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork é `xdm.mediaReporting.sessionDetails.network`.
 
-   ![Caminho atualizado do campo XDM](assets/xdm-field-path-old-and-new.jpeg)
+   ![Caminho atualizado do campo XDM](../../assets/xdm-field-path-old-and-new.jpeg)
 
 1. No campo **[!UICONTROL Source field]**, substitua o caminho `media.mediaTimed` pelo caminho `mediaReporting`. O campo de destino permanece inalterado.
 
-   ![Fluxo de dados do AEP continuado](assets/aep-dataflow3.jpeg)
+   ![Fluxo de dados do AEP continuado](../../assets/aep-dataflow3.jpeg)
 
 1. Selecione **[!UICONTROL Avançar]** para salvar as alterações.
 
    O status é exibido como **[!UICONTROL Processando]**. Depois que as alterações forem aplicadas, o status será exibido como **[!UICONTROL Habilitado]**.
 
-   ![Fluxo de dados do AEP continuado](assets/aep-dataflow5.jpeg)
+   ![Fluxo de dados do AEP continuado](../../assets/aep-dataflow5.jpeg)
 
 ## Exemplo com tipos de dados diferentes
 
@@ -99,8 +99,8 @@ Se o tipo de origem for um número e o tipo de destino for um booleano, você pr
 
 Mapeando com `media.mediaTimed` para um campo personalizado.
 
-![Fluxo de dados do AEP continuado](assets/aep-dataflow6.jpeg)
+![Fluxo de dados do AEP continuado](../../assets/aep-dataflow6.jpeg)
 
 Mapeando com `mediaReporting` para o mesmo campo personalizado:
 
-![Fluxo de dados do AEP continuado](assets/aep-dataflow7.jpeg)
+![Fluxo de dados do AEP continuado](../../assets/aep-dataflow7.jpeg)

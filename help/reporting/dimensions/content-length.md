@@ -3,7 +3,7 @@ title: Extensão do conteúdo
 description: Informa a duração total em segundos de cada sessão de mídia conforme definido no início da sessão.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 6%
@@ -27,7 +27,7 @@ A duração do conteúdo é definida pelo reprodutor no início da sessão. O va
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.length` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.length` quando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |

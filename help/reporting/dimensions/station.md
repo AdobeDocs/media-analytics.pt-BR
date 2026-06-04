@@ -3,7 +3,7 @@ title: Estação
 description: Reporta o nome ou ID da estação de rádio para o conteúdo de difusão de áudio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 10%
@@ -27,7 +27,7 @@ A estação é definida pelo reprodutor no início da sessão para conteúdo de 
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.station` quando os [[!UICONTROL Metadados de áudio]](/help/reporting/media-reports-enable.md) estão habilitados. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.station` quando os [[!UICONTROL Metadados de áudio]](/help/reporting/setup/analytics-reporting.md) estão habilitados. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.station`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videoaudiostation` |
 | Audience Manager | `c_contextdata.a.media.station` |

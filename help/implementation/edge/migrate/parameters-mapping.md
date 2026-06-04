@@ -16,10 +16,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 1325
-ht-degree: 20%
+source-wordcount: 1331
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ Este documento fornece uma lista abrangente de todos os parâmetros do Media Ana
 
 ## Variáveis reservadas do Media Analytics
 
-A partir de outubro de 2025, o caminho do campo XDM `media.mediaTimed` foi totalmente descontinuado e substituído por `mediaReporting`. Os dados assimilados após outubro de 2025 incluem apenas `mediaReporting` campos. Os dados anteriores permanecem disponíveis no caminho do campo herdado, refletido nas tabelas abaixo em **Campo XDM herdado**.
+A partir de outubro de 2025, o caminho do campo XDM `media.mediaTimed` usado pelo conector de origem do Analytics foi totalmente descontinuado e substituído por `mediaReporting`. Os dados assimilados após outubro de 2025 incluem apenas `mediaReporting` campos. Os dados anteriores permanecem disponíveis no caminho do campo herdado, refletido nas tabelas abaixo em **Campo XDM herdado**.
 
 ### Comportamento de chamada keep-alive
 

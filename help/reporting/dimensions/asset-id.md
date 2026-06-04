@@ -3,7 +3,7 @@ title: ID do ativo
 description: Reporta um identificador estável do setor para o ativo de mídia subjacente.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -28,7 +28,7 @@ A ID do ativo é definida pelo reprodutor no início da sessão.
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.asset` para uma eVar. |
-| Adobe Analytics (classificação) | Classificação da dimensão [Conteúdo (ID)](content.md) — a Adobe cria automaticamente essa classificação quando os **[[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md)** estão habilitados para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
+| Adobe Analytics (classificação) | Classificação da dimensão [Conteúdo (ID)](content.md) — a Adobe cria automaticamente essa classificação quando os **[[!UICONTROL Metadados de vídeo]](/help/reporting/setup/analytics-reporting.md)** estão habilitados para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.assetID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.asset`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |
@@ -36,7 +36,7 @@ A ID do ativo é definida pelo reprodutor no início da sessão.
 
 ## Abordagem de classificação
 
-O Adobe cria automaticamente a estrutura de classificação da ID de ativo quando os **[[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md)** estão habilitados para o conjunto de relatórios. Você é responsável por preencher e manter a classificação usando [Conjuntos de classificações](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+O Adobe cria automaticamente a estrutura de classificação da ID de ativo quando os **[[!UICONTROL Metadados de vídeo]](/help/reporting/setup/analytics-reporting.md)** estão habilitados para o conjunto de relatórios. Você é responsável por preencher e manter a classificação usando [Conjuntos de classificações](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Essa abordagem fornece um relacionamento :1 garantido entre cada ID de conteúdo e sua ID de ativo. As atualizações de classificação se aplicam retroativamente a todos os dados históricos dessa ID.
 

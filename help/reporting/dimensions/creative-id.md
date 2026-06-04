@@ -3,7 +3,7 @@ title: ID de criação
 description: Relata o identificador criativo do anúncio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 3%
@@ -26,7 +26,7 @@ A dimensão **Creative ID** informa o identificador criativo do anúncio. Use a 
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.creative` para uma eVar. |
-| Adobe Analytics (classificação) | Classificação da dimensão [Anúncio](ad.md) — a Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/media-reports-enable.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
+| Adobe Analytics (classificação) | Classificação da dimensão [Anúncio](ad.md) — a Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/setup/analytics-reporting.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.ad.creative`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |
@@ -34,7 +34,7 @@ A dimensão **Creative ID** informa o identificador criativo do anúncio. Use a 
 
 ## Abordagem de classificação
 
-O Adobe cria a estrutura de classificação da Creative ID automaticamente quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/media-reports-enable.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter a classificação usando [Conjuntos de classificações](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+O Adobe cria a estrutura de classificação da Creative ID automaticamente quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/setup/analytics-reporting.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter a classificação usando [Conjuntos de classificações](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Essa abordagem fornece uma relação garantida do :1 entre cada ID de anúncio e sua ID criativa. As atualizações de classificação se aplicam retroativamente a todos os dados históricos dessa ID.
 

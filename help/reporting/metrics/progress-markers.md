@@ -3,7 +3,7 @@ title: Marcadores de progresso
 description: Conte as sessões cujo indicador de reprodução ultrapassou cada um dos cinco limites fixos (10%, 25%, 50%, 75% e 95%).
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 9%
@@ -31,7 +31,7 @@ Acionado quando o indicador de reprodução atinge pela primeira vez 10% da dura
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress10` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress10` quando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress10`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress10` |
@@ -42,7 +42,7 @@ Acionado quando o indicador de reprodução atinge pela primeira vez 25% da dura
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress25` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress25` quando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress25`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress25` |
@@ -53,7 +53,7 @@ Acionado quando o indicador de reprodução atinge pela primeira vez 50% da dura
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress50` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress50` quando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress50`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress50` |
@@ -64,7 +64,7 @@ Acionado quando o indicador de reprodução atinge pela primeira vez 75% da dura
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress75` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress75` quando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress75`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress75` |
@@ -75,7 +75,7 @@ Acionado quando o indicador de reprodução atinge pela primeira vez 95% da dura
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress95` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.progress95` quando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress95`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `event_list`, `post_event_list` (consulte a pesquisa de [`event.tsv`](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress95` |

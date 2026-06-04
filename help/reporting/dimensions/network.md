@@ -3,7 +3,7 @@ title: Rede
 description: Reporta a rede de transmissão ou o nome do canal.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 11%
@@ -27,7 +27,7 @@ A rede é definida pelo reprodutor no início da sessão.
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.network` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md) estão habilitados. |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.network` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/setup/analytics-reporting.md) estão habilitados. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.network`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videonetwork`, `post_videonetwork` |
 | Audience Manager | `c_contextdata.a.media.network` |

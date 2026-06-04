@@ -17,7 +17,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 759
 ht-degree: 1%
@@ -58,7 +58,7 @@ Para migrar campos derivados para o novo tipo de dados:
 
 Consulte o parâmetro [ID de Conteúdo](/help/reporting/dimensions/content.md) e o restante das variáveis de mídia de streaming documentadas em [Serviços de mídia de streaming](/help/media-overview.md) para mapear entre os campos antigos e os novos campos. O caminho de campo antigo é encontrado na propriedade &quot;Caminho do campo XDM&quot;, enquanto o novo caminho de campo é encontrado na propriedade &quot;Caminho do campo XDM do relatório&quot;.
 
-![Caminhos antigos e novos do campo XDM](assets/field-paths-updated.jpeg)
+![Caminhos antigos e novos do campo XDM](../../assets/field-paths-updated.jpeg)
 
 ## Exemplo
 
@@ -72,13 +72,13 @@ Você pode usar qualquer uma das seguintes opções para atualizar a visualizaç
 
 1. Localize uma métrica ou uma dimensão que esteja usando o campo antigo do tipo de dados obsoleto.
 
-   ![Caminho de campo antigo na exibição de dados](assets/old-field-data-view.jpeg)
+   ![Caminho de campo antigo na exibição de dados](../../assets/old-field-data-view.jpeg)
 
 1. Verifique o novo campo correspondente no artigo [Chapter offset](/help/reporting/dimensions/chapter-offset.md).
 
 1. Localize o novo campo correspondente na visualização de dados.
 
-   ![Novo caminho de campo na exibição de dados](assets/new-field-data-view.jpeg)
+   ![Novo caminho de campo na exibição de dados](../../assets/new-field-data-view.jpeg)
 
 1. Arraste o novo campo para a métrica ou dimensão.
 
@@ -92,43 +92,43 @@ Se você quiser criar um campo derivado para o &quot;Nome do capítulo&quot; que
 
 1. Arraste uma cláusula &quot;Case When&quot; para os campos derivados.
 
-   ![Personalizar o novo campo para criar uma visualização de dados](assets/create-derived-field2.jpeg)
+   ![Personalizar o novo campo para criar uma visualização de dados](../../assets/create-derived-field2.jpeg)
 
-1. Preencha a cláusula [!UICONTROL **If**] usando o valor do **Caminho do Campo XDM do Relatório**, conforme mostrado na página [Nome do capítulo](/help/reporting/dimensions/chapter-name.md).
+1. Preencha a cláusula **[!UICONTROL If]** usando o valor do **Caminho do Campo XDM do Relatório**, conforme mostrado na página [Nome do capítulo](/help/reporting/dimensions/chapter-name.md).
 
-   ![Nome do capítulo](assets/chapter-name.jpeg)
+   ![Nome do capítulo](../../assets/chapter-name.jpeg)
 
-   ![Nome do capítulo](assets/chapter-name2.jpeg)
+   ![Nome do capítulo](../../assets/chapter-name2.jpeg)
 
-   ![Condição de campo derivada](assets/derived-field-condition.jpeg)
+   ![Condição de campo derivada](../../assets/derived-field-condition.jpeg)
 
-   ![Nome do capítulo de campo derivado](assets/derived-field-chapter-name.jpeg)
+   ![Nome do capítulo de campo derivado](../../assets/derived-field-chapter-name.jpeg)
 
 1. Preencha o valor de fallback usando o campo antigo do tipo de dados obsoleto &quot;Mídia&quot;.
 
-   ![Valor de fallback](assets/fallback-value.jpeg)
+   ![Valor de fallback](../../assets/fallback-value.jpeg)
 
-   ![Valor de fallback](assets/fallback-value2.jpeg)
+   ![Valor de fallback](../../assets/fallback-value2.jpeg)
 
    Essa é a definição final do campo derivado.
 
-   ![Campo derivado concluído](assets/derived-field-complete.jpeg)
+   ![Campo derivado concluído](../../assets/derived-field-complete.jpeg)
 
 1. Para atualizar os campos derivados, localize um campo derivado que esteja usando os campos obsoletos antigos (caminho que começa com `media.mediaTimed`).
 
-   ![campo derivado](assets/old-derived-field.jpeg)
+   ![campo derivado](../../assets/old-derived-field.jpeg)
 
-1. Passe o mouse sobre o campo derivado que você deseja atualizar e selecione o ícone [!UICONTROL **Editar**].
+1. Passe o mouse sobre o campo derivado que você deseja atualizar e selecione o ícone **[!UICONTROL Editar]**.
 
 1. Localize todos os campos do tipo de dados antigo (caminho que começa com `media.mediaTimed`) e substitua-os pelo novo campo correspondente.
 
-   ![Localizar campo com tipo de dados antigo](assets/locate-fields-with-old-datatype.jpeg)
+   ![Localizar campo com tipo de dados antigo](../../assets/locate-fields-with-old-datatype.jpeg)
 
 1. Verifique o novo campo correspondente no artigo [Nome do conteúdo](/help/reporting/dimensions/content-name.md).
 
 1. Substitua o campo antigo pelo novo campo.
 
-   ![Novo campo](assets/derived-field-new.jpeg)
+   ![Novo campo](../../assets/derived-field-new.jpeg)
 
 1. Repita esse processo para todos os campos derivados usando campos do tipo de dados obsoleto antigo &quot;Mídia&quot;.
 
