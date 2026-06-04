@@ -3,7 +3,7 @@ title: IDs de erro externo
 description: Relata identificadores de erro exclusivos de fontes externas, como erros de CDN.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 7%
@@ -21,8 +21,8 @@ O reprodutor passa IDs de erro externo para o rastreador em eventos [error](/hel
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.qoe.externalErrors` quando a [[!UICONTROL Qualidade de Mídia]](/help/reporting/media-reports-enable.md) está habilitada. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.externalErrors`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.qoe.externalErrors` quando a [[!UICONTROL Qualidade de Mídia]](/help/reporting/setup/analytics-reporting.md) está habilitada. |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.externalErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Feeds de dados | `videoqoeextneralerrors` |
 | Audience Manager | `c_contextdata.a.media.qoe.externalErrors` |
 

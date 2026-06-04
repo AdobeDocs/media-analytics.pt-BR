@@ -3,7 +3,7 @@ title: Nome do player do anúncio
 description: Relata qual player renderizou cada anúncio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **Dimensão de relatório do**&#x200B;player do anúncio. Consulte [Nome do player do anúncio](/help/implementation/variables/ads/ad-player-name.md) para saber como coletar essa variável.*
+*Esta página aborda a **Dimensão de relatório do**player do anúncio. Consulte [Nome do player do anúncio](/help/implementation/variables/ads/ad-player-name.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ O nome do player do anúncio é definido pelo player em cada evento [início de 
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.ad.playerName` quando o [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.playerName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.ad.playerName` quando o [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Feeds de dados | `videoadplayername`, `post_videoadplayername` |
 | Audience Manager | `c_contextdata.a.media.ad.playerName` |
 

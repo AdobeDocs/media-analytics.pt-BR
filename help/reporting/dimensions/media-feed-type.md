@@ -3,7 +3,7 @@ title: Tipo de feed de mídia
 description: Reporta o feed de transmissão (por exemplo, East-HD ou West-SD) quando o mesmo conteúdo é entregue por meio de vários feeds.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Tipo de feed de mídia**&#x200B;dimensão de relatório. Consulte [Tipo de feed de mídia](/help/implementation/variables/standard-metadata/media-feed-type.md) para saber como coletar essa variável.*
+*Esta página abrange a **Tipo de feed de mídia**dimensão de relatório. Consulte [Tipo de feed de mídia](/help/implementation/variables/standard-metadata/media-feed-type.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ O tipo de feed de mídia é definido pelo reprodutor no início da sessão.
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.feed` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/media-reports-enable.md) estão habilitados. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.feed`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.feed` quando os [[!UICONTROL Metadados de vídeo]](/help/reporting/setup/analytics-reporting.md) estão habilitados. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videofeedtype`, `post_videofeedtype` |
 | Audience Manager | `c_contextdata.a.media.feed` |
 

@@ -3,7 +3,7 @@ title: Mostrar tipo
 description: Identifique o formato de conteúdo (episódio completo, pré-visualização, clipe ou outro) usando um código de número inteiro de sequência.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -21,17 +21,17 @@ ht-degree: 8%
 
 A variável show type identifica o formato do conteúdo usando um código inteiro de string:
 
-- `"0"`: Episódio completo
-- `"1"`: Pré-visualização ou trailer
-- `"2"`: Clipe
-- `"3"`: Outro
+* `"0"`: Episódio completo
+* `"1"`: Pré-visualização ou trailer
+* `"2"`: Clipe
+* `"3"`: Outro
 
 Use-a para separar a visualização completa de programas do conteúdo curto, como trailers e clipes, ao medir o engajamento.
 
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.type` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.type` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |

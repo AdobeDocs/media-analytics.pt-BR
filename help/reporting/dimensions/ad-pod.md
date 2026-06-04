@@ -3,7 +3,7 @@ title: Pod de anúncio
 description: Informa cada ad break exclusivo, digitado por uma ID de pod gerada automaticamente.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -21,8 +21,8 @@ A ID do pod de anúncio é gerada automaticamente pela SDK quando um evento [ad 
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.ad.pod` quando o [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.ad.pod` quando o [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Feeds de dados | `videoadpod`, `post_videoadpod` |
 | Audience Manager | N/D |
 

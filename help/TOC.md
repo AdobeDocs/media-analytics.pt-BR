@@ -5,9 +5,9 @@ user-guide-title: Guia de serviços para mídia de streaming
 breadcrumb-title: Guia de serviços para mídia de streaming
 user-guide-description: Implementar serviços de mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '754'
 ht-degree: 35%
 
 ---
@@ -67,8 +67,10 @@ ht-degree: 35%
          + [Resumo de conteúdo](implementation/variables/core/content-resumes.md)
          + [Tipo de conteúdo](implementation/variables/core/content-type.md)
          + [Sinalizador de mídia baixada](implementation/variables/core/media-downloaded-flag.md)
+         + [Versão do aplicativo](implementation/variables/core/app-version.md)
          + [Tipo de transmissão](implementation/variables/core/stream-type.md)
       + Metadados padrão {#metadata}
+         + [Tipo de carregamento de anúncio](implementation/variables/standard-metadata/ad-load-type.md)
          + [Álbum](implementation/variables/standard-metadata/album.md)
          + [Artista](implementation/variables/standard-metadata/artist.md)
          + [ID do ativo](implementation/variables/standard-metadata/asset-id.md)
@@ -123,24 +125,30 @@ ht-degree: 35%
          + [Mudo](implementation/variables/player-state/mute.md)
          + [Picture in picture](implementation/variables/player-state/picture-in-picture.md)
    + Implementações do Edge (recomendado) {#edge}
-      + [Pré-requisitos](/help/implementation/edge/prerequisites-edge.md)
-      + SDKs do Media Edge / Extensão {#media-edge-sdk}
-         + [Configuração de SDKs/extensão de borda de mídia](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
-         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
-      + [API de borda de mídia](/help/implementation/edge/implementation-edge-api.md)
-      + [Suporte a metadados personalizados](implementation/edge/implementation-edge-custom-metadata.md)
-      + [Esquema de relatório XDM](/help/implementation/edge/platform-data.md)
+      + [Visão geral da implementação do Edge](/help/implementation/edge/overview.md)
+      + [SDK da web](/help/implementation/edge/web-sdk.md)
+      + [Extensão da tag do SDK da web](/help/implementation/edge/web-sdk-tags.md)
+      + [iOS](/help/implementation/edge/ios.md)
+      + [Extensão de tag do iOS](/help/implementation/edge/ios-tags.md)
+      + [Android](/help/implementation/edge/android.md)
+      + [Extensão de tag do Android](/help/implementation/edge/android-tags.md)
+      + [Roku](/help/implementation/edge/roku.md)
+      + [API de borda de mídia](/help/implementation/edge/media-edge-api.md)
+      + [Suporte a metadados personalizados](/help/implementation/edge/custom-metadata.md)
+      + [Esquema de relatório XDM](/help/implementation/edge/reporting-schema.md)
+      + Migrar campos XDM {#xdm-updates}
+         + [Migrar públicos](implementation/edge/migrate/migrate-audiences.md)
+         + [Migrar configuração do CJA](implementation/edge/migrate/migrate-cja-setup.md)
+         + [Migrar preparação de dados](implementation/edge/migrate/migrate-dataprep.md)
+         + [Migrar perfis](implementation/edge/migrate/migrate-profiles.md)
+         + [Mapeamento de parâmetros de mídia](implementation/edge/migrate/parameters-mapping.md)
    + Implementações somente do Adobe Analytics {#analytics-only}
-      + [Pré-requisitos](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-      + [Ativação de relatórios de mídia](implementation/media-sdk/setup/media-reports-enable.md)
-      + SDKs de mídia / Extensão {#media-sdk}
-         + [SDK da Web JavaScript](implementation/media-sdk/setup/web-implementation.md)
-         + [Referência da API do JavaScript Web SDK](implementation/media-sdk/setup/js-3x-api-reference.md)
-         + [Migração do JS SDK 2.x para 3.x](implementation/media-sdk/setup/migrate-js-2x-to-3x.md)
-         + [Extensão do Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [SDKs móveis](implementation/media-sdk/setup/mobile-implementation.md)
-      + APIs da coleção de mídia - Implementação {#streaming-media-apis}
+      + [Visão geral da implementação somente no Analytics](/help/implementation/analytics-only/overview.md)
+      + [JavaScript](/help/implementation/analytics-only/javascript.md)
+      + [Extensão de tag do Media Analytics](/help/implementation/analytics-only/javascript-tags.md)
+      + [Chromecast](/help/implementation/analytics-only/chromecast.md)
+      + [API da coleção de mídia](/help/implementation/analytics-only/media-collection-api.md)
+      + Referência da API da coleção de mídia {#streaming-media-apis}
          + [Coleção de mídia](implementation/media-collection-api/mc-api-overview.md)
          + [Início rápido da API](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
          + [Solicitação de sessões](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -158,23 +166,22 @@ ht-degree: 35%
             + [Condições de tempo-limite](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Controlar a ordem dos eventos](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Enfileirar eventos quando a resposta das sessões é lenta](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + Migrar campos XDM {#xdm-updates}
-      + [Migrar públicos](implementation/migrate-audiences.md)
-      + [Migrar configuração do CJA](implementation/migrate-cja-setup.md)
-      + [Migrar preparação de dados](implementation/migrate-dataprep.md)
-      + [Migrar perfis](implementation/migrate-profiles.md)
-      + [Mapeamento de parâmetros de mídia](implementation/parameters-mapping.md)
 + Geração de relatórios {#reporting}
+   + Configurar relatórios {#reporting-setup}
+      + [Implementações do Edge](reporting/setup/edge-reporting.md)
+      + [Implementações somente do Analytics](reporting/setup/analytics-reporting.md)
    + Dimensões {#dimensions}
       + [Visão geral de dimensões](reporting/dimensions/overview.md)
       + [Publicidade](reporting/dimensions/ad.md)
       + [Posição do anúncio no pod](reporting/dimensions/ad-in-pod-position.md)
       + [Comprimento do anúncio](reporting/dimensions/ad-length.md)
+      + [Carregamentos de anúncios](reporting/dimensions/ad-load-type.md)
       + [Nome do anúncio](reporting/dimensions/ad-name.md)
       + [Nome do player do anúncio](reporting/dimensions/ad-player-name.md)
       + [Pod de anúncio](reporting/dimensions/ad-pod.md)
       + [Anunciante](reporting/dimensions/advertiser.md)
       + [Álbum](reporting/dimensions/album.md)
+      + [Versão do aplicativo](reporting/dimensions/app-version.md)
       + [Artista](reporting/dimensions/artist.md)
       + [ID do ativo](reporting/dimensions/asset-id.md)
       + [Autor](reporting/dimensions/author.md)
@@ -292,7 +299,7 @@ ht-degree: 35%
    + [Segmentos de mídia](reporting/segments.md)
    + Relatórios de mídia padrão {#media-default-reports}
       + [Visão geral dos relatórios padrão](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Visão geral da mídia &#x200B;](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Visão geral da mídia ](reporting/reports-and-analytics/media-reports-overview.md)
       + [Detalhes da mídia](reporting/reports-and-analytics/media-reports-detail.md)
       + [Relatório de faixa horária de mídia](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)

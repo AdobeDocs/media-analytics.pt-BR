@@ -3,7 +3,7 @@ title: Tipo de transmissão
 description: Registra se cada sessão de mídia era conteúdo de áudio ou vídeo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 6%
@@ -15,11 +15,11 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Tipo de fluxo**&#x200B;dimensão de relatório. Consulte [Tipo de fluxo](/help/implementation/variables/core/stream-type.md) para saber como coletar essa variável.*
+*Esta página abrange a **Tipo de fluxo**dimensão de relatório. Consulte [Tipo de fluxo](/help/implementation/variables/core/stream-type.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
-A dimensão **Tipo de fluxo** captura se cada sessão de mídia foi conteúdo de áudio ou vídeo. Ele fica disponível na Adobe Analytics uma vez que o [Media Core é habilitado](/help/implementation/media-sdk/setup/media-reports-enable.md) para o conjunto de relatórios e no Customer Journey Analytics para qualquer conjunto de dados que inclua dados de mídia de streaming.
+A dimensão **Tipo de fluxo** captura se cada sessão de mídia foi conteúdo de áudio ou vídeo. Ele fica disponível na Adobe Analytics uma vez que o [Media Core é habilitado](/help/reporting/setup/analytics-reporting.md) para o conjunto de relatórios e no Customer Journey Analytics para qualquer conjunto de dados que inclua dados de mídia de streaming.
 
 ## Como essa dimensão é preenchida
 
@@ -27,8 +27,8 @@ O tipo de fluxo é definido pelo reprodutor no início da sessão e transportado
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.streamType` quando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.streamType` quando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videostreamtype` |
 | Audience Manager | `c_contextdata.a.media.streamType` |
 

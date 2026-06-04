@@ -3,7 +3,7 @@ title: Comprimento do anúncio
 description: Relata a duração em segundos de cada anúncio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página abrange a **Comprimento do anúncio**&#x200B;dimensão de relatório. Consulte [Comprimento do anúncio](/help/implementation/variables/ads/ad-length.md) para saber como coletar essa variável.*
+*Esta página abrange a **Comprimento do anúncio**dimensão de relatório. Consulte [Comprimento do anúncio](/help/implementation/variables/ads/ad-length.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ O comprimento do anúncio é definido pelo reprodutor a cada evento [início de 
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.ad.length` quando o [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.length`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.ad.length` quando o [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Feeds de dados | `videoadlength`, `post_videoadlength` |
 | Audience Manager | `c_contextdata.a.media.ad.length` |
 
