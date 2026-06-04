@@ -24,13 +24,13 @@ Independentemente da base de código usada, ou seja, o Web SDK, o Mobile SDK (iO
    * [Guia do Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=pt-BR)
    * [Implementação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR)
    * [Documentação do Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=pt-BR)
-   * [Documentação do Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+   * [Documentação do Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=pt-BR)
 
 ## Configurar o esquema no Adobe Experience Platform
 
 Para padronizar a coleta de dados entre aplicativos que usam o Adobe Experience Platform, a Adobe criou o padrão aberto e publicamente documentado Experience Data Model (XDM).
 
-1. No Adobe Experience Platform, comece a criar o esquema conforme descrito em [Criar e editar esquemas na interface](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+1. No Adobe Experience Platform, comece a criar o esquema conforme descrito em [Criar e editar esquemas na interface](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR).
 
 1. Na página Detalhes do esquema, escolha **[!UICONTROL Evento de experiência]** como a classe base do esquema.
 
@@ -129,7 +129,7 @@ Para padronizar a coleta de dados entre aplicativos que usam o Adobe Experience 
 
       ![adicionar-metadados-personalizados](assets/add-custom-fields.png)
 
-   1. [Use o caminho gerado](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) para o campo personalizado na carga da sua solicitação.
+   1. [Use o caminho gerado](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) para o campo personalizado na carga da sua solicitação.
 
       ![adicionar-metadados-personalizados](assets/custom-fields-path.png)
 
@@ -167,11 +167,11 @@ Para padronizar a coleta de dados entre aplicativos que usam o Adobe Experience 
 
       * **[!UICONTROL Adobe Analytics]** (se estiver usando o Adobe Analytics)
 
-        Se você estiver usando o Adobe Analytics, defina um conjunto de relatórios conforme descrito em [Criar um conjunto de relatórios](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        Se você estiver usando o Adobe Analytics, defina um conjunto de relatórios conforme descrito em [Criar um conjunto de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * **[!UICONTROL Adobe Experience Platform]** (se estiver usando o Customer Journey Analytics)
 
-     Para obter informações sobre como adicionar um serviço a uma sequência de dados, consulte &quot;Adicionar serviços a uma sequência de dados&quot; em [Configurar uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     Para obter informações sobre como adicionar um serviço a uma sequência de dados, consulte &quot;Adicionar serviços a uma sequência de dados&quot; em [Configurar uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=pt-BR#view-details).
 
      ![Adicionar o serviço Adobe Analytics](assets/datastream-add-service.png)
 

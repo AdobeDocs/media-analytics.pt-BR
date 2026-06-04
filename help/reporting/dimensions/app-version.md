@@ -31,8 +31,8 @@ A versão do aplicativo é definida uma vez na inicialização do SDK e é inclu
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics | Coletado automaticamente por meio do mapeamento de campo XDM ao usar implementações do Edge. Para implementações somente do Analytics, mapeie os dados de contexto `media.sdkVersion` para um eVar personalizado usando uma [regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md). |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Coletado automaticamente por meio do mapeamento de campo XDM ao usar implementações do Edge. Para implementações somente do Analytics, mapeie os dados de contexto `media.sdkVersion` para um eVar personalizado usando uma [regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md). |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | Nenhuma coluna de feed de dados dedicada. Para implementações exclusivas do Analytics, use a coluna feed de dados do eVar personalizado configurado por meio da regra de processamento. |
 | Audience Manager | `c_contextdata.media.sdkVersion` (implementações somente do Analytics) |
 

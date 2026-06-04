@@ -27,9 +27,9 @@ A ID do ativo é definida pelo reprodutor no início da sessão.
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.asset` para uma eVar. |
+| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.asset` para uma eVar. |
 | Adobe Analytics (classificação) | Classificação da dimensão [Conteúdo (ID)](content.md) — a Adobe cria automaticamente essa classificação quando os **[[!UICONTROL Metadados de vídeo]](/help/reporting/setup/analytics-reporting.md)** estão habilitados para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.assetID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.asset`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |
 | Audience Manager | `c_contextdata.a.media.asset` |
@@ -46,7 +46,7 @@ Essa abordagem fornece um relacionamento :1 garantido entre cada ID de conteúdo
 
 ## Abordagem de regras de processamento
 
-Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.asset` para uma eVar. Essa abordagem captura a ID do ativo como um valor por ocorrência sem exigir manutenção de classificação.
+Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.asset` para uma eVar. Essa abordagem captura a ID do ativo como um valor por ocorrência sem exigir manutenção de classificação.
 
 A solução é que você perde o relacionamento 1:1 garantido entre a ID do ativo e a dimensão [Conteúdo (ID)](content.md) principal. Se a sua implementação enviar valores inconsistentes para a mesma ID de conteúdo em todos os eventos, várias IDs de ativos poderão aparecer no mesmo conteúdo. A atualização de um valor se aplica somente aos dados daquele ponto em diante.
 

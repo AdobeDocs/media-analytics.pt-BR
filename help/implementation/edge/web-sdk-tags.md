@@ -16,7 +16,7 @@ A extensão de tag do Adobe Experience Platform Web SDK permite configurar a col
 
 * **Pré-requisitos**:
    * Conclua a [visão geral da implementação do Edge](overview.md) (esquema, conjunto de dados, sequência de dados com o [!UICONTROL Media Analytics] habilitado).
-   * Instale e configure a extensão de tag do Web SDK. Consulte a [visão geral da extensão de marca do Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview).
+   * Instale e configure a extensão de tag do Web SDK. Consulte a [visão geral da extensão de marca do Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/overview).
 
 ## Configurar mídia de transmissão na extensão
 
@@ -39,6 +39,6 @@ Uma vez concluída a implementação, você pode [Configurar relatórios para im
 
 >[!MORELIKETHIS]
 >
->* [visão geral da extensão de marca do Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [visão geral da extensão de marca do Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [Configurar o Web SDK para mídia de streaming (no código)](web-sdk.md)
 >* [Visão geral dos eventos](/help/implementation/events/overview.md)
