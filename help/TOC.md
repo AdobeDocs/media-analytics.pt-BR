@@ -5,10 +5,10 @@ user-guide-title: Guia de serviços para mídia de streaming
 breadcrumb-title: Guia de serviços para mídia de streaming
 user-guide-description: Implementar serviços de mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 35%
+source-wordcount: '749'
+ht-degree: 34%
 
 ---
 
@@ -16,13 +16,11 @@ ht-degree: 35%
 # Guia de serviços para mídia de streaming {#using}
 
 + [guia de serviços de streaming de mídia da Adobe](media-overview.md)
-+ Notas de versão {#release-notes}
-   + [Notas de versão dos serviços de mídia de streaming](additional-resources/release-notes.md)
++ [Notas de versão dos serviços de mídia de streaming](release-notes.md)
 + Introdução {#getting-started}
    + [Pré-requisitos](getting-started/prereqs.md)
    + [Dispositivos compatíveis](getting-started/supported-devices.md)
-   + [Documentação de implementação dos serviços de mídia de transmissão](getting-started/implementation-documentation.md)
-   + [SDKs, bibliotecas e extensões](getting-started/download-sdks.md)
+   + [Obter SDKs, extensões e APIs de mídia](getting-started/download-sdks.md)
 + Implementação {#implementation}
    + [Visão geral da implementação](implementation/overview.md)
    + Eventos {#events}
@@ -299,7 +297,7 @@ ht-degree: 35%
    + [Segmentos de mídia](reporting/segments.md)
    + Relatórios de mídia padrão {#media-default-reports}
       + [Visão geral dos relatórios padrão](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Visão geral da mídia &#x200B;](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Visão geral da mídia ](reporting/reports-and-analytics/media-reports-overview.md)
       + [Detalhes da mídia](reporting/reports-and-analytics/media-reports-detail.md)
       + [Relatório de faixa horária de mídia](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Relatório de visualizadores simultâneos de mídia](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
