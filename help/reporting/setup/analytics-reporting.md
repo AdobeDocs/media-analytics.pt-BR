@@ -3,10 +3,10 @@ title: Configurar relatórios para implementações somente do Analytics
 description: Ative os módulos do conjunto de relatórios de mídia no Adobe Analytics para que os dados de mídia de transmissão possam ser coletados e relatados.
 feature: Streaming Media
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 8%
+source-wordcount: '779'
+ht-degree: 11%
 
 ---
 
@@ -36,6 +36,9 @@ Cada conjunto de relatórios que coleta métricas de mídia deve ser configurado
 A avaliação de mídia inclui os seguintes módulos:
 
 * **[!UICONTROL Mídia principal]**: obrigatório para todo o rastreamento de streaming de mídia. Ele reserva variáveis de solução para a reprodução de conteúdo e dados de sessão.
+
+  +++Selecione para exibir dimensões e métricas
+
    * **Dimensões:**
       * [[!UICONTROL Conteúdo]](/help/reporting/dimensions/content.md)
       * [[!UICONTROL Canal de conteúdo]](/help/reporting/dimensions/content-channel.md)
@@ -60,7 +63,13 @@ A avaliação de mídia inclui os seguintes módulos:
       * [[!UICONTROL Marcadores de progresso]](/help/reporting/metrics/progress-markers.md)
       * [[!UICONTROL Duração total da pausa]](/help/reporting/metrics/total-pause-duration.md)
       * [[!UICONTROL Tempo de execução exclusivo]](/help/reporting/metrics/unique-time-played.md)
+
+  +++
+
 * **[!UICONTROL Anúncios de mídia]**: permite o rastreamento de anúncios dentro do conteúdo de mídia.
+
+  +++Selecione para exibir dimensões, classificações e métricas
+
    * **Dimensões:**
       * [[!UICONTROL Anúncio]](/help/reporting/dimensions/ad.md)
       * [[!UICONTROL Anúncio na posição pod]](/help/reporting/dimensions/ad-in-pod-position.md)
@@ -83,7 +92,13 @@ A avaliação de mídia inclui os seguintes módulos:
       * [[!UICONTROL Início do anúncio]](/help/reporting/metrics/ad-starts.md)
       * [[!UICONTROL Tempo gasto com anúncio]](/help/reporting/metrics/ad-time-spent.md)
       * [[!UICONTROL Tempo gasto com a mídia]](/help/reporting/metrics/media-time-spent.md)
+
+  +++
+
 * **[!UICONTROL Capítulos de mídia]**: permite o rastreamento de capítulos dentro do conteúdo de mídia.
+
+  +++Selecione para exibir dimensões, classificações e métricas
+
    * **Dimension:**
       * [[!UICONTROL Capítulo]](/help/reporting/dimensions/chapter.md)
    * **Dimensões de classificação:**
@@ -96,7 +111,13 @@ A avaliação de mídia inclui os seguintes módulos:
       * [[!UICONTROL Capítulo concluído]](/help/reporting/metrics/chapter-completes.md)
       * [[!UICONTROL Início do capítulo]](/help/reporting/metrics/chapter-starts.md)
       * [[!UICONTROL Tempo gasto com capítulo]](/help/reporting/metrics/chapter-time-spent.md)
+
+  +++
+
 * **[!UICONTROL Qualidade de mídia]**: permite o rastreamento de dados de qualidade de reprodução, incluindo buffering, taxa de bits e eventos de erro.
+
+  +++Selecione para exibir dimensões e métricas
+
    * **Dimensões:**
       * [[!UICONTROL Taxa média de bits]](/help/reporting/dimensions/average-bitrate.md)
       * [[!UICONTROL Alterações na taxa de bits]](/help/reporting/dimensions/bitrate-changes.md)
@@ -120,7 +141,13 @@ A avaliação de mídia inclui os seguintes módulos:
       * [[!UICONTROL Fluxos afetados pelo erro]](/help/reporting/metrics/error-impacted-streams.md)
       * [[!UICONTROL Hora de início]](/help/reporting/metrics/time-to-start.md)
       * [[!UICONTROL Duração total do buffer]](/help/reporting/metrics/total-buffer-duration.md)
+
+  +++
+
 * **[!UICONTROL Metadados de vídeo]**: permite o rastreamento de atributos padrão de conteúdo de vídeo, como programa, temporada e gênero.
+
+  +++Selecione para exibir dimensões e métricas
+
    * **Dimensões:**
       * [[!UICONTROL Carregamentos de anúncio]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL Parte do dia]](/help/reporting/dimensions/day-part.md)
@@ -134,7 +161,13 @@ A avaliação de mídia inclui os seguintes módulos:
       * [[!UICONTROL Mostrar tipo]](/help/reporting/dimensions/show-type.md)
    * **Métrica:**
       * [[!UICONTROL Autorizado]](/help/reporting/metrics/authorized.md)
+
+  +++
+
 * **[!UICONTROL Metadados de áudio]**: permite o rastreamento de atributos de conteúdo de áudio padrão, como artista, álbum e estação.
+
+  +++Selecione para exibir dimensões
+
    * **Dimensões:**
       * [[!UICONTROL Álbum]](/help/reporting/dimensions/album.md)
       * [[!UICONTROL Artista]](/help/reporting/dimensions/artist.md)
@@ -142,7 +175,13 @@ A avaliação de mídia inclui os seguintes módulos:
       * [[!UICONTROL Rótulo]](/help/reporting/dimensions/label.md)
       * [[!UICONTROL Publicador]](/help/reporting/dimensions/publisher.md)
       * [[!UICONTROL Estação]](/help/reporting/dimensions/station.md)
+
+  +++
+
 * **[!UICONTROL Rastreamento do estado do player]**: permite a medição de estados padrão da interface do usuário do player, como tela cheia, legendas ocultas e picture in picture.
+
+  +++Selecione para exibir métricas
+
    * **Métricas:**
       * [[!UICONTROL Contagens de legendas ocultas]](/help/reporting/metrics/closed-captioning-count.md)
       * [[!UICONTROL Duração total das legendas ocultas]](/help/reporting/metrics/closed-captioning-total-duration.md)
@@ -160,8 +199,17 @@ A avaliação de mídia inclui os seguintes módulos:
       * [[!UICONTROL Fluxos afetados pela função mudo]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL Fluxos afetados pela imagem na imagem]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
 
+  +++
+
+## Painéis de mídia disponíveis no Adobe Analytics
+
+O Analysis Workspace inclui três painéis de mídia dedicados para clientes com o complemento Adobe Analytics para mídia de streaming. Esses painéis fornecem visualizações pré-construídas para as necessidades mais comuns de relatórios de mídia de transmissão.
+
+* **[Público-alvo médio por minuto da mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)**: compara o consumo médio de conteúdo entre programas de qualquer duração ou gênero. Oferece suporte aos modos de conteúdo específico (com base na duração) e período personalizado e permite a atualização das classificações de duração após o fato.
+* **[Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)**: analisa visualizadores simultâneos ao longo do tempo para identificar pico de simultaneidade e pontos de devolução. Suporta detalhamento de séries e granularidade configurável por segmentos, dimensões ou intervalos de datas.
+* **[Tempo gasto com a reprodução da mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)**: analisa a duração da reprodução ao longo do tempo com detalhes sobre os períodos de pico e vale. Suporta granularidade configurável e formato de saída (horas ou minutos).
+
 >[!MORELIKETHIS]
 >
->* [Relatórios de mídia no Workspace](/help/reporting/workspace/media-workspace-templates.md)
 >* [Visão geral das dimensões](/help/reporting/dimensions/overview.md)
 >* [Visão geral das métricas](/help/reporting/metrics/overview.md)

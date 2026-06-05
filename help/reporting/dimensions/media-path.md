@@ -3,9 +3,9 @@ title: Caminho da mídia
 description: Registra a ID de conteúdo como uma variável de tráfego para análise de caminho.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ O caminho da mídia é derivado automaticamente da ID de conteúdo definida no i
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletada automaticamente dos dados de contexto `a.media.name` como uma variável de tráfego (prop) quando o [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
-| Customer Journey Analytics | N/D — use [Conteúdo](content.md) para análise de caminho |
+| Customer Journey Analytics | N/D — use [Conteúdo](content.md) para análise de caminho. |
 | Feeds de dados | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |
 
@@ -36,4 +36,4 @@ O caminho da mídia é derivado automaticamente da ID de conteúdo definida no i
 
 ## Itens de dimensão
 
-Cada item é uma ID de conteúdo relatada durante uma visita. Use os relatórios Fluxo da próxima página e Fluxo da página anterior em Conteúdo > Caminho da mídia no Adobe Analytics para exibir os caminhos de navegação do conteúdo para o conteúdo.
+Cada item é uma ID de conteúdo relatada durante uma visita. Você pode usar painéis de Fluxo para exibir caminhos de navegação de conteúdo para conteúdo.
