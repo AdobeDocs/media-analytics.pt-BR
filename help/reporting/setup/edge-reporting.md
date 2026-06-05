@@ -26,7 +26,7 @@ Depois de implementar a Coleção de mídia de transmissão por meio da Edge Net
 
 ## Criar uma visualização de dados no Customer Journey Analytics
 
-1. No Customer Journey Analytics, crie uma visualização de dados conforme descrito em [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview).
+1. No Customer Journey Analytics, crie uma visualização de dados conforme descrito em [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/create-dataview).
 
    1. No campo **[!UICONTROL Conexão]**, selecione a conexão criada anteriormente. As novas conexões podem levar até 15 minutos para serem exibidas.
 
@@ -50,7 +50,7 @@ Depois de implementar a Coleção de mídia de transmissão por meio da Edge Net
 
       >[!IMPORTANT]
       >
-      >Os rótulos de contexto nesta tabela são necessários para que os painéis de mídia de transmissão funcionem. O Customer Journey Analytics as usa para calcular automaticamente as **Métricas derivadas Tempo de reprodução** e **Tempo gasto com a reprodução** (usadas pelos [Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) e [Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)) e para preencher as opções de relatório no painel [Público-alvo médio por minuto da mídia](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
+      >Os rótulos de contexto nesta tabela são necessários para que os painéis de mídia de transmissão funcionem. O Customer Journey Analytics as usa para calcular automaticamente as **Métricas derivadas Tempo de reprodução** e **Tempo gasto com a reprodução** (usadas pelos [Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) e [Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)) e para preencher as opções de relatório no painel [Público-alvo médio por minuto da mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
 
       Você pode adicionar qualquer outra [dimensão](/help/reporting/dimensions/overview.md) ou [métrica](/help/reporting/metrics/overview.md) à sua visualização de dados neste momento. Cada página lista o caminho XDM para esse componente.
 
@@ -70,7 +70,7 @@ Depois de implementar a Coleção de mídia de transmissão por meio da Edge Net
 
 1. (Condicional) Se você adicionou metadados personalizados ao esquema, defina a persistência para os campos personalizados, conforme descrito em [Configurações do componente de Persistência](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) no guia do Customer Journey Analytics.
 
-1. Compartilhe o projeto conforme descrito em [Compartilhar projetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
+1. Compartilhe o projeto conforme descrito em [Compartilhar projetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=pt-BR).
 
    >[!NOTE]
    >
@@ -80,9 +80,9 @@ Depois de implementar a Coleção de mídia de transmissão por meio da Edge Net
 
 O Analysis Workspace no Customer Journey Analytics inclui três painéis de mídia dedicados para clientes com o complemento Coleção de mídia de transmissão. Esses painéis fornecem visualizações pré-construídas para as necessidades mais comuns de relatórios de mídia de transmissão.
 
-* **[Público-alvo médio por minuto da mídia](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**: compara o consumo médio de conteúdo entre programas de qualquer duração ou gênero. Oferece suporte aos modos de conteúdo específico (com base na duração) e período personalizado e permite a atualização das classificações de duração após o fato.
-* **[Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**: analisa visualizadores simultâneos ao longo do tempo para identificar pico de simultaneidade e pontos de devolução. Suporta detalhamento de séries e granularidade configurável por segmentos, dimensões ou intervalos de datas.
-* **[Tempo gasto com a reprodução da mídia](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**: analisa a duração da reprodução ao longo do tempo com detalhes sobre os períodos de pico e vale. Suporta granularidade configurável e formato de saída (horas ou minutos).
+* **[Público-alvo médio por minuto da mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**: compara o consumo médio de conteúdo entre programas de qualquer duração ou gênero. Oferece suporte aos modos de conteúdo específico (com base na duração) e período personalizado e permite a atualização das classificações de duração após o fato.
+* **[Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**: analisa visualizadores simultâneos ao longo do tempo para identificar pico de simultaneidade e pontos de devolução. Suporta detalhamento de séries e granularidade configurável por segmentos, dimensões ou intervalos de datas.
+* **[Tempo gasto com a reprodução da mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**: analisa a duração da reprodução ao longo do tempo com detalhes sobre os períodos de pico e vale. Suporta granularidade configurável e formato de saída (horas ou minutos).
 
 >[!MORELIKETHIS]
 >
