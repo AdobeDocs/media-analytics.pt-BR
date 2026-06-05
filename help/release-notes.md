@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: 793
 ht-degree: 60%
 
 ---
@@ -37,12 +37,17 @@ ht-degree: 60%
 
 **Última atualização**: 4 de junho de 2026
 
-## 2025
+## 2026
 
 | Recurso | Descrição | Data |
 | --- | --- | --- |
 | **Dados do agendamento de suporte** | Faça upload dos dados agendados do conteúdo antigo em tempo real para rastrear a audiência por programa ou segmento. Os tipos de conteúdo compatíveis incluem:<ul><li>Plataformas FAST (TV com suporte a anúncios gratuitos)</li><li>Transmissões locais</li><li>Esportes ao vivo</li></ul>Consulte o caso de uso [Carregar dados do agendamento para rastrear conteúdo ao vivo](/help/use-cases/track-schedule-data.md) para obter mais informações. | Início da implantação: 29 de outubro de 2025<p>Disponibilidade geral: outubro de 2026</p> |
-| Descontinuação do campo XDM `mediaTimed` | O objeto XDM `mediaTimed` foi substituído em favor dos caminhos de campo `mediaReporting`. Os clientes que implementaram o conector de origem do Analytics antes de 9 de maio de 2025 devem migrar suas configurações. Consulte os seguintes guias de migração para obter mais informações:<ul><li>[Migrar públicos-alvo para os novos campos de mídia de streaming](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrar o Customer Journey Analytics para usar os novos campos de mídia de streaming](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrar Preparo de Dados para campos personalizados para os novos campos de mídia de streaming](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migrar perfis para os novos campos de mídia de streaming](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | Outubro de 2025 |
+
+## 2025
+
+| Recurso | Descrição | Data |
+| --- | --- | --- |
+| **`mediaTimed`descontinuação de campo XDM** | O objeto XDM `mediaTimed` foi substituído em favor dos caminhos de campo `mediaReporting`. Os clientes que implementaram o conector de origem do Analytics antes de 9 de maio de 2025 devem migrar suas configurações. Consulte os seguintes guias de migração para obter mais informações:<ul><li>[Migrar públicos-alvo para os novos campos de mídia de streaming](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrar o Customer Journey Analytics para usar os novos campos de mídia de streaming](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrar Preparo de Dados para campos personalizados para os novos campos de mídia de streaming](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migrar perfis para os novos campos de mídia de streaming](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | Outubro de 2025 |
 
 ## 2024
 
