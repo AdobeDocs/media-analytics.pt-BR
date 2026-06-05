@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: 793
-ht-degree: 60%
+source-wordcount: 720
+ht-degree: 36%
 
 ---
 
@@ -66,21 +66,20 @@ ht-degree: 60%
 
 | Recurso | Descrição | Data |
 | --- | --- | --- |
-| **Rastreamento de vários estados do player** | Use a API de coleção de mídia para implementar o rastreamento de vários estados do player. [Saiba mais](/help/implementation/events/player-state/overview.md) | Setembro de 2022 |
+| **Rastreamento de vários estados do player** | Use a API de Coleção de mídia para implementar vários [rastreamento de estado do player](/help/implementation/events/player-state/overview.md). | Setembro de 2022 |
 | Campos XDM renomeados | Nomes de campos XDM renomeados para fins de consistência:<ul><li>Parâmetros de áudio e vídeo</li><li>Parâmetros de publicidade</li><li>Parâmetros de capítulo</li><li>Parâmetros de estado do player</li><li>Parâmetros de qualidade</li></ul> | Setembro de 2022 |
-| **Painel Visualizador simultâneo de mídia** | Entenda onde o pico de simultaneidade ocorreu ou onde as quedas ocorreram. Obtenha insights importantes sobre a qualidade do conteúdo e o engajamento do visualizador, além de ajuda na solução de problemas ou no planejamento de volume e escala. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=pt-BR) | 9 de agosto de 2022 |
-| **Painel Tempo gasto com a reprodução da mídia** | O painel Tempo gasto com a reprodução de mídia fornece informações valiosas sobre o engajamento do visualizador e permite que as organizações de mídia obtenham insights mais profundos e detalhados sobre o engajamento do usuário a cada minuto, por meio da análise avançada do tempo gasto com recursos de faixa horária. É possível observar o tempo gasto visualizando seus fluxos de mídia em um período específico. É possível dividir a duração da reprodução por diferentes granularidades, incluindo novas granularidades de 5 minutos, 15 minutos e 30 minutos. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=pt-BR) | 9 de agosto de 2022 |
-| **Audiência média por minuto** | Os clientes do Media Analytics podem usar o painel Audiência média por minuto para entender melhor o consumo médio de seu conteúdo. <br>A Audiência média por minuto permite as comparações da programação de qualquer comprimento ou gênero. Além disso, é possível comparar ou anexar essa audiência média por minuto digital às métricas de média por minuto lineares de TV. Esse painel oferece mais flexibilidade para medir a audiência média em períodos de tempo personalizados, bem como quando a classificação de duração for atualizada.  [Saiba mais](/help/reporting/workspace/average-minute-audience.md) | 16 de março de 2022 |
+| **Painéis adicionados ao Customer Journey Analytics** | Adição do [painel de visualizadores simultâneos de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) e do [painel Tempo gasto com a reprodução da mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent) ao Customer Journey Analytics. | 9 de agosto de 2022 |
+| **Audiência média por minuto** | Você pode usar o [painel Audiência média por minuto](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) para entender melhor o consumo médio de conteúdo. <br>A Audiência média por minuto permite as comparações da programação de qualquer comprimento ou gênero. Além disso, é possível comparar ou anexar essa audiência média por minuto digital às métricas de média por minuto lineares de TV. Esse painel oferece mais flexibilidade para medir a audiência média em períodos de tempo personalizados, bem como quando a classificação de duração for atualizada. | 16 de março de 2022 |
 
 ## 2021
 
 | Recurso | Descrição | Data |
 | --- | --- | --- |
-| **Tempo gasto com reprodução de mídia** | O recurso Tempo gasto com a reprodução da mídia de streaming da Adobe fornece informações valiosas sobre o envolvimento do visualizador e permite que as organizações de mídia obtenham insights mais profundos e detalhados sobre o engajamento do usuário a cada minuto, por meio da análise avançada de tempo gasto com recursos de faixa horária. É possível observar o tempo gasto visualizando seus fluxos de mídia em um período específico. É possível dividir a duração da reprodução em diferentes granularidades, incluindo as novas granularidades de 5, 15 e 30 minutos. [Saiba mais...](/help/reporting/workspace/media-playback-time-spent.md) | Setembro de 2021 |
+| **Tempo gasto com reprodução de mídia** | O [painel Tempo gasto com a reprodução](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) oferece um insight valioso para o envolvimento do visualizador e permite que as organizações de mídia obtenham insights mais profundos e detalhados sobre o engajamento do usuário a cada minuto, por meio da análise avançada de tempo gasto com recursos de faixa horária. É possível observar o tempo gasto visualizando seus fluxos de mídia em um período específico. É possível dividir a duração da reprodução em diferentes granularidades, incluindo as novas granularidades de 5, 15 e 30 minutos. | Setembro de 2021 |
 
 ## 2020
 
 | Recurso | Descrição | Data |
 | --- | --- | --- |
-| **Painel Visualizador simultâneo de mídia** | Entenda onde o pico de simultaneidade ocorreu ou onde as quedas ocorreram. Obtenha insights importantes sobre a qualidade do conteúdo e o engajamento do visualizador, além de ajuda na solução de problemas ou no planejamento de volume e escala. [Saiba mais...](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Painel Visualizadores simultâneos de mídia no Analytics Workspace (tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=pt-BR#analysis-workspace) | Setembro de 2020; janeiro de 2021 |
+| **Painel Visualizador simultâneo de mídia** | O [Painel de visualizadores simultâneos](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) ajuda você a entender onde ocorreu o pico de simultaneidade ou onde as quedas ocorreram. Obtenha insights importantes sobre a qualidade do conteúdo e o engajamento do visualizador, além de ajuda na solução de problemas ou no planejamento de volume e escala.<br><br>[Painel Visualizadores Simultâneos de Mídia (tutorial)](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | Setembro de 2020; janeiro de 2021 |
 | **Dispositivos e plataformas compatíveis** | A Extensão Media Launch com SDK AEP agora é compatível com os seguintes dispositivos OTT: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | Junho de 2020 |

@@ -17,20 +17,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: 209
-ht-degree: 90%
+source-wordcount: 188
+ht-degree: 76%
 
 ---
 
 # Segmentos de mídia{#segments}
 
-Os segmentos permitem que você identifique subconjuntos de visitantes com base em características ou interações de site. Os segmentos de mídia de transmissão permitem identificar o tipo de fluxo do visitante, como fluxos de áudio, ao vivo ou podcast. Para obter informações sobre segmentos do Adobe Analytics, consulte [Sobre segmentos e containers](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=pt-BR) no Guia de componentes do Adobe Analytics.
-
->[!NOTE]
->
->Esses segmentos de relatórios associados ao Tipo de fluxo de mídia foram introduzidos em 13/9/2018, juntamente com o parâmetro `streamType`.
+Os segmentos permitem que você identifique subconjuntos de visitantes com base em características ou interações de site. Os segmentos de mídia de transmissão permitem identificar o tipo de fluxo do visitante, como fluxos de áudio, ao vivo ou podcast. Para obter informações sobre segmentos do Adobe Analytics, consulte [Sobre segmentos](https://experienceleague.adobe.com/pt-br/docs/analytics/components/segmentation/seg-overview) no Guia de componentes do Adobe Analytics.
 
 | Segmento | Descrição | Regra |
 |---|---|---|
