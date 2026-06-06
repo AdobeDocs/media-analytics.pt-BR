@@ -26,7 +26,7 @@ ht-degree: 75%
 
 # Segmentos de mídia de transmissão
 
-Os segmentos permitem que você identifique subconjuntos de visitantes com base em características ou interações de site. Os segmentos de mídia de transmissão permitem identificar o tipo de fluxo do visitante, como fluxos de áudio, ao vivo ou podcast. Para obter informações sobre segmentos do Adobe Analytics, consulte [Sobre segmentos](https://experienceleague.adobe.com/en/docs/analytics/components/segmentation/seg-overview) no Guia de componentes do Adobe Analytics.
+Os segmentos permitem que você identifique subconjuntos de visitantes com base em características ou interações de site. Os segmentos de mídia de transmissão permitem identificar o tipo de fluxo do visitante, como fluxos de áudio, ao vivo ou podcast. Para obter informações sobre segmentos do Adobe Analytics, consulte [Sobre segmentos](https://experienceleague.adobe.com/pt-br/docs/analytics/components/segmentation/seg-overview) no Guia de componentes do Adobe Analytics.
 
 | Segmento | Descrição | Regra |
 |---|---|---|
