@@ -3,9 +3,9 @@ title: Início da pausa
 description: Sinal de que o usuário pausou a reprodução de mídia.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '150'
 ht-degree: 10%
 
 ---
@@ -58,7 +58,7 @@ Chame `trackPause` quando o usuário pausar a reprodução.
 tracker.trackPause()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Chamar `sendMediaEvent` com `eventType: "media.pauseStart"`:
 
@@ -114,6 +114,14 @@ Chamar `trackPause` quando o usuário pausar a reprodução:
 
 ```javascript
 ADBMobile.media.trackPause();
+```
+
+>[!TAB Roku 2.x]
+
+Chamar `mediaTrackPause` quando o usuário pausar a reprodução:
+
+```brightscript
+ADBMobile().mediaTrackPause()
 ```
 
 >[!TAB API da coleção de mídia]

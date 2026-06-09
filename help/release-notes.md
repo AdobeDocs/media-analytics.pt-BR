@@ -5,30 +5,14 @@ feature: Release Notes
 role: User, Admin, Developer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 TQID: https://experienceleague.adobe.com/yNfosiewndKE7c-VjoVM6D3ifYlgX3eJGgYQWcBC9no
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: f73667dc-d296-4875-8975-ac3fdc3adc42
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: ac8a38fa-dec3-4581-8f64-178fde9f64e8
-  - id: c77ba355-6681-41fe-b719-563d3f507fdb
-  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: f73667dc-d296-4875-8975-ac3fdc3adc42id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: ac8a38fa-dec3-4581-8f64-178fde9f64e8id: c77ba355-6681-41fe-b719-563d3f507fdbid: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 720
+source-wordcount: 722
 ht-degree: 36%
 
 ---
@@ -54,7 +38,7 @@ ht-degree: 36%
 | Recurso | Descrição | Data |
 | --- | --- | --- |
 | **Suporte ao Web SDK** | Envie dados da Web de mídia de transmissão para o Adobe Experience Platform Edge Network usando a extensão de tag da Web SDK ou Web SDK, habilitando um método de coleta unificada em soluções de plataforma, como Customer Journey Analytics, Real-time CDP, Journey Optimizer e encaminhamento de eventos. Consulte [Configurar o Web SDK para mídia de streaming](/help/implementation/edge/web-sdk.md) ou [Configurar a extensão de tag do Web SDK para mídia de streaming](/help/implementation/edge/web-sdk-tags.md) para obter mais informações. | 29 de maio de 2024 |
-| **Suporte ao Roku** | Envie dados de mídia de transmissão para o Adobe Experience Platform usando o Roku SDK. Consulte [Configurar Roku para mídia de streaming](/help/implementation/edge/roku.md) para obter mais informações. | 12 de abril de 2024 |
+| **Suporte ao Roku** | Envie dados de mídia de transmissão para o Adobe Experience Platform usando o Edge SDK Roku. Consulte [Configurar Roku Edge para mídia de streaming](/help/implementation/edge/roku.md) para obter mais informações. | 12 de abril de 2024 |
 
 ## 2023
 
@@ -68,7 +52,7 @@ ht-degree: 36%
 | --- | --- | --- |
 | **Rastreamento de vários estados do player** | Use a API de Coleção de mídia para implementar vários [rastreamento de estado do player](/help/implementation/events/player-state/overview.md). | Setembro de 2022 |
 | Campos XDM renomeados | Nomes de campos XDM renomeados para fins de consistência:<ul><li>Parâmetros de áudio e vídeo</li><li>Parâmetros de publicidade</li><li>Parâmetros de capítulo</li><li>Parâmetros de estado do player</li><li>Parâmetros de qualidade</li></ul> | Setembro de 2022 |
-| **Painéis adicionados ao Customer Journey Analytics** | Adição do [painel de visualizadores simultâneos de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) e do [painel Tempo gasto com a reprodução da mídia](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent) ao Customer Journey Analytics. | 9 de agosto de 2022 |
+| **Painéis adicionados ao Customer Journey Analytics** | Adição do [painel de visualizadores simultâneos de mídia](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) e do [painel Tempo gasto com a reprodução da mídia](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent) ao Customer Journey Analytics. | 9 de agosto de 2022 |
 | **Audiência média por minuto** | Você pode usar o [painel Audiência média por minuto](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) para entender melhor o consumo médio de conteúdo. <br>A Audiência média por minuto permite as comparações da programação de qualquer comprimento ou gênero. Além disso, é possível comparar ou anexar essa audiência média por minuto digital às métricas de média por minuto lineares de TV. Esse painel oferece mais flexibilidade para medir a audiência média em períodos de tempo personalizados, bem como quando a classificação de duração for atualizada. | 16 de março de 2022 |
 
 ## 2021
@@ -81,5 +65,5 @@ ht-degree: 36%
 
 | Recurso | Descrição | Data |
 | --- | --- | --- |
-| **Painel Visualizador simultâneo de mídia** | O [Painel de visualizadores simultâneos](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) ajuda você a entender onde ocorreu o pico de simultaneidade ou onde as quedas ocorreram. Obtenha insights importantes sobre a qualidade do conteúdo e o engajamento do visualizador, além de ajuda na solução de problemas ou no planejamento de volume e escala.<br><br>[Painel Visualizadores Simultâneos de Mídia (tutorial)](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | Setembro de 2020; janeiro de 2021 |
+| **Painel Visualizador simultâneo de mídia** | O [Painel de visualizadores simultâneos](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) ajuda você a entender onde ocorreu o pico de simultaneidade ou onde as quedas ocorreram. Obtenha insights importantes sobre a qualidade do conteúdo e o engajamento do visualizador, além de ajuda na solução de problemas ou no planejamento de volume e escala.<br><br>[Painel Visualizadores Simultâneos de Mídia (tutorial)](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | Setembro de 2020; janeiro de 2021 |
 | **Dispositivos e plataformas compatíveis** | A Extensão Media Launch com SDK AEP agora é compatível com os seguintes dispositivos OTT: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | Junho de 2020 |

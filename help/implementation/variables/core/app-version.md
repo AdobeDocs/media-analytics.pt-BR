@@ -3,9 +3,9 @@ title: Versão do aplicativo
 description: Configure a sequência de caracteres da versão do aplicativo de reprodução de mídia.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ A variável de versão do aplicativo identifica a versão do aplicativo de repro
 
 | Propriedade | Valor |
 | --- | --- |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Parâmetro da API da coleção de mídia** | `media.sdkVersion` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ A variável de versão do aplicativo identifica a versão do aplicativo de repro
 
 >[!TAB Web SDK]
 
-Definir `appVersion` no objeto de configuração `streamingMedia` ao chamar [`configure`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/configure/streamingmedia):
+Definir `appVersion` no objeto de configuração `streamingMedia` ao chamar [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia):
 
 ```javascript
 alloy("configure", {
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Defina a versão do aplicativo na configuração do SDK usando `ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION`:
 
@@ -149,6 +149,16 @@ var ADBMobileConfig = {
     "sdkVersion": "2.1.0"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Defina `sdkVersion` na seção `mediaHeartbeat` de `ADBMobileConfig.json`. Este campo captura a versão do aplicativo do player, não a versão da biblioteca SDK Roku 2.x:
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
 ```
 
 >[!TAB API da coleção de mídia]

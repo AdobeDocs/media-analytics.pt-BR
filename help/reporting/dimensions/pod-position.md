@@ -3,7 +3,7 @@ title: Posição do pod
 description: Relata o deslocamento de cada ad break no conteúdo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*Esta página aborda a **Posição do pod**&#x200B;dimensão de relatório. Consulte [Hora de início do ad break](/help/implementation/variables/ads/ad-break-start-time.md) para saber como coletar essa variável.*
+*Esta página aborda a **Posição do pod**dimensão de relatório. Consulte [Hora de início do ad break](/help/implementation/variables/ads/ad-break-start-time.md) para saber como coletar essa variável.*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,9 @@ A posição do pod é definida com base no valor de [Tempo de início de ad brea
 
 | Sistema de relatório | Origem |
 | --- | --- |
-| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podSecond` para uma eVar. |
-| Adobe Analytics (classificação) | Classificação da dimensão [Pod de anúncio](ad-pod.md) — a Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/setup/analytics-reporting.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podSecond` para uma eVar. |
+| Adobe Analytics (classificação) | Classificação da dimensão [Pod de anúncio](ad-pod.md). O Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/setup/analytics-reporting.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.ad.podSecond`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |
 | Audience Manager | `c_contextdata.a.media.ad.podSecond` |
@@ -46,7 +46,7 @@ Essa abordagem fornece uma relação garantida de :1 entre cada ID de pod de an�
 
 ## Abordagem de regras de processamento
 
-Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podSecond` para uma eVar. Essa abordagem captura a posição do pod como um valor por ocorrência sem exigir manutenção de classificação.
+Crie uma [Regra de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podSecond` para uma eVar. Essa abordagem captura a posição do pod como um valor por ocorrência sem exigir manutenção de classificação.
 
 A compensação é que você perde a relação garantida 1:1 entre a posição do pod e a dimensão pai [pod de anúncio](ad-pod.md). Se sua implementação enviar valores inconsistentes para a mesma ID de pod nos eventos, várias posições poderão ser exibidas no mesmo pod de anúncio. A atualização de um valor se aplica somente aos dados daquele ponto em diante.
 

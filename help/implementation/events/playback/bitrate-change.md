@@ -3,10 +3,10 @@ title: Alteração da taxa de bits
 description: Sinal de que a taxa de bits de reprodução mudou.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 7%
+source-wordcount: '226'
+ht-degree: 6%
 
 ---
 
@@ -69,7 +69,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Chame `sendMediaEvent` com `eventType: "media.bitrateChange"` e a nova taxa de bits em `qoeDataDetails`:
 
@@ -150,6 +150,18 @@ this._qosInfo = ADBMobile.media.createQoSObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+Crie um objeto de QoS com a nova taxa de bits usando `adb_media_init_qosinfo`, atualize o rastreador com `mediaUpdateQoS` e, em seguida, rastreie o evento. Observe a ordem dos parâmetros Roku: `bitrate, startupTime, fps, droppedFrames`.
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB API da coleção de mídia]

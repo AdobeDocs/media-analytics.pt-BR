@@ -3,10 +3,10 @@ title: Anúncio concluído
 description: Sinal de que um anúncio individual terminou de ser reproduzido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 9%
+source-wordcount: '173'
+ht-degree: 8%
 
 ---
 
@@ -58,7 +58,7 @@ Chame `trackEvent` com o tipo de evento `AdComplete`.
 tracker.trackEvent(Media.Event.AdComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Chamar `sendMediaEvent` com `eventType: "media.adComplete"`:
 
@@ -114,6 +114,15 @@ Chamar `trackEvent` com o tipo de evento `AdComplete`:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Chamar `mediaTrackEvent` com o tipo de evento `MEDIA_AD_COMPLETE`:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_COMPLETE)
 ```
 
 >[!TAB API da coleção de mídia]
