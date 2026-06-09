@@ -24,7 +24,7 @@ A variável de ID do site identifica o site do anúncio. Qualquer valor de strin
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.site` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.ad.site` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início do anúncio](/help/implementation/events/ads/ad-start.md) e fechamento |

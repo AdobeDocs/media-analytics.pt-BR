@@ -24,7 +24,7 @@ A primeira variável de data de exibição é a data em que o conteúdo foi exib
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.airDate` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.airDate` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |

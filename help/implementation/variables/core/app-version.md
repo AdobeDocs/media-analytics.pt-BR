@@ -27,7 +27,7 @@ A variável de versão do aplicativo identifica a versão do aplicativo de repro
 
 | Propriedade | Valor |
 | --- | --- |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Parâmetro da API da coleção de mídia** | `media.sdkVersion` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ A variável de versão do aplicativo identifica a versão do aplicativo de repro
 
 >[!TAB Web SDK]
 
-Definir `appVersion` no objeto de configuração `streamingMedia` ao chamar [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia):
+Definir `appVersion` no objeto de configuração `streamingMedia` ao chamar [`configure`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/configure/streamingmedia):
 
 ```javascript
 alloy("configure", {

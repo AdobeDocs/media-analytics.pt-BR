@@ -28,7 +28,7 @@ O tipo de carregamento do anúncio é definido pelo reprodutor no início da ses
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics | Coletado automaticamente dos dados de contexto `a.media.adLoad` quando [[!UICONTROL Streaming de Mídia]](/help/reporting/setup/analytics-reporting.md) está configurado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.adLoad`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Feeds de dados | `videoadload`, `post_videoadload` |
 | Audience Manager | `c_contextdata.a.media.adLoad` |
 
