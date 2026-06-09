@@ -3,9 +3,9 @@ title: Capítulo ignorado
 description: Sinal de que o visualizador ignorou um capítulo.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -54,7 +54,7 @@ Chame `trackEvent` com o tipo de evento `ChapterSkip`.
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Chamar `sendMediaEvent` com `eventType: "media.chapterSkip"`:
 
@@ -110,6 +110,15 @@ Chamar `trackEvent` com o tipo de evento `ChapterSkip`:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
+```
+
+>[!TAB Roku 2.x]
+
+Chamar `mediaTrackEvent` com o tipo de evento `MEDIA_CHAPTER_SKIP`:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_SKIP)
 ```
 
 >[!TAB API da coleção de mídia]

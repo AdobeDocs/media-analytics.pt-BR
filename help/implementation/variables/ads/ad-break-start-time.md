@@ -3,10 +3,10 @@ title: Hora de início do ad break
 description: Defina a hora de início (deslocamento) do ad break no conteúdo, em segundos.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 7%
+source-wordcount: '259'
+ht-degree: 6%
 
 ---
 
@@ -78,7 +78,7 @@ val adBreakObject = Media.createAdBreakObject("mid-roll-1",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Definir `offset` dentro de `xdm.mediaCollection.advertisingPodDetails` ao chamar `sendMediaEvent` para `media.adBreakStart`:
 
@@ -151,6 +151,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
   90
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Passe a hora de início em segundos como segundo argumento para `adb_media_init_adbreakinfo`. Observe a ordem dos parâmetros Roku: `name, startTime, position`.
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("mid-roll-1", 90.0, 2)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB API da coleção de mídia]

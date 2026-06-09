@@ -3,9 +3,9 @@ title: Alteração da taxa de bits
 description: Acione um evento de alteração de taxa de bits sempre que o reprodutor alternar para uma taxa de bits diferente.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '278'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Use `sendMediaEvent` com `media.bitrateChange` para sinalizar uma alteração na taxa de bits. Incluir a nova taxa de bits em `qoeDataDetails`:
 
@@ -149,6 +149,18 @@ var qosInfo = ADBMobile.media.createQoSObject(
 );
 ADBMobile.media.updateQoSObject(qosInfo);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+Atualize o objeto de QoS com a nova taxa de bits e acione o evento de alteração da taxa de bits:
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(4500.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB API da coleção de mídia]

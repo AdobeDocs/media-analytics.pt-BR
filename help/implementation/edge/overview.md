@@ -3,29 +3,29 @@ title: Visão geral da implementação do Edge
 description: Configure o esquema, o conjunto de dados e a sequência de dados do Adobe Experience Platform necessários para coletar dados de mídia de transmissão por meio da Edge Network.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1282'
 ht-degree: 4%
 
 ---
 
 # Visão geral da implementação do Edge
 
-O Adobe Experience Platform Edge Network permite enviar dados destinados a vários produtos para um único endpoint, que então encaminha as informações apropriadas para cada produto. Essa é a maneira recomendada de implementar a coleção de mídia de transmissão e é a única abordagem que oferece suporte ao Adobe Analytics e ao Customer Journey Analytics a partir de uma única instrumentação.
+O Adobe Experience Platform Edge Network permite enviar dados destinados a vários produtos para um único endpoint, que então encaminha as informações apropriadas para cada produto. Essa é a maneira recomendada de implementar a Coleção de mídia de transmissão e é a única abordagem que oferece suporte ao Adobe Analytics e ao Customer Journey Analytics a partir de uma única implementação.
 
 Em contraste com a abordagem herdada do Media SDK, que exigia instrumentação específica do produto para cada solução da Adobe, uma implementação do Edge usa um modelo de dados XDM compartilhado e um único fluxo de dados. Os dados fluem da sua SDK ou API para a Edge Network, que a encaminha para o produto Adobe que estiver configurado na sequência de dados (Analytics, CJA, AJO ou RTCDP). Isso significa que alternar ou adicionar produtos downstream posteriormente não requer a reinstrumentação dos eventos de mídia.
 
-Independentemente da base de código usada, ou seja, o Web SDK, o Mobile SDK (iOS ou Android), o Roku SDK ou a API do Media Edge, primeiro você deve concluir a configuração da plataforma descrita nesta página: criar um esquema, criar um conjunto de dados e configurar um fluxo de dados.
+Independentemente da base de código usada, primeiro você deve concluir a configuração da plataforma descrita nesta página: criar um esquema, criar um conjunto de dados e configurar um fluxo de dados.
 
 ## Pré-requisitos
 
 1. **Conclua os pré-requisitos gerais.** Consulte os [pré-requisitos gerais](/help/getting-started/prereqs.md).
 
 1. **Confirme uma solução Adobe compatível.** Você deve ter uma implementação funcional de pelo menos um dos seguintes:
-   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=pt-BR) — o principal destino de relatórios para dados de mídia baseados em Edge
-   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR) — compatível com ou em vez do CJA através da mesma sequência de dados
-   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=pt-BR) ou [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=pt-BR) — adicione o serviço **[!UICONTROL Adobe Experience Platform]** à sua sequência de dados ao configurar qualquer um desses
+   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=pt-BR): o principal destino de relatórios para dados de mídia baseados em Edge
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR): compatível com o CJA ou em vez dele através da mesma sequência de dados
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=pt-BR) ou [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=pt-BR): adicione o serviço **[!UICONTROL Adobe Experience Platform]** à sua sequência de dados ao configurar qualquer uma dessas opções
 
 ## Configurar o esquema no Adobe Experience Platform
 
@@ -158,7 +158,7 @@ Para padronizar a coleta de dados entre aplicativos que usam o Adobe Experience 
 
    * Adicione os serviços apropriados à sequência de dados com base em sua solução da Adobe. Para obter informações sobre como adicionar um serviço, consulte &quot;Adicionar serviços a uma sequência de dados&quot; em [Configurar uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=pt-BR#view-details).
 
-      * **[!UICONTROL Adobe Analytics]** (se estiver usando o Adobe Analytics) — defina um conjunto de relatórios conforme descrito em [Criar um conjunto de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+      * **[!UICONTROL Adobe Analytics]** (se estiver usando o Adobe Analytics): defina um conjunto de relatórios conforme descrito em [Criar um conjunto de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * **[!UICONTROL Adobe Experience Platform]** (se estiver usando o Customer Journey Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform)
 
@@ -179,7 +179,7 @@ As implementações **No código** gravam chamadas SDK diretamente no código fo
 | Web | [Web SDK](web-sdk.md) | [Extensão de tag do Web SDK](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS (Marcas)](ios-tags.md) |
 | Android | [Android](android.md) | [Android (Marcas)](android-tags.md) |
-| Roku | [Roku](roku.md) | — |
+| Roku | [Roku Edge](roku.md) | — |
 | API | [API do Media Edge](media-edge-api.md) | — |
 
 ## Próxima etapa

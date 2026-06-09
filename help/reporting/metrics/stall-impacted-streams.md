@@ -3,7 +3,7 @@ title: Fluxos afetados pela paralisação
 description: Conta sessões em que pelo menos uma paralisação ocorreu durante a reprodução.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # Fluxos afetados pela paralisação
 
-A métrica **Fluxos afetados pela paralisação** conta sessões em que pelo menos uma paralisação ocorreu durante a reprodução. A métrica é booleana em nível de sessão — várias paralisações na mesma contagem de sessões que um fluxo afetado. Para o volume de paralisação total, use [Eventos de paralisação](stall-events.md).
+A métrica **Fluxos afetados pela paralisação** conta sessões em que pelo menos uma paralisação ocorreu durante a reprodução. A métrica é um booliano em nível de sessão; várias paralisações na mesma contagem de sessão como um fluxo afetado. Para o volume de paralisação total, use [Eventos de paralisação](stall-events.md).
 
 ## Como essa métrica é calculada
 

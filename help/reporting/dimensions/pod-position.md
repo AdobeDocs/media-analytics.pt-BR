@@ -3,7 +3,7 @@ title: Posição do pod
 description: Relata o deslocamento de cada ad break no conteúdo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -28,7 +28,7 @@ A posição do pod é definida com base no valor de [Tempo de início de ad brea
 | Sistema de relatório | Origem |
 | --- | --- |
 | Adobe Analytics (regra de processamento) | Crie uma [Regra de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que mapeie `a.media.ad.podSecond` para uma eVar. |
-| Adobe Analytics (classificação) | Classificação da dimensão [Pod de anúncio](ad-pod.md) — a Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/setup/analytics-reporting.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
+| Adobe Analytics (classificação) | Classificação da dimensão [Pod de anúncio](ad-pod.md). O Adobe cria automaticamente essa classificação quando o **[[!UICONTROL Anúncios de mídia]](/help/reporting/setup/analytics-reporting.md)** está habilitado para o conjunto de relatórios. Você é responsável por preencher e manter os valores de classificação. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Feeds de dados (regra de processamento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (a eVar para a qual sua regra de processamento mapeia `a.media.ad.podSecond`) |
 | Feeds de dados (classificação) | N/D — Os feeds de dados não aceitam classificações. |

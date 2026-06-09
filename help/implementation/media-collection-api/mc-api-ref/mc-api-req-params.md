@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 1337
 ht-degree: 86%
@@ -44,7 +44,7 @@ ht-degree: 86%
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | S | string | `sessionStart` | A IMS organization ID identifica sua organização na Adobe CX Enterprise |
 | `visitor.marketingCloudUserId` | N | string | `sessionStart` | A ID de usuário do Experience Cloud (ECID). Na maioria dos casos, essa é a ID que você deve usar para identificar um usuário. O `marketingCloudUserId` do Heartbeat é igual ao `MID` no Adobe Analytics. Embora não seja tecnicamente necessário, esse parâmetro é necessário para acessar os aplicativos e serviços do CX Enterprise. |
-| `visitor.aamLocationHint` | N | inteiro | `sessionStart` | Fornece dados de borda do Adobe Audience Manager. Se um valor não for inserido, ele será nulo. |
+| `visitor.aamLocationHint` | N | inteiro | `sessionStart` | Fornece dados do Adobe Audience Manager Edge. Se um valor não for inserido, ele será nulo. |
 | `appInstallationId` | N | string | `sessionStart` | O appInstallationId identifica exclusivamente o aplicativo e o dispositivo |
 
 ## Dados de conteúdo

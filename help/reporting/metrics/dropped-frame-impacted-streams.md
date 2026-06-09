@@ -3,7 +3,7 @@ title: Fluxos afetados por quedas de quadros
 description: Conta sessões em que pelo menos um quadro foi descartado.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Fluxos afetados por quedas de quadros
 
-A métrica **Queda de quadro afetou os fluxos** ao contar sessões em que pelo menos um quadro foi descartado. A métrica é um booleano em nível de sessão — várias quedas na mesma contagem de sessão como um fluxo afetado. Para o volume total de descarte, use [Quadros descartados](dropped-frames.md).
+A métrica **Queda de quadro afetou os fluxos** ao contar sessões em que pelo menos um quadro foi descartado. A métrica é um booliano em nível de sessão; várias quedas na mesma contagem de sessão como um fluxo afetado. Para o volume total de descarte, use [Quadros descartados](dropped-frames.md).
 
 ## Como essa métrica é calculada
 

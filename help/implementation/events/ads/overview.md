@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 513
 ht-degree: 3%
@@ -73,7 +73,7 @@ Se você observar chamadas `main:play` ocorrendo entre anúncios consecutivos, h
 **Solução:** atrasa a chamada AdComplete para cada anúncio (exceto o último) em vez de chamá-lo imediatamente quando o anúncio terminar. Adicione as chamadas em lote da seguinte maneira:
 
 * Em cada **início de anúncio**: se um anúncio anterior existir e ainda não estiver marcado como concluído, chame AdComplete *antes* de AdStart para o novo anúncio.
-* Em cada **fim de ativo de anúncio**: não chame AdComplete imediatamente — adie-o.
+* Em cada **fim de ativo de anúncio**: não chame AdComplete imediatamente; adie-o.
 * Em **ad break concluído**: chame AdComplete para o último anúncio (se ainda não estiver chamado) e, em seguida, chame AdBreakComplete.
 
 Esse padrão garante que o AdComplete e o próximo AdStart sejam acionados simultaneamente, eliminando qualquer lacuna.

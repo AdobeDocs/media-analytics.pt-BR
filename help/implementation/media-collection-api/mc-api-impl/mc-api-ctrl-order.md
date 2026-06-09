@@ -16,10 +16,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 342
-ht-degree: 100%
+source-wordcount: 331
+ht-degree: 73%
 
 ---
 
@@ -33,14 +33,11 @@ Eventos fora de ordem ocorrem quando estes passam pela rede, o que pode causar u
 
 Por exemplo, você pode enviar um evento `adBreakStart`, seguido por um evento `adStart`. Este é um caso de uso comum, pois é necessário para que um anúncio seja iniciado dentro de um ad break.
 
-Se o anúncio estiver pronto e nenhum buffer for necessário, ambos os eventos ocorrerão quase que instantaneamente e o `playerTime.ts` de ambos os eventos serão muito próximos, mas nunca deverão ser iguais.
-
-> O “playerTime.ts” dos eventos nunca deve ser igual para nenhum evento, pois o algoritmo de classificação não saberia que evento aconteceu primeiro. Deve haver pelo menos 1 milissegundo de diferença no carimbo de data e hora para cada 2 eventos consecutivos.
+Se o anúncio estiver pronto e nenhum buffer for necessário, ambos os eventos ocorrerão quase instantaneamente e o `playerTime.ts` para ambos os eventos estará muito próximo um do outro. No entanto, eles nunca devem ser iguais, já que o algoritmo de classificação não saberia qual evento aconteceu primeiro. Sempre mantenha pelo menos uma diferença de carimbo de data e hora de 1 milissegundo para todos os eventos consecutivos.
 
 Como ambos os eventos ocorrem muito próximos um do outro quando as chamadas de rede são acionadas, é possível que eles cheguem fora de ordem. Neste exemplo, o evento `adStart` chega antes do evento `adBreakStart`.
 
-
-Há uma janela cronometrada de eventos: 5 segundos ou um máximo de 10 eventos. Os eventos são armazenados em buffer antes de serem enviados para o pipeline de processamento. Quando as condições são cumpridas, 5 segundos se passam ou mais de 10 eventos são recebidos, os eventos são reordenados com base no `playerTime.ts` e, em seguida, são enviados para o pipeline de processamento na nova ordem.
+Há uma janela cronometrada de eventos: 5 segundos ou um máximo de 10 eventos. Os eventos são armazenados em buffer antes de serem enviados para o pipeline de processamento. Quando as condições são atendidas (5 segundos se passaram ou mais de 10 eventos são recebidos), os eventos são reordenados com base no `playerTime.ts` e, em seguida, enviados na nova ordem para o pipeline de processamento.
 
 >[!IMPORTANT]
 >

@@ -3,10 +3,10 @@ title: Início do anúncio
 description: Sinal de que um anúncio individual começou a ser reproduzido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 8%
+source-wordcount: '209'
+ht-degree: 7%
 
 ---
 
@@ -75,7 +75,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Chame `sendMediaEvent` com `eventType: "media.adStart"` e o(a) `advertisingDetails` necessário(a):
 
@@ -158,6 +158,17 @@ var adInfo = ADBMobile.media.createAdObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Crie um objeto de anúncio com `adb_media_init_adinfo` e acompanhe o evento. A posição do anúncio no pod é baseada em 1.
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 15.0)  ' name, id, position, length
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB API da coleção de mídia]

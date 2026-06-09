@@ -3,7 +3,7 @@ title: Fluxos afetados pelas legendas ocultas
 description: Conta sessões nas quais o visualizador ativou legendas pelo menos uma vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-A métrica **Fluxos afetados pelas legendas ocultas** conta sessões nas quais o visualizador ativou legendas pelo menos uma vez. A métrica é booleana em nível de sessão — várias alternâncias de legenda na mesma contagem de sessão como um fluxo afetado. Para o volume total habilitado para legenda, use [Contagens de legendas ocultas](closed-captioning-count.md).
+A métrica **Fluxos afetados pelas legendas ocultas** conta sessões nas quais o visualizador ativou legendas pelo menos uma vez. A métrica é um booleano em nível de sessão; várias alternâncias de legenda na mesma contagem de sessão como um fluxo afetado. Para o volume total habilitado para legenda, use [Contagens de legendas ocultas](closed-captioning-count.md).
 
 ## Como essa métrica é calculada
 

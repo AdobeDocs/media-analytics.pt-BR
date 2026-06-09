@@ -3,7 +3,7 @@ title: Fluxos afetados pela alteração na taxa de bits
 description: Conta sessões em que ocorreu pelo menos uma alteração de taxa de bits.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Fluxos afetados pela alteração na taxa de bits
 
-A métrica **Alteração na taxa de bits impactou os fluxos** ao contar sessões em que ocorreu pelo menos uma alteração na taxa de bits. A métrica é booleana em nível de sessão — várias alterações na taxa de bits na mesma contagem de sessão que um fluxo afetado. Para o volume total de alteração da taxa de bits, use [alterações da taxa de bits](/help/reporting/dimensions/bitrate-changes.md).
+A métrica **Alteração na taxa de bits impactou os fluxos** ao contar sessões em que ocorreu pelo menos uma alteração na taxa de bits. A métrica é um booleano em nível de sessão; várias alterações na taxa de bits na mesma contagem de sessão como um fluxo afetado. Para o volume total de alteração da taxa de bits, use [alterações da taxa de bits](/help/reporting/dimensions/bitrate-changes.md).
 
 ## Como essa métrica é calculada
 

@@ -3,7 +3,7 @@ title: Fluxos afetados pela função em foco
 description: Conta sessões em que o player estava em foco pelo menos uma vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-A métrica **Fluxos afetados pela métrica em foco** conta sessões nas quais o player estava em foco pelo menos uma vez. A métrica é booleana em nível de sessão — vários eventos de foco na mesma contagem de sessão como um fluxo afetado. Para o volume de evento de foco total, use [Contagens de foco](in-focus-count.md).
+A métrica **Fluxos afetados pela métrica em foco** conta sessões nas quais o player estava em foco pelo menos uma vez. A métrica é um booleano em nível de sessão; vários eventos de foco na mesma contagem de sessão como um fluxo afetado. Para o volume de evento de foco total, use [Contagens de foco](in-focus-count.md).
 
 ## Como essa métrica é calculada
 

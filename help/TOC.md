@@ -5,9 +5,9 @@ user-guide-title: Guia de serviços para mídia de streaming
 breadcrumb-title: Guia de serviços para mídia de streaming
 user-guide-description: Implementar serviços de mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '697'
 ht-degree: 31%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 31%
       + [Extensão de tag do iOS](/help/implementation/edge/ios-tags.md)
       + [Android](/help/implementation/edge/android.md)
       + [Extensão de tag do Android](/help/implementation/edge/android-tags.md)
-      + [Roku](/help/implementation/edge/roku.md)
+      + [Roku Edge](/help/implementation/edge/roku.md)
       + [API de borda de mídia](/help/implementation/edge/media-edge-api.md)
       + [Suporte a metadados personalizados](/help/implementation/edge/custom-metadata.md)
       + [Esquema de relatório XDM](/help/implementation/edge/reporting-schema.md)
@@ -145,6 +145,7 @@ ht-degree: 31%
       + [JavaScript](/help/implementation/analytics-only/javascript.md)
       + [Extensão de tag do Media Analytics](/help/implementation/analytics-only/javascript-tags.md)
       + [Chromecast](/help/implementation/analytics-only/chromecast.md)
+      + [Roku 2.x](/help/implementation/analytics-only/roku-2x.md)
       + [API da coleção de mídia](/help/implementation/analytics-only/media-collection-api.md)
       + Referência da API da coleção de mídia {#streaming-media-apis}
          + [Coleção de mídia](implementation/media-collection-api/mc-api-overview.md)

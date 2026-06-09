@@ -1,16 +1,16 @@
 ---
-title: Configurar Roku para mídia de transmissão
+title: Configurar o Roku Edge para mídia de transmissão
 description: Configure o Adobe Experience Platform Roku SDK para enviar dados de streaming de mídia para a Edge Network.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
-# Configurar Roku para mídia de transmissão
+# Configurar o Roku Edge para mídia de transmissão
 
 O [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku) (BrightScript) coleta dados da sessão de mídia no canal Roku e os envia para a Edge Network. O Roku está configurado no código; ele não usa tags.
 
@@ -18,7 +18,7 @@ O [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku) (Br
    * Conclua a [visão geral da implementação do Edge](overview.md) (esquema, conjunto de dados, sequência de dados com o [!UICONTROL Media Analytics] habilitado).
    * Baixe a SDK das [versões do GitHub](https://github.com/adobe/aepsdk-roku/releases) e adicione-a ao seu canal, conforme descrito no [guia de introdução](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md).
 
-## Configurar o AEP Roku SDK para mídia
+## Configurar o Roku Edge SDK para mídia
 
 Inicialize o SDK e defina a configuração do fluxo de dados e da mídia:
 
@@ -49,13 +49,13 @@ m.aepSdk.createMediaSession({
 
 >[!IMPORTANT]
 >
->Enviar um evento `media.ping` pelo menos uma vez por segundo com o valor mais recente do indicador de reprodução durante a reprodução. O AEP Roku SDK depende desses pings para funcionar corretamente.
+>Enviar um evento `media.ping` pelo menos uma vez por segundo com o valor mais recente do indicador de reprodução durante a reprodução. O Roku Edge SDK depende desses pings para funcionar corretamente.
 
-Para obter as chaves de configuração e a API completa, consulte a [Referência da API do AEP Roku SDK](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md).
+Para obter as chaves de configuração e a API completa, consulte a [Referência da API do SDK do Roku Edge](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md).
 
 ## Rastrear eventos de mídia
 
-Depois que a sessão estiver aberta, envie cada evento de mídia com `sendMediaEvent`. Consulte a guia **Roku** em cada página de [evento](/help/implementation/events/overview.md) e [variável](/help/implementation/variables/overview.md) para obter as cargas exatas.
+Depois que a sessão estiver aberta, envie cada evento de mídia com `sendMediaEvent`. Consulte a guia **Roku Edge** em cada página de [evento](/help/implementation/events/overview.md) e [variável](/help/implementation/variables/overview.md) para obter as cargas exatas.
 
 ## Próxima etapa
 

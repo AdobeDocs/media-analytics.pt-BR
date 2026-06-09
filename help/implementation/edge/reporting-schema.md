@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 763
 ht-degree: 4%
@@ -65,7 +65,7 @@ Os campos a seguir aparecem nas cargas de `mediaReporting`, mas nunca fazem part
 |---|---|
 | `xdm.mediaReporting.sessionDetails.timePlayed` | Total de segundos do conteúdo principal reproduzido, excluindo anúncios |
 | `xdm.mediaReporting.sessionDetails.totalTimePlayed` | Total de segundos decorridos, incluindo anúncios |
-| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | Segundos desduplicados — intervalos exibidos mais de uma vez são contados apenas uma vez |
+| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | Segundos desduplicados. Intervalos exibidos mais de uma vez são contados apenas uma vez |
 | `xdm.mediaReporting.sessionDetails.averageMinuteAudience` | `timePlayed` dividido pela duração do conteúdo |
 | `xdm.mediaReporting.sessionDetails.estimatedStreams` | Fluxos simultâneos estimados |
 | `xdm.mediaReporting.sessionDetails.adCount` | Número de anúncios iniciados |

@@ -3,7 +3,7 @@ title: Fluxos afetados pelo picture in picture
 description: Conta as sessões em que o visualizador entrou no picture-in-picture pelo menos uma vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!ENDSHADEBOX]
 
-A métrica **Fluxos afetados pela métrica picture in picture** conta sessões em que o visualizador inseriu a reprodução picture in picture pelo menos uma vez. A métrica é booleana em nível de sessão — várias entradas picture-in-picture na mesma contagem de sessão de um fluxo afetado. Para o volume total de entrada picture-in-picture, use [contagem de picture-in-picture](picture-in-picture-count.md).
+A métrica **Fluxos afetados pela métrica picture in picture** conta sessões em que o visualizador inseriu a reprodução picture in picture pelo menos uma vez. A métrica é um booliano em nível de sessão; várias entradas picture-in-picture na mesma contagem de sessão de um fluxo afetado. Para o volume total de entrada picture-in-picture, use [contagem de picture-in-picture](picture-in-picture-count.md).
 
 ## Como essa métrica é calculada
 

@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 803
-ht-degree: 2%
+source-wordcount: 807
+ht-degree: 3%
 
 ---
 
@@ -51,7 +51,7 @@ O rastreamento de reprodução principal abrange carregamento de mídia, início
 ## Etapas da implementação
 
 1. **Identifique quando o usuário aciona a reprodução** (o usuário clica em Reproduzir ou a reprodução automática é acionada). Crie um objeto de mídia com nome do conteúdo, ID, comprimento, tipo de fluxo e tipo de mídia. Consulte [Nome do conteúdo](/help/implementation/variables/core/content-name.md), [ID do conteúdo](/help/implementation/variables/core/content-id.md), [Comprimento do conteúdo](/help/implementation/variables/core/content-length.md), [Tipo de fluxo](/help/implementation/variables/core/stream-type.md) e [Tipo de conteúdo](/help/implementation/variables/core/content-type.md) para obter as definições de campo.
-1. **Opcionalmente, anexar metadados** — metadados padrão (programa, temporada, episódio etc.) e variáveis de dados de contexto personalizados. Consulte [Programa](/help/implementation/variables/standard-metadata/show.md), [Temporada](/help/implementation/variables/standard-metadata/season.md), [Episódio](/help/implementation/variables/standard-metadata/episode.md), [Gênero](/help/implementation/variables/standard-metadata/genre.md) e [Rede](/help/implementation/variables/standard-metadata/network.md) para obter referências de chave de metadados padrão.
+1. **Opcionalmente, anexar metadados**: metadados padrão (programa, temporada, episódio etc.) e variáveis de dados de contexto personalizados. Consulte [Programa](/help/implementation/variables/standard-metadata/show.md), [Temporada](/help/implementation/variables/standard-metadata/season.md), [Episódio](/help/implementation/variables/standard-metadata/episode.md), [Gênero](/help/implementation/variables/standard-metadata/genre.md) e [Rede](/help/implementation/variables/standard-metadata/network.md) para obter referências de chave de metadados padrão.
 1. **Chame [Início da sessão](/help/implementation/events/session/session-start.md)** para começar a rastrear a sessão. Isso carrega os dados e os metadados e inicia a medição de QoS do tempo para iniciar. SessionStart rastreia a *intenção* de reproduzir, não o primeiro quadro.
 1. **Chame [Reproduzir](/help/implementation/events/playback/play.md)** quando o primeiro quadro do conteúdo for renderizado na tela.
 1. **Chamar [Início da pausa](/help/implementation/events/playback/pause-start.md)** quando o player pausar. Chame Reproduzir novamente quando a reprodução for retomada. Não há evento de retomada separado.
@@ -64,7 +64,7 @@ O rastreamento de reprodução principal abrange carregamento de mídia, início
 
 ## Reprodução principal
 
-Os exemplos a seguir mostram um fluxo de sessão completo — do início à conclusão da sessão até a conclusão do conteúdo e o fim da sessão.
+Os exemplos a seguir mostram um fluxo de sessão completo, do início à conclusão do conteúdo e do fim da sessão.
 
 Para obter detalhes sobre a implementação por plataforma, consulte [Início da sessão](/help/implementation/events/session/session-start.md), [Reprodução](/help/implementation/events/playback/play.md), [Início da pausa](/help/implementation/events/playback/pause-start.md), [Conclusão da sessão](/help/implementation/events/session/session-complete.md) e [Término da sessão](/help/implementation/events/session/session-end.md).
 
@@ -82,7 +82,7 @@ Para obter detalhes sobre a implementação, consulte [Início da pausa](/help/i
 
 ## Manipulação de interrupções de aplicativos
 
-A reprodução em um aplicativo de mídia pode ser interrompida de várias maneiras: o usuário pressiona pausar, o aplicativo vai para o segundo plano e é recebida uma chamada telefônica. Independentemente da causa, as instruções de rastreamento são as mesmas:
+A reprodução em um aplicativo de mídia pode ser interrompida de várias maneiras. Os exemplos incluem quando o usuário pressiona pausar, o aplicativo vai para o segundo plano ou uma chamada telefônica é recebida. Independentemente da causa, as instruções de rastreamento são as mesmas:
 
 1. Chame **PauseStart** quando o aplicativo for interrompido (entra em segundo plano, mídia pausada, etc.).
 1. Chame **Reproduzir** quando o aplicativo retornar para o primeiro plano e/ou quando a reprodução da mídia for retomada.

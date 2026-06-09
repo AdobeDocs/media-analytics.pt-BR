@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 720
+source-wordcount: 722
 ht-degree: 36%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 36%
 | Recurso | Descrição | Data |
 | --- | --- | --- |
 | **Suporte ao Web SDK** | Envie dados da Web de mídia de transmissão para o Adobe Experience Platform Edge Network usando a extensão de tag da Web SDK ou Web SDK, habilitando um método de coleta unificada em soluções de plataforma, como Customer Journey Analytics, Real-time CDP, Journey Optimizer e encaminhamento de eventos. Consulte [Configurar o Web SDK para mídia de streaming](/help/implementation/edge/web-sdk.md) ou [Configurar a extensão de tag do Web SDK para mídia de streaming](/help/implementation/edge/web-sdk-tags.md) para obter mais informações. | 29 de maio de 2024 |
-| **Suporte ao Roku** | Envie dados de mídia de transmissão para o Adobe Experience Platform usando o Roku SDK. Consulte [Configurar Roku para mídia de streaming](/help/implementation/edge/roku.md) para obter mais informações. | 12 de abril de 2024 |
+| **Suporte ao Roku** | Envie dados de mídia de transmissão para o Adobe Experience Platform usando o Edge SDK Roku. Consulte [Configurar Roku Edge para mídia de streaming](/help/implementation/edge/roku.md) para obter mais informações. | 12 de abril de 2024 |
 
 ## 2023
 

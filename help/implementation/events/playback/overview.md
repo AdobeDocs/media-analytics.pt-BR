@@ -21,9 +21,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 230
+source-wordcount: 231
 ht-degree: 2%
 
 ---
@@ -50,4 +50,4 @@ Os eventos de reprodução rastreiam as transições de estado no reprodutor de 
 1. **Chamar [Início da pausa](pause-start.md)** quando o usuário pausar a reprodução. Enviar Reprodução quando a reprodução for retomada.
 1. **Chame [Início do buffer](buffer-start.md)** quando o player parar de aguardar dados. Nas APIs baseadas em XDM, o fim do buffer é inferido ao enviar o próximo evento Play. No Mobile SDK, também chame `BufferComplete` explicitamente quando o buffer for resolvido.
 1. **Chame [Ping](ping.md)** a cada 10 segundos durante a reprodução do conteúdo principal e a cada 1 segundo durante a reprodução do anúncio. O ping mantém a sessão ativa e registra o movimento do indicador de reprodução. Os SDKs móveis enviam pings automaticamente; todas as outras plataformas devem enviá-los manualmente.
-1. **Chame [Alteração na taxa de bits](bitrate-change.md)** sempre que o player negociar uma nova taxa de bits. Inclua os dados de QoE atuais — taxa de bits, quadros por segundo, quadros ignorados — para que o back-end possa calcular a [taxa de bits média](/help/reporting/metrics/average-bitrate.md) e as métricas de qualidade relacionadas.
+1. **Chame [Alteração na taxa de bits](bitrate-change.md)** sempre que o player negociar uma nova taxa de bits. Inclua os dados de QoE atuais (taxa de bits, quadros por segundo, quadros ignorados) para que o back-end possa calcular a [taxa de bits média](/help/reporting/metrics/average-bitrate.md) e as métricas de qualidade relacionadas.

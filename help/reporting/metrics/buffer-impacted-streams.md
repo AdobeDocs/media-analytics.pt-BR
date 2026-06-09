@@ -3,7 +3,7 @@ title: Fluxos afetados pelo buffer
 description: Conta sessões em que o player entrou em um estado de buffer pelo menos uma vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Fluxos afetados pelo buffer
 
-A métrica **Fluxos afetados pelo buffer** conta sessões nas quais o player entrou em um estado de buffer pelo menos uma vez. A métrica é booleana em nível de sessão — vários eventos de buffer na mesma contagem de sessão que um fluxo afetado. Para o volume de buffer total, use [Eventos de buffer](buffer-events.md).
+A métrica **Fluxos afetados pelo buffer** conta sessões nas quais o player entrou em um estado de buffer pelo menos uma vez. A métrica é um booleano em nível de sessão; vários eventos de buffer na mesma contagem de sessão como um fluxo afetado. Para o volume de buffer total, use [Eventos de buffer](buffer-events.md).
 
 ## Como essa métrica é calculada
 

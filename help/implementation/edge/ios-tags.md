@@ -3,7 +3,7 @@ title: Configurar o iOS para mídia de transmissão com tags
 description: Configure a coleção de mídia de transmissão para o iOS usando a extensão de tag Adobe Streaming Media for Edge Network.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -23,9 +23,9 @@ ht-degree: 0%
 1. Na interface da Coleção de dados, abra a propriedade móvel e selecione **[!UICONTROL Extensões]**.
 1. Na guia **[!UICONTROL Catálogo]**, localize a extensão **Mídia de Streaming do Adobe para Edge Network** e selecione **[!UICONTROL Instalar]**.
 1. Defina o seguinte e salve:
-   * **[!UICONTROL Canal]** — o nome do canal relatado com cada sessão.
-   * **[!UICONTROL Nome do reprodutor]** — o nome do reprodutor de mídia em uso.
-   * **[!UICONTROL Versão do aplicativo]** — a versão do seu aplicativo de reprodução.
+   * **[!UICONTROL Canal]**: o nome do canal relatado com cada sessão.
+   * **[!UICONTROL Nome do reprodutor]**: o nome do reprodutor de mídia em uso.
+   * **[!UICONTROL Versão do aplicativo]**: a versão do seu aplicativo de reprodução.
 1. Publique suas alterações, adicione as dependências de `AEPCore`, `AEPEdge`, `AEPEdgeIdentity` e `AEPEdgeMedia` ao seu aplicativo e registre-as no Mobile Core.
 
 ## Rastrear eventos de mídia

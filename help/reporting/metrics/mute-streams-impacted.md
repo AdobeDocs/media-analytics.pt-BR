@@ -3,7 +3,7 @@ title: Fluxos afetados pela função mudo
 description: Conta sessões em que o visualizador ativou o áudio pelo menos uma vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-A métrica **Fluxos afetados pela função mudo** conta sessões nas quais o visualizador desativou o áudio pelo menos uma vez. A métrica é booleana em nível de sessão — vários alternadores de mudo na mesma contagem de sessões que um fluxo afetado. Para o volume com mudo total, use [Contagens de mudo](mute-count.md).
+A métrica **Fluxos afetados pela função mudo** conta sessões nas quais o visualizador desativou o áudio pelo menos uma vez. A métrica é um booleano em nível de sessão; vários alternadores de mudo na mesma contagem de sessão como um fluxo afetado. Para o volume com mudo total, use [Contagens de mudo](mute-count.md).
 
 ## Como essa métrica é calculada
 

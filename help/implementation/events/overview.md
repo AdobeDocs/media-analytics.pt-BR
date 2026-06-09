@@ -3,7 +3,7 @@ title: Visão geral dos eventos de mídia de transmissão
 description: Saiba mais sobre os tipos de evento de mídia e a ordem em que eles devem ser enviados.
 feature: Streaming Media
 role: Developer
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -21,9 +21,9 @@ Os eventos são agrupados em seis categorias (sessão, reprodução, anúncios, 
 
 Os eventos de sessão se aplicam a qualquer tipo de rastreamento de mídia, incluindo: vídeo sob demanda, fluxos ao vivo, podcasts e audiobooks. Eles definem os limites da própria sessão de rastreamento. O evento de sessão mais importante é [Início da sessão](session/session-start.md), pois quase todos os outros tipos de evento dependem da ID de sessão gerada por ele. Enviá-lo como o primeiro evento quando um usuário inicia uma sessão, como quando ele pressiona Play ou quando o reprodutor começa a reprodução automática.
 
-Quando uma sessão estiver aberta, use [Sessão concluída](session/session-complete.md) ou [Fim de sessão](session/session-end.md) para indicar como a experiência de exibição terminou. Enviar sessão concluída quando o visualizador atingir o fim natural do conteúdo — o vídeo é concluído, o episódio do podcast termina ou o capítulo final de um audiobook é concluído. Sessão concluída não fecha a sessão; ela permanece aberta até expirar naturalmente, portanto, quaisquer eventos finais, como um ping final, ainda são capturados.
+Quando uma sessão estiver aberta, use [Sessão concluída](session/session-complete.md) ou [Fim de sessão](session/session-end.md) para indicar como a experiência de exibição terminou. Enviar sessão concluída quando o visualizador atingir o fim natural do conteúdo (o vídeo termina, o episódio do podcast termina ou o capítulo final de um audiobook é concluído). Sessão concluída não fecha a sessão; ela permanece aberta até expirar naturalmente, portanto, quaisquer eventos finais, como um ping final, ainda são capturados.
 
-Se o visualizador sair antes de atingir o fim, envie [Fim da sessão](session/session-end.md) para fechar a sessão imediatamente. Somente envie o fim da sessão quando nenhum evento adicional for seguido; por exemplo, quando o reprodutor for destruído ou a página for descarregada. O término da sessão é um encerramento permanente: uma vez enviada, a sessão é encerrada e nenhum outro evento pode ser rastreado nela. Na maioria dos casos, é mais seguro permitir que a sessão expire naturalmente. Os exemplos incluem a pausa indefinida do visualizador, o aplicativo em segundo plano ou a falha no carregamento do conteúdo.
+Se o visualizador sair antes de atingir o fim, envie [Fim da sessão](session/session-end.md) para fechar a sessão imediatamente. Somente envie o término da sessão quando nenhum evento adicional for seguido (por exemplo, quando o reprodutor for destruído ou a página for descarregada). O término da sessão é um encerramento permanente: uma vez enviada, a sessão é encerrada e nenhum outro evento pode ser rastreado nela. Na maioria dos casos, é mais seguro permitir que a sessão expire naturalmente. Os exemplos incluem a pausa indefinida do visualizador, o aplicativo em segundo plano ou a falha no carregamento do conteúdo.
 
 Uma sessão expira automaticamente se nenhum evento for recebido por 10 minutos ou se nenhum movimento do indicador de reprodução for detectado por 30 minutos. Se qualquer uma das condições for atendida e o visualizador retornar ao conteúdo, você deverá chamar o Início da sessão novamente para abrir uma nova sessão antes de enviar mais eventos.
 
@@ -31,7 +31,7 @@ Uma sessão expira automaticamente se nenhum evento for recebido por 10 minutos 
 
 Os eventos de reprodução rastreiam as transições de estado no reprodutor de mídia durante uma sessão. Eles formam o núcleo do fluxo de eventos e se aplicam a qualquer tipo de conteúdo.
 
-O evento de reprodução principal é [Reproduzir](playback/play.md). Depois de chamar o início da sessão, a reprodução sinaliza que o conteúdo começou a ser reproduzido, seja o início, um acionador de reprodução automática ou qualquer retorno ao estado de reprodução. [Início da pausa](playback/pause-start.md) indica que o usuário pausou a reprodução. Não há evento de retomada dedicado; quando o visualizador for retomado, envie Reproduzir novamente. O Play funciona da mesma forma depois de uma paralisação de buffering — envie [Início do buffer](playback/buffer-start.md) quando o player parar de aguardar dados, depois siga com Play quando o buffering for resolvido.
+O evento de reprodução principal é [Reproduzir](playback/play.md). Depois de chamar o início da sessão, a reprodução sinaliza que o conteúdo começou a ser reproduzido, seja o início, um acionador de reprodução automática ou qualquer retorno ao estado de reprodução. [Início da pausa](playback/pause-start.md) indica que o usuário pausou a reprodução. Não há evento de retomada dedicado; quando o visualizador for retomado, envie Reproduzir novamente. O Play funciona da mesma forma depois de uma paralisação de buffering; envie [Início do buffer](playback/buffer-start.md) quando o player parar de aguardar dados e, em seguida, siga com Play quando o buffering for resolvido.
 
 Envie [Ping](playback/ping.md) a cada 10 segundos durante a reprodução do conteúdo principal e a cada 1 segundo durante a reprodução do anúncio. O ping mantém a sessão ativa e registra o movimento do indicador de reprodução. Nos SDKs móveis, os pings são enviados automaticamente; em todas as outras plataformas, eles devem ser enviados manualmente.
 

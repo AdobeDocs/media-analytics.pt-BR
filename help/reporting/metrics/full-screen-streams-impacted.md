@@ -3,7 +3,7 @@ title: Fluxos afetados pela tela cheia
 description: Conta sessões em que o visualizador entrou em tela cheia pelo menos uma vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-A métrica **Fluxos afetados pela tela cheia** conta sessões nas quais o visualizador entrou na tela cheia pelo menos uma vez. A métrica é booleana em nível de sessão — várias entradas de tela cheia na mesma contagem de sessão como um fluxo afetado. Para o volume total de entradas em tela cheia, use [Contagens de tela cheia](full-screen-count.md).
+A métrica **Fluxos afetados pela tela cheia** conta sessões nas quais o visualizador entrou na tela cheia pelo menos uma vez. A métrica é um booliano em nível de sessão; várias entradas de tela cheia na mesma contagem de sessão como um fluxo afetado. Para o volume total de entradas em tela cheia, use [Contagens de tela cheia](full-screen-count.md).
 
 ## Como essa métrica é calculada
 

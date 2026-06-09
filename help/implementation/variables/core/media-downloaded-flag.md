@@ -3,10 +3,10 @@ title: Sinalizador de mídia baixada
 description: Marque uma sessão como reprodução offline baixada para que ela seja relatada separadamente das sessões transmitidas.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 6%
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -85,7 +85,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Definir `isDownloaded` como `true` dentro de `xdm.mediaCollection.sessionDetails` ao chamar `createMediaSession`:
 
@@ -176,6 +176,10 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
+
+>[!TAB Roku 2.x]
+
+O rastreamento de conteúdo baixado não está disponível no Roku 2.x SDK. Para relatar a reprodução de mídia baixada, use a [SDK do Roku Edge](/help/implementation/edge/roku.md) ou a [API da Coleção de Mídia](/help/implementation/analytics-only/media-collection-api.md).
 
 >[!TAB API da coleção de mídia]
 
