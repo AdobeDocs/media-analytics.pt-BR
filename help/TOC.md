@@ -5,10 +5,10 @@ user-guide-title: Guia de serviços para mídia de streaming
 breadcrumb-title: Guia de serviços para mídia de streaming
 user-guide-description: Implementar serviços de mídia de streaming. Inclui o SDK de mídia e a API de coleta de mídia.
 sub-product: media analytics
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: caf61bd76e2911ae5be31c4b1d8265b1df002acf
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 31%
+source-wordcount: '692'
+ht-degree: 32%
 
 ---
 
@@ -165,7 +165,6 @@ ht-degree: 31%
             + [Condições de tempo-limite](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Controlar a ordem dos eventos](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Enfileirar eventos quando a resposta das sessões é lenta](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + [Configurações de recusa e privacidade](implementation/opt-out-privacy.md)
 + Geração de relatórios {#reporting}
    + Configurar relatórios {#reporting-setup}
       + [Implementações do Edge](reporting/setup/edge-reporting.md)
@@ -300,3 +299,8 @@ ht-degree: 31%
       + [Linha do tempo: Capítulos](use-cases/scenarios/chapter-start-end.md)
       + [Linha do tempo: visualização até o fim](use-cases/scenarios/view-to-end-of-content.md)
       + [Linha do tempo: o usuário abandona a sessão](use-cases/scenarios/user-abandons-session.md)
+
+<!--
+Removed from before the Reporting section:
+  + [Opt-out and privacy settings](implementation/opt-out-privacy.md)
+-->
