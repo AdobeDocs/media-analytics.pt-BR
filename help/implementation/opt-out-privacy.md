@@ -8,23 +8,29 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 3fd9ffcb997e1570abb983107e69d183b1c8b311
+    internal-label: Privacy
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 798
+source-wordcount: '806'
 ht-degree: 3%
-
 ---
-
 # Configurações de recusa e privacidade
 
 Quando um usuário recusa o rastreamento, a biblioteca de mídia de transmissão interrompe imediatamente todas as atividades de coleta de dados. Nenhuma chamada de início de sessão, nenhum ping de heartbeat e nenhum dado de rastreamento de eventos é enviado aos servidores de coleta de dados da Adobe para esse usuário.
@@ -65,7 +71,7 @@ Valores de consentimento:
 
 Para restaurar o rastreamento, chame `setConsent` novamente com `"y"` como o valor `collect.val`.
 
-Consulte o [comando setConsent](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/commands/setconsent) na documentação do Web SDK para outros formatos, incluindo o IAB TCF 2.0.
+Consulte o [comando setConsent](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent) na documentação do Web SDK para outros formatos, incluindo o IAB TCF 2.0.
 
 >[!TAB iOS]
 
@@ -161,7 +167,7 @@ Para obter mais informações, consulte a [API do Media Edge](https://developer.
 
 >[!TAB Media SDK JS 3.x]
 
-A biblioteca Media SDK JS 3.x adia para o estado de não participação da API do visitante da Adobe (serviço de identidade). Quando um usuário recusa o uso da API de visitante, o Media SDK suprime automaticamente todas as chamadas de rastreamento.
+A biblioteca Media SDK JS 3.x adia para o estado de não participação do Serviço de ID de visitante da Adobe. Quando um usuário recusa o uso do serviço de ID, o Media SDK suprime automaticamente todas as chamadas de rastreamento.
 
 ```javascript
 var visitor = Visitor.getInstance("YOUR_ORG_ID@AdobeOrg");
@@ -172,7 +178,7 @@ Substitua `YOUR_ORG_ID@AdobeOrg` pela ID da organização da Adobe Admin Console
 
 Para restaurar o rastreamento, passe `false` para `setOptOut()`.
 
-Para obter mais informações, consulte [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR).
+Para obter mais informações, consulte [Serviço de ID de Visitante da Adobe](https://experienceleague.adobe.com/pt-br/docs/id-service/using/home).
 
 >[!TAB Chromecast]
 
@@ -244,7 +250,7 @@ Para recusas parciais em CCPA, inclua sinalizadores de recusa no objeto `params`
 * `analytics.optOutServerSideForwarding`: Defina como `true` para recusar o compartilhamento de dados entre a Adobe Analytics e outras soluções da Experience Cloud (como o Audience Manager).
 * `analytics.optOutShare`: Defina como `true` para recusar o compartilhamento de dados federados com outros clientes do Adobe Analytics.
 
-Para obter uma lista completa dos parâmetros disponíveis, consulte a [Referência de parâmetros da solicitação da API Media Collection](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md).
+Para obter uma lista completa dos parâmetros disponíveis, consulte a [Referência de parâmetros da solicitação da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/parameters).
 
 >[!ENDTABS]
 

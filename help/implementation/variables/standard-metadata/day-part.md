@@ -3,13 +3,11 @@ title: Faixa de horário
 description: Defina o período do dia (Manhã, Tarde, Horário nobre, Tarde da noite) quando o conteúdo era transmitido ou reproduzido.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '265'
 ht-degree: 7%
-
 ---
-
 
 # Faixa de horário
 
@@ -24,7 +22,7 @@ A variável day part é o intervalo da hora do dia em que o conteúdo foi transm
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.dayPart` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.dayPart` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
@@ -175,6 +173,6 @@ Incluir `media.dayPart` no objeto `params`:
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

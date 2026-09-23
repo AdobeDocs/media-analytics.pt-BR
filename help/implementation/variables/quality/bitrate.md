@@ -3,13 +3,11 @@ title: Taxa de bits
 description: Defina a taxa de bits de reprodução atual (em kbps) no objeto de QoE para que o back-end possa calcular métricas de taxa de bits.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '316'
 ht-degree: 5%
-
 ---
-
 
 # Taxa de bits
 
@@ -24,7 +22,7 @@ A variável bitrate é a taxa de bits de reprodução atual, em kilobits por seg
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.qoe.bitrateAverageBucket` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **Obrigatório** | Não |
 | **Enviado com** | Eventos de qualidade ([alteração na taxa de bits](/help/implementation/events/playback/bitrate-change.md), [início do buffer](/help/implementation/events/playback/buffer-start.md), [erro](/help/implementation/events/error.md)), fechamento da sessão |
@@ -183,6 +181,6 @@ Inclua `media.qoe.bitrate` no objeto `params` de sua solicitação POST `bitrate
 }
 ```
 
-Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de eventos da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

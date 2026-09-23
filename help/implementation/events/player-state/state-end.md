@@ -3,13 +3,11 @@ title: Fim do estado
 description: Sinal de que o reprodutor de mídia saiu de um estado de reprodutor rastreado.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # Fim do estado
 
@@ -147,7 +145,7 @@ O rastreamento do estado do player não está disponível no Roku 2.x SDK. Para 
 
 >[!TAB API da coleção de mídia]
 
-Enviar uma POSTAGEM `stateEnd` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar uma POSTAGEM `stateEnd` para o [ponto de extremidade de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

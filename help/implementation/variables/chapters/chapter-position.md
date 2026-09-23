@@ -3,13 +3,11 @@ title: Posição do capítulo
 description: Defina o índice do capítulo dentro do conteúdo. A posição do capítulo é necessária para que a ID do capítulo seja gerada automaticamente corretamente.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '255'
 ht-degree: 6%
-
 ---
-
 
 # Posição do capítulo
 
@@ -24,7 +22,7 @@ A variável de posição do capítulo é o índice do capítulo dentro do conte�
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.chapter.position` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.chapter.position` |
 | **Obrigatório** | Não (Mobile SDK); Sim (Edge, API Media Collection) |
 | **Enviado com** | [Início do capítulo](/help/implementation/events/chapters/chapter-start.md), fechamento do capítulo |
@@ -185,6 +183,6 @@ Inclua `media.chapter.index` no objeto `params` de sua solicitação POST `chapt
 }
 ```
 
-Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de eventos da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

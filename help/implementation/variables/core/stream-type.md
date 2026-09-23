@@ -3,13 +3,11 @@ title: Tipo de transmissão
 description: Defina o tipo de fluxo para identificar se um fluxo de mídia é conteúdo de áudio ou vídeo.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 6%
-
 ---
-
 
 # Tipo de transmissão
 
@@ -26,7 +24,7 @@ A definição correta do tipo de fluxo é fundamental para os relatórios de mí
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.streamType` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.streamType` |
 | **Obrigatório** | Sim |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
@@ -198,6 +196,6 @@ Inclua `media.streamType` no objeto `params` de sua solicitação POST `sessionS
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa e todos os campos obrigatórios.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa e todos os campos obrigatórios.
 
 >[!ENDTABS]

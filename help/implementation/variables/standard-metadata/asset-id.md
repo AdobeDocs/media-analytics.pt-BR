@@ -3,13 +3,11 @@ title: ID do ativo
 description: Defina a ID do ativo, um identificador estável do setor para o ativo de mídia, como um EIDR ou ID do TMS/Gracenote.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 8%
-
+source-wordcount: '304'
+ht-degree: 7%
 ---
-
 
 # ID do ativo
 
@@ -28,7 +26,7 @@ A variável ID do ativo é o identificador exclusivo do ativo de mídia subjacen
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.asset` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.asset` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
@@ -179,6 +177,6 @@ Incluir `media.assetId` no objeto `params`:
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

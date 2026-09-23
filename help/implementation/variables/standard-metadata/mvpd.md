@@ -3,13 +3,11 @@ title: MVPD
 description: Defina o distribuidor de programação de vídeo multicanal quando o usuário se autenticar via Adobe Pass.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '258'
 ht-degree: 8%
-
 ---
-
 
 # MVPD
 
@@ -24,7 +22,7 @@ A variável MVPD (distribuidor de programação de vídeo multicanal) é o cabo,
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.pass.mvpd` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.pass.mvpd` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
@@ -175,6 +173,6 @@ Incluir `media.pass.mvpd` no objeto `params`:
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

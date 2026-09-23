@@ -3,19 +3,17 @@ title: Suporte a metadados personalizados - Formato XDM
 description: Saiba como enviar metadados personalizados com eventos de rastreamento de mídia usando o formato XDM da Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '774'
 ht-degree: 2%
-
 ---
-
 
 # Suporte a metadados personalizados - formato XDM
 
 A API da Experience Edge permite enviar metadados personalizados de mídia juntamente com campos XDM padrão em eventos de API `sessionStart`, `adStart` e `chapterStart`. Os metadados personalizados de mídia enviados por meio do formato XDM podem ser encaminhados ao **Adobe Analytics** e ao **Adobe Experience Platform**.
 
-Para implementações da API Media Collection, consulte [Suporte a metadados personalizados](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md).
+Para implementações da API Media Collection, consulte [Suporte a metadados personalizados](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata).
 
 ## Visão geral
 
@@ -316,7 +314,7 @@ Neste exemplo:
 
 * Após o processamento, os metadados personalizados são encaminhados para o Adobe Analytics como variáveis de dados de contexto. O prefixo `_tenant` é removido automaticamente, portanto, as regras de processamento referenciam somente o caminho do campo após `_tenant` (por exemplo, `_mycompany.contentCategory` torna-se `contentCategory`)
 * Os dados enviados via `_data` também são encaminhados ao Adobe Analytics e disponibilizados pelas regras de processamento
-* Use as regras de processamento para mapear variáveis de dados de contexto para eVars, props ou outras variáveis do Analytics. Consulte [Mapeamento de variável de dados para o Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping) para obter detalhes.
+* Use as regras de processamento para mapear variáveis de dados de contexto para eVars, props ou outras variáveis do Analytics. Consulte [Mapeamento de variável de dados para o Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) para obter detalhes.
 
 **Adobe Experience Platform:**
 
@@ -335,6 +333,6 @@ Neste exemplo:
 
 >[!MORELIKETHIS]
 >
->* [Suporte a metadados personalizados da API Media Collection](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
->* [Tipo de dados de Detalhes da Coleção de Mídia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/media-collection-details)
->* [Mapeamento de variável de dados para o Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping)
+>* [Suporte a metadados personalizados da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
+>* [Tipo de dados de Detalhes da Coleção de Mídia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Mapeamento de variável de dados para o Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)

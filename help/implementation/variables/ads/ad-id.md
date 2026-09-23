@@ -3,13 +3,11 @@ title: ID do anúncio
 description: Identifique um anúncio de maneira exclusiva.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '241'
 ht-degree: 9%
-
 ---
-
 
 # ID do anúncio
 
@@ -24,7 +22,7 @@ A variável de ID de anúncio identifica exclusivamente cada anúncio. Isso é n
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.name` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.ad.name` |
 | **Obrigatório** | Sim |
 | **Enviado com** | [Início do anúncio](/help/implementation/events/ads/ad-start.md) e fechamento |
@@ -188,6 +186,6 @@ Inclua `media.ad.id` no objeto `params` de sua solicitação POST `adStart`:
 }
 ```
 
-Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de eventos da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

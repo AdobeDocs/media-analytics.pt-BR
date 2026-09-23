@@ -3,13 +3,11 @@ title: Nome do ad break
 description: Defina o nome amigável do ad break principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '276'
 ht-degree: 6%
-
 ---
-
 
 # Nome do ad break
 
@@ -24,7 +22,7 @@ A variável de nome do ad break é o nome amigável do ad break (por exemplo, `"
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.ad.podFriendlyName` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Obrigatório** | Sim (Mobile SDK); Não (Edge, API Media Collection) |
 | **Enviado com** | [Início de quebra de anúncio](/help/implementation/events/ads/ad-break-start.md), anúncio fechado |
@@ -179,6 +177,6 @@ Inclua `media.ad.podFriendlyName` no objeto `params` de sua solicitação POST `
 }
 ```
 
-Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de eventos da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

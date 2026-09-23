@@ -3,13 +3,11 @@ title: Episódio
 description: Defina o número do episódio para o conteúdo episódico, de modo que episódios individuais possam ser relatados separadamente.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 9%
-
+source-wordcount: '247'
+ht-degree: 8%
 ---
-
 
 # Episódio
 
@@ -24,7 +22,7 @@ A variável episode é o número do episódio na temporada (normalmente um intei
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.episode` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.episode` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
@@ -175,6 +173,6 @@ Incluir `media.episode` no objeto `params`:
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

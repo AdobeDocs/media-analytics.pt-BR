@@ -3,13 +3,11 @@ title: Canal de conteúdo
 description: Defina o canal para identificar a estação de distribuição, rede ou propriedade onde o conteúdo é reproduzido.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '279'
 ht-degree: 6%
-
 ---
-
 
 # Canal de conteúdo
 
@@ -24,7 +22,7 @@ A variável de canal de conteúdo identifica a estação de distribuição, a re
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.channel` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.channel` |
 | **Obrigatório** | Sim |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
@@ -183,6 +181,6 @@ Inclua `media.channel` no objeto `params` de sua solicitação POST `sessionStar
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

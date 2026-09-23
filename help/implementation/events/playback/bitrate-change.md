@@ -3,13 +3,11 @@ title: Alteração da taxa de bits
 description: Sinal de que a taxa de bits de reprodução mudou.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '235'
 ht-degree: 6%
-
 ---
-
 
 # Alteração da taxa de bits
 
@@ -166,7 +164,7 @@ adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 
 >[!TAB API da coleção de mídia]
 
-Enviar uma POSTAGEM `bitrateChange` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) com a nova taxa de bits em `qoeData`:
+Enviar uma POSTAGEM `bitrateChange` para o [ponto de extremidade de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) com a nova taxa de bits em `qoeData`:
 
 ```json
 {

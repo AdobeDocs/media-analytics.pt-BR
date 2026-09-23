@@ -3,13 +3,11 @@ title: Versão do aplicativo
 description: Configure a sequência de caracteres da versão do aplicativo de reprodução de mídia.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '297'
 ht-degree: 2%
-
 ---
-
 
 # Versão do aplicativo
 
@@ -27,7 +25,7 @@ A variável de versão do aplicativo identifica a versão do aplicativo de repro
 
 | Propriedade | Valor |
 | --- | --- |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Parâmetro da API da coleção de mídia** | `media.sdkVersion` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md) |
@@ -38,7 +36,7 @@ A variável de versão do aplicativo identifica a versão do aplicativo de repro
 
 >[!TAB Web SDK]
 
-Definir `appVersion` no objeto de configuração `streamingMedia` ao chamar [`configure`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/configure/streamingmedia):
+Definir `appVersion` no objeto de configuração `streamingMedia` ao chamar [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia):
 
 ```javascript
 alloy("configure", {
@@ -177,6 +175,6 @@ Inclua `media.sdkVersion` no objeto `params` de sua solicitação POST `sessionS
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

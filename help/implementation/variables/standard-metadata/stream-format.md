@@ -3,13 +3,11 @@ title: Formato do fluxo
 description: Defina o formato do fluxo para identificar o nível de qualidade (HD, SD ou outro rótulo que seu pipeline de entrega usa).
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '265'
 ht-degree: 7%
-
 ---
-
 
 # Formato do fluxo
 
@@ -24,7 +22,7 @@ A variável de formato de fluxo identifica a camada de qualidade do fluxo (norma
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.format` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.format` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
@@ -175,6 +173,6 @@ Inclua `media.streamFormat` no objeto `params` de sua solicitação POST `sessio
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

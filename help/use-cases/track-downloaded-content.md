@@ -8,25 +8,32 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/rtLBRcyLB8D8HPBj-Qw5LD824Fu8KeUDsLokJCn2Wfc
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: e992d880-33bc-4949-a648-aa7d410276cd
+    internal-label: Validation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 721
-ht-degree: 93%
-
+source-wordcount: '729'
+ht-degree: 91%
 ---
-
 # Rastrear o conteúdo baixado{#track-downloaded-content}
 
 ## Visão geral {#overview}
@@ -56,8 +63,8 @@ O rastreamento de conteúdo é compatível com dispositivos móveis iOS e Androi
 ### Esquemas de eventos
 
 O recurso Conteúdo baixado é a versão offline (padrão) da API Media Collection online, de modo que os dados de evento que seu reprodutor acumula e envia para o back-end devem usar os mesmos esquemas de evento que você usa quando faz chamadas online. Para obter informações sobre esses esquemas, consulte:
-* [Visão geral;](/help/implementation/media-collection-api/mc-api-overview.md)
-* [Validar solicitações de evento](/help/implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+* [Visão geral;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)
+* [Validar solicitações de evento](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)
 
 ### Ordem dos eventos
 

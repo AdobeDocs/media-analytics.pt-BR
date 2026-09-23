@@ -3,13 +3,11 @@ title: Mostrar tipo
 description: Identifique o formato de conteúdo (episódio completo, pré-visualização, clipe ou outro) usando um código de número inteiro de sequência.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '262'
 ht-degree: 7%
-
 ---
-
 
 # Mostrar tipo
 
@@ -31,7 +29,7 @@ Use-a para separar a visualização completa de programas do conteúdo curto, co
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.type` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.type` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
@@ -182,6 +180,6 @@ Incluir `media.showType` no objeto `params`:
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

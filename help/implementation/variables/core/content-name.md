@@ -3,13 +3,11 @@ title: Nome do conteúdo
 description: Defina o nome amigável do conteúdo (o título legível mostrado no relatório).
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '256'
 ht-degree: 8%
-
 ---
-
 
 # Nome do conteúdo
 
@@ -24,7 +22,7 @@ A variável de nome de conteúdo é o título legível do conteúdo (por exemplo
 | Propriedade | Valor |
 | --- | --- |
 | **Variável de dados de contexto** | `a.media.friendlyName` |
-| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo da coleção XDM** | [`xdm.mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Característica do Audience Manager** | `c_contextdata.a.media.friendlyName` |
 | **Obrigatório** | Não |
 | **Enviado com** | [Início da sessão](/help/implementation/events/session/session-start.md), fechamento da sessão |
@@ -196,6 +194,6 @@ Inclua `media.name` no objeto `params` de sua solicitação POST `sessionStart`:
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]
