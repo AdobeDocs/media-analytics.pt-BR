@@ -3,13 +3,11 @@ title: Posição do anúncio no pod
 description: Defina a posição do índice do anúncio dentro do ad break principal. O primeiro anúncio tem índice 0.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
-
+source-wordcount: '266'
+ht-degree: 6%
 ---
-
 
 # Posição do anúncio no pod
 
@@ -184,6 +182,6 @@ Incluir `media.ad.podPosition` no objeto `params`:
 }
 ```
 
-Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de eventos da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

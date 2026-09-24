@@ -3,13 +3,11 @@ title: Capítulo concluído
 description: Sinal de que um segmento de capítulo terminou de ser reproduzido.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '150'
 ht-degree: 10%
-
 ---
-
 
 # Capítulo concluído
 
@@ -123,7 +121,7 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_COMPLETE)
 
 >[!TAB API da coleção de mídia]
 
-Enviar uma POSTAGEM `chapterComplete` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar uma POSTAGEM `chapterComplete` para o [ponto de extremidade de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

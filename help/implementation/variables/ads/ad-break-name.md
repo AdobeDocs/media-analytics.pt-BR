@@ -3,13 +3,11 @@ title: Nome do ad break
 description: Defina o nome amigável do ad break principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '276'
 ht-degree: 6%
-
 ---
-
 
 # Nome do ad break
 
@@ -179,6 +177,6 @@ Inclua `media.ad.podFriendlyName` no objeto `params` de sua solicitação POST `
 }
 ```
 
-Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de eventos da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

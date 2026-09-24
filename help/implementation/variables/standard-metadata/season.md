@@ -3,13 +3,11 @@ title: Temporada
 description: Defina o número da temporada para o conteúdo episódico, de modo que o engajamento possa ser dividido por temporada.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '259'
 ht-degree: 8%
-
 ---
-
 
 # Temporada
 
@@ -175,6 +173,6 @@ Incluir `media.season` no objeto `params`:
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

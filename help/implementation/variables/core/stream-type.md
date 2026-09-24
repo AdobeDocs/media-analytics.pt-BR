@@ -3,13 +3,11 @@ title: Tipo de transmissão
 description: Defina o tipo de fluxo para identificar se um fluxo de mídia é conteúdo de áudio ou vídeo.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 6%
-
 ---
-
 
 # Tipo de transmissão
 
@@ -198,6 +196,6 @@ Inclua `media.streamType` no objeto `params` de sua solicitação POST `sessionS
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa e todos os campos obrigatórios.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa e todos os campos obrigatórios.
 
 >[!ENDTABS]

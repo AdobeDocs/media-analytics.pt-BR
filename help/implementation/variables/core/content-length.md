@@ -3,13 +3,11 @@ title: Extensão do conteúdo
 description: Defina a duração do conteúdo em segundos no início da sessão. Ele direciona marcadores de progresso e Audiência média por minuto.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '289'
 ht-degree: 7%
-
 ---
-
 
 # Extensão do conteúdo
 
@@ -194,6 +192,6 @@ Inclua `media.length` no objeto `params` de sua solicitação POST `sessionStart
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

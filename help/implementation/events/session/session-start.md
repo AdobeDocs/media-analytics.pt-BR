@@ -3,13 +3,11 @@ title: Início da sessão
 description: Sinalize o início de uma sessão de mídia e obtenha a ID de sessão necessária para todos os eventos subsequentes.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
-
+source-wordcount: '397'
+ht-degree: 5%
 ---
-
 
 # Início da sessão
 
@@ -175,7 +173,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 >[!TAB API da coleção de mídia]
 
-Enviar uma POSTAGEM `sessionStart` para o [ponto de extremidade de sessões](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). O cabeçalho de resposta `Location` contém a ID de sessão a ser usada em todas as solicitações de evento subsequentes.
+Enviar uma POSTAGEM `sessionStart` para o [ponto de extremidade de sessões](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions). O cabeçalho de resposta `Location` contém a ID de sessão a ser usada em todas as solicitações de evento subsequentes.
 
 ```json
 {

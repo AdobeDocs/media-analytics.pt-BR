@@ -3,13 +3,11 @@ title: Comprimento do capítulo
 description: Defina a duração de cada capítulo, em segundos.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '232'
 ht-degree: 7%
-
 ---
-
 
 # Comprimento do capítulo
 
@@ -185,6 +183,6 @@ Inclua `media.chapter.length` no objeto `params` de sua solicitação POST `chap
 }
 ```
 
-Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de eventos da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

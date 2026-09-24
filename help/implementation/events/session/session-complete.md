@@ -3,13 +3,11 @@ title: Sessão concluída
 description: Sinal de que o visualizador atingiu o fim do conteúdo principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 8%
-
+source-wordcount: '188'
+ht-degree: 7%
 ---
-
 
 # Sessão concluída
 
@@ -122,7 +120,7 @@ ADBMobile().mediaTrackComplete()
 
 >[!TAB API da coleção de mídia]
 
-Enviar uma POSTAGEM `sessionComplete` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar uma POSTAGEM `sessionComplete` para o [ponto de extremidade de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

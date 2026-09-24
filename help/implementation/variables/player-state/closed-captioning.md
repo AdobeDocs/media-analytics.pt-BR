@@ -3,13 +3,11 @@ title: Legendas ocultas
 description: Rastreie quando o visualizador ativa e desativa as legendas ocultas para que o back-end possa relatar o envolvimento de legendas.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 5%
-
+source-wordcount: '342'
+ht-degree: 7%
 ---
-
 
 # Legendas ocultas
 
@@ -182,6 +180,6 @@ Enviar uma solicitação POST `stateStart` quando as legendas estiverem habilita
 }
 ```
 
-Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de eventos da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

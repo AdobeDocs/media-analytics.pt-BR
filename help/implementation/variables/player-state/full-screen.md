@@ -3,13 +3,11 @@ title: Tela cheia
 description: Rastreie quando o visualizador entra e sai da reprodução em tela cheia, para que o back-end possa relatar o envolvimento em tela cheia.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 6%
-
+source-wordcount: '348'
+ht-degree: 8%
 ---
-
 
 # Tela cheia
 
@@ -195,6 +193,6 @@ Envie uma solicitação de POST `stateStart` quando o visualizador entrar em tel
 }
 ```
 
-Consulte a [Referência de eventos da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de eventos da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]

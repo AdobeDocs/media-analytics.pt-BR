@@ -3,13 +3,11 @@ title: Fim da sessão
 description: Feche imediatamente uma sessão de mídia quando o visualizador abandonar o conteúdo.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 4%
-
+source-wordcount: '323'
+ht-degree: 5%
 ---
-
 
 # Fim da sessão
 
@@ -128,7 +126,7 @@ ADBMobile().mediaTrackSessionEnd()
 
 >[!TAB API da coleção de mídia]
 
-Enviar uma POSTAGEM `sessionEnd` para o [ponto de extremidade de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar uma POSTAGEM `sessionEnd` para o [ponto de extremidade de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

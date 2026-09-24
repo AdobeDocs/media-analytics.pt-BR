@@ -3,13 +3,11 @@ title: Programa
 description: Defina o nome do programa para o conteúdo de vídeo que faz parte de uma série, de modo que os episódios sejam agrupados em um único programa nos relatórios.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '286'
 ht-degree: 7%
-
 ---
-
 
 # Programa
 
@@ -175,6 +173,6 @@ Inclua `media.show` no objeto `params` de sua solicitação POST `sessionStart`:
 }
 ```
 
-Consulte a [Referência de sessões da API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obter a estrutura de solicitação completa.
+Consulte a [Referência de sessões da API Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obter a estrutura de solicitação completa.
 
 >[!ENDTABS]
