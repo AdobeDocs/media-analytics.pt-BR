@@ -3,20 +3,30 @@ title: Configurar o Web SDK para mídia de transmissão
 description: Configure o Adobe Experience Platform Web SDK (alloy.js) para enviar dados de streaming de mídia para a Edge Network.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
-
 ---
-
 # Configurar o Web SDK para mídia de transmissão
 
 O componente `streamingMedia` do Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/js-overview) (`alloy.js`, versão 2.20.0 ou posterior) coleta dados da sessão de mídia em seu site e os envia para a Edge Network. Esta página aborda a configuração no código (`alloy.js`). Para configurar o Web SDK por meio de Marcas, consulte [Configurar a extensão de marca do Web SDK para mídia de streaming](web-sdk-tags.md).
 
 * **Pré-requisitos**:
-   * Conclua a [visão geral da implementação do Edge](overview.md) (esquema, conjunto de dados, sequência de dados com o [!UICONTROL Media Analytics] habilitado).
-   * Instale o Web SDK 2.20.0 ou posterior. Consulte [Instalar o Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/overview).
+  * Conclua a [visão geral da implementação do Edge](overview.md) (esquema, conjunto de dados, sequência de dados com o [!UICONTROL Media Analytics] habilitado).
+  * Instale o Web SDK 2.20.0 ou posterior. Consulte [Instalar o Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/overview).
 
 ## Configurar o componente streamingMedia
 
@@ -51,6 +61,6 @@ Uma vez concluída a implementação, você pode [Configurar relatórios para im
 
 >[!MORELIKETHIS]
 >
->* [Visão geral do SDK da Web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/js-overview)
+>* [Visão geral do SDK da web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/js-overview)
 >* [Visão geral dos eventos](/help/implementation/events/overview.md)
 >* [Visão geral das variáveis](/help/implementation/variables/overview.md)
