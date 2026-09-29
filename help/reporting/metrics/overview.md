@@ -3,13 +3,22 @@ title: Visão geral das métricas de streaming de mídia
 description: Saiba como as métricas de transmissão de mídia são calculadas e organizadas no Adobe Analytics e no Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 3%
-
 ---
-
 
 # Visão geral das métricas de streaming de mídia
 
@@ -31,8 +40,8 @@ As métricas de mídia de transmissão seguem quatro padrões de cálculo princi
 
 | Sistema de relatório | Como as métricas chegam |
 | --- | --- |
-| Adobe Analytics | Preenchida com [Variáveis de dados de contexto](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/vars/page-vars/contextdata). Algumas métricas preenchem automaticamente eventos de solução usando essas variáveis de dados de contexto, enquanto outras devem ser mapeadas para um evento personalizado usando [Regras de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). As métricas que preenchem valores automaticamente devem ter sua respectiva [configuração de conjunto de relatórios de mídia de streaming](../setup/analytics-reporting.md) habilitada primeiro. |
-| Customer Journey Analytics | Campos XDM em `xdm.mediaReporting.sessionDetails` e nós relacionados, originados de qualquer conjunto de dados que inclua dados de mídia de streaming. Você deve criar cada métrica com as configurações desejadas em [configurações do componente de Visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
+| Adobe Analytics | Preenchida com [Variáveis de dados de contexto](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/vars/page-vars/contextdata). Algumas métricas preenchem automaticamente eventos de solução usando essas variáveis de dados de contexto, enquanto outras devem ser mapeadas para um evento personalizado usando [Regras de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). As métricas que preenchem valores automaticamente devem ter sua respectiva [configuração de conjunto de relatórios de mídia de streaming](../setup/analytics-reporting.md) habilitada primeiro. |
+| Customer Journey Analytics | Campos XDM em `xdm.mediaReporting.sessionDetails` e nós relacionados, originados de qualquer conjunto de dados que inclua dados de mídia de streaming. Você deve criar cada métrica com as configurações desejadas em [configurações do componente de Visualização de dados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
 | Feeds de dados | As métricas aparecem nas colunas `event_list` e `post_event_list` como IDs de evento. Cada arquivo de feed contém um arquivo `events.csv` que contém a pesquisa de todas as métricas, incluindo as métricas de mídia de transmissão. |
 
 >[!MORELIKETHIS]

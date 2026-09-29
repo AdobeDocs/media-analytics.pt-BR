@@ -3,13 +3,27 @@ title: Visão geral da implementação do Edge
 description: Configure o esquema, o conjunto de dados e a sequência de dados do Adobe Experience Platform necessários para coletar dados de mídia de transmissão por meio da Edge Network.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '1282'
-ht-degree: 4%
-
+ht-degree: 5%
 ---
-
 # Visão geral da implementação do Edge
 
 O Adobe Experience Platform Edge Network permite enviar dados destinados a vários produtos para um único endpoint, que então encaminha as informações apropriadas para cada produto. Essa é a maneira recomendada de implementar a Coleção de mídia de transmissão e é a única abordagem que oferece suporte ao Adobe Analytics e ao Customer Journey Analytics a partir de uma única implementação.
@@ -25,13 +39,13 @@ Independentemente da base de código usada, primeiro você deve concluir a confi
 1. **Confirme uma solução Adobe compatível.** Você deve ter uma implementação funcional de pelo menos um dos seguintes:
    * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=pt-BR): o principal destino de relatórios para dados de mídia baseados em Edge
    * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR): compatível com o CJA ou em vez dele através da mesma sequência de dados
-   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=pt-BR) ou [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=pt-BR): adicione o serviço **[!UICONTROL Adobe Experience Platform]** à sua sequência de dados ao configurar qualquer uma dessas opções
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=pt-BR) ou [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html): adicione o serviço **[!UICONTROL Adobe Experience Platform]** à sua sequência de dados ao configurar qualquer uma dessas opções
 
 ## Configurar o esquema no Adobe Experience Platform
 
 Para padronizar a coleta de dados entre aplicativos que usam o Adobe Experience Platform, a Adobe criou o padrão aberto e publicamente documentado Experience Data Model (XDM).
 
-1. No Adobe Experience Platform, comece a criar o esquema conforme descrito em [Criar e editar esquemas na interface](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR).
+1. No Adobe Experience Platform, comece a criar o esquema conforme descrito em [Criar e editar esquemas na interface](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
 1. Na página Detalhes do esquema, escolha **[!UICONTROL Evento de experiência]** como a classe base do esquema.
 
@@ -118,7 +132,7 @@ Para padronizar a coleta de dados entre aplicativos que usam o Adobe Experience 
 
    +++ Expanda para exibir instruções sobre como adicionar metadados personalizados ao esquema.
 
-   1. Localize o nome do locatário da organização selecionando **[!UICONTROL Informações da conta]** > **[!UICONTROL Orgs atribuídas]** > [!UICONTROL _&#x200B;**nome da organização**&#x200B;_] > **[!UICONTROL locatário]**.
+   1. Localize o nome do locatário da organização selecionando **[!UICONTROL Informações da conta]** > **[!UICONTROL Orgs atribuídas]** > [!UICONTROL _**nome da organização**_] > **[!UICONTROL locatário]**.
 
       Campos personalizados são recebidos por meio desse caminho. (Por exemplo, nome do locatário: _dcbl → caminho myCustomField: _dcbl.myCustomField.)
 
@@ -130,7 +144,7 @@ Para padronizar a coleta de dados entre aplicativos que usam o Adobe Experience 
 
       ![adicionar-metadados-personalizados](assets/add-custom-fields.png)
 
-   1. [Use o caminho gerado](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) para o campo personalizado na carga da sua solicitação.
+   1. [Use o caminho gerado](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) para o campo personalizado na carga da sua solicitação.
 
       ![adicionar-metadados-personalizados](assets/custom-fields-path.png)
 
@@ -156,11 +170,11 @@ Para padronizar a coleta de dados entre aplicativos que usam o Adobe Experience 
 
      ![Criar sequência de dados e selecionar esquema](assets/datastream-create-schema.png)
 
-   * Adicione os serviços apropriados à sequência de dados com base em sua solução da Adobe. Para obter informações sobre como adicionar um serviço, consulte &quot;Adicionar serviços a uma sequência de dados&quot; em [Configurar uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=pt-BR#view-details).
+   * Adicione os serviços apropriados à sequência de dados com base em sua solução da Adobe. Para obter informações sobre como adicionar um serviço, consulte &quot;Adicionar serviços a uma sequência de dados&quot; em [Configurar uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
-      * **[!UICONTROL Adobe Analytics]** (se estiver usando o Adobe Analytics): defina um conjunto de relatórios conforme descrito em [Criar um conjunto de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+     * **[!UICONTROL Adobe Analytics]** (se estiver usando o Adobe Analytics): defina um conjunto de relatórios conforme descrito em [Criar um conjunto de relatórios](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
-      * **[!UICONTROL Adobe Experience Platform]** (se estiver usando o Customer Journey Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform)
+     * **[!UICONTROL Adobe Experience Platform]** (se estiver usando o Customer Journey Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform)
 
      ![Adicionar o serviço Adobe Analytics](assets/datastream-add-service.png)
 

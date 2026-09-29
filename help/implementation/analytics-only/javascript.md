@@ -3,21 +3,31 @@ title: Configurar o JavaScript para mídia de transmissão
 description: Instale e configure o Media SDK for JavaScript (3.x) para implementações de mídia de transmissão exclusivas do Analytics.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 3%
-
 ---
-
 # Configurar o JavaScript para mídia de transmissão
 
 O Media SDK for JavaScript (3.x) envia dados de mídia de transmissão diretamente para a Adobe Analytics. Esta página aborda a instalação manual do JavaScript. Para implantar a SDK por meio de Marcas, consulte [Configurar a extensão de marca do Media Analytics](javascript-tags.md). Para novas implementações, considere usar o [Web SDK](/help/implementation/edge/web-sdk.md) para enviar dados à Adobe Analytics por meio de uma sequência de dados do Edge Network.
 
 * **Pré-requisitos**:
-   * Conclua a [visão geral da implementação somente do Analytics](overview.md).
-   * Implemente o [AppMeasurement](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/js/overview) e o [Serviço de ID de Visitante](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/appmeasurement).
-   * [Baixe o Media SDK para JavaScript](/help/getting-started/download-sdks.md).
+  * Conclua a [visão geral da implementação somente do Analytics](overview.md).
+  * Implemente o [AppMeasurement](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/js/overview) e o [Serviço de ID de Visitante](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement).
+  * [Baixe o Media SDK para JavaScript](/help/getting-started/download-sdks.md).
 
 ## Instalar e configurar o SDK
 
